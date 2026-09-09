@@ -163,7 +163,20 @@ export const AppProvider = ({ children }) => {
 
   // ----- Authentication & Profile State -----
   const [authUser, setAuthUser] = useState(null); // Firebase User object
-  const [profile, setProfile] = useState(null); // Custom profile stored in Firestore
+  const [profile, setProfile] = useState(() => {
+    try {
+      const saved = localStorage.getItem('user_auth');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed && (parsed.email === 'admin@tavykorea.vn' || parsed.name === 'admin')) {
+          localStorage.removeItem('user_auth');
+          return null;
+        }
+        return parsed;
+      }
+    } catch {}
+    return null;
+  }); // Custom profile stored in Firestore
   // ----- Admin Authentication -----
   const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(() => {
     if (typeof window !== 'undefined') {
@@ -253,6 +266,13 @@ export const AppProvider = ({ children }) => {
       unsubscribe = onAuthStateChanged(auth, async (user) => {
         setAuthUser(user);
         if (user) {
+          // Tài khoản admin@tavykorea.vn là tài khoản bảo mật kỹ thuật nội bộ dành riêng cho Admin Dashboard,
+          // TUYỆT ĐỐI KHÔNG coi là khách hàng mua sắm (User) trên giao diện website
+          if (user.email === 'admin@tavykorea.vn') {
+            try { localStorage.removeItem('user_auth'); } catch {}
+            setProfile(null);
+            return;
+          }
           try {
             const profileRef = doc(db, 'users', user.uid);
             const snap = await getDoc(profileRef);
@@ -412,7 +432,9 @@ export const AppProvider = ({ children }) => {
     handleRedirect();
   }, []);
 
-  const currentUser = authUser ? {
+  // currentUser chỉ dành riêng cho khách hàng mua sắm (User) trên giao diện website.
+  // Tuyệt đối không nhận diện tài khoản dịch vụ quản trị admin@tavykorea.vn làm khách hàng.
+  const currentUser = (authUser && authUser.email !== 'admin@tavykorea.vn') ? {
     uid: authUser.uid,
     email: authUser.email,
     photoURL: authUser.photoURL || '',
@@ -629,16 +651,16 @@ export const AppProvider = ({ children }) => {
     const safeData = sanitizeOrderPayload(orderData);
     const payload = {
       ...safeData,
-      userEmail: authUser?.email || 'guest@tavy.vn',
+      userEmail: currentUser?.email || 'guest@tavy.vn',
       createdAt: new Date().toISOString(),
     };
 
-    // Tự động đồng bộ Tên, Số điện thoại và Địa chỉ vào Hồ sơ tài khoản người dùng
-    if (authUser?.uid) {
+    // Tự động đồng bộ Tên, Số điện thoại và Địa chỉ vào Hồ sơ tài khoản người dùng (chỉ áp dụng cho tài khoản khách hàng thực)
+    if (currentUser?.uid) {
       try {
-        const userDocRef = doc(db, 'users', authUser.uid);
+        const userDocRef = doc(db, 'users', currentUser.uid);
         const profileUpdate = {
-          name: safeData.customerName || authUser.displayName || 'Khách hàng TAVY',
+          name: safeData.customerName || currentUser.name || 'Khách hàng TAVY',
           phone: safeData.customerPhone || '',
           address: safeData.customerAddress || '',
           updatedAt: new Date().toISOString()
