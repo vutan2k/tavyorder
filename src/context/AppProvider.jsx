@@ -206,7 +206,7 @@ export const AppProvider = ({ children }) => {
     }
 
     const adminPass = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_ADMIN_PASSWORD) || 'admin123';
-    if (password === adminPass || password === 'tan123') {
+    if (password === adminPass) {
       try {
         await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', 'admin123').catch(() => {});
       } catch {}
