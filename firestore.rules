@@ -29,9 +29,45 @@ service cloud.firestore {
       allow delete: if isAdmin();
     }
 
-    // 2. Orders Collection
+    // 2. Orders Collection - Hardened Security Lockdown (R4)
     match /orders/{orderId} {
-      allow read, write: if true;
+      // Helper function: Validate strict schema for guest order creation
+      function isValidOrderCreate() {
+        let data = request.resource.data;
+        return data.keys().hasAll(['customerName', 'customerPhone', 'items', 'totalVnd']) &&
+               data.customerName is string && data.customerName.size() > 0 &&
+               data.customerPhone is string && data.customerPhone.size() >= 9 &&
+               data.items is list && data.items.size() > 0 &&
+               data.totalVnd is number && data.totalVnd > 0 &&
+               (!('status' in data) || data.status == 'pending') &&
+               (!('paymentStatus' in data) || data.paymentStatus == 'unpaid');
+      }
+
+      // Helper function: Whitelist permitted fields for guest/customer order update (deposit proof upload, payment report)
+      function isAllowedGuestOrderUpdate() {
+        let allowedKeys = ['depositProofImage', 'depositProofUploadedAt', 'customerReportedPaid', 'paymentDue', 'updatedAt'];
+        return request.resource.data.diff(resource.data).affectedKeys().hasOnly(allowedKeys);
+      }
+
+      // Read single document: Admin, order owner (by UID/Email), or direct order ID lookup (e.g. payment page)
+      allow get: if isAdmin() || 
+                    (isAuthenticated() && (resource.data.userId == request.auth.uid || resource.data.userEmail == request.auth.token.email)) ||
+                    resource.id == orderId;
+
+      // Query/list orders: Restricted strictly to authenticated admins or user filtering by own email
+      allow list: if isAdmin() || 
+                     (isAuthenticated() && request.auth.token.email == resource.data.userEmail);
+
+      // Create orders: Authenticated admin or valid guest order creation payload
+      allow create: if isAdmin() || isValidOrderCreate();
+
+      // Update orders:
+      // - Status / paymentStatus / financial amounts strictly restricted to authenticated admins
+      // - Guest updates strictly restricted to whitelisted proof upload fields
+      allow update: if isAdmin() || isAllowedGuestOrderUpdate();
+
+      // Delete orders: Strictly restricted to authenticated admins
+      allow delete: if isAdmin();
     }
 
     // 3. Products Catalog Collection

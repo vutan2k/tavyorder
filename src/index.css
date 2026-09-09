@@ -1191,15 +1191,19 @@ textarea.input-field {
 /* Category Filter Ribbon Base */
 .category-filter-ribbon {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  overflow-x: auto;
-  padding-bottom: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px 10px;
+  padding: 4px 0 16px 0;
   margin-top: 8px;
   margin-bottom: 22px;
-  -webkit-overflow-scrolling: touch;
+  overflow: visible;
 }
 .category-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 7px 18px;
   border-radius: 24px;
   border: 1px solid #E5E7EB;
@@ -1210,13 +1214,18 @@ textarea.input-field {
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
-  flex-shrink: 0;
+}
+.category-filter-btn:hover {
+  border-color: #CBD5E1;
+  background-color: #F8FAFC;
+  transform: translateY(-1px);
 }
 .category-filter-btn.active {
   border: 1.5px solid #18181B;
   background-color: #18181B;
   color: #FFFFFF;
   font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 /* Consultation Banner Base */
@@ -1335,16 +1344,19 @@ textarea.input-field {
 
   /* 3. Category Filter Ribbon */
   .category-filter-ribbon {
-    gap: 6px !important;
-    padding-bottom: 6px !important;
+    gap: 6px 8px !important;
+    padding: 2px 0 10px 0 !important;
     margin-top: 4px !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 14px !important;
     justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
   }
   .category-filter-btn {
-    padding: 4px 10px !important;
-    font-size: 0.72rem !important;
+    padding: 5px 12px !important;
+    font-size: 0.74rem !important;
     border-radius: 16px !important;
+    white-space: nowrap !important;
   }
 
   /* 4. Product 3-Col Grid & Cards */
@@ -1454,6 +1466,7 @@ textarea.input-field {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 20px;
+  min-height: 400px;
 }
 
 /* ==========================================================================
@@ -1617,6 +1630,7 @@ textarea.input-field {
   background-color: #242036 !important;
   color: #FFFFFF !important;
   border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-1px) !important;
 }
 
 [data-theme="dark"] .category-filter-btn.active {
@@ -1909,6 +1923,26 @@ textarea.input-field {
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2), 0 2px 8px rgba(16, 185, 129, 0.25) !important;
   position: relative;
 }
+/* ==========================================================================
+   Mobile-Optimized Skeleton Shimmer & Optimized Image
+   ========================================================================== */
+@keyframes tavyShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
 
+.tavy-image-skeleton {
+  background: linear-gradient(90deg, #F5F2EC 25%, #EBE5DB 50%, #F5F2EC 75%);
+  background-size: 200% 100%;
+  animation: tavyShimmer 1.8s ease-in-out infinite;
+}
 
-
+[data-theme="dark"] .tavy-image-skeleton {
+  background: linear-gradient(90deg, #1C1929 25%, #2A243D 50%, #1C1929 75%);
+  background-size: 200% 100%;
+  animation: tavyShimmer 1.8s ease-in-out infinite;
+}

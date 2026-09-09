@@ -712,7 +712,7 @@ export default function UserProfilePage() {
                                 {/* Chi tiết sản phẩm */}
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                                   {order.items ? order.items.map((item, idx) => {
-                                    const itemPrice = item.price || Math.round((item.foreignPrice || 0) * krwRate * serviceFeeMultiplier);
+                                    const itemPrice = item.priceVnd || item.price || Math.round((Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon) || 0) * krwRate * serviceFeeMultiplier);
                                     const itemTotal = itemPrice * (item.qty || 1);
                                     return (
                                       <div key={idx} style={{ display: 'flex', gap: '16px', alignItems: 'center', justifyContent: 'space-between', borderBottom: idx < order.items.length - 1 ? '1px dashed #E5E7EB' : 'none', paddingBottom: idx < order.items.length - 1 ? '12px' : 0 }}>
@@ -763,12 +763,19 @@ export default function UserProfilePage() {
                                         </div>
                                       </div>
                                       <div style={{ textAlign: 'right', minWidth: '130px' }}>
-                                        <div style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--purple-primary)' }}>
-                                          {formatVnd(Math.round((order.foreignPrice || 0) * krwRate * serviceFeeMultiplier * (order.qty || 1)))}
-                                        </div>
-                                        <div style={{ fontSize: '0.78rem', color: '#6B7280', marginTop: '2px' }}>
-                                          {formatVnd(Math.round((order.foreignPrice || 0) * krwRate * serviceFeeMultiplier))} × {order.qty || 1}
-                                        </div>
+                                        {(() => {
+                                          const unitVnd = Math.round((Number(order.foreignPrice ?? order.priceKrw ?? order.priceWon) || 0) * krwRate * serviceFeeMultiplier);
+                                          return (
+                                            <>
+                                              <div style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--purple-primary)' }}>
+                                                {formatVnd(unitVnd * (order.qty || 1))}
+                                              </div>
+                                              <div style={{ fontSize: '0.78rem', color: '#6B7280', marginTop: '2px' }}>
+                                                {formatVnd(unitVnd)} × {order.qty || 1}
+                                              </div>
+                                            </>
+                                          );
+                                        })()}
                                       </div>
                                     </div>
                                   )}

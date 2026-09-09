@@ -1,12 +1,15 @@
-import React, { useContext, useState, useMemo, useEffect } from 'react';
+import React, { useContext, useState, useMemo, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import { useToast } from '../components/Toast';
 import AdminProductCatalog from '../components/AdminProductCatalog';
 import AdminProductSourcing from '../components/AdminProductSourcing';
 import AdminOrderManager from '../components/AdminOrderManager';
+import AdminUserManager from '../components/AdminUserManager';
 import { APP_VERSION } from '../data/appVersion';
 import { getOrderTotalVnd } from '../utils/priceCalculator';
+import { aggregateCustomers } from '../utils/customerAggregator';
+import { verifyAdminSession, AUTH_GUARD_CONFIG } from '../utils/adminAuthGuard';
 import {
   BarChart3,
   ShoppingBag,
@@ -26,7 +29,9 @@ import {
   AlertCircle,
   Inbox,
   Sun,
-  Moon
+  Moon,
+  Users,
+  FileText
 } from 'lucide-react';
 
 export default function AdminDashboardPage() {
@@ -40,16 +45,22 @@ export default function AdminDashboardPage() {
     pendingProducts,
     adminTheme,
     setAdminTheme,
-    toggleAdminTheme
+    toggleAdminTheme,
+    usersList
   } = useContext(AppContext);
   const isDark = adminTheme === 'dark';
   const navigate = useNavigate();
   const location = useLocation();
   const showToast = useToast();
 
-  // 4 Tabs chuẩn E-commerce
-  const [activeTab, setActiveTab] = useState('overview'); // 'overview' | 'orders' | 'products' | 'sourcing' | 'settings'
+  // Tabs chuẩn E-commerce: Overview | Orders | Users | Products | Sourcing | Settings
+  const [activeTab, setActiveTab] = useState('overview'); // 'overview' | 'orders' | 'users' | 'products' | 'sourcing' | 'settings'
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Tổng số lượng khách hàng thực tế trong hệ thống (R1 Badge)
+  const totalCustomers = useMemo(() => {
+    return aggregateCustomers(usersList, orders, rates).length;
+  }, [usersList, orders, rates]);
 
   // Sync activeTab from URL pathname
   useEffect(() => {
@@ -60,6 +71,8 @@ export default function AdminDashboardPage() {
       setActiveTab('sourcing');
     } else if (path.includes('/orders')) {
       setActiveTab('orders');
+    } else if (path.includes('/users') || path.includes('/customers')) {
+      setActiveTab('users');
     } else if (path.includes('/settings') || path.includes('/rates')) {
       setActiveTab('settings');
     } else if (path.includes('/overview') || path.includes('/dashboard') || path === '/admin' || path === '/admin/') {
@@ -67,12 +80,17 @@ export default function AdminDashboardPage() {
     }
   }, [location.pathname]);
 
-  // Redirect to login if not authenticated
+  // Redirect to login if not authenticated or session token invalid
   useEffect(() => {
-    if (!isAdminAuthenticated) {
+    const sessionToken = typeof window !== 'undefined' ? localStorage.getItem(AUTH_GUARD_CONFIG.SESSION_STORAGE_KEY) : null;
+    const isSessionValid = isAdminAuthenticated && verifyAdminSession(sessionToken);
+    if (!isSessionValid) {
+      if (isAdminAuthenticated) {
+        logoutAdmin();
+      }
       navigate('/admin/login', { replace: true });
     }
-  }, [isAdminAuthenticated, navigate]);
+  }, [isAdminAuthenticated, navigate, logoutAdmin]);
 
   // Quick Currency Converter state
   const [calcWon, setCalcWon] = useState('1000');
@@ -131,6 +149,95 @@ export default function AdminDashboardPage() {
     navigate(`/admin/${tabId}`, { replace: true });
   };
 
+  // 🖐️ Mobile Touch Gesture Engine: Tab swipe + Edge swipe drawer
+  const touchStartRef = useRef({ x: 0, y: 0, time: 0, isIgnore: false });
+  const [swipeIndicator, setSwipeIndicator] = useState(null);
+
+  const getTabTitle = (id) => {
+    switch (id) {
+      case 'overview': return 'Tổng Quan';
+      case 'orders': return 'Đơn Hàng';
+      case 'users': return 'Khách Hàng';
+      case 'products': return 'Kho Sản Phẩm';
+      case 'sourcing': return 'Kho Nạp Hàng';
+      case 'settings': return 'Cài Đặt';
+      default: return id;
+    }
+  };
+
+  const triggerSwipeFeedback = (text) => {
+    setSwipeIndicator(text);
+    setTimeout(() => {
+      setSwipeIndicator(null);
+    }, 750);
+  };
+
+  const handleGlobalTouchStart = (e) => {
+    if (!e.touches || e.touches.length === 0) return;
+    const touch = e.touches[0];
+    const target = e.target;
+
+    // Do not trigger tab swipe if touching inside a table, input, or horizontal nav
+    const isIgnore = Boolean(
+      target.closest('table') ||
+      target.closest('input, textarea, select, button') ||
+      target.closest('.admin-mobile-pills-bar') ||
+      target.closest('.admin-mobile-bottom-nav') ||
+      target.closest('[data-swipe-ignore="true"]') ||
+      target.closest('.overflow-x-auto')
+    );
+
+    touchStartRef.current = {
+      x: touch.clientX,
+      y: touch.clientY,
+      time: Date.now(),
+      isIgnore
+    };
+  };
+
+  const handleGlobalTouchEnd = (e) => {
+    if (!e.changedTouches || e.changedTouches.length === 0) return;
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartRef.current.x;
+    const deltaY = touch.clientY - touchStartRef.current.y;
+    const deltaTime = Date.now() - touchStartRef.current.time;
+    const startX = touchStartRef.current.x;
+
+    // 1. Edge swipe from left edge (< 40px) to open sidebar drawer
+    if (startX < 40 && deltaX > 60 && Math.abs(deltaY) < 55) {
+      setSidebarOpen(true);
+      return;
+    }
+
+    // 2. Swipe left on open sidebar to close it
+    if (sidebarOpen && deltaX < -50 && Math.abs(deltaY) < 65) {
+      setSidebarOpen(false);
+      return;
+    }
+
+    // 3. Tab swipe (when sidebar is closed and not inside table/input)
+    if (!sidebarOpen && !touchStartRef.current.isIgnore && deltaTime < 450 && Math.abs(deltaX) > 65 && Math.abs(deltaY) < 45) {
+      const tabOrder = ['overview', 'orders', 'users', 'products', 'sourcing', 'settings'];
+      const currentIndex = tabOrder.indexOf(activeTab);
+
+      if (deltaX < 0) {
+        // Swiped Left ➔ Next Tab
+        if (currentIndex < tabOrder.length - 1) {
+          const nextTab = tabOrder[currentIndex + 1];
+          handleSwitchTab(nextTab);
+          triggerSwipeFeedback(`➔ ${getTabTitle(nextTab)}`);
+        }
+      } else {
+        // Swiped Right ➔ Previous Tab
+        if (currentIndex > 0) {
+          const prevTab = tabOrder[currentIndex - 1];
+          handleSwitchTab(prevTab);
+          triggerSwipeFeedback(`← ${getTabTitle(prevTab)}`);
+        }
+      }
+    }
+  };
+
   const handleSaveRates = async (e) => {
     e.preventDefault();
     setIsSavingRates(true);
@@ -158,14 +265,26 @@ export default function AdminDashboardPage() {
     <div 
       className={`admin-dashboard-root ${isDark ? 'admin-dark' : ''}`}
       data-admin-theme={adminTheme}
+      onTouchStart={handleGlobalTouchStart}
+      onTouchEnd={handleGlobalTouchEnd}
       style={{
         display: 'flex',
         minHeight: '100vh',
         backgroundColor: isDark ? '#0B0F19' : '#F8FAFC',
         color: isDark ? '#F8FAFC' : '#0F172A',
-        fontFamily: 'inherit'
+        fontFamily: 'inherit',
+        overflowX: 'hidden',
+        width: '100%',
+        maxWidth: '100vw'
       }}
     >
+      {/* 🚀 Floating Swipe Feedback Indicator */}
+      {swipeIndicator && (
+        <div className="admin-swipe-indicator">
+          {swipeIndicator}
+        </div>
+      )}
+
       {/* 📱 Mobile Top Navbar */}
       <div style={{
         display: 'none',
@@ -179,19 +298,96 @@ export default function AdminDashboardPage() {
         padding: '0 16px',
         alignItems: 'center',
         justifyContent: 'space-between',
-        zIndex: 900
+        zIndex: 900,
+        borderBottom: '1px solid #1E293B'
       }} className="admin-mobile-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <button
             onClick={() => setSidebarOpen(true)}
-            style={{ background: 'none', border: 'none', color: '#FFF', cursor: 'pointer' }}
+            style={{ background: 'none', border: 'none', color: '#FFF', cursor: 'pointer', padding: '6px' }}
+            aria-label="Mở Menu Điều Hướng"
           >
             <Menu size={22} />
           </button>
-          <span style={{ fontWeight: 900, fontSize: '1rem' }}>TAVY KOREA ADMIN</span>
+          <span style={{ fontWeight: 900, fontSize: '0.98rem', letterSpacing: '-0.01em' }}>TAVY ADMIN</span>
         </div>
-        <div style={{ fontSize: '0.75rem', color: '#94A3B8' }}>Seoul {seoulTimeStr}</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <button
+            onClick={toggleAdminTheme}
+            style={{
+              background: 'none',
+              border: '1px solid #334155',
+              borderRadius: '8px',
+              padding: '6px',
+              color: isDark ? '#FDE047' : '#94A3B8',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+            title={isDark ? "Giao diện Sáng" : "Giao diện Tối"}
+          >
+            {isDark ? <Sun size={15} /> : <Moon size={15} />}
+          </button>
+          <div style={{ fontSize: '0.72rem', color: '#94A3B8' }}>{seoulTimeStr}</div>
+        </div>
       </div>
+
+      {/* 📱 Mobile Quick Tab Pills Bar */}
+      <div className="admin-mobile-pills-bar" data-swipe-ignore="true">
+        {[
+          { id: 'overview', label: 'Tổng Quan' },
+          { id: 'orders', label: `Đơn Hàng (${orders.length})` },
+          { id: 'users', label: `Khách Hàng (${totalCustomers})` },
+          { id: 'products', label: `Kho SP (${products.length})` },
+          { id: 'sourcing', label: `Nạp Hàng (${pendingProducts?.length || 0})` },
+          { id: 'settings', label: 'Cài Đặt Tỷ Giá' }
+        ].map(tab => {
+          const isActive = activeTab === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => handleSwitchTab(tab.id)}
+              className={`admin-pill-tab ${isActive ? 'active' : ''}`}
+              style={{
+                padding: '6px 14px',
+                borderRadius: '20px',
+                border: isActive ? '1px solid #8B5CF6' : (isDark ? '1px solid #334155' : '1px solid #CBD5E1'),
+                backgroundColor: isActive ? '#8B5CF6' : (isDark ? '#1E293B' : '#FFF'),
+                color: isActive ? '#FFF' : (isDark ? '#94A3B8' : '#64748B'),
+                fontSize: '0.75rem',
+                fontWeight: isActive ? 800 : 600,
+                whiteSpace: 'nowrap',
+                cursor: 'pointer',
+                flexShrink: 0,
+                transition: 'all 0.15s ease'
+              }}
+            >
+              {tab.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* 🧭 Sidebar Backdrop on Mobile */}
+      {sidebarOpen && (
+        <div
+          onClick={() => setSidebarOpen(false)}
+          className="admin-sidebar-backdrop"
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(15, 23, 42, 0.65)',
+            backdropFilter: 'blur(4px)',
+            WebkitBackdropFilter: 'blur(4px)',
+            zIndex: 998,
+            transition: 'opacity 0.25s ease'
+          }}
+        />
+      )}
 
       {/* 🧭 Sidebar Điều Hướng 4 Tab Chuẩn */}
       <aside
@@ -256,6 +452,13 @@ export default function AdminDashboardPage() {
               icon: CreditCard,
               badge: `${orders.length}`,
               badgeColor: '#3B82F6'
+            },
+            {
+              id: 'users',
+              label: 'Khách Hàng',
+              icon: Users,
+              badge: `${totalCustomers}`,
+              badgeColor: '#8B5CF6'
             },
             {
               id: 'products',
@@ -657,6 +860,15 @@ export default function AdminDashboardPage() {
         )}
 
         {/* ════════════════════════════════════════════════════════════════ */}
+        {/* TAB 2B: QUẢN LÝ KHÁCH HÀNG (USERS)                               */}
+        {/* ════════════════════════════════════════════════════════════════ */}
+        {activeTab === 'users' && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <AdminUserManager isDark={isDark} />
+          </div>
+        )}
+
+        {/* ════════════════════════════════════════════════════════════════ */}
         {/* TAB 3: KHO SẢN PHẨM ĐANG BÁN (LIVE PRODUCT CATALOG)             */}
         {/* ════════════════════════════════════════════════════════════════ */}
         {activeTab === 'products' && (
@@ -678,7 +890,10 @@ export default function AdminDashboardPage() {
                 Tiếp nhận sản phẩm cào từ Naver, KGC, Nonghyup, Olive Young & Extension. Kiểm duyệt chất lượng và giá trước khi xuất bản lên website.
               </p>
             </div>
-            <AdminProductSourcing isDark={isDark} />
+            <AdminProductSourcing 
+              isDark={isDark} 
+              initialSubTab="pending" 
+            />
           </div>
         )}
 
@@ -929,6 +1144,75 @@ export default function AdminDashboardPage() {
         )}
       </main>
 
+      {/* 📱 Mobile Bottom Navigation Bar (Fixed at bottom on < 1024px) */}
+      <nav className="admin-mobile-bottom-nav" data-swipe-ignore="true">
+        {[
+          { id: 'overview', label: 'Tổng Quan', icon: BarChart3, badge: urgentQueue.needQuote.length > 0 ? urgentQueue.needQuote.length : null, badgeColor: '#EF4444' },
+          { id: 'orders', label: 'Đơn Hàng', icon: FileText, badge: orders.length > 0 ? orders.length : null, badgeColor: '#2563EB' },
+          { id: 'users', label: 'Khách Hàng', icon: Users, badge: totalCustomers > 0 ? totalCustomers : null, badgeColor: '#8B5CF6' },
+          { id: 'products', label: 'Kho SP', icon: ShoppingBag, badge: products.length > 0 ? products.length : null, badgeColor: '#10B981' },
+          { id: 'sourcing', label: 'Nạp Hàng', icon: Zap, badge: pendingProducts?.length > 0 ? pendingProducts.length : null, badgeColor: '#F59E0B' },
+          { id: 'settings', label: 'Cài Đặt', icon: Sliders }
+        ].map(tab => {
+          const Icon = tab.icon;
+          const isActive = activeTab === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => handleSwitchTab(tab.id)}
+              className={`admin-bottom-nav-btn ${isActive ? 'active' : ''}`}
+              aria-label={tab.label}
+            >
+              <div style={{ position: 'relative', display: 'inline-flex' }}>
+                <Icon size={19} color={isActive ? '#8B5CF6' : (isDark ? '#94A3B8' : '#64748B')} />
+                {tab.badge && (
+                  <span
+                    style={{
+                      position: 'absolute',
+                      top: '-5px',
+                      right: '-8px',
+                      backgroundColor: tab.badgeColor || '#EF4444',
+                      color: '#FFF',
+                      fontSize: '0.62rem',
+                      fontWeight: 900,
+                      minWidth: '15px',
+                      height: '15px',
+                      padding: '0 4px',
+                      borderRadius: '8px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: '0 1px 3px rgba(0,0,0,0.2)'
+                    }}
+                  >
+                    {tab.badge > 99 ? '99+' : tab.badge}
+                  </span>
+                )}
+              </div>
+              <span style={{
+                fontSize: '0.66rem',
+                fontWeight: isActive ? 800 : 500,
+                color: isActive ? (isDark ? '#F8FAFC' : '#0F172A') : (isDark ? '#94A3B8' : '#64748B'),
+                marginTop: '3px',
+                whiteSpace: 'nowrap'
+              }}>
+                {tab.label}
+              </span>
+              {isActive && (
+                <div style={{
+                  position: 'absolute',
+                  bottom: '3px',
+                  width: '16px',
+                  height: '3px',
+                  backgroundColor: '#8B5CF6',
+                  borderRadius: '2px'
+                }} />
+              )}
+            </button>
+          );
+        })}
+      </nav>
+
       <style>{`
         @media (min-width: 1024px) {
           .admin-sidebar-responsive {
@@ -937,18 +1221,126 @@ export default function AdminDashboardPage() {
           .admin-main-wrapper {
             margin-left: 260px;
           }
+          .admin-mobile-pills-bar,
+          .admin-mobile-bottom-nav {
+            display: none !important;
+          }
         }
         @media (max-width: 1023px) {
           .admin-mobile-header {
             display: flex !important;
           }
+          .admin-mobile-pills-bar {
+            display: flex !important;
+          }
+          .admin-mobile-bottom-nav {
+            display: flex !important;
+          }
           .admin-main-wrapper {
-            margin-left: 0;
-            padding-top: 80px;
+            margin-left: 0 !important;
+            padding: 16px 12px 90px 12px !important;
+            padding-top: 116px !important;
+            width: 100% !important;
+            max-width: 100vw !important;
+            overflow-x: hidden !important;
           }
           .admin-close-mobile-btn {
             display: block !important;
           }
+
+          /* Chống Auto-Zoom trên iOS Safari */
+          .admin-dashboard-root input,
+          .admin-dashboard-root select,
+          .admin-dashboard-root textarea {
+            font-size: 16px !important;
+          }
+        }
+
+        /* Mobile Bottom Nav Bar */
+        .admin-mobile-bottom-nav {
+          display: none;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 62px;
+          background-color: #0F172A;
+          border-top: 1px solid #1E293B;
+          padding: 0 4px;
+          padding-bottom: env(safe-area-inset-bottom, 6px);
+          z-index: 950;
+          align-items: center;
+          justify-content: space-around;
+          box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .admin-bottom-nav-btn {
+          background: none;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 4px;
+          min-width: 48px;
+          min-height: 48px;
+          position: relative;
+          touch-action: manipulation;
+          transition: transform 0.1s ease;
+        }
+
+        .admin-bottom-nav-btn:active {
+          transform: scale(0.92);
+        }
+
+        /* Mobile Quick Pills Bar */
+        .admin-mobile-pills-bar {
+          display: none;
+          position: fixed;
+          top: 60px;
+          left: 0;
+          right: 0;
+          height: 46px;
+          background-color: #0F172A;
+          border-bottom: 1px solid #1E293B;
+          padding: 6px 12px;
+          gap: 8px;
+          overflow-x: auto;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+          z-index: 890;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .admin-mobile-pills-bar::-webkit-scrollbar {
+          display: none;
+        }
+
+        /* Floating Swipe Indicator Pill */
+        .admin-swipe-indicator {
+          position: fixed;
+          top: 116px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: rgba(15, 23, 42, 0.94);
+          color: #FFF;
+          border: 1px solid #8B5CF6;
+          border-radius: 20px;
+          padding: 6px 18px;
+          font-size: 0.8rem;
+          font-weight: 800;
+          z-index: 999;
+          box-shadow: 0 8px 24px rgba(139, 92, 246, 0.4);
+          pointer-events: none;
+          animation: adminSwipeFade 0.75s ease forwards;
+        }
+
+        @keyframes adminSwipeFade {
+          0% { opacity: 0; transform: translate(-50%, -10px); }
+          20% { opacity: 1; transform: translate(-50%, 0); }
+          80% { opacity: 1; transform: translate(-50%, 0); }
+          100% { opacity: 0; transform: translate(-50%, -8px); }
         }
 
         /* Admin Dark Theme Rules */

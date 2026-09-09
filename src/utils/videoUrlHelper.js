@@ -62,6 +62,17 @@ export function getEmbedVideoUrl(url) {
     return `https://drive.google.com/file/d/${driveId}/preview`;
   }
 
+  // Reject dangerous pseudo-protocols (javascript:, data:, vbscript:)
+  const lower = cleanUrl.toLowerCase();
+  if (lower.startsWith('javascript:') || lower.startsWith('data:') || lower.startsWith('vbscript:')) {
+    return '';
+  }
+
+  // Enforce strictly http:// or https:// protocol
+  if (!cleanUrl.startsWith('http://') && !cleanUrl.startsWith('https://')) {
+    return '';
+  }
+
   // 2. YouTube Shorts: https://www.youtube.com/shorts/{VIDEO_ID}
   const ytShortsMatch = cleanUrl.match(/youtube\.com\/shorts\/([a-zA-Z0-9_-]+)/i);
   if (ytShortsMatch && ytShortsMatch[1]) {

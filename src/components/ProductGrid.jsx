@@ -1,21 +1,59 @@
 import React, { useState, useEffect, useMemo, memo } from 'react';
 import { ShoppingBag, Eye, ChevronLeft, ChevronRight } from 'lucide-react';
 import { formatVnd, formatKrw } from '../utils/priceCalculator';
+import OptimizedImage from './OptimizedImage';
 
-function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail }) {
+function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPerPage = 24 }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 48;
 
   useEffect(() => {
     setCurrentPage(1);
   }, [products]);
 
-  // Logic phân trang
-  const totalPages = Math.ceil((products?.length || 0) / itemsPerPage);
+  const totalProducts = products?.length || 0;
+  // Logic phân trang dạng danh sách trang (Trang 1, Trang 2...)
+  const totalPages = Math.ceil(totalProducts / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentProducts = useMemo(() => {
     return products?.slice(startIndex, startIndex + itemsPerPage) || [];
   }, [products, startIndex, itemsPerPage]);
+
+  const handlePageChange = (newPage) => {
+    if (newPage < 1 || newPage > totalPages || newPage === currentPage) return;
+    if (typeof window !== 'undefined') {
+      const elem = document.getElementById('products') || document.querySelector('.product-grid-container');
+      if (elem) {
+        const yOffset = -70;
+        const y = elem.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: Math.max(0, y), behavior: 'auto' });
+      }
+    }
+    setCurrentPage(newPage);
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && currentPage > 1) {
+      const elem = document.getElementById('products') || document.querySelector('.product-grid-container');
+      if (elem) {
+        const yOffset = -70;
+        const y = elem.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: Math.max(0, y), behavior: 'auto' });
+      }
+    }
+  }, [currentPage]);
+
+  const pageNumbers = useMemo(() => {
+    if (totalPages <= 7) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+    if (currentPage <= 4) {
+      return [1, 2, 3, 4, 5, '...', totalPages];
+    }
+    if (currentPage >= totalPages - 3) {
+      return [1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+    }
+    return [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
+  }, [currentPage, totalPages]);
 
   return (
     <div>
@@ -40,26 +78,19 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail }) {
                 transition: 'all 0.2s ease'
               }}
             >
-              {/* Product Image */}
+              {/* Product Image with Optimized Mobile Shimmer & Lazy Loading */}
               <div
                 className="product-card-image-wrap"
-                style={{ position: 'relative', width: '100%', paddingTop: '100%', overflow: 'hidden', cursor: 'pointer' }}
+                style={{ position: 'relative', width: '100%', overflow: 'hidden', cursor: 'pointer' }}
                 onClick={() => onViewDetail && onViewDetail(product)}
               >
-                <img
+                <OptimizedImage
                   src={product.productImage || defaultImg}
                   alt={product.name || 'Sản phẩm Hàn Quốc'}
-                  loading="lazy"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = defaultImg;
-                  }}
-                  style={{
-                    position: 'absolute',
-                    top: 0, left: 0,
-                    width: '100%', height: '100%',
-                    objectFit: 'cover'
-                  }}
+                  aspectRatio="1 / 1"
+                  objectFit="cover"
+                  priority={pIdx < 4}
+                  fallbackSrc={defaultImg}
                 />
                 <span
                   className="product-card-brand-badge"
@@ -77,7 +108,8 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail }) {
                     textTransform: 'uppercase',
                     letterSpacing: '0.3px',
                     boxShadow: '0 2px 6px rgba(0,0,0,0.25)',
-                    backdropFilter: 'blur(4px)'
+                    backdropFilter: 'blur(4px)',
+                    zIndex: 3
                   }}
                 >
                   {product.brand || 'Olive Young'}
@@ -187,60 +219,61 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail }) {
         })}
       </div>
 
-      {/* Pagination Controls */}
+      {/* Pagination: Minimalist Black & White Numbered Buttons */}
       {totalPages > 1 && (
         <div style={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          marginTop: '32px',
-          gap: '8px'
+          gap: '8px',
+          marginTop: '28px',
+          marginBottom: '20px',
+          flexWrap: 'wrap'
         }}>
-          <button
-            onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
-            disabled={currentPage === 1}
-            style={{
-              padding: '6px 12px',
-              borderRadius: '8px',
-              border: '1px solid var(--border-color)',
-              backgroundColor: currentPage === 1 ? 'var(--bg-subtle-purple, #F3F4F6)' : 'var(--bg-white, #FFFFFF)',
-              color: currentPage === 1 ? 'var(--text-muted, #9CA3AF)' : 'var(--text-dark)',
-              cursor: currentPage === 1 ? 'not-allowed' : 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '4px',
-              fontSize: '0.82rem',
-              fontWeight: 600
-            }}
-          >
-            <ChevronLeft size={16} />
-            <span>Trước</span>
-          </button>
+          {pageNumbers.map((pNum, idx) => {
+            if (pNum === '...') {
+              return (
+                <span
+                  key={`ellipsis-${idx}`}
+                  style={{
+                    padding: '0 4px',
+                    color: '#94A3B8',
+                    fontSize: '0.9rem',
+                    fontWeight: 700
+                  }}
+                >
+                  ...
+                </span>
+              );
+            }
 
-          <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-dark)', padding: '0 8px' }}>
-            Trang {currentPage} / {totalPages}
-          </span>
-
-          <button
-            onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
-            disabled={currentPage === totalPages}
-            style={{
-              padding: '6px 12px',
-              borderRadius: '8px',
-              border: '1px solid var(--border-color)',
-              backgroundColor: currentPage === totalPages ? 'var(--bg-subtle-purple, #F3F4F6)' : 'var(--bg-white, #FFFFFF)',
-              color: currentPage === totalPages ? 'var(--text-muted, #9CA3AF)' : 'var(--text-dark)',
-              cursor: currentPage === totalPages ? 'not-allowed' : 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '4px',
-              fontSize: '0.82rem',
-              fontWeight: 600
-            }}
-          >
-            <span>Sau</span>
-            <ChevronRight size={16} />
-          </button>
+            const isActive = pNum === currentPage;
+            return (
+              <button
+                key={`page-${pNum}`}
+                onClick={() => handlePageChange(pNum)}
+                style={{
+                  minWidth: '40px',
+                  height: '40px',
+                  padding: '0 8px',
+                  borderRadius: '8px',
+                  border: isActive ? '1px solid #000000' : '1px solid #E2E8F0',
+                  backgroundColor: isActive ? '#000000' : '#FFFFFF',
+                  color: isActive ? '#FFFFFF' : '#0F172A',
+                  fontWeight: isActive ? 800 : 500,
+                  fontSize: '0.9rem',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: isActive ? '0 2px 4px rgba(0,0,0,0.15)' : 'none',
+                  transition: 'all 0.15s ease'
+                }}
+              >
+                {pNum}
+              </button>
+            );
+          })}
         </div>
       )}
     </div>

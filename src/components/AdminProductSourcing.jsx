@@ -2,6 +2,7 @@ import React, { useState, useContext, useMemo } from 'react';
 import { AppContext } from '../context/AppContext';
 import { useToast } from '../components/Toast';
 import AdminProductModal from './AdminProductModal';
+import AdminGoogleSheetModal from './AdminGoogleSheetModal';
 import {
   VERIFIED_KOREAN_HEALTH_CATALOG,
   scrapeKoreanHealthProduct
@@ -10,10 +11,10 @@ import { scrapeProductMetadata } from '../services/productScraperService';
 import {
   Zap, Search, Trash2, Edit3, Check,
   CheckCircle2, RefreshCw, Layers,
-  X, CheckCheck,
+  X, CheckCheck, ArrowLeft,
   Table, LayoutGrid, Download, Copy, ChevronDown, ChevronUp, ShoppingBag,
   TrendingDown, TrendingUp, Bot, Activity, Clock, Terminal, Sliders, History, ShieldCheck,
-  ScanSearch, Sparkles
+  ScanSearch, Sparkles, FileSpreadsheet, Camera, Image as ImageIcon
 } from 'lucide-react';
 import {
   getPriceSyncConfig,
@@ -22,11 +23,12 @@ import {
   clearPriceSyncLogs,
   getRecentPriceAlerts
 } from '../services/autoScraperBotService';
+import { getCategoryLabel as getClassifierCategoryLabel } from '../services/categoryClassifier';
 import { calculateVndPrice } from '../services/oliveYoungPriceSyncService';
 import AdminProductResearchTab from './AdminProductResearchTab';
 
 
-export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
+export default function AdminProductSourcing({ isDark: isDarkProp, initialSubTab } = {}) {
   const isDark = isDarkProp !== undefined
     ? isDarkProp
     : (typeof window !== 'undefined' && localStorage.getItem('tavy_admin_theme') === 'dark');
@@ -46,7 +48,18 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
   } = useContext(AppContext);
   const showToast = useToast();
 
-  const [activeSubTab, setActiveSubTab] = useState('all'); // 'all' (All-in-One) | 'pending' | 'research' | 'scraper' | 'scheduler'
+  const [activeSubTab, setActiveSubTab] = useState(() => {
+    if (initialSubTab && initialSubTab !== 'all') return initialSubTab;
+    return 'pending';
+  }); // 'pending' (Default) | 'scraper' | 'scheduler' | 'research'
+
+  React.useEffect(() => {
+    if (initialSubTab && initialSubTab !== 'all') {
+      setActiveSubTab(initialSubTab);
+    } else if (typeof window !== 'undefined' && window.location.pathname.includes('/pending')) {
+      setActiveSubTab('pending');
+    }
+  }, [initialSubTab]);
 
   // View state: 'table' (Excel Spreadsheet) | 'grid' (Cards)
   const [viewMode, setViewMode] = useState('table');
@@ -70,6 +83,16 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
   // Modal edit state for pending item
   const [editingItem, setEditingItem] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isGoogleSheetModalOpen, setIsGoogleSheetModalOpen] = useState(false);
+
+  // Nhập hàng loạt từ Google Sheets / File CSV
+  const handleImportFromSheetOrCsv = (importedList) => {
+    if (!Array.isArray(importedList) || importedList.length === 0) return;
+    importedList.forEach(prod => {
+      addPendingProduct(prod);
+    });
+    if (showToast) showToast(`Đã nạp thành công ${importedList.length} sản phẩm vào Hàng Chờ Duyệt!`, 'success');
+  };
 
   const krwRate = rates?.KRW?.rate || 19.5;
   const serviceFee = rates?.serviceFeePercent || 5;
@@ -77,7 +100,7 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
   // Lọc và sắp xếp hàng chờ duyệt
   const filteredPending = useMemo(() => {
     let result = (pendingProducts || []).filter(p => {
-      const matchCat = selectedCategory === 'all' || p.category === selectedCategory;
+      const matchCat = selectedCategory === 'all' || p.category === selectedCategory || p.subCategory === selectedCategory;
       const matchSearch = !searchTerm.trim() ||
         (p.name && p.name.toLowerCase().includes(searchTerm.toLowerCase())) ||
         (p.brand && p.brand.toLowerCase().includes(searchTerm.toLowerCase())) ||
@@ -209,15 +232,10 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
     if (showToast) showToast(`Đã sao chép mã SKU: ${sku}`, 'success');
   };
 
-  // Category label helper
+  // Dynamic Category label helper (tự động hiển thị danh mục động cào được chuẩn xác)
   const getCategoryLabel = (cat) => {
-    switch (cat) {
-      case 'ginseng': return 'Sâm Nấm';
-      case 'supplements': return 'TPCN';
-      case 'cosmetics': return 'Mỹ Phẩm';
-      case 'skincare': return 'Da & Body';
-      default: return 'Khác';
-    }
+    if (!cat) return 'Khác';
+    return getClassifierCategoryLabel(cat, true) || cat;
   };
 
   // Xuất file CSV
@@ -485,128 +503,64 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
     return list;
   }, [products, alertFilter]);
 
+  // Danh mục động được trích xuất từ dữ liệu sản phẩm cào về
+  const dynamicCategories = useMemo(() => {
+    const defaultCats = [
+      { id: 'all', label: 'Tất Cả' },
+      { id: 'ginseng', label: 'Sâm Nấm' },
+      { id: 'supplements', label: 'TPCN' },
+      { id: 'cosmetics', label: 'Mỹ Phẩm' }
+    ];
+    const presentCats = new Set();
+    (pendingProducts || []).forEach(p => {
+      if (p.category && !['all', 'ginseng', 'supplements', 'cosmetics'].includes(p.category)) {
+        presentCats.add(p.category);
+      }
+      if (p.subCategory && !['all', 'ginseng', 'supplements', 'cosmetics'].includes(p.subCategory)) {
+        presentCats.add(p.subCategory);
+      }
+    });
+    const extra = Array.from(presentCats).map(c => ({ id: c, label: getCategoryLabel(c) }));
+    return [...defaultCats, ...extra];
+  }, [pendingProducts]);
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-      {/* Sub Navigation */}
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        backgroundColor: isDark ? '#1E293B' : '#FFF',
-        borderRadius: '16px',
-        padding: '12px 18px',
-        border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
-        flexWrap: 'wrap',
-        gap: '12px',
-        boxShadow: '0 1px 3px rgba(0,0,0,0.04)'
-      }}>
-        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-          {/* Nút 1: All-in-One Studio (Mặc định) */}
-          <button
-            onClick={() => setActiveSubTab('all')}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '10px 18px',
-              borderRadius: '10px',
-              border: 'none',
-              backgroundColor: activeSubTab === 'all' ? '#7A4B9E' : 'transparent',
-              color: activeSubTab === 'all' ? '#FFF' : (isDark ? '#94A3B8' : '#64748B'),
-              fontWeight: 800,
-              fontSize: '0.88rem',
-              cursor: 'pointer',
-              transition: 'all 0.15s ease'
-            }}
-          >
-            <Sparkles size={16} />
-            <span>All-in-One Studio</span>
-          </button>
-
-          {/* Nút 2: Bóc Tách Olive Young */}
-          <button
-            onClick={() => setActiveSubTab('research')}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '10px 18px',
-              borderRadius: '10px',
-              border: 'none',
-              backgroundColor: activeSubTab === 'research' ? '#10B981' : 'transparent',
-              color: activeSubTab === 'research' ? '#FFF' : (isDark ? '#94A3B8' : '#64748B'),
-              fontWeight: 800,
-              fontSize: '0.88rem',
-              cursor: 'pointer',
-              transition: 'all 0.15s ease'
-            }}
-          >
-            <ScanSearch size={16} />
-            <span>Bóc Tách Olive Young</span>
-          </button>
-
-          {/* Nút 3: Hàng Chờ Duyệt */}
+      {/* Sub-view Navigation Return Button (when not in pending mode) */}
+      {activeSubTab !== 'pending' && (
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          backgroundColor: isDark ? '#1E293B' : '#FFF',
+          borderRadius: '12px',
+          padding: '10px 16px',
+          border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+        }}>
           <button
             onClick={() => setActiveSubTab('pending')}
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '8px',
-              padding: '10px 18px',
-              borderRadius: '10px',
+              gap: '6px',
+              backgroundColor: isDark ? '#334155' : '#F1F5F9',
+              color: isDark ? '#F8FAFC' : '#0F172A',
               border: 'none',
-              backgroundColor: activeSubTab === 'pending' ? '#F59E0B' : 'transparent',
-              color: activeSubTab === 'pending' ? '#FFF' : (isDark ? '#94A3B8' : '#64748B'),
+              borderRadius: '8px',
+              padding: '8px 14px',
+              fontSize: '0.82rem',
               fontWeight: 800,
-              fontSize: '0.88rem',
-              cursor: 'pointer',
-              transition: 'all 0.15s ease'
+              cursor: 'pointer'
             }}
           >
-            <Layers size={16} />
-            <span>Kho Hàng Chờ Duyệt</span>
-            <span style={{
-              backgroundColor: activeSubTab === 'pending' ? 'rgba(255,255,255,0.3)' : (isDark ? '#0F172A' : '#F1F5F9'),
-              color: activeSubTab === 'pending' ? '#FFF' : (isDark ? '#CBD5E1' : '#475569'),
-              fontSize: '0.72rem',
-              padding: '2px 8px',
-              borderRadius: '999px',
-              fontWeight: 900
-            }}>
-              {pendingProducts.length}
-            </span>
+            <ArrowLeft size={16} />
+            <span>← Quay lại Kho Hàng Chờ Duyệt ({pendingProducts.length})</span>
           </button>
         </div>
+      )}
 
-        {(activeSubTab === 'all' || activeSubTab === 'pending') && pendingProducts.length > 0 && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-            <button
-              onClick={handleApproveAll}
-              style={{
-                backgroundColor: '#10B981',
-                color: '#FFF',
-                border: 'none',
-                borderRadius: '8px',
-                padding: '8px 16px',
-                fontSize: '0.82rem',
-                fontWeight: 800,
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px'
-              }}
-            >
-              <CheckCheck size={16} />
-              <span>Duyệt Tất Cả ({pendingProducts.length}) Lên Web</span>
-            </button>
-          </div>
-        )}
-      </div>
-
-      {/* ════════════════════════════════════════════════════════════════ */}
-      {/* BLOCK 1: OLIVE YOUNG DEEP SOURCING STUDIO                       */}
-      {/* ════════════════════════════════════════════════════════════════ */}
-      {(activeSubTab === 'all' || activeSubTab === 'research') && (
+      {/* SUB-VIEW 1: RESEARCH TAB (Only rendered if user explicitly selects research) */}
+      {activeSubTab === 'research' && (
         <AdminProductResearchTab
           isDark={isDark}
           rates={rates}
@@ -614,21 +568,14 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
           addProduct={addProduct}
           approvePendingProduct={approvePendingProduct}
           showToast={showToast}
-          onNavigateToPending={() => {
-            if (activeSubTab === 'all') {
-              const el = document.getElementById('pending-queue-section');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
-            } else {
-              setActiveSubTab('pending');
-            }
-          }}
+          onNavigateToPending={() => setActiveSubTab('pending')}
         />
       )}
 
       {/* ════════════════════════════════════════════════════════════════ */}
-      {/* BLOCK 2: HÀNG CHỜ DUYỆT (PENDING APPROVAL QUEUE)                 */}
+      {/* MAIN VIEW: KHO HÀNG CHỜ DUYỆT (PENDING APPROVAL QUEUE - DEFAULT) */}
       {/* ════════════════════════════════════════════════════════════════ */}
-      {(activeSubTab === 'all' || activeSubTab === 'pending') && (
+      {activeSubTab === 'pending' && (
         <div id="pending-queue-section" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
           {/* Top Banner & Control */}
           <div style={{
@@ -738,6 +685,27 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
                 <span>Xuất Excel/CSV</span>
               </button>
 
+              {/* Import Google Sheets / CSV Button */}
+              <button
+                onClick={() => setIsGoogleSheetModalOpen(true)}
+                style={{
+                  backgroundColor: isDark ? '#064E3B' : '#ECFDF5',
+                  color: '#10B981',
+                  border: isDark ? '1px solid #059669' : '1px solid #A7F3D0',
+                  borderRadius: '8px',
+                  padding: '8px 14px',
+                  fontSize: '0.8rem',
+                  fontWeight: 800,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px'
+                }}
+              >
+                <FileSpreadsheet size={14} color="#10B981" />
+                <span>Nhập Google Sheets / CSV</span>
+              </button>
+
               {/* Go to Scraper tab */}
               <button
                 onClick={() => setActiveSubTab('scraper')}
@@ -759,6 +727,30 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
                 <Zap size={15} />
                 <span>Cào Link Mới</span>
               </button>
+
+              {/* Approve All Pending Products to Live Store */}
+              {pendingProducts.length > 0 && (
+                <button
+                  onClick={handleApproveAll}
+                  style={{
+                    backgroundColor: '#7A4B9E',
+                    color: '#FFF',
+                    border: 'none',
+                    borderRadius: '8px',
+                    padding: '8px 16px',
+                    fontSize: '0.82rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    boxShadow: '0 4px 12px rgba(122, 75, 158, 0.25)'
+                  }}
+                >
+                  <CheckCheck size={16} />
+                  <span>Duyệt Tất Cả ({pendingProducts.length}) Lên Web</span>
+                </button>
+              )}
             </div>
           </div>
 
@@ -797,12 +789,7 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
 
             {/* Categories */}
             <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', alignItems: 'center' }}>
-              {[
-                { id: 'all', label: 'Tất Cả' },
-                { id: 'ginseng', label: 'Sâm Nấm' },
-                { id: 'supplements', label: 'TPCN' },
-                { id: 'cosmetics', label: 'Mỹ Phẩm' }
-              ].map(cat => (
+              {dynamicCategories.map(cat => (
                 <button
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.id)}
@@ -945,9 +932,25 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
                   <tbody>
                     {filteredPending.length === 0 ? (
                       <tr>
-                        <td colSpan={9} style={{ padding: '40px', textAlign: 'center', color: isDark ? '#64748B' : '#94A3B8' }}>
-                          <ShoppingBag size={36} style={{ margin: '0 auto 8px auto', opacity: 0.4 }} />
-                          <div style={{ fontWeight: 800, fontSize: '0.95rem', color: isDark ? '#CBD5E1' : '#475569' }}>Không tìm thấy sản phẩm nào trong Hàng Chờ Duyệt</div>
+                        <td colSpan={9} style={{ padding: '48px 24px', textAlign: 'center', color: isDark ? '#64748B' : '#94A3B8' }}>
+                          {pendingProducts.length === 0 ? (
+                            <>
+                              <CheckCheck size={40} style={{ margin: '0 auto 12px auto', color: '#10B981' }} />
+                              <div style={{ fontWeight: 800, fontSize: '1rem', color: isDark ? '#F8FAFC' : '#0F172A', marginBottom: '6px' }}>
+                                Tuyệt vời! Toàn bộ sản phẩm đã được duyệt và xuất bản lên website
+                              </div>
+                              <p style={{ margin: 0, fontSize: '0.82rem', color: isDark ? '#94A3B8' : '#64748B' }}>
+                                Không còn sản phẩm nào tồn đọng trong Hàng Chờ Duyệt. Khi cào thêm link mới, sản phẩm sẽ hiển thị tại đây.
+                              </p>
+                            </>
+                          ) : (
+                            <>
+                              <ShoppingBag size={36} style={{ margin: '0 auto 8px auto', opacity: 0.4 }} />
+                              <div style={{ fontWeight: 800, fontSize: '0.95rem', color: isDark ? '#CBD5E1' : '#475569' }}>
+                                Không tìm thấy sản phẩm nào phù hợp với bộ lọc tìm kiếm
+                              </div>
+                            </>
+                          )}
                         </td>
                       </tr>
                     ) : (
@@ -1002,11 +1005,19 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
                                 justifyContent: 'center'
                               }}>
                                 <img
-                                  src={prod.productImage || 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80'}
+                                  src={prod.productImage || prod.thumbnailUrl || prod.thumbnail_url || ''}
                                   alt=""
                                   style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                                   onError={(e) => {
-                                    e.target.src = 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80';
+                                    if (e.target.dataset.hasError) return;
+                                    e.target.dataset.hasError = 'true';
+                                    if (prod.thumbnail_url && e.target.src !== prod.thumbnail_url) {
+                                      e.target.src = prod.thumbnail_url;
+                                    } else if (prod.thumbnailUrl && e.target.src !== prod.thumbnailUrl) {
+                                      e.target.src = prod.thumbnailUrl;
+                                    } else {
+                                      e.target.style.opacity = '0.3';
+                                    }
                                   }}
                                 />
                               </div>
@@ -1036,6 +1047,44 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
                               {prod.nameKr && (
                                 <div style={{ fontSize: '0.7rem', color: isDark ? '#94A3B8' : '#94A3B8', marginTop: '2px' }}>
                                   {prod.nameKr}
+                                </div>
+                              )}
+                              {((prod.photoReviews && prod.photoReviews.length > 0) || (prod.images && prod.images.length > 1)) && (
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px', flexWrap: 'wrap' }}>
+                                  {prod.photoReviews && prod.photoReviews.length > 0 && (
+                                    <span style={{
+                                      fontSize: '0.66rem',
+                                      fontWeight: 800,
+                                      color: '#10B981',
+                                      backgroundColor: isDark ? 'rgba(16, 185, 129, 0.15)' : '#ECFDF5',
+                                      border: isDark ? '1px solid rgba(16, 185, 129, 0.3)' : '1px solid #A7F3D0',
+                                      padding: '1px 6px',
+                                      borderRadius: '6px',
+                                      display: 'inline-flex',
+                                      alignItems: 'center',
+                                      gap: '3px'
+                                    }}>
+                                      <Camera size={10} />
+                                      {prod.photoReviews.length} review thật
+                                    </span>
+                                  )}
+                                  {prod.images && prod.images.length > 1 && (
+                                    <span style={{
+                                      fontSize: '0.66rem',
+                                      fontWeight: 700,
+                                      color: '#0284C7',
+                                      backgroundColor: isDark ? 'rgba(2, 132, 199, 0.15)' : '#F0F9FF',
+                                      border: isDark ? '1px solid rgba(2, 132, 199, 0.3)' : '1px solid #BAE6FD',
+                                      padding: '1px 6px',
+                                      borderRadius: '6px',
+                                      display: 'inline-flex',
+                                      alignItems: 'center',
+                                      gap: '3px'
+                                    }}>
+                                      <ImageIcon size={10} />
+                                      {prod.images.length} ảnh HD
+                                    </span>
+                                  )}
                                 </div>
                               )}
                             </td>
@@ -1190,10 +1239,24 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
                   border: isDark ? '1px dashed #334155' : '1px dashed #CBD5E1',
                   color: isDark ? '#64748B' : '#94A3B8'
                 }}>
-                  <ShoppingBag size={40} style={{ margin: '0 auto 12px auto', opacity: 0.4 }} />
-                  <div style={{ fontWeight: 800, fontSize: '1rem', color: isDark ? '#CBD5E1' : '#475569' }}>
-                    Không tìm thấy sản phẩm nào phù hợp
-                  </div>
+                  {pendingProducts.length === 0 ? (
+                    <>
+                      <CheckCheck size={44} style={{ margin: '0 auto 12px auto', color: '#10B981' }} />
+                      <div style={{ fontWeight: 800, fontSize: '1.05rem', color: isDark ? '#F8FAFC' : '#0F172A', marginBottom: '6px' }}>
+                        Tuyệt vời! Toàn bộ sản phẩm đã được duyệt và xuất bản lên website
+                      </div>
+                      <p style={{ margin: 0, fontSize: '0.84rem', color: isDark ? '#94A3B8' : '#64748B' }}>
+                        Không còn sản phẩm nào tồn đọng trong Hàng Chờ Duyệt.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <ShoppingBag size={40} style={{ margin: '0 auto 12px auto', opacity: 0.4 }} />
+                      <div style={{ fontWeight: 800, fontSize: '1rem', color: isDark ? '#CBD5E1' : '#475569' }}>
+                        Không tìm thấy sản phẩm nào phù hợp với bộ lọc tìm kiếm
+                      </div>
+                    </>
+                  )}
                 </div>
               ) : (
                 filteredPending.map(prod => {
@@ -1229,11 +1292,19 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
                         border: isDark ? '1px solid #334155' : '1px solid #F1F5F9'
                       }}>
                         <img
-                          src={prod.productImage || 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80'}
+                          src={prod.productImage || prod.thumbnailUrl || prod.thumbnail_url || ''}
                           alt={prod.name}
                           style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                           onError={(e) => {
-                            e.target.src = 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80';
+                            if (e.target.dataset.hasError) return;
+                            e.target.dataset.hasError = 'true';
+                            if (prod.thumbnail_url && e.target.src !== prod.thumbnail_url) {
+                              e.target.src = prod.thumbnail_url;
+                            } else if (prod.thumbnailUrl && e.target.src !== prod.thumbnailUrl) {
+                              e.target.src = prod.thumbnailUrl;
+                            } else {
+                              e.target.style.opacity = '0.3';
+                            }
                           }}
                         />
 
@@ -1264,6 +1335,26 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
                         }}>
                           CHỜ DUYỆT
                         </span>
+
+                        {prod.photoReviews && prod.photoReviews.length > 0 && (
+                          <span style={{
+                            position: 'absolute',
+                            bottom: '8px',
+                            left: '8px',
+                            backgroundColor: 'rgba(16, 185, 129, 0.9)',
+                            color: '#FFF',
+                            fontSize: '0.65rem',
+                            fontWeight: 800,
+                            padding: '2px 6px',
+                            borderRadius: '4px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '3px',
+                            boxShadow: '0 2px 4px rgba(0,0,0,0.3)'
+                          }}>
+                            <Camera size={11} /> {prod.photoReviews.length} review
+                          </span>
+                        )}
                       </div>
 
                       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '6px' }}>
@@ -2300,6 +2391,15 @@ export default function AdminProductSourcing({ isDark: isDarkProp } = {}) {
           </div>
         </div>
       )}
+
+      {/* Google Sheets / CSV Importer Modal */}
+      <AdminGoogleSheetModal
+        isOpen={isGoogleSheetModalOpen}
+        onClose={() => setIsGoogleSheetModalOpen(false)}
+        onImportProducts={handleImportFromSheetOrCsv}
+        isDark={isDark}
+        showToast={showToast}
+      />
 
       {/* Quick Edit Modal for Pending Item */}
       <AdminProductModal

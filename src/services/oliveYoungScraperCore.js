@@ -230,32 +230,131 @@ export const parseOliveYoungPrices = (domOrText, defaultPrice = 25000) => {
 };
 
 /**
- * 7. PHÂN LOẠI DANH MỤC SẢN PHẨM (Category & SubCategory)
+ * 7. PHÂN LOẠI DANH MỤC SẢN PHẨM LINH HOẠT (Dynamic Category & SubCategory Classifier)
+ * Tự động bóc tách từ tên tiếng Hàn, tên tiếng Việt, mô tả và breadcrumbs gốc từ sàn
  */
-export const classifyCosmeticsCategory = (name = '', desc = '') => {
-  const text = `${name} ${desc}`.toLowerCase();
+export const classifyCosmeticsCategory = (name = '', desc = '', breadcrumb = '') => {
+  const text = `${name} ${desc} ${breadcrumb}`.toLowerCase();
   
-  if (/sâm|nấm|ginseng|lingzhi/i.test(text)) {
-    return { category: 'ginseng', subCategory: 'ginseng' };
-  }
-  if (/thực phẩm chức năng|supplement|vitamin|collagen|viên uống|omega/i.test(text)) {
-    return { category: 'supplements', subCategory: 'supplements' };
-  }
-
-  // Cosmetics Subcategories
-  let subCategory = 'skincare';
-  if (/son|môi|phấn|cushion|kem nền|mascara|eyeliner|má hồng|bb cream|che khuyết điểm|makeup|trang điểm/i.test(text)) {
-    subCategory = 'makeup';
-  } else if (/dầu gội|xả|tóc|hair|dưỡng tóc|treatment|shampoo/i.test(text)) {
-    subCategory = 'haircare';
-  } else if (/sữa tắm|body|dưỡng thể|tắm|lăn khử mùi|hand cream/i.test(text)) {
-    subCategory = 'bodycare';
-  } else {
-    subCategory = 'skincare';
+  // 1. Sâm Nấm & Thảo dược Hàn Quốc (trừ khi là kem sâm/mặt nạ mỹ phẩm)
+  if (/sâm|nấm|ginseng|lingzhi|홍삼|인삼|영지|녹용/i.test(text) && !/serum|세럼|mask|마스크|cream|크림|kem/i.test(text)) {
+    return {
+      category: 'ginseng',
+      subCategory: 'ginseng',
+      categoryLabel: 'Sâm Nấm Hàn Quốc',
+      categoryKr: '홍삼/인삼'
+    };
   }
 
+  // 2. Phân loại động chi tiết theo ngành hàng mỹ phẩm Olive Young (Ưu tiên số 1 cho sản phẩm bôi ngoài da)
+  // 2.1. Mặt nạ giấy / Mặt nạ ngủ / Thạch
+  if (/마스크팩|시트마스크|마스크|mask|mặt nạ|đắp mặt/i.test(text)) {
+    return {
+      category: 'cosmetics',
+      subCategory: 'mask',
+      categoryLabel: 'Mặt Nạ Giấy',
+      categoryKr: '마스크팩'
+    };
+  }
+
+  // 2.2. Bông Toner Pad
+  if (/토너패드|패드|toner pad|pad|bông toner|miếng đệm|bông lau/i.test(text)) {
+    return {
+      category: 'cosmetics',
+      subCategory: 'toner_pad',
+      categoryLabel: 'Bông Toner Pad',
+      categoryKr: '토너패드'
+    };
+  }
+
+  // 2.3. Tinh chất / Serum / Ampoule (Kể cả Serum Vitamin C, Serum Collagen, Ampoule Trắng Da)
+  if (/세럼|앰플|에센스|serum|ampoule|essence|tinh chất/i.test(text)) {
+    return {
+      category: 'cosmetics',
+      subCategory: 'serum',
+      categoryLabel: 'Serum & Tinh Chất',
+      categoryKr: '에센스/세럼/앰플'
+    };
+  }
+
+  // 2.4. Chống nắng
+  if (/선크림|선스틱|선세럼|선쿠션|sunscreen|sun cream|sun stick|chống nắng/i.test(text)) {
+    return {
+      category: 'cosmetics',
+      subCategory: 'suncare',
+      categoryLabel: 'Chống Nắng',
+      categoryKr: '선케어'
+    };
+  }
+
+  // 2.5. Kem dưỡng & Cấp ẩm
+  if (/수분크림|보습크림|크림|cream|kem dưỡng|cấp ẩm|lotion|로션/i.test(text)) {
+    return {
+      category: 'cosmetics',
+      subCategory: 'cream',
+      categoryLabel: 'Kem Dưỡng Da',
+      categoryKr: '크림/로션'
+    };
+  }
+
+  // 2.6. Làm sạch & Tẩy trang
+  if (/클렌징|클렌저|폼클렌징|클렌징오일|cleanser|cleansing|sữa rửa mặt|tẩy trang/i.test(text)) {
+    return {
+      category: 'cosmetics',
+      subCategory: 'cleansing',
+      categoryLabel: 'Làm Sạch & Tẩy Trang',
+      categoryKr: '클렌징'
+    };
+  }
+
+  // 2.7. Trang điểm / Makeup
+  if (/son|môi|phấn|cushion|kem nền|mascara|eyeliner|má hồng|bb cream|che khuyết điểm|makeup|trang điểm|쿠션|립|틴트|파운데이션|아이라이너/i.test(text)) {
+    return {
+      category: 'cosmetics',
+      subCategory: 'makeup',
+      categoryLabel: 'Trang Điểm (Makeup)',
+      categoryKr: '메이크업'
+    };
+  }
+
+  // 2.8. Chăm sóc tóc
+  if (/dầu gội|xả|tóc|hair|dưỡng tóc|treatment|shampoo|샴푸|헤어|트리트먼트/i.test(text)) {
+    return {
+      category: 'cosmetics',
+      subCategory: 'haircare',
+      categoryLabel: 'Chăm Sóc Tóc',
+      categoryKr: '헤어케어'
+    };
+  }
+
+  // 2.9. Chăm sóc cơ thể
+  if (/sữa tắm|dưỡng thể|body|body wash|body lotion|scrub|tẩy da chết body|바디/i.test(text)) {
+    return {
+      category: 'cosmetics',
+      subCategory: 'bodycare',
+      categoryLabel: 'Chăm Sóc Toàn Thân',
+      categoryKr: '바디케어'
+    };
+  }
+
+  // 3. Thực phẩm chức năng & Bổ trợ sức khỏe (Chỉ nhận diện khi KHÔNG PHẢI mỹ phẩm dưỡng da)
+  if (/thực phẩm chức năng|supplement|viên uống|men vi sinh|probiotic|건강식품|유산균|영양제|오메가|omega|thuốc bổ|uống|dietary|softgel|capsule/i.test(text) ||
+      (/vitamin|collagen|비타민|콜라겐/i.test(text) && !/serum|cream|mask|toner|pad|kem|thoa|bôi/i.test(text))) {
+    return {
+      category: 'supplements',
+      subCategory: 'supplements',
+      categoryLabel: 'Thực Phẩm Chức Năng',
+      categoryKr: '건강식품'
+    };
+  }
+
+
+
+  // Mặc định chuẩn
   return {
     category: 'cosmetics',
-    subCategory
+    subCategory: 'skincare',
+    categoryLabel: 'Chăm Sóc Da',
+    categoryKr: '스킨케어'
   };
 };

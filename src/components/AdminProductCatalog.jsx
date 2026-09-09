@@ -9,6 +9,7 @@ import {
   SlidersHorizontal, Check, ArrowRight, Table, LayoutGrid,
   Download, Copy, ArrowUpDown, ChevronDown, ChevronUp, CheckCheck
 } from 'lucide-react';
+import { getCategoryLabel as getClassifierCategoryLabel } from '../services/categoryClassifier';
 
 export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
   const isDark = isDarkProp !== undefined
@@ -286,13 +287,8 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
   };
 
   const getCategoryLabel = (cat) => {
-    switch (cat) {
-      case 'ginseng': return 'Sâm Nấm';
-      case 'supplements': return 'TPCN';
-      case 'cosmetics': return 'Mỹ Phẩm';
-      case 'skincare': return 'Da & Body';
-      default: return 'Khác';
-    }
+    if (!cat) return 'Khác';
+    return getClassifierCategoryLabel(cat, true) || cat;
   };
 
   return (

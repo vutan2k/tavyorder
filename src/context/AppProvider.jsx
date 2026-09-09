@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { AppContext } from './AppContext';
 import {
   subscribeToOrders,
@@ -15,8 +15,13 @@ import {
   deleteOrderFromDB,
   subscribeToPendingProducts,
   savePendingProductToDB,
-  deletePendingProductFromDB
+  deletePendingProductFromDB,
+  subscribeToUsers,
+  updateUserInDB,
+  deleteUserFromDB,
+  updateOrderInDB
 } from '../services/dbService';
+import { normalizePhone, normalizeEmail } from '../utils/customerAggregator';
 import { auth, db, loginWithGoogle, checkGoogleRedirectResult } from '../firebase';
 import {
   createUserWithEmailAndPassword,
@@ -28,6 +33,22 @@ import {
   EmailAuthProvider,
 } from 'firebase/auth';
 import { doc, getDoc, setDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
+import {
+  AUTH_GUARD_CONFIG,
+  getLockoutStatus,
+  recordFailedAttempt,
+  recordSuccessfulLogin,
+  createAdminSession,
+  verifyAdminSession,
+  touchAdminSession,
+  clearAdminSession
+} from '../utils/adminAuthGuard';
+import {
+  sanitizeOrderPayload,
+  isValidHttpUrl,
+  sanitizeText,
+  sanitizeUrl
+} from '../utils/securityUtils';
 
 const defaultRates = {
   USD: { code: 'USD', name: 'Đô la Mỹ', symbol: '$', rate: 25500, shippingFee: 230000 },
@@ -145,26 +166,75 @@ export const AppProvider = ({ children }) => {
   const [profile, setProfile] = useState(null); // Custom profile stored in Firestore
   // ----- Admin Authentication -----
   const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(() => {
-    const saved = localStorage.getItem('admin_auth');
-    return saved === 'true';
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.removeItem(AUTH_GUARD_CONFIG.LEGACY_STORAGE_KEY);
+        const sessionToken = localStorage.getItem(AUTH_GUARD_CONFIG.SESSION_STORAGE_KEY);
+        return verifyAdminSession(sessionToken);
+      } catch {
+        return false;
+      }
+    }
+    return false;
   });
+
   const loginAdmin = async (password) => {
-    const adminPass = import.meta.env.VITE_ADMIN_PASSWORD || 'admin123';
+    // 1. Pre-check brute-force lockout status
+    const lockout = getLockoutStatus();
+    if (lockout.isLocked) {
+      return {
+        success: false,
+        isLocked: true,
+        lockedUntil: lockout.lockedUntil,
+        remainingSeconds: lockout.remainingSeconds,
+        tier: lockout.tier,
+        message: `Hệ thống tạm khoá đăng nhập do nhập sai quá 5 lần. Vui lòng thử lại sau ${lockout.remainingSeconds} giây (Cấp độ ${lockout.tier}).`
+      };
+    }
+
+    const adminPass = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_ADMIN_PASSWORD) || 'admin123';
     if (password === adminPass || password === 'tan123') {
       try {
         await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', 'admin123').catch(() => {});
       } catch {}
+      recordSuccessfulLogin();
+      createAdminSession();
       setIsAdminAuthenticated(true);
-      localStorage.setItem('admin_auth', 'true');
+      try {
+        localStorage.removeItem(AUTH_GUARD_CONFIG.LEGACY_STORAGE_KEY);
+      } catch {}
       return { success: true };
     }
-    return { success: false, message: 'Mật khẩu quản trị không chính xác.' };
+
+    // Record failure and enforce lockout if threshold reached
+    const failLockout = recordFailedAttempt();
+    if (failLockout.isLocked) {
+      return {
+        success: false,
+        isLocked: true,
+        lockedUntil: failLockout.lockedUntil,
+        remainingSeconds: failLockout.remainingSeconds,
+        tier: failLockout.tier,
+        message: `Hệ thống đã tạm khoá đăng nhập ${Math.round(failLockout.remainingSeconds / 60)} phút do nhập sai 5 lần liên tiếp.`
+      };
+    }
+
+    return {
+      success: false,
+      isLocked: false,
+      remainingAttempts: failLockout.remainingAttempts,
+      message: `Mật khẩu quản trị không chính xác. Bạn còn ${failLockout.remainingAttempts} lần thử trước khi bị khoá tài khoản.`
+    };
   };
+
   const logoutAdmin = async () => {
+    clearAdminSession();
     setIsAdminAuthenticated(false);
-    localStorage.removeItem('admin_auth');
-    localStorage.removeItem('user_auth');
-    sessionStorage.clear();
+    try {
+      localStorage.removeItem(AUTH_GUARD_CONFIG.LEGACY_STORAGE_KEY);
+      localStorage.removeItem('user_auth');
+      sessionStorage.clear();
+    } catch {}
     setAuthUser(null);
     setProfile(null);
     try {
@@ -268,12 +338,13 @@ export const AppProvider = ({ children }) => {
     syncTestUserInDB();
   }, []);
 
-  // Tự động khôi phục đăng nhập Firebase Auth Admin khi làm mới trang (F5) CHỈ khi đang ở trang Admin và chưa có tài khoản nào đăng nhập
+  // Tự động khôi phục đăng nhập Firebase Auth Admin khi làm mới trang (F5) CHỈ khi đang ở trang Admin, có phiên admin hợp lệ và chưa có tài khoản nào đăng nhập
   useEffect(() => {
     const autoLoginAdmin = async () => {
       const isAdminPath = typeof window !== 'undefined' && window.location.pathname.startsWith('/admin');
-      // Tuyệt đối không tự động đăng nhập admin nếu không ở trang admin hoặc người dùng đang đăng nhập tài khoản cá nhân
-      if (isAdminPath && isAdminAuthenticated && !authUser) {
+      const isSessionValid = isAdminAuthenticated && verifyAdminSession();
+      // Tuyệt đối không tự động đăng nhập admin nếu không ở trang admin, session không hợp lệ hoặc người dùng đang đăng nhập tài khoản cá nhân
+      if (isAdminPath && isSessionValid && !authUser) {
         try {
           const adminPass = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_ADMIN_PASSWORD) || 'admin123';
           await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', adminPass);
@@ -285,6 +356,46 @@ export const AppProvider = ({ children }) => {
     };
     autoLoginAdmin();
   }, [isAdminAuthenticated, authUser]);
+
+  // Activity Tracker & 60-Minute Inactivity Heartbeat for Admin Session
+  const lastTouchRef = useRef(0);
+  useEffect(() => {
+    if (!isAdminAuthenticated) return;
+
+    // 1. Throttled activity listener (30 seconds throttle)
+    const handleActivity = () => {
+      const now = Date.now();
+      if (now - lastTouchRef.current >= 30000) {
+        lastTouchRef.current = now;
+        touchAdminSession();
+      }
+    };
+
+    const activityEvents = ['mousemove', 'keydown', 'click', 'scroll', 'touchstart'];
+    activityEvents.forEach(evt => window.addEventListener(evt, handleActivity, { passive: true }));
+
+    // 2. Periodic inactivity check (every 15 seconds)
+    const intervalId = setInterval(() => {
+      if (!verifyAdminSession()) {
+        console.warn("🔒 [Admin Security] Phiên làm việc đã hết hạn do không hoạt động quá 60 phút.");
+        logoutAdmin();
+      }
+    }, 15000);
+
+    // 3. Multi-tab synchronization via storage event
+    const handleStorage = (e) => {
+      if (e.key === AUTH_GUARD_CONFIG.SESSION_STORAGE_KEY && !e.newValue) {
+        logoutAdmin();
+      }
+    };
+    window.addEventListener('storage', handleStorage);
+
+    return () => {
+      activityEvents.forEach(evt => window.removeEventListener(evt, handleActivity));
+      clearInterval(intervalId);
+      window.removeEventListener('storage', handleStorage);
+    };
+  }, [isAdminAuthenticated]);
 
   // Handle Google Redirect Result
   useEffect(() => {
@@ -327,13 +438,14 @@ export const AppProvider = ({ children }) => {
     return [];
   });
 
-  // Tìm Đơn hàng chờ cọc (Active Pending Order) duy nhất của người dùng hiện tại
+  // Tìm Đơn hàng chờ cọc (Active Pending Order) duy nhất của người dùng hiện tại (chưa hết hạn thanh toán 15 phút)
   const activePendingOrder = useMemo(() => {
     return orders.find(o => {
       const isUserOrder = (currentUser?.email && o.userEmail && o.userEmail.toLowerCase() === currentUser.email.toLowerCase()) ||
                           (currentUser?.phone && o.customerPhone && o.customerPhone === currentUser.phone);
       const isUnpaidPending = (o.status === 'pending' || o.status === 'quoted') && o.paymentStatus !== 'paid';
-      return isUserOrder && isUnpaidPending;
+      const isNotExpired = !o.paymentDue || new Date(o.paymentDue) > new Date();
+      return isUserOrder && isUnpaidPending && isNotExpired;
     });
   }, [orders, currentUser?.email, currentUser?.phone]);
 
@@ -349,8 +461,9 @@ export const AppProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  // Worker chạy ngầm mỗi phút kiểm tra và hủy các đơn hàng chưa cọc quá 15 phút
+  // Worker chạy ngầm mỗi phút kiểm tra và hủy các đơn hàng chưa cọc quá 15 phút (chỉ chạy khi Admin đăng nhập để tránh write amplification)
   useEffect(() => {
+    if (!isAdminAuthenticated) return;
     const interval = setInterval(() => {
       const now = new Date();
       orders.forEach(o => {
@@ -364,7 +477,7 @@ export const AppProvider = ({ children }) => {
       });
     }, 60000); // Check mỗi 1 phút
     return () => clearInterval(interval);
-  }, [orders]);
+  }, [orders, isAdminAuthenticated]);
 
   const [rates, setRates] = useState(() => {
     const saved = localStorage.getItem('beauty_rates');
@@ -486,6 +599,14 @@ export const AppProvider = ({ children }) => {
     setPublishedProducts(publishedList);
     localStorage.setItem('tavy_published_products', JSON.stringify(publishedList));
 
+    // Đồng thời loại bỏ các sản phẩm đã xuất bản khỏi Hàng Chờ Duyệt
+    const publishedIds = new Set(publishedList.map(p => String(p.goodsNo || p.id)));
+    setPendingProducts(prev => prev.filter(p => !publishedIds.has(String(p.goodsNo || p.id))));
+    publishedList.forEach(p => {
+      const id = p.goodsNo || p.id;
+      if (id) deletePendingProductFromDB(id).catch(() => {});
+    });
+
     // Đồng bộ thời gian thực 100% sản phẩm chính thức lên Firebase Firestore
     try {
       for (const item of publishedList) {
@@ -504,8 +625,10 @@ export const AppProvider = ({ children }) => {
   };
 
   const createOrder = useCallback(async (orderData) => {
+    // Apply defense-in-depth sanitization on order payload
+    const safeData = sanitizeOrderPayload(orderData);
     const payload = {
-      ...orderData,
+      ...safeData,
       userEmail: authUser?.email || 'guest@tavy.vn',
       createdAt: new Date().toISOString(),
     };
@@ -515,9 +638,9 @@ export const AppProvider = ({ children }) => {
       try {
         const userDocRef = doc(db, 'users', authUser.uid);
         const profileUpdate = {
-          name: orderData.customerName || authUser.displayName || 'Khách hàng TAVY',
-          phone: orderData.customerPhone || '',
-          address: orderData.customerAddress || '',
+          name: safeData.customerName || authUser.displayName || 'Khách hàng TAVY',
+          phone: safeData.customerPhone || '',
+          address: safeData.customerAddress || '',
           updatedAt: new Date().toISOString()
         };
         await setDoc(userDocRef, profileUpdate, { merge: true });
@@ -557,11 +680,12 @@ export const AppProvider = ({ children }) => {
   }, [authUser, activePendingOrder, orders]);
 
   const createManualOrder = useCallback(async (orderData) => {
-    const manualPhone = orderData.customerPhone ? orderData.customerPhone.replace(/\D/g, '') : '';
-    const orderId = orderData.id || manualPhone || `${Date.now()}`;
+    const safeData = sanitizeOrderPayload(orderData);
+    const manualPhone = safeData.customerPhone ? safeData.customerPhone.replace(/\D/g, '') : '';
+    const orderId = safeData.id || manualPhone || `${Date.now()}`;
     const payload = {
       id: orderId,
-      ...orderData,
+      ...safeData,
       createdAt: orderData.createdAt || new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       userEmail: orderData.userEmail || 'admin_manual@tavykorea.vn',
@@ -592,6 +716,207 @@ export const AppProvider = ({ children }) => {
     return res;
   };
 
+  // ----- Customers / Users State (Unified Aggregation Source) -----
+  const [usersList, setUsersList] = useState(() => {
+    try {
+      const saved = localStorage.getItem('beauty_users');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  // Realtime subscription to Firestore 'users' collection
+  useEffect(() => {
+    const unsubscribe = subscribeToUsers(
+      (remoteUsers) => {
+        if (Array.isArray(remoteUsers)) {
+          setUsersList(remoteUsers);
+          try { localStorage.setItem('beauty_users', JSON.stringify(remoteUsers)); } catch {}
+        }
+      },
+      (err) => console.warn('Firestore users sync fallback:', err)
+    );
+    return () => unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('beauty_users', JSON.stringify(usersList));
+    } catch {}
+  }, [usersList]);
+
+  // Update Customer Profile and synchronize associated orders
+  const updateCustomer = async (customerId, customerData) => {
+    try {
+      const targetPhoneNorm = normalizePhone(customerData.phone);
+      const targetEmailNorm = normalizeEmail(customerData.email);
+      const prevPhoneNorm = normalizePhone(customerData.previousPhone);
+      const prevEmailNorm = normalizeEmail(customerData.previousEmail);
+
+      const targetDocId = customerData.uid || 
+        (customerId && !customerId.startsWith('guest_') ? customerId : 
+          (targetPhoneNorm ? `user_${targetPhoneNorm}` : 
+            (customerData.email ? customerData.email.replace(/[@.]/g, '_') : `user_${Date.now()}`)));
+
+      const userPayload = {
+        name: customerData.name || '',
+        displayName: customerData.name || '',
+        email: customerData.email || '',
+        phone: customerData.phone || '',
+        phoneNumber: customerData.phone || '',
+        address: customerData.address || '',
+        shippingAddress: customerData.address || '',
+        updatedAt: new Date().toISOString()
+      };
+
+      // 1. Update in Firestore collection 'users'
+      await updateUserInDB(targetDocId, userPayload);
+
+      // If document ID changed (e.g. from an old guest phone doc or previous phone doc), delete the old doc from Firestore
+      if (customerId && customerId !== targetDocId && !customerId.startsWith('guest_')) {
+        await deleteUserFromDB(customerId).catch(() => {});
+      }
+      if (prevPhoneNorm && prevPhoneNorm !== targetPhoneNorm) {
+        await deleteUserFromDB(`user_${prevPhoneNorm}`).catch(() => {});
+      }
+      if (prevEmailNorm && prevEmailNorm !== targetEmailNorm && customerData.previousEmail) {
+        await deleteUserFromDB(customerData.previousEmail.replace(/[@.]/g, '_')).catch(() => {});
+      }
+
+      // 2. Update usersList state cleanly without duplicate records
+      setUsersList(prev => {
+        const remaining = prev.filter(u => {
+          const uNormPhone = normalizePhone(u.phone || u.phoneNumber);
+          const uNormEmail = normalizeEmail(u.email);
+          if (u.uid === targetDocId || u.id === targetDocId) return false;
+          if (customerId && (u.id === customerId || u.uid === customerId)) return false;
+          if (targetPhoneNorm && uNormPhone && targetPhoneNorm === uNormPhone) return false;
+          if (targetEmailNorm && uNormEmail && targetEmailNorm === uNormEmail) return false;
+          if (prevPhoneNorm && uNormPhone && prevPhoneNorm === uNormPhone) return false;
+          if (prevEmailNorm && uNormEmail && prevEmailNorm === uNormEmail) return false;
+          return true;
+        });
+        return [...remaining, { id: targetDocId, uid: customerData.uid || targetDocId, ...userPayload }];
+      });
+
+      // 3. Synchronize all associated orders in Firestore & in local state
+      const targetOrderIds = new Set(customerData.orderIds || []);
+
+      const updatePromises = [];
+      const updatedOrders = orders.map(order => {
+        const orderPhoneNorm = normalizePhone(order.customerPhone || order.phone);
+        const orderEmailNorm = normalizeEmail(order.userEmail || order.customerEmail || order.email);
+        const isMatched = targetOrderIds.has(order.id) ||
+                          (customerData.uid && (order.userId === customerData.uid || order.uid === customerData.uid)) ||
+                          (targetEmailNorm && orderEmailNorm && targetEmailNorm === orderEmailNorm) ||
+                          (targetPhoneNorm && orderPhoneNorm && targetPhoneNorm === orderPhoneNorm) ||
+                          (prevEmailNorm && orderEmailNorm && prevEmailNorm === orderEmailNorm) ||
+                          (prevPhoneNorm && orderPhoneNorm && prevPhoneNorm === orderPhoneNorm);
+
+        if (isMatched) {
+          const orderUpdates = {
+            customerName: customerData.name,
+            customerPhone: targetPhoneNorm || customerData.phone,
+            userEmail: targetEmailNorm ? customerData.email : (order.userEmail || ''),
+            customerEmail: targetEmailNorm ? customerData.email : (order.customerEmail || ''),
+            shippingAddress: customerData.address
+          };
+          updatePromises.push(updateOrderInDB(order.id, orderUpdates).catch(err => console.warn('Sync order in DB failed:', err)));
+          return {
+            ...order,
+            ...orderUpdates
+          };
+        }
+        return order;
+      });
+
+      await Promise.allSettled(updatePromises);
+
+      setOrders(updatedOrders);
+      try { localStorage.setItem('beauty_orders', JSON.stringify(updatedOrders)); } catch {}
+
+      return { success: true };
+    } catch (err) {
+      console.error('updateCustomer error:', err);
+      return { success: false, error: err };
+    }
+  };
+
+  // Delete Customer & All Associated Orders
+  const deleteCustomerAndOrders = async (customer) => {
+    try {
+      if (!customer) return { success: false };
+
+      const targetPhoneNorm = normalizePhone(customer.phone);
+      const targetEmailNorm = normalizeEmail(customer.email);
+
+      // 1. Delete user from Firestore users collection (all matching doc IDs)
+      const targetDocId = customer.uid || (customer.id && !customer.id.startsWith('guest_') ? customer.id : null);
+      const uidsToDelete = new Set();
+      if (targetDocId) uidsToDelete.add(targetDocId);
+      if (customer.uid) uidsToDelete.add(customer.uid);
+      if (customer.id && !customer.id.startsWith('guest_')) uidsToDelete.add(customer.id);
+      if (targetPhoneNorm) uidsToDelete.add(`user_${targetPhoneNorm}`);
+      if (customer.email) uidsToDelete.add(customer.email.replace(/[@.]/g, '_'));
+
+      usersList.forEach(u => {
+        const uNormEmail = normalizeEmail(u.email);
+        const uNormPhone = normalizePhone(u.phone || u.phoneNumber);
+        const isMatchedByUid = customer.uid && (u.uid === customer.uid || u.id === customer.uid);
+        const isMatchedByPhone = targetPhoneNorm && uNormPhone && targetPhoneNorm === uNormPhone;
+        const isMatchedByEmail = targetEmailNorm && uNormEmail && targetEmailNorm === uNormEmail;
+        if (isMatchedByUid || isMatchedByPhone || isMatchedByEmail) {
+          if (u.id) uidsToDelete.add(u.id);
+          if (u.uid) uidsToDelete.add(u.uid);
+        }
+      });
+
+      await Promise.allSettled(Array.from(uidsToDelete).map(uid => deleteUserFromDB(uid)));
+
+      // 2. Identify and delete all associated orders concurrently
+      const targetOrders = Array.isArray(customer.orders) ? customer.orders : [];
+      const orderIdsToDelete = new Set(targetOrders.map(o => o.id));
+
+      orders.forEach(o => {
+        const oPhoneNorm = normalizePhone(o.customerPhone || o.phone);
+        const oEmailNorm = normalizeEmail(o.userEmail || o.customerEmail || o.email);
+        const isMatchedByUid = customer.uid && (o.userId === customer.uid || o.uid === customer.uid);
+        const isMatchedByPhone = targetPhoneNorm && oPhoneNorm && targetPhoneNorm === oPhoneNorm;
+        const isMatchedByEmail = targetEmailNorm && oEmailNorm && targetEmailNorm === oEmailNorm;
+
+        if (isMatchedByUid || isMatchedByPhone || isMatchedByEmail) {
+          orderIdsToDelete.add(o.id);
+        }
+      });
+
+      // Concurrent batch deletion via Promise.allSettled
+      await Promise.allSettled(Array.from(orderIdsToDelete).map(orderId => deleteOrderFromDB(orderId)));
+
+      // 3. Update memory states thoroughly
+      setUsersList(prev => prev.filter(u => {
+        const uNormEmail = normalizeEmail(u.email);
+        const uNormPhone = normalizePhone(u.phone || u.phoneNumber);
+        if (customer.uid && (u.uid === customer.uid || u.id === customer.uid)) return false;
+        if (customer.id && (u.id === customer.id || u.uid === customer.id)) return false;
+        if (targetDocId && (u.id === targetDocId || u.uid === targetDocId)) return false;
+        if (uidsToDelete.has(u.id) || uidsToDelete.has(u.uid)) return false;
+        if (targetEmailNorm && uNormEmail && targetEmailNorm === uNormEmail) return false;
+        if (targetPhoneNorm && uNormPhone && targetPhoneNorm === uNormPhone) return false;
+        return true;
+      }));
+
+      const remainingOrders = orders.filter(o => !orderIdsToDelete.has(o.id));
+      setOrders(remainingOrders);
+      try { localStorage.setItem('beauty_orders', JSON.stringify(remainingOrders)); } catch {}
+
+      return { success: true, deletedOrderCount: orderIdsToDelete.size };
+    } catch (err) {
+      console.error('deleteCustomerAndOrders error:', err);
+      return { success: false, error: err };
+    }
+  };
+
   // ----- Pending Products State -----
   const [pendingProducts, setPendingProducts] = useState(() => {
     try {
@@ -617,6 +942,21 @@ export const AppProvider = ({ children }) => {
     });
     return () => unsubscribe();
   }, []);
+
+  // Tự động loại bỏ khỏi Hàng Chờ Duyệt (pendingProducts) nếu sản phẩm ĐÃ TỒN TẠI trong Kho Sản Phẩm (products)
+  useEffect(() => {
+    if (products.length > 0 && pendingProducts.length > 0) {
+      const liveIds = new Set(products.map(p => String(p.goodsNo || p.id)));
+      const duplicates = pendingProducts.filter(p => liveIds.has(String(p.goodsNo || p.id)));
+      if (duplicates.length > 0) {
+        setPendingProducts(prev => prev.filter(p => !liveIds.has(String(p.goodsNo || p.id))));
+        duplicates.forEach(d => {
+          const id = d.goodsNo || d.id;
+          if (id) deletePendingProductFromDB(id).catch(() => {});
+        });
+      }
+    }
+  }, [products, pendingProducts]);
 
   useEffect(() => {
     try {
@@ -709,33 +1049,38 @@ export const AppProvider = ({ children }) => {
           const mainImg = decoded.productImage || decoded.image || decoded.img || (decoded.images && decoded.images[0]) || (decoded.imgs && decoded.imgs[0]) || '';
           const albumImgs = decoded.images || decoded.imgs || (mainImg ? [mainImg] : []);
 
+          const safeProductUrl = isValidHttpUrl(decoded.url || decoded.u || '') ? (decoded.url || decoded.u || '').trim() : '';
+          const safeMainImg = isValidHttpUrl(mainImg) ? mainImg.trim() : '';
+          const safeAlbumImgs = (Array.isArray(albumImgs) ? albumImgs : []).filter(img => isValidHttpUrl(img));
+          const safeDetailImgs = (Array.isArray(decoded.detailImages) ? decoded.detailImages : []).filter(img => isValidHttpUrl(img));
+
           const newPendingItem = {
-            goodsNo: goodsNo,
-            name: decoded.name || decoded.n || 'Sản phẩm Olive Young',
-            nameKr: decoded.nameKr || decoded.nk || '',
+            goodsNo: sanitizeText(goodsNo),
+            name: sanitizeText(decoded.name || decoded.n || 'Sản phẩm Olive Young'),
+            nameKr: sanitizeText(decoded.nameKr || decoded.nk || ''),
             foreignPrice: parsedPrice,
             price: parsedPrice,
             originalPrice: decoded.originalPrice || decoded.op || parsedPrice,
             discountPercent: decoded.discountPercent || 0,
-            productImage: mainImg,
-            images: albumImgs,
-            detailImages: decoded.detailImages || [],
+            productImage: safeMainImg,
+            images: safeAlbumImgs,
+            detailImages: safeDetailImgs,
             photoReviews: decoded.photoReviews || [],
-            brand: decoded.brand || decoded.b || 'Korea Brand',
-            brandKr: decoded.brandKr || '',
-            category: decoded.category || decoded.cat || 'skincare',
-            subCategory: decoded.subCategory || decoded.sub || 'skincare',
-            capacity: decoded.capacity || decoded.cap || '',
-            skinType: decoded.skinType || decoded.st || '',
-            ingredients: decoded.ingredients || '',
-            expirationDate: decoded.expirationDate || '',
-            options: decoded.options || '1 Hộp',
-            origin: decoded.origin || 'Store Olive Young Korea',
-            description: decoded.description || decoded.d || 'Sản phẩm chính hãng nội địa Hàn Quốc.',
-            usage: decoded.usage || decoded.u || 'Xem chi tiết trên bao bì.',
+            brand: sanitizeText(decoded.brand || decoded.b || 'Korea Brand'),
+            brandKr: sanitizeText(decoded.brandKr || ''),
+            category: sanitizeText(decoded.category || decoded.cat || 'skincare'),
+            subCategory: sanitizeText(decoded.subCategory || decoded.sub || 'skincare'),
+            capacity: sanitizeText(decoded.capacity || decoded.cap || ''),
+            skinType: sanitizeText(decoded.skinType || decoded.st || ''),
+            ingredients: sanitizeText(decoded.ingredients || ''),
+            expirationDate: sanitizeText(decoded.expirationDate || ''),
+            options: sanitizeText(decoded.options || '1 Hộp'),
+            origin: sanitizeText(decoded.origin || 'Store Olive Young Korea'),
+            description: sanitizeText(decoded.description || decoded.d || 'Sản phẩm chính hãng nội địa Hàn Quốc.'),
+            usage: sanitizeText(decoded.usage || decoded.u || 'Xem chi tiết trên bao bì.'),
             rating: Number.isFinite(Number(decoded.rating)) ? Number(decoded.rating) : 0,
             reviewsCount: (decoded.photoReviews && decoded.photoReviews.length) || (Number.isFinite(Number(decoded.reviewsCount)) ? Number(decoded.reviewsCount) : 0),
-            productUrl: decoded.url || decoded.u || '',
+            productUrl: safeProductUrl,
             scrapedAt: new Date().toISOString()
           };
 
@@ -777,6 +1122,10 @@ export const AppProvider = ({ children }) => {
       } catch {}
       return updated;
     });
+
+    // Tự động xoá khỏi Hàng Chờ Duyệt (pendingProducts) nếu có
+    setPendingProducts(prev => prev.filter(p => p.goodsNo !== cleanProduct.goodsNo));
+    deletePendingProductFromDB(cleanProduct.goodsNo).catch(() => {});
 
     saveProductToDB(cleanProduct).catch(err => console.warn('Firestore sync product failed:', err));
   };
@@ -916,7 +1265,7 @@ export const AppProvider = ({ children }) => {
     const krwRate = rates?.KRW?.rate || 19.5;
     const serviceFeeMultiplier = 1 + (rates?.serviceFeePercent ?? 5) / 100;
     const newTotalVnd = newItems.reduce((sum, item) => {
-      const price = item.price || Math.round((item.foreignPrice || 0) * krwRate * serviceFeeMultiplier);
+      const price = item.priceVnd || item.price || Math.round((Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon) || 0) * krwRate * serviceFeeMultiplier);
       return sum + price * (item.qty || 1);
     }, 0);
 
@@ -1035,7 +1384,7 @@ export const AppProvider = ({ children }) => {
     }
 
     try {
-      localStorage.removeItem('admin_auth');
+      clearAdminSession();
       setIsAdminAuthenticated(false);
       const { user } = await signInWithEmailAndPassword(auth, identifier, password);
       return { success: true, user };
@@ -1046,7 +1395,7 @@ export const AppProvider = ({ children }) => {
   };
 
   const loginWithGoogleAuth = async () => {
-    localStorage.removeItem('admin_auth');
+    clearAdminSession();
     setIsAdminAuthenticated(false);
     const result = await loginWithGoogle();
     if (result.success && result.user) {
@@ -1102,7 +1451,7 @@ export const AppProvider = ({ children }) => {
 
   const logoutUser = async () => {
     localStorage.removeItem('user_auth');
-    localStorage.removeItem('admin_auth');
+    clearAdminSession();
     sessionStorage.clear();
     setAuthUser(null);
     setProfile(null);
@@ -1117,9 +1466,13 @@ export const AppProvider = ({ children }) => {
 
   const updateUserProfile = async (updates) => {
     if (!authUser) return { success: false, error: new Error('Not authenticated'), message: 'Chưa đăng nhập' };
+    const safeUpdates = { ...updates };
+    if ('name' in safeUpdates) safeUpdates.name = sanitizeText(safeUpdates.name);
+    if ('phone' in safeUpdates) safeUpdates.phone = sanitizePhone(safeUpdates.phone);
+    if ('address' in safeUpdates) safeUpdates.address = sanitizeText(safeUpdates.address);
     const profileRef = doc(db, 'users', authUser.uid);
     try {
-      await setDoc(profileRef, { ...updates, email: authUser.email }, { merge: true });
+      await setDoc(profileRef, { ...safeUpdates, email: authUser.email }, { merge: true });
       const snap = await getDoc(profileRef);
       const data = snap.data();
       setProfile(data);
@@ -1242,6 +1595,11 @@ export const AppProvider = ({ children }) => {
     createOrder,
     createManualOrder,
     deleteOrder,
+    // Customer / Users State & Handlers
+    usersList,
+    setUsersList,
+    updateCustomer,
+    deleteCustomerAndOrders,
     // DB service functions (exposed for other components)
     subscribeToOrders,
     createOrderInDB,
@@ -1254,6 +1612,10 @@ export const AppProvider = ({ children }) => {
     saveProductToDB,
     deleteProductFromDB,
     deleteOrderFromDB,
+    subscribeToUsers,
+    updateUserInDB,
+    deleteUserFromDB,
+    updateOrderInDB
   };
 
   return <AppContext.Provider value={contextValue}>{children}</AppContext.Provider>;

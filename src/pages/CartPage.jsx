@@ -7,6 +7,14 @@ import { Trash2, Plus, Minus, CheckCircle, Globe, Zap, CreditCard, Loader2, User
 import CascadingAddressSelector from '../components/CascadingAddressSelector';
 import Footer from '../components/Footer';
 import confetti from 'canvas-confetti';
+import {
+  isHoneypotTriggered,
+  checkOrderRateLimit,
+  recordOrderCreationTimestamp,
+  sanitizeText,
+  sanitizePhone,
+  isValidVietnamesePhone
+} from '../utils/securityUtils';
 
 export default function CartPage() {
   const { cart, removeFromCart, updateCartQty, clearCart, currentUser, createOrder, rates, orders } = useContext(AppContext);
@@ -24,6 +32,7 @@ export default function CartPage() {
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
   const [note, setNote] = useState('');
+  const [honeypot, setHoneypot] = useState('');
   const [success, setSuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
@@ -43,8 +52,17 @@ export default function CartPage() {
   const formatVnd = (n) => (n || n === 0) ? `${new Intl.NumberFormat('vi-VN').format(Math.round(n))} VNĐ` : '0 VNĐ';
   const formatKrw = (n) => new Intl.NumberFormat('ko-KR').format(n) + ' ₩';
 
-  const subTotalKrw = cart.reduce((sum, item) => sum + (item.foreignPrice * item.qty), 0);
-  const subTotalVnd = subTotalKrw * krwRate * serviceFeeMultiplier;
+  // Hàm tính đơn giá VND cho từng sản phẩm (Single Source of Truth, làm tròn chính xác theo đồng)
+  const getItemUnitVnd = (item) => {
+    if (typeof item.priceVnd === 'number' && item.priceVnd > 0) {
+      return Math.round(item.priceVnd);
+    }
+    const won = Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0;
+    return Math.round(won * krwRate * serviceFeeMultiplier);
+  };
+
+  const subTotalKrw = cart.reduce((sum, item) => sum + ((Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0) * (Number(item.qty) || 1)), 0);
+  const subTotalVnd = cart.reduce((sum, item) => sum + (getItemUnitVnd(item) * (Number(item.qty) || 1)), 0);
   const MIN_ORDER_AMOUNT_VND = 1000000; // Đơn hàng tối thiểu 1.000.000 VNĐ
   const isMinOrderMet = subTotalVnd >= MIN_ORDER_AMOUNT_VND;
   const shortfallVnd = Math.max(0, MIN_ORDER_AMOUNT_VND - subTotalVnd);
@@ -54,6 +72,24 @@ export default function CartPage() {
     e.preventDefault();
     if (cart.length === 0 || isSubmitting) return;
 
+    // 0. Bẫy Honeypot vô hình: Nếu trường ẩn bị điền giá trị -> Khẳng định là bot
+    if (isHoneypotTriggered(honeypot)) {
+      console.warn('⚠️ Phát hiện bot order qua Honeypot Trap, từ chối tạo đơn âm thầm.');
+      setIsSubmitting(true);
+      setTimeout(() => {
+        setIsSubmitting(false);
+        setErrorMsg('Yêu cầu không hợp lệ. Vui lòng tải lại trang và thử lại.');
+      }, 600);
+      return;
+    }
+
+    // 0.1. Kiểm tra giới hạn tần suất tạo đơn (Rate Limiting: Tối đa 3 đơn / 5 phút)
+    const rateLimit = checkOrderRateLimit();
+    if (!rateLimit.allowed) {
+      setErrorMsg(rateLimit.message);
+      return;
+    }
+
     // 1. Kiểm tra đơn hàng tối thiểu
     if (!isMinOrderMet) {
       setErrorMsg(`Đơn hàng hiện tại là ${formatVnd(subTotalVnd)}, chưa đạt mức tối thiểu 1.000.000 VNĐ. Vui lòng chọn thêm ${formatVnd(shortfallVnd)} để tiến hành thanh toán.`);
@@ -61,26 +97,26 @@ export default function CartPage() {
     }
 
     // 2. Validate Họ và Tên (bắt buộc, tối thiểu 2 ký tự)
-    const trimmedName = name.trim();
+    const trimmedName = sanitizeText(name);
     if (!trimmedName || trimmedName.length < 2) {
       setErrorMsg('Vui lòng điền đầy đủ Họ và Tên của người nhận hàng.');
       return;
     }
 
     // 3. Validate Số điện thoại (bắt buộc đúng 10 số, chuẩn đầu số VN 03, 05, 07, 08, 09)
-    const cleanPhone = phone.replace(/\D/g, '');
-    const vnPhoneRegex = /^0(3|5|7|8|9)[0-9]{8}$/;
-    if (!cleanPhone || !vnPhoneRegex.test(cleanPhone)) {
+    const cleanPhone = sanitizePhone(phone);
+    if (!cleanPhone || !isValidVietnamesePhone(cleanPhone)) {
       setErrorMsg('Số điện thoại không hợp lệ! Vui lòng nhập đúng số điện thoại di động Việt Nam gồm 10 chữ số (bắt đầu bằng 03, 05, 07, 08, 09) để kiểm tra mã đơn hàng và đối soát tiền cọc.');
       return;
     }
 
     // 4. Validate Địa chỉ giao hàng (bắt buộc tối thiểu 6 ký tự)
-    const trimmedAddress = address.trim();
+    const trimmedAddress = sanitizeText(address);
     if (!trimmedAddress || trimmedAddress.length < 6) {
       setErrorMsg('Vui lòng chọn hoặc điền đầy đủ Địa chỉ nhận hàng (Tỉnh/Thành phố, Quận/Huyện, Phường/Xã).');
       return;
     }
+    const cleanNote = sanitizeText(note);
     setErrorMsg('');
 
     setIsSubmitting(true);
@@ -90,17 +126,17 @@ export default function CartPage() {
         ? { bankName: '우라은행', accountNumber: '1002959863658' }
         : { bankName: 'MBbank', accountNumber: '1330042000' };
 
-      const totalAmountVnd = Math.round(subTotalVnd);
+      const totalAmountVnd = subTotalVnd;
       const orderData = {
         id: cleanPhone, // Dùng trực tiếp SĐT khách hàng làm định danh chính, bỏ hoàn toàn mã ORD
         customerName: trimmedName,
         customerPhone: cleanPhone,
         customerAddress: trimmedAddress,
-        customerNote: note.trim(),
+        customerNote: cleanNote,
         country,
         items: cart.map(item => ({
           ...item,
-          priceVnd: Math.round((Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0) * krwRate * serviceFeeMultiplier)
+          priceVnd: getItemUnitVnd(item)
         })),
         totalVnd: totalAmountVnd,
         totalAmount: totalAmountVnd,
@@ -113,6 +149,7 @@ export default function CartPage() {
       };
 
       const res = await createOrder(orderData);
+      recordOrderCreationTimestamp();
 
       // Làm sạch giỏ hàng sau khi đã chuyển thành đơn hàng thành công
       clearCart();
@@ -218,10 +255,10 @@ export default function CartPage() {
                       </div>
                       <div style={{ textAlign: 'right' }}>
                         <div style={{ fontWeight: 800, color: 'var(--text-dark)', fontSize: '1.05rem' }}>
-                          {formatKrw(item.foreignPrice * item.qty)}
+                          {formatKrw((Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0) * (Number(item.qty) || 1))}
                         </div>
                         <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#2563EB', marginTop: '2px' }}>
-                          ~ {formatVnd(Math.round(item.foreignPrice * item.qty * krwRate * serviceFeeMultiplier))}
+                          ~ {formatVnd(getItemUnitVnd(item) * (Number(item.qty) || 1))}
                         </div>
                       </div>
                     </div>
@@ -320,6 +357,33 @@ export default function CartPage() {
               )}
 
               <form onSubmit={handleSubmit}>
+                {/* Invisible Honeypot Trap: Bẫy bot tự động điền form, người thật không thấy và không thể focus */}
+                <div
+                  aria-hidden="true"
+                  style={{
+                    opacity: 0,
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    height: 0,
+                    width: 0,
+                    zIndex: -1,
+                    overflow: 'hidden',
+                    pointerEvents: 'none'
+                  }}
+                >
+                  <label htmlFor="company_website">Website doanh nghiệp</label>
+                  <input
+                    id="company_website"
+                    type="text"
+                    name="company_website"
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
+
                 <div className="form-group">
                   <label className="form-label">
                     Họ và tên người nhận <span style={{ color: '#EF4444' }}>*</span>

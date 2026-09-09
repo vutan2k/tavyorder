@@ -156,6 +156,7 @@ export default function ProofMediaModal({ media, onClose }) {
             <iframe
               src={embedUrl}
               title={media.title || 'Video Player'}
+              sandbox="allow-scripts allow-same-origin allow-presentation"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               style={{
@@ -213,7 +214,7 @@ export default function ProofMediaModal({ media, onClose }) {
             gap: '10px'
           }}
         >
-          {media.url ? (
+          {media.url && (media.url.startsWith('http://') || media.url.startsWith('https://')) ? (
             <a
               href={media.url}
               target="_blank"

@@ -44,6 +44,17 @@ test('[F17-2] getOrderTotalVnd with multi-item cart items and service fee multip
 
   const expectedTotal = (Math.round(10000 * 19.5 * 1.05) * 2) + 150000;
   assertEquals(getOrderTotalVnd(multiItemOrder, standardRates), expectedTotal, 'Multi-item cart total should correctly include service fee');
+  assertEquals(getOrderTotalVnd(multiItemOrder, 19.5, 5.0), expectedTotal, 'Multi-item cart total should work with numeric krwRate and serviceFee args');
+
+  // Exact 0-dong discrepancy test with fractional .5 amounts
+  const fractionalOrder = {
+    items: [
+      { foreignPrice: 10700, qty: 1 }, // 10700 * 19.1 * 1.35 = 275899.5 -> 275900
+      { foreignPrice: 15500, qty: 1 }  // 15500 * 19.1 * 1.35 = 399667.5 -> 399668
+    ]
+  };
+  const fractionalRates = { KRW: { rate: 19.1 }, serviceFeePercent: 35 };
+  assertEquals(getOrderTotalVnd(fractionalOrder, fractionalRates), 275900 + 399668, 'Sum of line items must equal order total with 0-dong discrepancy');
 });
 
 test('[F17-3] getOrderTotalVnd with single foreign price fallback and custom exchange rate', () => {

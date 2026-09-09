@@ -263,6 +263,9 @@ export const saveProductToDB = async (product) => {
       brand: String(product.brand || 'Korea Brand'),
       brandKr: String(product.brandKr || product.brand || ''),
       category: String(product.category || 'skincare'),
+      subCategory: String(product.subCategory || ''),
+      categoryLabel: String(product.categoryLabel || ''),
+      categoryKr: String(product.categoryKr || ''),
       foreignPrice: Number(product.foreignPrice) || 0,
       productImage: String(product.productImage || ''),
       images: Array.isArray(product.images) && product.images.length > 0
@@ -348,6 +351,9 @@ export const savePendingProductToDB = async (product) => {
       brand: String(product.brand || 'Korea Brand'),
       brandKr: String(product.brandKr || product.brand || ''),
       category: String(product.category || 'skincare'),
+      subCategory: String(product.subCategory || ''),
+      categoryLabel: String(product.categoryLabel || ''),
+      categoryKr: String(product.categoryKr || ''),
       foreignPrice: Number(product.foreignPrice || product.price) || 0,
       price: Number(product.price || product.foreignPrice) || 0,
       productImage: String(product.productImage || ''),
@@ -384,6 +390,81 @@ export const deletePendingProductFromDB = async (goodsNo) => {
     return { success: true };
   } catch (err) {
     console.warn("Firestore deletePendingProduct error:", err);
+    return { success: false, error: err };
+  }
+};
+
+/**
+ * 14. Subscribe to Realtime Users (Admin)
+ */
+export const subscribeToUsers = (onUpdate, onError) => {
+  try {
+    const colRef = collection(db, USERS_COLLECTION);
+    return onSnapshot(colRef, (snapshot) => {
+      const usersList = snapshot.docs.map(docSnap => ({
+        id: docSnap.id,
+        uid: docSnap.id,
+        ...docSnap.data()
+      }));
+      onUpdate(usersList);
+    }, (err) => {
+      console.warn("Firestore users listener fallback:", err);
+      if (onError) onError(err);
+    });
+  } catch (err) {
+    console.warn("Firestore subscribeToUsers error:", err);
+    if (onError) onError(err);
+    return () => {};
+  }
+};
+
+/**
+ * 15. Update User Profile in DB (Admin)
+ */
+export const updateUserInDB = async (userId, data) => {
+  try {
+    if (!userId) return { success: false, error: 'missing userId' };
+    const docRef = doc(db, USERS_COLLECTION, String(userId));
+    await setDoc(docRef, {
+      ...data,
+      updatedAt: serverTimestamp()
+    }, { merge: true });
+    return { success: true };
+  } catch (err) {
+    console.warn("Firestore updateUser error:", err);
+    return { success: false, error: err };
+  }
+};
+
+/**
+ * 16. Delete User from Firestore (Admin)
+ */
+export const deleteUserFromDB = async (userId) => {
+  try {
+    if (!userId) return { success: false, error: 'missing userId' };
+    const docRef = doc(db, USERS_COLLECTION, String(userId));
+    await deleteDoc(docRef);
+    return { success: true };
+  } catch (err) {
+    console.warn("Firestore deleteUser error:", err);
+    return { success: false, error: err };
+  }
+};
+
+/**
+ * 17. Update Order Details (Admin)
+ */
+export const updateOrderInDB = async (orderId, updates) => {
+  try {
+    if (!orderId) return { success: false, error: 'missing orderId' };
+    const docRef = doc(db, ORDERS_COLLECTION, String(orderId));
+    await updateDoc(docRef, {
+      ...updates,
+      updatedAt: serverTimestamp()
+    });
+    return { success: true };
+  } catch (err) {
+    console.warn("Firestore updateOrder error:", err);
     return { success: false, error: err };
   }
 };

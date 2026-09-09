@@ -482,16 +482,16 @@ export default function PaymentPage() {
                     order.items.map((item, idx) => (
                       <div key={idx} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.85rem' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0, flex: 1 }}>
-                          {item.image && (
-                            <img src={item.image} alt={item.name} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '8px', border: '1px solid #E5E7EB' }} />
+                          {(item.productImage || item.image) && (
+                            <img src={item.productImage || item.image} alt={item.name} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '8px', border: '1px solid #E5E7EB' }} />
                           )}
                           <div style={{ minWidth: 0, textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>
                             <div style={{ fontWeight: 600, color: 'var(--text-dark)' }}>{item.name || 'Sản phẩm mua hộ'}</div>
-                            <div style={{ color: '#9CA3AF', fontSize: '0.76rem' }}>Số lượng: {item.qty || 1} • Giá gốc: ₩{(item.foreignPrice || 0).toLocaleString()}</div>
+                            <div style={{ color: '#9CA3AF', fontSize: '0.76rem' }}>Số lượng: {item.qty || 1} • Giá gốc: ₩{(Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0).toLocaleString()}</div>
                           </div>
                         </div>
                         <div style={{ fontWeight: 700, color: 'var(--text-dark)', marginLeft: '12px' }}>
-                          {formatVnd((item.foreignPrice || 0) * (item.qty || 1) * krwRate * (1 + (rates?.serviceFeePercent || 5) / 100))}
+                          {formatVnd((item.priceVnd || Math.round((Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0) * krwRate * (1 + (rates?.serviceFeePercent || 5) / 100))) * (Number(item.qty || item.quantity) || 1))}
                         </div>
                       </div>
                     ))

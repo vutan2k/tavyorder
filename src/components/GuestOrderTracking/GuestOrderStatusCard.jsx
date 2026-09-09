@@ -817,7 +817,7 @@ export default function GuestOrderStatusCard({
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '18px' }}>
           {items.map((item, iIdx) => {
-            const itemPrice = item.price || Math.round((item.foreignPrice || 0) * krwRate * serviceFeeMultiplier);
+            const itemPrice = item.priceVnd || item.price || Math.round((Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon) || 0) * krwRate * serviceFeeMultiplier);
             const itemQty = item.qty || item.quantity || 1;
             const lineTotal = itemPrice * itemQty;
 
