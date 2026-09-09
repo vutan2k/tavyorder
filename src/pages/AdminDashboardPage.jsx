@@ -160,6 +160,7 @@ export default function AdminDashboardPage() {
   const getTabTitle = (id) => {
     switch (id) {
       case 'overview': return 'Tổng Quan';
+      case 'ai-manager': return 'Phó Tướng AI';
       case 'orders': return 'Đơn Hàng';
       case 'users': return 'Khách Hàng';
       case 'products': return 'Kho Sản Phẩm';
@@ -221,7 +222,7 @@ export default function AdminDashboardPage() {
 
     // 3. Tab swipe (when sidebar is closed and not inside table/input)
     if (!sidebarOpen && !touchStartRef.current.isIgnore && deltaTime < 450 && Math.abs(deltaX) > 65 && Math.abs(deltaY) < 45) {
-      const tabOrder = ['overview', 'orders', 'users', 'products', 'sourcing', 'settings'];
+      const tabOrder = ['overview', 'ai-manager', 'orders', 'users', 'products', 'sourcing', 'settings'];
       const currentIndex = tabOrder.indexOf(activeTab);
 
       if (deltaX < 0) {
@@ -341,6 +342,7 @@ export default function AdminDashboardPage() {
       <div className="admin-mobile-pills-bar" data-swipe-ignore="true">
         {[
           { id: 'overview', label: 'Tổng Quan' },
+          { id: 'ai-manager', label: '🤖 Phó Tướng AI' },
           { id: 'orders', label: `Đơn Hàng (${orders.length})` },
           { id: 'users', label: `Khách Hàng (${totalCustomers})` },
           { id: 'products', label: `Kho SP (${products.length})` },
@@ -586,6 +588,65 @@ export default function AdminDashboardPage() {
               <p style={{ margin: '4px 0 0 0', color: '#64748B', fontSize: '0.85rem' }}>
                 Bảng theo dõi các chỉ số quan trọng và danh sách công việc cần xử lý ngay hôm nay.
               </p>
+            </div>
+
+            {/* 🤖 Executive AI Commander Banner */}
+            <div
+              onClick={() => handleSwitchTab('ai-manager')}
+              style={{
+                background: isDark 
+                  ? 'linear-gradient(135deg, #1E1B4B 0%, #0F172A 100%)' 
+                  : 'linear-gradient(135deg, #EEF2FF 0%, #F8FAFC 100%)',
+                border: '2px solid #6366F1',
+                borderRadius: '14px',
+                padding: '16px 20px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                cursor: 'pointer',
+                boxShadow: '0 4px 12px rgba(99, 102, 241, 0.15)',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                <div style={{
+                  width: '44px',
+                  height: '44px',
+                  borderRadius: '12px',
+                  backgroundColor: '#6366F1',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: '#FFF',
+                  flexShrink: 0
+                }}>
+                  <Bot size={24} />
+                </div>
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span style={{ fontSize: '1rem', fontWeight: 900, color: isDark ? '#FFF' : '#1E1B4B' }}>
+                      🤖 PHÓ TƯỚNG AI (HERMES)
+                    </span>
+                    <span style={{ 
+                      fontSize: '0.65rem', 
+                      backgroundColor: '#10B981', 
+                      color: '#FFF', 
+                      padding: '2px 8px', 
+                      borderRadius: '12px', 
+                      fontWeight: 800 
+                    }}>
+                      ONLINE
+                    </span>
+                  </div>
+                  <div style={{ fontSize: '0.78rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '2px' }}>
+                    Sẵn sàng nhận lệnh điều hành, kiểm tra đơn hàng, tự động đồng bộ giá Olive Young & quản lý hệ thống.
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#6366F1', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
+                <span>Vào chỉ đạo</span>
+                <ChevronRight size={18} />
+              </div>
             </div>
 
             {/* 4 Essential KPI Cards */}
@@ -1166,8 +1227,9 @@ export default function AdminDashboardPage() {
       <nav className="admin-mobile-bottom-nav" data-swipe-ignore="true">
         {[
           { id: 'overview', label: 'Tổng Quan', icon: BarChart3, badge: urgentQueue.needQuote.length > 0 ? urgentQueue.needQuote.length : null, badgeColor: '#EF4444' },
+          { id: 'ai-manager', label: 'Phó Tướng', icon: Bot, badge: 'AI', badgeColor: '#C5A059' },
           { id: 'orders', label: 'Đơn Hàng', icon: FileText, badge: orders.length > 0 ? orders.length : null, badgeColor: '#2563EB' },
-          { id: 'users', label: 'Khách Hàng', icon: Users, badge: totalCustomers > 0 ? totalCustomers : null, badgeColor: '#8B5CF6' },
+          { id: 'users', label: 'Khách', icon: Users, badge: totalCustomers > 0 ? totalCustomers : null, badgeColor: '#8B5CF6' },
           { id: 'products', label: 'Kho SP', icon: ShoppingBag, badge: products.length > 0 ? products.length : null, badgeColor: '#10B981' },
           { id: 'sourcing', label: 'Nạp Hàng', icon: Zap, badge: pendingProducts?.length > 0 ? pendingProducts.length : null, badgeColor: '#F59E0B' },
           { id: 'settings', label: 'Cài Đặt', icon: Sliders }
