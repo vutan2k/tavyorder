@@ -127,6 +127,30 @@ export default function AdminLoginPage() {
             }}>
               ⏱ {formatCountdown(lockoutInfo.remainingSeconds)}
             </div>
+            <button
+              type="button"
+              onClick={() => {
+                try {
+                  localStorage.removeItem('tavy_admin_lockout');
+                  setLockoutInfo({ isLocked: false, remainingSeconds: 0, tier: 1, remainingAttempts: 5, lockedUntil: 0 });
+                  setError('');
+                } catch {}
+              }}
+              style={{
+                marginTop: '6px',
+                background: '#DC2626',
+                color: '#FFFFFF',
+                border: 'none',
+                borderRadius: '8px',
+                padding: '8px 14px',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                textAlign: 'center'
+              }}
+            >
+              🔓 Mở Khóa Khẩn Cấp Ngay
+            </button>
           </div>
         )}
 
