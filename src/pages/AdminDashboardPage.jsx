@@ -6,6 +6,7 @@ import AdminProductCatalog from '../components/AdminProductCatalog';
 import AdminProductSourcing from '../components/AdminProductSourcing';
 import AdminOrderManager from '../components/AdminOrderManager';
 import AdminUserManager from '../components/AdminUserManager';
+import AdminAiManager from '../components/AdminAiManager';
 import { APP_VERSION } from '../data/appVersion';
 import { getOrderTotalVnd } from '../utils/priceCalculator';
 import { aggregateCustomers } from '../utils/customerAggregator';
@@ -31,7 +32,8 @@ import {
   Sun,
   Moon,
   Users,
-  FileText
+  FileText,
+  Bot
 } from 'lucide-react';
 
 export default function AdminDashboardPage() {
@@ -73,6 +75,8 @@ export default function AdminDashboardPage() {
       setActiveTab('orders');
     } else if (path.includes('/users') || path.includes('/customers')) {
       setActiveTab('users');
+    } else if (path.includes('/ai-manager') || path.includes('/agent') || path.includes('/pho-tuong')) {
+      setActiveTab('ai-manager');
     } else if (path.includes('/settings') || path.includes('/rates')) {
       setActiveTab('settings');
     } else if (path.includes('/overview') || path.includes('/dashboard') || path === '/admin' || path === '/admin/') {
@@ -445,6 +449,13 @@ export default function AdminDashboardPage() {
               icon: BarChart3,
               badge: urgentQueue.needQuote.length > 0 ? `${urgentQueue.needQuote.length} việc` : null,
               badgeColor: '#EF4444'
+            },
+            {
+              id: 'ai-manager',
+              label: '🤖 Phó Tướng AI',
+              icon: Bot,
+              badge: 'Hermes',
+              badgeColor: '#C5A059'
             },
             {
               id: 'orders',
@@ -895,6 +906,13 @@ export default function AdminDashboardPage() {
               initialSubTab="pending" 
             />
           </div>
+        )}
+
+        {/* ════════════════════════════════════════════════════════════════ */}
+        {/* TAB: PHÓ TƯỚNG AI (AI OPERATIONS MANAGER - HERMES)              */}
+        {/* ════════════════════════════════════════════════════════════════ */}
+        {activeTab === 'ai-manager' && (
+          <AdminAiManager isDark={isDark} />
         )}
 
         {/* ════════════════════════════════════════════════════════════════ */}

@@ -18,6 +18,7 @@
     "bot:price-sync": "node scripts/auto_price_sync_bot.js --once",
     "bot:scheduler": "node scripts/auto_price_sync_bot.js --interval=60",
     "self-check": "oxlint && vite build",
+    "ai-worker": "node scripts/ai_manager_worker.js",
     "preview": "vite preview"
   },
   "dependencies": {

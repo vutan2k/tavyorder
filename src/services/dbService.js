@@ -19,6 +19,7 @@ const USERS_COLLECTION = 'users';
 const SYSTEM_CONFIG_COLLECTION = 'system_config';
 const PRODUCTS_COLLECTION = 'products';
 const PENDING_PRODUCTS_COLLECTION = 'pending_products';
+const AI_MANAGER_TASKS_COLLECTION = 'ai_manager_tasks';
 const RATES_DOC = 'rates';
 
 /**
@@ -419,7 +420,64 @@ export const subscribeToUsers = (onUpdate, onError) => {
 };
 
 /**
- * 15. Update User Profile in DB (Admin)
+ * 15. AI Manager Task Management (Hermes Operations)
+ */
+export const sendAiManagerTask = async (command, meta = {}) => {
+  try {
+    if (!command || !String(command).trim()) {
+      return { success: false, error: 'Lệnh không được để trống' };
+    }
+    const taskId = `task_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`;
+    const docRef = doc(db, AI_MANAGER_TASKS_COLLECTION, taskId);
+    const payload = {
+      id: taskId,
+      command: String(command).trim(),
+      status: 'pending',
+      requestedBy: meta.requestedBy || 'A. Tân (Boss)',
+      requestedAt: new Date().toISOString(),
+      createdAt: serverTimestamp(),
+      ...meta
+    };
+    await setDoc(docRef, payload);
+    return { success: true, taskId };
+  } catch (err) {
+    console.warn("Firestore sendAiManagerTask error:", err);
+    return { success: false, error: err };
+  }
+};
+
+export const subscribeToAiManagerTasks = (onUpdate, onError) => {
+  try {
+    const q = query(collection(db, AI_MANAGER_TASKS_COLLECTION));
+    return onSnapshot(q, (snapshot) => {
+      const taskList = snapshot.docs.map((docSnap) => {
+        const data = docSnap.data();
+        let requestedAtIso = data.requestedAt || new Date().toISOString();
+        if (data.createdAt?.toDate) {
+          requestedAtIso = data.createdAt.toDate().toISOString();
+        }
+        return {
+          id: docSnap.id,
+          ...data,
+          requestedAt: requestedAtIso
+        };
+      });
+      // Sắp xếp lệnh mới nhất lên đầu
+      taskList.sort((a, b) => new Date(b.requestedAt || 0) - new Date(a.requestedAt || 0));
+      onUpdate(taskList);
+    }, (err) => {
+      console.warn("Firestore AI Manager listener fallback:", err);
+      if (onError) onError(err);
+    });
+  } catch (err) {
+    console.warn("Firestore AI Manager subscription error:", err);
+    if (onError) onError(err);
+    return () => {};
+  }
+};
+
+/**
+ * 16. Update User Profile in DB (Admin)
  */
 export const updateUserInDB = async (userId, data) => {
   try {
@@ -437,7 +495,7 @@ export const updateUserInDB = async (userId, data) => {
 };
 
 /**
- * 16. Delete User from Firestore (Admin)
+ * 17. Delete User from Firestore (Admin)
  */
 export const deleteUserFromDB = async (userId) => {
   try {
@@ -452,7 +510,7 @@ export const deleteUserFromDB = async (userId) => {
 };
 
 /**
- * 17. Update Order Details (Admin)
+ * 18. Update Order Details (Admin)
  */
 export const updateOrderInDB = async (orderId, updates) => {
   try {
@@ -468,4 +526,3 @@ export const updateOrderInDB = async (orderId, updates) => {
     return { success: false, error: err };
   }
 };
-

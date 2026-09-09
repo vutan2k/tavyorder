@@ -87,5 +87,10 @@ service cloud.firestore {
       allow read: if true;
       allow write: if true;
     }
+
+    // 6. AI Operations Manager Tasks (Hermes Realtime Queue)
+    match /ai_manager_tasks/{taskId} {
+      allow read, write: if true;
+    }
   }
 }
