@@ -1,0 +1,135 @@
+{
+  "goods_no": "A000000223414",
+  "rank": 1,
+  "name_vi": "Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại)",
+  "name_kr": "[15년 연속 1위/7일 한정판매] 메디힐 에센셜 마스크팩 10+1매 기획 7종 골라담기",
+  "brand": "메디힐",
+  "brand_vi": "Mediheal",
+  "category": "cosmetics",
+  "subCategory": "mask",
+  "categoryLabel": "Mặt Nạ Giấy",
+  "categoryKr": "마스크팩",
+  "origin_price_krw": "20,000",
+  "sale_price_krw": "10,000",
+  "discount_rate": "50%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/main_thumbnail.png",
+    "main_image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0022/A000000223414124ko.png?l=ko",
+    "review_images_count": 8,
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_6.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_7.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_8.png"
+    ]
+  },
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hộp 10+1 miếng (hoặc 10 miếng tùy phân loại)",
+    "skin_type": "Mọi loại da, da mụn nhạy cảm, da thiếu nước, da cần phục hồi",
+    "core_benefits": "Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại) từ thương hiệu Mediheal là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu tinh chất rau má Madecassoside đậm đặc và Cica làm dịu. Sản phẩm thẩm thấu nhanh giúp làm dịu nốt mụn sưng đỏ, làm mờ vết thâm sau mụn và phục hồi hàng rào màng tế bào da tổn thương. Chất liệu mask sợi tre sinh học ôm khít tuyệt đối, không nhờn rít, phù hợp cho mọi loại da kể cả da nhạy cảm nhất.",
+    "usage": "1. Làm sạch da mặt với sữa rửa mặt và toner.\n2. Lấy mask đắp ôm khít toàn mặt trong 15-20 phút.\n3. Tháo mặt nạ và dùng đầu ngón tay vỗ nhẹ cho tinh chất thẩm thấu hết vào da."
+  },
+  "options": [
+    {
+      "id": "opt_mediheal_1",
+      "name_vi": "Madecassoside Phục Hồi & Mờ Thâm Mụn (10+1 Miếng)",
+      "name_kr": "마데카소사이드 흔적리페어 10+1매",
+      "price_krw": 10000,
+      "price_vnd": 204750,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/3/5396674936637087722.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_mediheal_2",
+      "name_vi": "Rose PDRN Thu Nhỏ Lỗ Chân Lông & Căng Bóng Da (10 Miếng)",
+      "name_kr": "로제 PDRN 모공결광 10매",
+      "price_krw": 10000,
+      "price_vnd": 204750,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/4/2725869504414878693.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_mediheal_3",
+      "name_vi": "Collagen Tái Tạo Độ Đàn Hồi & Săn Chắc (10 Miếng)",
+      "name_kr": "콜라겐 코어탄력 10매",
+      "price_krw": 10000,
+      "price_vnd": 204750,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/4/3556274735170952484.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_mediheal_4",
+      "name_vi": "Tràm Trà Teatree Làm Dịu & Cấp Ẩm Mụn (10+1 Miếng)",
+      "name_kr": "티트리 진정수분 10매",
+      "price_krw": 10000,
+      "price_vnd": 204750,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/7914543654967853876.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_mediheal_5",
+      "name_vi": "Hyaluronic Acid Cấp Nước Đa Tầng Căng Mọng (10 Miếng)",
+      "name_kr": "히알루론산 고밀도수분 10매",
+      "price_krw": 10000,
+      "price_vnd": 204750,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/619452162635789172.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_mediheal_6",
+      "name_vi": "Vitamin C Toning Dưỡng Sáng & Mờ Thâm Nám (10 Miếng)",
+      "name_kr": "비타민씨 잡티토닝 10매",
+      "price_krw": 10000,
+      "price_vnd": 204750,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/3940154589902090837.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_mediheal_7",
+      "name_vi": "Ceramide Củng Cố Hàng Rào Bảo Vệ Da (10 Miếng)",
+      "name_kr": "세라마이드 보습장벽 10매",
+      "price_krw": 10000,
+      "price_vnd": 204750,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/6166230676897839649.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/main_thumbnail.png",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_6.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_7.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414/review_user_8.png"
+  ],
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000223414&tab=review",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414",
+  "updated_at": "2026-09-10 18:50:54",
+  "price_vnd": 204750,
+  "description": "Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại) từ thương hiệu Mediheal là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu tinh chất rau má Madecassoside đậm đặc và Cica làm dịu. Sản phẩm thẩm thấu nhanh giúp làm dịu nốt mụn sưng đỏ, làm mờ vết thâm sau mụn và phục hồi hàng rào màng tế bào da tổn thương. Chất liệu mask sợi tre sinh học ôm khít tuyệt đối, không nhờn rít, phù hợp cho mọi loại da kể cả da nhạy cảm nhất."
+}

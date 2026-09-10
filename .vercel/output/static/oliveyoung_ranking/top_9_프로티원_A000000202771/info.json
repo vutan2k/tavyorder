@@ -1,0 +1,127 @@
+{
+  "goods_no": "A000000202771",
+  "goodsNo": "A000000202771",
+  "rank": 9,
+  "name": "Mỹ phẩm  1+1 40g 6 (40g)",
+  "name_vi": "Mỹ phẩm  1+1 40g 6 (40g)",
+  "name_kr": "[9/5 하루특가] [1+1] 프로티원 단백질쉐이크 파우치형 40g 6종",
+  "brand": "프로티원",
+  "brand_vi": "프로티원",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "3900",
+  "sale_price_krw": "3680",
+  "price": 3680,
+  "foreignPrice": 3680,
+  "price_vnd": 75348,
+  "priceVnd": 75348,
+  "discount_rate": "6%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000202771_1",
+      "name_vi": "[단독런칭] 얼그레이밀크티맛 40g 1팩",
+      "name_kr": "[단독런칭] 얼그레이밀크티맛 40g 1팩",
+      "price_krw": 3090,
+      "price_vnd": 63268,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/461628773431458881.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000202771_2",
+      "name_vi": "초코맛 40g 1팩",
+      "name_kr": "초코맛 40g 1팩",
+      "price_krw": 3090,
+      "price_vnd": 63268,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/7801382150160530751.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000202771_3",
+      "name_vi": "곡물맛 40g 1팩",
+      "name_kr": "곡물맛 40g 1팩",
+      "price_krw": 3090,
+      "price_vnd": 63268,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/6912947674167573741.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000202771_4",
+      "name_vi": "녹차맛 40g 1팩",
+      "name_kr": "녹차맛 40g 1팩",
+      "price_krw": 3090,
+      "price_vnd": 63268,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/8607951398963121528.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000202771_5",
+      "name_vi": "흑임자맛 40g 1팩",
+      "name_kr": "흑임자맛 40g 1팩",
+      "price_krw": 3090,
+      "price_vnd": 63268,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/8364558828740341563.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000202771_6",
+      "name_vi": "딸기맛 40g 1팩",
+      "name_kr": "딸기맛 40g 1팩",
+      "price_krw": 3090,
+      "price_vnd": 63268,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/5587557239079116502.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Mỹ phẩm 1+1 40g 6 (40g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Mỹ phẩm 1+1 40g 6 (40g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202771&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=9",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_9_프로티원_A000000202771",
+  "updated_at": "2026-09-10 20:40:29"
+}

@@ -308,34 +308,30 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
       }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <h2 style={{ fontSize: '1.25rem', fontWeight: 900, margin: 0, color: isDark ? '#F8FAFC' : '#0F172A' }}>
-              Kho Sản Phẩm Đang Bán ({products.length})
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, letterSpacing: '-0.02em', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+              Kho Sản Phẩm
             </h2>
             <span style={{
-              backgroundColor: isDark ? '#064E3B' : '#ECFDF5',
-              color: isDark ? '#34D399' : '#059669',
+              backgroundColor: isDark ? 'rgba(16, 185, 129, 0.15)' : '#ECFDF5',
+              color: '#10B981',
               fontSize: '0.72rem',
-              fontWeight: 800,
-              padding: '3px 8px',
-              borderRadius: '6px',
-              border: isDark ? '1px solid #059669' : '1px solid #A7F3D0'
+              fontWeight: 700,
+              padding: '2px 8px',
+              borderRadius: '999px'
             }}>
-              LIVE TRÊN WEBSITE
+              ● {products.length} SKU Live
             </span>
           </div>
-          <p style={{ margin: '4px 0 0 0', color: isDark ? '#94A3B8' : '#64748B', fontSize: '0.82rem' }}>
-            Bảng danh sách chuẩn Excel: Nhấp vào dòng để <strong>Chỉnh Sửa Nhanh</strong>, sửa trực tiếp giá và trạng thái kho.
-          </p>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
           {/* View Switcher: Table vs Grid */}
           <div style={{
             display: 'flex',
             backgroundColor: isDark ? '#0F172A' : '#F1F5F9',
-            padding: '3px',
-            borderRadius: '8px',
-            border: isDark ? '1px solid #334155' : '1px solid #CBD5E1'
+            padding: '2px',
+            borderRadius: '6px',
+            border: isDark ? '1px solid #334155' : 'none'
           }}>
             <button
               onClick={() => setViewMode('table')}
@@ -343,19 +339,19 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '5px',
-                padding: '6px 12px',
-                borderRadius: '6px',
+                padding: '5px 10px',
+                borderRadius: '5px',
                 border: 'none',
                 backgroundColor: viewMode === 'table' ? (isDark ? '#334155' : '#FFF') : 'transparent',
                 color: viewMode === 'table' ? (isDark ? '#F8FAFC' : '#0F172A') : (isDark ? '#94A3B8' : '#64748B'),
-                fontWeight: viewMode === 'table' ? 800 : 600,
+                fontWeight: viewMode === 'table' ? 700 : 500,
                 fontSize: '0.78rem',
                 cursor: 'pointer',
-                boxShadow: viewMode === 'table' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'
+                boxShadow: viewMode === 'table' ? '0 1px 2px rgba(0,0,0,0.06)' : 'none'
               }}
             >
-              <Table size={14} />
-              <span>Bảng Excel</span>
+              <Table size={13} />
+              <span>Bảng</span>
             </button>
 
             <button
@@ -364,19 +360,19 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '5px',
-                padding: '6px 12px',
-                borderRadius: '6px',
+                padding: '5px 10px',
+                borderRadius: '5px',
                 border: 'none',
                 backgroundColor: viewMode === 'grid' ? (isDark ? '#334155' : '#FFF') : 'transparent',
                 color: viewMode === 'grid' ? (isDark ? '#F8FAFC' : '#0F172A') : (isDark ? '#94A3B8' : '#64748B'),
-                fontWeight: viewMode === 'grid' ? 800 : 600,
+                fontWeight: viewMode === 'grid' ? 700 : 500,
                 fontSize: '0.78rem',
                 cursor: 'pointer',
-                boxShadow: viewMode === 'grid' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'
+                boxShadow: viewMode === 'grid' ? '0 1px 2px rgba(0,0,0,0.06)' : 'none'
               }}
             >
-              <LayoutGrid size={14} />
-              <span>Lưới Thẻ</span>
+              <LayoutGrid size={13} />
+              <span>Lưới</span>
             </button>
           </div>
 
@@ -384,43 +380,43 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
           <button
             onClick={handleExportCSV}
             style={{
-              backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
+              backgroundColor: isDark ? '#0F172A' : '#FFF',
               color: isDark ? '#F8FAFC' : '#0F172A',
               border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
-              borderRadius: '8px',
-              padding: '8px 14px',
-              fontSize: '0.8rem',
-              fontWeight: 700,
+              borderRadius: '6px',
+              padding: '6px 12px',
+              fontSize: '0.78rem',
+              fontWeight: 600,
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
-              gap: '6px'
+              gap: '5px'
             }}
           >
-            <Download size={14} color="#10B981" />
-            <span>Xuất Excel/CSV</span>
+            <Download size={13} color={isDark ? '#94A3B8' : '#64748B'} />
+            <span>Xuất CSV</span>
           </button>
 
           {/* Add Product Button */}
           <button
             onClick={handleOpenCreateNew}
             style={{
-              backgroundColor: '#2563EB',
-              color: '#FFF',
+              backgroundColor: isDark ? '#F8FAFC' : '#0F172A',
+              color: isDark ? '#0F172A' : '#FFF',
               border: 'none',
-              borderRadius: '8px',
-              padding: '8px 16px',
-              fontSize: '0.82rem',
-              fontWeight: 800,
+              borderRadius: '6px',
+              padding: '6px 12px',
+              fontSize: '0.78rem',
+              fontWeight: 700,
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
-              gap: '6px',
-              boxShadow: '0 4px 12px rgba(37, 99, 235, 0.25)'
+              gap: '5px',
+              transition: 'opacity 0.15s ease'
             }}
           >
-            <Plus size={15} />
-            <span>Thêm Mới</span>
+            <Plus size={14} />
+            <span>Thêm SP</span>
           </button>
         </div>
       </div>
@@ -613,7 +609,6 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
                       style={{ width: '15px', height: '15px', accentColor: '#2563EB', cursor: 'pointer' }}
                     />
                   </th>
-                  <th style={{ width: '45px', padding: '10px 8px', textAlign: 'center', borderRight: isDark ? '1px solid #334155' : '1px solid #E2E8F0' }}>#</th>
                   <th style={{ width: '60px', padding: '10px 8px', textAlign: 'center', borderRight: isDark ? '1px solid #334155' : '1px solid #E2E8F0' }}>Ảnh</th>
                   
                   <th
@@ -657,7 +652,7 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
               <tbody>
                 {filteredProducts.length === 0 ? (
                   <tr>
-                    <td colSpan={9} style={{ padding: '40px', textAlign: 'center', color: isDark ? '#64748B' : '#94A3B8' }}>
+                    <td colSpan={8} style={{ padding: '40px', textAlign: 'center', color: isDark ? '#64748B' : '#94A3B8' }}>
                       <ShoppingBag size={36} style={{ margin: '0 auto 8px auto', opacity: 0.4 }} />
                       <div style={{ fontWeight: 800, fontSize: '0.95rem', color: isDark ? '#CBD5E1' : '#475569' }}>Không tìm thấy sản phẩm nào phù hợp</div>
                     </td>
@@ -696,11 +691,6 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
                             onChange={(e) => handleToggleSelect(e, prod.goodsNo)}
                             style={{ width: '15px', height: '15px', accentColor: '#2563EB', cursor: 'pointer' }}
                           />
-                        </td>
-
-                        {/* STT */}
-                        <td style={{ padding: '8px', textAlign: 'center', color: isDark ? '#64748B' : '#94A3B8', fontWeight: 600, borderRight: isDark ? '1px solid #334155' : '1px solid #E2E8F0' }}>
-                          {idx + 1}
                         </td>
 
                         {/* Thumbnail Image */}
@@ -807,7 +797,7 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
 
                         {/* Merged Price (VNĐ & Won) */}
                         <td style={{ padding: '8px 12px', textAlign: 'right', borderRight: isDark ? '1px solid #334155' : '1px solid #E2E8F0' }}>
-                          <div style={{ fontWeight: 800, color: isDark ? '#38BDF8' : '#1D4ED8', fontSize: '0.88rem', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '6px' }}>
+                          <div style={{ fontWeight: 700, color: isDark ? '#F8FAFC' : '#0F172A', fontSize: '0.85rem', fontFamily: 'monospace', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '6px' }}>
                             {prod.priceChangeAlert?.hasChanged && (
                               <span style={{
                                 backgroundColor: prod.priceChangeAlert.changeType === 'drop' ? (isDark ? '#064E3B' : '#ECFDF5') : (isDark ? '#78350F' : '#FEF3C7'),
@@ -815,7 +805,7 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
                                 fontSize: '0.68rem',
                                 padding: '1px 5px',
                                 borderRadius: '4px',
-                                fontWeight: 900
+                                fontWeight: 800
                               }}>
                                 {prod.priceChangeAlert.changeType === 'drop' ? `🔻 ${Math.abs(prod.priceChangeAlert.changePercent)}%` : `🔺 +${prod.priceChangeAlert.changePercent}%`}
                               </span>
@@ -834,20 +824,21 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
                               title="Chỉnh sửa chi tiết"
                               onClick={() => handleOpenEdit(prod)}
                               style={{
-                                backgroundColor: '#2563EB',
-                                color: '#FFF',
-                                border: 'none',
-                                borderRadius: '6px',
+                                backgroundColor: isDark ? 'rgba(255,255,255,0.06)' : '#F1F5F9',
+                                color: isDark ? '#F8FAFC' : '#0F172A',
+                                border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                                borderRadius: '5px',
                                 padding: '4px 8px',
                                 fontSize: '0.72rem',
-                                fontWeight: 800,
+                                fontWeight: 600,
                                 cursor: 'pointer',
                                 display: 'flex',
                                 alignItems: 'center',
-                                gap: '3px'
+                                gap: '3px',
+                                transition: 'all 0.15s ease'
                               }}
                             >
-                              <Edit3 size={11} />
+                              <Edit3 size={12} />
                               <span>Sửa</span>
                             </button>
 
@@ -855,14 +846,15 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
                               title="Chuyển về Hàng Chờ Duyệt"
                               onClick={(e) => handleMoveToPending(e, prod)}
                               style={{
-                                backgroundColor: isDark ? '#78350F' : '#FFFBEB',
+                                backgroundColor: isDark ? 'rgba(255,255,255,0.06)' : '#F1F5F9',
                                 color: isDark ? '#FDE68A' : '#D97706',
-                                border: isDark ? '1px solid #B45309' : '1px solid #FDE68A',
-                                borderRadius: '6px',
-                                padding: '4px 6px',
-                                fontSize: '0.68rem',
-                                fontWeight: 700,
-                                cursor: 'pointer'
+                                border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                                borderRadius: '5px',
+                                padding: '4px 8px',
+                                fontSize: '0.72rem',
+                                fontWeight: 600,
+                                cursor: 'pointer',
+                                transition: 'all 0.15s ease'
                               }}
                             >
                               Nháp
@@ -872,12 +864,13 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
                               title="Xoá sản phẩm"
                               onClick={() => handleDeleteProduct(prod.goodsNo || prod.id)}
                               style={{
-                                backgroundColor: isDark ? '#450A0A' : '#FEE2E2',
+                                backgroundColor: isDark ? 'rgba(255,255,255,0.06)' : '#F1F5F9',
                                 color: '#EF4444',
-                                border: isDark ? '1px solid #7F1D1D' : 'none',
-                                borderRadius: '6px',
-                                padding: '4px 6px',
-                                cursor: 'pointer'
+                                border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                                borderRadius: '5px',
+                                padding: '4px 7px',
+                                cursor: 'pointer',
+                                transition: 'all 0.15s ease'
                               }}
                             >
                               <Trash2 size={12} />

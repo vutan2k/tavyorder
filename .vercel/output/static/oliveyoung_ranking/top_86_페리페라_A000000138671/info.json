@@ -1,0 +1,149 @@
+{
+  "goods_no": "A000000138671",
+  "goodsNo": "A000000138671",
+  "rank": 86,
+  "name": "Mỹ phẩm Peripera 8 Colors",
+  "name_vi": "Mỹ phẩm Peripera 8 Colors",
+  "name_kr": "페리페라 스피디 스키니 브로우 8 Colors",
+  "brand": "페리페라",
+  "brand_vi": "Peripera",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "6000",
+  "sale_price_krw": "5100",
+  "price": 5100,
+  "foreignPrice": 5100,
+  "price_vnd": 104422,
+  "priceVnd": 104422,
+  "discount_rate": "15%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000138671_1",
+      "name_vi": "01 그레이 브라운",
+      "name_kr": "01 그레이 브라운",
+      "price_krw": 6000,
+      "price_vnd": 122850,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/8551538529935238413.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000138671_2",
+      "name_vi": "02 다크 브라운",
+      "name_kr": "02 다크 브라운",
+      "price_krw": 6000,
+      "price_vnd": 122850,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/5914701357109379641.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000138671_3",
+      "name_vi": "03 내추럴 브라운",
+      "name_kr": "03 내추럴 브라운",
+      "price_krw": 6000,
+      "price_vnd": 122850,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/7580629840961259572.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000138671_4",
+      "name_vi": "06 쿨 그레이",
+      "name_kr": "06 쿨 그레이",
+      "price_krw": 6000,
+      "price_vnd": 122850,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/9107097247760433177.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000138671_5",
+      "name_vi": "08 토프 베이지",
+      "name_kr": "08 토프 베이지",
+      "price_krw": 6000,
+      "price_vnd": 122850,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/2516407573562050962.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000138671_6",
+      "name_vi": "09 토프 브라운",
+      "name_kr": "09 토프 브라운",
+      "price_krw": 6000,
+      "price_vnd": 122850,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/3557350762562139095.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000138671_7",
+      "name_vi": "11 모카토프",
+      "name_kr": "11 모카토프",
+      "price_krw": 6000,
+      "price_vnd": 122850,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/3999041379121961539.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000138671_8",
+      "name_vi": "12 밀키토프",
+      "name_kr": "12 밀키토프",
+      "price_krw": 6000,
+      "price_vnd": 122850,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/6073968644201448052.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Mỹ phẩm Peripera 8 Colors từ thương hiệu Peripera là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Mỹ phẩm Peripera 8 Colors từ thương hiệu Peripera là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000138671&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=86",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_86_페리페라_A000000138671",
+  "updated_at": "2026-09-10 21:04:46"
+}

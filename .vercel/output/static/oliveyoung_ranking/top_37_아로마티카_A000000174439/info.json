@@ -1,0 +1,116 @@
+{
+  "goods_no": "A000000174439",
+  "goodsNo": "A000000174439",
+  "rank": 37,
+  "name": "Mỹ phẩm",
+  "name_vi": "Mỹ phẩm",
+  "name_kr": "[9/5 하루특가] [9월 올영픽] 아로마티카 여성청결제 5종 택 1 (퓨어 앤 소프트/컴포트 모이스처)",
+  "brand": "아로마티카",
+  "brand_vi": "아로마티카",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "35000",
+  "sale_price_krw": "16500",
+  "price": 16500,
+  "foreignPrice": 16500,
+  "price_vnd": 337838,
+  "priceVnd": 337838,
+  "discount_rate": "53%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000174439_1",
+      "name_vi": "[9월올영픽]170ml듀오+컴포트젤30",
+      "name_kr": "[9월올영픽]170ml듀오+컴포트젤30",
+      "price_krw": 18900,
+      "price_vnd": 386978,
+      "discount_rate": "46%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/8065661844240432086.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000174439_2",
+      "name_vi": "퓨어앤소프트 170ml+리필 100ml",
+      "name_kr": "퓨어앤소프트 170ml+리필 100ml",
+      "price_krw": 14000,
+      "price_vnd": 286650,
+      "discount_rate": "26%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/2/1157707798103613118.jpeg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000174439_3",
+      "name_vi": "캐모마일&티트리170ml+리필 100ml",
+      "name_kr": "캐모마일&티트리170ml+리필 100ml",
+      "price_krw": 16900,
+      "price_vnd": 346028,
+      "discount_rate": "29%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/2/6995707067716704052.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000174439_4",
+      "name_vi": "[NEW]컴포트 여성청결제 200m기획",
+      "name_kr": "[NEW]컴포트 여성청결제 200m기획",
+      "price_krw": 27000,
+      "price_vnd": 552825,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/2053546393518041542.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000174439_5",
+      "name_vi": "170ml+170ml듀오 기획",
+      "name_kr": "170ml+170ml듀오 기획",
+      "price_krw": 18900,
+      "price_vnd": 386978,
+      "discount_rate": "46%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/3/1043108369018996806.jpg",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    }
+  ],
+  "description": "Mỹ phẩm từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Mỹ phẩm từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000174439&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=37",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_37_아로마티카_A000000174439",
+  "updated_at": "2026-09-10 20:51:18"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "wed-mua-ha-ng-ho-",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "test": "node tests/run_all_tests.js",
+    "test:agents": "node scripts/verify_agent_system.js",
+    "scrape:health": "node scripts/scrape_korean_health_products.js --all",
+    "scrape:ginseng": "node scripts/scrape_korean_health_products.js --category=ginseng",
+    "scrape:naver": "node scripts/scrape_korean_health_products.js --source=naver",
+    "scrape:playwright": "node scripts/playwright_ai_scraper.js",
+    "scrape:playwright:headful": "HEADLESS=false MAX_PRODUCTS=10 node scripts/playwright_ai_scraper.js",
+    "sync:prices": "node scripts/auto_price_sync_bot.js --once",
+    "bot:price-sync": "node scripts/auto_price_sync_bot.js --once",
+    "bot:scheduler": "node scripts/auto_price_sync_bot.js --interval=60",
+    "self-check": "oxlint && vite build",
+    "ai-worker": "node scripts/ai_manager_worker.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mendable/firecrawl-js": "^4.32.2",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@payos/node": "^2.0.5",
+    "canvas-confetti": "^1.9.4",
+    "dotenv": "^17.4.2",
+    "firebase": "^12.17.1",
+    "lucide-react": "^1.31.0",
+    "playwright": "^1.62.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-helmet-async": "^3.0.0",
+    "react-router-dom": "^7.18.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "oxlint": "^1.75.0",
+    "sharp": "^0.35.4",
+    "vite": "^8.2.0"
+  }
+}

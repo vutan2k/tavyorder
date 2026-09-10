@@ -1,0 +1,116 @@
+{
+  "goods_no": "A000000186792",
+  "goodsNo": "A000000186792",
+  "rank": 38,
+  "name": "Mỹ phẩm  298g 4 (298g)",
+  "name_vi": "Mỹ phẩm  298g 4 (298g)",
+  "name_kr": "도브 바디 스크럽 298g 4종 택 1",
+  "brand": "도브",
+  "brand_vi": "도브",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "17900",
+  "sale_price_krw": "10480",
+  "price": 10480,
+  "foreignPrice": 10480,
+  "price_vnd": 214578,
+  "priceVnd": 214578,
+  "discount_rate": "41%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_1.jpg",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_1.jpg",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000186792_1",
+      "name_vi": "[한정수량] 체리 & 애프리콧 향",
+      "name_kr": "[한정수량] 체리 & 애프리콧 향",
+      "price_krw": 10800,
+      "price_vnd": 221130,
+      "discount_rate": "39%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/4922089957442752608.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000186792_2",
+      "name_vi": "코코넛 & 메이플슈가향",
+      "name_kr": "코코넛 & 메이플슈가향",
+      "price_krw": 10800,
+      "price_vnd": 221130,
+      "discount_rate": "39%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/6144930332800697073.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000186792_3",
+      "name_vi": "벚꽃 & 머스크향",
+      "name_kr": "벚꽃 & 머스크향",
+      "price_krw": 10800,
+      "price_vnd": 221130,
+      "discount_rate": "39%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/1486255843982594833.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000186792_4",
+      "name_vi": "석류 & 시어버터",
+      "name_kr": "석류 & 시어버터",
+      "price_krw": 10800,
+      "price_vnd": 221130,
+      "discount_rate": "39%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/883490580822910270.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000186792_5",
+      "name_vi": "미드나잇 라벤더향",
+      "name_kr": "미드나잇 라벤더향",
+      "price_krw": 10800,
+      "price_vnd": 221130,
+      "discount_rate": "39%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/9/4788597238308401343.png",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Mỹ phẩm 298g 4 (298g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Mỹ phẩm 298g 4 (298g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000186792&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=38",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_38_도브_A000000186792",
+  "updated_at": "2026-09-10 20:51:34"
+}

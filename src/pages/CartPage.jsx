@@ -241,9 +241,7 @@ export default function CartPage() {
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                       <div>
                         <h4 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-dark)', marginBottom: '4px' }}>{item.name}</h4>
-                        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                          {typeof item.options === 'string' ? item.options : (item.options?.name_vi || item.options?.name_kr || '')}
-                        </p>
+                        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{item.options}</p>
                       </div>
                       <button onClick={() => removeFromCart(item.cartItemId || item.goodsNo)} style={{ background: 'none', border: 'none', color: '#EF4444', cursor: 'pointer', padding: '4px' }}>
                         <Trash2 size={18} />

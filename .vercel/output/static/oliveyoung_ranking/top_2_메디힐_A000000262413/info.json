@@ -1,0 +1,160 @@
+{
+  "goods_no": "A000000262413",
+  "goodsNo": "A000000262413",
+  "rank": 2,
+  "name": "Mediheal 메디힐 더마 토너패드 100+100매 7종 골라담기",
+  "name_vi": "Mediheal 메디힐 더마 토너패드 100+100매 7종 골라담기",
+  "name_kr": "[9/5 하루특가/산리오캐릭터즈 에디션] 메디힐 더마 토너패드 100+100매 7종 골라담기",
+  "brand": "메디힐",
+  "brand_vi": "Mediheal",
+  "category": "cosmetics",
+  "subCategory": "toner_pad",
+  "categoryLabel": "Bông Toner Pad",
+  "origin_price_krw": "39900",
+  "sale_price_krw": "27400",
+  "price": 27400,
+  "foreignPrice": 27400,
+  "price_vnd": 561015,
+  "priceVnd": 561015,
+  "discount_rate": "31%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/main_thumbnail.png",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/main_thumbnail.png",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000262413_1",
+      "name_vi": "[산리오 기획] 마데카소사이드 흔적패드",
+      "name_kr": "[산리오 기획] 마데카소사이드 흔적패드",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/9/9114661539472383313.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262413_2",
+      "name_vi": "[일반] PDRN 모공탄력패드",
+      "name_kr": "[일반] PDRN 모공탄력패드",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/9/6210468323553201478.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262413_3",
+      "name_vi": "[일반] 콜라겐 탄력채움패드",
+      "name_kr": "[일반] 콜라겐 탄력채움패드",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/9/755146293115732643.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262413_4",
+      "name_vi": "[일반] 티트리 트러블진정패드",
+      "name_kr": "[일반] 티트리 트러블진정패드",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/9/2248257618386911174.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262413_5",
+      "name_vi": "[일반] 히알루론산 속보습패드",
+      "name_kr": "[일반] 히알루론산 속보습패드",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/9/5001184255753573146.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262413_6",
+      "name_vi": "[일반] 비타민씨 잡티토닝패드",
+      "name_kr": "[일반] 비타민씨 잡티토닝패드",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/9/3366828670171673687.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262413_7",
+      "name_vi": "[일반] 피토엔자임 각질필링패드",
+      "name_kr": "[일반] 피토엔자임 각질필링패드",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/9/4233376135487163166.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262413_8",
+      "name_vi": "[산리오기획] PDRN 모공패드",
+      "name_kr": "[산리오기획] PDRN 모공패드",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/9/6091619743045312853.jpg",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    },
+    {
+      "id": "opt_A000000262413_9",
+      "name_vi": "[산리오 기획] 콜라겐 탄력패드",
+      "name_kr": "[산리오 기획] 콜라겐 탄력패드",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/9/3946123008254274892.jpg",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    }
+  ],
+  "description": "Mediheal 100+100 7 từ thương hiệu Mediheal là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào da giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu da rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho mọi loại da kể cả làn da nhạy cảm nhất.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Mediheal 100+100 7 từ thương hiệu Mediheal là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào da giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu da rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho mọi loại da kể cả làn da nhạy cảm nhất.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000262413&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=2",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413",
+  "updated_at": "2026-09-10 20:16:24"
+}

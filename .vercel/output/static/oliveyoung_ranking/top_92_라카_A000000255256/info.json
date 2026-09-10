@@ -1,0 +1,193 @@
+{
+  "goods_no": "A000000255256",
+  "goodsNo": "A000000255256",
+  "rank": 92,
+  "name": "Son Kem Lì  NEW 7g+4 2g 12 colors (7g)",
+  "name_vi": "Son Kem Lì  NEW 7g+4 2g 12 colors (7g)",
+  "name_kr": "[NEW/이시안공동개발] 라카 퍼펙트 트윈 립 4.7g+4.2g 12 colors",
+  "brand": "라카",
+  "brand_vi": "라카",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "22000",
+  "sale_price_krw": "17000",
+  "price": 17000,
+  "foreignPrice": 17000,
+  "price_vnd": 348075,
+  "priceVnd": 348075,
+  "discount_rate": "23%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000255256_1",
+      "name_vi": "[이시안공동개발] 911 이지핑크",
+      "name_kr": "[이시안공동개발] 911 이지핑크",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/2281173260908168144.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_2",
+      "name_vi": "[이시안공동개발] 912 레이지피그",
+      "name_kr": "[이시안공동개발] 912 레이지피그",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/6082585045708793293.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_3",
+      "name_vi": "901 트루피치",
+      "name_kr": "901 트루피치",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/1655877286537113891.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_4",
+      "name_vi": "902 비지코랄",
+      "name_kr": "902 비지코랄",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/696397423323804083.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_5",
+      "name_vi": "903 누드오드",
+      "name_kr": "903 누드오드",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/8010383920184399426.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_6",
+      "name_vi": "904 시티핑크",
+      "name_kr": "904 시티핑크",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/7681895472259898792.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_7",
+      "name_vi": "905 로지하이",
+      "name_kr": "905 로지하이",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/6855883239012188116.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_8",
+      "name_vi": "906 솔티피그",
+      "name_kr": "906 솔티피그",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/8363827409218292190.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_9",
+      "name_vi": "907 젠틀로즈",
+      "name_kr": "907 젠틀로즈",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/1733052782397250497.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_10",
+      "name_vi": "908 인카페인",
+      "name_kr": "908 인카페인",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/4064818709141844518.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_11",
+      "name_vi": "909 길티모브",
+      "name_kr": "909 길티모브",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/4884268265886454429.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255256_12",
+      "name_vi": "910 보스체리",
+      "name_kr": "910 보스체리",
+      "price_krw": 22000,
+      "price_vnd": 450450,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/3747278652036973227.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Son Kem Lì NEW 7g+4 2g 12 colors (7g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Son Kem Lì NEW 7g+4 2g 12 colors (7g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000255256&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=92",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_92_라카_A000000255256",
+  "updated_at": "2026-09-10 21:06:22"
+}

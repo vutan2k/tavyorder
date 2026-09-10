@@ -899,7 +899,7 @@ export default function GuestOrderStatusCard({
                     </div>
                     <div style={{ fontSize: '0.78rem', color: '#6B7280', marginTop: '2px' }}>
                       {item.brand && <span style={{ fontWeight: 600, color: 'var(--purple-primary, #7A4B9E)' }}>{item.brand}</span>}
-                      {item.options && <span> • Phân loại: {typeof item.options === 'string' ? item.options : (item.options?.name_vi || item.options?.name_kr || '')}</span>}
+                      {item.options && <span> • Phân loại: {item.options}</span>}
                     </div>
                   </div>
                 </div>

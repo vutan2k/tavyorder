@@ -1,0 +1,193 @@
+{
+  "goods_no": "A000000233171",
+  "goodsNo": "A000000233171",
+  "rank": 100,
+  "name": "Phấn Nước Cushion Vidi Vici",
+  "name_vi": "Phấn Nước Cushion Vidi Vici",
+  "name_kr": "[쿠션리필+블러시 증정] 비디비치 블랙 퍼펙션 커버 핏 쿠션 기획",
+  "brand": "비디비치",
+  "brand_vi": "Vidi Vici",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "46000",
+  "sale_price_krw": "35910",
+  "price": 35910,
+  "foreignPrice": 35910,
+  "price_vnd": 735257,
+  "priceVnd": 735257,
+  "discount_rate": "22%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000233171_1",
+      "name_vi": "[쿠션본품+리필+블러시] 17N 페어",
+      "name_kr": "[쿠션본품+리필+블러시] 17N 페어",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/7601398300104395892.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_2",
+      "name_vi": "[쿠션본품+리필+블러시] 19NC 라이트",
+      "name_kr": "[쿠션본품+리필+블러시] 19NC 라이트",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/7482487543915997739.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_3",
+      "name_vi": "[쿠션본품+리필+블러시] 21NC 베이지",
+      "name_kr": "[쿠션본품+리필+블러시] 21NC 베이지",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/2192850874943866037.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_4",
+      "name_vi": "[쿠션본품+리필+블러시] 21N 아이보리",
+      "name_kr": "[쿠션본품+리필+블러시] 21N 아이보리",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/2877290553525584207.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_5",
+      "name_vi": "[본품+리필] 15N 페일",
+      "name_kr": "[본품+리필] 15N 페일",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/1419153420768971887.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_6",
+      "name_vi": "[본품+리필] 19N 포슬린",
+      "name_kr": "[본품+리필] 19N 포슬린",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/3/2380667960293361141.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_7",
+      "name_vi": "[본품+리필] 21NC 베이지",
+      "name_kr": "[본품+리필] 21NC 베이지",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/3/1543478162582534937.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_8",
+      "name_vi": "[본품+리필] 21N 아이보리",
+      "name_kr": "[본품+리필] 21N 아이보리",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/5788353808563532604.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_9",
+      "name_vi": "[본품+리필] 21NW 내추럴",
+      "name_kr": "[본품+리필] 21NW 내추럴",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/3/8680438944033409873.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_10",
+      "name_vi": "[본품+리필] 23N 샌드",
+      "name_kr": "[본품+리필] 23N 샌드",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/3/619585483477967347.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_11",
+      "name_vi": "[전용퍼프] 커버핏 쿠션 퍼프 5P",
+      "name_kr": "[전용퍼프] 커버핏 쿠션 퍼프 5P",
+      "price_krw": 8000,
+      "price_vnd": 163800,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/10/6470076443281844840.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000233171_12",
+      "name_vi": "[본품+리필] 19NC 라이트",
+      "name_kr": "[본품+리필] 19NC 라이트",
+      "price_krw": 36800,
+      "price_vnd": 753480,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/2583467547597741898.jpg",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    }
+  ],
+  "description": "Phấn Nước Cushion Vidi Vici từ thương hiệu Vidi Vici là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu hạt phấn siêu mịn phủ khoáng chất cùng dưỡng chất cấp ẩm dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp tạo lớp nền che phủ hoàn hảo các khuyết điểm, kiềm dầu bền màu suốt 24 giờ mà vẫn giữ nét căng bóng tự nhiên, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Phấn Nước Cushion Vidi Vici từ thương hiệu Vidi Vici là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu hạt phấn siêu mịn phủ khoáng chất cùng dưỡng chất cấp ẩm dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp tạo lớp nền che phủ hoàn hảo các khuyết điểm, kiềm dầu bền màu suốt 24 giờ mà vẫn giữ nét căng bóng tự nhiên, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000233171&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=100",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_100_비디비치_A000000233171",
+  "updated_at": "2026-09-10 21:08:13"
+}

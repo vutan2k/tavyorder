@@ -32,19 +32,19 @@ export default function ChatWidget() {
     return null;
   }
 
-  const btnSize = isMobile ? '52px' : '58px';
+  const btnSize = isMobile ? '44px' : '58px';
 
   return (
     <div
       style={{
         position: 'fixed',
         bottom: isMobile ? '16px' : '22px',
-        right: isMobile ? '14px' : '22px',
+        right: isMobile ? '12px' : '22px',
         zIndex: 9995,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: '12px',
+        gap: isMobile ? '8px' : '12px',
         fontFamily: 'var(--font-sans, system-ui, sans-serif)'
       }}
     >

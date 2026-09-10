@@ -1,0 +1,116 @@
+{
+  "goods_no": "A000000206850",
+  "goodsNo": "A000000206850",
+  "rank": 22,
+  "name": "Mặt Nạ Giấy Numbuzin (10 Miếng)",
+  "name_vi": "Mặt Nạ Giấy Numbuzin (10 Miếng)",
+  "name_kr": "[10매] 넘버즈인 마스크팩 10매 기획 5종 중 택 1",
+  "brand": "넘버즈인",
+  "brand_vi": "Numbuzin",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "40000",
+  "sale_price_krw": "15500",
+  "price": 15500,
+  "foreignPrice": 15500,
+  "price_vnd": 317362,
+  "priceVnd": 317362,
+  "discount_rate": "61%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000206850_1",
+      "name_vi": "[수분진정] 1번 수딩거즈팩 10매",
+      "name_kr": "[수분진정] 1번 수딩거즈팩 10매",
+      "price_krw": 17900,
+      "price_vnd": 366502,
+      "discount_rate": "55%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/8739098585613772903.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000206850_2",
+      "name_vi": "[탄력생기] 2번 콜라겐팩 10매",
+      "name_kr": "[탄력생기] 2번 콜라겐팩 10매",
+      "price_krw": 17900,
+      "price_vnd": 366502,
+      "discount_rate": "55%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/6254994751656514824.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000206850_3",
+      "name_vi": "[모공결광] 3번 결세럼팩 10매",
+      "name_kr": "[모공결광] 3번 결세럼팩 10매",
+      "price_krw": 17900,
+      "price_vnd": 366502,
+      "discount_rate": "55%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/3970092392452441962.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000206850_4",
+      "name_vi": "[열감진정] 4번 얼음장팩 10매",
+      "name_kr": "[열감진정] 4번 얼음장팩 10매",
+      "price_krw": 17900,
+      "price_vnd": 366502,
+      "discount_rate": "55%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/4844889215142293289.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000206850_5",
+      "name_vi": "[흔적미백] 5번 흔적필름팩 10매",
+      "name_kr": "[흔적미백] 5번 흔적필름팩 10매",
+      "price_krw": 17900,
+      "price_vnd": 366502,
+      "discount_rate": "55%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/8826954541514352928.png",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Mặt Nạ Giấy Numbuzin (10 Miếng) từ thương hiệu Numbuzin là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Mặt Nạ Giấy Numbuzin (10 Miếng) từ thương hiệu Numbuzin là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206850&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=22",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_22_넘버즈인_A000000206850",
+  "updated_at": "2026-09-10 20:47:08"
+}

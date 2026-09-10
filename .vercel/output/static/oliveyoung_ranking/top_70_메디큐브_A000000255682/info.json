@@ -1,0 +1,105 @@
+{
+  "goods_no": "A000000255682",
+  "goodsNo": "A000000255682",
+  "rank": 70,
+  "name": "Bông Dưỡng Da Toner Pad  160 1+1 140 PDRN (160 Miếng)",
+  "name_vi": "Bông Dưỡng Da Toner Pad  160 1+1 140 PDRN (160 Miếng)",
+  "name_kr": "[1등모공패드/대용량160매] 메디큐브 패드 3종 1+1 140매 리필 기획 (제로모공패드/PDRN겔패드/딥비타씨패드)",
+  "brand": "메디큐브",
+  "brand_vi": "메디큐브",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "33000",
+  "sale_price_krw": "26200",
+  "price": 26200,
+  "foreignPrice": 26200,
+  "price_vnd": 536445,
+  "priceVnd": 536445,
+  "discount_rate": "21%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/main_thumbnail.png",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/main_thumbnail.png",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000255682_1",
+      "name_vi": "[대용량/피지모공] 제로모공패드 160매",
+      "name_kr": "[대용량/피지모공] 제로모공패드 160매",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "12%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/2855546772007834305.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255682_2",
+      "name_vi": "[피지모공] 제로모공패드 140매",
+      "name_kr": "[피지모공] 제로모공패드 140매",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "12%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/3562840687217153265.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255682_3",
+      "name_vi": "[미백광채] PDRN겔패드 140매",
+      "name_kr": "[미백광채] PDRN겔패드 140매",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "12%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/3313947401511910427.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000255682_4",
+      "name_vi": "[기미토닝] 딥비타씨패드 140매",
+      "name_kr": "[기미토닝] 딥비타씨패드 140매",
+      "price_krw": 28900,
+      "price_vnd": 591728,
+      "discount_rate": "12%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/2370690502096551913.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Bông Dưỡng Da Toner Pad 160 1+1 140 PDRN (160 Miếng) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu tinh chất Rose PDRN chiết xuất thực vật cùng phức hợp peptide. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp thu nhỏ lỗ chân lông, cải thiện bề mặt da thô ráp và mang lại hiệu ứng căng bóng rạng rỡ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Bông Dưỡng Da Toner Pad 160 1+1 140 PDRN (160 Miếng) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu tinh chất Rose PDRN chiết xuất thực vật cùng phức hợp peptide. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp thu nhỏ lỗ chân lông, cải thiện bề mặt da thô ráp và mang lại hiệu ứng căng bóng rạng rỡ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000255682&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=70",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_70_메디큐브_A000000255682",
+  "updated_at": "2026-09-10 21:00:17"
+}

@@ -1,0 +1,43 @@
+{
+  "created_at": 1788594968.083572,
+  "completed_tasks": {
+    "A000000223414": {
+      "completed_at": 1788594968.090561,
+      "meta": {
+        "dir": "/Users/tan/Desktop/oliveyoung_ranking/top_1_메디힐_A000000223414",
+        "attempts": 1
+      }
+    },
+    "A000000262413": {
+      "completed_at": 1788594968.097354,
+      "meta": {
+        "dir": "/Users/tan/Desktop/oliveyoung_ranking/top_2_메디힐_A000000262413",
+        "attempts": 1
+      }
+    },
+    "A000000219609": {
+      "completed_at": 1788594968.103895,
+      "meta": {
+        "dir": "/Users/tan/Desktop/oliveyoung_ranking/top_3_파티온_A000000219609",
+        "attempts": 1
+      }
+    },
+    "A000000263562": {
+      "completed_at": 1788594968.111372,
+      "meta": {
+        "dir": "/Users/tan/Desktop/oliveyoung_ranking/top_4_구달_A000000263562",
+        "attempts": 1
+      }
+    },
+    "A000000261423": {
+      "completed_at": 1788594968.1178648,
+      "meta": {
+        "dir": "/Users/tan/Desktop/oliveyoung_ranking/top_5_웰라쥬_A000000261423",
+        "attempts": 1
+      }
+    }
+  },
+  "failed_tasks": {},
+  "current_task": null,
+  "updated_at": 1788594968.117867
+}

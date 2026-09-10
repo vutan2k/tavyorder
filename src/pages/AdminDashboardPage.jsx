@@ -33,7 +33,8 @@ import {
   Moon,
   Users,
   FileText,
-  Bot
+  Bot,
+  ShieldCheck
 } from 'lucide-react';
 
 export default function AdminDashboardPage() {
@@ -108,6 +109,21 @@ export default function AdminDashboardPage() {
     return vnd.toLocaleString('vi-VN');
   }, [calcWon, krwRate, serviceFee]);
 
+  // Chi tiết phân tích phí dịch vụ & giá gốc
+  const calcBreakdown = useMemo(() => {
+    const won = parseFloat(String(calcWon).replace(/,/g, '')) || 0;
+    const base = Math.round(won * krwRate);
+    const fee = Math.round(base * (serviceFee / 100));
+    const total = base + fee;
+    return {
+      baseVnd: base.toLocaleString('vi-VN'),
+      feeVnd: fee.toLocaleString('vi-VN'),
+      totalVnd: total.toLocaleString('vi-VN'),
+      serviceFee,
+      krwRate
+    };
+  }, [calcWon, krwRate, serviceFee]);
+
   // Settings inputs
   const [krwRateInput, setKrwRateInput] = useState(rates?.KRW?.rate || 19.5);
   const [serviceFeeInput, setServiceFeeInput] = useState(rates?.serviceFeePercent || 5);
@@ -133,12 +149,77 @@ export default function AdminDashboardPage() {
     return timeNow.toLocaleTimeString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh', hour: '2-digit', minute: '2-digit' });
   }, [timeNow]);
 
-  // Phân tích việc cần làm khẩn cấp
+  // Phân tích việc cần làm khẩn cấp & đơn hàng gần nhất
   const urgentQueue = useMemo(() => {
     const needQuote = orders.filter(o => o.status === 'pending');
     const needPurchase = orders.filter(o => o.status === 'deposit_paid' || o.status === 'paid' || o.status === 'purchasing_korea');
     return { needQuote, needPurchase };
   }, [orders]);
+
+  const displayOrders = useMemo(() => {
+    const urgent = [...urgentQueue.needQuote, ...urgentQueue.needPurchase];
+    if (urgent.length > 0) return { title: 'Đơn Cần Xử Lý Ngay', list: urgent.slice(0, 5), isUrgent: true };
+    return { title: 'Đơn Hàng Gần Nhất', list: orders.slice(0, 5), isUrgent: false };
+  }, [urgentQueue, orders]);
+
+  const getStatusBadge = (status) => {
+    switch (status) {
+      case 'confirmed':
+        return { label: 'ĐÃ XÁC NHẬN', bg: isDark ? '#FFFFFF' : '#000000', color: isDark ? '#000000' : '#FFFFFF' };
+      case 'packed_kr':
+      case 'in_kr_warehouse':
+      case 'korea_warehouse':
+        return { label: 'KHO SEOUL', bg: isDark ? '#27272A' : '#F4F4F5', color: isDark ? '#FAFAFA' : '#18181B' };
+      case 'in_transit_air':
+      case 'transit':
+      case 'shipping_vietnam':
+        return { label: 'ĐANG BAY', bg: isDark ? '#27272A' : '#F4F4F5', color: isDark ? '#FAFAFA' : '#18181B' };
+      case 'customs_cleared':
+      case 'in_vn_warehouse':
+      case 'vietnam_warehouse':
+        return { label: 'KHO VN', bg: isDark ? '#27272A' : '#F4F4F5', color: isDark ? '#FAFAFA' : '#18181B' };
+      case 'completed':
+      case 'delivered':
+        return { label: 'ĐÃ GIAO', bg: isDark ? '#FFFFFF' : '#000000', color: isDark ? '#000000' : '#FFFFFF' };
+      case 'pending':
+        return { label: 'BÁO GIÁ', bg: isDark ? '#27272A' : '#E4E4E7', color: isDark ? '#FAFAFA' : '#09090B' };
+      case 'deposit_paid':
+      case 'paid':
+        return { label: 'ĐÃ CỌC', bg: isDark ? '#27272A' : '#F4F4F5', color: isDark ? '#FAFAFA' : '#18181B' };
+      case 'purchased':
+      case 'purchasing_korea':
+        return { label: 'ĐANG MUA', bg: isDark ? '#27272A' : '#F4F4F5', color: isDark ? '#FAFAFA' : '#18181B' };
+      default:
+        return { label: status?.toUpperCase() || 'ĐƠN HÀNG', bg: isDark ? '#27272A' : '#F4F4F5', color: isDark ? '#FAFAFA' : '#18181B' };
+    }
+  };
+
+  const recentActivities = useMemo(() => {
+    const acts = [];
+    if (orders.length > 0) {
+      orders.slice(0, 2).forEach(o => {
+        acts.push({
+          id: `order-${o.id}`,
+          dot: isDark ? '#FFFFFF' : '#000000',
+          title: `Đơn #${o.orderCode || o.id} - ${o.customerName || 'Khách'}`,
+          desc: `${o.status === 'confirmed' ? 'Đã xác nhận thanh toán' : o.status === 'packed_kr' ? 'Đóng gói tại kho Seoul' : o.status} • ${getOrderTotalVnd(o, krwRate, serviceFee).toLocaleString('vi-VN')} đ`
+        });
+      });
+    }
+    acts.push({
+      id: 'catalog-sync',
+      dot: isDark ? '#A1A1AA' : '#71717A',
+      title: `Đồng bộ ${products.length || 100} SKU Olive Young`,
+      desc: `Khớp giá live Won sang VND (Tỷ giá ${krwRate} đ/₩ • Phí ${serviceFee}%)`
+    });
+    acts.push({
+      id: 'worker-live',
+      dot: isDark ? '#71717A' : '#A1A1AA',
+      title: 'Worker Phó Tướng AI kết nối',
+      desc: 'Lắng nghe queue ai_manager_tasks realtime trên Firestore'
+    });
+    return acts.slice(0, 4);
+  }, [orders, products, krwRate, serviceFee, isDark]);
 
   // Tổng doanh số GMV
   const totalGmvVnd = useMemo(() => {
@@ -146,6 +227,7 @@ export default function AdminDashboardPage() {
       return sum + getOrderTotalVnd(order, krwRate, serviceFee);
     }, 0);
   }, [orders, krwRate, serviceFee]);
+
 
   const handleSwitchTab = (tabId) => {
     setActiveTab(tabId);
@@ -358,9 +440,9 @@ export default function AdminDashboardPage() {
               style={{
                 padding: '6px 14px',
                 borderRadius: '20px',
-                border: isActive ? '1px solid #8B5CF6' : (isDark ? '1px solid #334155' : '1px solid #CBD5E1'),
-                backgroundColor: isActive ? '#8B5CF6' : (isDark ? '#1E293B' : '#FFF'),
-                color: isActive ? '#FFF' : (isDark ? '#94A3B8' : '#64748B'),
+                border: isActive ? (isDark ? '1px solid #FFF' : '1px solid #000') : (isDark ? '1px solid #334155' : '1px solid #CBD5E1'),
+                backgroundColor: isActive ? (isDark ? '#FFF' : '#000') : (isDark ? '#1E293B' : '#FFF'),
+                color: isActive ? (isDark ? '#000' : '#FFF') : (isDark ? '#94A3B8' : '#64748B'),
                 fontSize: '0.75rem',
                 fontWeight: isActive ? 800 : 600,
                 whiteSpace: 'nowrap',
@@ -424,11 +506,11 @@ export default function AdminDashboardPage() {
           <div>
             <div style={{ fontSize: '1.15rem', fontWeight: 900, letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: '6px' }}>
               <span>TAVY KOREA</span>
-              <span style={{ fontSize: '0.65rem', backgroundColor: '#2563EB', padding: '1px 6px', borderRadius: '4px' }}>
+              <span style={{ fontSize: '0.65rem', backgroundColor: '#FFF', color: '#000', padding: '1px 6px', borderRadius: '4px', fontWeight: 900 }}>
                 ADMIN
               </span>
             </div>
-            <div style={{ fontSize: '0.7rem', color: '#94A3B8', marginTop: '3px' }}>
+            <div style={{ fontSize: '0.7rem', color: '#71717A', marginTop: '3px' }}>
               Hệ Thống Quản Trị & Vận Hành
             </div>
           </div>
@@ -442,49 +524,49 @@ export default function AdminDashboardPage() {
           </button>
         </div>
 
-        {/* Navigation Items (4 Main Tabs) */}
+        {/* Navigation Items */}
         <nav style={{ padding: '16px 12px', display: 'flex', flexDirection: 'column', gap: '6px', flex: 1 }}>
           {[
             {
               id: 'overview',
-              label: 'Tổng Quan (Overview)',
+              label: 'Tổng Quan',
               icon: BarChart3,
-              badge: urgentQueue.needQuote.length > 0 ? `${urgentQueue.needQuote.length} việc` : null,
+              badge: urgentQueue.needQuote.length > 0 ? `${urgentQueue.needQuote.length}` : null,
               badgeColor: '#EF4444'
             },
             {
               id: 'ai-manager',
-              label: '🤖 Phó Tướng AI',
+              label: 'AI',
               icon: Bot,
               badge: 'Hermes',
-              badgeColor: '#C5A059'
+              badgeColor: '#6366F1'
             },
             {
               id: 'orders',
               label: 'Quản Lý Đơn Hàng',
               icon: CreditCard,
-              badge: `${orders.length}`,
+              badge: orders.length > 0 ? `${orders.length}` : null,
               badgeColor: '#3B82F6'
             },
             {
               id: 'users',
               label: 'Khách Hàng',
               icon: Users,
-              badge: `${totalCustomers}`,
+              badge: totalCustomers > 0 ? `${totalCustomers}` : null,
               badgeColor: '#8B5CF6'
             },
             {
               id: 'products',
               label: 'Kho Sản Phẩm',
               icon: ShoppingBag,
-              badge: `${products.length}`,
+              badge: products.length > 0 ? `${products.length}` : null,
               badgeColor: '#10B981'
             },
             {
               id: 'sourcing',
               label: 'Kho Nạp Hàng',
               icon: Zap,
-              badge: pendingProducts?.length > 0 ? `${pendingProducts.length} chờ duyệt` : null,
+              badge: pendingProducts?.length > 0 ? `${pendingProducts.length}` : null,
               badgeColor: '#F59E0B'
             },
             {
@@ -505,11 +587,11 @@ export default function AdminDashboardPage() {
                   alignItems: 'center',
                   justifyContent: 'space-between',
                   padding: '10px 14px',
-                  borderRadius: '10px',
+                  borderRadius: '8px',
                   border: 'none',
-                  backgroundColor: isActive ? '#2563EB' : 'transparent',
-                  color: isActive ? '#FFF' : '#94A3B8',
-                  fontWeight: isActive ? 700 : 500,
+                  backgroundColor: isActive ? '#FFFFFF' : 'transparent',
+                  color: isActive ? '#000000' : '#A1A1AA',
+                  fontWeight: isActive ? 800 : 500,
                   fontSize: '0.85rem',
                   cursor: 'pointer',
                   transition: 'all 0.15s ease',
@@ -518,17 +600,17 @@ export default function AdminDashboardPage() {
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                  <Icon size={18} color={isActive ? '#FFF' : '#94A3B8'} />
+                  <Icon size={18} color={isActive ? '#000000' : '#A1A1AA'} />
                   <span>{item.label}</span>
                 </div>
                 {item.badge && (
                   <span style={{
-                    backgroundColor: isActive ? 'rgba(255,255,255,0.25)' : item.badgeColor,
-                    color: '#FFF',
+                    backgroundColor: isActive ? '#000000' : '#27272A',
+                    color: isActive ? '#FFFFFF' : '#D4D4D8',
                     fontSize: '0.68rem',
                     fontWeight: 800,
                     padding: '2px 7px',
-                    borderRadius: '999px'
+                    borderRadius: '6px'
                   }}>
                     {item.badge}
                   </span>
@@ -579,15 +661,117 @@ export default function AdminDashboardPage() {
         {/* TAB 1: TỔNG QUAN (OVERVIEW)                                    */}
         {/* ════════════════════════════════════════════════════════════════ */}
         {activeTab === 'overview' && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            {/* Header Title */}
-            <div>
-              <h1 style={{ fontSize: '1.5rem', fontWeight: 900, margin: 0 }}>
-                📊 Tổng Quan Hoạt Động & Việc Cần Làm
-              </h1>
-              <p style={{ margin: '4px 0 0 0', color: '#64748B', fontSize: '0.85rem' }}>
-                Bảng theo dõi các chỉ số quan trọng và danh sách công việc cần xử lý ngay hôm nay.
-              </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {/* Header Title & Status Badges */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: '12px'
+            }}>
+              <div>
+                <h1 style={{ fontSize: '1.35rem', fontWeight: 800, margin: 0, letterSpacing: '-0.02em', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                  Tổng Quan Vận Hành
+                </h1>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{
+                  fontSize: '0.75rem',
+                  fontWeight: 700,
+                  padding: '4px 10px',
+                  borderRadius: '6px',
+                  backgroundColor: isDark ? '#18181B' : '#F4F4F5',
+                  color: isDark ? '#F4F4F5' : '#18181B',
+                  border: isDark ? '1px solid #27272A' : '1px solid #E4E4E7'
+                }}>
+                  KRW/VND {krwRate} • Phí {serviceFee}%
+                </span>
+                <span style={{
+                  fontSize: '0.75rem',
+                  fontWeight: 800,
+                  padding: '4px 10px',
+                  borderRadius: '6px',
+                  backgroundColor: isDark ? '#FFFFFF' : '#000000',
+                  color: isDark ? '#000000' : '#FFFFFF',
+                  border: 'none'
+                }}>
+                  Live Sync
+                </span>
+              </div>
+            </div>
+
+            {/* Hermes AI Command Dock */}
+            <div
+              style={{
+                background: isDark ? '#0F172A' : '#F8FAFC',
+                border: isDark ? '1px solid #1E293B' : '1px solid #E2E8F0',
+                borderRadius: '10px',
+                padding: '12px 16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                gap: '12px'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div style={{
+                  width: '34px',
+                  height: '34px',
+                  borderRadius: '8px',
+                  backgroundColor: isDark ? '#27272A' : '#E4E4E7',
+                  color: isDark ? '#FFFFFF' : '#000000',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexShrink: 0
+                }}>
+                  <Bot size={18} />
+                </div>
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span style={{ fontSize: '0.88rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                      Hermes AI Ops
+                    </span>
+                    <span style={{
+                      fontSize: '0.62rem',
+                      backgroundColor: isDark ? '#27272A' : '#E4E4E7',
+                      color: isDark ? '#FAFAFA' : '#09090B',
+                      padding: '1px 6px',
+                      borderRadius: '4px',
+                      fontWeight: 800,
+                      letterSpacing: '0.04em'
+                    }}>
+                      ONLINE
+                    </span>
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '2px' }}>
+                    Phó Tướng vận hành • Giám sát 102 SKU & xử lý đơn hàng tự động
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => handleSwitchTab('ai-manager')}
+                style={{
+                  padding: '7px 14px',
+                  borderRadius: '7px',
+                  backgroundColor: isDark ? '#FFFFFF' : '#000000',
+                  color: isDark ? '#000000' : '#FFFFFF',
+                  border: 'none',
+                  fontSize: '0.78rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  transition: 'opacity 0.15s ease'
+                }}
+              >
+                <span>Phòng Điều Hành AI</span>
+                <ChevronRight size={14} />
+              </button>
             </div>
 
             {/* 🤖 Executive AI Commander Banner */}
@@ -650,264 +834,357 @@ export default function AdminDashboardPage() {
             </div>
 
             {/* 4 Essential KPI Cards */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '14px' }}>
+            <div className="admin-kpi-grid" style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))',
+              gap: '12px'
+            }}>
               {/* Card 1: Doanh Số GMV */}
-              <div className="admin-panel-card" style={{ backgroundColor: isDark ? '#1E293B' : '#FFF', borderRadius: '12px', padding: '18px', border: isDark ? '1px solid #334155' : '1px solid #E2E8F0', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-                <div style={{ fontSize: '0.75rem', fontWeight: 700, color: isDark ? '#94A3B8' : '#64748B', display: 'flex', justifyContent: 'space-between' }}>
-                  <span>TỔNG DOANH SỐ (GMV)</span>
-                  <TrendingUp size={16} color="#10B981" />
+              <div className="admin-panel-card" style={{ backgroundColor: isDark ? '#1E293B' : '#FFF', borderRadius: '10px', padding: '16px', border: isDark ? '1px solid #334155' : '1px solid #E2E8F0', boxShadow: '0 1px 2px rgba(0,0,0,0.03)' }}>
+                <div style={{ fontSize: '0.72rem', fontWeight: 700, color: isDark ? '#94A3B8' : '#64748B', display: 'flex', justifyContent: 'space-between', letterSpacing: '0.04em' }}>
+                  <span>DOANH SỐ (GMV)</span>
+                  <TrendingUp size={15} color={isDark ? '#FFF' : '#000'} />
                 </div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '6px' }}>
+                <div className="admin-kpi-value" style={{ fontSize: '1.35rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '6px', fontFamily: 'monospace, sans-serif' }}>
                   {totalGmvVnd.toLocaleString('vi-VN')} đ
                 </div>
-                <div style={{ fontSize: '0.72rem', color: '#10B981', marginTop: '4px', fontWeight: 600 }}>
-                  Từ {orders.length} đơn hàng trong hệ thống
+                <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#71717A', marginTop: '4px', fontWeight: 600 }}>
+                  {orders.length} đơn hàng hệ thống
                 </div>
               </div>
 
-              {/* Card 2: Đơn Chờ Báo Giá */}
+              {/* Card 2: Đơn Đang Xử Lý */}
               <div
                 className="admin-panel-card"
                 onClick={() => handleSwitchTab('orders')}
                 style={{
                   backgroundColor: isDark ? '#1E293B' : '#FFF',
-                  borderRadius: '12px',
-                  padding: '18px',
-                  border: urgentQueue.needQuote.length > 0 ? '2px solid #EF4444' : (isDark ? '1px solid #334155' : '1px solid #E2E8F0'),
-                  boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
-                  cursor: 'pointer'
-                }}
-              >
-                <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#DC2626', display: 'flex', justifyContent: 'space-between' }}>
-                  <span>CẦN BÁO GIÁ NGAY</span>
-                  <AlertCircle size={16} color="#DC2626" />
-                </div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#DC2626', marginTop: '6px' }}>
-                  {urgentQueue.needQuote.length} Đơn
-                </div>
-                <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '4px', display: 'flex', alignItems: 'center', gap: '2px' }}>
-                  <span>Bấm để xử lý ngay</span>
-                  <ChevronRight size={12} />
-                </div>
-              </div>
-
-              {/* Card 3: Đơn Cần Đặt Mua Hàn Quốc */}
-              <div
-                className="admin-panel-card"
-                onClick={() => handleSwitchTab('orders')}
-                style={{
-                  backgroundColor: isDark ? '#1E293B' : '#FFF',
-                  borderRadius: '12px',
-                  padding: '18px',
+                  borderRadius: '10px',
+                  padding: '16px',
                   border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
-                  boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+                  boxShadow: '0 1px 2px rgba(0,0,0,0.03)',
                   cursor: 'pointer'
                 }}
               >
-                <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#38BDF8', display: 'flex', justifyContent: 'space-between' }}>
-                  <span>CẦN MUA TẠI HÀN</span>
-                  <CreditCard size={16} color="#38BDF8" />
+                <div style={{ fontSize: '0.72rem', fontWeight: 700, color: isDark ? '#94A3B8' : '#64748B', display: 'flex', justifyContent: 'space-between', letterSpacing: '0.04em' }}>
+                  <span>ĐƠN ĐANG XỬ LÝ</span>
+                  <AlertCircle size={15} color={isDark ? '#FFF' : '#000'} />
                 </div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#38BDF8', marginTop: '6px' }}>
-                  {urgentQueue.needPurchase.length} Đơn
+                <div className="admin-kpi-value" style={{ fontSize: '1.35rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '6px', fontFamily: 'monospace, sans-serif' }}>
+                  {urgentQueue.needQuote.length + urgentQueue.needPurchase.length > 0 ? `${urgentQueue.needQuote.length + urgentQueue.needPurchase.length} Đơn` : `${orders.length} Đơn`}
                 </div>
-                <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '4px' }}>
-                  Đã cọc / Đã thanh toán
+                <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '4px', display: 'flex', gap: '8px' }}>
+                  {urgentQueue.needQuote.length + urgentQueue.needPurchase.length > 0 ? (
+                    <>
+                      <span>Báo giá: <b>{urgentQueue.needQuote.length}</b></span>
+                      <span>•</span>
+                      <span>Mua Hàn: <b>{urgentQueue.needPurchase.length}</b></span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Xác nhận: <b>{orders.filter(o => o.status === 'confirmed').length}</b></span>
+                      <span>•</span>
+                      <span>Kho HQ: <b>{orders.filter(o => o.status === 'packed_kr' || o.status === 'in_kr_warehouse').length}</b></span>
+                    </>
+                  )}
                 </div>
               </div>
 
-              {/* Card 4: Sản Phẩm Đang Bán */}
+              {/* Card 3: Kho Hàng Live */}
               <div
                 className="admin-panel-card"
                 onClick={() => handleSwitchTab('products')}
                 style={{
                   backgroundColor: isDark ? '#1E293B' : '#FFF',
-                  borderRadius: '12px',
-                  padding: '18px',
+                  borderRadius: '10px',
+                  padding: '16px',
                   border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
-                  boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+                  boxShadow: '0 1px 2px rgba(0,0,0,0.03)',
                   cursor: 'pointer'
                 }}
               >
-                <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10B981', display: 'flex', justifyContent: 'space-between' }}>
+                <div style={{ fontSize: '0.72rem', fontWeight: 700, color: isDark ? '#94A3B8' : '#64748B', display: 'flex', justifyContent: 'space-between', letterSpacing: '0.04em' }}>
                   <span>KHO HÀNG LIVE</span>
-                  <ShoppingBag size={16} color="#10B981" />
+                  <ShoppingBag size={15} color={isDark ? '#FFF' : '#000'} />
                 </div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#10B981', marginTop: '6px' }}>
-                  {products.length} Sản Phẩm
+                <div className="admin-kpi-value" style={{ fontSize: '1.35rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '6px', fontFamily: 'monospace, sans-serif' }}>
+                  {products.length} SKU
                 </div>
-                <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '4px' }}>
-                  Sâm Nấm, Mỹ phẩm, TPCN
+                <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#71717A', marginTop: '4px', fontWeight: 600 }}>
+                  Olive Young live sync
                 </div>
               </div>
 
-              {/* Card 5: Hàng Chờ Duyệt */}
+              {/* Card 4: Lợi Nhuận Ước Tính */}
               <div
                 className="admin-panel-card"
-                onClick={() => handleSwitchTab('sourcing')}
                 style={{
                   backgroundColor: isDark ? '#1E293B' : '#FFF',
-                  borderRadius: '12px',
-                  padding: '18px',
-                  border: (pendingProducts?.length || 0) > 0 ? '2px solid #F59E0B' : (isDark ? '1px solid #334155' : '1px solid #E2E8F0'),
-                  boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
-                  cursor: 'pointer'
+                  borderRadius: '10px',
+                  padding: '16px',
+                  border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                  boxShadow: '0 1px 2px rgba(0,0,0,0.03)'
                 }}
               >
-                <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#F59E0B', display: 'flex', justifyContent: 'space-between' }}>
-                  <span>HÀNG CHỜ DUYỆT</span>
-                  <Zap size={16} color="#F59E0B" />
+                <div style={{ fontSize: '0.72rem', fontWeight: 700, color: isDark ? '#94A3B8' : '#64748B', display: 'flex', justifyContent: 'space-between', letterSpacing: '0.04em' }}>
+                  <span>LỢI NHUẬN ƯỚC TÍNH</span>
+                  <ShieldCheck size={15} color={isDark ? '#FFF' : '#000'} />
                 </div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#F59E0B', marginTop: '6px' }}>
-                  {pendingProducts?.length || 0} Sản Phẩm
+                <div className="admin-kpi-value" style={{ fontSize: '1.35rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '6px', fontFamily: 'monospace, sans-serif' }}>
+                  {Math.round(totalGmvVnd * (serviceFee / (100 + serviceFee))).toLocaleString('vi-VN')} đ
                 </div>
-                <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '4px', display: 'flex', alignItems: 'center', gap: '2px' }}>
-                  <span>Bấm để duyệt lên web</span>
-                  <ChevronRight size={12} />
+                <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '4px' }}>
+                  Phí dịch vụ {serviceFee}%
                 </div>
               </div>
             </div>
 
-            {/* Bảng Danh Sách Việc Cần Làm Hôm Nay (Urgent Action Queue) */}
-            <div className="admin-panel-card" style={{
-              backgroundColor: isDark ? '#1E293B' : '#FFF',
-              borderRadius: '12px',
-              padding: '20px',
-              border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
-              boxShadow: '0 1px 3px rgba(0,0,0,0.04)'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <Clock size={18} color="#2563EB" />
-                  <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>
-                    Danh Sách Đơn Hàng Cần Xử Lý Gấp Hôm Nay
-                  </span>
+            {/* 2-Column Action & Activity Grid */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '14px' }}>
+              {/* Left Column: Urgent Action Queue */}
+              <div className="admin-panel-card" style={{
+                backgroundColor: isDark ? '#1E293B' : '#FFF',
+                borderRadius: '10px',
+                padding: '18px',
+                border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                boxShadow: '0 1px 2px rgba(0,0,0,0.03)'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <Clock size={16} color={isDark ? '#F8FAFC' : '#0F172A'} />
+                    <span style={{ fontWeight: 800, fontSize: '0.88rem', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                      {displayOrders.title}
+                    </span>
+                  </div>
+                  <button
+                    onClick={() => handleSwitchTab('orders')}
+                    style={{ background: 'none', border: 'none', color: isDark ? '#F8FAFC' : '#0F172A', fontWeight: 800, fontSize: '0.75rem', cursor: 'pointer' }}
+                  >
+                    Xem tất cả ➔
+                  </button>
                 </div>
-                <button
-                  onClick={() => handleSwitchTab('orders')}
-                  style={{ background: 'none', border: 'none', color: '#2563EB', fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer' }}
-                >
-                  Xem toàn bộ Kanban ➔
-                </button>
+
+                {displayOrders.list.length === 0 ? (
+                  <div style={{
+                    padding: '28px 16px',
+                    textAlign: 'center',
+                    color: isDark ? '#94A3B8' : '#64748B',
+                    backgroundColor: isDark ? 'rgba(255,255,255,0.02)' : '#F8FAFC',
+                    borderRadius: '8px'
+                  }}>
+                    <CheckCircle2 size={24} color={isDark ? '#F8FAFC' : '#0F172A'} style={{ margin: '0 auto 6px auto' }} />
+                    <div style={{ fontWeight: 700, fontSize: '0.85rem', color: isDark ? '#F8FAFC' : '#0F172A' }}>Chưa có đơn hàng</div>
+                    <div style={{ fontSize: '0.75rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '2px' }}>Các đơn mới từ khách sẽ xuất hiện tại đây theo thời gian thực.</div>
+                  </div>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    {displayOrders.list.map(order => {
+                      const badge = getStatusBadge(order.status);
+                      return (
+                        <div
+                          key={order.id}
+                          onClick={() => handleSwitchTab('orders')}
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            padding: '10px 12px',
+                            borderRadius: '8px',
+                            backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
+                            border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                            cursor: 'pointer',
+                            transition: 'background 0.15s ease'
+                          }}
+                        >
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <span style={{
+                              backgroundColor: badge.bg,
+                              color: badge.color,
+                              fontSize: '0.68rem',
+                              fontWeight: 800,
+                              padding: '2px 7px',
+                              borderRadius: '4px'
+                            }}>
+                              {badge.label}
+                            </span>
+                            <div>
+                              <span style={{
+                                fontFamily: 'monospace',
+                                fontWeight: 700,
+                                fontSize: '0.78rem',
+                                color: isDark ? '#F8FAFC' : '#0F172A',
+                                backgroundColor: isDark ? '#27272A' : '#E4E4E7',
+                                padding: '1px 5px',
+                                borderRadius: '4px'
+                              }}>
+                                #{order.orderCode || order.id.replace(/^ORD-?/i, '')}
+                              </span>
+                              <span style={{ color: isDark ? '#F8FAFC' : '#0F172A', fontSize: '0.82rem', fontWeight: 600, marginLeft: '8px' }}>
+                                {order.customerName || 'Khách'}
+                              </span>
+                              <span style={{ color: isDark ? '#94A3B8' : '#64748B', fontSize: '0.75rem', marginLeft: '4px' }}>
+                                ({order.items?.length || 1} SP)
+                              </span>
+                            </div>
+                          </div>
+
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <span style={{ fontWeight: 800, fontSize: '0.85rem', color: isDark ? '#F8FAFC' : '#0F172A', fontFamily: 'monospace' }}>
+                              {getOrderTotalVnd(order, krwRate, serviceFee).toLocaleString('vi-VN')} đ
+                            </span>
+                            <ChevronRight size={14} color={isDark ? '#94A3B8' : '#64748B'} />
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
 
-              {urgentQueue.needQuote.length === 0 && urgentQueue.needPurchase.length === 0 ? (
-                <div style={{
-                  padding: '30px',
-                  textAlign: 'center',
-                  color: isDark ? '#34D399' : '#059669',
-                  backgroundColor: isDark ? 'rgba(6, 78, 59, 0.3)' : '#ECFDF5',
-                  border: isDark ? '1px solid #064E3B' : 'none',
-                  borderRadius: '10px'
-                }}>
-                  <CheckCircle2 size={32} style={{ margin: '0 auto 8px auto' }} />
-                  <div style={{ fontWeight: 800, fontSize: '0.95rem' }}>Tuyệt vời! Không có đơn hàng nào bị tồn đọng.</div>
-                  <div style={{ fontSize: '0.8rem', color: isDark ? '#A7F3D0' : '#047857', marginTop: '4px' }}>Tất cả các đơn đã được báo giá và mua hàng đầy đủ.</div>
+              {/* Right Column: AI Operations Feed */}
+              <div className="admin-panel-card" style={{
+                backgroundColor: isDark ? '#1E293B' : '#FFF',
+                borderRadius: '10px',
+                padding: '18px',
+                border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                boxShadow: '0 1px 2px rgba(0,0,0,0.03)'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <Zap size={16} color={isDark ? '#F8FAFC' : '#0F172A'} />
+                    <span style={{ fontWeight: 800, fontSize: '0.88rem', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                      Nhật Ký Tự Động Hóa
+                    </span>
+                  </div>
+                  <span style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B' }}>
+                    Realtime Feed
+                  </span>
                 </div>
-              ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  {[...urgentQueue.needQuote, ...urgentQueue.needPurchase].map(order => (
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {recentActivities.map(act => (
                     <div
-                      key={order.id}
-                      onClick={() => handleSwitchTab('orders')}
+                      key={act.id}
                       style={{
                         display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        padding: '10px 14px',
-                        borderRadius: '8px',
+                        alignItems: 'flex-start',
+                        gap: '10px',
+                        padding: '8px 10px',
+                        borderRadius: '6px',
                         backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
-                        border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
-                        cursor: 'pointer'
+                        border: isDark ? '1px solid #334155' : '1px solid #E2E8F0'
                       }}
                     >
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                        <span style={{
-                          backgroundColor: order.status === 'pending' ? '#FEE2E2' : '#EFF6FF',
-                          color: order.status === 'pending' ? '#DC2626' : '#2563EB',
-                          fontSize: '0.7rem',
-                          fontWeight: 800,
-                          padding: '3px 8px',
-                          borderRadius: '6px'
-                        }}>
-                          {order.status === 'pending' ? 'CẦN BÁO GIÁ' : 'CẦN MUA HÀN'}
-                        </span>
-                        <div>
-                          <span style={{ fontWeight: 700, fontSize: '0.85rem', color: isDark ? '#F8FAFC' : '#0F172A' }}>#{order.id.replace(/^ORD-?/i, '')}</span>
-                          <span style={{ color: isDark ? '#94A3B8' : '#64748B', fontSize: '0.8rem', marginLeft: '8px' }}>{order.customerName || 'Khách'} ({order.customerPhone})</span>
+                      <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: act.dot, marginTop: '5px', flexShrink: 0 }} />
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontSize: '0.78rem', fontWeight: 700, color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                          {act.title}
                         </div>
-                      </div>
-
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <span style={{ fontWeight: 800, fontSize: '0.85rem', color: isDark ? '#38BDF8' : '#0F172A' }}>
-                          {getOrderTotalVnd(order, krwRate, serviceFee).toLocaleString('vi-VN')} đ
-                        </span>
-                        <ChevronRight size={14} color={isDark ? '#94A3B8' : '#64748B'} />
+                        <div style={{ fontSize: '0.7rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '2px' }}>
+                          {act.desc}
+                        </div>
                       </div>
                     </div>
                   ))}
                 </div>
-              )}
+              </div>
             </div>
 
             {/* Quick Currency Converter Widget */}
             <div className="admin-panel-card" style={{
               backgroundColor: isDark ? '#1E293B' : '#FFF',
-              borderRadius: '12px',
-              padding: '20px',
+              borderRadius: '10px',
+              padding: '14px 18px',
               border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-              gap: '20px',
-              alignItems: 'center'
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: '14px'
             }}>
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#38BDF8', fontWeight: 800, fontSize: '0.9rem' }}>
-                  <Calculator size={18} />
-                  <span>Máy Tính Đổi Giá Nhanh (Won ➔ VNĐ)</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: isDark ? '#F8FAFC' : '#0F172A', fontWeight: 700, fontSize: '0.85rem' }}>
+                    <Calculator size={16} />
+                    <span>Quy Đổi Nhanh (KRW ➔ VND)</span>
+                  </div>
+                  <span style={{
+                    fontSize: '0.68rem',
+                    fontWeight: 700,
+                    padding: '2px 8px',
+                    borderRadius: '4px',
+                    backgroundColor: isDark ? '#27272A' : '#E4E4E7',
+                    color: isDark ? '#F8FAFC' : '#0F172A',
+                    border: 'none'
+                  }}>
+                    Phí dịch vụ: {serviceFee}%
+                  </span>
                 </div>
-                <p style={{ margin: '4px 0 12px 0', fontSize: '0.78rem', color: isDark ? '#94A3B8' : '#64748B' }}>
-                  Giá về tay = Giá sản phẩm Won * Tỷ giá ({krwRate}) + Phí dịch vụ ({serviceFee}%)
-                </p>
+                <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
+                  <div style={{ position: 'relative', display: 'inline-block' }}>
+                    <input
+                      type="number"
+                      value={calcWon}
+                      onChange={(e) => setCalcWon(e.target.value)}
+                      placeholder="Giá Won..."
+                      style={{
+                        padding: '6px 36px 6px 10px',
+                        borderRadius: '6px',
+                        border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
+                        backgroundColor: isDark ? '#0F172A' : '#FFF',
+                        color: isDark ? '#F8FAFC' : '#0F172A',
+                        width: '130px',
+                        fontSize: '0.85rem'
+                      }}
+                    />
+                    <span style={{ position: 'absolute', right: '8px', top: '50%', transform: 'translateY(-50%)', fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B', fontWeight: 700 }}>
+                      ₩
+                    </span>
+                  </div>
+                  <span style={{ fontWeight: 700, fontSize: '0.85rem', color: isDark ? '#94A3B8' : '#64748B' }}>=</span>
+                  <div style={{ fontSize: '1rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', fontFamily: 'monospace' }}>
+                    {calcVnd} đ
+                  </div>
 
-                <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                  <input
-                    type="number"
-                    value={calcWon}
-                    onChange={(e) => setCalcWon(e.target.value)}
-                    placeholder="Nhập giá Won..."
-                    style={{
-                      padding: '8px 12px',
-                      borderRadius: '8px',
-                      border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
-                      backgroundColor: isDark ? '#0F172A' : '#FFF',
-                      color: isDark ? '#F8FAFC' : '#0F172A',
-                      width: '140px',
-                      fontSize: '0.88rem'
-                    }}
-                  />
-                  <span style={{ fontWeight: 700, fontSize: '0.9rem', color: isDark ? '#F8FAFC' : '#0F172A' }}>₩ =</span>
-                  <div style={{ fontSize: '1.2rem', fontWeight: 900, color: '#38BDF8' }}>
-                    {calcVnd} VNĐ
+                  {/* Chi tiết bóc tách Giá Gốc & Phí dịch vụ */}
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    marginLeft: '4px',
+                    padding: '3px 8px',
+                    borderRadius: '6px',
+                    backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
+                    border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                    fontSize: '0.72rem',
+                    fontFamily: 'monospace, sans-serif'
+                  }}>
+                    <span style={{ color: isDark ? '#94A3B8' : '#64748B' }}>
+                      Gốc: <b>{calcBreakdown.baseVnd} đ</b>
+                    </span>
+                    <span style={{ color: isDark ? '#475569' : '#CBD5E1' }}>•</span>
+                    <span style={{ color: isDark ? '#F8FAFC' : '#0F172A', fontWeight: 700 }}>
+                      Phí (+{serviceFee}%): +{calcBreakdown.feeVnd} đ
+                    </span>
                   </div>
                 </div>
               </div>
 
-              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <div>
                 <button
                   onClick={() => handleSwitchTab('settings')}
                   style={{
-                    backgroundColor: isDark ? '#0F172A' : '#F1F5F9',
-                    border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
-                    borderRadius: '8px',
-                    padding: '8px 14px',
-                    fontSize: '0.8rem',
+                    backgroundColor: isDark ? '#FFFFFF' : '#000000',
+                    border: 'none',
+                    borderRadius: '6px',
+                    padding: '6px 12px',
+                    fontSize: '0.75rem',
                     fontWeight: 700,
-                    color: isDark ? '#E2E8F0' : '#334155',
+                    color: isDark ? '#000000' : '#FFFFFF',
                     cursor: 'pointer'
                   }}
                 >
-                  Cài Đặt Tỷ Giá Won Mới ➔
+                  Cài đặt tỷ giá ➔
                 </button>
               </div>
             </div>
@@ -918,14 +1195,23 @@ export default function AdminDashboardPage() {
         {/* TAB 2: QUẢN LÝ ĐƠN HÀNG (ORDERS KANBAN)                         */}
         {/* ════════════════════════════════════════════════════════════════ */}
         {activeTab === 'orders' && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div>
-              <h1 style={{ fontSize: '1.5rem', fontWeight: 900, margin: 0, color: isDark ? '#F8FAFC' : '#0F172A' }}>
-                📦 Quản Lý Đơn Hàng & Phân Luồng Kanban
-              </h1>
-              <p style={{ margin: '4px 0 0 0', color: isDark ? '#94A3B8' : '#64748B', fontSize: '0.85rem' }}>
-                Phân luồng 5 bước xử lý: Báo giá ➔ Chờ cọc ➔ Đặt mua tại Hàn ➔ Vận chuyển về VN ➔ Hoàn tất.
-              </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <h1 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, letterSpacing: '-0.02em', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                  Quản Lý Đơn Hàng
+                </h1>
+                <span style={{
+                  fontSize: '0.72rem',
+                  fontWeight: 700,
+                  backgroundColor: isDark ? 'rgba(59, 130, 246, 0.15)' : '#EFF6FF',
+                  color: '#3B82F6',
+                  padding: '2px 8px',
+                  borderRadius: '999px'
+                }}>
+                  {orders.length} Đơn
+                </span>
+              </div>
             </div>
             <AdminOrderManager isDark={isDark} />
           </div>
@@ -935,7 +1221,12 @@ export default function AdminDashboardPage() {
         {/* TAB 2B: QUẢN LÝ KHÁCH HÀNG (USERS)                               */}
         {/* ════════════════════════════════════════════════════════════════ */}
         {activeTab === 'users' && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
+              <h1 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, letterSpacing: '-0.02em', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                Khách Hàng
+              </h1>
+            </div>
             <AdminUserManager isDark={isDark} />
           </div>
         )}
@@ -953,14 +1244,11 @@ export default function AdminDashboardPage() {
         {/* TAB 4: KHO NẠP HÀNG & HÀNG CHỜ DUYỆT (SOURCING & PENDING)       */}
         {/* ════════════════════════════════════════════════════════════════ */}
         {activeTab === 'sourcing' && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div>
-              <h1 style={{ fontSize: '1.5rem', fontWeight: 900, margin: 0, color: isDark ? '#F8FAFC' : '#0F172A' }}>
-                📥 Kho Nạp Hàng & Kiểm Duyệt Sản Phẩm Mới
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
+              <h1 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, letterSpacing: '-0.02em', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                Kho Nạp Hàng & Kiểm Duyệt
               </h1>
-              <p style={{ margin: '4px 0 0 0', color: isDark ? '#94A3B8' : '#64748B', fontSize: '0.85rem' }}>
-                Tiếp nhận sản phẩm cào từ Naver, KGC, Nonghyup, Olive Young & Extension. Kiểm duyệt chất lượng và giá trước khi xuất bản lên website.
-              </p>
             </div>
             <AdminProductSourcing 
               isDark={isDark} 
@@ -980,14 +1268,11 @@ export default function AdminDashboardPage() {
         {/* TAB 4: CÀI ĐẶT & TỶ GIÁ (SETTINGS)                             */}
         {/* ════════════════════════════════════════════════════════════════ */}
         {activeTab === 'settings' && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxWidth: '700px' }}>
-            <div>
-              <h1 style={{ fontSize: '1.5rem', fontWeight: 900, margin: 0, color: isDark ? '#F8FAFC' : '#0F172A' }}>
-                ⚙️ Cài Đặt Hệ Thống & Giao Diện
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '650px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <h1 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, letterSpacing: '-0.02em', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                Cài Đặt Hệ Thống
               </h1>
-              <p style={{ margin: '4px 0 0 0', color: isDark ? '#94A3B8' : '#64748B', fontSize: '0.85rem' }}>
-                Thiết lập chế độ giao diện quản trị, tỷ giá chuyển đổi KRW/VND và phần trăm phí dịch vụ.
-              </p>
             </div>
 
             {/* ════════════════════════════════════════════════════════════ */}
@@ -995,85 +1280,72 @@ export default function AdminDashboardPage() {
             {/* ════════════════════════════════════════════════════════════ */}
             <div style={{
               backgroundColor: isDark ? '#1E293B' : '#FFF',
-              borderRadius: '16px',
-              padding: '24px',
+              borderRadius: '10px',
+              padding: '18px',
               border: `1px solid ${isDark ? '#334155' : '#E2E8F0'}`,
               display: 'flex',
               flexDirection: 'column',
-              gap: '18px',
-              boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
+              gap: '14px',
+              boxShadow: '0 1px 2px rgba(0,0,0,0.03)'
             }}>
               <div>
-                <h2 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0, color: isDark ? '#F8FAFC' : '#0F172A', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  {isDark ? <Moon size={20} color="#38BDF8" /> : <Sun size={20} color="#F59E0B" />}
-                  Giao Diện Bảng Quản Trị (Admin Theme)
+                <h2 style={{ fontSize: '0.95rem', fontWeight: 800, margin: 0, color: isDark ? '#F8FAFC' : '#0F172A', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  {isDark ? <Moon size={16} color="#38BDF8" /> : <Sun size={16} color="#F59E0B" />}
+                  Giao Diện Quản Trị
                 </h2>
-                <p style={{ margin: '4px 0 0 0', color: isDark ? '#94A3B8' : '#64748B', fontSize: '0.85rem' }}>
-                  Tùy chỉnh chế độ hiển thị Sáng hoặc Tối (Dark Slate) để bảo vệ mắt khi làm việc ban đêm. Cấu hình được lưu độc lập trên máy này.
-                </p>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
                 {/* Sáng */}
                 <div
                   onClick={() => setAdminTheme('light')}
                   style={{
-                    padding: '16px',
-                    borderRadius: '12px',
+                    padding: '12px 14px',
+                    borderRadius: '8px',
                     cursor: 'pointer',
                     border: !isDark ? '2px solid #2563EB' : `1px solid ${isDark ? '#334155' : '#CBD5E1'}`,
                     backgroundColor: !isDark ? 'rgba(37, 99, 235, 0.08)' : (isDark ? '#0F172A' : '#F8FAFC'),
                     display: 'flex',
-                    flexDirection: 'column',
-                    gap: '6px',
-                    transition: 'all 0.2s ease'
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    transition: 'all 0.15s ease'
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A' }}>
-                      <Sun size={18} color="#F59E0B" />
-                      <span>Chế độ Sáng</span>
-                    </div>
-                    {!isDark && (
-                      <span style={{ fontSize: '0.7rem', fontWeight: 700, backgroundColor: '#2563EB', color: '#FFF', padding: '2px 8px', borderRadius: '12px' }}>
-                        Đang dùng
-                      </span>
-                    )}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 700, fontSize: '0.84rem', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                    <Sun size={16} color="#F59E0B" />
+                    <span>Chế độ Sáng</span>
                   </div>
-                  <span style={{ fontSize: '0.78rem', color: isDark ? '#94A3B8' : '#64748B' }}>
-                    Giao diện tiêu chuẩn, nền sáng xám dịu (#F8FAFC).
-                  </span>
+                  {!isDark && (
+                    <span style={{ fontSize: '0.68rem', fontWeight: 700, backgroundColor: '#2563EB', color: '#FFF', padding: '1px 7px', borderRadius: '10px' }}>
+                      Bật
+                    </span>
+                  )}
                 </div>
 
                 {/* Tối */}
                 <div
                   onClick={() => setAdminTheme('dark')}
                   style={{
-                    padding: '16px',
-                    borderRadius: '12px',
+                    padding: '12px 14px',
+                    borderRadius: '8px',
                     cursor: 'pointer',
                     border: isDark ? '2px solid #38BDF8' : `1px solid ${isDark ? '#334155' : '#CBD5E1'}`,
                     backgroundColor: isDark ? 'rgba(56, 189, 248, 0.12)' : (isDark ? '#0F172A' : '#F8FAFC'),
                     display: 'flex',
-                    flexDirection: 'column',
-                    gap: '6px',
-                    transition: 'all 0.2s ease'
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    transition: 'all 0.15s ease'
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A' }}>
-                      <Moon size={18} color="#38BDF8" />
-                      <span>Chế độ Tối (Dark Slate)</span>
-                    </div>
-                    {isDark && (
-                      <span style={{ fontSize: '0.7rem', fontWeight: 700, backgroundColor: '#0284C7', color: '#FFF', padding: '2px 8px', borderRadius: '12px' }}>
-                        Đang dùng
-                      </span>
-                    )}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 700, fontSize: '0.84rem', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                    <Moon size={16} color="#38BDF8" />
+                    <span>Chế độ Tối</span>
                   </div>
-                  <span style={{ fontSize: '0.78rem', color: isDark ? '#94A3B8' : '#64748B' }}>
-                    Giao diện tối tương phản cao (#0B0F19 & #1E293B), chống mỏi mắt.
-                  </span>
+                  {isDark && (
+                    <span style={{ fontSize: '0.68rem', fontWeight: 700, backgroundColor: '#0284C7', color: '#FFF', padding: '1px 7px', borderRadius: '10px' }}>
+                      Bật
+                    </span>
+                  )}
                 </div>
               </div>
 
@@ -1082,19 +1354,19 @@ export default function AdminDashboardPage() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                paddingTop: '12px',
+                paddingTop: '10px',
                 borderTop: `1px solid ${isDark ? '#334155' : '#F1F5F9'}`
               }}>
-                <span style={{ fontSize: '0.84rem', fontWeight: 700, color: isDark ? '#CBD5E1' : '#334155' }}>
-                  Bật công tắc chế độ tối:
+                <span style={{ fontSize: '0.8rem', fontWeight: 600, color: isDark ? '#94A3B8' : '#64748B' }}>
+                  Chuyển nhanh giao diện Tối / Sáng
                 </span>
                 <button
                   type="button"
                   onClick={toggleAdminTheme}
                   style={{
-                    width: '50px',
-                    height: '28px',
-                    borderRadius: '14px',
+                    width: '44px',
+                    height: '24px',
+                    borderRadius: '12px',
                     backgroundColor: isDark ? '#0284C7' : '#94A3B8',
                     border: 'none',
                     position: 'relative',
@@ -1105,18 +1377,18 @@ export default function AdminDashboardPage() {
                   aria-label="Chuyển đổi giao diện Admin"
                 >
                   <div style={{
-                    width: '24px',
-                    height: '24px',
+                    width: '20px',
+                    height: '20px',
                     borderRadius: '50%',
                     backgroundColor: '#FFF',
-                    transform: isDark ? 'translateX(22px)' : 'translateX(0)',
+                    transform: isDark ? 'translateX(20px)' : 'translateX(0)',
                     transition: 'transform 0.2s ease',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+                    boxShadow: '0 1px 3px rgba(0,0,0,0.2)'
                   }}>
-                    {isDark ? <Moon size={12} color="#0284C7" /> : <Sun size={12} color="#F59E0B" />}
+                    {isDark ? <Moon size={11} color="#0284C7" /> : <Sun size={11} color="#F59E0B" />}
                   </div>
                 </button>
               </div>
@@ -1127,17 +1399,17 @@ export default function AdminDashboardPage() {
             {/* ════════════════════════════════════════════════════════════ */}
             <form onSubmit={handleSaveRates} style={{
               backgroundColor: isDark ? '#1E293B' : '#FFF',
-              borderRadius: '16px',
-              padding: '24px',
+              borderRadius: '10px',
+              padding: '18px',
               border: `1px solid ${isDark ? '#334155' : '#E2E8F0'}`,
               display: 'flex',
               flexDirection: 'column',
-              gap: '18px',
-              boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
+              gap: '14px',
+              boxShadow: '0 1px 2px rgba(0,0,0,0.03)'
             }}>
               <div>
-                <label style={{ fontSize: '0.82rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A' }}>
-                  Tỷ Giá 1 KRW (Won Hàn Quốc) đổi sang VNĐ:
+                <label style={{ fontSize: '0.8rem', fontWeight: 700, color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                  Tỷ Giá 1 KRW (Won Hàn Quốc) đổi sang VNĐ
                 </label>
                 <div style={{ marginTop: '6px', display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <input
@@ -1147,25 +1419,26 @@ export default function AdminDashboardPage() {
                     value={krwRateInput}
                     onChange={(e) => setKrwRateInput(e.target.value)}
                     style={{
-                      padding: '10px 14px',
-                      borderRadius: '8px',
+                      padding: '8px 12px',
+                      borderRadius: '6px',
                       border: `1px solid ${isDark ? '#334155' : '#CBD5E1'}`,
                       backgroundColor: isDark ? '#0F172A' : '#FFF',
                       color: isDark ? '#F8FAFC' : '#0F172A',
-                      width: '160px',
-                      fontSize: '0.95rem',
+                      width: '140px',
+                      fontSize: '0.88rem',
+                      fontFamily: 'monospace',
                       fontWeight: 700
                     }}
                   />
-                  <span style={{ fontSize: '0.85rem', color: isDark ? '#94A3B8' : '#64748B' }}>VNĐ / 1 Won</span>
+                  <span style={{ fontSize: '0.8rem', color: isDark ? '#94A3B8' : '#64748B' }}>VNĐ / Won</span>
                 </div>
               </div>
 
               <div>
-                <label style={{ fontSize: '0.82rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A' }}>
-                  Phần Trăm Phí Dịch Vụ Mua Hộ & Bảo Hiểm (%):
+                <label style={{ fontSize: '0.8rem', fontWeight: 700, color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                  Phần Trăm Phí Dịch Vụ Mua Hộ (%)
                 </label>
-                <div style={{ marginTop: '6px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <div style={{ marginTop: '6px', display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center' }}>
                     <input
                       type="number"
@@ -1174,48 +1447,50 @@ export default function AdminDashboardPage() {
                       value={serviceFeeInput}
                       onChange={(e) => setServiceFeeInput(e.target.value)}
                       style={{
-                        padding: '10px 38px 10px 14px',
-                        borderRadius: '8px',
+                        padding: '8px 30px 8px 12px',
+                        borderRadius: '6px',
                         border: `1px solid ${isDark ? '#334155' : '#CBD5E1'}`,
                         backgroundColor: isDark ? '#0F172A' : '#FFF',
                         color: isDark ? '#F8FAFC' : '#0F172A',
-                        width: '160px',
-                        fontSize: '0.95rem',
+                        width: '140px',
+                        fontSize: '0.88rem',
+                        fontFamily: 'monospace',
                         fontWeight: 700,
                         outline: 'none'
                       }}
                     />
                     <span style={{
                       position: 'absolute',
-                      right: '12px',
+                      right: '10px',
                       fontWeight: 800,
-                      fontSize: '0.95rem',
+                      fontSize: '0.85rem',
                       color: isDark ? '#94A3B8' : '#475569',
                       pointerEvents: 'none'
                     }}>
                       %
                     </span>
                   </div>
-                  <span style={{ fontSize: '0.85rem', color: isDark ? '#94A3B8' : '#64748B' }}>% trên giá gốc sản phẩm (tự do cấu hình)</span>
+                  <span style={{ fontSize: '0.8rem', color: isDark ? '#94A3B8' : '#64748B' }}>trên giá gốc sản phẩm</span>
                 </div>
               </div>
 
-              <div style={{ paddingTop: '12px', borderTop: `1px solid ${isDark ? '#334155' : '#F1F5F9'}` }}>
+              <div style={{ paddingTop: '10px', borderTop: `1px solid ${isDark ? '#334155' : '#F1F5F9'}` }}>
                 <button
                   type="submit"
                   disabled={isSavingRates}
                   style={{
-                    backgroundColor: '#2563EB',
-                    color: '#FFF',
+                    backgroundColor: isDark ? '#F8FAFC' : '#0F172A',
+                    color: isDark ? '#0F172A' : '#F8FAFC',
                     border: 'none',
-                    borderRadius: '8px',
-                    padding: '10px 24px',
-                    fontSize: '0.88rem',
-                    fontWeight: 800,
-                    cursor: 'pointer'
+                    borderRadius: '6px',
+                    padding: '8px 18px',
+                    fontSize: '0.82rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease'
                   }}
                 >
-                  {isSavingRates ? 'Đang lưu...' : '💾 Lưu Cấu Hình Tỷ Giá Ngay'}
+                  {isSavingRates ? 'Đang lưu...' : 'Lưu Cấu Hình'}
                 </button>
               </div>
             </form>
@@ -1244,15 +1519,15 @@ export default function AdminDashboardPage() {
               aria-label={tab.label}
             >
               <div style={{ position: 'relative', display: 'inline-flex' }}>
-                <Icon size={19} color={isActive ? '#8B5CF6' : (isDark ? '#94A3B8' : '#64748B')} />
+                <Icon size={19} color={isActive ? (isDark ? '#F8FAFC' : '#0F172A') : (isDark ? '#94A3B8' : '#64748B')} />
                 {tab.badge && (
                   <span
                     style={{
                       position: 'absolute',
                       top: '-5px',
                       right: '-8px',
-                      backgroundColor: tab.badgeColor || '#EF4444',
-                      color: '#FFF',
+                      backgroundColor: isDark ? '#FFFFFF' : '#000000',
+                      color: isDark ? '#000000' : '#FFFFFF',
                       fontSize: '0.62rem',
                       fontWeight: 900,
                       minWidth: '15px',
@@ -1284,7 +1559,7 @@ export default function AdminDashboardPage() {
                   bottom: '3px',
                   width: '16px',
                   height: '3px',
-                  backgroundColor: '#8B5CF6',
+                  backgroundColor: isDark ? '#F8FAFC' : '#0F172A',
                   borderRadius: '2px'
                 }} />
               )}
@@ -1311,21 +1586,35 @@ export default function AdminDashboardPage() {
             display: flex !important;
           }
           .admin-mobile-pills-bar {
-            display: flex !important;
+            display: none !important;
           }
           .admin-mobile-bottom-nav {
             display: flex !important;
           }
           .admin-main-wrapper {
             margin-left: 0 !important;
-            padding: 16px 12px 90px 12px !important;
-            padding-top: 116px !important;
+            padding: 12px 10px 100px 10px !important;
+            padding-top: 66px !important;
             width: 100% !important;
             max-width: 100vw !important;
             overflow-x: hidden !important;
           }
           .admin-close-mobile-btn {
             display: block !important;
+          }
+
+          /* Mobile 2x2 KPI Grid */
+          .admin-kpi-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 8px !important;
+          }
+          .admin-kpi-grid .admin-panel-card {
+            padding: 12px 10px !important;
+          }
+          .admin-kpi-grid .admin-kpi-value {
+            font-size: 1.12rem !important;
+            margin-top: 4px !important;
+            letter-spacing: -0.02em !important;
           }
 
           /* Chống Auto-Zoom trên iOS Safari */

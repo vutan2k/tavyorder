@@ -1,0 +1,105 @@
+{
+  "goods_no": "A000000171423",
+  "goodsNo": "A000000171423",
+  "rank": 2,
+  "name": "Unove 어노브 딥 데미지 리페어 헤어 마스크 (트리트먼트/헤어팩) 320ml 더블/듀오 기획",
+  "name_vi": "Unove 어노브 딥 데미지 리페어 헤어 마스크 (트리트먼트/헤어팩) 320ml 더블/듀오 기획",
+  "name_kr": "[9/5 하루특가] 어노브 딥 데미지 리페어 헤어 마스크 (트리트먼트/헤어팩) 320ml 더블/듀오 기획",
+  "brand": "어노브",
+  "brand_vi": "Unove",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "42000",
+  "sale_price_krw": "26900",
+  "price": 26900,
+  "foreignPrice": 26900,
+  "price_vnd": 550778,
+  "priceVnd": 550778,
+  "discount_rate": "36%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_6_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_8_1.jpg"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_6_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423/review_user_8_1.jpg"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000171423_1",
+      "name_vi": "[파워퍼프걸콜라보] 텐더블룸X2+스퀴저",
+      "name_kr": "[파워퍼프걸콜라보] 텐더블룸X2+스퀴저",
+      "price_krw": 28800,
+      "price_vnd": 589680,
+      "discount_rate": "31%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/2505034165335869693.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000171423_2",
+      "name_vi": "듀오기획 텐더블룸향+웜페탈향",
+      "name_kr": "듀오기획 텐더블룸향+웜페탈향",
+      "price_krw": 28800,
+      "price_vnd": 589680,
+      "discount_rate": "31%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/3674240539218660288.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000171423_3",
+      "name_vi": "더블기획 텐더블룸 향",
+      "name_kr": "더블기획 텐더블룸 향",
+      "price_krw": 28800,
+      "price_vnd": 589680,
+      "discount_rate": "31%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/6832012568420828156.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000171423_4",
+      "name_vi": "더블기획 웜페탈 향",
+      "name_kr": "더블기획 웜페탈 향",
+      "price_krw": 28800,
+      "price_vnd": 589680,
+      "discount_rate": "31%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/121892695223606013.png",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Unove (/) 320ml / từ thương hiệu Unove là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu 30.000ppm phức hợp đạm Keratin và 36 loại acid amin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào da giúp phục hồi biểu bì tóc hư tổn nặng do uốn nhuộm nhiệt, lấp đầy lõi tóc và mang lại độ bóng mượt bồng bềnh tức thì, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu da rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho mọi loại da kể cả làn da nhạy cảm nhất.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Unove (/) 320ml / từ thương hiệu Unove là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu 30.000ppm phức hợp đạm Keratin và 36 loại acid amin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào da giúp phục hồi biểu bì tóc hư tổn nặng do uốn nhuộm nhiệt, lấp đầy lõi tóc và mang lại độ bóng mượt bồng bềnh tức thì, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu da rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho mọi loại da kể cả làn da nhạy cảm nhất.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171423&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=2",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_2_어노브_A000000171423",
+  "updated_at": "2026-09-10 20:17:25"
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": 1789042214.8796,
+  "updated_at": "2026-09-10 21:10:14",
+  "total_products": 100,
+  "completed_count": 100,
+  "progress_percent": "100.0%",
+  "current_in_progress": null,
+  "last_processed_sku": "A000000213943",
+  "last_status": "100% QC_PASSED (100/100)",
+  "last_error": null,
+  "extra": {},
+  "system": {
+    "ram_status": "NORMAL (Chrome recycled every 15 SKUs)",
+    "vision_engine": "Apple Vision Framework Native (Active)"
+  }
+}

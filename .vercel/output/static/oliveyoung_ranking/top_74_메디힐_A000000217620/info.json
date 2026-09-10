@@ -1,0 +1,138 @@
+{
+  "goods_no": "A000000217620",
+  "goodsNo": "A000000217620",
+  "rank": 74,
+  "name": "Mặt Nạ Giấy Mediheal (1 Miếng)",
+  "name_vi": "Mặt Nạ Giấy Mediheal (1 Miếng)",
+  "name_kr": "[15년연속 1위] 메디힐 에센셜 마스크팩 1매 고기능 7종 골라담기",
+  "brand": "메디힐",
+  "brand_vi": "Mediheal",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "2000",
+  "sale_price_krw": "960",
+  "price": 960,
+  "foreignPrice": 960,
+  "price_vnd": 19656,
+  "priceVnd": 19656,
+  "discount_rate": "52%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/main_thumbnail.png",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_6.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/main_thumbnail.png",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620/review_user_3_6.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000217620_1",
+      "name_vi": "마데카소사이드 흔적리페어 1매",
+      "name_kr": "마데카소사이드 흔적리페어 1매",
+      "price_krw": 1000,
+      "price_vnd": 20475,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/1/1550813712772282449.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000217620_2",
+      "name_vi": "로제 PDRN 모공결광 1매",
+      "name_kr": "로제 PDRN 모공결광 1매",
+      "price_krw": 1000,
+      "price_vnd": 20475,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/3/927811821371366876.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000217620_3",
+      "name_vi": "티트리 진정수분 1매",
+      "name_kr": "티트리 진정수분 1매",
+      "price_krw": 1000,
+      "price_vnd": 20475,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/1/2095773322051515522.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000217620_4",
+      "name_vi": "콜라겐 코어탄력 1매",
+      "name_kr": "콜라겐 코어탄력 1매",
+      "price_krw": 1000,
+      "price_vnd": 20475,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/1/4292023589387008731.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000217620_5",
+      "name_vi": "비타민씨 잡티토닝 1매",
+      "name_kr": "비타민씨 잡티토닝 1매",
+      "price_krw": 1000,
+      "price_vnd": 20475,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/1/6333511698168958736.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000217620_6",
+      "name_vi": "히알루론산 고밀도 수분 1매",
+      "name_kr": "히알루론산 고밀도 수분 1매",
+      "price_krw": 1000,
+      "price_vnd": 20475,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/2/7886183073217244310.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000217620_7",
+      "name_vi": "세라마이드 보습장벽 1매",
+      "name_kr": "세라마이드 보습장벽 1매",
+      "price_krw": 1000,
+      "price_vnd": 20475,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/1/5177396663963625881.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Mặt Nạ Giấy Mediheal (1 Miếng) từ thương hiệu Mediheal là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Mặt Nạ Giấy Mediheal (1 Miếng) từ thương hiệu Mediheal là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000217620&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=74",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_74_메디힐_A000000217620",
+  "updated_at": "2026-09-10 21:01:24"
+}

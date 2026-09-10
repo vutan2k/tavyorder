@@ -230,12 +230,15 @@ export const subscribeToProducts = (onUpdate) => {
         ...docSnap.data()
       }));
 
-      // Sắp xếp in-memory theo thời gian cập nhật mới nhất
+      // Sắp xếp in-memory theo Thứ Hạng Olive Young (Rank 1 -> 100)
       products.sort((a, b) => {
+        const rankA = Number(a.rank) || 9999;
+        const rankB = Number(b.rank) || 9999;
+        if (rankA !== rankB) return rankA - rankB;
         const timeA = a.updatedAt?.seconds || (a.createdAt?.seconds) || (new Date(a.scrapedAt || 0).getTime()) || 0;
         const timeB = b.updatedAt?.seconds || (b.createdAt?.seconds) || (new Date(b.scrapedAt || 0).getTime()) || 0;
         if (timeB !== timeA) return timeB - timeA;
-        return String(b.goodsNo).localeCompare(String(a.goodsNo));
+        return String(a.goodsNo).localeCompare(String(b.goodsNo));
       });
 
       onUpdate(products);
@@ -268,11 +271,14 @@ export const saveProductToDB = async (product) => {
       categoryLabel: String(product.categoryLabel || ''),
       categoryKr: String(product.categoryKr || ''),
       foreignPrice: Number(product.foreignPrice) || 0,
+      originalPrice: Number(product.originalPrice || product.origin_price_krw) || 0,
+      discountRate: String(product.discountRate || (product.discount_percent ? `-${product.discount_percent}%` : '')),
       productImage: String(product.productImage || ''),
       images: Array.isArray(product.images) && product.images.length > 0
         ? product.images.map(String).filter(Boolean)
         : (product.productImage ? [String(product.productImage)] : []),
       photoReviews: Array.isArray(product.photoReviews) ? product.photoReviews.map(String).filter(Boolean) : [],
+      options: Array.isArray(product.options) ? product.options : [],
       description: String(product.description || ''),
       usage: String(product.usage || ''),
       origin: String(product.origin || 'Store Olive Young Korea'),

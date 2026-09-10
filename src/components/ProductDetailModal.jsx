@@ -97,9 +97,10 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
   const originalWon = activeOption?.original_price_krw
     ? Number(activeOption.original_price_krw)
     : (Number(product?.originalPrice || product?.origin_price_krw) || 0);
-  const discountBadge = activeOption?.discount_percent
+  const discountBadgeRaw = activeOption?.discount_percent
     ? `-${activeOption.discount_percent}%`
     : (product?.discountRate || (product?.discount_percent ? `-${product.discount_percent}%` : null));
+  const discountBadge = discountBadgeRaw ? (discountBadgeRaw.startsWith('-') ? discountBadgeRaw : `-${discountBadgeRaw}`) : null;
   const hasDiscount = originalWon > activeWon;
   const calculatedVnd = Math.round(activeWon * krwRate);
   const formatVnd = (n) => (n || n === 0) ? `${new Intl.NumberFormat('vi-VN').format(Math.round(n))} VNĐ` : '0 VNĐ';
@@ -170,15 +171,10 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
           backgroundColor: 'var(--bg-white, #FFFFFF)',
           color: 'var(--text-dark)',
           borderRadius: '24px',
-          maxWidth: '480px',
           width: '100%',
-          maxHeight: '92vh',
-          overflowY: 'auto',
-          WebkitOverflowScrolling: 'touch',
+          overflow: 'hidden',
           position: 'relative',
-          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.35)',
-          display: 'flex',
-          flexDirection: 'column'
+          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.35)'
         }}
       >
         {/* Nút Đóng Modal */}
@@ -207,8 +203,11 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
           <X size={18} color="var(--text-dark, #374151)" />
         </button>
 
-        {/* 1. KHU VỰC ẢNH CHIẾM PHẦN LỚN POPUP & VUỐT NGANG */}
-        <div style={{ position: 'relative', width: '100%', backgroundColor: '#FAF9F6', borderRadius: '24px 24px 0 0', overflow: 'hidden' }}>
+        {/* LỚP 1: VÙNG CUỘN NỘI DUNG TỰ DO */}
+        <div className="modal-scroll-area">
+          {/* CỘT TRÁI: KHU VỰC ẢNH CHÍNH & LƯỚI THUMBNAIL (DESKTOP) */}
+          <div className="modal-gallery-col">
+          <div className="modal-gallery-carousel" style={{ position: 'relative', width: '100%', backgroundColor: '#FAF9F6', borderRadius: '18px', overflow: 'hidden' }}>
           {/* Tag Thương hiệu nổi trên ảnh */}
           {product.brand && (
             <span style={{
@@ -376,8 +375,47 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
           )}
         </div>
 
-        {/* 2. THÔNG TIN SẢN PHẨM (DƯỚI ẢNH) */}
-        <div style={{ padding: '20px 22px 22px 22px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+        {/* Lưới Thumbnail ảnh nhỏ cho Desktop */}
+        {allPhotos.length > 1 && (
+          <div style={{
+            display: 'flex',
+            gap: '8px',
+            overflowX: 'auto',
+            padding: '8px 2px 2px 2px',
+            scrollbarWidth: 'none'
+          }}>
+            {allPhotos.map((photo, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => scrollToSlide(idx)}
+                style={{
+                  width: '52px',
+                  height: '52px',
+                  flexShrink: 0,
+                  borderRadius: '10px',
+                  overflow: 'hidden',
+                  border: activeSlide === idx ? '2px solid #2563EB' : '1px solid #E5E7EB',
+                  padding: 0,
+                  cursor: 'pointer',
+                  backgroundColor: '#FFF',
+                  opacity: activeSlide === idx ? 1 : 0.65,
+                  transition: 'all 0.15s ease'
+                }}
+              >
+                <img
+                  src={photo}
+                  alt=""
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* CỘT PHẢI: THÔNG TIN SẢN PHẨM & MUA HÀNG (DESKTOP) */}
+      <div className="modal-content-col" style={{ padding: '20px 22px 22px 22px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
           <div>
             {product.brand && (
               <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-muted, #6B7280)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>
@@ -401,18 +439,6 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                 }}>
                   Quy cách: {product.options}
                 </span>
-              </div>
-            )}
-            {product.description && (
-              <div style={{
-                margin: '12px 0 0 0',
-                fontSize: '0.88rem',
-                color: 'var(--text-muted, #4B5563)',
-                lineHeight: '1.65',
-                whiteSpace: 'pre-line',
-                wordBreak: 'break-word'
-              }}>
-                {product.description}
               </div>
             )}
           </div>
@@ -443,7 +469,8 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                 gap: '8px',
                 maxHeight: '220px',
                 overflowY: 'auto',
-                paddingRight: '4px'
+                paddingRight: '4px',
+                paddingBottom: '8px'
               }}>
                 {options.map((opt, idx) => {
                   const isSelected = idx === selectedOptionIndex;
@@ -498,11 +525,16 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                           }}>
                             {opt.name_vi || opt.name_kr || `Phân loại #${idx + 1}`}
                           </div>
-                          {opt.name_vi && opt.name_kr && opt.name_vi !== opt.name_kr && (
-                            <div style={{ fontSize: '0.72rem', color: '#9CA3AF', marginTop: '2px' }}>
-                              {opt.name_kr}
+                          {opt.subtitle_vi ? (
+                            <div style={{
+                              fontSize: '0.72rem',
+                              color: isSelected ? '#2563EB' : '#6B7280',
+                              marginTop: '2px',
+                              fontWeight: isSelected ? 600 : 400
+                            }}>
+                              {opt.subtitle_vi}
                             </div>
-                          )}
+                          ) : null}
                         </div>
                       </div>
                       <div style={{ textAlign: 'right', flexShrink: 0 }}>
@@ -524,6 +556,24 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                   );
                 })}
               </div>
+            </div>
+          )}
+
+          {/* Mô tả thông tin sản phẩm (Thành phần & Công dụng) */}
+          {product.description && (
+            <div style={{
+              margin: '0 0 4px 0',
+              fontSize: '0.86rem',
+              color: 'var(--text-muted, #4B5563)',
+              lineHeight: '1.6',
+              whiteSpace: 'pre-line',
+              wordBreak: 'break-word',
+              backgroundColor: 'var(--bg-subtle-purple, #F8F6FA)',
+              padding: '10px 14px',
+              borderRadius: '12px',
+              border: '1px solid var(--border-color, #E5E7EB)'
+            }}>
+              {product.description}
             </div>
           )}
 
@@ -571,8 +621,12 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
             </div>
           </div>
 
-          {/* 5. NÚT THÊM VÀO GIỎ HÀNG */}
-          {!hideAddToCart && onOrderNow && (
+        </div>
+        </div>
+
+        {/* LỚP 2: THANH BẤM CỐ ĐỊNH Ở ĐÁY (LUÔN LUÔN HIỆN DIỆN 100% CÔNG THÁI HỌC) */}
+        {!hideAddToCart && onOrderNow && (
+          <div className="modal-fixed-action-bar">
             <button
               disabled={isOptionSoldOut}
               onClick={(e) => {
@@ -600,9 +654,9 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                 borderRadius: '50px',
                 cursor: isOptionSoldOut ? 'not-allowed' : 'pointer',
                 border: 'none',
-                backgroundColor: isOptionSoldOut ? '#E5E7EB' : undefined,
-                color: isOptionSoldOut ? '#9CA3AF' : undefined,
-                boxShadow: isOptionSoldOut ? 'none' : '0 4px 14px rgba(0,0,0,0.12)'
+                backgroundColor: isOptionSoldOut ? '#E5E7EB' : '#18181B',
+                color: isOptionSoldOut ? '#9CA3AF' : '#FFFFFF',
+                boxShadow: isOptionSoldOut ? 'none' : '0 4px 14px rgba(0,0,0,0.18)'
               }}
             >
               <ShoppingBag size={18} />
@@ -610,8 +664,8 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                 {isOptionSoldOut ? 'PHÂN LOẠI NÀY ĐÃ HẾT HÀNG' : 'THÊM VÀO GIỎ HÀNG'}
               </span>
             </button>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* LIGHTBOX PHÓNG TO ẢNH HD FULL SCREEN HỖ TRỢ VUỐT CẢM ỨNG MƯỢT MÀ NHƯ NGOÀI TAB */}

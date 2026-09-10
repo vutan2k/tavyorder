@@ -1,0 +1,105 @@
+{
+  "goods_no": "A000000262530",
+  "goodsNo": "A000000262530",
+  "rank": 43,
+  "name": "Sữa Rửa Mặt Làm Sạch Sâu  200ml 200ml+ 21ml+ (200ml)",
+  "name_vi": "Sữa Rửa Mặt Làm Sạch Sâu  200ml 200ml+ 21ml+ (200ml)",
+  "name_kr": "[9월올영픽/산리오콜라보] 메이크프렘 세이프 미 클렌징밀크 200ml기획 (+리필 200ml+미니21ml+손목세안밴드)",
+  "brand": "메이크프렘",
+  "brand_vi": "메이크프렘",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "34000",
+  "sale_price_krw": "20900",
+  "price": 20900,
+  "foreignPrice": 20900,
+  "price_vnd": 427928,
+  "priceVnd": 427928,
+  "discount_rate": "39%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000262530_1",
+      "name_vi": "세이프 미 클렌징밀크 폼폼푸린 기획",
+      "name_kr": "세이프 미 클렌징밀크 폼폼푸린 기획",
+      "price_krw": 21900,
+      "price_vnd": 448402,
+      "discount_rate": "35%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/3111397359055861932.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262530_2",
+      "name_vi": "세이프 미 클렌징밀크 리필기획",
+      "name_kr": "세이프 미 클렌징밀크 리필기획",
+      "price_krw": 21900,
+      "price_vnd": 448402,
+      "discount_rate": "35%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/4457690551141383918.png",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    },
+    {
+      "id": "opt_A000000262530_3",
+      "name_vi": "세이프 미 클렌징밀크 하트곤약기획",
+      "name_kr": "세이프 미 클렌징밀크 하트곤약기획",
+      "price_krw": 21900,
+      "price_vnd": 448402,
+      "discount_rate": "35%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/6319310247319422376.png",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    },
+    {
+      "id": "opt_A000000262530_4",
+      "name_vi": "세이프 미 클렌징밀크 해면스펀지 기획",
+      "name_kr": "세이프 미 클렌징밀크 해면스펀지 기획",
+      "price_krw": 21900,
+      "price_vnd": 448402,
+      "discount_rate": "35%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/2124527648248520125.png",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    }
+  ],
+  "description": "Sữa Rửa Mặt Làm Sạch Sâu 200ml 200ml+ 21ml+ (200ml) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu chiết xuất dầu thực vật lên men kết hợp các acid béo dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cuốn trôi sạch sâu bụi mịn và cặn trang điểm cứng đầu mà không gây khô căng, duy trì độ pH lý tưởng cho da, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Sữa Rửa Mặt Làm Sạch Sâu 200ml 200ml+ 21ml+ (200ml) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu chiết xuất dầu thực vật lên men kết hợp các acid béo dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cuốn trôi sạch sâu bụi mịn và cặn trang điểm cứng đầu mà không gây khô căng, duy trì độ pH lý tưởng cho da, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000262530&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=43",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_43_메이크프렘_A000000262530",
+  "updated_at": "2026-09-10 20:52:57"
+}

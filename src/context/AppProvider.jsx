@@ -616,6 +616,21 @@ export const AppProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
+  // Offline / Initial Fallback Products Loader
+  useEffect(() => {
+    if (products.length === 0) {
+      fetch('/data/playwright_scraped_products.json')
+        .then(res => res.ok ? res.json() : null)
+        .then(fallbackList => {
+          if (Array.isArray(fallbackList) && fallbackList.length > 0) {
+            setProducts(prev => (prev.length === 0 ? sanitizeProducts(fallbackList) : prev));
+            setPublishedProducts(prev => (prev.length === 0 ? sanitizeProducts(fallbackList.filter(p => p.isPublished !== false)) : prev));
+          }
+        })
+        .catch(() => {});
+    }
+  }, [products.length]);
+
   const publishToWeb = async () => {
     const publishedList = products.map(p => ({ ...p, isPublished: true, status: 'published' }));
     setPublishedProducts(publishedList);
@@ -1305,18 +1320,27 @@ export const AppProvider = ({ children }) => {
     localStorage.setItem('tavy_cart', JSON.stringify(cart));
   }, [cart]);
 
+  const getCartItemId = (item) => {
+    if (!item) return '';
+    if (item.cartItemId) return item.cartItemId;
+    const baseId = item.goodsNo || item.id || '';
+    const optId = item.selectedOption?.id || item.selectedOption?.name_kr || item.selectedOption?.name_vi;
+    if (optId) return `${baseId}_${optId}`;
+    return baseId;
+  };
+
   const addToCart = (product, qty = 1) => {
     if (!product) return;
-    const productId = product.goodsNo || product.id;
+    const targetId = getCartItemId(product);
     let newCart = [];
     setCart((prev) => {
-      const existing = prev.find((item) => (item.goodsNo || item.id) === productId);
-      if (existing) {
-        newCart = prev.map((item) =>
-          (item.goodsNo || item.id) === productId ? { ...item, qty: item.qty + qty } : item
+      const existingIndex = prev.findIndex((item) => getCartItemId(item) === targetId);
+      if (existingIndex > -1) {
+        newCart = prev.map((item, idx) =>
+          idx === existingIndex ? { ...item, qty: item.qty + qty } : item
         );
       } else {
-        newCart = [...prev, { ...product, qty }];
+        newCart = [...prev, { ...product, cartItemId: targetId, qty }];
       }
       return newCart;
     });
@@ -1331,10 +1355,10 @@ export const AppProvider = ({ children }) => {
     }
   };
 
-  const removeFromCart = (goodsNo) => {
+  const removeFromCart = (targetId) => {
     let newCart = [];
     setCart((prev) => {
-      newCart = prev.filter((item) => (item.goodsNo || item.id) !== goodsNo);
+      newCart = prev.filter((item) => getCartItemId(item) !== targetId && (item.goodsNo || item.id) !== targetId);
       if (activePendingOrder) {
         if (newCart.length === 0) {
           deleteOrderFromDB(activePendingOrder.id).catch(() => {});
@@ -1347,11 +1371,13 @@ export const AppProvider = ({ children }) => {
     });
   };
 
-  const updateCartQty = (goodsNo, qty) => {
-    if (qty <= 0) return removeFromCart(goodsNo);
+  const updateCartQty = (targetId, qty) => {
+    if (qty <= 0) return removeFromCart(targetId);
     let newCart = [];
     setCart((prev) => {
-      newCart = prev.map((item) => ((item.goodsNo || item.id) === goodsNo ? { ...item, qty } : item));
+      newCart = prev.map((item) =>
+        (getCartItemId(item) === targetId || (item.goodsNo || item.id) === targetId) ? { ...item, qty } : item
+      );
       if (activePendingOrder) {
         syncActivePendingOrderItems(newCart);
       }

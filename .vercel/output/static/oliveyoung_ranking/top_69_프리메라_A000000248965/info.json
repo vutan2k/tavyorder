@@ -1,0 +1,182 @@
+{
+  "goods_no": "A000000248965",
+  "goodsNo": "A000000248965",
+  "rank": 69,
+  "name": "Mỹ phẩm  PDRN",
+  "name_vi": "Mỹ phẩm  PDRN",
+  "name_kr": "[9/5 하루특가] 프리메라 메가-샷 겔마스크 3종 기획 모음 (비타티놀/PDRN/3C히알루론산)",
+  "brand": "프리메라",
+  "brand_vi": "프리메라",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "49000",
+  "sale_price_krw": "28900",
+  "price": 28900,
+  "foreignPrice": 28900,
+  "price_vnd": 591728,
+  "priceVnd": 591728,
+  "discount_rate": "41%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000248965_1",
+      "name_vi": "비타티놀 7+2매",
+      "name_kr": "비타티놀 7+2매",
+      "price_krw": 34200,
+      "price_vnd": 700245,
+      "discount_rate": "30%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/52867877837682178.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000248965_2",
+      "name_vi": "PDRN 7+2매",
+      "name_kr": "PDRN 7+2매",
+      "price_krw": 34200,
+      "price_vnd": 700245,
+      "discount_rate": "30%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/2484535277188149267.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000248965_3",
+      "name_vi": "3C히알루론산 7+2매",
+      "name_kr": "3C히알루론산 7+2매",
+      "price_krw": 34200,
+      "price_vnd": 700245,
+      "discount_rate": "30%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/6504535925410975741.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000248965_4",
+      "name_vi": "비타티놀 4+1매",
+      "name_kr": "비타티놀 4+1매",
+      "price_krw": 20400,
+      "price_vnd": 417690,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/4/2217026874940088193.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000248965_5",
+      "name_vi": "[포켓몬]PDRN 4+1매+피카츄헤어핀",
+      "name_kr": "[포켓몬]PDRN 4+1매+피카츄헤어핀",
+      "price_krw": 20400,
+      "price_vnd": 417690,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/4/8595477539979796448.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000248965_6",
+      "name_vi": "3C히알루론산 4+1매",
+      "name_kr": "3C히알루론산 4+1매",
+      "price_krw": 28000,
+      "price_vnd": 573300,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/5065295967566538030.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000248965_7",
+      "name_vi": "비타티놀 1매",
+      "name_kr": "비타티놀 1매",
+      "price_krw": 7000,
+      "price_vnd": 143325,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/4/5317370591369685574.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000248965_8",
+      "name_vi": "PDRN 1매",
+      "name_kr": "PDRN 1매",
+      "price_krw": 7000,
+      "price_vnd": 143325,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/4/2072908736118469496.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000248965_9",
+      "name_vi": "3C히알루론산 1매",
+      "name_kr": "3C히알루론산 1매",
+      "price_krw": 7000,
+      "price_vnd": 143325,
+      "discount_rate": "50%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/4118102086142678496.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000248965_10",
+      "name_vi": "[포켓몬]비타티놀 4+1매+피카츄헤어핀",
+      "name_kr": "[포켓몬]비타티놀 4+1매+피카츄헤어핀",
+      "price_krw": 20400,
+      "price_vnd": 417690,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/4/1683887353509124238.jpg",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    },
+    {
+      "id": "opt_A000000248965_11",
+      "name_vi": "PDRN 4+1매",
+      "name_kr": "PDRN 4+1매",
+      "price_krw": 20400,
+      "price_vnd": 417690,
+      "discount_rate": "27%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/6627880855343468874.jpg",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    }
+  ],
+  "description": "Mỹ phẩm PDRN từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Mỹ phẩm PDRN từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000248965&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=69",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_69_프리메라_A000000248965",
+  "updated_at": "2026-09-10 21:00:01"
+}

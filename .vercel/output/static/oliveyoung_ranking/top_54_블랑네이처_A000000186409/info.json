@@ -1,0 +1,83 @@
+{
+  "goods_no": "A000000186409",
+  "goodsNo": "A000000186409",
+  "rank": 54,
+  "name": "Sữa Rửa Mặt Làm Sạch Sâu",
+  "name_vi": "Sữa Rửa Mặt Làm Sạch Sâu",
+  "name_kr": "[여드름 기능성] 블랑네이처 아크네 클렌징 폼 단품/기획",
+  "brand": "블랑네이처",
+  "brand_vi": "블랑네이처",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "23800",
+  "sale_price_krw": "18900",
+  "price": 18900,
+  "foreignPrice": 18900,
+  "price_vnd": 386978,
+  "priceVnd": 386978,
+  "discount_rate": "21%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_6_3.jpg"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409/review_user_6_3.jpg"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000186409_1",
+      "name_vi": "기획(150ml + 50ml)",
+      "name_kr": "기획(150ml + 50ml)",
+      "price_krw": 23800,
+      "price_vnd": 487305,
+      "discount_rate": "50%",
+      "image_url": "",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000186409_2",
+      "name_vi": "단품",
+      "name_kr": "단품",
+      "price_krw": 21400,
+      "price_vnd": 438165,
+      "discount_rate": "10%",
+      "image_url": "",
+      "is_sold_out": true,
+      "status": "out_of_stock"
+    }
+  ],
+  "description": "Sữa Rửa Mặt Làm Sạch Sâu từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu chiết xuất dầu thực vật lên men kết hợp các acid béo dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cuốn trôi sạch sâu bụi mịn và cặn trang điểm cứng đầu mà không gây khô căng, duy trì độ pH lý tưởng cho da, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Sữa Rửa Mặt Làm Sạch Sâu từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu chiết xuất dầu thực vật lên men kết hợp các acid béo dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cuốn trôi sạch sâu bụi mịn và cặn trang điểm cứng đầu mà không gây khô căng, duy trì độ pH lý tưởng cho da, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000186409&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=54",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_54_블랑네이처_A000000186409",
+  "updated_at": "2026-09-10 20:55:54"
+}

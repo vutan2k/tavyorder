@@ -1,0 +1,94 @@
+{
+  "goods_no": "A000000171422",
+  "goodsNo": "A000000171422",
+  "rank": 47,
+  "name": "Tinh Chất Serum Unove 70ml (70ml)",
+  "name_vi": "Tinh Chất Serum Unove 70ml (70ml)",
+  "name_kr": "[파워퍼프걸 콜라보] 어노브 실크 헤어 오일 에센스 70ml 더블 기획 (텐더블룸/웜페탈)",
+  "brand": "어노브",
+  "brand_vi": "Unove",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "35000",
+  "sale_price_krw": "27300",
+  "price": 27300,
+  "foreignPrice": 27300,
+  "price_vnd": 558968,
+  "priceVnd": 558968,
+  "discount_rate": "22%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000171422_1",
+      "name_vi": "[파워퍼프걸콜라보] 텐더블룸X2+캡반지",
+      "name_kr": "[파워퍼프걸콜라보] 텐더블룸X2+캡반지",
+      "price_krw": 27900,
+      "price_vnd": 571252,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/6443425435239084853.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000171422_2",
+      "name_vi": "웜페탈 향X2",
+      "name_kr": "웜페탈 향X2",
+      "price_krw": 27900,
+      "price_vnd": 571252,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/6145566420823904778.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000171422_3",
+      "name_vi": "텐더블룸 향X2",
+      "name_kr": "텐더블룸 향X2",
+      "price_krw": 27900,
+      "price_vnd": 571252,
+      "discount_rate": "20%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/244269630644548108.png",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Tinh Chất Serum Unove 70ml (70ml) từ thương hiệu Unove là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu 30.000ppm phức hợp đạm Keratin và 36 loại acid amin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp phục hồi biểu bì tóc hư tổn nặng do uốn nhuộm nhiệt, lấp đầy lõi tóc và mang lại độ bóng mượt bồng bềnh tức thì, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Tinh Chất Serum Unove 70ml (70ml) từ thương hiệu Unove là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu 30.000ppm phức hợp đạm Keratin và 36 loại acid amin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp phục hồi biểu bì tóc hư tổn nặng do uốn nhuộm nhiệt, lấp đầy lõi tóc và mang lại độ bóng mượt bồng bềnh tức thì, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171422&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=47",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_47_어노브_A000000171422",
+  "updated_at": "2026-09-10 20:54:17"
+}

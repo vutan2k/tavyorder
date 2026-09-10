@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_5jDsBE5n3nStnFqigM4ksYpWmI5f",
+  "orgId": "team_vOeUYjPHZx1EKdfYeYp2iWmt",
+  "projectName": "oderho",
+  "settings": {
+    "createdAt": 1788090298868,
+    "framework": "vite",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": "dist",
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}

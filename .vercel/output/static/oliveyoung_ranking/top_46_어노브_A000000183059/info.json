@@ -1,0 +1,94 @@
+{
+  "goods_no": "A000000183059",
+  "goodsNo": "A000000183059",
+  "rank": 46,
+  "name": "Dầu Gội Chăm Sóc Tóc Unove 500ml (500ml)",
+  "name_vi": "Dầu Gội Chăm Sóc Tóc Unove 500ml (500ml)",
+  "name_kr": "[파워퍼프걸 콜라보] 어노브 딥 데미지 리페어 샴푸 500ml 더블/듀오 기획",
+  "brand": "어노브",
+  "brand_vi": "Unove",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "34000",
+  "sale_price_krw": "25730",
+  "price": 25730,
+  "foreignPrice": 25730,
+  "price_vnd": 526822,
+  "priceVnd": 526822,
+  "discount_rate": "24%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/main_thumbnail.png",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_6_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_6_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/main_thumbnail.png",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_6_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_6_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000183059_1",
+      "name_vi": "[파워퍼프걸콜라보] 스윗브리즈X2+키링",
+      "name_kr": "[파워퍼프걸콜라보] 스윗브리즈X2+키링",
+      "price_krw": 25800,
+      "price_vnd": 528255,
+      "discount_rate": "24%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/5385437239714605667.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000183059_2",
+      "name_vi": "스윗 브리즈*2",
+      "name_kr": "스윗 브리즈*2",
+      "price_krw": 25800,
+      "price_vnd": 528255,
+      "discount_rate": "24%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/3588915847280343747.png",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000183059_3",
+      "name_vi": "스윗 브리즈+로지 아우라",
+      "name_kr": "스윗 브리즈+로지 아우라",
+      "price_krw": 25800,
+      "price_vnd": 528255,
+      "discount_rate": "24%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/5/3751486449007989465.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Dầu Gội Chăm Sóc Tóc Unove 500ml (500ml) từ thương hiệu Unove là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Dầu Gội Chăm Sóc Tóc Unove 500ml (500ml) từ thương hiệu Unove là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000183059&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=46",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_46_어노브_A000000183059",
+  "updated_at": "2026-09-10 20:54:00"
+}

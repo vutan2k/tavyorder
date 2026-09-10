@@ -1,0 +1,64 @@
+{
+  "version": 3,
+  "routes": [
+    {
+      "src": "^(?:/(.*))$",
+      "headers": {
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "camera=(), microphone=(), geolocation=(), browsing-topics=()",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://apis.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://images.unsplash.com https://img.vietqr.io https://api.qrserver.com https://image.oliveyoung.co.kr https://*.oliveyoung.co.kr https://shop-phinf.pstatic.net https://*.pstatic.net https://*.coupangcdn.com https://*.coupang.com https://*.googleusercontent.com https://lh3.googleusercontent.com https://*.firebasestorage.app https://firebasestorage.googleapis.com https://*.run.app; connect-src 'self' https://provinces.open-api.vn https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://*.firestore.googleapis.com https://firestore.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://api.payos.vn https://api-merchant.payos.vn https://oderho.vercel.app https://tavyorder.web.app https://tavyorder.firebaseapp.com https://generativelanguage.googleapis.com https://r.jina.ai https://scrapejina-r5ncp5gdvq-uc.a.run.app https://createpayospaymentlink-jswsqm45ja-uc.a.run.app https://api.allorigins.win https://api.codetabs.com https://corsproxy.io https://api.firecrawl.dev; frame-src 'self' https://tavyorder.firebaseapp.com https://accounts.google.com https://drive.google.com https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self';"
+      },
+      "continue": true
+    },
+    {
+      "src": "^/api(?:/(.*))$",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept"
+      },
+      "continue": true
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/api(?:/(.*))$",
+      "dest": "/api/$1",
+      "check": true
+    },
+    {
+      "src": "^(?:/(.*))$",
+      "dest": "/index.html",
+      "check": true
+    },
+    {
+      "src": "^/api(/.*)?$",
+      "status": 404
+    },
+    {
+      "handle": "error"
+    },
+    {
+      "status": 404,
+      "src": "^(?!/api).*$",
+      "dest": "/404.html"
+    },
+    {
+      "handle": "miss"
+    },
+    {
+      "src": "^/api/(.+)(?:\\.(?:js))$",
+      "dest": "/api/$1",
+      "check": true
+    }
+  ],
+  "framework": {
+    "slug": "vite",
+    "version": "8.2.2"
+  },
+  "crons": []
+}

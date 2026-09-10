@@ -28,7 +28,6 @@ dist-ssr
 *.sw?
 .firebase/
 .codegraph/
+.hermes/
 temp.*
 *.tmp
-.vercel
-public/oliveyoung_ranking

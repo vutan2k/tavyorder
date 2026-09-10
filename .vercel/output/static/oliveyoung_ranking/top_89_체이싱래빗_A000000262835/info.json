@@ -1,0 +1,105 @@
+{
+  "goods_no": "A000000262835",
+  "goodsNo": "A000000262835",
+  "rank": 89,
+  "name": "Kem Dưỡng Ẩm Phục Hồi  PICK",
+  "name_vi": "Kem Dưỡng Ẩm Phục Hồi  PICK",
+  "name_kr": "[9/5 하루특가/산리오캐릭터즈/김용명PICK] 체이싱래빗 올어바웃 커버크림 한정기획(글로우/퍼플)",
+  "brand": "체이싱래빗",
+  "brand_vi": "체이싱래빗",
+  "category": "cosmetics",
+  "subCategory": "",
+  "categoryLabel": "Mỹ phẩm",
+  "origin_price_krw": "20000",
+  "sale_price_krw": "11100",
+  "price": 11100,
+  "foreignPrice": 11100,
+  "price_vnd": 227272,
+  "priceVnd": 227272,
+  "discount_rate": "44%",
+  "product_status": "active",
+  "in_stock": true,
+  "is_published": true,
+  "product_images": {
+    "main_image": "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/main_thumbnail.jpg",
+    "review_images": [
+      "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_1.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_2.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_3.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_4.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_5.png",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_6_1.jpg",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_6_2.jpg",
+      "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_6_3.png"
+    ],
+    "review_images_count": 8
+  },
+  "local_main_thumbnail": "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/main_thumbnail.jpg",
+  "local_user_reviews": [
+    "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_1.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_2.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_3.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_4.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_5.png",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_6_1.jpg",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_6_2.jpg",
+    "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835/review_user_6_3.png"
+  ],
+  "options": [
+    {
+      "id": "opt_A000000262835_1",
+      "name_vi": "[마이멜로디 기획] 글로우 커버 크림",
+      "name_kr": "[마이멜로디 기획] 글로우 커버 크림",
+      "price_krw": 13600,
+      "price_vnd": 278460,
+      "discount_rate": "32%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/7086348400422124122.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262835_2",
+      "name_vi": "[쿠로미 기획] 블러 퍼플 크림",
+      "name_kr": "[쿠로미 기획] 블러 퍼플 크림",
+      "price_krw": 13600,
+      "price_vnd": 278460,
+      "discount_rate": "32%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/4286881536181389561.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262835_3",
+      "name_vi": "[일반기획] 글로우 커버 크림",
+      "name_kr": "[일반기획] 글로우 커버 크림",
+      "price_krw": 13600,
+      "price_vnd": 278460,
+      "discount_rate": "32%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/7718622578716061144.jpg",
+      "is_sold_out": false,
+      "status": "available"
+    },
+    {
+      "id": "opt_A000000262835_4",
+      "name_vi": "[일반기획] 블러 퍼플 크림",
+      "name_kr": "[일반기획] 블러 퍼플 크림",
+      "price_krw": 13600,
+      "price_vnd": 278460,
+      "discount_rate": "32%",
+      "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/4074170356650165384.png",
+      "is_sold_out": false,
+      "status": "available"
+    }
+  ],
+  "description": "Kem Dưỡng Ẩm Phục Hồi PICK từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+  "basic_info": {
+    "origin": "Nội địa Hàn Quốc (Olive Young Seoul)",
+    "packaging": "Hàng chính hãng full seal",
+    "skin_type": "Mọi loại da, da nhạy cảm",
+    "core_benefits": "Kem Dưỡng Ẩm Phục Hồi PICK từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
+    "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản."
+  },
+  "product_url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000262835&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=89",
+  "folder_path": "/Users/tan/Desktop/oliveyoung_ranking/top_89_체이싱래빗_A000000262835",
+  "updated_at": "2026-09-10 21:05:34"
+}
