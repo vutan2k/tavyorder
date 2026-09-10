@@ -3,10 +3,6 @@ import { ArrowRight } from 'lucide-react';
 
 const BANNER_IMAGES = [
   {
-    url: '/banner/banner-hero-luxury.webp',
-    alt: 'TAVY Korea - Mỹ phẩm & Sâm nấm cao cấp chính hãng'
-  },
-  {
     url: '/banner/banner-1.webp',
     alt: 'Store Olive Young Hàn Quốc chính hãng'
   },

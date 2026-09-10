@@ -188,6 +188,10 @@ export default function KROrderHomePage() {
   };
 
   const handleAddToCart = (product, e) => {
+    if (Array.isArray(product?.options) && product.options.length > 0 && !product.selectedOption) {
+      setDetailProduct(product);
+      return;
+    }
     addToCart(product, 1);
     if (e && product.productImage) {
       triggerFlyToCart(e, product.productImage);

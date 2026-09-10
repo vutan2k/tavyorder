@@ -9,7 +9,7 @@ import {
   Clock, CheckCircle, Copy, RefreshCw,
   Download, ChevronDown, ChevronUp,
   Package, MapPin, User, Phone, AlertCircle, ArrowLeft,
-  Sparkles, Check, UploadCloud, ExternalLink
+  Check, UploadCloud, ExternalLink
 } from 'lucide-react';
 import { getOrderTotalVnd, formatVnd } from '../utils/priceCalculator';
 import {
@@ -580,9 +580,6 @@ export default function PaymentPage() {
             
             {/* Header thông tin quét QR */}
             <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', backgroundColor: '#ECFDF5', color: '#065F46', padding: '6px 14px', borderRadius: '20px', fontSize: '0.82rem', fontWeight: 700, marginBottom: '8px' }}>
-                <Sparkles size={14} color="#10B981" /> Tự động xác nhận sau 3 giây khi chuyển tiền
-              </div>
               <h2 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, color: 'var(--text-dark)' }}>
                 Quét mã VietQR bằng ứng dụng ngân hàng
               </h2>
@@ -677,13 +674,8 @@ export default function PaymentPage() {
                 boxShadow: '0 2px 10px rgba(59, 130, 246, 0.08)'
               }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
-                  <div>
-                    <div style={{ fontSize: '0.76rem', color: '#1E40AF', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                      ⚡ SỐ TIỀN THANH TOÁN CỌC 100% (ĐỒNG NHẤT VỚI GIỎ HÀNG)
-                    </div>
-                    <div style={{ fontSize: '1.55rem', fontWeight: 900, color: '#1D4ED8', marginTop: '2px' }}>
-                      {transferVnd.toLocaleString('vi-VN')} VNĐ
-                    </div>
+                  <div style={{ fontSize: '1.55rem', fontWeight: 900, color: '#1D4ED8' }}>
+                    {transferVnd.toLocaleString('vi-VN')} VNĐ
                   </div>
                   <button
                     onClick={() => copyToClipboard(transferVnd.toString(), 'amount')}
@@ -705,9 +697,6 @@ export default function PaymentPage() {
                     {copied === 'amount' ? <Check size={14} /> : <Copy size={14} />}
                     {copied === 'amount' ? 'Đã sao chép!' : 'Copy số tiền'}
                   </button>
-                </div>
-                <div style={{ fontSize: '0.78rem', color: '#1E40AF', marginTop: '8px', lineHeight: 1.45 }}>
-                  ⚠️ <strong>Lưu ý:</strong> Quý khách chuyển cọc 100% để nhân viên TAVY tại Hàn Quốc tiến hành mua hàng tại Store ngay lập tức.
                 </div>
               </div>
 

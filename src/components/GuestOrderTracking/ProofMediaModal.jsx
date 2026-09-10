@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { X, Video, FileText, PackageCheck, ExternalLink } from 'lucide-react';
-import { getEmbedVideoUrl, isEmbeddableVideo } from '../../utils/videoUrlHelper.js';
+import { X, Video, FileText, PackageCheck } from 'lucide-react';
+import { getEmbedVideoUrl, isEmbeddableVideo, getDirectImageUrl } from '../../utils/videoUrlHelper.js';
 
 /**
  * ProofMediaModal
@@ -184,7 +184,7 @@ export default function ProofMediaModal({ media, onClose }) {
             </video>
           ) : isImage ? (
             <img
-              src={media.url}
+              src={getDirectImageUrl(media.url)}
               alt={media.title || 'Hóa đơn chứng từ mua hàng'}
               style={{
                 maxWidth: '100%',
@@ -209,45 +209,24 @@ export default function ProofMediaModal({ media, onClose }) {
             borderTop: '1px solid #EAE6DF',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '10px'
+            justifyContent: 'flex-end'
           }}
         >
-          {media.url && (media.url.startsWith('http://') || media.url.startsWith('https://')) ? (
-            <a
-              href={media.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                fontSize: '0.82rem',
-                color: 'var(--purple-primary, #00FF00)',
-                textDecoration: 'none',
-                fontWeight: 600
-              }}
-            >
-              Mở trong tab mới <ExternalLink size={14} />
-            </a>
-          ) : <div />}
-
           <button
             onClick={onClose}
             style={{
-              padding: '8px 20px',
+              padding: '8px 24px',
               borderRadius: '8px',
-              backgroundColor: 'var(--purple-primary, #00FF00)',
-              color: '#000000',
+              backgroundColor: '#18181B',
+              color: '#FFFFFF',
               border: 'none',
-              fontWeight: 800,
+              fontWeight: 700,
               fontSize: '0.85rem',
               cursor: 'pointer',
-              transition: 'opacity 0.2s ease'
+              transition: 'background-color 0.15s ease'
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.9')}
-            onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#27272A')}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#18181B')}
           >
             Đóng cửa sổ
           </button>

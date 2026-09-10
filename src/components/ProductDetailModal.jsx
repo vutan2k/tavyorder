@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { X, ShoppingBag, ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { X, ShoppingBag, ChevronLeft, ChevronRight, Check } from 'lucide-react';
 import OptimizedImage from './OptimizedImage';
 
 // Chuẩn hóa URL ảnh HD sắc nét từ Olive Young
@@ -13,6 +13,17 @@ const getHighResUrl = (url) => {
 };
 
 export default function ProductDetailModal({ product, krwRate, onClose, onOrderNow, hideAddToCart = false }) {
+  const options = Array.isArray(product?.options) ? product.options : [];
+  const hasOptions = options.length > 0;
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(0);
+
+  useEffect(() => {
+    setSelectedOptionIndex(0);
+  }, [product]);
+
+  const activeOption = hasOptions ? options[selectedOptionIndex] : null;
+  const optionImage = activeOption?.image_url ? getHighResUrl(activeOption.image_url) : null;
+
   const rawImages = product?.images && product.images.length > 0 ? product.images : (product?.productImage ? [product.productImage] : []);
   const images = Array.from(new Set(rawImages.map(getHighResUrl))).filter(Boolean);
 
@@ -21,7 +32,13 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
     ...(product?.photoReviews || [])
   ])).map(getHighResUrl).filter(Boolean);
 
-  const allPhotos = reviewPhotos.length > 0 ? reviewPhotos : (product?.productImage ? [getHighResUrl(product.productImage)] : []);
+  const allPhotos = useMemo(() => {
+    const list = [...reviewPhotos];
+    if (product?.productImage) list.unshift(getHighResUrl(product.productImage));
+    if (optionImage && !list.includes(optionImage)) list.unshift(optionImage);
+    const unique = Array.from(new Set(list.filter(Boolean)));
+    return unique.length > 0 ? unique : (product?.productImage ? [getHighResUrl(product.productImage)] : []);
+  }, [reviewPhotos, product?.productImage, optionImage]);
 
   const [activeSlide, setActiveSlide] = useState(0);
   const [zoomIndex, setZoomIndex] = useState(null); // Fullscreen HD Lightbox Index
@@ -34,7 +51,7 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
     if (carouselRef.current) {
       carouselRef.current.scrollTo({ left: 0 });
     }
-  }, [product]);
+  }, [product, selectedOptionIndex]);
 
   // Đồng bộ vị trí cuộn khi mở Lightbox phóng to ảnh HD
   useEffect(() => {
@@ -75,8 +92,17 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
 
   if (!product) return null;
 
-  const won = Number(product?.foreignPrice ?? product?.priceKrw ?? product?.priceWon ?? product?.price) || 0;
-  const calculatedVnd = Math.round(won * krwRate);
+  const isOptionSoldOut = Boolean(activeOption?.is_sold_out || activeOption?.status === 'out_of_stock');
+  const activeWon = activeOption?.price_krw ? Number(activeOption.price_krw) : (Number(product?.foreignPrice ?? product?.priceKrw ?? product?.priceWon ?? product?.price) || 0);
+  const originalWon = activeOption?.original_price_krw
+    ? Number(activeOption.original_price_krw)
+    : (Number(product?.originalPrice || product?.origin_price_krw) || 0);
+  const discountBadgeRaw = activeOption?.discount_percent
+    ? `-${activeOption.discount_percent}%`
+    : (product?.discountRate || (product?.discount_percent ? `-${product.discount_percent}%` : null));
+  const discountBadge = discountBadgeRaw ? (discountBadgeRaw.startsWith('-') ? discountBadgeRaw : `-${discountBadgeRaw}`) : null;
+  const hasDiscount = originalWon > activeWon;
+  const calculatedVnd = Math.round(activeWon * krwRate);
   const formatVnd = (n) => (n || n === 0) ? `${new Intl.NumberFormat('vi-VN').format(Math.round(n))} VNĐ` : '0 VNĐ';
   const formatKrw = (n) => `₩${(n || 0).toLocaleString('vi-VN')}`;
 
@@ -145,15 +171,10 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
           backgroundColor: 'var(--bg-white, #FFFFFF)',
           color: 'var(--text-dark)',
           borderRadius: '24px',
-          maxWidth: '480px',
           width: '100%',
-          maxHeight: '92vh',
-          overflowY: 'auto',
-          WebkitOverflowScrolling: 'touch',
+          overflow: 'hidden',
           position: 'relative',
-          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.35)',
-          display: 'flex',
-          flexDirection: 'column'
+          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.35)'
         }}
       >
         {/* Nút Đóng Modal */}
@@ -182,8 +203,11 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
           <X size={18} color="var(--text-dark, #374151)" />
         </button>
 
-        {/* 1. KHU VỰC ẢNH CHIẾM PHẦN LỚN POPUP & VUỐT NGANG */}
-        <div style={{ position: 'relative', width: '100%', backgroundColor: '#FAF9F6', borderRadius: '24px 24px 0 0', overflow: 'hidden' }}>
+        {/* LỚP 1: VÙNG CUỘN NỘI DUNG TỰ DO */}
+        <div className="modal-scroll-area">
+          {/* CỘT TRÁI: KHU VỰC ẢNH CHÍNH & LƯỚI THUMBNAIL (DESKTOP) */}
+          <div className="modal-gallery-col">
+          <div className="modal-gallery-carousel" style={{ position: 'relative', width: '100%', backgroundColor: '#FAF9F6', borderRadius: '18px', overflow: 'hidden' }}>
           {/* Tag Thương hiệu nổi trên ảnh */}
           {product.brand && (
             <span style={{
@@ -351,8 +375,47 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
           )}
         </div>
 
-        {/* 2. THÔNG TIN SẢN PHẨM (DƯỚI ẢNH) */}
-        <div style={{ padding: '20px 22px 22px 22px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+        {/* Lưới Thumbnail ảnh nhỏ cho Desktop */}
+        {allPhotos.length > 1 && (
+          <div style={{
+            display: 'flex',
+            gap: '8px',
+            overflowX: 'auto',
+            padding: '8px 2px 2px 2px',
+            scrollbarWidth: 'none'
+          }}>
+            {allPhotos.map((photo, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => scrollToSlide(idx)}
+                style={{
+                  width: '52px',
+                  height: '52px',
+                  flexShrink: 0,
+                  borderRadius: '10px',
+                  overflow: 'hidden',
+                  border: activeSlide === idx ? '2px solid #2563EB' : '1px solid #E5E7EB',
+                  padding: 0,
+                  cursor: 'pointer',
+                  backgroundColor: '#FFF',
+                  opacity: activeSlide === idx ? 1 : 0.65,
+                  transition: 'all 0.15s ease'
+                }}
+              >
+                <img
+                  src={photo}
+                  alt=""
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* CỘT PHẢI: THÔNG TIN SẢN PHẨM & MUA HÀNG (DESKTOP) */}
+      <div className="modal-content-col" style={{ padding: '20px 22px 22px 22px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
           <div>
             {product.brand && (
               <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-muted, #6B7280)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>
@@ -362,37 +425,159 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
             <h2 style={{ fontSize: '1.18rem', fontWeight: 800, color: 'var(--text-dark, #111827)', lineHeight: '1.35', margin: 0 }}>
               {product.name}
             </h2>
-            {product.options && (
-              <div style={{ marginTop: '8px' }}>
+            {typeof product.options === 'string' && product.options && (
+              <div style={{ marginBottom: '10px' }}>
                 <span style={{
                   display: 'inline-block',
-                  backgroundColor: 'var(--bg-subtle-purple, #F3EFF6)',
-                  color: 'var(--text-dark, #374151)',
-                  fontSize: '0.78rem',
-                  fontWeight: 600,
                   padding: '4px 10px',
-                  borderRadius: '8px',
+                  borderRadius: '6px',
+                  backgroundColor: 'var(--bg-subtle-purple, #F8F6FA)',
+                  color: 'var(--purple-primary, #7C3AED)',
+                  fontSize: '0.8rem',
+                  fontWeight: 600,
                   border: '1px solid var(--border-color, #E5E7EB)'
                 }}>
                   Quy cách: {product.options}
                 </span>
               </div>
             )}
-            {product.description && (
-              <div style={{
-                margin: '12px 0 0 0',
-                fontSize: '0.88rem',
-                color: 'var(--text-muted, #4B5563)',
-                lineHeight: '1.65',
-                whiteSpace: 'pre-line',
-                wordBreak: 'break-word'
-              }}>
-                {product.description}
-              </div>
-            )}
           </div>
 
-          {/* 3. KHỐI GIÁ TIỀN (CUỐI CÙNG LÀ GIÁ TIỀN) */}
+          {/* 3. CHỌN PHÂN LOẠI HÀNG (NẾU CÓ OPTIONS) */}
+          {hasOptions && (
+            <div style={{ marginBottom: '14px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                <span style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-dark)' }}>
+                  Phân loại ({options.length}):
+                </span>
+                {activeOption && (
+                  <span style={{
+                    fontSize: '0.72rem',
+                    fontWeight: 700,
+                    color: isOptionSoldOut ? '#EF4444' : '#10B981',
+                    backgroundColor: isOptionSoldOut ? '#FEE2E2' : '#D1FAE5',
+                    padding: '2px 8px',
+                    borderRadius: '6px'
+                  }}>
+                    {isOptionSoldOut ? 'Hết hàng' : 'Còn hàng'}
+                  </span>
+                )}
+              </div>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '8px',
+                maxHeight: '220px',
+                overflowY: 'auto',
+                paddingRight: '4px',
+                paddingBottom: '8px'
+              }}>
+                {options.map((opt, idx) => {
+                  const isSelected = idx === selectedOptionIndex;
+                  const isSoldOut = Boolean(opt.is_sold_out || opt.status === 'out_of_stock');
+                  const optPriceWon = opt.price_krw ? Number(opt.price_krw) : Number(product.foreignPrice);
+                  const optPriceVnd = Math.round(optPriceWon * krwRate);
+                  const optDiscount = opt.discount_percent ? `-${opt.discount_percent}%` : null;
+
+                  return (
+                    <button
+                      key={opt.id || idx}
+                      type="button"
+                      disabled={isSoldOut}
+                      onClick={() => setSelectedOptionIndex(idx)}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        gap: '10px',
+                        padding: '9px 12px',
+                        borderRadius: '12px',
+                        border: isSelected ? '2px solid #2563EB' : '1px solid var(--border-color, #E5E7EB)',
+                        backgroundColor: isSelected ? 'rgba(37, 99, 235, 0.05)' : (isSoldOut ? '#F9FAFB' : 'var(--bg-white, #FFFFFF)'),
+                        opacity: isSoldOut ? 0.55 : 1,
+                        cursor: isSoldOut ? 'not-allowed' : 'pointer',
+                        textAlign: 'left',
+                        transition: 'all 0.15s ease'
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
+                        {opt.image_url ? (
+                          <img
+                            src={getHighResUrl(opt.image_url)}
+                            alt=""
+                            style={{
+                              width: '38px',
+                              height: '38px',
+                              borderRadius: '8px',
+                              objectFit: 'cover',
+                              flexShrink: 0,
+                              border: '1px solid #E5E7EB'
+                            }}
+                          />
+                        ) : null}
+                        <div style={{ minWidth: 0 }}>
+                          <div style={{
+                            fontSize: '0.82rem',
+                            fontWeight: isSelected ? 700 : 600,
+                            color: isSelected ? '#1D4ED8' : 'var(--text-dark, #1F2937)',
+                            whiteSpace: 'normal',
+                            lineHeight: 1.3
+                          }}>
+                            {opt.name_vi || opt.name_kr || `Phân loại #${idx + 1}`}
+                          </div>
+                          {opt.subtitle_vi ? (
+                            <div style={{
+                              fontSize: '0.72rem',
+                              color: isSelected ? '#2563EB' : '#6B7280',
+                              marginTop: '2px',
+                              fontWeight: isSelected ? 600 : 400
+                            }}>
+                              {opt.subtitle_vi}
+                            </div>
+                          ) : null}
+                        </div>
+                      </div>
+                      <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '4px' }}>
+                          {optDiscount && (
+                            <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#EF4444' }}>
+                              {optDiscount}
+                            </span>
+                          )}
+                          <strong style={{ fontSize: '0.84rem', color: isSelected ? '#1D4ED8' : 'var(--text-dark)' }}>
+                            {formatKrw(optPriceWon)}
+                          </strong>
+                        </div>
+                        <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                          ~{formatVnd(optPriceVnd)}
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Mô tả thông tin sản phẩm (Thành phần & Công dụng) */}
+          {product.description && (
+            <div style={{
+              margin: '0 0 4px 0',
+              fontSize: '0.86rem',
+              color: 'var(--text-muted, #4B5563)',
+              lineHeight: '1.6',
+              whiteSpace: 'pre-line',
+              wordBreak: 'break-word',
+              backgroundColor: 'var(--bg-subtle-purple, #F8F6FA)',
+              padding: '10px 14px',
+              borderRadius: '12px',
+              border: '1px solid var(--border-color, #E5E7EB)'
+            }}>
+              {product.description}
+            </div>
+          )}
+
+          {/* 4. KHỐI GIÁ TIỀN */}
           <div style={{
             background: 'var(--bg-subtle-purple, #F8F6FA)',
             padding: '12px 16px',
@@ -403,9 +588,28 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
               <span style={{ fontSize: '0.82rem', color: 'var(--text-muted, #6B7280)', fontWeight: 600 }}>
                 Giá tại Hàn:
               </span>
-              <strong style={{ fontSize: '0.92rem', color: 'var(--text-dark, #374151)', fontWeight: 700 }}>
-                {formatKrw(product.foreignPrice)}
-              </strong>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                {hasDiscount && (
+                  <span style={{ textDecoration: 'line-through', color: '#9CA3AF', fontSize: '0.82rem' }}>
+                    {formatKrw(originalWon)}
+                  </span>
+                )}
+                <strong style={{ fontSize: '0.94rem', color: 'var(--text-dark, #374151)', fontWeight: 700 }}>
+                  {formatKrw(activeWon)}
+                </strong>
+                {discountBadge && (
+                  <span style={{
+                    backgroundColor: '#FEE2E2',
+                    color: '#EF4444',
+                    fontSize: '0.72rem',
+                    fontWeight: 800,
+                    padding: '2px 6px',
+                    borderRadius: '6px'
+                  }}>
+                    {discountBadge}
+                  </span>
+                )}
+              </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', paddingTop: '6px', borderTop: '1px dashed #E5E7EB' }}>
               <span style={{ fontSize: '0.88rem', color: 'var(--text-dark)', fontWeight: 700 }}>
@@ -417,14 +621,29 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
             </div>
           </div>
 
-          {/* 4. NÚT THÊM VÀO GIỎ HÀNG */}
-          {!hideAddToCart && onOrderNow && (
+        </div>
+        </div>
+
+        {/* LỚP 2: THANH BẤM CỐ ĐỊNH Ở ĐÁY (LUÔN LUÔN HIỆN DIỆN 100% CÔNG THÁI HỌC) */}
+        {!hideAddToCart && onOrderNow && (
+          <div className="modal-fixed-action-bar">
             <button
+              disabled={isOptionSoldOut}
               onClick={(e) => {
-                if (onOrderNow) onOrderNow(product, e);
+                if (isOptionSoldOut) return;
+                const payloadItem = hasOptions && activeOption ? {
+                  ...product,
+                  cartItemId: `${product.goodsNo || product.id}_${activeOption.id || activeOption.name_vi || activeOption.name_kr}`,
+                  selectedOption: activeOption,
+                  options: activeOption.name_vi || activeOption.name_kr,
+                  foreignPrice: activeOption.price_krw || product.foreignPrice,
+                  price: activeOption.price_krw || product.price,
+                  productImage: activeOption.image_url || product.productImage
+                } : product;
+                if (onOrderNow) onOrderNow(payloadItem, e);
                 if (onClose) onClose();
               }}
-              className="btn-gold"
+              className={isOptionSoldOut ? '' : 'btn-gold'}
               style={{
                 width: '100%',
                 display: 'flex',
@@ -433,18 +652,20 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                 gap: '10px',
                 padding: '14px 20px',
                 borderRadius: '50px',
-                cursor: 'pointer',
+                cursor: isOptionSoldOut ? 'not-allowed' : 'pointer',
                 border: 'none',
-                boxShadow: '0 4px 14px rgba(0,0,0,0.12)'
+                backgroundColor: isOptionSoldOut ? '#E5E7EB' : '#18181B',
+                color: isOptionSoldOut ? '#9CA3AF' : '#FFFFFF',
+                boxShadow: isOptionSoldOut ? 'none' : '0 4px 14px rgba(0,0,0,0.18)'
               }}
             >
               <ShoppingBag size={18} />
               <span style={{ fontSize: '0.96rem', fontWeight: 800, letterSpacing: '0.3px' }}>
-                THÊM VÀO GIỎ HÀNG
+                {isOptionSoldOut ? 'PHÂN LOẠI NÀY ĐÃ HẾT HÀNG' : 'THÊM VÀO GIỎ HÀNG'}
               </span>
             </button>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* LIGHTBOX PHÓNG TO ẢNH HD FULL SCREEN HỖ TRỢ VUỐT CẢM ỨNG MƯỢT MÀ NHƯ NGOÀI TAB */}

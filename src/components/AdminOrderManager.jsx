@@ -17,83 +17,56 @@ import {
 const KANBAN_COLUMNS = [
   {
     id: 'pending',
-    title: '1. Chờ cọc',
+    title: 'Chờ cọc',
     color: '#D97706',
-    bgColor: '#FFFBEB',
-    borderColor: '#FDE68A',
-    badgeColor: '#D97706',
     statuses: ['pending', 'quoted']
   },
   {
     id: 'deposit_paid',
-    title: '2. Đã cọc 100%',
+    title: 'Đã cọc 100%',
     color: '#4F46E5',
-    bgColor: '#EEF2FF',
-    borderColor: '#C7D2FE',
-    badgeColor: '#4F46E5',
     statuses: ['deposit_paid', 'paid']
   },
   {
     id: 'confirmed',
-    title: '3. Đã xác nhận',
+    title: 'Đã xác nhận',
     color: '#0284C7',
-    bgColor: '#E0F2FE',
-    borderColor: '#BAE6FD',
-    badgeColor: '#0284C7',
     statuses: ['confirmed']
   },
   {
     id: 'purchased',
-    title: '4. Đang mua',
+    title: 'Đang mua',
     color: '#7C3AED',
-    bgColor: '#F3E8FF',
-    borderColor: '#DDD6FE',
-    badgeColor: '#7C3AED',
     statuses: ['purchased', 'purchasing_korea']
   },
   {
     id: 'packed_kr',
-    title: '5. Kho Seoul',
+    title: 'Kho Seoul',
     color: '#DB2777',
-    bgColor: '#FCE7F3',
-    borderColor: '#FBCFE8',
-    badgeColor: '#DB2777',
     statuses: ['packed_kr', 'in_kr_warehouse', 'korea_warehouse']
   },
   {
     id: 'in_transit_air',
-    title: '6. Đang bay',
+    title: 'Đang bay',
     color: '#0891B2',
-    bgColor: '#CFFAFE',
-    borderColor: '#A5F3FC',
-    badgeColor: '#0891B2',
     statuses: ['in_transit_air', 'transit', 'shipping_vietnam']
   },
   {
     id: 'customs_cleared',
-    title: '7. Kho VN',
+    title: 'Kho VN',
     color: '#0D9488',
-    bgColor: '#CCFBF1',
-    borderColor: '#99F6E4',
-    badgeColor: '#0D9488',
     statuses: ['customs_cleared', 'in_vn_warehouse', 'vietnam_warehouse']
   },
   {
     id: 'completed',
-    title: '8. Đã giao',
+    title: 'Đã giao',
     color: '#059669',
-    bgColor: '#ECFDF5',
-    borderColor: '#A7F3D0',
-    badgeColor: '#059669',
     statuses: ['completed', 'delivering']
   },
   {
     id: 'cancelled',
-    title: '9. Đã hủy',
+    title: 'Đã hủy',
     color: '#DC2626',
-    bgColor: '#FEF2F2',
-    borderColor: '#FECACA',
-    badgeColor: '#DC2626',
     statuses: ['cancelled']
   }
 ];
@@ -447,27 +420,27 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
         flexWrap: 'wrap',
         gap: '12px',
         backgroundColor: isDark ? '#1E293B' : '#FFF',
-        padding: '12px 16px',
-        borderRadius: '12px',
+        padding: '10px 14px',
+        borderRadius: '10px',
         border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
-        boxShadow: '0 1px 3px rgba(0,0,0,0.04)'
+        boxShadow: '0 1px 2px rgba(0,0,0,0.03)'
       }}>
         {/* Search Box */}
         <div style={{ position: 'relative', width: '320px', maxWidth: '100%' }}>
-          <Search size={16} color={isDark ? '#94A3B8' : '#64748B'} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)' }} />
+          <Search size={15} color={isDark ? '#94A3B8' : '#64748B'} style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)' }} />
           <input
             type="text"
-            placeholder="Tìm theo Mã đơn, Tên khách, SĐT..."
+            placeholder="Tìm kiếm đơn hàng (Mã đơn, Tên, SĐT)..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             style={{
               width: '100%',
-              padding: '8px 12px 8px 36px',
-              borderRadius: '8px',
+              padding: '7px 10px 7px 32px',
+              borderRadius: '6px',
               border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
               backgroundColor: isDark ? '#0F172A' : '#FFF',
               color: isDark ? '#F8FAFC' : '#0F172A',
-              fontSize: '0.85rem',
+              fontSize: '0.82rem',
               outline: 'none'
             }}
           />
@@ -475,26 +448,26 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
 
         {/* View Switcher & Action Buttons */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <div style={{ display: 'flex', backgroundColor: isDark ? '#0F172A' : '#F1F5F9', padding: '3px', borderRadius: '8px', border: isDark ? '1px solid #334155' : 'none' }}>
+          <div style={{ display: 'flex', backgroundColor: isDark ? '#0F172A' : '#F1F5F9', padding: '2px', borderRadius: '6px', border: isDark ? '1px solid #334155' : 'none' }}>
             <button
               onClick={() => setViewMode('kanban')}
               style={{
                 display: 'flex',
                 alignItems: 'center',
                 gap: '5px',
-                padding: '6px 12px',
-                borderRadius: '6px',
+                padding: '5px 10px',
+                borderRadius: '5px',
                 border: 'none',
                 backgroundColor: viewMode === 'kanban' ? (isDark ? '#334155' : '#FFF') : 'transparent',
                 color: viewMode === 'kanban' ? (isDark ? '#F8FAFC' : '#0F172A') : (isDark ? '#94A3B8' : '#64748B'),
                 fontWeight: viewMode === 'kanban' ? 700 : 500,
-                fontSize: '0.8rem',
+                fontSize: '0.78rem',
                 cursor: 'pointer',
-                boxShadow: viewMode === 'kanban' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'
+                boxShadow: viewMode === 'kanban' ? '0 1px 2px rgba(0,0,0,0.06)' : 'none'
               }}
             >
-              <LayoutGrid size={14} />
-              <span>Kanban Phân Luồng</span>
+              <LayoutGrid size={13} />
+              <span>Kanban</span>
             </button>
             <button
               onClick={() => setViewMode('table')}
@@ -502,19 +475,19 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '5px',
-                padding: '6px 12px',
-                borderRadius: '6px',
+                padding: '5px 10px',
+                borderRadius: '5px',
                 border: 'none',
                 backgroundColor: viewMode === 'table' ? (isDark ? '#334155' : '#FFF') : 'transparent',
                 color: viewMode === 'table' ? (isDark ? '#F8FAFC' : '#0F172A') : (isDark ? '#94A3B8' : '#64748B'),
                 fontWeight: viewMode === 'table' ? 700 : 500,
-                fontSize: '0.8rem',
+                fontSize: '0.78rem',
                 cursor: 'pointer',
-                boxShadow: viewMode === 'table' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'
+                boxShadow: viewMode === 'table' ? '0 1px 2px rgba(0,0,0,0.06)' : 'none'
               }}
             >
-              <List size={14} />
-              <span>Danh Sách Bảng</span>
+              <List size={13} />
+              <span>Danh Sách</span>
             </button>
           </div>
 
@@ -523,29 +496,30 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '6px',
-              backgroundColor: '#2563EB',
-              color: '#FFF',
+              gap: '5px',
+              backgroundColor: isDark ? '#F8FAFC' : '#0F172A',
+              color: isDark ? '#0F172A' : '#FFF',
               border: 'none',
-              borderRadius: '8px',
-              padding: '8px 14px',
-              fontSize: '0.8rem',
+              borderRadius: '6px',
+              padding: '6px 12px',
+              fontSize: '0.78rem',
               fontWeight: 700,
-              cursor: 'pointer'
+              cursor: 'pointer',
+              transition: 'opacity 0.15s ease'
             }}
           >
-            <Plus size={15} />
-            <span>+ Tạo Đơn Hàng</span>
+            <Plus size={14} />
+            <span>Tạo Đơn</span>
           </button>
         </div>
       </div>
 
-      {/* 📋 Giao diện Kanban Phân Luồng 5 Cột */}
+      {/* 📋 Giao diện Kanban Phân Luồng */}
       {viewMode === 'kanban' && (
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          gap: '14px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))',
+          gap: '12px',
           alignItems: 'flex-start',
           minHeight: '600px'
         }}>
@@ -556,8 +530,8 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
                 key={col.id}
                 style={{
                   backgroundColor: isDark ? '#1E293B' : '#F8FAFC',
-                  borderRadius: '12px',
-                  border: isDark ? '1px solid #334155' : `1px solid ${col.borderColor}`,
+                  borderRadius: '10px',
+                  border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
                   padding: '12px',
                   display: 'flex',
                   flexDirection: 'column',
@@ -570,25 +544,25 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
                   alignItems: 'center',
                   justifyContent: 'space-between',
                   paddingBottom: '8px',
-                  borderBottom: `2px solid ${col.color}`
+                  borderBottom: isDark ? '1px solid rgba(255,255,255,0.06)' : '1px solid #E2E8F0'
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                     <span style={{
-                      width: '8px',
-                      height: '8px',
+                      width: '7px',
+                      height: '7px',
                       borderRadius: '50%',
                       backgroundColor: col.color
                     }} />
-                    <span style={{ fontWeight: 800, fontSize: '0.88rem', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                    <span style={{ fontWeight: 700, fontSize: '0.82rem', color: isDark ? '#F8FAFC' : '#0F172A' }}>
                       {col.title}
                     </span>
                   </div>
                   <span style={{
-                    backgroundColor: col.badgeColor,
-                    color: '#FFF',
-                    fontSize: '0.72rem',
-                    fontWeight: 800,
-                    padding: '2px 7px',
+                    backgroundColor: isDark ? 'rgba(255,255,255,0.08)' : '#E2E8F0',
+                    color: isDark ? '#94A3B8' : '#64748B',
+                    fontSize: '0.7rem',
+                    fontWeight: 700,
+                    padding: '1px 6px',
                     borderRadius: '999px'
                   }}>
                     {colOrders.length}
@@ -599,13 +573,14 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   {colOrders.length === 0 ? (
                     <div style={{
-                      padding: '24px 12px',
+                      padding: '20px 10px',
                       textAlign: 'center',
                       color: isDark ? '#64748B' : '#94A3B8',
-                      fontSize: '0.78rem',
-                      fontStyle: 'italic'
+                      fontSize: '0.75rem',
+                      borderRadius: '6px',
+                      border: isDark ? '1px dashed #334155' : '1px dashed #CBD5E1'
                     }}>
-                      Chưa có đơn trong mục này
+                      Không có đơn
                     </div>
                   ) : (
                     colOrders.map(order => {

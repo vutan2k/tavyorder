@@ -66,9 +66,12 @@ export default function AdminProductModal({
     brand: product?.brand || '',
     category: initialCategory,
     foreignPrice: product?.foreignPrice ?? product?.price ?? 0,
+    originalPrice: product?.originalPrice || product?.origin_price_krw || 0,
+    discountRate: product?.discountRate || (product?.discount_percent ? `-${product.discount_percent}%` : ''),
     productImage: initialMainImage,
     images: initialImages,
     photoReviews: initialReviews,
+    options: Array.isArray(product?.options) ? product.options : [],
     description: product?.description || ''
   }));
 
@@ -78,6 +81,80 @@ export default function AdminProductModal({
   const [newMediaType, setNewMediaType] = useState('product'); // 'product' | 'review'
   const [showEditMainUrl, setShowEditMainUrl] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+
+  // Quản lý Phân loại hàng (Options / Variants)
+  const [newOptNameVi, setNewOptNameVi] = useState('');
+  const [newOptNameKr, setNewOptNameKr] = useState('');
+  const [newOptPriceKrw, setNewOptPriceKrw] = useState('');
+  const [newOptDiscount, setNewOptDiscount] = useState('');
+  const [newOptImageUrl, setNewOptImageUrl] = useState('');
+  const [showAddOptionForm, setShowAddOptionForm] = useState(false);
+
+  const handleToggleOptionSoldOut = (index) => {
+    const updated = [...(formData.options || [])];
+    if (updated[index]) {
+      const nextSoldOut = !updated[index].is_sold_out;
+      updated[index] = {
+        ...updated[index],
+        is_sold_out: nextSoldOut,
+        status: nextSoldOut ? 'out_of_stock' : 'available'
+      };
+      setFormData(prev => ({ ...prev, options: updated }));
+    }
+  };
+
+  const handleDeleteOption = (index) => {
+    const updated = (formData.options || []).filter((_, idx) => idx !== index);
+    setFormData(prev => ({ ...prev, options: updated }));
+  };
+
+  const handleUpdateOptionField = (index, field, value) => {
+    const updated = [...(formData.options || [])];
+    if (updated[index]) {
+      updated[index] = {
+        ...updated[index],
+        [field]: value
+      };
+      setFormData(prev => ({ ...prev, options: updated }));
+    }
+  };
+
+  const handleAddNewOption = (e) => {
+    e?.preventDefault();
+    if (!newOptNameVi.trim() && !newOptNameKr.trim()) {
+      alert("Vui lòng nhập tên phân loại hàng!");
+      return;
+    }
+    const priceWon = Number(newOptPriceKrw) || Number(formData.foreignPrice) || 0;
+    const discount = Number(newOptDiscount) || 0;
+    const originalWon = discount > 0 ? Math.round(priceWon / (1 - discount / 100)) : priceWon;
+    const priceVnd = Math.ceil(priceWon * 19.5 * 1.05 / 1000) * 1000;
+
+    const newOption = {
+      id: `opt_${Date.now()}`,
+      name_vi: newOptNameVi.trim() || newOptNameKr.trim(),
+      name_kr: newOptNameKr.trim() || newOptNameVi.trim(),
+      price_krw: priceWon,
+      price_vnd: priceVnd,
+      original_price_krw: originalWon,
+      discount_percent: discount,
+      image_url: newOptImageUrl.trim() || formData.productImage || '',
+      is_sold_out: false,
+      status: 'available'
+    };
+
+    setFormData(prev => ({
+      ...prev,
+      options: [...(prev.options || []), newOption]
+    }));
+
+    setNewOptNameVi('');
+    setNewOptNameKr('');
+    setNewOptPriceKrw('');
+    setNewOptDiscount('');
+    setNewOptImageUrl('');
+    setShowAddOptionForm(false);
+  };
 
   // Kích thước bảng (resizable) và trạng thái phóng to
   const [dimensions, setDimensions] = useState(() => {
@@ -109,9 +186,12 @@ export default function AdminProductModal({
         brand: product.brand || '',
         category: preciseCat,
         foreignPrice: product.foreignPrice ?? product.price ?? 0,
+        originalPrice: product.originalPrice || product.origin_price_krw || 0,
+        discountRate: product.discountRate || (product.discount_percent ? `-${product.discount_percent}%` : ''),
         productImage: mainImg,
         images: allImgs.length > 0 ? allImgs : (mainImg ? [mainImg] : []),
         photoReviews: revImgs,
+        options: Array.isArray(product.options) ? product.options : [],
         description: product.description || ''
       });
       setSelectedPreviewImg(mainImg);
@@ -1398,6 +1478,263 @@ export default function AdminProductModal({
                     outline: 'none'
                   }}
                 />
+              </div>
+
+              {/* QUẢN LÝ PHÂN LOẠI HÀNG (VARIANTS / OPTIONS) */}
+              <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                  <label style={{
+                    fontSize: '0.82rem',
+                    fontWeight: 800,
+                    color: isDark ? '#CBD5E1' : '#475569',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px'
+                  }}>
+                    Phân Loại Hàng ({formData.options?.length || 0})
+                  </label>
+                  <button
+                    type="button"
+                    onClick={() => setShowAddOptionForm(!showAddOptionForm)}
+                    style={{
+                      fontSize: '0.76rem',
+                      fontWeight: 700,
+                      padding: '4px 10px',
+                      borderRadius: '6px',
+                      border: 'none',
+                      backgroundColor: isDark ? '#2563EB' : '#1D4ED8',
+                      color: '#FFF',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {showAddOptionForm ? 'Đóng form' : '+ Thêm phân loại'}
+                  </button>
+                </div>
+
+                {/* Form thêm option mới */}
+                {showAddOptionForm && (
+                  <div style={{
+                    padding: '12px',
+                    borderRadius: '8px',
+                    border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
+                    backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
+                    marginBottom: '10px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '8px'
+                  }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                      <input
+                        type="text"
+                        placeholder="Tên tiếng Việt (VD: 01. Tràm Trà)"
+                        value={newOptNameVi}
+                        onChange={(e) => setNewOptNameVi(e.target.value)}
+                        style={{
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
+                          backgroundColor: isDark ? '#1E293B' : '#FFF',
+                          color: isDark ? '#F8FAFC' : '#0F172A',
+                          fontSize: '0.8rem'
+                        }}
+                      />
+                      <input
+                        type="text"
+                        placeholder="Tên tiếng Hàn (VD: 01 티트리)"
+                        value={newOptNameKr}
+                        onChange={(e) => setNewOptNameKr(e.target.value)}
+                        style={{
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
+                          backgroundColor: isDark ? '#1E293B' : '#FFF',
+                          color: isDark ? '#F8FAFC' : '#0F172A',
+                          fontSize: '0.8rem'
+                        }}
+                      />
+                    </div>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 2fr', gap: '8px' }}>
+                      <input
+                        type="number"
+                        placeholder="Giá Won (VD: 20000)"
+                        value={newOptPriceKrw}
+                        onChange={(e) => setNewOptPriceKrw(e.target.value)}
+                        style={{
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
+                          backgroundColor: isDark ? '#1E293B' : '#FFF',
+                          color: isDark ? '#F8FAFC' : '#0F172A',
+                          fontSize: '0.8rem'
+                        }}
+                      />
+                      <input
+                        type="number"
+                        placeholder="% Sale (VD: 50)"
+                        value={newOptDiscount}
+                        onChange={(e) => setNewOptDiscount(e.target.value)}
+                        style={{
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
+                          backgroundColor: isDark ? '#1E293B' : '#FFF',
+                          color: isDark ? '#F8FAFC' : '#0F172A',
+                          fontSize: '0.8rem'
+                        }}
+                      />
+                      <input
+                        type="text"
+                        placeholder="URL ảnh phân loại (tuỳ chọn)"
+                        value={newOptImageUrl}
+                        onChange={(e) => setNewOptImageUrl(e.target.value)}
+                        style={{
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
+                          backgroundColor: isDark ? '#1E293B' : '#FFF',
+                          color: isDark ? '#F8FAFC' : '#0F172A',
+                          fontSize: '0.8rem'
+                        }}
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onClick={handleAddNewOption}
+                      style={{
+                        padding: '8px',
+                        borderRadius: '6px',
+                        backgroundColor: '#10B981',
+                        color: '#FFF',
+                        border: 'none',
+                        fontWeight: 700,
+                        fontSize: '0.82rem',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      ✓ Xác nhận thêm phân loại
+                    </button>
+                  </div>
+                )}
+
+                {/* Danh sách phân loại hiện có */}
+                {formData.options && formData.options.length > 0 ? (
+                  <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '6px',
+                    maxHeight: '260px',
+                    overflowY: 'auto',
+                    border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                    borderRadius: '8px',
+                    padding: '8px'
+                  }}>
+                    {formData.options.map((opt, idx) => (
+                      <div
+                        key={opt.id || idx}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          gap: '8px',
+                          padding: '8px 10px',
+                          borderRadius: '6px',
+                          backgroundColor: isDark ? '#0F172A' : '#FFF',
+                          border: isDark ? '1px solid #1E293B' : '1px solid #F1F5F9'
+                        }}
+                      >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0, flex: 1 }}>
+                          {opt.image_url ? (
+                            <img
+                              src={opt.image_url}
+                              alt=""
+                              style={{ width: '32px', height: '32px', borderRadius: '4px', objectFit: 'cover', flexShrink: 0 }}
+                            />
+                          ) : null}
+                          <div style={{ minWidth: 0, flex: 1 }}>
+                            <input
+                              type="text"
+                              value={opt.name_vi || opt.name_kr || ''}
+                              onChange={(e) => handleUpdateOptionField(idx, 'name_vi', e.target.value)}
+                              style={{
+                                width: '100%',
+                                padding: '3px 6px',
+                                fontSize: '0.8rem',
+                                fontWeight: 600,
+                                borderRadius: '4px',
+                                border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
+                                backgroundColor: isDark ? '#1E293B' : '#FFF',
+                                color: isDark ? '#F8FAFC' : '#0F172A'
+                              }}
+                            />
+                          </div>
+                        </div>
+
+                        {/* Giá Won & % Sale */}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <input
+                            type="number"
+                            value={opt.price_krw || ''}
+                            onChange={(e) => handleUpdateOptionField(idx, 'price_krw', Number(e.target.value))}
+                            placeholder="Won"
+                            style={{
+                              width: '80px',
+                              padding: '3px 6px',
+                              fontSize: '0.78rem',
+                              borderRadius: '4px',
+                              border: isDark ? '1px solid #334155' : '1px solid #CBD5E1',
+                              backgroundColor: isDark ? '#1E293B' : '#FFF',
+                              color: isDark ? '#F8FAFC' : '#0F172A',
+                              textAlign: 'right'
+                            }}
+                          />
+                          <button
+                            type="button"
+                            onClick={() => handleToggleOptionSoldOut(idx)}
+                            style={{
+                              padding: '3px 8px',
+                              fontSize: '0.72rem',
+                              fontWeight: 700,
+                              borderRadius: '4px',
+                              border: 'none',
+                              cursor: 'pointer',
+                              backgroundColor: opt.is_sold_out ? '#EF4444' : '#10B981',
+                              color: '#FFF'
+                            }}
+                          >
+                            {opt.is_sold_out ? 'Hết hàng' : 'Còn hàng'}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => handleDeleteOption(idx)}
+                            style={{
+                              padding: '3px 6px',
+                              fontSize: '0.72rem',
+                              borderRadius: '4px',
+                              border: 'none',
+                              cursor: 'pointer',
+                              backgroundColor: 'transparent',
+                              color: '#EF4444'
+                            }}
+                            title="Xóa option này"
+                          >
+                            ✕
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div style={{
+                    padding: '12px',
+                    textAlign: 'center',
+                    fontSize: '0.8rem',
+                    color: isDark ? '#64748B' : '#94A3B8',
+                    border: isDark ? '1px dashed #334155' : '1px dashed #CBD5E1',
+                    borderRadius: '8px'
+                  }}>
+                    Sản phẩm này là phiên bản đơn (chưa có phân loại hàng).
+                  </div>
+                )}
               </div>
             </div>
           </div>

@@ -28,5 +28,7 @@ dist-ssr
 *.sw?
 .firebase/
 .codegraph/
+.hermes/
+.vercel/
 temp.*
 *.tmp
