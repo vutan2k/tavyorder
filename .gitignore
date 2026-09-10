@@ -30,3 +30,5 @@ dist-ssr
 .codegraph/
 temp.*
 *.tmp
+.vercel
+public/oliveyoung_ranking
