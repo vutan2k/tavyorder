@@ -241,17 +241,19 @@ export default function CartPage() {
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                       <div>
                         <h4 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-dark)', marginBottom: '4px' }}>{item.name}</h4>
-                        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{item.options}</p>
+                        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                          {typeof item.options === 'string' ? item.options : (item.options?.name_vi || item.options?.name_kr || '')}
+                        </p>
                       </div>
-                      <button onClick={() => removeFromCart(item.goodsNo)} style={{ background: 'none', border: 'none', color: '#EF4444', cursor: 'pointer', padding: '4px' }}>
+                      <button onClick={() => removeFromCart(item.cartItemId || item.goodsNo)} style={{ background: 'none', border: 'none', color: '#EF4444', cursor: 'pointer', padding: '4px' }}>
                         <Trash2 size={18} />
                       </button>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginTop: '16px' }}>
                       <div style={{ display: 'flex', alignItems: 'center', border: '1px solid var(--border-color, #ddd)', borderRadius: '6px', overflow: 'hidden' }}>
-                        <button type="button" onClick={() => updateCartQty(item.goodsNo, item.qty - 1)} style={{ padding: '6px 10px', background: 'var(--bg-subtle-purple, #f9f9f9)', color: 'var(--text-dark)', border: 'none', cursor: 'pointer' }}><Minus size={14}/></button>
+                        <button type="button" onClick={() => updateCartQty(item.cartItemId || item.goodsNo, item.qty - 1)} style={{ padding: '6px 10px', background: 'var(--bg-subtle-purple, #f9f9f9)', color: 'var(--text-dark)', border: 'none', cursor: 'pointer' }}><Minus size={14}/></button>
                         <span style={{ padding: '6px 16px', fontSize: '0.9rem', fontWeight: 600, minWidth: '40px', textAlign: 'center', color: 'var(--text-dark)' }}>{item.qty}</span>
-                        <button type="button" onClick={() => updateCartQty(item.goodsNo, item.qty + 1)} style={{ padding: '6px 10px', background: 'var(--bg-subtle-purple, #f9f9f9)', color: 'var(--text-dark)', border: 'none', cursor: 'pointer' }}><Plus size={14}/></button>
+                        <button type="button" onClick={() => updateCartQty(item.cartItemId || item.goodsNo, item.qty + 1)} style={{ padding: '6px 10px', background: 'var(--bg-subtle-purple, #f9f9f9)', color: 'var(--text-dark)', border: 'none', cursor: 'pointer' }}><Plus size={14}/></button>
                       </div>
                       <div style={{ textAlign: 'right' }}>
                         <div style={{ fontWeight: 800, color: 'var(--text-dark)', fontSize: '1.05rem' }}>

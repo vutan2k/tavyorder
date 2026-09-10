@@ -61,6 +61,16 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
         {currentProducts.map((product, pIdx) => {
           const won = Number(product.foreignPrice ?? product.priceKrw ?? product.priceWon ?? product.price) || 0;
           const calculatedVnd = Math.round(won * krwRate);
+          const originalPriceWon = Number(product.originalPrice || product.origin_price_krw) || 0;
+          const hasDiscount = originalPriceWon > won;
+          const discountVal = hasDiscount
+            ? (product.discountRate || product.discount_percent
+                ? (String(product.discountRate || product.discount_percent).includes('%')
+                    ? String(product.discountRate || product.discount_percent)
+                    : `${product.discountRate || product.discount_percent}%`)
+                : `${Math.round((1 - won / originalPriceWon) * 100)}%`)
+            : null;
+          const cleanDiscountBadge = discountVal ? (discountVal.startsWith('-') ? discountVal : `-${discountVal}`) : null;
           const defaultImg = 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&auto=format&fit=crop&q=80';
 
           return (
@@ -114,6 +124,26 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                 >
                   {product.brand || 'Olive Young'}
                 </span>
+                {cleanDiscountBadge && (
+                  <span
+                    style={{
+                      position: 'absolute',
+                      top: '8px',
+                      right: '8px',
+                      backgroundColor: '#EF4444',
+                      color: '#FFFFFF',
+                      fontSize: '0.68rem',
+                      fontWeight: 800,
+                      padding: '2px 7px',
+                      borderRadius: '6px',
+                      zIndex: 3,
+                      letterSpacing: '0.3px',
+                      boxShadow: '0 2px 6px rgba(239, 68, 68, 0.35)'
+                    }}
+                  >
+                    {cleanDiscountBadge}
+                  </span>
+                )}
               </div>
 
               {/* Product Info */}
@@ -146,7 +176,11 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                     className="product-card-subtitle"
                     style={{ fontSize: '0.74rem', color: 'var(--text-muted)', marginBottom: '8px', minHeight: '1.2em' }}
                   >
-                    {product.options ? `Quy cách: ${product.options}` : 'Hàng chính hãng nội địa Hàn'}
+                    {typeof product.options === 'string' && product.options
+                      ? `Quy cách: ${product.options}`
+                      : (Array.isArray(product.options) && product.options.length > 0
+                          ? `${product.options.length} phân loại tùy chọn`
+                          : 'Hàng chính hãng nội địa Hàn')}
                   </p>
                 </div>
 
@@ -161,7 +195,14 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                       style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.72rem', color: 'var(--text-muted, #6B7280)', marginBottom: '2px' }}
                     >
                       <span>Giá Hàn:</span>
-                      <strong style={{ color: 'var(--text-dark, #374151)', fontWeight: 700 }}>{formatKrw(product.foreignPrice)}</strong>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                        {(Number(product.originalPrice || product.origin_price_krw) > Number(product.foreignPrice)) && (
+                          <span style={{ textDecoration: 'line-through', color: '#9CA3AF', fontSize: '0.68rem' }}>
+                            {formatKrw(product.originalPrice || product.origin_price_krw)}
+                          </span>
+                        )}
+                        <strong style={{ color: 'var(--text-dark, #374151)', fontWeight: 700 }}>{formatKrw(product.foreignPrice)}</strong>
+                      </div>
                     </div>
                     <div
                       className="product-card-price-vnd-row"
