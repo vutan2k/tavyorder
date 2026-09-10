@@ -102,3 +102,17 @@ export function isEmbeddableVideo(url) {
   if (!url || typeof url !== 'string') return false;
   return isGoogleDriveUrl(url) || isYouTubeUrl(url) || /vimeo\.com/i.test(url) || url.includes('/preview') || url.includes('/embed');
 }
+
+/**
+ * Converts image URLs, particularly Google Drive share links, into direct image URLs
+ * that can be loaded directly inside <img src="..." /> tags without CORS or HTML page wrapper issues.
+ */
+export function getDirectImageUrl(url) {
+  if (!url || typeof url !== 'string') return '';
+  const cleanUrl = url.trim();
+  const driveId = extractGoogleDriveFileId(cleanUrl);
+  if (driveId && (isGoogleDriveUrl(cleanUrl) || driveId.length >= 25)) {
+    return `https://lh3.googleusercontent.com/d/${driveId}`;
+  }
+  return cleanUrl;
+}

@@ -312,11 +312,8 @@ export default function CartPage() {
                   <div style={{ width: '100%', height: '7px', backgroundColor: 'var(--bg-ivory, #FDE68A)', borderRadius: '4px', overflow: 'hidden', marginBottom: '10px' }}>
                     <div style={{ width: `${progressPercent}%`, height: '100%', backgroundColor: 'var(--gold-primary, #F59E0B)', transition: 'width 0.3s ease' }} />
                   </div>
-                  <p style={{ fontSize: '0.84rem', color: 'var(--text-dark, #92400E)', margin: '0 0 6px 0', lineHeight: 1.45 }}>
+                  <p style={{ fontSize: '0.84rem', color: 'var(--text-dark, #92400E)', margin: '0 0 12px 0', lineHeight: 1.45 }}>
                     Bạn cần chọn thêm <strong>{formatVnd(shortfallVnd)}</strong> để đạt mức tối thiểu 1.000.000đ.
-                  </p>
-                  <p style={{ fontSize: '0.76rem', color: 'var(--text-muted, #B45309)', margin: '0 0 10px 0', lineHeight: 1.4 }}>
-                    💡 <em>Ghi chú: TAVY Korea áp dụng đơn tối thiểu 1.000.000đ để tối ưu chi phí mua hộ từ Hàn Quốc và bảo đảm quy chuẩn đóng gói đường bay an toàn.</em>
                   </p>
                   <Link
                     to="/#products"
@@ -401,16 +398,9 @@ export default function CartPage() {
                   />
                 </div>
                 <div className="form-group">
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                    <label className="form-label" style={{ margin: 0 }}>
-                      Số điện thoại nhận hàng <span style={{ color: '#EF4444' }}>*</span>
-                    </label>
-                    {phone && (
-                      <span style={{ fontSize: '0.75rem', color: /^0(3|5|7|8|9)[0-9]{8}$/.test(phone.replace(/\D/g, '')) ? '#10B981' : '#EF4444', fontWeight: 600 }}>
-                        {phone.replace(/\D/g, '').length}/10 số {/^0(3|5|7|8|9)[0-9]{8}$/.test(phone.replace(/\D/g, '')) ? '✓ Hợp lệ' : '(Chưa đúng định dạng)'}
-                      </span>
-                    )}
-                  </div>
+                  <label className="form-label">
+                    Số điện thoại nhận hàng <span style={{ color: '#EF4444' }}>*</span>
+                  </label>
                   <input
                     type="tel"
                     required
@@ -423,7 +413,7 @@ export default function CartPage() {
                     }}
                     maxLength={10}
                     style={{
-                      borderColor: phone && !/^0(3|5|7|8|9)[0-9]{8}$/.test(phone.replace(/\D/g, '')) && phone.length === 10 ? '#EF4444' : undefined
+                      borderColor: (phone && !/^0(3|5|7|8|9)[0-9]{8}$/.test(phone)) ? '#EF4444' : undefined
                     }}
                   />
                   <div style={{ fontSize: '0.74rem', color: 'var(--text-muted, #6B7280)', marginTop: '4px' }}>

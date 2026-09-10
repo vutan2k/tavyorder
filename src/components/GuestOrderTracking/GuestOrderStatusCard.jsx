@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Check, X, Copy, CreditCard, Video, FileText,
+  Check, CheckCircle, X, Copy, CreditCard, Video, FileText,
   PackageCheck, Plane, Truck, Scale, ShieldCheck,
-  Calendar, User, Package, AlertCircle, Info, Maximize2, ExternalLink
+  Calendar, User, Package, AlertCircle, Maximize2, ExternalLink
 } from 'lucide-react';
 import { ORDER_STEPS, getStatusConfig } from '../../data/orderStatuses';
 import { calculateStepProgress, getProofBadges } from '../../services/guestTrackingService';
 import { getOrderTotalVnd, formatVnd } from '../../utils/priceCalculator';
-import { getEmbedVideoUrl } from '../../utils/videoUrlHelper';
+import { getEmbedVideoUrl, getDirectImageUrl } from '../../utils/videoUrlHelper';
 import ProofMediaModal from './ProofMediaModal';
 
 /**
@@ -65,12 +65,15 @@ export default function GuestOrderStatusCard({
         price: totalOrderVnd
       }];
 
-  const isUnpaid = (
-    order.status === 'pending' ||
-    order.paymentStatus === 'pending' ||
-    !order.paymentStatus ||
-    order.paymentStatus === 'unpaid'
+  // Đơn hàng đã cọc hoặc đã chuyển qua các bước xử lý (bước 2 đến bước 8)
+  const isPaidOrAdvanced = (
+    order.paymentStatus === 'paid' ||
+    (Number(order.paidAmountVnd) > 0) ||
+    currentStepIdx >= 1 ||
+    ['deposit_paid', 'confirmed', 'purchased', 'packed_kr', 'in_transit_air', 'customs_cleared', 'completed', 'in_kr_warehouse', 'transit', 'in_vn_warehouse', 'delivering'].includes(order.status)
   );
+
+  const isUnpaid = !isPaidOrAdvanced && (order.status === 'pending' || currentStepIdx === 0);
 
   const formattedDate = order.createdAt
     ? new Date(order.createdAt).toLocaleDateString('vi-VN', {
@@ -495,128 +498,181 @@ export default function GuestOrderStatusCard({
       </div>
 
       {/* 4. Transparent Proof Hub */}
-      <div
-        style={{
-          padding: '20px 24px',
-          backgroundColor: '#FAF9F6',
-          borderTop: '1px solid #ECE7F0',
-          borderBottom: '1px solid #ECE7F0'
-        }}
-      >
-        {/* In-Card Embedded Video Player (Google Drive POV / Packing Video) - Siêu Tối Giản & Trực Quan */}
-        {(proofData.povVideoUrl || proofData.packingVideoUrl) && (
-          <div style={{
-            marginBottom: '14px',
-            borderRadius: '12px',
-            overflow: 'hidden',
-            border: '1px solid #E2E8F0',
-            backgroundColor: '#000',
-            boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)'
-          }}>
-            {/* Tab chuyển đổi nhỏ gọn nếu đơn có cả 2 video */}
-            {proofData.povVideoUrl && proofData.packingVideoUrl && (
+      {proofData.hasProof && (
+        <div
+          style={{
+            padding: '20px 24px',
+            backgroundColor: '#FAF9F6',
+            borderTop: '1px solid #ECE7F0',
+            borderBottom: '1px solid #ECE7F0'
+          }}
+        >
+        {/* Showcase các bằng chứng minh bạch (Video mua hàng & Bill mua hàng) */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: (proofData.povVideoUrl || proofData.packingVideoUrl) && proofData.receiptImageUrl
+            ? 'repeat(auto-fit, minmax(310px, 1fr))'
+            : '1fr',
+          gap: '16px',
+          maxWidth: (proofData.povVideoUrl || proofData.packingVideoUrl) && proofData.receiptImageUrl ? '820px' : '520px',
+          margin: '0 auto 16px auto',
+          alignItems: 'stretch'
+        }}>
+          {/* Card 1: Video mua hàng */}
+          {(proofData.povVideoUrl || proofData.packingVideoUrl) && (
+            <div style={{
+              borderRadius: '14px',
+              overflow: 'hidden',
+              border: '1px solid #E2E8F0',
+              backgroundColor: '#FFFFFF',
+              boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)',
+              display: 'flex',
+              flexDirection: 'column'
+            }}>
+              {/* Header Video */}
               <div style={{
                 display: 'flex',
-                gap: '6px',
-                padding: '6px 10px',
-                backgroundColor: '#0F172A',
-                justifyContent: 'center'
-              }}>
-                <button
-                  type="button"
-                  onClick={() => setActiveInlineVideo('pov')}
-                  style={{
-                    background: activeInlineVideo !== 'packing' ? '#7C3AED' : 'rgba(255,255,255,0.1)',
-                    color: '#FFF',
-                    border: 'none',
-                    borderRadius: '6px',
-                    padding: '4px 12px',
-                    fontSize: '0.75rem',
-                    fontWeight: 700,
-                    cursor: 'pointer'
-                  }}
-                >
-                  Video Mua Hàng Seoul
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setActiveInlineVideo('packing')}
-                  style={{
-                    background: activeInlineVideo === 'packing' ? '#DB2777' : 'rgba(255,255,255,0.1)',
-                    color: '#FFF',
-                    border: 'none',
-                    borderRadius: '6px',
-                    padding: '4px 12px',
-                    fontSize: '0.75rem',
-                    fontWeight: 700,
-                    cursor: 'pointer'
-                  }}
-                >
-                  Video Đóng Kiện
-                </button>
-              </div>
-            )}
-
-            {/* Embedded Iframe Player */}
-            <div style={{
-              position: 'relative',
-              width: '100%',
-              paddingTop: '56.25%',
-              backgroundColor: '#000'
-            }}>
-              <iframe
-                src={getEmbedVideoUrl(activeInlineVideo === 'packing' && proofData.packingVideoUrl ? proofData.packingVideoUrl : proofData.povVideoUrl)}
-                title="Video Bằng Chứng Mua Hàng Trực Tiếp"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
-                  border: 'none'
-                }}
-              />
-            </div>
-          </div>
-        )}
-
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', alignItems: 'center' }}>
-
-          {/* Receipt Bill Image Button */}
-          {proofData.receiptImageUrl ? (
-            <button
-              onClick={() =>
-                setActiveMedia({
-                  type: 'image',
-                  badgeType: 'receipt_bill',
-                  url: proofData.receiptImageUrl,
-                  title: `Hóa Đơn Bill Store — Đơn ${order.customerPhone || order.id.replace(/^ORD-?/i, '')}`,
-                  subtitle: 'Hóa đơn gốc xuất từ quầy thanh toán Olive Young / Cửa hàng Hàn Quốc'
-                })
-              }
-              style={{
-                display: 'inline-flex',
                 alignItems: 'center',
-                gap: '7px',
-                padding: '8px 16px',
-                borderRadius: '10px',
-                backgroundColor: '#F3F4F6',
-                color: '#374151',
-                border: '1px solid #9CA3AF',
-                fontWeight: 700,
-                fontSize: '0.82rem',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease',
-                boxShadow: '0 2px 4px rgba(0,0,0,0.06)'
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E5E7EB')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#F3F4F6')}
-            >
-              <FileText size={16} /> Xem Hóa Đơn Bill
-            </button>
-          ) : null}
+                justifyContent: 'space-between',
+                padding: '10px 14px',
+                backgroundColor: '#FAF9F6',
+                borderBottom: '1px solid #EAE6DF'
+              }}>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '0.86rem', fontWeight: 700, color: '#1F2937' }}>
+                  <Video size={16} style={{ color: 'var(--purple-primary, #7A4B9E)' }} />
+                  Video mua hàng
+                </span>
+                {proofData.povVideoUrl && proofData.packingVideoUrl && (
+                  <div style={{ display: 'flex', gap: '4px', backgroundColor: '#F3F4F6', padding: '2px', borderRadius: '8px' }}>
+                    <button
+                      type="button"
+                      onClick={() => setActiveInlineVideo('pov')}
+                      style={{
+                        background: activeInlineVideo !== 'packing' ? 'var(--purple-primary, #7A4B9E)' : 'transparent',
+                        color: activeInlineVideo !== 'packing' ? '#FFFFFF' : '#6B7280',
+                        border: 'none',
+                        borderRadius: '6px',
+                        padding: '3px 8px',
+                        fontSize: '0.72rem',
+                        fontWeight: 700,
+                        cursor: 'pointer'
+                      }}
+                    >
+                      Store
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setActiveInlineVideo('packing')}
+                      style={{
+                        background: activeInlineVideo === 'packing' ? '#DB2777' : 'transparent',
+                        color: activeInlineVideo === 'packing' ? '#FFFFFF' : '#6B7280',
+                        border: 'none',
+                        borderRadius: '6px',
+                        padding: '3px 8px',
+                        fontSize: '0.72rem',
+                        fontWeight: 700,
+                        cursor: 'pointer'
+                      }}
+                    >
+                      Đóng kiện
+                    </button>
+                  </div>
+                )}
+              </div>
+
+              {/* Embedded Player */}
+              <div style={{
+                position: 'relative',
+                width: '100%',
+                paddingTop: '56.25%',
+                backgroundColor: '#000',
+                flex: 1
+              }}>
+                <iframe
+                  src={getEmbedVideoUrl(activeInlineVideo === 'packing' && proofData.packingVideoUrl ? proofData.packingVideoUrl : proofData.povVideoUrl)}
+                  title="Video mua hàng trực tiếp"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    border: 'none'
+                  }}
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Card 2: Bill mua hàng */}
+          {proofData.receiptImageUrl && (
+            <div style={{
+              borderRadius: '14px',
+              overflow: 'hidden',
+              border: '1px solid #E2E8F0',
+              backgroundColor: '#FFFFFF',
+              boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)',
+              display: 'flex',
+              flexDirection: 'column'
+            }}>
+              {/* Header Bill */}
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                padding: '10px 14px',
+                backgroundColor: '#FAF9F6',
+                borderBottom: '1px solid #EAE6DF'
+              }}>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '0.86rem', fontWeight: 700, color: '#1F2937' }}>
+                  <FileText size={16} style={{ color: 'var(--purple-primary, #7A4B9E)' }} />
+                  Bill mua hàng
+                </span>
+              </div>
+
+              {/* Image Preview */}
+              <div
+                onClick={() =>
+                  setActiveMedia({
+                    type: 'image',
+                    badgeType: 'receipt_bill',
+                    url: proofData.receiptImageUrl,
+                    title: `Bill mua hàng — Đơn ${order.customerPhone || order.id.replace(/^ORD-?/i, '')}`,
+                    subtitle: 'Hóa đơn gốc xuất từ quầy thanh toán Olive Young / Cửa hàng Hàn Quốc'
+                  })
+                }
+                style={{
+                  cursor: 'pointer',
+                  textAlign: 'center',
+                  backgroundColor: '#F8FAFC',
+                  flex: 1,
+                  minHeight: '220px',
+                  maxHeight: '340px',
+                  overflow: 'hidden',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+                title="Nhấp để xem ảnh phóng to"
+              >
+                <img
+                  src={getDirectImageUrl(proofData.receiptImageUrl)}
+                  alt="Bill mua hàng tại Store Hàn Quốc"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    maxHeight: '340px',
+                    objectFit: 'contain',
+                    display: 'block'
+                  }}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', alignItems: 'center', justifyContent: 'center' }}>
 
           {/* Packing Video Button */}
           {proofData.packingVideoUrl ? (
@@ -778,25 +834,9 @@ export default function GuestOrderStatusCard({
             </div>
           )}
 
-          {/* If no proof media yet */}
-          {!proofData.hasProof && (
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-                fontSize: '0.82rem',
-                color: '#6B7280',
-                fontStyle: 'italic',
-                padding: '6px 0'
-              }}
-            >
-              <Info size={16} style={{ color: '#9CA3AF' }} />
-              Bằng chứng video POV Store, bill thanh toán và mã vận đơn sẽ được tự động tải lên khi đơn hàng được mua và đóng kiện tại Seoul.
-            </div>
-          )}
         </div>
       </div>
+      )}
 
       {/* 5. Order Summary (Items & Total Amount) */}
       <div style={{ padding: '20px 24px', backgroundColor: '#FFFFFF' }}>
@@ -903,8 +943,8 @@ export default function GuestOrderStatusCard({
             </div>
           </div>
 
-          {/* Payment CTA for unpaid / pending orders */}
-          {isUnpaid && !isCancelled && (
+          {/* Payment CTA: Chỉ hiển thị nút "Thanh toán cọc ngay" khi đơn đang ở Bước 1 (Chờ cọc) */}
+          {isUnpaid && !isCancelled ? (
             <Link
               to={`/payment/${order.id}`}
               style={{
@@ -925,7 +965,25 @@ export default function GuestOrderStatusCard({
               <CreditCard size={18} />
               Thanh toán cọc ngay
             </Link>
-          )}
+          ) : !isCancelled && isPaidOrAdvanced ? (
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '8px 18px',
+                borderRadius: '20px',
+                backgroundColor: '#ECFDF5',
+                color: '#047857',
+                border: '1px solid #A7F3D0',
+                fontWeight: 700,
+                fontSize: '0.86rem'
+              }}
+            >
+              <CheckCircle size={16} color="#059669" />
+              Đã cọc 100%
+            </div>
+          ) : null}
         </div>
       </div>
 

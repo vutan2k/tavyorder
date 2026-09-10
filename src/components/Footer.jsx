@@ -50,7 +50,7 @@ export default function Footer() {
                 <strong style={{ color: 'var(--text-dark)', fontWeight: 600 }}>Hotline Korea:</strong> 010 6671 3978
               </li>
               <li>
-                <strong style={{ color: 'var(--text-dark)', fontWeight: 600 }}>Email:</strong> support@tavykorea.vn
+                <strong style={{ color: 'var(--text-dark)', fontWeight: 600 }}>Email:</strong> lehavy30042000@gmail.com
               </li>
             </ul>
           </div>

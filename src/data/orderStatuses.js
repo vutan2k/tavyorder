@@ -35,7 +35,7 @@ export const ORDER_STATUSES = {
     bgColor: '#E0F2FE',
     borderColor: '#38BDF8',
     stepIndex: 2,
-    desc: 'Admin kiểm tra sản phẩm, phân loại và lên lịch gom hàng tại Hàn Quốc.'
+    desc: 'Shop đang kiểm tra sản phẩm, phân loại và lên lịch mua hàng'
   },
   purchased: {
     id: 'purchased',
@@ -47,7 +47,7 @@ export const ORDER_STATUSES = {
     borderColor: '#8B5CF6',
     stepIndex: 3,
     hasPovVideo: true,
-    desc: 'Nhân viên trực tiếp mua hàng tại Store Hàn Quốc.'
+    desc: 'Nhân viên đang trực tiếp mua hàng, video mua hàng và bill thanh toán sẽ được tự động cập nhật.'
   },
   packed_kr: {
     id: 'packed_kr',
@@ -70,7 +70,7 @@ export const ORDER_STATUSES = {
     bgColor: '#CFFAFE',
     borderColor: '#06B6D4',
     stepIndex: 5,
-    desc: 'Hàng bay chuyên tuyến Incheon ✈️ Hà Nội / TP.HCM trong 3-7 ngày.'
+    desc: 'Đơn hàng đang được vận chuyển và đang được chuẩn bị thông quan.'
   },
   customs_cleared: {
     id: 'customs_cleared',
@@ -81,7 +81,7 @@ export const ORDER_STATUSES = {
     bgColor: '#CCFBF1',
     borderColor: '#14B8A6',
     stepIndex: 6,
-    desc: 'Hoàn tất thủ tục hải quan chính ngạch, cập nhật mã vận đơn nội địa.'
+    desc: 'Đơn hàng đã được thông quan Việt Nam, và đang được bàn giao đến đơn vị vận chuyển trong nước và đang được vận chuyển giao đến khách hàng.'
   },
   completed: {
     id: 'completed',
