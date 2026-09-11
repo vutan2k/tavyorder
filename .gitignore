@@ -31,3 +31,5 @@ dist-ssr
 .hermes/
 temp.*
 *.tmp
+.vercel
+public/oliveyoung_ranking
