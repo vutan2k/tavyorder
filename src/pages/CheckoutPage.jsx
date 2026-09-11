@@ -111,6 +111,7 @@ export default function CheckoutPage() {
         amountPaid: depositNeededVnd,
         paymentConfirmed: false, // Wating for admin check bill
         paymentReceipt: receiptBase64,
+        depositProofImage: receiptBase64,
         senderName: senderName || customerName,
         status: 'pending', // Starts at pending confirmation
         adminNote: 'Đã upload minh chứng đặt cọc 50%. Đang chờ Admin xác nhận.',

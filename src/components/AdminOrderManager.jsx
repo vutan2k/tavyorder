@@ -919,6 +919,9 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
                     </a>
                   </div>
                   <div><strong>Địa chỉ:</strong> {activeDrawerOrder.customerAddress || 'Chưa cập nhật'}</div>
+                  {activeDrawerOrder.senderName && activeDrawerOrder.senderName !== activeDrawerOrder.customerName && (
+                    <div><strong>Tên CK:</strong> {activeDrawerOrder.senderName}</div>
+                  )}
                   {activeDrawerOrder.customerNote && (
                     <div style={{ color: '#FBBF24', fontStyle: 'italic' }}>
                       <strong>Ghi chú của khách:</strong> "{activeDrawerOrder.customerNote}"
