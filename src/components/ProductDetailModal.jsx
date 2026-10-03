@@ -2,14 +2,43 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { X, ShoppingBag, ChevronLeft, ChevronRight, Check } from 'lucide-react';
 import OptimizedImage from './OptimizedImage';
 
-// Chuẩn hóa URL ảnh HD sắc nét từ Olive Young
+// Chuẩn hóa URL ảnh HD sắc nét từ Olive Young và loại bỏ đường dẫn cục bộ chết
 const getHighResUrl = (url) => {
-  if (!url) return '';
-  return url
+  if (!url || typeof url !== 'string') return '';
+  const trimmed = url.trim();
+  if (trimmed.startsWith('/oliveyoung_ranking/') || trimmed.startsWith('file://')) {
+    return '';
+  }
+  return trimmed
     .replace(/RS=\d+x\d+&?/gi, '')
     .replace(/QT=\d+&?/gi, 'QT=100&')
     .replace(/\?$/, '')
     .trim();
+};
+
+// Lấy URL gốc bỏ qua query params (để khử trùng các ảnh cùng file nhưng khác download token)
+const getBaseImageUrl = (url) => {
+  if (!url || typeof url !== 'string') return '';
+  try {
+    return url.split('?')[0];
+  } catch {
+    return url;
+  }
+};
+
+// Khử trùng danh sách ảnh giữ lại thứ tự xuất hiện đầu tiên
+const dedupeImageList = (urls) => {
+  const seen = new Set();
+  const result = [];
+  for (const u of urls) {
+    if (!u) continue;
+    const base = getBaseImageUrl(u);
+    if (!seen.has(base)) {
+      seen.add(base);
+      result.push(u);
+    }
+  }
+  return result;
 };
 
 export default function ProductDetailModal({ product, krwRate, onClose, onOrderNow, hideAddToCart = false }) {
@@ -24,21 +53,30 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
   const activeOption = hasOptions ? options[selectedOptionIndex] : null;
   const optionImage = activeOption?.image_url ? getHighResUrl(activeOption.image_url) : null;
 
-  const rawImages = product?.images && product.images.length > 0 ? product.images : (product?.productImage ? [product.productImage] : []);
-  const images = Array.from(new Set(rawImages.map(getHighResUrl))).filter(Boolean);
+  const defaultProductImage = useMemo(() => {
+    const raw = product?.productImage || (product?.images && product.images[0]) || '';
+    const clean = getHighResUrl(raw);
+    if (clean) return clean;
+    return product?.goodsNo ? `/products/${product.goodsNo}.jpg` : '';
+  }, [product?.productImage, product?.images, product?.goodsNo]);
 
-  const reviewPhotos = Array.from(new Set([
+  const rawImages = product?.images && product.images.length > 0 ? product.images : (defaultProductImage ? [defaultProductImage] : []);
+  const images = rawImages.map(getHighResUrl).filter(Boolean);
+
+  const reviewPhotos = [
     ...images,
-    ...(product?.photoReviews || [])
-  ])).map(getHighResUrl).filter(Boolean);
+    ...(product?.photoReviews || []).map(getHighResUrl).filter(Boolean)
+  ];
 
   const allPhotos = useMemo(() => {
-    const list = [...reviewPhotos];
-    if (product?.productImage) list.unshift(getHighResUrl(product.productImage));
-    if (optionImage && !list.includes(optionImage)) list.unshift(optionImage);
-    const unique = Array.from(new Set(list.filter(Boolean)));
-    return unique.length > 0 ? unique : (product?.productImage ? [getHighResUrl(product.productImage)] : []);
-  }, [reviewPhotos, product?.productImage, optionImage]);
+    const list = [];
+    if (optionImage) list.push(optionImage);
+    if (defaultProductImage) list.push(defaultProductImage);
+    list.push(...reviewPhotos);
+
+    const unique = dedupeImageList(list.filter(Boolean));
+    return unique.length > 0 ? unique : (defaultProductImage ? [defaultProductImage] : []);
+  }, [reviewPhotos, defaultProductImage, optionImage]);
 
   const [activeSlide, setActiveSlide] = useState(0);
   const [zoomIndex, setZoomIndex] = useState(null); // Fullscreen HD Lightbox Index
@@ -467,8 +505,6 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '8px',
-                maxHeight: '220px',
-                overflowY: 'auto',
                 paddingRight: '4px',
                 paddingBottom: '8px'
               }}>
@@ -503,8 +539,15 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
                         {opt.image_url ? (
                           <img
-                            src={getHighResUrl(opt.image_url)}
+                            src={getHighResUrl(opt.image_url) || defaultProductImage}
                             alt=""
+                            onError={(e) => {
+                              if (defaultProductImage && e.currentTarget.src !== defaultProductImage) {
+                                e.currentTarget.src = defaultProductImage;
+                              } else {
+                                e.currentTarget.style.display = 'none';
+                              }
+                            }}
                             style={{
                               width: '38px',
                               height: '38px',
