@@ -7,6 +7,7 @@ import { Trash2, Plus, Minus, CheckCircle, Globe, Zap, CreditCard, Loader2, User
 import CascadingAddressSelector from '../components/CascadingAddressSelector';
 import Footer from '../components/Footer';
 import confetti from 'canvas-confetti';
+import { useToast } from '../components/ToastContext';
 import {
   isHoneypotTriggered,
   checkOrderRateLimit,
@@ -19,6 +20,7 @@ import {
 export default function CartPage() {
   const { cart, removeFromCart, updateCartQty, clearCart, currentUser, createOrder, rates, orders } = useContext(AppContext);
   const navigate = useNavigate();
+  const showToast = useToast();
 
   // Đơn hàng chờ cọc active của người dùng hiện tại
   const activePendingOrder = orders?.find(o => {
@@ -149,6 +151,9 @@ export default function CartPage() {
       };
 
       const res = await createOrder(orderData);
+      if (res && res.success === false && !res.id) {
+        throw new Error(res.error?.message || res.error || 'Gặp lỗi khi tạo đơn hàng trên máy chủ.');
+      }
       recordOrderCreationTimestamp();
 
       // Làm sạch giỏ hàng sau khi đã chuyển thành đơn hàng thành công
@@ -167,6 +172,14 @@ export default function CartPage() {
       navigate(`/payment/${targetOrderId}`);
     } catch (error) {
       console.error('Error submitting order:', error);
+      const friendlyMsg = error?.message?.includes('insufficient permissions')
+        ? 'Bạn đang có một đơn hàng chờ thanh toán với số điện thoại này. Vui lòng thanh toán đơn hàng trước hoặc liên hệ hỗ trợ TAVY!'
+        : (error?.message || 'Gặp lỗi khi xử lý đơn hàng. Vui lòng kiểm tra lại kết nối!');
+      setErrorMsg(friendlyMsg);
+      if (showToast) {
+        showToast(friendlyMsg, 'error');
+      }
+    } finally {
       setIsSubmitting(false);
     }
   };

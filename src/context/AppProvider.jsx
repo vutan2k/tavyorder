@@ -692,17 +692,28 @@ export const AppProvider = ({ children }) => {
     }
 
     // Nếu người dùng đã có 1 đơn hàng chờ cọc (Active Pending Order), cập nhật đơn hàng đó chứ không tạo đơn mới
-    if (activePendingOrder) {
+    const cleanPhone = safeData.customerPhone ? String(safeData.customerPhone).replace(/\D/g, '') : '';
+    const pendingOrderForPhone = orders.find(o => {
+      const matchPhone = (o.customerPhone && String(o.customerPhone).replace(/\D/g, '') === cleanPhone) || (o.id === cleanPhone);
+      const isUnpaidPending = (o.status === 'pending' || o.status === 'quoted') && o.paymentStatus !== 'paid';
+      const isNotExpired = !o.paymentDue || new Date(o.paymentDue) > new Date();
+      return matchPhone && isUnpaidPending && isNotExpired;
+    });
+    const targetPending = activePendingOrder || pendingOrderForPhone;
+
+    if (targetPending) {
       const updates = {
         ...payload,
-        id: activePendingOrder.id,
+        id: targetPending.id,
         status: 'pending',
         paymentStatus: 'unpaid',
         paymentDue: new Date(Date.now() + 15 * 60 * 1000).toISOString()
       };
-      await updateOrderStatusInDB(activePendingOrder.id, updates);
-      setOrders(prev => prev.map(o => o.id === activePendingOrder.id ? { ...o, ...updates } : o));
-      return { success: true, id: activePendingOrder.id };
+      const updateRes = await updateOrderStatusInDB(targetPending.id, updates);
+      if (updateRes.success) {
+        setOrders(prev => prev.map(o => o.id === targetPending.id ? { ...o, ...updates } : o));
+        return { success: true, id: targetPending.id, order: { ...targetPending, ...updates } };
+      }
     }
 
     const res = await createOrderInDB(payload);

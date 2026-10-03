@@ -8,7 +8,7 @@ import {
   onAuthStateChanged, 
   signOut 
 } from 'firebase/auth';
-import { getFirestore, enableIndexedDbPersistence } from 'firebase/firestore';
+import { getFirestore, enableIndexedDbPersistence, enableMultiTabIndexedDbPersistence } from 'firebase/firestore';
 
 // Cấu hình Firebase qua environment variables (kèm fallback công khai để chạy được trên Vercel/Production)
 const firebaseConfig = {
@@ -48,10 +48,11 @@ export const db = dbObj;
 export const googleProvider = googleProviderObj;
 export { onAuthStateChanged };
 
-// Bật Offline Data Persistence
+// Bật Offline Data Persistence (Hỗ trợ Multi-tab chống lockup)
 try {
   if (dbObj && dbObj.type) { // Kiểm tra xem dbObj có phải là Firestore instance thật không
-    enableIndexedDbPersistence(dbObj).catch((err) => {
+    const enablePersistenceFn = enableMultiTabIndexedDbPersistence || enableIndexedDbPersistence;
+    enablePersistenceFn(dbObj).catch((err) => {
       if (err.code === 'failed-precondition') {
         console.warn('Firestore persistence failed: Multiple tabs open');
       } else if (err.code === 'unimplemented') {

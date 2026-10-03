@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/copy_product_images.js",
     "lint": "oxlint",
     "test": "node tests/run_all_tests.js",
     "test:agents": "node scripts/verify_agent_system.js",

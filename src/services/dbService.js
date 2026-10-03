@@ -66,6 +66,18 @@ export const subscribeToOrders = (onUpdate, onError, userEmail) => {
   }
 };
 
+// Helper: Bọc Timeout an toàn cho các tác vụ Firestore tránh treo UI
+export const withTimeout = (promise, ms = 8000, errorMsg = 'Quá thời gian kết nối đến máy chủ (8 giây). Vui lòng thử lại!') => {
+  let timer;
+  const timeoutPromise = new Promise((_, reject) => {
+    timer = setTimeout(() => reject(new Error(errorMsg)), ms);
+  });
+  return Promise.race([
+    promise.finally(() => clearTimeout(timer)),
+    timeoutPromise
+  ]);
+};
+
 /**
  * 2. Create New Order
  */
@@ -88,8 +100,13 @@ export const createOrderInDB = async (orderData) => {
     updatedAt: nowIso
   };
 
-  await setDoc(docRef, payload);
-  return { success: true, id: orderId, order: payload };
+  try {
+    await withTimeout(setDoc(docRef, payload), 8000);
+    return { success: true, id: orderId, order: payload };
+  } catch (err) {
+    console.warn("Firestore createOrderInDB error:", err);
+    throw err;
+  }
 };
 
 /**
@@ -121,10 +138,10 @@ export const updateOrderQuoteInDB = async (orderId, quoteData, totalCalculated) 
 export const updateOrderStatusInDB = async (orderId, updates) => {
   try {
     const docRef = doc(db, ORDERS_COLLECTION, orderId);
-    await updateDoc(docRef, {
+    await withTimeout(updateDoc(docRef, {
       ...updates,
       updatedAt: serverTimestamp()
-    });
+    }), 8000);
     return { success: true };
   } catch (err) {
     console.warn("Firestore updateOrderStatus error:", err);

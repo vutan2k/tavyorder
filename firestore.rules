@@ -43,10 +43,24 @@ service cloud.firestore {
                (!('paymentStatus' in data) || data.paymentStatus == 'unpaid');
       }
 
-      // Helper function: Whitelist permitted fields for guest/customer order update (deposit proof upload, payment report)
+      // Helper function: Whitelist permitted fields for guest/customer order update (deposit proof upload, payment report, or cart update if order is still pending/unpaid)
+      function isAllowedPendingCartUpdate() {
+        let current = resource.data;
+        let incoming = request.resource.data;
+        return (current.status == 'pending' || current.status == 'quoted') &&
+               current.paymentStatus == 'unpaid' &&
+               (!('status' in incoming) || incoming.status == 'pending') &&
+               (!('paymentStatus' in incoming) || incoming.paymentStatus == 'unpaid') &&
+               incoming.keys().hasAll(['customerName', 'customerPhone', 'items', 'totalVnd']) &&
+               incoming.customerName is string && incoming.customerName.size() > 0 &&
+               incoming.customerPhone == orderId &&
+               incoming.items is list && incoming.items.size() > 0 &&
+               incoming.totalVnd is number && incoming.totalVnd > 0;
+      }
+
       function isAllowedGuestOrderUpdate() {
         let allowedKeys = ['depositProofImage', 'depositProofUploadedAt', 'customerReportedPaid', 'paymentDue', 'updatedAt'];
-        return request.resource.data.diff(resource.data).affectedKeys().hasOnly(allowedKeys);
+        return request.resource.data.diff(resource.data).affectedKeys().hasOnly(allowedKeys) || isAllowedPendingCartUpdate();
       }
 
       // Read single document: Admin, order owner (by UID/Email), or direct order ID lookup (e.g. payment page)
