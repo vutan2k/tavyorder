@@ -31,6 +31,7 @@ dist-ssr
 .hermes/
 .vercel/
 temp.*
+public/slides/
 *.tmp
 __pycache__/
 *.pyc
