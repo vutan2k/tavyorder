@@ -1,0 +1,7 @@
+# Robots.txt for TAVY Korea (https://tavyorder.web.app)
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /admin/*
+
+Sitemap: https://tavyorder.web.app/sitemap.xml
