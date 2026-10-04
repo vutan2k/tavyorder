@@ -170,11 +170,11 @@ for (const p of products) {
 ${JSON.stringify(schemaProduct, null, 2)}
     </script>`;
 
-  const ogBlockRegex = /<!-- Open Graph -->[\s\S]*?<meta property="og:locale" content="vi_VN" \/>/gi;
+  const ogBlockRegex = /<!-- Open Graph -->[\s\S]*?<meta property="og:locale" content="vi_VN" \/>/i;
   if (ogBlockRegex.test(html)) {
     html = html.replace(ogBlockRegex, ogTags);
   } else {
-    html = html.replace('</head>', `  ${ogTags}\n</head>`);
+    html = html.replace('</head>', `${ogTags}\n  </head>`);
   }
 
   // Inject semantic readable HTML into <div id="root">
