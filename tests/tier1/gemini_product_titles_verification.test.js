@@ -42,8 +42,11 @@ describe('Tier 1: Gemini Product Titles Verification & E-Commerce Standard Rule'
   });
 
   it('Các sản phẩm trang điểm tiêu biểu phải có danh từ loại sản phẩm chính xác', () => {
-    const catalogPath = path.join(PROJECT_ROOT, 'public/data/playwright_scraped_products.json');
-    const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
+    const allCatalogPath = path.join(PROJECT_ROOT, 'public/data/all_products_catalog.json');
+    const fallbackPath = path.join(PROJECT_ROOT, 'public/data/playwright_scraped_products.json');
+    const fullCatalog = fs.existsSync(allCatalogPath) ? JSON.parse(fs.readFileSync(allCatalogPath, 'utf8')) : [];
+    const fallbackCatalog = JSON.parse(fs.readFileSync(fallbackPath, 'utf8'));
+    const catalog = [...fullCatalog, ...fallbackCatalog];
 
     const findBySKU = (sku) => catalog.find(p => (p.goodsNo || p.id) === sku);
 
