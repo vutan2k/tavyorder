@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo, memo } from 'react';
+import { Link } from 'react-router-dom';
 import { ShoppingBag, Eye, ChevronLeft, ChevronRight } from 'lucide-react';
 import { formatVnd, formatKrw } from '../utils/priceCalculator';
+import { getProductUrl } from '../utils/slugify';
 import OptimizedImage from './OptimizedImage';
 
 function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPerPage = 24 }) {
@@ -72,6 +74,7 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
             : null;
           const cleanDiscountBadge = discountVal ? (discountVal.startsWith('-') ? discountVal : `-${discountVal}`) : null;
           const defaultImg = 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&auto=format&fit=crop&q=80';
+          const productUrl = getProductUrl(product);
 
           return (
             <div
@@ -89,10 +92,10 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
               }}
             >
               {/* Product Image with Optimized Mobile Shimmer & Lazy Loading */}
-              <div
+              <Link
+                to={productUrl}
                 className="product-card-image-wrap"
-                style={{ position: 'relative', width: '100%', overflow: 'hidden', cursor: 'pointer' }}
-                onClick={() => onViewDetail && onViewDetail(product)}
+                style={{ position: 'relative', width: '100%', overflow: 'hidden', cursor: 'pointer', display: 'block' }}
               >
                 <OptimizedImage
                   src={product.productImage || defaultImg}
@@ -144,7 +147,7 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                     {cleanDiscountBadge}
                   </span>
                 )}
-              </div>
+              </Link>
 
               {/* Product Info */}
               <div
@@ -152,26 +155,27 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                 style={{ padding: '12px', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'space-between' }}
               >
                 <div>
-                  <h3
-                    className="product-card-title"
-                    onClick={() => onViewDetail && onViewDetail(product)}
-                    style={{
-                      fontSize: '0.88rem',
-                      fontWeight: 700,
-                      color: 'var(--text-dark)',
-                      marginBottom: '4px',
-                      lineHeight: '1.3',
-                      height: '36px',
-                      overflow: 'hidden',
-                      display: '-webkit-box',
-                      WebkitLineClamp: 2,
-                      WebkitBoxOrient: 'vertical',
-                      cursor: 'pointer'
-                    }}
-                    title={product.name}
-                  >
-                    {product.name}
-                  </h3>
+                  <Link to={productUrl} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <h3
+                      className="product-card-title"
+                      style={{
+                        fontSize: '0.88rem',
+                        fontWeight: 700,
+                        color: 'var(--text-dark)',
+                        marginBottom: '4px',
+                        lineHeight: '1.3',
+                        height: '36px',
+                        overflow: 'hidden',
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        cursor: 'pointer'
+                      }}
+                      title={product.name}
+                    >
+                      {product.name}
+                    </h3>
+                  </Link>
                   <p
                     className="product-card-subtitle"
                     style={{ fontSize: '0.74rem', color: 'var(--text-muted)', marginBottom: '8px', minHeight: '1.2em' }}

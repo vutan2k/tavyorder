@@ -21,6 +21,7 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const CartPage = lazy(() => import('./pages/CartPage'));
 const PaymentPage = lazy(() => import('./pages/PaymentPage'));
 const PolicyPage = lazy(() => import('./pages/PolicyPage'));
+const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage'));
 
 export default function App() {
   return (
@@ -57,6 +58,8 @@ export default function App() {
                 <Route path="/thanh-toan/:orderId" element={<><Navbar /><PaymentPage /></>} />
                 <Route path="/policy" element={<><Navbar /><PolicyPage /></>} />
                 <Route path="/chinh-sach" element={<><Navbar /><PolicyPage /></>} />
+                <Route path="/san-pham/:slug" element={<><Navbar /><ProductDetailPage /></>} />
+                <Route path="/product/:slug" element={<><Navbar /><ProductDetailPage /></>} />
 
                 {/* Admin & Quản trị */}
                 <Route path="/admin/login" element={<AdminLoginPage />} />
