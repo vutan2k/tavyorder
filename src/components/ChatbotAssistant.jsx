@@ -199,7 +199,7 @@ Hãy trả lời ngắn gọn, tập trung và thu hút khách hàng đặt hàn
           width: '56px',
           height: '56px',
           borderRadius: '50%',
-          backgroundColor: 'var(--purple-primary, #7A4B9E)',
+          backgroundColor: 'var(--purple-primary, #000000)',
           color: '#FFF',
           border: 'none',
           boxShadow: '0 8px 24px rgba(122, 75, 158, 0.35)',
@@ -242,7 +242,7 @@ Hãy trả lời ngắn gọn, tập trung và thu hút khách hàng đặt hàn
           <div
             style={{
               padding: '16px 20px',
-              backgroundColor: 'var(--purple-primary, #7A4B9E)',
+              backgroundColor: 'var(--purple-primary, #000000)',
               color: '#FFF',
               display: 'flex',
               alignItems: 'center',
@@ -308,7 +308,7 @@ Hãy trả lời ngắn gọn, tập trung và thu hút khách hàng đặt hàn
                     width: '28px',
                     height: '28px',
                     borderRadius: '50%',
-                    backgroundColor: msg.sender === 'user' ? 'var(--purple-primary, #7A4B9E)' : '#F3F4F6',
+                    backgroundColor: msg.sender === 'user' ? 'var(--purple-primary, #000000)' : '#F3F4F6',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -320,7 +320,7 @@ Hãy trả lời ngắn gọn, tập trung và thu hút khách hàng đặt hàn
                   {msg.sender === 'user' ? (
                     <User size={14} />
                   ) : (
-                    <SupportIcon size={16} color="var(--purple-primary, #7A4B9E)" />
+                    <SupportIcon size={16} color="var(--purple-primary, #000000)" />
                   )}
                 </div>
 
@@ -330,7 +330,7 @@ Hãy trả lời ngắn gọn, tập trung và thu hút khách hàng đặt hàn
                     style={{
                       padding: '10px 14px',
                       borderRadius: msg.sender === 'user' ? '14px 2px 14px 14px' : '2px 14px 14px 14px',
-                      backgroundColor: msg.sender === 'user' ? 'var(--purple-primary, #7A4B9E)' : '#FFF',
+                      backgroundColor: msg.sender === 'user' ? 'var(--purple-primary, #000000)' : '#FFF',
                       color: msg.sender === 'user' ? '#FFF' : '#333',
                       fontSize: '0.85rem',
                       lineHeight: 1.45,
@@ -371,7 +371,7 @@ Hãy trả lời ngắn gọn, tập trung và thu hút khách hàng đặt hàn
                     overflow: 'hidden'
                   }}
                 >
-                  <SupportIcon size={16} color="var(--purple-primary, #7A4B9E)" />
+                  <SupportIcon size={16} color="var(--purple-primary, #000000)" />
                 </div>
                 <div
                   style={{
@@ -427,7 +427,7 @@ Hãy trả lời ngắn gọn, tập trung và thu hút khách hàng đặt hàn
                 width: '36px',
                 height: '36px',
                 borderRadius: '50%',
-                backgroundColor: inputValue.trim() ? 'var(--purple-primary, #7A4B9E)' : '#F3F4F6',
+                backgroundColor: inputValue.trim() ? 'var(--purple-primary, #000000)' : '#F3F4F6',
                 color: inputValue.trim() ? '#FFF' : '#9CA3AF',
                 border: 'none',
                 cursor: inputValue.trim() ? 'pointer' : 'default',

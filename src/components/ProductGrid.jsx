@@ -297,15 +297,16 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
               <button
                 key={`page-${pNum}`}
                 onClick={() => handlePageChange(pNum)}
+                className={`pagination-btn ${isActive ? 'active' : ''}`}
                 style={{
                   minWidth: '40px',
                   height: '40px',
                   padding: '0 8px',
                   borderRadius: '8px',
-                  border: isActive ? '1px solid #000000' : '1px solid #E2E8F0',
-                  backgroundColor: isActive ? '#000000' : '#FFFFFF',
-                  color: isActive ? '#FFFFFF' : '#0F172A',
-                  fontWeight: isActive ? 800 : 500,
+                  border: isActive ? '1px solid var(--purple-primary, #000000)' : '1px solid var(--border-color, #E2E8F0)',
+                  backgroundColor: isActive ? 'var(--purple-primary, #000000)' : 'var(--bg-white, #FFFFFF)',
+                  color: isActive ? '#FFFFFF' : 'var(--text-dark, #0F172A)',
+                  fontWeight: isActive ? 800 : 600,
                   fontSize: '0.9rem',
                   cursor: 'pointer',
                   display: 'flex',

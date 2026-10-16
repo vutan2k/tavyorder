@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import { useToast } from '../components/Toast';
 import { 
-  User, Lock, Save, Mail, Package, LogOut, ShoppingBag, Copy, Check, ExternalLink, Settings, Sun, Moon 
+  User, Lock, Save, Mail, Package, LogOut, ShoppingBag, Copy, Check, ExternalLink, Settings, Sun, Moon, Edit3, X 
 } from 'lucide-react';
 import CascadingAddressSelector from '../components/CascadingAddressSelector';
 import ProductDetailModal from '../components/ProductDetailModal';
@@ -42,7 +42,9 @@ export default function UserProfilePage() {
     }
   };
 
-  // Form states
+  // Form states & Edit Mode
+  const [isEditing, setIsEditing] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
   const [name, setName] = useState(currentUser?.name || '');
   const [phone, setPhone] = useState(currentUser?.phone || '');
   const [address, setAddress] = useState(currentUser?.address || '');
@@ -50,17 +52,18 @@ export default function UserProfilePage() {
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  // Sync state with currentUser changes (e.g., initial load or updates)
-  const [prevUserUid, setPrevUserUid] = useState(null);
-  if (currentUser && (currentUser.uid || currentUser.id) !== prevUserUid) {
-    setPrevUserUid(currentUser.uid || currentUser.id);
-    setName(currentUser.name || '');
-    setPhone(currentUser.phone || '');
-    setAddress(currentUser.address || '');
-  }
+  // Sync state with currentUser changes whenever profile updates
+  useEffect(() => {
+    if (currentUser && !isEditing) {
+      setName(currentUser.name || '');
+      setPhone(currentUser.phone || '');
+      setAddress(currentUser.address || '');
+    }
+  }, [currentUser, isEditing]);
 
   const handleSaveProfile = async (e) => {
-    e.preventDefault();
+    if (e && e.preventDefault) e.preventDefault();
+    console.log('[handleSaveProfile] called with:', { name, phone, address, currentUserAddr: currentUser?.address });
 
     if (!name.trim()) {
       if (showToast) showToast('Vui lòng nhập họ và tên!', 'error');
@@ -73,19 +76,25 @@ export default function UserProfilePage() {
       return;
     }
 
-    if (!address || address.trim() === "" || address.includes("Chưa chọn")) {
-      if (showToast) showToast('Vui lòng chọn địa chỉ nhận hàng đầy đủ.', 'error');
+    const finalAddress = address?.trim() || currentUser?.address?.trim() || '';
+    if (!finalAddress || finalAddress.includes("Chưa chọn")) {
+      if (showToast) showToast('Vui lòng nhập hoặc chọn địa chỉ nhận hàng đầy đủ.', 'error');
       return;
     }
 
+    setIsSaving(true);
+    console.log('[handleSaveProfile] calling updateUserProfile...');
     const res = await updateUserProfile({
-      name,
-      phone,
-      address
+      name: name.trim(),
+      phone: phone.trim(),
+      address: finalAddress
     });
+    console.log('[handleSaveProfile] updateUserProfile result:', res);
+    setIsSaving(false);
 
     if (res.success) {
       if (showToast) showToast('Cập nhật hồ sơ cá nhân thành công!', 'success');
+      setIsEditing(false);
     } else {
       if (showToast) showToast(res.message || 'Lỗi cập nhật hồ sơ', 'error');
     }
@@ -139,11 +148,11 @@ export default function UserProfilePage() {
 
   if (!currentUser) {
     return (
-      <div style={{ padding: '80px 20px', textAlign: 'center', minHeight: '60vh', backgroundColor: '#FDFBF7' }}>
-        <div style={{ maxWidth: '400px', margin: '0 auto', backgroundColor: '#FFF', padding: '40px', borderRadius: '16px', border: '1px solid #E5E7EB', boxShadow: '0 4px 20px rgba(0,0,0,0.03)' }}>
+      <div style={{ padding: '80px 20px', textAlign: 'center', minHeight: '60vh', backgroundColor: 'var(--bg-ivory, #FDFBF7)' }}>
+        <div style={{ maxWidth: '400px', margin: '0 auto', backgroundColor: 'var(--card-bg, #FFF)', padding: '40px', borderRadius: '16px', border: '1px solid var(--border-color, #E5E7EB)', boxShadow: '0 4px 20px rgba(0,0,0,0.03)' }}>
           <Package size={54} style={{ color: 'var(--purple-primary)', marginBottom: '16px' }} />
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px', color: '#111827' }}>Vui lòng đăng nhập</h2>
-          <p style={{ color: '#6B7280', marginBottom: '24px', fontSize: '0.9rem', lineHeight: '1.5' }}>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px', color: 'var(--text-dark, #111827)' }}>Vui lòng đăng nhập</h2>
+          <p style={{ color: 'var(--text-muted, #6B7280)', marginBottom: '24px', fontSize: '0.9rem', lineHeight: '1.5' }}>
             Bạn cần đăng nhập tài khoản để xem thông tin cá nhân và theo dõi đơn hàng của mình.
           </p>
           <button 
@@ -451,51 +460,251 @@ export default function UserProfilePage() {
           {/* PROFILE TAB */}
           {activeTab === 'profile' && (
             <div>
-              <h3 style={{ margin: '0 0 24px 0', fontSize: '1.25rem', fontWeight: 700, color: 'var(--purple-primary)', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <User size={22} />
-                HỒ SƠ VÀ SỔ ĐỊA CHỈ GIAO HÀNG
-              </h3>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px', flexWrap: 'wrap', gap: '12px' }}>
+                <h3 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-dark, #000000)', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <User size={22} />
+                  HỒ SƠ VÀ THÔNG TIN KHÁCH HÀNG
+                </h3>
+                
+                {!isEditing && (
+                  <button
+                    type="button"
+                    onClick={() => setIsEditing(true)}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      padding: '9px 20px',
+                      borderRadius: '10px',
+                      backgroundColor: 'var(--text-dark, #000000)',
+                      color: 'var(--bg-white, #FFFFFF)',
+                      border: 'none',
+                      fontWeight: 700,
+                      fontSize: '0.88rem',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s ease',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+                    }}
+                  >
+                    <Edit3 size={16} />
+                    <span>ĐIỀU CHỈNH</span>
+                  </button>
+                )}
+              </div>
 
-              <form onSubmit={handleSaveProfile}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '10px' }}>
-                  <div className="form-group">
-                    <label className="form-label">Họ và tên *</label>
-                    <input
-                      type="text"
-                      className="input-field"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      placeholder="Nhập họ và tên của bạn..."
-                      required
+              {!isEditing ? (
+                /* CHẾ ĐỘ XEM THÔNG TIN CÁ NHÂN */
+                <div>
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+                    gap: '16px',
+                    marginBottom: '24px'
+                  }}>
+                    {/* Họ và tên */}
+                    <div style={{
+                      backgroundColor: 'var(--bg-subtle-purple, #F4F4F5)',
+                      padding: '18px',
+                      borderRadius: '14px',
+                      border: '1px solid var(--border-color, #E4E4E7)'
+                    }}>
+                      <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-muted, #71717A)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>
+                        Họ và tên khách hàng
+                      </div>
+                      <div style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-dark, #000000)' }}>
+                        {currentUser?.name || 'Chưa cập nhật'}
+                      </div>
+                    </div>
+
+                    {/* Số điện thoại */}
+                    <div style={{
+                      backgroundColor: 'var(--bg-subtle-purple, #F4F4F5)',
+                      padding: '18px',
+                      borderRadius: '14px',
+                      border: '1px solid var(--border-color, #E4E4E7)'
+                    }}>
+                      <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-muted, #71717A)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>
+                        Số điện thoại nhận hàng
+                      </div>
+                      <div style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-dark, #000000)' }}>
+                        {currentUser?.phone || 'Chưa cập nhật'}
+                      </div>
+                    </div>
+
+                    {/* Email */}
+                    <div style={{
+                      backgroundColor: 'var(--bg-subtle-purple, #F4F4F5)',
+                      padding: '18px',
+                      borderRadius: '14px',
+                      border: '1px solid var(--border-color, #E4E4E7)'
+                    }}>
+                      <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-muted, #71717A)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>
+                        Email tài khoản
+                      </div>
+                      <div style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-dark, #000000)', wordBreak: 'break-all' }}>
+                        {currentUser?.email || 'Chưa cập nhật'}
+                      </div>
+                    </div>
+
+                    {/* Trạng thái xác thực */}
+                    <div style={{
+                      backgroundColor: 'var(--bg-subtle-purple, #F4F4F5)',
+                      padding: '18px',
+                      borderRadius: '14px',
+                      border: '1px solid var(--border-color, #E4E4E7)'
+                    }}>
+                      <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-muted, #71717A)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>
+                        Trạng thái tài khoản
+                      </div>
+                      <div style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--text-dark, #000000)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <Check size={16} /> Đã kích hoạt bảo mật
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Địa chỉ giao hàng đầy đủ */}
+                  <div style={{
+                    backgroundColor: 'var(--bg-subtle-purple, #F4F4F5)',
+                    padding: '20px',
+                    borderRadius: '14px',
+                    border: '1px solid var(--border-color, #E4E4E7)',
+                    marginBottom: '28px'
+                  }}>
+                    <div style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-muted, #71717A)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px' }}>
+                      Địa chỉ nhận hàng mặc định tại Việt Nam
+                    </div>
+                    <div style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-dark, #000000)', lineHeight: '1.5' }}>
+                      {currentUser?.address || 'Chưa thiết lập địa chỉ nhận hàng.'}
+                    </div>
+                  </div>
+
+                  {/* Nút bấm điều chỉnh to rõ */}
+                  <button
+                    type="button"
+                    onClick={() => setIsEditing(true)}
+                    className="btn-submit"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      padding: '14px 28px',
+                      borderRadius: '12px',
+                      backgroundColor: 'var(--text-dark, #000000)',
+                      color: 'var(--bg-white, #FFFFFF)',
+                      border: 'none',
+                      fontWeight: 700,
+                      cursor: 'pointer'
+                    }}
+                  >
+                    <Edit3 size={18} />
+                    <span>ĐIỀU CHỈNH THÔNG TIN CÁ NHÂN</span>
+                  </button>
+                </div>
+              ) : (
+                /* CHẾ ĐỘ CHỈNH SỬA THÔNG TIN CÁ NHÂN */
+                <form onSubmit={handleSaveProfile} noValidate>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px', marginBottom: '20px' }}>
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <label className="form-label" style={{ fontWeight: 700, color: 'var(--text-dark, #000000)' }}>Họ và tên *</label>
+                      <input
+                        type="text"
+                        className="input-field"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        placeholder="Nhập họ và tên của bạn..."
+                        required
+                        style={{
+                          backgroundColor: 'var(--card-bg, #FFFFFF)',
+                          color: 'var(--text-dark, #000000)',
+                          borderColor: 'var(--border-color, #E4E4E7)'
+                        }}
+                      />
+                    </div>
+
+                    <div className="form-group" style={{ marginBottom: 0 }}>
+                      <label className="form-label" style={{ fontWeight: 700, color: 'var(--text-dark, #000000)' }}>Số điện thoại nhận hàng *</label>
+                      <input
+                        type="tel"
+                        className="input-field"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value.replace(/[^0-9]/g, ''))}
+                        placeholder="Nhập số điện thoại (10 chữ số)..."
+                        required
+                        style={{
+                          backgroundColor: 'var(--card-bg, #FFFFFF)',
+                          color: 'var(--text-dark, #000000)',
+                          borderColor: 'var(--border-color, #E4E4E7)'
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  <div style={{ marginBottom: '24px' }}>
+                    <label className="form-label" style={{ display: 'block', marginBottom: '8px', fontWeight: 700, color: 'var(--text-dark, #000000)' }}>
+                      Địa chỉ nhận hàng chi tiết *
+                    </label>
+                    <CascadingAddressSelector
+                      initialAddress={currentUser?.address || address}
+                      onChange={(addrInfo) => {
+                        if (addrInfo?.fullAddress) {
+                          setAddress(addrInfo.fullAddress);
+                        }
+                      }}
+                      required={false}
                     />
                   </div>
 
-                  <div className="form-group">
-                    <label className="form-label">Số điện thoại chính *</label>
-                    <input
-                      type="tel"
-                      className="input-field"
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value.replace(/[^0-9]/g, ''))}
-                      placeholder="Nhập số điện thoại (10 số)..."
-                      required
-                    />
+                  <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                    <button 
+                      type="submit" 
+                      onClick={handleSaveProfile}
+                      disabled={isSaving}
+                      className="btn-submit"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        padding: '14px 28px',
+                        borderRadius: '12px',
+                        backgroundColor: 'var(--text-dark, #000000)',
+                        color: 'var(--bg-white, #FFFFFF)',
+                        border: 'none',
+                        fontWeight: 700,
+                        cursor: isSaving ? 'not-allowed' : 'pointer',
+                        opacity: isSaving ? 0.7 : 1
+                      }}
+                    >
+                      <Save size={18} />
+                      <span>{isSaving ? 'ĐANG LƯU...' : 'LƯU THAY ĐỔI'}</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsEditing(false);
+                        setName(currentUser?.name || '');
+                        setPhone(currentUser?.phone || '');
+                        setAddress(currentUser?.address || '');
+                      }}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        padding: '14px 24px',
+                        borderRadius: '12px',
+                        backgroundColor: 'transparent',
+                        color: 'var(--text-dark, #000000)',
+                        border: '1px solid var(--border-color, #E4E4E7)',
+                        fontWeight: 600,
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <X size={18} />
+                      <span>HỦY BỎ</span>
+                    </button>
                   </div>
-                </div>
-
-                <div style={{ marginBottom: '24px' }}>
-                  <CascadingAddressSelector
-                    initialAddress={currentUser?.address || address}
-                    onChange={(addrInfo) => setAddress(addrInfo.fullAddress)}
-                    required={true}
-                  />
-                </div>
-
-                <button type="submit" className="btn-submit">
-                  <Save size={18} />
-                  <span>LƯU THAY ĐỔI HỒ SƠ</span>
-                </button>
-              </form>
+                </form>
+              )}
             </div>
           )}
 
@@ -578,8 +787,8 @@ export default function UserProfilePage() {
               {filteredOrders.length === 0 ? (
                 <div style={{ border: '1px dashed #D1D5DB', borderRadius: '16px', padding: '60px 20px', textAlign: 'center' }}>
                   <ShoppingBag size={48} style={{ color: 'var(--purple-primary)', marginBottom: '12px', opacity: 0.8 }} />
-                  <h4 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '6px', color: '#374151' }}>Chưa tìm thấy đơn hàng nào</h4>
-                  <p style={{ fontSize: '0.9rem', color: '#6B7280', marginBottom: '20px' }}>
+                  <h4 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '6px', color: 'var(--text-dark, #374151)' }}>Chưa tìm thấy đơn hàng nào</h4>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted, #6B7280)', marginBottom: '20px' }}>
                     Hãy chọn mua các sản phẩm Mỹ phẩm & Thực phẩm chức năng Hàn Quốc chất lượng!
                   </p>
                   <button className="btn-submit" onClick={() => navigate('/')}>

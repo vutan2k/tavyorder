@@ -167,6 +167,12 @@ export default function CascadingAddressSelector({ initialAddress = '', onChange
     });
 
     const fullAddress = uniqueParts.join(', ');
+
+    // Không emit chuỗi rỗng đè lên địa chỉ đã có của khách hàng khi vừa mới khởi tạo component
+    if (!fullAddress && initialAddress) {
+      return;
+    }
+
     lastEmittedAddressRef.current = fullAddress;
 
     if (onChangeRef.current) {
@@ -179,7 +185,7 @@ export default function CascadingAddressSelector({ initialAddress = '', onChange
         fullAddress
       });
     }
-  }, [selectedProvinceCode, selectedProvinceName, selectedSubDivisionCode, selectedSubDivisionName, streetAddress]);
+  }, [selectedProvinceCode, selectedProvinceName, selectedSubDivisionCode, selectedSubDivisionName, streetAddress, initialAddress]);
 
   // Handlers
   const handleProvinceSelect = (e) => {

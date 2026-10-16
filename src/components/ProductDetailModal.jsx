@@ -226,9 +226,9 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
             width: '36px',
             height: '36px',
             borderRadius: '50%',
-            backgroundColor: 'rgba(255, 255, 255, 0.88)',
+            backgroundColor: 'var(--bg-subtle-purple, rgba(255, 255, 255, 0.88))',
             backdropFilter: 'blur(8px)',
-            border: '1px solid rgba(0, 0, 0, 0.08)',
+            border: '1px solid var(--border-color, rgba(0, 0, 0, 0.08))',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -245,7 +245,7 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
         <div className="modal-scroll-area">
           {/* CỘT TRÁI: KHU VỰC ẢNH CHÍNH & LƯỚI THUMBNAIL (DESKTOP) */}
           <div className="modal-gallery-col">
-          <div className="modal-gallery-carousel" style={{ position: 'relative', width: '100%', backgroundColor: '#FAF9F6', borderRadius: '18px', overflow: 'hidden' }}>
+          <div className="modal-gallery-carousel" style={{ position: 'relative', width: '100%', backgroundColor: 'var(--bg-subtle-purple, #FAF9F6)', borderRadius: '18px', overflow: 'hidden' }}>
           {/* Tag Thương hiệu nổi trên ảnh */}
           {product.brand && (
             <span style={{
@@ -403,7 +403,7 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                     width: activeSlide === dotIdx ? '16px' : '6px',
                     height: '6px',
                     borderRadius: '3px',
-                    backgroundColor: activeSlide === dotIdx ? 'var(--gold-primary, #C5A059)' : 'rgba(0,0,0,0.25)',
+                    backgroundColor: activeSlide === dotIdx ? 'var(--gold-primary, #000000)' : 'rgba(0,0,0,0.25)',
                     transition: 'all 0.2s ease',
                     cursor: 'pointer'
                   }}
@@ -529,7 +529,7 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                         padding: '9px 12px',
                         borderRadius: '12px',
                         border: isSelected ? '2px solid #2563EB' : '1px solid var(--border-color, #E5E7EB)',
-                        backgroundColor: isSelected ? 'rgba(37, 99, 235, 0.05)' : (isSoldOut ? '#F9FAFB' : 'var(--bg-white, #FFFFFF)'),
+                        backgroundColor: isSelected ? 'rgba(37, 99, 235, 0.05)' : (isSoldOut ? 'var(--bg-subtle-purple, #F9FAFB)' : 'var(--bg-white, #FFFFFF)'),
                         opacity: isSoldOut ? 0.55 : 1,
                         cursor: isSoldOut ? 'not-allowed' : 'pointer',
                         textAlign: 'left',

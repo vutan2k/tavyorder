@@ -313,7 +313,7 @@ export default function KROrderHomePage() {
         {mobileMenuOpen && (
           <div className="mobile-nav-drawer" style={{
             position: 'absolute', top: '80px', left: 0, width: '100%',
-            backgroundColor: '#FFFFFF', borderBottom: '1px solid var(--border-color)',
+            backgroundColor: 'var(--bg-white, #FFFFFF)', borderBottom: '1px solid var(--border-color)',
             boxShadow: '0 10px 30px rgba(0,0,0,0.1)', padding: '20px 24px', zIndex: 99
           }}>
             {/* 1. Nhóm Tra cứu, Đơn hàng & Tài khoản */}
@@ -388,7 +388,7 @@ export default function KROrderHomePage() {
                 }}
               >
                 {userTheme === 'dark' ? <Sun size={18} color="#FBBF24" /> : <Moon size={18} />}
-                <span>{userTheme === 'dark' ? 'Giao diện: Chế độ Tối (Bật)' : 'Giao diện: Chế độ Sáng (Bật)'}</span>
+                <span>{userTheme === 'dark' ? 'Chế độ: Đang bật Tối 🌙 (Bấm để chuyển Sáng)' : 'Chế độ: Đang bật Sáng ☀️ (Bấm để chuyển Tối)'}</span>
               </button>
             </div>
 

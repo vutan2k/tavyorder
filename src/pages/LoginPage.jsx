@@ -53,7 +53,7 @@ export default function LoginPage() {
             alt="TAVY Logo"
             style={{ height: '58px', width: 'auto', display: 'inline-block', objectFit: 'contain', marginBottom: '6px' }}
           />
-          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: 'var(--purple-primary, #7A4B9E)', letterSpacing: '2.5px', textTransform: 'uppercase' }}>
+          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: 'var(--purple-primary, #000000)', letterSpacing: '2.5px', textTransform: 'uppercase' }}>
             KOREA
           </div>
           <h2 style={{ fontSize: '1.65rem', fontFamily: 'var(--font-serif)', color: 'var(--text-dark, #1F2937)', fontWeight: 600, marginTop: '8px' }}>
@@ -92,9 +92,9 @@ export default function LoginPage() {
             width: '100%',
             padding: '14px',
             borderRadius: '14px',
-            border: '2px solid #E2E8F0',
-            backgroundColor: '#FFFFFF',
-            color: '#1E293B',
+            border: '2px solid var(--border-color, #E2E8F0)',
+            backgroundColor: 'var(--bg-white, #FFFFFF)',
+            color: 'var(--text-dark, #1E293B)',
             fontSize: '0.95rem',
             fontWeight: 700,
             cursor: isGoogleLoading ? 'not-allowed' : 'pointer',
@@ -108,14 +108,12 @@ export default function LoginPage() {
           }}
           onMouseEnter={(e) => {
             if (!isGoogleLoading) {
-              e.currentTarget.style.backgroundColor = '#F8FAFC';
-              e.currentTarget.style.borderColor = '#CBD5E1';
+              e.currentTarget.style.backgroundColor = 'var(--bg-subtle-purple, #F8FAFC)';
             }
           }}
           onMouseLeave={(e) => {
             if (!isGoogleLoading) {
-              e.currentTarget.style.backgroundColor = '#FFFFFF';
-              e.currentTarget.style.borderColor = '#E2E8F0';
+              e.currentTarget.style.backgroundColor = 'var(--bg-white, #FFFFFF)';
             }
           }}
         >

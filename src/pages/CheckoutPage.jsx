@@ -136,7 +136,7 @@ export default function CheckoutPage() {
         particleCount: 150,
         spread: 80,
         origin: { y: 0.6 },
-        colors: ['#7A4B9E', '#FFD1DC', '#F4EAD3']
+        colors: ['#000000', '#71717A', '#D4D4D8']
       });
 
       setSuccessOrderId(tempOrderId);
@@ -152,19 +152,19 @@ export default function CheckoutPage() {
 
   if (successOrderId) {
     return (
-      <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F9F6FA', fontFamily: 'Inter, sans-serif' }}>
-        <div style={{ textAlign: 'center', backgroundColor: '#FFF', padding: '50px 40px', borderRadius: '24px', boxShadow: '0 8px 30px rgba(0,0,0,0.05)', maxWidth: '550px', width: '90%' }}>
+      <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--bg-ivory, #FFFFFF)', fontFamily: 'Inter, sans-serif' }}>
+        <div style={{ textAlign: 'center', backgroundColor: 'var(--card-bg, #FFF)', padding: '50px 40px', borderRadius: '24px', boxShadow: '0 8px 30px rgba(0,0,0,0.05)', maxWidth: '550px', width: '90%', border: '1px solid var(--border-color, #E4E4E7)' }}>
           <CheckCircle size={64} color="#10B981" style={{ margin: '0 auto 20px auto' }} />
-          <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#111827', marginBottom: '12px' }}>Gửi thanh toán cọc thành công!</h2>
-          <p style={{ color: '#4B5563', fontSize: '0.92rem', lineHeight: 1.6, marginBottom: '8px' }}>
-            Mã đơn hàng của bạn là: <strong style={{ color: '#7A4B9E', fontFamily: 'monospace' }}>{successOrderId}</strong>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-dark, #000000)', marginBottom: '12px' }}>Gửi thanh toán cọc thành công!</h2>
+          <p style={{ color: 'var(--text-muted, #71717A)', fontSize: '0.92rem', lineHeight: 1.6, marginBottom: '8px' }}>
+            Mã đơn hàng của bạn là: <strong style={{ color: 'var(--text-dark, #000000)', fontFamily: 'monospace' }}>{successOrderId}</strong>
           </p>
-          <p style={{ color: '#6B7280', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '32px' }}>
+          <p style={{ color: 'var(--text-muted, #71717A)', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '32px' }}>
             Admin sẽ đối soát biên lai chuyển khoản và cập nhật trạng thái đơn hàng của bạn trong vòng 10-15 phút. Cảm ơn bạn đã lựa chọn TAVY KOREA!
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
-            <button onClick={() => navigate('/')} style={{ padding: '12px 24px', borderRadius: '12px', border: '1px solid #D1D5DB', backgroundColor: '#FFF', color: '#374151', fontWeight: 600, cursor: 'pointer' }}>Về trang chủ</button>
-            <button onClick={() => navigate('/orders')} style={{ padding: '12px 24px', borderRadius: '12px', border: 'none', backgroundColor: '#7A4B9E', color: '#FFF', fontWeight: 600, cursor: 'pointer' }}>Xem đơn hàng của tôi</button>
+            <button onClick={() => navigate('/')} style={{ padding: '12px 24px', borderRadius: '12px', border: '1px solid var(--border-color, #E4E4E7)', backgroundColor: 'transparent', color: 'var(--text-dark, #000000)', fontWeight: 600, cursor: 'pointer' }}>Về trang chủ</button>
+            <button onClick={() => navigate('/orders')} style={{ padding: '12px 24px', borderRadius: '12px', border: 'none', backgroundColor: 'var(--text-dark, #000000)', color: 'var(--bg-white, #FFFFFF)', fontWeight: 600, cursor: 'pointer' }}>Xem đơn hàng của tôi</button>
           </div>
         </div>
       </div>
@@ -254,9 +254,9 @@ export default function CheckoutPage() {
                   onClick={() => setPaymentMethod('vietqr')}
                   style={{
                     flex: 1, padding: '10px', borderRadius: '8px', cursor: 'pointer', fontWeight: 600, fontSize: '0.85rem',
-                    border: paymentMethod === 'vietqr' ? '2px solid #7A4B9E' : '1px solid #D1D5DB',
-                    backgroundColor: paymentMethod === 'vietqr' ? '#F7F4FA' : '#FFF',
-                    color: paymentMethod === 'vietqr' ? '#7A4B9E' : '#374151'
+                    border: paymentMethod === 'vietqr' ? '2px solid #000' : '1px solid #D1D5DB',
+                    backgroundColor: paymentMethod === 'vietqr' ? '#000' : '#FFF',
+                    color: paymentMethod === 'vietqr' ? '#FFF' : '#374151'
                   }}
                 >
                   VietQR (Ngân hàng Việt Nam)
@@ -265,9 +265,9 @@ export default function CheckoutPage() {
                   onClick={() => setPaymentMethod('woori')}
                   style={{
                     flex: 1, padding: '10px', borderRadius: '8px', cursor: 'pointer', fontWeight: 600, fontSize: '0.85rem',
-                    border: paymentMethod === 'woori' ? '2px solid #7A4B9E' : '1px solid #D1D5DB',
-                    backgroundColor: paymentMethod === 'woori' ? '#F7F4FA' : '#FFF',
-                    color: paymentMethod === 'woori' ? '#7A4B9E' : '#374151'
+                    border: paymentMethod === 'woori' ? '2px solid #000' : '1px solid #D1D5DB',
+                    backgroundColor: paymentMethod === 'woori' ? '#000' : '#FFF',
+                    color: paymentMethod === 'woori' ? '#FFF' : '#374151'
                   }}
                 >
                   Woori Bank (Chuyển Won Hàn Quốc)
@@ -288,13 +288,13 @@ export default function CheckoutPage() {
                     <div>Số tài khoản: <b>03456789999</b></div>
                     <div>Chủ tài khoản: <b>VU VAN TAN</b></div>
                     <div>Số tiền đặt cọc: <b style={{ color: '#DC2626' }}>{depositNeededVnd.toLocaleString()}đ</b></div>
-                    <div>Nội dung chuyển khoản bắt buộc: <b style={{ color: '#7A4B9E', fontFamily: 'monospace' }}>{tempOrderId}</b></div>
+                    <div>Nội dung chuyển khoản bắt buộc: <b style={{ color: '#000', fontFamily: 'monospace' }}>{tempOrderId}</b></div>
                   </div>
                 </div>
               ) : (
                 <div style={{ backgroundColor: '#F9FAFB', padding: '16px', borderRadius: '8px', fontSize: '0.85rem', color: '#4B5563', lineHeight: 1.6 }}>
                   <div style={{ fontWeight: 700, color: '#111827', fontSize: '0.95rem', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <CreditCard size={18} color="#7A4B9E" /> Chuyển khoản ngân hàng Woori Hàn Quốc
+                    <CreditCard size={18} color="#000" /> Chuyển khoản ngân hàng Woori Hàn Quốc
                   </div>
                   <div>Ngân hàng: <b>Woori Bank (우리은행)</b></div>
                   <div>Số tài khoản: <b>1002-123-456789</b></div>
@@ -314,7 +314,7 @@ export default function CheckoutPage() {
             {/* Tóm tắt giỏ hàng */}
             <div style={{ backgroundColor: '#FFF', border: '1px solid #E5E7EB', borderRadius: '12px', padding: '24px', boxShadow: '0 1px 3px rgba(0,0,0,0.02)' }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#111827', margin: '0 0 16px 0', borderBottom: '1px solid #F3F4F6', paddingBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <ShoppingBag size={18} color="#7A4B9E" /> Tóm tắt đơn hàng mua hộ
+                <ShoppingBag size={18} color="#000" /> Tóm tắt đơn hàng mua hộ
               </h3>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', maxHeight: '200px', overflowY: 'auto', marginBottom: '16px', paddingRight: '4px' }}>
@@ -353,7 +353,7 @@ export default function CheckoutPage() {
             {/* Upload Minh Chứng */}
             <div style={{ backgroundColor: '#FFF', border: '1px solid #E5E7EB', borderRadius: '12px', padding: '24px', boxShadow: '0 1px 3px rgba(0,0,0,0.02)' }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#111827', margin: '0 0 16px 0', borderBottom: '1px solid #F3F4F6', paddingBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Upload size={18} color="#7A4B9E" /> 3. Xác nhận đã chuyển khoản
+                <Upload size={18} color="#000" /> 3. Xác nhận đã chuyển khoản
               </h3>
 
               <form onSubmit={handleConfirmCheckout}>
@@ -404,9 +404,9 @@ export default function CheckoutPage() {
                   disabled={submitting}
                   style={{
                     width: '100%', padding: '14px', borderRadius: '12px', border: 'none', cursor: submitting ? 'default' : 'pointer',
-                    backgroundColor: '#7A4B9E', color: '#FFF', fontWeight: 700, fontSize: '0.95rem',
+                    backgroundColor: '#000', color: '#FFF', fontWeight: 700, fontSize: '0.95rem',
                     display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
-                    boxShadow: '0 4px 12px rgba(122, 75, 158, 0.25)',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
                     opacity: submitting ? 0.7 : 1, transition: 'all 0.2s'
                   }}
                 >

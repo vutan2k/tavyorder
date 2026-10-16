@@ -285,7 +285,7 @@
         "price_krw": 9800
       },
       {
-        "name_vi": "Phân loại #4",
+        "name_vi": "20 Tia Mocha (Mocha Beam)",
         "name_kr": "20 모카빔",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "status": "available",
@@ -305,7 +305,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/4421150087214317148.jpg",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "21 타로빔",
-        "name_vi": "Phân loại #5",
+        "name_vi": "21 Tia Khoai Môn (Taro Beam)",
         "is_sold_out": false
       },
       {
@@ -316,7 +316,7 @@
         "is_sold_out": false,
         "price_krw": 9800,
         "discount_rate": "24%",
-        "name_vi": "Phân loại #6",
+        "name_vi": "17 Tia Đào Giòn (Crispy Peach Beam)",
         "name_kr": "17 딱복빔",
         "id": "opt_A000000137964_6"
       },
@@ -329,7 +329,7 @@
         "subtitle_vi": "Hương vị: Dâu tây tươi mát",
         "status": "available",
         "price_krw": 9800,
-        "name_vi": "Phân loại #7",
+        "name_vi": "18 Tia Dâu Tây (Strawberry Beam)",
         "name_kr": "18 딸기빔"
       },
       {
@@ -340,7 +340,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 200655,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/1311219055402389481.jpg",
-        "name_vi": "Phân loại #8",
+        "name_vi": "16 Tia Đào Mật (Honey Peach Beam)",
         "name_kr": "16 꿀복빔",
         "is_sold_out": false
       },
@@ -371,7 +371,7 @@
       {
         "discount_rate": "24%",
         "price_krw": 9800,
-        "name_vi": "Phân loại #11",
+        "name_vi": "13 Tia E Thẹn (Shy Beam)",
         "name_kr": "13 부끄빔",
         "status": "available",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
@@ -387,7 +387,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 9800,
         "status": "available",
-        "name_vi": "Phân loại #12",
+        "name_vi": "12 Tia Rung Động (Heartflutter Beam)",
         "name_kr": "12 두근빔",
         "is_sold_out": false,
         "id": "opt_A000000137964_12"
@@ -399,7 +399,7 @@
         "price_krw": 9800,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "11 포근빔",
-        "name_vi": "Phân loại #13",
+        "name_vi": "11 Tia Ấm Áp (Cozy Beam)",
         "is_sold_out": false,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/4/7185591933625100960.jpg",
         "price_vnd": 200655
@@ -408,7 +408,7 @@
         "id": "opt_A000000137964_14",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "10 포도빔",
-        "name_vi": "Phân loại #14",
+        "name_vi": "10 Tia Nho Tím (Grape Beam)",
         "is_sold_out": false,
         "price_vnd": 200655,
         "status": "available",
@@ -418,7 +418,7 @@
       },
       {
         "price_vnd": 200655,
-        "name_vi": "Phân loại #15",
+        "name_vi": "09 Tia Chua Ngọt (Sour Sweet Beam)",
         "name_kr": "09 새콤빔",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/2/2032848016331143182.jpg",
         "status": "available",
@@ -432,7 +432,7 @@
         "status": "available",
         "discount_rate": "24%",
         "price_krw": 9800,
-        "name_vi": "Phân loại #16",
+        "name_vi": "07 Tia Ửng Hồng (Blushing Beam)",
         "name_kr": "07 발그레빔",
         "id": "opt_A000000137964_16",
         "is_sold_out": false,
@@ -445,7 +445,7 @@
         "price_krw": 9800,
         "id": "opt_A000000137964_17",
         "name_kr": "06 복숭빔",
-        "name_vi": "Phân loại #17",
+        "name_vi": "06 Tia Quả Đào (Peach Beam)",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/3/909933983955463633.jpg",
         "price_vnd": 200655,
@@ -461,7 +461,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/3/8632599742630118037.jpg",
         "status": "available",
         "name_kr": "05 앙큼빔",
-        "name_vi": "Phân loại #18",
+        "name_vi": "05 Tia Tinh Nghịch (Cheeky Beam)",
         "discount_rate": "24%"
       },
       {
@@ -473,14 +473,14 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2020/6/7318563502254782141.jpg",
         "status": "available",
         "subtitle_vi": "Tone 19 Da trắng sáng",
-        "name_vi": "Phân loại #19",
+        "name_vi": "04 Tia Thổn Thức (Heart-throb Beam)",
         "name_kr": "04 심쿵빔"
       },
       {
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 9800,
         "name_kr": "03 감성빔",
-        "name_vi": "Phân loại #20",
+        "name_vi": "03 Tia Cảm Xúc (Vibe Beam)",
         "is_sold_out": false,
         "status": "available",
         "price_vnd": 200655,
@@ -491,7 +491,7 @@
       {
         "price_vnd": 200655,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2020/6/7150512470053695759.jpg",
-        "name_vi": "Phân loại #21",
+        "name_vi": "02 Tia Ngây Thơ (Pure Beam)",
         "name_kr": "02 순수빔",
         "is_sold_out": false,
         "subtitle_vi": "Tone 21 Da sáng tự nhiên",
@@ -504,7 +504,7 @@
         "price_krw": 9800,
         "discount_rate": "24%",
         "id": "opt_A000000137964_22",
-        "name_vi": "Phân loại #22",
+        "name_vi": "01 Tia Trong Sáng (Innocent Beam)",
         "name_kr": "01 청초빔",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2020/6/8803978627268144762.jpg",
         "price_vnd": 200655,
@@ -567,13 +567,13 @@
         "status": "available",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/8551538529935238413.jpg",
         "name_kr": "01 그레이 브라운",
-        "name_vi": "Phân loại #1"
+        "name_vi": "01 Nâu Xám (Gray Brown)"
       },
       {
         "price_krw": 6000,
         "discount_rate": "50%",
         "name_kr": "02 다크 브라운",
-        "name_vi": "Phân loại #2",
+        "name_vi": "02 Nâu Đen (Dark Brown)",
         "id": "opt_A000000138671_2",
         "is_sold_out": false,
         "status": "available",
@@ -589,12 +589,12 @@
         "status": "available",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "03 내추럴 브라운",
-        "name_vi": "Phân loại #3",
+        "name_vi": "03 Nâu Tự Nhiên (Natural Brown)",
         "price_krw": 6000,
         "discount_rate": "50%"
       },
       {
-        "name_vi": "Phân loại #4",
+        "name_vi": "06 Xám Lạnh (Cool Gray)",
         "name_kr": "06 쿨 그레이",
         "price_vnd": 122850,
         "discount_rate": "50%",
@@ -626,7 +626,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/3557350762562139095.jpg",
         "price_vnd": 122850,
         "name_kr": "09 토프 브라운",
-        "name_vi": "Phân loại #6",
+        "name_vi": "09 Nâu Xám Taupe (Taupe Brown)",
         "id": "opt_A000000138671_6"
       },
       {
@@ -637,13 +637,13 @@
         "is_sold_out": false,
         "status": "available",
         "price_krw": 6000,
-        "name_vi": "Phân loại #7",
+        "name_vi": "11 Nâu Mocha Taupe",
         "name_kr": "11 모카토프",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
       },
       {
         "price_vnd": 122850,
-        "name_vi": "Phân loại #8",
+        "name_vi": "12 Nâu Milky Taupe",
         "name_kr": "12 밀키토프",
         "status": "available",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/6073968644201448052.jpg",
@@ -2569,7 +2569,7 @@
         "price_krw": 4700,
         "status": "available",
         "name_kr": "[콜라보 젤테일] 휩드 베리",
-        "name_vi": "Phân loại #1"
+        "name_vi": "[Bản Collab Jeltail] Whipped Berry"
       },
       {
         "price_krw": 4700,
@@ -2581,7 +2581,7 @@
         "id": "opt_A000000174309_2",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/6740449237730744661.png",
         "name_kr": "[콜라보 젤테일] 울리 그레이",
-        "name_vi": "Phân loại #2"
+        "name_vi": "[Bản Collab Jeltail] Woolly Gray"
       },
       {
         "name_vi": "Beige",
@@ -2598,7 +2598,7 @@
       {
         "discount_rate": "21%",
         "price_krw": 4700,
-        "name_vi": "Phân loại #4",
+        "name_vi": "[Dòng Jeltail] Soy Rose",
         "name_kr": "[젤테일] 소이 로즈",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 96232,
@@ -2615,14 +2615,14 @@
         "discount_rate": "21%",
         "is_sold_out": false,
         "price_krw": 4700,
-        "name_vi": "Phân loại #5",
+        "name_vi": "[Dòng Jeltail] Cinnamon Brew",
         "name_kr": "[젤테일] 시나몬 브루",
         "status": "available"
       },
       {
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 4700,
-        "name_vi": "Phân loại #6",
+        "name_vi": "[Dòng Jeltail] Melted Hazel",
         "name_kr": "[젤테일] 멜티드 헤이즐",
         "status": "available",
         "is_sold_out": false,
@@ -2640,7 +2640,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/1564672800488620710.jpg",
         "status": "available",
         "price_vnd": 96232,
-        "name_vi": "Phân loại #7",
+        "name_vi": "[Dòng Jeltail] Wood Smoke",
         "name_kr": "[젤테일] 우드스모크"
       },
       {
@@ -2648,7 +2648,7 @@
         "is_sold_out": false,
         "price_krw": 4700,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
-        "name_vi": "Phân loại #8",
+        "name_vi": "[Bản đơn Jeltail] Cocoa Brulee",
         "name_kr": "[젤테일 단품] 코코아 브륄레",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/7976446235735298210.jpg",
         "price_vnd": 96232,
@@ -2656,7 +2656,7 @@
         "discount_rate": "21%"
       },
       {
-        "name_vi": "Phân loại #9",
+        "name_vi": "[Bản giới hạn] Berry Moon (Piece Balm)",
         "name_kr": "[한정] 베리 문(피스 밤)",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/8737869508689506939.jpg",
@@ -2674,7 +2674,7 @@
         "is_sold_out": false,
         "id": "opt_A000000174309_10",
         "name_kr": "[한정] 베리 시럽(피스 빔)",
-        "name_vi": "Phân loại #10",
+        "name_vi": "[Bản giới hạn] Berry Syrup (Piece Beam)",
         "discount_rate": "21%",
         "price_krw": 4700,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
@@ -2734,7 +2734,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 96232,
         "name_kr": "베리휘그",
-        "name_vi": "Phân loại #15",
+        "name_vi": "Berry Fig",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/9/7402485623692905019.jpg",
         "id": "opt_A000000174309_15",
         "is_sold_out": false
@@ -2754,7 +2754,7 @@
       {
         "id": "opt_A000000174309_17",
         "name_kr": "피치우롱티",
-        "name_vi": "Phân loại #17",
+        "name_vi": "Peach Oolong Tea",
         "price_krw": 4700,
         "status": "available",
         "discount_rate": "21%",
@@ -2770,14 +2770,14 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/2/224984829643100983.jpg",
         "is_sold_out": false,
         "name_kr": "타로튜튜",
-        "name_vi": "Phân loại #18",
+        "name_vi": "Taro Tutu",
         "price_krw": 4700,
         "discount_rate": "21%",
         "id": "opt_A000000174309_18"
       },
       {
         "name_kr": "시나몬 스파이스",
-        "name_vi": "Phân loại #19",
+        "name_vi": "Cinnamon Spice",
         "status": "available",
         "is_sold_out": false,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/4279023525351780168.jpg",
@@ -2794,7 +2794,7 @@
         "price_krw": 4700,
         "is_sold_out": false,
         "name_kr": "모브 시즈닝",
-        "name_vi": "Phân loại #20",
+        "name_vi": "Mauve Seasoning",
         "discount_rate": "21%",
         "price_vnd": 96232,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/3172492504213177996.jpg"
@@ -2814,7 +2814,7 @@
       {
         "discount_rate": "21%",
         "name_kr": "키티",
-        "name_vi": "Phân loại #22",
+        "name_vi": "Kitty",
         "price_vnd": 96232,
         "id": "opt_A000000174309_22",
         "status": "available",
@@ -2837,7 +2837,7 @@
       },
       {
         "name_kr": "튤",
-        "name_vi": "Phân loại #24",
+        "name_vi": "Tulle",
         "status": "available",
         "price_vnd": 96232,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/9/9031082155616127959.jpg",
@@ -2849,7 +2849,7 @@
       },
       {
         "name_kr": "얼리 샤인",
-        "name_vi": "Phân loại #25",
+        "name_vi": "Early Shine",
         "status": "available",
         "price_vnd": 96232,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/5/6619501089689854038.jpg",
@@ -2868,7 +2868,7 @@
         "status": "available",
         "price_krw": 4700,
         "name_kr": "레이지 듀",
-        "name_vi": "Phân loại #26",
+        "name_vi": "Lazy Dew",
         "id": "opt_A000000174309_26"
       },
       {
@@ -2879,7 +2879,7 @@
         "price_vnd": 96232,
         "id": "opt_A000000174309_27",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/5/2010235284886536733.jpg",
-        "name_vi": "Phân loại #27",
+        "name_vi": "Blush Days",
         "name_kr": "블러쉬 데이즈",
         "price_krw": 4700
       },
@@ -2912,7 +2912,7 @@
         "price_vnd": 96232,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/3987269131601444544.jpg",
         "is_sold_out": false,
-        "name_vi": "Phân loại #30",
+        "name_vi": "Peach Oat",
         "name_kr": "피치오트",
         "discount_rate": "21%",
         "price_krw": 4700,
@@ -2929,12 +2929,12 @@
         "status": "available",
         "price_krw": 4700,
         "name_kr": "베이비 타로",
-        "name_vi": "Phân loại #31"
+        "name_vi": "Baby Taro"
       },
       {
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/5/1280731667414609861.jpg",
         "name_kr": "슈가 클라우드",
-        "name_vi": "Phân loại #32",
+        "name_vi": "Sugar Cloud",
         "price_vnd": 96232,
         "status": "available",
         "discount_rate": "21%",
@@ -2953,7 +2953,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/5/4739777026489890675.jpg",
         "price_vnd": 96232,
         "name_kr": "쥬시 모닝",
-        "name_vi": "Phân loại #33"
+        "name_vi": "Juicy Morning"
       },
       {
         "price_krw": 4700,
@@ -2965,7 +2965,7 @@
         "status": "available",
         "price_vnd": 96232,
         "name_kr": "돌체 피치 (올영 단독)",
-        "name_vi": "Phân loại #34"
+        "name_vi": "Dolce Peach (Độc quyền OY)"
       },
       {
         "price_vnd": 96232,
@@ -2977,7 +2977,7 @@
         "price_krw": 4700,
         "subtitle_vi": "Chính hãng n��i địa Hàn Quốc",
         "name_kr": "소다",
-        "name_vi": "Phân loại #35"
+        "name_vi": "Soda"
       },
       {
         "price_krw": 4700,
@@ -2999,7 +2999,7 @@
         "id": "opt_A000000174309_37",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/9/7240038256863371925.jpg",
         "is_sold_out": false,
-        "name_vi": "Phân loại #37",
+        "name_vi": "Super Pink",
         "name_kr": "수퍼핑크",
         "price_vnd": 96232
       },
@@ -3019,7 +3019,7 @@
         "price_krw": 4700,
         "id": "opt_A000000174309_39",
         "name_kr": "수퍼피치",
-        "name_vi": "Phân loại #39",
+        "name_vi": "Super Peach",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/11/1923195146365576231.jpg",
         "discount_rate": "21%",
@@ -3028,7 +3028,7 @@
         "status": "available"
       },
       {
-        "name_vi": "Phân loại #40",
+        "name_vi": "Over The Peach",
         "name_kr": "오버 더 피치",
         "price_krw": 4700,
         "status": "available",
@@ -3065,7 +3065,7 @@
       },
       {
         "name_kr": "버니",
-        "name_vi": "Phân loại #43",
+        "name_vi": "Bunny",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "id": "opt_A000000174309_43",
         "price_krw": 4700,
@@ -3079,7 +3079,7 @@
         "id": "opt_A000000174309_44",
         "price_vnd": 96232,
         "name_kr": "졸리",
-        "name_vi": "Phân loại #44",
+        "name_vi": "Jolly",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/9/8547499147069239025.jpg",
         "status": "available",
         "discount_rate": "21%",
@@ -3089,7 +3089,7 @@
       },
       {
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
-        "name_vi": "Phân loại #45",
+        "name_vi": "Bello",
         "name_kr": "벨로",
         "id": "opt_A000000174309_45",
         "price_krw": 4700,
@@ -3107,7 +3107,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 96232,
         "discount_rate": "21%",
-        "name_vi": "Phân loại #46",
+        "name_vi": "Heather",
         "name_kr": "헤더",
         "price_krw": 4700
       },
@@ -3132,12 +3132,12 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 96232,
         "name_kr": "이너프",
-        "name_vi": "Phân loại #48",
+        "name_vi": "Enough",
         "price_krw": 4700
       },
       {
         "id": "opt_A000000174309_49",
-        "name_vi": "Phân loại #49",
+        "name_vi": "Grape Oat",
         "name_kr": "그레이프 오트",
         "price_krw": 4700,
         "status": "available",
@@ -3164,7 +3164,7 @@
         "is_sold_out": false,
         "price_krw": 4700,
         "status": "available",
-        "name_vi": "Phân loại #51",
+        "name_vi": "Pink Shearing",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/8956179382855780332.jpg",
         "name_kr": "핑크 시어링",
         "discount_rate": "21%",
@@ -3172,7 +3172,7 @@
         "price_vnd": 96232
       },
       {
-        "name_vi": "Phân loại #52",
+        "name_vi": "Melrose",
         "name_kr": "멜로즈",
         "id": "opt_A000000174309_52",
         "discount_rate": "21%",
@@ -3201,7 +3201,7 @@
         "discount_rate": "21%",
         "id": "opt_A000000174309_54",
         "name_kr": "폴인",
-        "name_vi": "Phân loại #54",
+        "name_vi": "Fall In",
         "is_sold_out": false,
         "price_krw": 4700,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
@@ -3210,7 +3210,7 @@
       {
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "윈터베리",
-        "name_vi": "Phân loại #55",
+        "name_vi": "Winter Berry",
         "price_krw": 4700,
         "id": "opt_A000000174309_55",
         "is_sold_out": false,
@@ -3228,7 +3228,7 @@
         "price_vnd": 96232,
         "id": "opt_A000000174309_56",
         "name_kr": "피치얼그레이",
-        "name_vi": "Phân loại #56",
+        "name_vi": "Peach Earl Grey",
         "price_krw": 4700
       },
       {
@@ -3239,7 +3239,7 @@
         "price_krw": 4700,
         "is_sold_out": false,
         "name_kr": "앙고라",
-        "name_vi": "Phân loại #57",
+        "name_vi": "Angora",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "id": "opt_A000000174309_57"
       },
@@ -3249,7 +3249,7 @@
         "id": "opt_A000000174309_58",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "돌체 그레이프",
-        "name_vi": "Phân loại #58",
+        "name_vi": "Dolce Grape",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/2017763952389206837.jpg",
         "price_vnd": 96232,
         "discount_rate": "21%",
@@ -3270,7 +3270,7 @@
       {
         "price_krw": 4700,
         "name_kr": "크림드 베리",
-        "name_vi": "Phân loại #60",
+        "name_vi": "Creamed Berry",
         "discount_rate": "21%",
         "id": "opt_A000000174309_60",
         "price_vnd": 96232,
@@ -3286,7 +3286,7 @@
         "id": "opt_A000000174309_61",
         "price_vnd": 96232,
         "status": "available",
-        "name_vi": "Phân loại #61",
+        "name_vi": "Tailor",
         "name_kr": "테일러",
         "price_krw": 4700,
         "discount_rate": "21%"
@@ -3311,7 +3311,7 @@
         "is_sold_out": false,
         "status": "available",
         "price_krw": 4700,
-        "name_vi": "Phân loại #63",
+        "name_vi": "Blush Gray",
         "name_kr": "블러쉬그레이",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
       },
@@ -3324,7 +3324,7 @@
         "id": "opt_A000000174309_64",
         "discount_rate": "21%",
         "status": "available",
-        "name_vi": "Phân loại #64",
+        "name_vi": "Sooty Wisteria",
         "name_kr": "수티 위스테리아"
       },
       {
@@ -3341,7 +3341,7 @@
       },
       {
         "name_kr": "다크 에스프레소",
-        "name_vi": "Phân loại #66",
+        "name_vi": "Dark Espresso",
         "status": "available",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/9/6609663818699210595.jpg",
         "price_vnd": 96232,
@@ -3353,7 +3353,7 @@
       },
       {
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/9/3424298803962119366.jpg",
-        "name_vi": "Phân loại #67",
+        "name_vi": "Aroma Espresso",
         "name_kr": "아로마에스프레소",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 96232,
@@ -3372,7 +3372,7 @@
         "status": "available",
         "is_sold_out": false,
         "name_kr": "피치 멜바(피스 밤)",
-        "name_vi": "Phân loại #68",
+        "name_vi": "Peach Melba (Piece Balm)",
         "discount_rate": "21%"
       },
       {
@@ -3406,7 +3406,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/11/4701368954504561821.jpg",
         "status": "available",
-        "name_vi": "Phân loại #71",
+        "name_vi": "Apricot Dew (Piece Beam)",
         "name_kr": "애프리콧듀(피스빔)",
         "id": "opt_A000000174309_71",
         "is_sold_out": false
@@ -3417,7 +3417,7 @@
         "is_sold_out": false,
         "price_vnd": 96232,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2024/11/1447756030774168892.jpg",
-        "name_vi": "Phân loại #72",
+        "name_vi": "Sugar Coat (Piece Beam)",
         "name_kr": "슈가코트(피스빔)",
         "price_krw": 4700,
         "id": "opt_A000000174309_72",
@@ -3433,7 +3433,7 @@
         "is_sold_out": false,
         "status": "available",
         "name_kr": "핑크어텐션(피스빔)",
-        "name_vi": "Phân loại #73"
+        "name_vi": "Pink Attention (Piece Beam)"
       },
       {
         "price_vnd": 96232,
@@ -3455,7 +3455,7 @@
         "price_vnd": 96232,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "status": "available",
-        "name_vi": "Phân loại #75",
+        "name_vi": "Witty (Eye Glitz)",
         "name_kr": "위티(아이글리츠)",
         "price_krw": 4700
       },
@@ -3466,7 +3466,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "id": "opt_A000000174309_76",
         "discount_rate": "21%",
-        "name_vi": "Phân loại #76",
+        "name_vi": "Angelic (Eye Glitz)",
         "name_kr": "엔젤릭(아이글리츠)",
         "price_vnd": 96232,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/2/3299248309495487244.jpg"
@@ -3490,7 +3490,7 @@
         "status": "available",
         "discount_rate": "21%",
         "price_krw": 4700,
-        "name_vi": "Phân loại #78",
+        "name_vi": "Moonshine (Eye Glitz)",
         "name_kr": "문샤인(아이글리츠)",
         "is_sold_out": false,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
@@ -3558,7 +3558,7 @@
       {
         "price_krw": 4700,
         "name_kr": "[콜라보 젤테일] 코코아 브륄레",
-        "name_vi": "Phân loại #84",
+        "name_vi": "[Bản Collab Jeltail] Cocoa Brulee",
         "id": "opt_A000000174309_84",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 96232,
@@ -3570,7 +3570,7 @@
       {
         "price_vnd": 96232,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/3309564836175701255.png",
-        "name_vi": "Phân loại #85",
+        "name_vi": "[Bản Collab Jeltail] Cinder Rose",
         "name_kr": "[콜라보 젤테일] 신더 로즈",
         "price_krw": 4700,
         "is_sold_out": false,
@@ -3582,7 +3582,7 @@
       {
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "[젤테일] 몰튼 아메리카노",
-        "name_vi": "Phân loại #86",
+        "name_vi": "[Dòng Jeltail] Molten Americano",
         "price_krw": 4700,
         "status": "available",
         "is_sold_out": false,
@@ -3598,13 +3598,13 @@
         "is_sold_out": false,
         "id": "opt_A000000174309_87",
         "price_krw": 4700,
-        "name_vi": "Phân loại #87",
+        "name_vi": "Haute Fig",
         "name_kr": "오뜨휘그",
         "status": "available",
         "discount_rate": "21%"
       },
       {
-        "name_vi": "Phân loại #88",
+        "name_vi": "Gray Cat",
         "name_kr": "그레이캣",
         "status": "available",
         "price_vnd": 96232,
@@ -3621,7 +3621,7 @@
         "status": "available",
         "price_vnd": 96232,
         "discount_rate": "21%",
-        "name_vi": "Phân loại #89",
+        "name_vi": "Cold Brew",
         "name_kr": "콜드브루",
         "is_sold_out": false,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
@@ -3631,7 +3631,7 @@
         "is_sold_out": false,
         "price_krw": 4700,
         "name_kr": "크림릿(피스빔)",
-        "name_vi": "Phân loại #90",
+        "name_vi": "Creamlet (Piece Beam)",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "id": "opt_A000000174309_90",
         "status": "available",
@@ -3875,7 +3875,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/5665542884720104764.jpg",
         "price_vnd": 487305,
-        "name_vi": "Phân loại #1",
+        "name_vi": "[Bản Báo Đốm Hello Kitty] 31 Pink Like Blurring",
         "name_kr": "[레오파드 헬로키티]31 핑크라이크블러링",
         "is_sold_out": false,
         "id": "opt_A000000180532_1"
@@ -3889,14 +3889,14 @@
         "price_krw": 23800,
         "status": "available",
         "name_kr": "[레오파드 헬로키티]32 피치샌디 블러링",
-        "name_vi": "Phân loại #2",
+        "name_vi": "[Bản Báo Đốm Hello Kitty] 32 Peach Sandy Blurring",
         "is_sold_out": false
       },
       {
         "price_krw": 23800,
         "discount_rate": "30%",
         "status": "available",
-        "name_vi": "Phân loại #3",
+        "name_vi": "30 Classy Nude Blurring",
         "name_kr": "30 클래시 누드 블러링",
         "price_vnd": 487305,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/7/3122182290405201463.jpg",
@@ -3923,13 +3923,13 @@
         "price_vnd": 487305,
         "is_sold_out": false,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2023/2/1515106027154825055.jpg",
-        "name_vi": "Phân loại #5",
+        "name_vi": "04 Lavender Blurring",
         "name_kr": "04 라벤더 블러링",
         "price_krw": 23800,
         "discount_rate": "30%"
       },
       {
-        "name_vi": "Phân loại #6",
+        "name_vi": "05 Mute Coral Blurring",
         "name_kr": "05 뮤트 코랄 블러링",
         "price_vnd": 487305,
         "status": "available",
@@ -3942,7 +3942,7 @@
       },
       {
         "name_kr": "08 캔디 코랄 블러링",
-        "name_vi": "Phân loại #7",
+        "name_vi": "08 Candy Coral Blurring",
         "status": "available",
         "price_krw": 23800,
         "id": "opt_A000000180532_7",
@@ -3957,7 +3957,7 @@
         "price_krw": 23800,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "is_sold_out": false,
-        "name_vi": "Phân loại #8",
+        "name_vi": "10 Lazy Pink Blurring",
         "name_kr": "10 레이지 핑크 블러링",
         "price_vnd": 487305,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2023/6/7469634046944745116.JPG",
@@ -3970,7 +3970,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "status": "available",
         "id": "opt_A000000180532_9",
-        "name_vi": "Phân loại #9",
+        "name_vi": "21 Fall In Fig Blurring",
         "name_kr": "21 폴 인 피그 블러링",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/2/3234486877477430911.jpg",
         "is_sold_out": false,
@@ -3984,7 +3984,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "discount_rate": "30%",
         "name_kr": "26 뮤트로즈블러링",
-        "name_vi": "Phân loại #10",
+        "name_vi": "26 Mute Rose Blurring",
         "price_vnd": 487305,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/9/3214045108624342545.jpg"
       },
@@ -3993,7 +3993,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/3094795478380294345.jpg",
         "status": "available",
         "price_krw": 23800,
-        "name_vi": "Phân loại #11",
+        "name_vi": "29 Soy Pink Blurring",
         "name_kr": "29 소이 핑크 블러링",
         "id": "opt_A000000180532_11",
         "is_sold_out": false,
@@ -4002,7 +4002,7 @@
       },
       {
         "id": "opt_A000000180532_12",
-        "name_vi": "Phân loại #12",
+        "name_vi": "02 Lively Blurring",
         "name_kr": "02 생기 블러링",
         "price_vnd": 487305,
         "status": "available",
@@ -4021,7 +4021,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2023/10/5569008668383357188.jpg",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "13 블루코어 블러링",
-        "name_vi": "Phân loại #13",
+        "name_vi": "13 Blue Core Blurring",
         "price_vnd": 487305
       },
       {
@@ -4033,7 +4033,7 @@
         "id": "opt_A000000180532_14",
         "is_sold_out": false,
         "name_kr": "22 멜로우 어텀 블러링",
-        "name_vi": "Phân loại #14",
+        "name_vi": "22 Mellow Autumn Blurring",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
       }
     ],
@@ -4123,7 +4123,7 @@
       {
         "price_vnd": 528255,
         "discount_rate": "24%",
-        "name_vi": "Phân loại #2",
+        "name_vi": "Hương Sweet Breeze (Set 2 chai)",
         "name_kr": "스윗 브리즈*2",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/3588915847280343747.png",
@@ -4140,7 +4140,7 @@
         "status": "available",
         "price_vnd": 528255,
         "id": "opt_A000000183059_3",
-        "name_vi": "Phân loại #3",
+        "name_vi": "Hương Sweet Breeze + Hương Rosy Aura",
         "name_kr": "스윗 브리즈+로지 아우라",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/5/3751486449007989465.jpg"
       }
@@ -4694,7 +4694,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 21400,
         "id": "opt_A000000186409_2",
-        "name_vi": "Phân loại #2",
+        "name_vi": "Bản Đơn Lẻ Chính Hãng",
         "name_kr": "단품",
         "status": "out_of_stock"
       }
@@ -4770,7 +4770,7 @@
     "options": [
       {
         "name_kr": "[한정수량] 체리 & 애프리콧 향",
-        "name_vi": "Phân loại #1",
+        "name_vi": "[Bản giới hạn] Hương Cherry & Mơ (Cherry & Apricot)",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 10800,
         "discount_rate": "39%",
@@ -4783,7 +4783,7 @@
       {
         "price_krw": 10800,
         "name_kr": "코코넛 & 메이플슈가향",
-        "name_vi": "Phân loại #2",
+        "name_vi": "Hương Dừa & Đường Phong (Coconut & Maple Sugar)",
         "discount_rate": "39%",
         "status": "available",
         "id": "opt_A000000186792_2",
@@ -4797,7 +4797,7 @@
         "price_krw": 10800,
         "id": "opt_A000000186792_3",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
-        "name_vi": "Phân loại #3",
+        "name_vi": "Hương Hoa Anh Đào & Xạ Hương (Cherry Blossom & Musk)",
         "name_kr": "벚꽃 & 머스크향",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/1486255843982594833.png",
         "price_vnd": 221130,
@@ -4810,7 +4810,7 @@
         "price_vnd": 221130,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/8/883490580822910270.png",
         "is_sold_out": false,
-        "name_vi": "Phân loại #4",
+        "name_vi": "Hương Lựu Đỏ & Bơ Hạt Mỡ (Pomegranate & Shea Butter)",
         "name_kr": "석류 & 시어버터",
         "price_krw": 10800,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
@@ -4820,7 +4820,7 @@
         "id": "opt_A000000186792_5",
         "is_sold_out": false,
         "name_kr": "미드나잇 라벤더향",
-        "name_vi": "Phân loại #5",
+        "name_vi": "Hương Oải Hương Ban Đêm (Midnight Lavender)",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "status": "available",
         "price_krw": 10800,
@@ -4966,7 +4966,7 @@
       },
       {
         "name_kr": "[토이스토리 콜라보] 19 자유를찾은보핍",
-        "name_vi": "Phân loại #9",
+        "name_vi": "[Bản Collab Toy Story] Số 19 Bo Peep Tìm Thấy Tự Do",
         "price_krw": 23800,
         "discount_rate": "30%",
         "status": "available",
@@ -5255,7 +5255,7 @@
       {
         "discount_rate": "30%",
         "name_kr": "01 블랙",
-        "name_vi": "Phân loại #1",
+        "name_vi": "01 Đen (Black)",
         "price_krw": 7700,
         "id": "opt_A000000198343_1",
         "status": "available",
@@ -5267,7 +5267,7 @@
       {
         "status": "available",
         "name_kr": "02 브라운",
-        "name_vi": "Phân loại #2",
+        "name_vi": "02 Nâu (Brown)",
         "price_krw": 7700,
         "is_sold_out": false,
         "id": "opt_A000000198343_2",
@@ -5285,7 +5285,7 @@
         "price_vnd": 157658,
         "id": "opt_A000000198343_3",
         "status": "available",
-        "name_vi": "Phân loại #3",
+        "name_vi": "03 Nâu Đen (Black Brown)",
         "name_kr": "03 블랙 브라운"
       },
       {
@@ -5297,7 +5297,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "status": "available",
         "price_krw": 7700,
-        "name_vi": "Phân loại #4",
+        "name_vi": "04 Nâu Đậm (Dark Brown)",
         "name_kr": "04 다크 브라운"
       },
       {
@@ -5309,7 +5309,7 @@
         "is_sold_out": false,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "status": "available",
-        "name_vi": "Phân loại #5",
+        "name_vi": "05 Nâu Khói (Ash Brown)",
         "name_kr": "05 애쉬 브라운"
       },
       {
@@ -5343,7 +5343,7 @@
         "id": "opt_A000000198343_8",
         "is_sold_out": false,
         "name_kr": "09 로즈",
-        "name_vi": "Phân loại #8",
+        "name_vi": "09 Hoa Hồng (Rose)",
         "price_krw": 7700,
         "discount_rate": "30%",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
@@ -5351,7 +5351,7 @@
       {
         "is_sold_out": false,
         "name_kr": "11 뮤트그레이",
-        "name_vi": "Phân loại #9",
+        "name_vi": "11 Xám Mờ (Mute Gray)",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 7700,
         "status": "available",
@@ -5364,7 +5364,7 @@
         "is_sold_out": false,
         "price_krw": 7700,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
-        "name_vi": "Phân loại #10",
+        "name_vi": "10 Nâu Cacao (Cacao Brown)",
         "name_kr": "10 카카오브라운",
         "discount_rate": "30%",
         "id": "opt_A000000198343_10",
@@ -5386,7 +5386,7 @@
       },
       {
         "name_kr": "13 로스티드핑크",
-        "name_vi": "Phân loại #12",
+        "name_vi": "13 Hồng Rang (Roasted Pink)",
         "id": "opt_A000000198343_12",
         "status": "available",
         "price_krw": 7700,
@@ -5647,7 +5647,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/1/3947998094375083096.jpg",
         "subtitle_vi": "Tone nâu đậm cuốn hút, nhấn đuôi mắt sắc nét",
         "name_kr": "09 리치",
-        "name_vi": "Màu 09 Rich"
+        "name_vi": "09 Litchi (Hồng Vải Trong Veo)"
       },
       {
         "price_krw": 9300,
@@ -6517,7 +6517,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/8054348760522991047.png",
         "price_vnd": 249795,
         "name_kr": "(단품) 03 그레이 브라운",
-        "name_vi": "Phân loại #8",
+        "name_vi": "(Bản đơn) 03 Nâu Xám (Gray Brown)",
         "is_sold_out": false,
         "id": "opt_A000000203943_8",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
@@ -6526,7 +6526,7 @@
       {
         "price_vnd": 249795,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/2812083901241803165.png",
-        "name_vi": "Phân loại #9",
+        "name_vi": "(Bản đơn) 04 Dày Từng Sợi (Volume)",
         "name_kr": "(단품) 04 가닥 볼륨",
         "id": "opt_A000000203943_9",
         "discount_rate": "23%",
@@ -6572,7 +6572,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
       },
       {
-        "name_vi": "Phân loại #13",
+        "name_vi": "(Bản đơn) 01 Đen (Black)",
         "name_kr": "(단품) 01 블랙",
         "status": "out_of_stock",
         "price_krw": 12200,
@@ -6639,14 +6639,14 @@
         "status": "out_of_stock",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/6/7575285505215291960.jpg",
         "name_kr": "(단품) 05 가닥 롱래쉬",
-        "name_vi": "Phân loại #18",
+        "name_vi": "(Bản đơn) 05 Dài Mi Từng Sợi (Long Lash)",
         "price_vnd": 249795,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
       },
       {
         "id": "opt_A000000203943_19",
         "name_kr": "(단품) 02 브라운",
-        "name_vi": "Phân loại #19",
+        "name_vi": "(Bản đơn) 02 Nâu (Brown)",
         "price_krw": 12200,
         "status": "out_of_stock",
         "subtitle_vi": "Tone 19 Da trắng sáng",
@@ -6941,7 +6941,7 @@
         "is_sold_out": false
       },
       {
-        "name_vi": "Phân loại #9",
+        "name_vi": "[Bản Pokemon] Vị Socola Hạt Nutty Choco (Set 2 gói)",
         "name_kr": "[포켓몬에디션]너티초코 2입기획",
         "status": "out_of_stock",
         "price_krw": 7800,
@@ -6962,13 +6962,13 @@
         "price_vnd": 79852,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/2572919648402394575.png",
         "name_kr": "[포켓몬에디션]고구마미숫가루",
-        "name_vi": "Phân loại #10"
+        "name_vi": "[Bản Pokemon] Vị Bột Ngũ Cốc Khoai Lang"
       },
       {
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "discount_rate": "50%",
         "name_kr": "[포켓몬에디션]옥수수카스테라",
-        "name_vi": "Phân loại #11",
+        "name_vi": "[Bản Pokemon] Vị Bánh Bông Lan Bắp",
         "is_sold_out": true,
         "price_krw": 3900,
         "status": "out_of_stock",
@@ -6977,7 +6977,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/2726600717766306780.png"
       },
       {
-        "name_vi": "Phân loại #12",
+        "name_vi": "[Bản Pokemon] Vị Bánh Nếp Mè Đen Injeolmi",
         "name_kr": "[포켓몬에디션]흑임자인절미",
         "id": "opt_A000000208162_12",
         "price_krw": 3900,
@@ -6991,7 +6991,7 @@
       {
         "id": "opt_A000000208162_13",
         "is_sold_out": true,
-        "name_vi": "Phân loại #13",
+        "name_vi": "[Bản Pokemon] Vị Sữa Chua Dâu Tây",
         "name_kr": "[포켓몬에디션]딸기요거트",
         "price_vnd": 79852,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/1725240619366902535.png",
@@ -7009,7 +7009,7 @@
         "price_vnd": 79852,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "[포켓몬에디션]멜론밀크",
-        "name_vi": "Phân loại #14",
+        "name_vi": "[Bản Pokemon] Vị Sữa Dưa Lưới Melon",
         "discount_rate": "50%"
       }
     ],
@@ -7666,13 +7666,13 @@
         "discount_rate": "10%",
         "status": "available",
         "name_kr": "01 퍼지",
-        "name_vi": "Phân loại #4"
+        "name_vi": "01 Fuzzy (Hồng Đào Mịn)"
       },
       {
         "price_krw": 20700,
         "is_sold_out": false,
         "id": "opt_A000000212749_5",
-        "name_vi": "Phân loại #5",
+        "name_vi": "02 Sunshine (Cam Nắng)",
         "name_kr": "02 선샤인",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 423832,
@@ -7682,7 +7682,7 @@
       },
       {
         "id": "opt_A000000212749_6",
-        "name_vi": "Phân loại #6",
+        "name_vi": "05 Adorable (Hồng Baby)",
         "name_kr": "05 어도러블",
         "price_krw": 20700,
         "status": "available",
@@ -7694,7 +7694,7 @@
       },
       {
         "name_kr": "06 치키",
-        "name_vi": "Phân loại #7",
+        "name_vi": "06 Cheeky (Đỏ Hồng Tinh Nghịch)",
         "price_krw": 20700,
         "status": "available",
         "is_sold_out": false,
@@ -7712,7 +7712,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/5/1155979922120657938.jpg",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "07 밀키모카",
-        "name_vi": "Phân loại #8",
+        "name_vi": "07 Milky Mocha (Nâu Cam Mocha)",
         "discount_rate": "10%",
         "price_krw": 20700
       },
@@ -7721,7 +7721,7 @@
         "is_sold_out": false,
         "status": "available",
         "price_krw": 20700,
-        "name_vi": "Phân loại #9",
+        "name_vi": "09 Litchi (Hồng Vải Trong Veo)",
         "name_kr": "09 리치",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/7/2971332451953957075.jpg",
         "id": "opt_A000000212749_9",
@@ -7735,7 +7735,7 @@
         "status": "available",
         "is_sold_out": false,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/7/488122723711477148.jpg",
-        "name_vi": "Phân loại #10",
+        "name_vi": "10 Raw Berry (Hồng Dâu Mọng)",
         "name_kr": "10 로베리",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "id": "opt_A000000212749_10"
@@ -7744,7 +7744,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "is_sold_out": false,
         "price_krw": 20700,
-        "name_vi": "Phân loại #11",
+        "name_vi": "11 Cloud Peach (Đào Mây Dịu)",
         "name_kr": "11 클라우드 피치",
         "discount_rate": "10%",
         "id": "opt_A000000212749_11",
@@ -7758,7 +7758,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "status": "available",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/1/2240328159423343237.jpg",
-        "name_vi": "Phân loại #12",
+        "name_vi": "12 Peach Nut (Đào Ấm Nude)",
         "name_kr": "12 피치넛",
         "price_vnd": 423832,
         "id": "opt_A000000212749_12",
@@ -7882,7 +7882,7 @@
         "status": "available",
         "price_vnd": 423832,
         "name_kr": "03 헬시스마일",
-        "name_vi": "Phân loại #22"
+        "name_vi": "03 Healthy Smile (Hồng Tươi)"
       },
       {
         "is_sold_out": false,
@@ -7904,7 +7904,7 @@
         "id": "opt_A000000212749_24",
         "discount_rate": "10%",
         "status": "available",
-        "name_vi": "Phân loại #24",
+        "name_vi": "04 Mischievous (Cam San Hô)",
         "name_kr": "04 미스치버스",
         "price_krw": 20700
       },
@@ -7930,7 +7930,7 @@
         "price_krw": 20700,
         "status": "available",
         "name_kr": "08 핑크티",
-        "name_vi": "Phân loại #26"
+        "name_vi": "08 Pink Tea (Hồng Trà Thanh Lịch)"
       },
       {
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
@@ -8120,7 +8120,7 @@
         "id": "opt_A000000213569_9",
         "price_vnd": 305078,
         "name_kr": "노글루 퓨어 라이트",
-        "name_vi": "Phân loại #9",
+        "name_vi": "Không Keo Tự Dính: Pure Light (Tự Nhiên Thanh Thoát)",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/8849553248433506177.jpg"
       },
@@ -8128,7 +8128,7 @@
         "price_vnd": 305078,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/7218105153986867889.jpg",
         "name_kr": "노글루 체리콕 라이트",
-        "name_vi": "Phân loại #10",
+        "name_vi": "Không Keo Tự Dính: Cherry Coke Light",
         "status": "available",
         "price_krw": 14900,
         "id": "opt_A000000213569_10",
@@ -8144,7 +8144,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/4393071662080843561.jpg",
         "discount_rate": "25%",
         "price_vnd": 305078,
-        "name_vi": "Phân loại #11",
+        "name_vi": "Không Keo Tự Dính: Muse Light (Nàng Thơ Dịu Dàng)",
         "name_kr": "노글루 뮤즈 라이트",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
       },
@@ -8155,13 +8155,13 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "id": "opt_A000000213569_12",
         "name_kr": "노글루 블라썸 라이트",
-        "name_vi": "Phân loại #12",
+        "name_vi": "Không Keo Tự Dính: Blossom Light (Nở Rộ Ngọt Ngào)",
         "price_vnd": 305078,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/7711212794812984282.jpg",
         "discount_rate": "25%"
       },
       {
-        "name_vi": "Phân loại #13",
+        "name_vi": "Không Keo Tự Dính: Filter Light (Hiệu Ứng Filter)",
         "name_kr": "노글루 필터 라이트",
         "status": "available",
         "is_sold_out": false,
@@ -8174,7 +8174,7 @@
       },
       {
         "name_kr": "노글루 메이플 라이트",
-        "name_vi": "Phân loại #14",
+        "name_vi": "Không Keo Tự Dính: Maple Light (Lá Phong Nồng Ấm)",
         "status": "available",
         "is_sold_out": false,
         "id": "opt_A000000213569_14",
@@ -8189,7 +8189,7 @@
         "discount_rate": "25%",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 14900,
-        "name_vi": "Phân loại #15",
+        "name_vi": "Không Keo Tự Dính: Cats Light (Mắt Mèo Quyến Rũ)",
         "name_kr": "노글루 캣츠 라이트",
         "is_sold_out": false,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/509418983602846528.jpg",
@@ -8201,7 +8201,7 @@
         "id": "opt_A000000213569_16",
         "price_vnd": 305078,
         "name_kr": "노글루 언더팝 베이직",
-        "name_vi": "Phân loại #16",
+        "name_vi": "Không Keo Tự Dính: Under Pop Basic (Mi Dưới)",
         "status": "available",
         "is_sold_out": false,
         "price_krw": 14900,
@@ -8209,7 +8209,7 @@
         "discount_rate": "25%"
       },
       {
-        "name_vi": "Phân loại #17",
+        "name_vi": "Không Keo Tự Dính: Festival Basic (Lễ Hội Nổi Bật)",
         "name_kr": "노글루 페스티벌 베이직",
         "status": "available",
         "price_krw": 14900,
@@ -8226,7 +8226,7 @@
         "price_krw": 14900,
         "id": "opt_A000000213569_18",
         "name_kr": "노글루 스파클 베이직",
-        "name_vi": "Phân loại #18",
+        "name_vi": "Không Keo Tự Dính: Sparkle Basic (Lấp Lánh Tỏa Sáng)",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/5/2065117570736381656.jpg",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 305078,
@@ -8236,7 +8236,7 @@
         "id": "opt_A000000213569_19",
         "discount_rate": "25%",
         "price_krw": 14900,
-        "name_vi": "Phân loại #19",
+        "name_vi": "Nhíp Gắp Chuyên Dụng Pro Fit Tweezer",
         "name_kr": "프로핏 트위저",
         "is_sold_out": false,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/4910328362085094721.jpg",
@@ -8253,7 +8253,7 @@
         "status": "available",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/2/266927266847784584.jpg",
         "name_kr": "프로 컬링 부분 뷰러",
-        "name_vi": "Phân loại #20",
+        "name_vi": "Kẹp Bấm Mi Từng Phần Pro Curling Eyelash Curler",
         "price_vnd": 305078
       }
     ],
@@ -10446,7 +10446,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "id": "opt_A000000233171_11",
         "name_kr": "[전용퍼프] 커버핏 쿠션 퍼프 5P",
-        "name_vi": "Phân loại #11",
+        "name_vi": "[Bông Phấn Chuyên Dụng] Cover Fit Cushion Puff Set 5 Miếng",
         "price_vnd": 735257,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/10/6470076443281844840.png"
       },
@@ -10806,7 +10806,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/3/2779681068694829927.jpg",
         "status": "available",
         "name_kr": "[공동개발] 11호 누디티 피치",
-        "name_vi": "Phân loại #14",
+        "name_vi": "[Bản Đồng Phát Triển] Số 11 Nudity Peach",
         "price_krw": 17100
       },
       {
@@ -10818,7 +10818,7 @@
         "price_vnd": 350122,
         "discount_rate": "10%",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/3/1155303743152825064.jpg",
-        "name_vi": "Phân loại #15",
+        "name_vi": "[Bản Đồng Phát Triển] Số 12 Nudity Pink",
         "name_kr": "[공동개발] 12호 누디티 핑크"
       },
       {
@@ -10829,13 +10829,13 @@
         "status": "available",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "[공동개발] 13호 누디티 로즈",
-        "name_vi": "Phân loại #16",
+        "name_vi": "[Bản Đồng Phát Triển] Số 13 Nudity Rose",
         "price_krw": 17100,
         "id": "opt_A000000234394_16"
       },
       {
         "name_kr": "[공동개발] 14호 누디티 모브",
-        "name_vi": "Phân loại #17",
+        "name_vi": "[Bản Đồng Phát Triển] Số 14 Nudity Mauve",
         "id": "opt_A000000234394_17",
         "price_vnd": 350122,
         "status": "available",
@@ -10951,7 +10951,7 @@
         "price_krw": 24200,
         "id": "opt_A000000234422_5",
         "name_kr": "클리어 단품",
-        "name_vi": "Phân loại #5",
+        "name_vi": "Dòng Làm Sạch Sâu Clear (Bản Lẻ)",
         "price_vnd": 495495,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/9217773251248979165.jpg",
@@ -10961,7 +10961,7 @@
       },
       {
         "discount_rate": "15%",
-        "name_vi": "Phân loại #6",
+        "name_vi": "Dòng Dưỡng Sáng Da Bright (Bản Lẻ)",
         "name_kr": "브라이트 단품",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/12/4398607094175213901.jpg",
         "status": "available",
@@ -11599,7 +11599,7 @@
         "status": "available",
         "price_vnd": 202702,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
-        "name_vi": "Phân loại #1",
+        "name_vi": "[Set Hangyodon] 02 Nucadamia",
         "name_kr": "[한교동 기획] 02 누카다미아",
         "discount_rate": "23%",
         "is_sold_out": false,
@@ -11610,7 +11610,7 @@
         "id": "opt_A000000241210_2",
         "is_sold_out": false,
         "discount_rate": "23%",
-        "name_vi": "Phân loại #2",
+        "name_vi": "[Set Kuromi] 03 Bare Grape",
         "name_kr": "[쿠로미 기획] 03 베어 그레이프",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 9900,
@@ -11625,7 +11625,7 @@
         "status": "available",
         "price_krw": 9900,
         "is_sold_out": false,
-        "name_vi": "Phân loại #3",
+        "name_vi": "[Set Hangyodon] 04 FigFig",
         "name_kr": "[한교동 기획] 04 피그피그",
         "discount_rate": "23%",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
@@ -11686,7 +11686,7 @@
         "id": "opt_A000000241210_8",
         "is_sold_out": false,
         "name_kr": "[올리브영단독] 01 포멜로스킨",
-        "name_vi": "Phân loại #8",
+        "name_vi": "[Độc quyền Olive Young] 01 Pomelo Skin",
         "price_krw": 9900,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc"
       },
@@ -11694,7 +11694,7 @@
         "discount_rate": "23%",
         "price_krw": 9900,
         "name_kr": "[올리브영단독] 02 누카다미아",
-        "name_vi": "Phân loại #9",
+        "name_vi": "[Độc quyền Olive Young] 02 Nucadamia",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "is_sold_out": false,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/2315168060667064912.jpg",
@@ -11711,7 +11711,7 @@
         "is_sold_out": false,
         "discount_rate": "23%",
         "name_kr": "05 쥬쥬브",
-        "name_vi": "Phân loại #10",
+        "name_vi": "05 Jujube (Táo đỏ)",
         "price_krw": 9900
       },
       {
@@ -11722,7 +11722,7 @@
         "discount_rate": "23%",
         "price_vnd": 202702,
         "is_sold_out": false,
-        "name_vi": "Phân loại #11",
+        "name_vi": "[Độc quyền Olive Young] 06 Fig Fig Cherry",
         "name_kr": "[올리브영단독] 06 필링앵두",
         "price_krw": 9900
       },
@@ -11736,11 +11736,11 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "status": "available",
         "name_kr": "07 체리밤",
-        "name_vi": "Phân loại #12"
+        "name_vi": "07 Cherry Bomb"
       },
       {
         "price_krw": 9900,
-        "name_vi": "Phân loại #13",
+        "name_vi": "08 Pink Pumpkin",
         "name_kr": "08 핑크 펌킨",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/3678358668803487406.jpg",
@@ -11755,7 +11755,7 @@
         "price_krw": 9900,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "discount_rate": "23%",
-        "name_vi": "Phân loại #14",
+        "name_vi": "09 Mulled Peach",
         "name_kr": "09 멀드 피치",
         "id": "opt_A000000241210_14",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/6600941552138993684.jpg",
@@ -11766,7 +11766,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/5328066309457434094.jpg",
         "price_vnd": 202702,
         "is_sold_out": false,
-        "name_vi": "Phân loại #15",
+        "name_vi": "10 Bare Apricot",
         "name_kr": "10 베어 애프리콧",
         "discount_rate": "23%",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
@@ -11782,7 +11782,7 @@
         "status": "available",
         "price_vnd": 202702,
         "discount_rate": "23%",
-        "name_vi": "Phân loại #16",
+        "name_vi": "11 Papaya Jam",
         "name_kr": "11 파파야 잼",
         "id": "opt_A000000241210_16"
       },
@@ -11790,7 +11790,7 @@
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/4470476878793622261.jpg",
         "price_vnd": 202702,
         "discount_rate": "23%",
-        "name_vi": "Phân loại #17",
+        "name_vi": "13 Eat Dotori",
         "name_kr": "13 잇 도토리",
         "id": "opt_A000000241210_17",
         "price_krw": 9900,
@@ -11805,13 +11805,13 @@
         "discount_rate": "23%",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_vnd": 202702,
-        "name_vi": "Phân loại #18",
+        "name_vi": "14 Almond Rose",
         "name_kr": "14 아몬드 로즈",
         "status": "available",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/5196262902576247466.jpg"
       },
       {
-        "name_vi": "Phân loại #19",
+        "name_vi": "16 Plum Coke",
         "name_kr": "16 플럼 콕",
         "price_vnd": 202702,
         "status": "available",
@@ -11824,7 +11824,7 @@
       },
       {
         "name_kr": "19 썸머 센트",
-        "name_vi": "Phân loại #20",
+        "name_vi": "19 Summer Scent",
         "price_krw": 9900,
         "status": "available",
         "id": "opt_A000000241210_20",
@@ -11838,7 +11838,7 @@
         "price_vnd": 202702,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/4448105031815045437.jpg",
         "id": "opt_A000000241210_21",
-        "name_vi": "Phân loại #21",
+        "name_vi": "20 Juju Fig",
         "name_kr": "20 쥬쥬 피그",
         "price_krw": 9900,
         "discount_rate": "23%",
@@ -11852,7 +11852,7 @@
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 9900,
         "is_sold_out": false,
-        "name_vi": "Phân loại #22",
+        "name_vi": "21 Grape Bomb",
         "name_kr": "21 그레이프 밤",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/3776773851959613389.jpg",
         "id": "opt_A000000241210_22",
@@ -11861,7 +11861,7 @@
       {
         "id": "opt_A000000241210_23",
         "name_kr": "22 도토리 밤",
-        "name_vi": "Phân loại #23",
+        "name_vi": "22 Dotori Bomb",
         "is_sold_out": false,
         "status": "available",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/4649356660134005964.jpg",
@@ -11879,7 +11879,7 @@
         "price_krw": 9900,
         "id": "opt_A000000241210_24",
         "status": "available",
-        "name_vi": "Phân loại #24",
+        "name_vi": "[Độc quyền Olive Young] 23 Peach Peach Me",
         "name_kr": "[올리브영단독] 23 피치 피치 미"
       },
       {
@@ -11890,7 +11890,7 @@
         "is_sold_out": false,
         "id": "opt_A000000241210_25",
         "name_kr": "24 베어 쥬시 오",
-        "name_vi": "Phân loại #25",
+        "name_vi": "24 Bare Juicy Oh",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "discount_rate": "23%"
       },
@@ -11902,12 +11902,12 @@
         "is_sold_out": false,
         "price_vnd": 202702,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/13479349471662698.jpg",
-        "name_vi": "Phân loại #26",
+        "name_vi": "26 Đào Tiên (Mystic Peach)",
         "status": "available",
         "name_kr": "26 신비 복숭아"
       },
       {
-        "name_vi": "Phân loại #27",
+        "name_vi": "27 Dưa Lưới Mật (Honey Dew Melon)",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "27 허니 듀 멜론",
         "id": "opt_A000000241210_27",
@@ -11926,14 +11926,14 @@
         "price_vnd": 202702,
         "status": "available",
         "name_kr": "28 설화 딸기",
-        "name_vi": "Phân loại #28",
+        "name_vi": "28 Dâu Tuyết (Snow Strawberry)",
         "is_sold_out": false,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/4194948967410377333.jpg"
       },
       {
         "price_krw": 9900,
         "name_kr": "[올리브영단독] 29 조선 무화과",
-        "name_vi": "Phân loại #29",
+        "name_vi": "[Độc quyền Olive Young] 29 Quả Vả Joseon",
         "discount_rate": "23%",
         "status": "available",
         "price_vnd": 202702,
@@ -11944,7 +11944,7 @@
       },
       {
         "name_kr": "30 보늬 밤",
-        "name_vi": "Phân loại #30",
+        "name_vi": "30 Hạt Dẻ Bọc Đường (Boni Chestnut)",
         "price_krw": 9900,
         "status": "available",
         "id": "opt_A000000241210_30",
@@ -11960,7 +11960,7 @@
         "status": "available",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "name_kr": "31 탠드 코코",
-        "name_vi": "Phân loại #31",
+        "name_vi": "31 Tanned Choco",
         "is_sold_out": false,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/2599148664124677735.jpg",
         "discount_rate": "23%",
@@ -11974,7 +11974,7 @@
         "status": "available",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2025/11/8144242678711903408.jpg",
         "price_vnd": 202702,
-        "name_vi": "Phân loại #32",
+        "name_vi": "32 Tanned Guava",
         "name_kr": "32 태니 구아바",
         "id": "opt_A000000241210_32"
       },
@@ -11987,7 +11987,7 @@
         "price_vnd": 202702,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "status": "available",
-        "name_vi": "Phân loại #33",
+        "name_vi": "33 Aloha Juicy",
         "name_kr": "33 알로하 쥬시"
       },
       {
@@ -12032,7 +12032,7 @@
         "price_vnd": 202702,
         "id": "opt_A000000241210_37",
         "name_kr": "04 피그피그",
-        "name_vi": "Phân loại #37",
+        "name_vi": "04 FigFig",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "discount_rate": "23%",
         "is_sold_out": false,
@@ -12042,7 +12042,7 @@
         "price_krw": 9900,
         "id": "opt_A000000241210_38",
         "name_kr": "15 베어 피그",
-        "name_vi": "Phân loại #38",
+        "name_vi": "15 Bare Fig",
         "status": "available",
         "price_vnd": 202702,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
@@ -16724,7 +16724,7 @@
     "nameKr": "[9월올영픽/산리오콜라보] 메이크프렘 세이프 미 클렌징밀크 200ml기획 (+리필 200ml+미니21ml+손목세안밴드)",
     "options": [
       {
-        "name_vi": "Phân loại #1",
+        "name_vi": "Sữa Rửa Mặt Safe Me (Set Đặc Biệt Pompompurin)",
         "name_kr": "세이프 미 클렌징밀크 폼폼푸린 기획",
         "is_sold_out": false,
         "status": "available",
@@ -16755,12 +16755,12 @@
         "price_krw": 21900,
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "is_sold_out": false,
-        "name_vi": "Phân loại #3",
+        "name_vi": "Sữa Rửa Mặt Safe Me (Set Kèm Mút Nưa Trái Tim Konjac)",
         "name_kr": "세이프 미 클렌징밀크 하트곤약기획",
         "status": "available"
       },
       {
-        "name_vi": "Phân loại #4",
+        "name_vi": "Sữa Rửa Mặt Safe Me (Set Kèm Miếng Bọt Biển Tự Nhiên)",
         "name_kr": "세이프 미 클렌징밀크 해면스펀지 기획",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "price_krw": 21900,
@@ -17187,7 +17187,7 @@
       {
         "id": "opt_A000000262835_1",
         "name_kr": "[마이멜로디 기획] 글로우 커버 크림",
-        "name_vi": "Phân loại #1",
+        "name_vi": "[Set My Melody] Kem Nền Căng Bóng Glow Cover Cream",
         "status": "available",
         "price_krw": 13600,
         "discount_rate": "32%",
@@ -17202,7 +17202,7 @@
         "id": "opt_A000000262835_2",
         "discount_rate": "32%",
         "is_sold_out": false,
-        "name_vi": "Phân loại #2",
+        "name_vi": "[Set Kuromi] Kem Che Khuyết Điểm Hiệu Chỉnh Blur Purple Cream",
         "name_kr": "[쿠로미 기획] 블러 퍼플 크림",
         "price_vnd": 278460,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/4286881536181389561.jpg",
@@ -18475,7 +18475,7 @@
         "status": "available",
         "price_vnd": 491400,
         "name_kr": "폼클렌저 2입+포차코 파우치형 장바구니",
-        "name_vi": "Phân loại #1",
+        "name_vi": "Sữa Rửa Mặt Tạo Bọt (Set 2 Tuýp + Túi Pochacco)",
         "id": "opt_A000000263428_1",
         "discount_rate": "17%",
         "price_krw": 24000
@@ -18489,7 +18489,7 @@
         "price_vnd": 491400,
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/1162794256652345805.png",
         "status": "available",
-        "name_vi": "Phân loại #2",
+        "name_vi": "Sữa Rửa Mặt Tạo Bọt (Set Tiết Kiệm 2 Tuýp)",
         "name_kr": "폼클렌저 2입"
       },
       {
@@ -18881,7 +18881,7 @@
       {
         "is_sold_out": false,
         "name_kr": "파우더핑크(올영단독컬러)",
-        "name_vi": "Phân loại #3",
+        "name_vi": "Hồng Phấn Powder Pink (Màu Độc Quyền Olive Young)",
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/8/2302664252166360068.png",
         "subtitle_vi": "Chính hãng nội địa Hàn Quốc",
         "id": "opt_A000000263630_3",
@@ -18893,7 +18893,7 @@
       {
         "price_krw": 68900,
         "name_kr": "차콜그레이",
-        "name_vi": "Phân loại #4",
+        "name_vi": "Xám Than Charcoal Gray",
         "status": "available",
         "discount_rate": "18%",
         "is_sold_out": false,
@@ -19491,7 +19491,7 @@
     "category": "cosmetics",
     "options": [
       {
-        "name_vi": "Mascara Đầu Kim Loại Tekira Anti Gravity - Màu 01 Đen Tự Nhiên (Black)",
+        "name_vi": "01 Đen (Black)",
         "name_kr": "01 블랙",
         "price_vnd": 343980,
         "status": "available",

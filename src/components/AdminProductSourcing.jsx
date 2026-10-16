@@ -733,8 +733,8 @@ export default function AdminProductSourcing({ isDark: isDarkProp, initialSubTab
                 <button
                   onClick={handleApproveAll}
                   style={{
-                    backgroundColor: '#7A4B9E',
-                    color: '#FFF',
+                    backgroundColor: 'var(--text-dark, #000000)',
+                    color: 'var(--bg-white, #FFF)',
                     border: 'none',
                     borderRadius: '8px',
                     padding: '8px 16px',

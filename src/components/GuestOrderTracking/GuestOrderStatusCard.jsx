@@ -89,7 +89,7 @@ export default function GuestOrderStatusCard({
     <div
       className="guest-order-status-card"
       style={{
-        backgroundColor: '#FFFFFF',
+        backgroundColor: 'var(--card-bg, #FFFFFF)',
         borderRadius: '20px',
         border: '1px solid var(--border-color, #E5E7EB)',
         boxShadow: '0 12px 32px rgba(122, 75, 158, 0.08), 0 2px 8px rgba(0,0,0,0.04)',
@@ -102,8 +102,8 @@ export default function GuestOrderStatusCard({
       <div
         style={{
           padding: '20px 24px',
-          background: 'linear-gradient(135deg, #FAF8F5 0%, #F5EFF8 100%)',
-          borderBottom: '1px solid #ECE7F0',
+          background: 'var(--bg-subtle-purple, linear-gradient(135deg, #FAF8F5 0%, #F5EFF8 100%))',
+          borderBottom: '1px solid var(--border-color, #ECE7F0)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -118,7 +118,7 @@ export default function GuestOrderStatusCard({
                 fontFamily: 'var(--font-sans, system-ui, sans-serif)',
                 fontSize: '1.15rem',
                 fontWeight: 800,
-                color: 'var(--purple-primary, #7A4B9E)',
+                color: 'var(--purple-primary, #000000)',
                 letterSpacing: '0.5px'
               }}
             >
@@ -164,7 +164,7 @@ export default function GuestOrderStatusCard({
             }}
           >
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
-              <User size={14} style={{ color: 'var(--purple-primary, #7A4B9E)' }} />
+              <User size={14} style={{ color: 'var(--purple-primary, #000000)' }} />
               <strong>{order.customerName || order.userName || 'Khách Hàng'}</strong>
               {(order.customerPhone || order.phone) && ` • ${order.customerPhone || order.phone}`}
             </span>
@@ -239,8 +239,8 @@ export default function GuestOrderStatusCard({
                   style={{
                     padding: '6px 14px',
                     borderRadius: '16px',
-                    border: isActive ? '2px solid var(--purple-primary, #7A4B9E)' : '1px solid #CBD5E1',
-                    backgroundColor: isActive ? 'var(--purple-primary, #7A4B9E)' : '#FFFFFF',
+                    border: isActive ? '2px solid var(--purple-primary, #000000)' : '1px solid #CBD5E1',
+                    backgroundColor: isActive ? 'var(--purple-primary, #000000)' : '#FFFFFF',
                     color: isActive ? '#FFFFFF' : '#334155',
                     fontWeight: isActive ? 700 : 500,
                     fontSize: '0.8rem',
@@ -276,7 +276,7 @@ export default function GuestOrderStatusCard({
       )}
 
       {/* 3. Visual 8-Step Timeline Section */}
-      <div style={{ padding: '20px 24px 24px 24px', backgroundColor: '#FFFFFF' }}>
+      <div style={{ padding: '20px 24px 24px 24px', backgroundColor: 'var(--card-bg, #FFFFFF)' }}>
         {/* Stepper Container */}
         {isCancelled ? (
           <div
@@ -330,7 +330,7 @@ export default function GuestOrderStatusCard({
                   style={{
                     height: '100%',
                     width: stepProgress.progressPercent,
-                    backgroundColor: 'var(--purple-primary, #7A4B9E)',
+                    backgroundColor: 'var(--purple-primary, #000000)',
                     transition: 'width 0.4s ease'
                   }}
                 />
@@ -345,9 +345,9 @@ export default function GuestOrderStatusCard({
                 let circleBorder = '2px solid #D1D5DB';
 
                 if (isCompleted) {
-                  circleBg = 'var(--purple-primary, #7A4B9E)';
+                  circleBg = 'var(--purple-primary, #000000)';
                   circleColor = '#FFFFFF';
-                  circleBorder = '2px solid var(--purple-primary, #7A4B9E)';
+                  circleBorder = '2px solid var(--purple-primary, #000000)';
                 } else if (isActive) {
                   circleBg = '#ECFDF5';
                   circleColor = '#047857';
@@ -502,9 +502,9 @@ export default function GuestOrderStatusCard({
         <div
           style={{
             padding: '20px 24px',
-            backgroundColor: '#FAF9F6',
-            borderTop: '1px solid #ECE7F0',
-            borderBottom: '1px solid #ECE7F0'
+            backgroundColor: 'var(--bg-subtle-purple, #FAF9F6)',
+            borderTop: '1px solid var(--border-color, #ECE7F0)',
+            borderBottom: '1px solid var(--border-color, #ECE7F0)'
           }}
         >
         {/* Showcase các bằng chứng minh bạch (Video mua hàng & Bill mua hàng) */}
@@ -523,8 +523,8 @@ export default function GuestOrderStatusCard({
             <div style={{
               borderRadius: '14px',
               overflow: 'hidden',
-              border: '1px solid #E2E8F0',
-              backgroundColor: '#FFFFFF',
+              border: '1px solid var(--border-color, #E2E8F0)',
+              backgroundColor: 'var(--card-bg, #FFFFFF)',
               boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)',
               display: 'flex',
               flexDirection: 'column'
@@ -535,11 +535,11 @@ export default function GuestOrderStatusCard({
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 padding: '10px 14px',
-                backgroundColor: '#FAF9F6',
-                borderBottom: '1px solid #EAE6DF'
+                backgroundColor: 'var(--bg-subtle-purple, #FAF9F6)',
+                borderBottom: '1px solid var(--border-color, #EAE6DF)'
               }}>
-                <span style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '0.86rem', fontWeight: 700, color: '#1F2937' }}>
-                  <Video size={16} style={{ color: 'var(--purple-primary, #7A4B9E)' }} />
+                <span style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-dark, #1F2937)' }}>
+                  <Video size={16} style={{ color: 'var(--purple-primary, #000000)' }} />
                   Video mua hàng
                 </span>
                 {proofData.povVideoUrl && proofData.packingVideoUrl && (
@@ -548,7 +548,7 @@ export default function GuestOrderStatusCard({
                       type="button"
                       onClick={() => setActiveInlineVideo('pov')}
                       style={{
-                        background: activeInlineVideo !== 'packing' ? 'var(--purple-primary, #7A4B9E)' : 'transparent',
+                        background: activeInlineVideo !== 'packing' ? 'var(--purple-primary, #000000)' : 'transparent',
                         color: activeInlineVideo !== 'packing' ? '#FFFFFF' : '#6B7280',
                         border: 'none',
                         borderRadius: '6px',
@@ -611,8 +611,8 @@ export default function GuestOrderStatusCard({
             <div style={{
               borderRadius: '14px',
               overflow: 'hidden',
-              border: '1px solid #E2E8F0',
-              backgroundColor: '#FFFFFF',
+              border: '1px solid var(--border-color, #E2E8F0)',
+              backgroundColor: 'var(--card-bg, #FFFFFF)',
               boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)',
               display: 'flex',
               flexDirection: 'column'
@@ -622,11 +622,11 @@ export default function GuestOrderStatusCard({
                 display: 'flex',
                 alignItems: 'center',
                 padding: '10px 14px',
-                backgroundColor: '#FAF9F6',
-                borderBottom: '1px solid #EAE6DF'
+                backgroundColor: 'var(--bg-subtle-purple, #FAF9F6)',
+                borderBottom: '1px solid var(--border-color, #EAE6DF)'
               }}>
-                <span style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '0.86rem', fontWeight: 700, color: '#1F2937' }}>
-                  <FileText size={16} style={{ color: 'var(--purple-primary, #7A4B9E)' }} />
+                <span style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-dark, #1F2937)' }}>
+                  <FileText size={16} style={{ color: 'var(--purple-primary, #000000)' }} />
                   Bill mua hàng
                 </span>
               </div>
@@ -839,7 +839,7 @@ export default function GuestOrderStatusCard({
       )}
 
       {/* 5. Order Summary (Items & Total Amount) */}
-      <div style={{ padding: '20px 24px', backgroundColor: '#FFFFFF' }}>
+      <div style={{ padding: '20px 24px', backgroundColor: 'var(--card-bg, #FFFFFF)' }}>
         <h4
           style={{
             fontSize: '0.92rem',
@@ -851,7 +851,7 @@ export default function GuestOrderStatusCard({
             gap: '6px'
           }}
         >
-          <Package size={18} style={{ color: 'var(--purple-primary, #7A4B9E)' }} />
+          <Package size={18} style={{ color: 'var(--purple-primary, #000000)' }} />
           Chi Tiết Sản Phẩm Trong Đơn Hàng
         </h4>
 
@@ -870,8 +870,8 @@ export default function GuestOrderStatusCard({
                   justifyContent: 'space-between',
                   padding: '10px 14px',
                   borderRadius: '12px',
-                  backgroundColor: '#FAF9F6',
-                  border: '1px solid #EAE6DF',
+                  backgroundColor: 'var(--bg-subtle-purple, #FAF9F6)',
+                  border: '1px solid var(--border-color, #EAE6DF)',
                   gap: '12px',
                   flexWrap: 'wrap'
                 }}
@@ -885,8 +885,8 @@ export default function GuestOrderStatusCard({
                       height: '48px',
                       borderRadius: '8px',
                       objectFit: 'cover',
-                      border: '1px solid #E5E7EB',
-                      backgroundColor: '#FFFFFF',
+                      border: '1px solid var(--border-color, #E5E7EB)',
+                      backgroundColor: 'var(--bg-white, #FFFFFF)',
                       flexShrink: 0
                     }}
                     onError={(e) => {
@@ -894,18 +894,18 @@ export default function GuestOrderStatusCard({
                     }}
                   />
                   <div>
-                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#1F2937' }}>
+                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-dark, #1F2937)' }}>
                       {item.name || item.productName || 'Sản phẩm mua hộ Hàn Quốc'}
                     </div>
-                    <div style={{ fontSize: '0.78rem', color: '#6B7280', marginTop: '2px' }}>
-                      {item.brand && <span style={{ fontWeight: 600, color: 'var(--purple-primary, #7A4B9E)' }}>{item.brand}</span>}
+                    <div style={{ fontSize: '0.78rem', color: 'var(--text-muted, #6B7280)', marginTop: '2px' }}>
+                      {item.brand && <span style={{ fontWeight: 600, color: 'var(--purple-primary, #000000)' }}>{item.brand}</span>}
                       {item.options && <span> • Phân loại: {item.options}</span>}
                     </div>
                   </div>
                 </div>
 
                 <div style={{ textAlign: 'right', minWidth: '120px' }}>
-                  <div style={{ fontSize: '0.92rem', fontWeight: 800, color: '#1F2937' }}>
+                  <div style={{ fontSize: '0.92rem', fontWeight: 800, color: 'var(--text-dark, #1F2937)' }}>
                     {formatVnd(lineTotal)}
                   </div>
                   <div style={{ fontSize: '0.78rem', color: '#6B7280' }}>
@@ -935,7 +935,7 @@ export default function GuestOrderStatusCard({
               style={{
                 fontSize: '1.35rem',
                 fontWeight: 800,
-                color: 'var(--purple-primary, #7A4B9E)',
+                color: 'var(--purple-primary, #000000)',
                 letterSpacing: '0.2px'
               }}
             >
@@ -953,7 +953,7 @@ export default function GuestOrderStatusCard({
                 gap: '8px',
                 padding: '12px 24px',
                 borderRadius: '30px',
-                backgroundColor: 'var(--gold-primary, #C5A059)',
+                backgroundColor: 'var(--gold-primary, #000000)',
                 color: '#FFFFFF',
                 textDecoration: 'none',
                 fontWeight: 700,

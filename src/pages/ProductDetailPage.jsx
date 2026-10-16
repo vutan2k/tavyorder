@@ -5,9 +5,6 @@ import {
   ShoppingBag, 
   ChevronRight, 
   ArrowLeft, 
-  ShieldCheck, 
-  Plane, 
-  Sparkles, 
   Check, 
   Star, 
   Share2, 
@@ -16,6 +13,7 @@ import {
 import { AppContext } from '../context/AppContext';
 import { formatVnd, formatKrw, getVndFromWon } from '../utils/priceCalculator';
 import { extractGoodsNoFromSlug, generateProductSlug, getProductUrl } from '../utils/slugify';
+import { getOptionDisplayName } from '../utils/koreanOptionTranslator';
 import OptimizedImage from '../components/OptimizedImage';
 import Footer from '../components/Footer';
 
@@ -138,15 +136,15 @@ export default function ProductDetailPage() {
 
   // Tính giá sản phẩm
   const activeWonPrice = useMemo(() => {
-    if (activeOption && (activeOption.price || activeOption.sale_price)) {
-      return Number(activeOption.price || activeOption.sale_price) || 0;
+    if (activeOption && (activeOption.price_krw || activeOption.price || activeOption.sale_price)) {
+      return Number(activeOption.price_krw || activeOption.price || activeOption.sale_price) || 0;
     }
     return Number(product?.foreignPrice ?? product?.priceKrw ?? product?.priceWon ?? product?.price) || 0;
   }, [product, activeOption]);
 
   const activeOriginalWonPrice = useMemo(() => {
-    if (activeOption && activeOption.origin_price) {
-      return Number(activeOption.origin_price) || 0;
+    if (activeOption && (activeOption.original_price_krw || activeOption.origin_price)) {
+      return Number(activeOption.original_price_krw || activeOption.origin_price) || 0;
     }
     return Number(product?.originalPrice || product?.origin_price_krw) || 0;
   }, [product, activeOption]);
@@ -187,7 +185,7 @@ export default function ProductDetailPage() {
     const cartItem = {
       ...product,
       selectedOption: activeOption,
-      selectedOptionName: activeOption?.name || activeOption?.title || null,
+      selectedOptionName: activeOption ? getOptionDisplayName(activeOption, selectedOptionIndex) : null,
       priceVnd: calculatedVnd,
       foreignPrice: activeWonPrice,
       qty: 1
@@ -218,7 +216,7 @@ export default function ProductDetailPage() {
     return (
       <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ textAlign: 'center' }}>
-          <div className="animate-spin" style={{ width: 40, height: 40, border: '3px solid #E5E7EB', borderTopColor: '#7A4B9E', borderRadius: '50%', margin: '0 auto 16px' }} />
+          <div className="animate-spin" style={{ width: 40, height: 40, border: '3px solid #E5E7EB', borderTopColor: 'var(--text-dark, #000000)', borderRadius: '50%', margin: '0 auto 16px' }} />
           <p style={{ color: '#6B7280', fontSize: '0.9rem' }}>Đang tải thông tin sản phẩm...</p>
         </div>
       </div>
@@ -297,19 +295,19 @@ export default function ProductDetailPage() {
       </Helmet>
 
       {/* Breadcrumb */}
-      <div style={{ backgroundColor: '#FFFFFF', borderBottom: '1px solid var(--border-color, #E5E7EB)', padding: '12px 16px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.82rem', color: '#6B7280', flexWrap: 'wrap' }}>
-          <Link to="/" style={{ color: '#4B5563', textDecoration: 'none' }}>Trang chủ</Link>
+      <div style={{ backgroundColor: 'var(--bg-white, #FFFFFF)', borderBottom: '1px solid var(--border-color, #E5E7EB)', padding: '12px 16px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.82rem', color: 'var(--text-muted, #6B7280)', flexWrap: 'wrap' }}>
+          <Link to="/" style={{ color: 'var(--text-muted, #4B5563)', textDecoration: 'none' }}>Trang chủ</Link>
           <ChevronRight size={14} />
-          <Link to="/#products" style={{ color: '#4B5563', textDecoration: 'none' }}>Mỹ phẩm Olive Young</Link>
+          <Link to="/#products" style={{ color: 'var(--text-muted, #4B5563)', textDecoration: 'none' }}>Mỹ phẩm Olive Young</Link>
           {product.brand && (
             <>
               <ChevronRight size={14} />
-              <span style={{ color: '#4B5563' }}>{product.brand}</span>
+              <span style={{ color: 'var(--text-muted, #4B5563)' }}>{product.brand}</span>
             </>
           )}
           <ChevronRight size={14} />
-          <span style={{ color: '#111827', fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '300px' }}>
+          <span style={{ color: 'var(--text-dark, #111827)', fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '300px' }}>
             {product.name}
           </span>
         </div>
@@ -324,7 +322,7 @@ export default function ProductDetailPage() {
             <div style={{ 
               borderRadius: '16px', 
               overflow: 'hidden', 
-              backgroundColor: '#FFFFFF', 
+              backgroundColor: 'var(--card-bg, #FFFFFF)', 
               border: '1px solid var(--border-color, #E5E7EB)', 
               boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
               position: 'relative'
@@ -343,13 +341,13 @@ export default function ProductDetailPage() {
                   position: 'absolute',
                   top: '12px',
                   left: '12px',
-                  backgroundColor: '#7A4B9E',
-                  color: '#FFFFFF',
+                  backgroundColor: 'var(--text-dark, #000000)',
+                  color: 'var(--bg-white, #FFFFFF)',
                   padding: '4px 10px',
                   borderRadius: '20px',
                   fontSize: '0.74rem',
                   fontWeight: 700,
-                  boxShadow: '0 2px 8px rgba(122, 75, 158, 0.4)'
+                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.2)'
                 }}>
                   TOP #{product.rank} OLIVE YOUNG
                 </div>
@@ -369,9 +367,9 @@ export default function ProductDetailPage() {
                       flexShrink: 0,
                       borderRadius: '8px',
                       overflow: 'hidden',
-                      border: activeImageIndex === idx ? '2px solid #7A4B9E' : '1px solid #E5E7EB',
+                      border: activeImageIndex === idx ? '2px solid var(--text-dark, #000000)' : '1px solid var(--border-color, #E5E7EB)',
                       padding: 0,
-                      backgroundColor: '#FFFFFF',
+                      backgroundColor: 'var(--card-bg, #FFFFFF)',
                       cursor: 'pointer'
                     }}
                   >
@@ -381,23 +379,6 @@ export default function ProductDetailPage() {
               </div>
             )}
 
-            {/* Cam kết minh bạch */}
-            <div style={{ marginTop: '24px', backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: '12px', padding: '16px' }}>
-              <h4 style={{ fontSize: '0.86rem', fontWeight: 700, marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <ShieldCheck size={18} color="#10B981" /> CAM KẾT ORDER MINH BẠCH 100%
-              </h4>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.8rem', color: '#4B5563', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <Check size={14} color="#10B981" /> Mua trực tiếp tại Olive Young Hàn Quốc, kèm ảnh chụp hoá đơn thật.
-                </li>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <Plane size={14} color="#3B82F6" /> Vận chuyển hàng không chuyên tuyến Hàn - Việt (3-5 ngày).
-                </li>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <Sparkles size={14} color="#F59E0B" /> Đền bù 200% nếu phát hiện hàng giả, hàng không rõ nguồn gốc.
-                </li>
-              </ul>
-            </div>
           </div>
 
           {/* CỘT PHẢI: THÔNG TIN VÀ NÚT MUA HÀNG */}
@@ -406,7 +387,7 @@ export default function ProductDetailPage() {
               <span style={{ 
                 fontSize: '0.76rem', 
                 fontWeight: 700, 
-                color: '#7A4B9E', 
+                color: 'var(--text-muted, #71717A)', 
                 textTransform: 'uppercase', 
                 letterSpacing: '0.5px' 
               }}>
@@ -420,11 +401,11 @@ export default function ProductDetailPage() {
                   alignItems: 'center',
                   gap: '4px',
                   background: 'none',
-                  border: '1px solid #E5E7EB',
+                  border: '1px solid var(--border-color, #E4E4E7)',
                   padding: '4px 10px',
                   borderRadius: '20px',
                   fontSize: '0.74rem',
-                  color: '#4B5563',
+                  color: 'var(--text-muted, #71717A)',
                   cursor: 'pointer'
                 }}
               >
@@ -432,38 +413,38 @@ export default function ProductDetailPage() {
               </button>
             </div>
 
-            <h1 style={{ fontSize: '1.45rem', fontWeight: 800, color: '#111827', lineHeight: '1.35', marginBottom: '12px' }}>
+            <h1 style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--text-dark, #000000)', lineHeight: '1.35', marginBottom: '12px' }}>
               {product.name}
             </h1>
 
             {product.nameKr && (
-              <p style={{ fontSize: '0.82rem', color: '#9CA3AF', marginBottom: '16px' }}>
+              <p style={{ fontSize: '0.82rem', color: 'var(--text-muted, #71717A)', marginBottom: '16px' }}>
                 Tên gốc: {product.nameKr}
               </p>
             )}
 
             {/* Khối Giá */}
             <div style={{ 
-              backgroundColor: '#FFFFFF', 
+              backgroundColor: 'var(--card-bg, #FFFFFF)', 
               padding: '16px', 
               borderRadius: '12px', 
-              border: '1px solid #E5E7EB', 
+              border: '1px solid var(--border-color, #E4E4E7)', 
               marginBottom: '20px',
               boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
             }}>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', flexWrap: 'wrap' }}>
-                <span style={{ fontSize: '1.75rem', fontWeight: 800, color: '#C5A059' }}>
+                <span style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--text-dark, #000000)' }}>
                   {formatVnd(calculatedVnd)}
                 </span>
                 {hasDiscount && (
-                  <span style={{ fontSize: '1rem', textDecoration: 'line-through', color: '#9CA3AF' }}>
+                  <span style={{ fontSize: '1rem', textDecoration: 'line-through', color: 'var(--text-muted, #71717A)' }}>
                     {formatVnd(calculatedOriginalVnd)}
                   </span>
                 )}
                 {product.discountRate && (
                   <span style={{ 
-                    backgroundColor: '#FEE2E2', 
-                    color: '#DC2626', 
+                    backgroundColor: 'var(--text-dark, #000000)', 
+                    color: 'var(--bg-white, #FFFFFF)', 
                     fontWeight: 800, 
                     fontSize: '0.78rem', 
                     padding: '2px 8px', 
@@ -473,40 +454,145 @@ export default function ProductDetailPage() {
                   </span>
                 )}
               </div>
-              <div style={{ fontSize: '0.76rem', color: '#6B7280', marginTop: '4px' }}>
+              <div style={{ fontSize: '0.76rem', color: 'var(--text-muted, #71717A)', marginTop: '4px' }}>
                 Giá gốc tại Hàn: <strong>{formatKrw(activeWonPrice)}</strong> (Tỷ giá: 1 KRW ~ {effectiveKrwRate.toFixed(1)} VNĐ)
               </div>
             </div>
 
-            {/* Chọn Phân Loại (Nếu có) */}
+            {/* Chọn Phân Loại (Chuẩn Olive Young Hàn Quốc phiên dịch Tiếng Việt) */}
             {hasOptions && (
               <div style={{ marginBottom: '24px' }}>
-                <label style={{ display: 'block', fontSize: '0.84rem', fontWeight: 700, color: '#374151', marginBottom: '8px' }}>
-                  Chọn phân loại ({options.length} lựa chọn):
-                </label>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                  <label style={{ display: 'block', fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-dark, #374151)' }}>
+                    Chọn phân loại ({options.length} lựa chọn):
+                  </label>
+                  {activeOption && (
+                    <span style={{
+                      fontSize: '0.74rem',
+                      fontWeight: 700,
+                      color: (activeOption.is_sold_out || activeOption.status === 'out_of_stock') ? '#EF4444' : '#10B981',
+                      backgroundColor: (activeOption.is_sold_out || activeOption.status === 'out_of_stock') ? '#FEE2E2' : '#D1FAE5',
+                      padding: '2px 8px',
+                      borderRadius: '6px'
+                    }}>
+                      {(activeOption.is_sold_out || activeOption.status === 'out_of_stock') ? 'Hết hàng' : 'Còn hàng tại Hàn Quốc'}
+                    </span>
+                  )}
+                </div>
+
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '8px',
+                  maxHeight: options.length > 5 ? '320px' : 'none',
+                  overflowY: options.length > 5 ? 'auto' : 'visible',
+                  paddingRight: options.length > 5 ? '4px' : '0'
+                }}>
                   {options.map((opt, oIdx) => {
                     const isSelected = selectedOptionIndex === oIdx;
+                    const isSoldOut = Boolean(opt.is_sold_out || opt.status === 'out_of_stock');
+                    const displayName = getOptionDisplayName(opt, oIdx);
+                    const optWon = Number(opt.price_krw || opt.price || opt.sale_price || activeWonPrice) || 0;
+                    const optVnd = Math.round(optWon * effectiveKrwRate);
+                    const optDiscount = opt.discount_rate || (opt.discount_percent ? `${opt.discount_percent}%` : null);
+                    const optImg = opt.image_url ? getHighResUrl(opt.image_url) : null;
+
                     return (
                       <button
-                        key={`opt-${oIdx}`}
-                        onClick={() => setSelectedOptionIndex(oIdx)}
+                        key={opt.id || `opt-${oIdx}`}
+                        type="button"
+                        disabled={isSoldOut}
+                        onClick={() => {
+                          setSelectedOptionIndex(oIdx);
+                          if (optImg) {
+                            setActiveImageIndex(0);
+                          }
+                        }}
                         style={{
-                          padding: '8px 14px',
-                          borderRadius: '8px',
-                          border: isSelected ? '2px solid #7A4B9E' : '1px solid #D1D5DB',
-                          backgroundColor: isSelected ? '#F5F3FF' : '#FFFFFF',
-                          color: isSelected ? '#6D28D9' : '#374151',
-                          fontWeight: isSelected ? 700 : 500,
-                          fontSize: '0.8rem',
-                          cursor: 'pointer',
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '6px'
+                          justifyContent: 'space-between',
+                          gap: '12px',
+                          padding: '10px 14px',
+                          borderRadius: '12px',
+                          border: isSelected 
+                            ? '2px solid var(--text-dark, #000000)' 
+                            : '1px solid var(--border-color, #E4E4E7)',
+                          backgroundColor: isSelected 
+                            ? 'var(--bg-subtle-purple, #F4F4F5)' 
+                            : (isSoldOut ? 'var(--bg-subtle-purple, #F9FAFB)' : 'var(--card-bg, #FFFFFF)'),
+                          opacity: isSoldOut ? 0.5 : 1,
+                          cursor: isSoldOut ? 'not-allowed' : 'pointer',
+                          textAlign: 'left',
+                          transition: 'all 0.15s ease',
+                          width: '100%'
                         }}
                       >
-                        {isSelected && <Check size={14} color="#6D28D9" />}
-                        {opt.name || opt.title || `Lựa chọn ${oIdx + 1}`}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0, flex: 1 }}>
+                          {optImg ? (
+                            <img
+                              src={optImg}
+                              alt=""
+                              style={{
+                                width: '42px',
+                                height: '42px',
+                                borderRadius: '8px',
+                                objectFit: 'cover',
+                                flexShrink: 0,
+                                border: '1px solid var(--border-color, #E4E4E7)',
+                                backgroundColor: '#FFFFFF'
+                              }}
+                            />
+                          ) : (
+                            <div style={{
+                              width: '18px',
+                              height: '18px',
+                              borderRadius: '50%',
+                              border: isSelected ? '5px solid var(--text-dark, #000000)' : '2px solid #D1D5DB',
+                              backgroundColor: '#FFFFFF',
+                              flexShrink: 0
+                            }} />
+                          )}
+
+                          <div style={{ minWidth: 0, flex: 1 }}>
+                            <div style={{
+                              fontSize: '0.84rem',
+                              fontWeight: isSelected ? 700 : 600,
+                              color: 'var(--text-dark, #000000)',
+                              lineHeight: 1.35,
+                              whiteSpace: 'normal',
+                              wordBreak: 'break-word'
+                            }}>
+                              {displayName}
+                            </div>
+                            {opt.subtitle_vi && (
+                              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted, #71717A)', marginTop: '2px' }}>
+                                {opt.subtitle_vi}
+                              </div>
+                            )}
+                            {opt.name_kr && opt.name_kr !== displayName && (
+                              <div style={{ fontSize: '0.7rem', color: '#9CA3AF', marginTop: '1px' }}>
+                                Tiếng Hàn: {opt.name_kr}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+
+                        <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '4px' }}>
+                            {optDiscount && (
+                              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-dark, #000000)' }}>
+                                -{optDiscount.replace('-', '')}
+                              </span>
+                            )}
+                            <strong style={{ fontSize: '0.86rem', color: 'var(--text-dark, #000000)' }}>
+                              {formatVnd(optVnd)}
+                            </strong>
+                          </div>
+                          <div style={{ fontSize: '0.72rem', color: 'var(--text-muted, #71717A)' }}>
+                            {formatKrw(optWon)}
+                          </div>
+                        </div>
                       </button>
                     );
                   })}
@@ -520,9 +606,9 @@ export default function ProductDetailPage() {
                 onClick={() => handleAddToCart(false)}
                 style={{
                   flex: '1 1 180px',
-                  backgroundColor: '#FFFFFF',
-                  color: '#7A4B9E',
-                  border: '2px solid #7A4B9E',
+                  backgroundColor: 'var(--bg-white, #FFFFFF)',
+                  color: 'var(--text-dark, #000000)',
+                  border: '2px solid var(--text-dark, #000000)',
                   padding: '12px 20px',
                   borderRadius: '10px',
                   fontWeight: 700,
@@ -532,7 +618,7 @@ export default function ProductDetailPage() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: '8px',
-                  transition: 'background-color 0.2s'
+                  transition: 'all 0.2s ease'
                 }}
               >
                 <ShoppingBag size={18} /> Thêm Vào Giỏ
@@ -542,15 +628,15 @@ export default function ProductDetailPage() {
                 onClick={() => handleAddToCart(true)}
                 style={{
                   flex: '1 1 200px',
-                  backgroundColor: '#7A4B9E',
-                  color: '#FFFFFF',
+                  backgroundColor: 'var(--text-dark, #000000)',
+                  color: 'var(--bg-white, #FFFFFF)',
                   border: 'none',
                   padding: '12px 20px',
                   borderRadius: '10px',
                   fontWeight: 700,
                   fontSize: '0.92rem',
                   cursor: 'pointer',
-                  boxShadow: '0 4px 12px rgba(122, 75, 158, 0.3)',
+                  boxShadow: '0 4px 14px rgba(0, 0, 0, 0.18)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -562,20 +648,20 @@ export default function ProductDetailPage() {
             </div>
 
             {/* Chi tiết sản phẩm & Công dụng */}
-            <div style={{ borderTop: '1px solid #E5E7EB', paddingTop: '20px' }}>
-              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#111827', marginBottom: '12px' }}>
+            <div style={{ borderTop: '1px solid var(--border-color, #E5E7EB)', paddingTop: '20px' }}>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-dark, #111827)', marginBottom: '12px' }}>
                 Thông tin sản phẩm & Công dụng
               </h3>
-              <div style={{ fontSize: '0.86rem', color: '#4B5563', lineHeight: '1.6', whiteSpace: 'pre-line' }}>
+              <div style={{ fontSize: '0.86rem', color: 'var(--text-muted, #4B5563)', lineHeight: '1.6', whiteSpace: 'pre-line' }}>
                 {product.description || 'Sản phẩm chính hãng nội địa Hàn Quốc được cào và cập nhật trực tiếp từ hệ thống Olive Young.'}
               </div>
 
               {product.usage && (
                 <div style={{ marginTop: '16px' }}>
-                  <h4 style={{ fontSize: '0.88rem', fontWeight: 700, color: '#111827', marginBottom: '6px' }}>
+                  <h4 style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-dark, #111827)', marginBottom: '6px' }}>
                     Hướng dẫn sử dụng
                   </h4>
-                  <p style={{ fontSize: '0.84rem', color: '#4B5563', lineHeight: '1.5' }}>
+                  <p style={{ fontSize: '0.84rem', color: 'var(--text-muted, #4B5563)', lineHeight: '1.5' }}>
                     {product.usage}
                   </p>
                 </div>

@@ -153,9 +153,12 @@ export async function fetchVietnamProvinces() {
  */
 export async function fetchVietnamSubDivisions(provinceCode) {
   if (!provinceCode) return [];
+  const numCode = Number(provinceCode);
+  const localCache = COMMON_SUB_DIVISIONS[provinceCode] || COMMON_SUB_DIVISIONS[numCode];
+
   try {
     const res = await fetch(`https://provinces.open-api.vn/api/v2/p/${provinceCode}?depth=2`, {
-      signal: AbortSignal.timeout(3500)
+      signal: AbortSignal.timeout(1500)
     });
     if (res.ok) {
       const data = await res.json();
@@ -165,11 +168,11 @@ export async function fetchVietnamSubDivisions(provinceCode) {
       }
     }
   } catch (err) {
-    console.warn(`Vietnam Open API v2 fetch sub-divisions failed for province ${provinceCode}`, err);
+    // Graceful fallback to local cached list
   }
 
-  if (COMMON_SUB_DIVISIONS[provinceCode]) {
-    return COMMON_SUB_DIVISIONS[provinceCode];
+  if (localCache) {
+    return localCache;
   }
 
   // LOCATION_DATA fallback search

@@ -221,7 +221,7 @@ export default function CartPage() {
         </div>
         
         {activePendingOrder && (
-          <div style={{ backgroundColor: '#FEF3C7', border: '1px solid #F59E0B', borderRadius: '14px', padding: '14px 20px', marginBottom: '24px', color: '#92400E', fontSize: '0.88rem', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+          <div style={{ backgroundColor: 'var(--purple-light, #FEF3C7)', border: '1px solid var(--gold-primary, #F59E0B)', borderRadius: '14px', padding: '14px 20px', marginBottom: '24px', color: 'var(--text-dark, #92400E)', fontSize: '0.88rem', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
               <Zap size={18} style={{ marginTop: '2px', flexShrink: 0 }} />
               <div>
@@ -248,7 +248,7 @@ export default function CartPage() {
             {/* Cột trái: Danh sách item */}
             <div style={{ backgroundColor: 'var(--bg-white, #FFF)', border: '1px solid var(--border-color)', padding: '24px', borderRadius: '16px', boxShadow: 'var(--shadow-sm)' }}>
               {cart.map((item, idx) => (
-                <div key={idx} style={{ display: 'flex', gap: '20px', padding: '20px 0', borderBottom: idx < cart.length - 1 ? '1px solid #f0f0f0' : 'none' }}>
+                <div key={idx} style={{ display: 'flex', gap: '20px', padding: '20px 0', borderBottom: idx < cart.length - 1 ? '1px solid var(--border-color, #f0f0f0)' : 'none' }}>
                   <img src={item.productImage} alt={item.name} loading="lazy" style={{ width: '90px', height: '90px', objectFit: 'cover', borderRadius: '8px', flexShrink: 0, aspectRatio: '1/1' }} />
                   <div style={{ flex: 1 }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
