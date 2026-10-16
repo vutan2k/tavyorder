@@ -171,7 +171,7 @@ export function aggregateCustomers(usersList = [], orders = [], rates = {}) {
     const primaryUser = isRegistered ? (users.find(u => u.photoURL) || users.find(u => u.uid) || users[0]) : null;
 
     const latestOrder = uniqueOrders[0] || null;
-    const orderWithAddress = uniqueOrders.find(o => Boolean((o.shippingAddress || o.address || '').trim()));
+    const orderWithAddress = uniqueOrders.find(o => Boolean((o.customerAddress || o.shippingAddress || o.address || '').trim()));
     const orderWithPhone = uniqueOrders.find(o => Boolean(normalizePhone(o.customerPhone || o.phone)));
     const orderWithEmail = uniqueOrders.find(o => Boolean(normalizeEmail(o.userEmail || o.customerEmail || o.email)));
     const orderWithName = uniqueOrders.find(o => {
@@ -196,7 +196,7 @@ export function aggregateCustomers(usersList = [], orders = [], rates = {}) {
     const normPhone = userPhoneNorm || orderPhoneNorm;
 
     const userAddress = primaryUser && (primaryUser.address || primaryUser.shippingAddress || '').trim();
-    const orderAddress = orderWithAddress ? (orderWithAddress.shippingAddress || orderWithAddress.address || '').trim() : '';
+    const orderAddress = orderWithAddress ? (orderWithAddress.customerAddress || orderWithAddress.shippingAddress || orderWithAddress.address || '').trim() : '';
     const address = userAddress || orderAddress || '';
 
     let name = '';

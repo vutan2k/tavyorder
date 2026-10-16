@@ -200,6 +200,9 @@ export function sanitizeOrderPayload(orderData) {
   if ('customerNote' in sanitized) {
     sanitized.customerNote = sanitizeText(sanitized.customerNote);
   }
+  if ('senderName' in sanitized) {
+    sanitized.senderName = sanitizeText(sanitized.senderName);
+  }
   if ('productUrl' in sanitized) {
     sanitized.productUrl = sanitizeUrl(sanitized.productUrl, '');
   }

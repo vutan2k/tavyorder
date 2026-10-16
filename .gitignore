@@ -29,9 +29,10 @@ dist-ssr
 .firebase/
 .codegraph/
 .hermes/
-.vercel/
+.vercel
 temp.*
 public/slides/
 *.tmp
 __pycache__/
 *.pyc
+public/oliveyoung_ranking
