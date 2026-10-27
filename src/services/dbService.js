@@ -307,6 +307,15 @@ export const saveProductToDB = async (product) => {
       updatedAt: serverTimestamp()
     };
 
+    if (product.priceVnd !== undefined) cleanPayload.priceVnd = Number(product.priceVnd) || 0;
+    if (product.priceSyncStatus !== undefined) cleanPayload.priceSyncStatus = String(product.priceSyncStatus || '');
+    if (product.priceLastSyncedAt !== undefined) cleanPayload.priceLastSyncedAt = product.priceLastSyncedAt;
+    if (product.pendingPriceUpdate !== undefined) cleanPayload.pendingPriceUpdate = product.pendingPriceUpdate;
+    if (product.priceChangeAlert !== undefined) cleanPayload.priceChangeAlert = product.priceChangeAlert;
+    if (Array.isArray(product.priceHistory)) cleanPayload.priceHistory = product.priceHistory;
+    if (product.isOutOfStock !== undefined) cleanPayload.isOutOfStock = Boolean(product.isOutOfStock);
+    if (product.isHidden !== undefined) cleanPayload.isHidden = Boolean(product.isHidden);
+
     await setDoc(docRef, cleanPayload, { merge: true });
     return { success: true };
   } catch (err) {

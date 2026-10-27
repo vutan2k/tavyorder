@@ -106,5 +106,15 @@ service cloud.firestore {
     match /ai_manager_tasks/{taskId} {
       allow read, write: if true;
     }
+
+    // 7. Site Analytics (Pageviews Counter - Today, Week, Month, Year)
+    match /site_analytics/{docId} {
+      allow get: if true;
+      allow list: if isAdmin();
+      allow create, update: if docId == "overview" &&
+        request.resource.data.keys().hasOnly(['allTime', 'days', 'weeks', 'months', 'years', 'lastUpdated']) &&
+        (!('allTime' in request.resource.data) || request.resource.data.allTime is number);
+      allow delete: if isAdmin();
+    }
   }
 }

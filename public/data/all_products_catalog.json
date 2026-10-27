@@ -31,7 +31,6 @@
     "category": "cosmetics",
     "updatedAt": "2026-10-03T15:43:58.000Z",
     "brandKr": "닥터브로너스",
-    "rank": 69,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809702ko.jpg",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000000207&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=69",
     "status": "published",
@@ -99,7 +98,6 @@
     "originPrice": 20900,
     "is_sold_out": false,
     "isDiscontinued": false,
-    "rank": 71,
     "origin": "Store Olive Young Korea",
     "originalPrice": 20900,
     "salePrice": 10900,
@@ -128,7 +126,6 @@
     "isDiscontinued": false,
     "isChallenge": false,
     "origin": "Store Olive Young Korea",
-    "rank": 33,
     "isPublished": true,
     "originPrice": 42000,
     "is_sold_out": false,
@@ -164,7 +161,7 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0013/A00000013031987ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0013/A00000013031984ko.jpg"
     ],
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "priceVnd": 530302,
     "is_enriched": true,
     "is_sold_out": false,
@@ -176,7 +173,7 @@
     "nameKr": "바이오더마 센시비오 H2O 850ml(클렌징워터)",
     "price": 25900,
     "options": [],
-    "rank": 88,
+    "rank": 81,
     "category": "cosmetics",
     "name": "Nước tẩy trang làm sạch dịu nhẹ Bioderma Sensibio H2O 850ml",
     "brandKr": "바이오더마",
@@ -195,7 +192,6 @@
   {
     "brandKr": "Lilybyred",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "rank": 97,
     "price": 9800,
     "isPublished": true,
     "origin": "Store Olive Young Korea",
@@ -537,7 +533,6 @@
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "category": "cosmetics",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000138671%2Fmain_thumbnail.jpg?alt=media&token=d39f4176-dd60-464d-8c7d-6d29d5d8df70",
-    "rank": 97,
     "updatedAt": "2026-10-03T11:18:09.653Z",
     "is_enriched": true,
     "origin": "Store Olive Young Korea",
@@ -698,10 +693,10 @@
     "description": "Phấn Nước Cushion Jungsaemmool từ thương hiệu Jungsaemmool là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu hạt phấn siêu mịn phủ khoáng chất cùng dưỡng chất cấp ẩm dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp tạo lớp nền che phủ hoàn hảo các khuyết điểm, kiềm dầu bền màu suốt 24 giờ mà vẫn giữ nét căng bóng tự nhiên, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "brand": "Jung Saem Mool",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000139063%2Fmain_thumbnail.jpg?alt=media&token=cb30378a-688f-4c75-bfaf-855bf1190414",
-    "rank": 29,
+    "rank": 15,
     "category": "cosmetics",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000139063&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=13",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "status": "published",
     "goodsNo": "A000000139063",
     "is_enriched": true,
@@ -935,7 +930,6 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0014/A000000148549208ko.jpg"
     ],
     "priceVnd": 374692,
-    "rank": 74,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/3699e19a0c654c9eb96d4ae8cdc9a27d1791003362908.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/67f591d37d9e49a293122cadbb24ba5d1791001006538.png"
@@ -1303,13 +1297,13 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/a1e3c37a917649b79ca526395cd7a8da1791004130535.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/1cc44b3ecfb8475ea8b4a03d8327291f1791003385309.png"
     ],
-    "foreignPrice": 24400,
-    "priceVnd": 499590,
+    "foreignPrice": 25900,
+    "priceVnd": 530302,
     "createdAt": "2026-10-03T15:43:58.000Z",
     "origin": "Store Olive Young Korea",
     "status": "published",
     "name": "Dầu Gội Giảm Rụng Củng Cố Da Đầu LABO-H Scalp Strengthening Shampoo 750ml Kèm Chai 100ml",
-    "price": 24400,
+    "price": 25900,
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0014/A00000014950192ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0014/A00000014950190ko.jpg",
@@ -1318,9 +1312,9 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0014/A00000014950189ko.jpg"
     ],
     "originalPrice": 36000,
-    "rank": 15,
+    "rank": 14,
     "discountRate": "32%",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "category": "cosmetics",
     "isPublished": true,
     "is_sold_out": false,
@@ -1347,7 +1341,7 @@
     ],
     "foreignPrice": 18900,
     "nameKr": "[명품스카프증정/1등 모공 수분천재크림] 에스네이처 아쿠아 스쿠알란 수분크림 60ml 기획(+크림 30ml 증정)",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "discountRate": "32%",
     "price": 18900,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000156230&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=79",
@@ -1370,7 +1364,7 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/html/crop/A000000264146/202609280913/crop0/smasteri.cafe24.com/web/upload/new_design/serum/50ml/260219/detail_a_03.jpg"
     ],
     "originalPrice": 28000,
-    "rank": 79,
+    "rank": 33,
     "id": "A000000156230"
   },
   {
@@ -1388,7 +1382,6 @@
     "subCategory": "skincare",
     "name": "Sữa dưỡng thể dưỡng ẩm dịu da Cetaphil Moisturizing Lotion 1L Tặng Kèm Găng Tay Tắm",
     "price": 19600,
-    "rank": 57,
     "is_enriched": true,
     "nameKr": "[매일우유 샤워글로브 증정] 세타필 모이스춰라이징 로션 1L",
     "discountRate": "23%",
@@ -1497,7 +1490,6 @@
     "category": "cosmetics",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000158615%2Fmain_thumbnail.jpg?alt=media&token=55633917-b9dd-4702-b2e1-028ec60c70a3",
     "originalPrice": 15700,
-    "rank": 99,
     "is_enriched": true,
     "is_sold_out": false,
     "isPublished": true,
@@ -1599,7 +1591,6 @@
     "originalPrice": 36000,
     "originPrice": 36000,
     "is_sold_out": false,
-    "rank": 80,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000158991%2Fmain_thumbnail.jpg?alt=media&token=31a62ed4-2057-404b-8226-506f27522298",
     "isChallenge": false,
     "isPublished": true,
@@ -1611,7 +1602,7 @@
     "category": "cosmetics",
     "title": "에이오셉 플러스액 360ml | 올리브영",
     "discountRate": "15%",
-    "rank": 17,
+    "rank": 74,
     "origin": "Store Olive Young Korea",
     "brand": "AOSEPT",
     "isSoldOut": false,
@@ -1653,7 +1644,7 @@
     ],
     "name": "Dung Dịch Khử Trùng Và Ngâm Rửa Kính Áp Tròng Aosept Plus 360ml",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000159321&tab=review",
-    "updatedAt": "2026-10-03T11:18:09.656Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000159321%2Fmain_thumbnail.jpg?alt=media&token=8613d5ee-97a0-42be-b1ba-ea0c451e1d0c",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000159321%2Freview_user_1.jpg?alt=media&token=e9521537-6ee3-4a20-b1d0-433e2a195eee",
@@ -1679,7 +1670,6 @@
     "salePrice": 33600,
     "isPublished": true,
     "isChallenge": false,
-    "rank": 98,
     "foreignPrice": 33600,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000162114%2Freviews%2Freview_user_1.png?alt=media&token=b271e715-90ee-4bc8-8b5c-6ff5ad362017",
@@ -1749,7 +1739,6 @@
     "updatedAt": "2026-10-03T11:18:09.656Z",
     "description": "Dầu gội cao cấp giúp làm sạch êm dịu cho da đầu, nuôi dưỡng nang tóc và hỗ trợ phục hồi những sợi tóc khô xơ hư tổn trở nên bóng mượt. Sự kết hợp độc đáo của các tầng hương gỗ tinh tế giúp mái tóc lưu hương quyến rũ và bền bỉ suốt ngày dài. Thích hợp cho mọi loại tóc, đặc biệt là tóc uốn, nhuộm, dễ gãy rụng và da đầu nhạy cảm.",
     "nameKr": "[단독기획/단품] 롱테이크 샴푸 300+100ML(샌달우드/블랙티앤피그/로즈리메인즈)",
-    "rank": 81,
     "category": "cosmetics",
     "price": 21000,
     "options": [
@@ -1827,7 +1816,6 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000165990&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=53",
     "name": "Xịt bọt rửa chân khử mùi làm sạch On The Body Foot Shampoo Cotton 510ml Tùy Chọn 4 Mùi",
     "price": 5900,
-    "rank": 53,
     "nameKr": "[OY단독 복숭아향] 온더바디 발을씻자 코튼 풋샴푸 대용량 510ml 4종 (복숭아/레몬/쿨링/자몽)",
     "originalPrice": 7400,
     "createdAt": "2026-10-03T15:43:58.000Z",
@@ -1857,7 +1845,6 @@
   },
   {
     "nameKr": "일리윤 프레쉬모이스춰 스크럽워시 400ml*2 기획",
-    "rank": 17,
     "brand": "Illiyoon",
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0016/A00000016741609ko.jpg",
     "options": [],
@@ -1916,7 +1903,6 @@
     "nameKr": "[단독기획/단품] 롱테이크 트리트먼트 200+100ML*샌달우드/블랙티앤피그)",
     "discountRate": "12%",
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "rank": 13,
     "isPublished": true,
     "brand": "Longtake",
     "isChallenge": true,
@@ -2088,7 +2074,6 @@
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0017/A00000017004228ko.jpg",
     "is_sold_out": false,
     "createdAt": "2026-10-03T15:43:58.000Z",
-    "rank": 77,
     "nameKr": "디어스킨 리얼모달 생리대 7종 택 1 (패드/라이너/슈퍼롱/입는오버나이트)",
     "discountRate": "0%",
     "category": "cosmetics",
@@ -2096,9 +2081,9 @@
   },
   {
     "discountRate": "21%",
-    "rank": 56,
+    "rank": 98,
     "isPublished": true,
-    "updatedAt": "2026-10-03T11:18:09.657Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "isChallenge": true,
     "price": 11800,
     "is_sold_out": false,
@@ -2210,14 +2195,14 @@
     "description": "Tinh Chất Serum Unove 70ml (70ml) từ thương hiệu Unove là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu 30.000ppm phức hợp đạm Keratin và 36 loại acid amin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp phục hồi biểu bì tóc hư tổn nặng do uốn nhuộm nhiệt, lấp đầy lõi tóc và mang lại độ bóng mượt bồng bềnh tức thì, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000171422%2Fmain_thumbnail.jpg?alt=media&token=35a6a1d0-7ebe-4436-b975-ab4f2281001d",
     "brandKr": "Unove",
-    "rank": 66,
+    "rank": 60,
     "category": "cosmetics",
     "subCategory": "",
     "nameKr": "[파워퍼프걸 콜라보] 어노브 실크 헤어 오일 에센스 70ml 더블 기획 (텐더블룸/웜페탈)",
     "discountRate": "21%",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171422&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=47",
-    "price": 27500,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "price": 28900,
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "name": "Tinh Dầu Dưỡng Tóc Bóng Mượt Unove Silk Hair Oil Essence (Set Đôi 70ml + 70ml Bản Powerpuff Girls)",
     "is_enriched": true,
     "options": [
@@ -2258,7 +2243,7 @@
         "price_krw": 27900
       }
     ],
-    "foreignPrice": 27500,
+    "foreignPrice": 28900,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000171422%2Freviews%2Freview_user_1.png?alt=media&token=7c708687-f369-4f3c-ad64-94edd566cddb",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000171422%2Freviews%2Freview_user_2.png?alt=media&token=5ed0e2d5-ffef-47a0-b546-389d9b019596",
@@ -2277,7 +2262,7 @@
     "originalPrice": 35000,
     "origin": "Store Olive Young Korea",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "priceVnd": 563062,
+    "priceVnd": 591728,
     "status": "published",
     "id": "A000000171422"
   },
@@ -2349,14 +2334,14 @@
     "goodsNo": "A000000171423",
     "description": "Unove (/) 320ml / từ thương hiệu Unove là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu 30.000ppm phức hợp đạm Keratin và 36 loại acid amin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào da giúp phục hồi biểu bì tóc hư tổn nặng do uốn nhuộm nhiệt, lấp đầy lõi tóc và mang lại độ bóng mượt bồng bềnh tức thì, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu da rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho mọi loại da kể cả làn da nhạy cảm nhất.",
     "discountRate": "34%",
-    "priceVnd": 571252,
+    "priceVnd": 610155,
     "name": "Kem Ủ Tóc Phục Hồi Hư Tổn Chuyên Sâu Unove Deep Damage Repair Hair Mask (Set Đôi 320ml + 320ml)",
     "subCategory": "",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000171423%2Fmain_thumbnail.jpg?alt=media&token=0fc41d99-a524-43af-aa35-d834e769692b",
     "nameKr": "[9/5 하루특가] 어노브 딥 데미지 리페어 헤어 마스크 (트리트먼트/헤어팩) 320ml 더블/듀오 기획",
     "is_enriched": true,
-    "price": 27900,
-    "rank": 4,
+    "price": 29800,
+    "rank": 36,
     "isPublished": true,
     "originalPrice": 42000,
     "storageProvider": "firebase_storage",
@@ -2364,7 +2349,7 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171423&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=2",
     "is_sold_out": false,
     "origin": "Store Olive Young Korea",
-    "foreignPrice": 27900,
+    "foreignPrice": 29800,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000171423%2Freviews%2Freview_user_1.png?alt=media&token=f6a1fd86-cf36-4a07-96e4-f818e60c8f52",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000171423%2Freviews%2Freview_user_2.png?alt=media&token=d8f276f4-7e91-45ba-9287-35edc35cc3d6",
@@ -2379,26 +2364,26 @@
     ],
     "brandKr": "Unove",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "status": "published",
     "id": "A000000171423"
   },
   {
     "storageProvider": "firebase_storage",
-    "rank": 49,
+    "rank": 9,
     "brand": "Illiyoon",
     "subCategory": "",
     "originalPrice": 53900,
     "origin": "Store Olive Young Korea",
     "status": "published",
-    "foreignPrice": 35900,
+    "foreignPrice": 33900,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/4209326e06a4405aa1776162f075d96f1791001179412.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/4a5f0914d17f49dbac6ba5be9c9549651790995255744.png"
     ],
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171848&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=50",
     "description": "Mỹ phẩm Illiyoon 600ML+600ML (600ML) từ thương hiệu Illiyoon là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu Ceramide tinh khiết củng cố cấu trúc lipid sinh học. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp hàn gắn hàng rào bảo vệ da suy yếu, ngăn ngừa mất nước và bảo vệ da tối ưu trước tác nhân môi trường, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "priceVnd": 735052,
+    "priceVnd": 694102,
     "brandKr": "Illiyoon",
     "discountRate": "33%",
     "images": [
@@ -2408,8 +2393,8 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0017/A00000017184819ko.jpg"
     ],
     "goodsNo": "A000000171848",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
-    "price": 35900,
+    "updatedAt": "2026-10-20T09:36:28.000Z",
+    "price": 33900,
     "options": [],
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0017/A00000017184821ko.jpg",
     "is_enriched": true,
@@ -2480,7 +2465,6 @@
     "category": "cosmetics",
     "usage": "1. Thoa một lớp son dưỡng mỏng và lau nhẹ bớt dầu thừa trước khi vẽ. 2. Dùng đầu chì vẽ theo đường viền môi tự nhiên hoặc hơi tràn nhẹ ra mép ngoài nếu muốn tăng kích thước môi. 3. Dùng cọ hoặc đầu ngón tay tán nhẹ viền chì rồi đánh màu son yêu thích vào lòng môi.",
     "description": "Chì định hình viền môi đa công dụng giúp khắc phục khuyết điểm môi mỏng, viền môi tối màu và tạo hiệu ứng đôi môi căng mọng tràn viền quyến rũ. Chất son sáp kem mềm mịn lướt êm ái trên môi, dễ tán đều và có độ bám dính cao mà không gây khô tróc rãnh môi. Phù hợp cho mọi dáng môi và có thể dùng làm chì viền môi, son lót hoặc má hồng tiện lợi.",
-    "rank": 10,
     "status": "published",
     "origin": "Store Olive Young Korea",
     "originalPrice": 14000,
@@ -2528,13 +2512,13 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000174309%2Freviews%2Fproduct_detail_1.png?alt=media&token=9740ae89-c00f-4a48-9f33-cfb1cda0ac88",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000174309%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=a58dde03-49a0-458c-8799-a7c37856fdbb"
     ],
-    "foreignPrice": 6000,
+    "foreignPrice": 4700,
     "nameKr": "[9월 올영픽/NEW젤테일] 홀리카홀리카 마이페이브 피스 아이섀도우/젤테일/피스 빔/피스 밤",
     "isSoldOut": false,
     "usage": "Sử dụng hàng ngày theo chu trình chăm s��c da cơ bản.",
     "subCategory": "",
-    "rank": 27,
-    "price": 6000,
+    "rank": 30,
+    "price": 4700,
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000174309%2Fmain_thumbnail.png?alt=media&token=7f9da18f-2fde-45f8-a645-d7fcedff5a58",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000174309%2Freview_user_1.png?alt=media&token=a45616c8-a63f-4882-8c50-7371a6238d58",
@@ -2549,7 +2533,7 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000174309%2Fproduct_detail_2.jpg?alt=media&token=22184eb1-08d3-46ec-bdde-bb92403733b4"
     ],
     "brandKr": "Holika Holika",
-    "priceVnd": 122850,
+    "priceVnd": 96232,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000174309&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=40",
     "description": "Mỹ phẩm NEW từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "originalPrice": 6000,
@@ -2557,7 +2541,7 @@
     "name": "Phấn Mắt Đơn Bắt Sáng Và Gel Trang Điểm Holika Holika My Fave Piece Eyeshadow / Gel Tail / Piece Beam / Piece Balm (Nhiều Phân Loại Tùy Chọn)",
     "goodsNo": "A000000174309",
     "storageProvider": "firebase_storage",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "options": [
       {
         "id": "opt_A000000174309_1",
@@ -3765,7 +3749,6 @@
     "isChallenge": true,
     "discountRate": "40%",
     "isPublished": true,
-    "rank": 37,
     "is_sold_out": false,
     "id": "A000000174439"
   },
@@ -3806,7 +3789,6 @@
     "updatedAt": "2026-10-03T11:18:09.658Z",
     "description": "Son bóng cao cấp mang đến làn môi căng mọng đầy đặn với gam màu trong trẻo chuẩn phong cách MLBB sang trọng. Chứa tinh dầu dưỡng tự nhiên giúp nuôi dưỡng môi mềm mượt, làm đầy rãnh môi mà không gây cảm giác bết dính nặng nề. Bảng màu đa dạng và tinh tế, tôn lên nét quyến rũ tự nhiên cho đôi môi suốt cả ngày.",
     "discountRate": "10%",
-    "rank": 73,
     "origin": "Store Olive Young Korea",
     "goodsNo": "A000000177984",
     "subCategory": "lip",
@@ -4059,7 +4041,6 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000180532&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=56",
     "brandKr": "WakeMake",
     "brand": "WakeMake",
-    "rank": 43,
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000180532%2Fmain_thumbnail.jpg?alt=media&token=0def81cb-924e-4d64-a1be-58be7997a603",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000180532%2Freview_user_1.png?alt=media&token=007f436f-bf3d-4abc-94ce-d23ca2ea0807",
@@ -4090,7 +4071,6 @@
   },
   {
     "priceVnd": 522112,
-    "rank": 95,
     "is_enriched": true,
     "is_sold_out": false,
     "images": [
@@ -4170,7 +4150,6 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000185265&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=52",
     "brandKr": "클리오",
     "category": "cosmetics",
-    "rank": 52,
     "createdAt": "2026-10-03T15:43:58.000Z",
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0018/A000000185265103ko.jpg",
@@ -4659,7 +4638,6 @@
     "brand": "VDL",
     "originalPrice": 36000,
     "is_sold_out": false,
-    "rank": 18,
     "isChallenge": true,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000185903%2Fmain_thumbnail.jpg?alt=media&token=2a3798ea-2f36-4aad-be21-bd9a53cc64e1",
     "priceVnd": 737100,
@@ -4701,10 +4679,10 @@
     ],
     "subCategory": "",
     "origin": "Store Olive Young Korea",
-    "price": 21400,
+    "price": 19600,
     "isSoldOut": false,
-    "priceVnd": 438165,
-    "foreignPrice": 21400,
+    "priceVnd": 401310,
+    "foreignPrice": 19600,
     "photoReviews": [],
     "description": "Sữa Rửa Mặt Làm Sạch Sâu từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu chiết xuất dầu thực vật lên men kết hợp các acid béo dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cuốn trôi sạch sâu bụi mịn và cặn trang điểm cứng đầu mà không gây khô căng, duy trì độ pH lý tưởng cho da, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000186409&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=54",
@@ -4717,9 +4695,9 @@
     "brand": "Blanc Nature",
     "category": "cosmetics",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000186409%2Fmain_thumbnail.jpg?alt=media&token=40ffebed-4c93-4f4b-abce-618d8a5b0e08",
-    "updatedAt": "2026-10-03T11:18:09.659Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "storageProvider": "firebase_storage",
-    "rank": 54,
+    "rank": 66,
     "is_sold_out": false,
     "title": "잠시만 기다려 주세요 - 올리브영",
     "brandKr": "Blanc Nature",
@@ -4740,8 +4718,8 @@
     ],
     "storageProvider": "firebase_storage",
     "subCategory": "",
-    "rank": 13,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "rank": 12,
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "brand": "Dove",
     "brandKr": "Dove",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000186792%2Fmain_thumbnail.jpg?alt=media&token=580874e2-962b-47f3-9135-5babe6e7a60c",
@@ -4833,7 +4811,6 @@
     "id": "A000000186792"
   },
   {
-    "rank": 34,
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "status": "published",
     "brandKr": "Clio",
@@ -5071,7 +5048,6 @@
     "description": "Bột protein lắc dinh dưỡng kết hợp cùng các hạt ngũ cốc giòn tan mang lại bữa phụ thơm ngon, giàu đạm và ít calo. Hỗ trợ cung cấp năng lượng nhanh chóng, giảm cảm giác đói và duy trì vóc dáng thon gọn cho người ăn kiêng hoặc tập luyện. Thiết kế túi vòi tiện lợi, dễ dàng pha chế và sử dụng ở mọi lúc mọi nơi.",
     "price": 3300,
     "discountRate": "15%",
-    "rank": 71,
     "status": "published",
     "subCategory": "body",
     "updatedAt": "2026-10-03T11:18:09.659Z",
@@ -5200,7 +5176,6 @@
     "priceVnd": 450450,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000190610&tab=review",
     "updatedAt": "2026-10-03T11:18:09.659Z",
-    "rank": 82,
     "title": "잠시만 기다려 주세요 - 올리브영",
     "photoReviews": [],
     "foreignPrice": 22000,
@@ -5244,13 +5219,13 @@
     ],
     "foreignPrice": 7700,
     "brandKr": "Clio",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "name": "Bút Kẻ Mắt Chì Chống Nước Lâu Trôi Clio Sharp So Simple Waterproof Pencil Liner (Tùy Chọn Đơn Hoặc Set Đôi)",
     "nameKr": "[NO.1 아이라이너] 클리오 샤프 쏘 심플 워터프루프 펜슬라이너 단품/더블기획",
     "price": 7700,
     "storageProvider": "firebase_storage",
     "priceVnd": 157658,
-    "rank": 59,
+    "rank": 43,
     "options": [
       {
         "discount_rate": "30%",
@@ -5487,13 +5462,13 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/8a3ec5a19aa54bf789472be0fd7cc6611791008229737.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/1a6e26980d6f4811b5fe4fa1a1cf8e411791002992261.png"
     ],
-    "foreignPrice": 9300,
-    "rank": 54,
+    "foreignPrice": 9600,
+    "rank": 76,
     "nameKr": "[10월 올영픽/휘그허쉬 에디션] 투쿨포스쿨 스머징 트임 라이너 단품/더블기획(+파우치 증정)",
     "createdAt": "2026-10-03T15:43:58.000Z",
     "isPublished": true,
-    "price": 9300,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "price": 9600,
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "name": "Chì kẻ mắt mở tròng chống lem Too Cool For School Smudging Under Liner Fig Hush Edition Tùy Chọn Đơn Hoặc Set Đôi Tặng Kèm Túi",
     "is_sold_out": false,
     "is_enriched": true,
@@ -5501,7 +5476,7 @@
     "discountRate": "22%",
     "origin": "Store Olive Young Korea",
     "goodsNo": "A000000199182",
-    "priceVnd": 190418,
+    "priceVnd": 196560,
     "status": "published",
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0019/A00000019918245ko.jpg",
     "options": [
@@ -5716,7 +5691,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000200614%2Freviews%2Fproduct_detail_2.png?alt=media&token=a4ce0a6c-40f3-4f96-b75a-68743773e81e"
     ],
     "foreignPrice": 35700,
-    "rank": 87,
     "subCategory": "",
     "status": "published",
     "storageProvider": "firebase_storage",
@@ -5766,17 +5740,17 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000200646%2Freviews%2Freview_user_4.png?alt=media&token=1e002fae-196b-4521-a155-aa60a10744c7",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000200646%2Freviews%2Freview_user_5.png?alt=media&token=5a9d068e-e128-417d-8ff2-87c6060705ba"
     ],
-    "foreignPrice": 18000,
+    "foreignPrice": 29800,
     "is_sold_out": false,
-    "priceVnd": 368550,
-    "originalPrice": 39600,
+    "priceVnd": 610155,
+    "originalPrice": 56100,
     "is_enriched": true,
-    "rank": 37,
+    "rank": 96,
     "status": "published",
     "storageProvider": "firebase_storage",
     "brand": "BringGreen",
     "origin": "Store Olive Young Korea",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "description": "Tinh Chất Serum từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000200646%2Fmain_thumbnail.jpg?alt=media&token=e6b3e80a-46b4-4060-b999-7422cedf0a9e",
@@ -5855,7 +5829,7 @@
     "subCategory": "",
     "nameKr": "[9/5 하루특가][3일진정세럼]브링그린 징크테카 ���러블 세럼 대용량 기획",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000200646&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=21",
-    "price": 18000,
+    "price": 29800,
     "goodsNo": "A000000200646",
     "discountRate": "55%",
     "id": "A000000200646"
@@ -5895,7 +5869,6 @@
     "category": "cosmetics",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000201055%2Fmain_thumbnail.jpg?alt=media&token=9135f138-f585-4ce6-a171-8f9665a79d3d",
     "goodsNo": "A000000201055",
-    "rank": 79,
     "status": "published",
     "price": 24000,
     "isPublished": true,
@@ -5935,11 +5908,11 @@
   },
   {
     "is_enriched": true,
-    "priceVnd": 530302,
+    "priceVnd": 540540,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0020/A00000020241477ko.jpg",
     "createdAt": "2026-10-03T15:43:58.000Z",
     "isPublished": true,
-    "rank": 67,
+    "rank": 95,
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0020/A00000020241477ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0020/A00000020241475ko.jpg",
@@ -6033,14 +6006,14 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/be21a99f223b4feb8cc4a8ae042805881791010100813.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/510984610c2f4b86b76a6aad00fd6bf11791006500835.png"
     ],
-    "foreignPrice": 25900,
-    "price": 25900,
+    "foreignPrice": 26400,
+    "price": 26400,
     "status": "published",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202414&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=67",
     "name": "Tinh chất chăm sóc chân tóc ngăn gãy rụng LABO-H Hair Line Ampoule Monchhichi Edition Set Đôi Tặng Kèm Dầu Gội 50ml",
     "origin": "Store Olive Young Korea",
     "subCategory": "skincare",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "originalPrice": 42000,
     "id": "A000000202414"
   },
@@ -6152,7 +6125,6 @@
     ],
     "subCategory": "",
     "isDiscontinued": false,
-    "rank": 9,
     "id": "A000000202771"
   },
   {
@@ -6164,7 +6136,7 @@
     "isSoldOut": false,
     "discountRate": "10%",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "rank": 41,
+    "rank": 84,
     "status": "published",
     "description": "Phấn Nước Cushion Hera NEW 15g+15g 9 Colors (15g) từ thương hiệu Hera là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu hạt phấn siêu mịn phủ khoáng chất cùng dưỡng chất cấp ẩm dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp tạo lớp nền che phủ hoàn hảo các khuyết điểm, kiềm dầu bền màu suốt 24 giờ mà vẫn giữ nét căng bóng tự nhiên, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "brandKr": "Hera",
@@ -6344,7 +6316,7 @@
       }
     ],
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000202777%2Fmain_thumbnail.png?alt=media&token=52369615-f21b-4f33-bb05-dd040c455ca1",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000202777%2Freview_user_1.png?alt=media&token=de918816-333a-4d86-8277-cb04dc424fae",
@@ -6424,7 +6396,6 @@
     "originalPrice": 16000,
     "discountRate": "3%",
     "category": "cosmetics",
-    "rank": 26,
     "description": "Mỹ phẩm 1+1 từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "options": [
       {
@@ -6703,7 +6674,6 @@
     "name": "Kem Chống Nắng Vật Lý Cấp Ẩm Phục Hồi Hàng Rào Bảo Vệ Da Aestura Derma UV365 Barrier Hydro Mineral Sunscreen (Set 40ml + 20ml)",
     "nameKr": "[50%용량증정] 에스트라 더마UV365 장벽수분 무기자차 선크림 40ml+20ml",
     "is_sold_out": false,
-    "rank": 78,
     "isPublished": true,
     "price": 7750,
     "isChallenge": true,
@@ -6744,7 +6714,6 @@
     "goodsNo": "A000000206850",
     "subCategory": "",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "rank": 22,
     "options": [
       {
         "id": "opt_A000000206850_1",
@@ -6838,7 +6807,6 @@
     "id": "A000000206850"
   },
   {
-    "rank": 28,
     "goodsNo": "A000000208162",
     "description": "Mỹ phẩm 45g (45g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000208162%2Fmain_thumbnail.jpg?alt=media&token=64ca389d-b3f1-454a-8dde-48185e25aa4a",
@@ -7120,7 +7088,6 @@
     ],
     "price": 4200,
     "description": "Băng vệ sinh với bề mặt cotton siêu mềm mại, mang lại cảm giác êm ái tối đa và giảm thiểu ma sát cho vùng da nhạy cảm. Lõi thấm hút nhanh chóng khóa chặt chất lỏng, ngăn tràn hiệu quả và giữ bề mặt luôn khô thoáng suốt nhiều giờ. Thiết kế mỏng nhẹ ôm sát tự nhiên, tạo sự thoải mái và tự tin tuyệt đối cho phái đẹp trong những ngày chu kỳ.",
-    "rank": 68,
     "goodsNo": "A000000208842",
     "priceVnd": 85995,
     "status": "published",
@@ -7160,7 +7127,6 @@
     "is_enriched": true,
     "brandKr": "하트퍼센트",
     "priceVnd": 294840,
-    "rank": 92,
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0020/A00000020988656ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0020/A00000020988654ko.jpg",
@@ -7593,7 +7559,6 @@
     "brandKr": "하우스오브비",
     "nameKr": "[올영 1위 마스크팩 / 370만장 돌파]하우스오브비 페이스필름 4매 (글루타치온/피디알엔)",
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "rank": 57,
     "id": "A000000212579"
   },
   {
@@ -7973,7 +7938,6 @@
     "storageProvider": "firebase_storage",
     "priceVnd": 423832,
     "is_enriched": true,
-    "rank": 83,
     "id": "A000000212749"
   },
   {
@@ -8004,7 +7968,6 @@
     "nameKr": "[9월 올영픽/산리오 콜라보/1등 속눈썹] 코링코 톡톡하라 노글루 속눈썹 15종 택1",
     "isPublished": true,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000213569%2Fmain_thumbnail.jpg?alt=media&token=5a4f5b44-f3c0-4bea-8c72-4292df047cf3",
-    "rank": 89,
     "price": 14900,
     "priceVnd": 305078,
     "subCategory": "",
@@ -8271,7 +8234,7 @@
     "is_sold_out": false,
     "storageProvider": "firebase_storage",
     "brandKr": "Yunjak",
-    "foreignPrice": 27000,
+    "foreignPrice": 29000,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000213943%2Freviews%2Freview_user_1.png?alt=media&token=9bd1a018-275b-43fd-9ab3-ee8da4dadfc5",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000213943%2Freviews%2Freview_user_2.png?alt=media&token=ab235486-526a-4046-9529-783e533c712f",
@@ -8385,13 +8348,13 @@
       }
     ],
     "discountRate": "18%",
-    "price": 27000,
+    "price": 29000,
     "description": "Mỹ phẩm 25ml 40ml (25ml) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc c��ng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "goodsNo": "A000000213943",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000213943%2Fmain_thumbnail.jpg?alt=media&token=70d4aa39-2d47-4b2f-bd70-79548b9bf69f",
-    "priceVnd": 552825,
+    "priceVnd": 593775,
     "subCategory": "",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000213943%2Fmain_thumbnail.jpg?alt=media&token=70d4aa39-2d47-4b2f-bd70-79548b9bf69f",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000213943%2Freview_user_1.png?alt=media&token=c04f91a5-6e39-430e-9008-45f1c7be6e62",
@@ -8406,7 +8369,7 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000213943%2Fproduct_detail_2.png?alt=media&token=bd698523-97f9-4599-85ce-356d4f790923"
     ],
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "rank": 40,
+    "rank": 62,
     "originalPrice": 33000,
     "id": "A000000213943"
   },
@@ -8437,12 +8400,12 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000214675%2Freviews%2Freview_user_5.jpg?alt=media&token=bed6236f-65fd-4fdc-bda8-3632a44045cf",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000214675%2Freviews%2Freview_user_6.png?alt=media&token=4aecdcc3-59b3-415f-b9ab-793b614581e0"
     ],
-    "updatedAt": "2026-10-03T11:18:09.661Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "nameKr": "[EGF최대함량/1등진정앰플] 클레어스 블루 유스 액티베이팅 드롭 50ml",
     "originalPrice": 52500,
     "isPublished": true,
     "storageProvider": "firebase_storage",
-    "rank": 95,
+    "rank": 90,
     "isChallenge": true,
     "discountRate": "24%",
     "category": "cosmetics",
@@ -8474,7 +8437,6 @@
   {
     "is_enriched": true,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000216108&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=93",
-    "rank": 93,
     "price": 17900,
     "nameKr": "[말랑이+로션29ml증정] 세타필 세라마이드 리페어 로션 473ml",
     "isPublished": true,
@@ -8529,7 +8491,7 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000217620%2Freviews%2Fproduct_detail_1.png?alt=media&token=3ced5049-b5e1-43c0-ae82-8c6882e745cb",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000217620%2Freviews%2Fproduct_detail_2.png?alt=media&token=fa80eba7-689c-496e-ade2-5017ada7540d"
     ],
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "description": "Mặt Nạ Giấy Mediheal (1 Miếng) từ thương hiệu Mediheal là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "options": [
@@ -8618,7 +8580,7 @@
         "discount_rate": "50%"
       }
     ],
-    "rank": 94,
+    "rank": 56,
     "priceVnd": 20475,
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000217620%2Fmain_thumbnail.png?alt=media&token=0ccbc40d-ea31-400b-9db2-0b9806336854",
@@ -8714,7 +8676,6 @@
     "is_sold_out": false,
     "origin": "Store Olive Young Korea",
     "updatedAt": "2026-10-03T15:43:58.000Z",
-    "rank": 98,
     "status": "published",
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0021/A00000021770341ko.jpg",
     "createdAt": "2026-10-03T15:43:58.000Z",
@@ -8766,7 +8727,6 @@
     "priceVnd": 468878,
     "goodsNo": "A000000217765",
     "brand": "Illiyoon",
-    "rank": 91,
     "options": [
       {
         "is_sold_out": false,
@@ -8879,7 +8839,6 @@
     ],
     "isSoldOut": false,
     "category": "cosmetics",
-    "rank": 44,
     "goodsNo": "A000000218508",
     "nameKr": "[화해1등] 비욘드 바디타민 로션(착색미백/탄력/보습) 3종 기획 택1",
     "originalPrice": 26000,
@@ -8928,7 +8887,6 @@
     "name": "Tinh Chất Dưỡng Da Đầu Kích Thích Mọc Tóc Lilyeve Growturn Exosome Brush Ampoule (Dung Tích Lớn 130ml)",
     "price": 28900,
     "originalPrice": 34800,
-    "rank": 30,
     "status": "published",
     "priceVnd": 591728,
     "goodsNo": "A000000218845",
@@ -8993,7 +8951,6 @@
     ],
     "isSoldOut": false,
     "discountRate": "80%",
-    "rank": 3,
     "status": "published",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000219609&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=3",
     "photoReviews": [
@@ -9036,7 +8993,6 @@
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000222837%2Fmain_thumbnail.jpg?alt=media&token=8135dae9-1626-48d6-83f9-a0b3ecc82870",
     "isSoldOut": false,
     "options": [],
-    "rank": 95,
     "priceVnd": 32760,
     "discountRate": "95%",
     "goodsNo": "A000000222837",
@@ -9184,7 +9140,7 @@
     "brand": "Mediheal",
     "goodsNo": "A000000223414",
     "is_sold_out": false,
-    "priceVnd": 202702,
+    "priceVnd": 204750,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000223414&tab=review",
     "isPublished": true,
     "name": "Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại)",
@@ -9201,11 +9157,11 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000223414%2Freviews%2Fproduct_detail_1.png?alt=media&token=717b4a48-fb88-4cda-a6cb-f75511d89bd2",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000223414%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=25de5261-fd6c-4118-b7a7-41971bcf6dc5"
     ],
-    "foreignPrice": 9900,
+    "foreignPrice": 10000,
     "nameKr": "[15년 연속 1위/7일 한정판매] 메디힐 에센셜 마스크팩 10+1매 기획 7종 골라담기",
     "discountRate": "50%",
-    "price": 9900,
-    "rank": 2,
+    "price": 10000,
+    "rank": 4,
     "originalPrice": 20000,
     "category": "cosmetics",
     "description": "Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại) từ thương hiệu Mediheal là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu tinh chất rau má Madecassoside đậm đặc và Cica làm dịu. Sản phẩm thẩm thấu nhanh giúp làm dịu nốt mụn sưng đỏ, làm mờ vết thâm sau mụn và phục hồi hàng rào màng tế bào da tổn thương. Chất liệu mask sợi tre sinh học ôm khít tuyệt đối, không nhờn rít, phù hợp cho mọi loại da kể cả da nhạy cảm nhất.",
@@ -9213,7 +9169,7 @@
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000223414%2Fmain_thumbnail.png?alt=media&token=cd33ffa2-27fc-4608-b9ca-df1b96595e9a",
     "brandKr": "Mediheal",
     "usage": "1. Làm sạch da mặt với sữa rửa mặt và toner.\n2. Lấy mask đắp ôm khít toàn mặt trong 15-20 phút.\n3. Tháo mặt nạ và dùng đầu ngón tay vỗ nhẹ cho tinh chất thẩm thấu hết vào da.",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "status": "published",
     "subCategory": "mask",
     "id": "A000000223414"
@@ -9229,7 +9185,6 @@
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0022/A00000022449422ko.jpg",
     "description": "Tinh Chất Serum PICK 131 30ml (30ml) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "nameKr": "[세은 PICK/트러블1등] 셀라딕스 트러블 세범 리밸런싱 131 앰플 30ml",
-    "rank": 84,
     "goodsNo": "A000000224494",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000224494&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=53",
     "options": [],
@@ -9257,7 +9212,6 @@
   },
   {
     "goodsNo": "A000000225217",
-    "rank": 100,
     "description": "Tinh chất đặc trị nồng độ cao chứa 20% Niacinamide tinh khiết giúp ức chế sản sinh sắc tố melanin, làm mờ thâm mụn và dưỡng sáng đều màu da rõ rệt. Sản phẩm tăng cường điều tiết bã nhờn, củng cố hàng rào lipid bảo vệ da và hỗ trợ se khít kích thước lỗ chân lông hiệu quả. Thích hợp cho da dầu mụn, da thâm sạm sau mụn, da không đều màu và da có lỗ chân lông to.",
     "foreignPrice": 6000,
     "photoReviews": [
@@ -9507,7 +9461,6 @@
     "updatedAt": "2026-10-03T15:43:58.000Z",
     "status": "published",
     "category": "cosmetics",
-    "rank": 42,
     "brand": "Fillimilli",
     "subCategory": "",
     "title": "잠시만 기다려 주세요 - 올리브영",
@@ -9551,7 +9504,6 @@
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000225736%2Fmain_thumbnail.jpg?alt=media&token=fbc9b0ee-5661-4b8d-9363-4d0441e9c3af",
     "brandKr": "일소",
     "is_sold_out": false,
-    "rank": 16,
     "priceVnd": 386978,
     "isChallenge": true,
     "images": [
@@ -9660,7 +9612,6 @@
     ],
     "foreignPrice": 27500,
     "category": "cosmetics",
-    "rank": 45,
     "id": "A000000226201"
   },
   {
@@ -9685,7 +9636,6 @@
     "nameKr": "[24시간파우더] 넘버즈인 1번 판토텐산 스킨케어100 블러파우더 기획 (+퍼프 1개)",
     "price": 13900,
     "is_enriched": true,
-    "rank": 82,
     "isPublished": true,
     "category": "cosmetics",
     "is_sold_out": false,
@@ -9714,7 +9664,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000231836%2Freview_user_5.png?alt=media&token=d2889da1-cc13-42bb-8741-2328d7bd18f4",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000231836%2Freview_user_6.png?alt=media&token=85d90dfc-cac4-4f33-998b-f58d1b40e2f3"
     ],
-    "rank": 93,
     "description": "Mặt nạ giấy chăm sóc da hàng ngày chứa các chiết xuất thảo mộc lành tính giúp làm dịu nhanh những vùng da nhạy cảm và cấp nước tức thì. Phôi mặt nạ có chất liệu mỏng nhẹ, ôm khít từng đường nét gương mặt nhằm tối ưu hóa khả năng truyền dẫn tinh chất vào sâu bên trong. Thích hợp cho mọi loại da sử dụng đều đặn mỗi ngày, nhất là làn da nhạy cảm, dễ ửng đỏ và mất nước.",
     "goodsNo": "A000000231836",
     "foreignPrice": 9500,
@@ -9807,7 +9756,7 @@
     ],
     "foreignPrice": 19900,
     "subCategory": "skincare",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000231884&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=68",
     "origin": "Store Olive Young Korea",
     "goodsNo": "A000000231884",
@@ -9815,7 +9764,7 @@
     "name": "Tinh chất cấp ẩm sâu căng mọng da Wellage Real Hyaluronic Blue 100 Ampoule 100ml Tặng Kèm 2 Bộ Kit Dưỡng",
     "priceVnd": 407452,
     "price": 19900,
-    "rank": 68,
+    "rank": 16,
     "nameKr": "[속건조필수템] 웰라쥬 리얼 히알루로닉 블루 100 앰플 100ml 기획 (+원데이키트2ea)",
     "brandKr": "웰라쥬",
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023188426ko.jpg",
@@ -9868,7 +9817,6 @@
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000231885%2Fmain_thumbnail.jpg?alt=media&token=36d81b11-2d95-4b66-866e-ccbc7214ecbd",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "originalPrice": 50000,
-    "rank": 28,
     "brand": "Wellage",
     "updatedAt": "2026-10-03T11:18:09.663Z",
     "name": "Tinh Chất Cấp Ẩm Chuyên Sâu Wellage Real Hyaluronic Blue 100 Ampoule Set Đôi 75ml x 2",
@@ -9994,7 +9942,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000231950%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=598bdfce-17fe-47b7-9001-befa896504de"
     ],
     "foreignPrice": 15600,
-    "rank": 68,
     "id": "A000000231950"
   },
   {
@@ -10215,7 +10162,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000232098%2Fproduct_detail_1.jpg?alt=media&token=bf185d0d-c942-493e-933e-dc1dc7df6506",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000232098%2Fproduct_detail_2.jpg?alt=media&token=886bfad0-4b59-4c90-8d5f-a4d068c5b5e8"
     ],
-    "rank": 79,
     "subCategory": "",
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000232098%2Freviews%2Freview_user_1.png?alt=media&token=df37befd-a1bd-485a-8779-edd5a42ac9b4",
@@ -10245,7 +10191,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/63d762e382b24d1084941d3163e2c67e1791007896791.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/760120a5f3da4da7ba56f1fbfab588421791007889422.png"
     ],
-    "foreignPrice": 22900,
+    "foreignPrice": 22400,
     "category": "cosmetics",
     "origin": "Store Olive Young Korea",
     "brand": "Mediheal",
@@ -10295,15 +10241,15 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023267268ko.png",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023267245ko.jpg"
     ],
-    "rank": 62,
+    "rank": 77,
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "nameKr": "[미니어처 단독기획/양현종 PICK] 메디힐 마데카소사이드 수분 선세럼 흔적 리페어 50+50+15g 기획",
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023267268ko.png",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232672&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=33",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "subCategory": "",
-    "price": 22900,
-    "priceVnd": 468878,
+    "price": 22400,
+    "priceVnd": 458640,
     "id": "A000000232672"
   },
   {
@@ -10465,9 +10411,9 @@
     ],
     "status": "published",
     "is_enriched": true,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "isPublished": true,
-    "rank": 73,
+    "rank": 88,
     "originalPrice": 46000,
     "origin": "Store Olive Young Korea",
     "is_sold_out": false,
@@ -10538,7 +10484,6 @@
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000233470%2Fmain_thumbnail.png?alt=media&token=a64d0688-4b87-4086-8ef8-854e616b9913",
     "subCategory": "",
     "category": "cosmetics",
-    "rank": 54,
     "goodsNo": "A000000233470",
     "discountRate": "44%",
     "status": "published",
@@ -10610,7 +10555,6 @@
     "subCategory": "",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000234394&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=84",
     "nameKr": "[스테디셀러 특가] [NEW/단독선런칭] 얼터너티브스테레오 립 포션 카라멜 글레이즈 8ml",
-    "rank": 22,
     "originalPrice": 19000,
     "foreignPrice": 16150,
     "photoReviews": [
@@ -11013,10 +10957,10 @@
     "goodsNo": "A000000234422",
     "status": "published",
     "name": "Mặt Nạ Sủi Bọt Làm Sạch Và Dưỡng Ẩm Nhanh Menokin 30-Second Quick Bubble Mask (Tùy Chọn 6 Loại + Tặng Kèm 30ml)",
-    "price": 24000,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "price": 24100,
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000234422%2Fmain_thumbnail.jpg?alt=media&token=82f03947-6131-4103-b728-23441334e04a",
-    "priceVnd": 491400,
+    "priceVnd": 493448,
     "subCategory": "",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "is_sold_out": false,
@@ -11033,10 +10977,10 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000234422%2Freview_user_5.png?alt=media&token=f7e7ffb4-1547-47ec-ae9f-bced11e17e27"
     ],
     "category": "cosmetics",
-    "rank": 58,
+    "rank": 17,
     "originalPrice": 28500,
     "brandKr": "Menokin",
-    "foreignPrice": 24000,
+    "foreignPrice": 24100,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000234422%2Freviews%2Freview_user_1.png?alt=media&token=727d3fcd-5e88-4e07-b765-4eacb4a00077",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000234422%2Freviews%2Freview_user_3.png?alt=media&token=df94faaf-5b2f-465a-8049-fa2ab0ad9f44",
@@ -11057,7 +11001,7 @@
     "originalPrice": 15000,
     "subCategory": "skincare",
     "status": "published",
-    "rank": 38,
+    "rank": 29,
     "createdAt": "2026-10-03T15:43:58.000Z",
     "brandKr": "유리아쥬",
     "origin": "Store Olive Young Korea",
@@ -11175,7 +11119,7 @@
       }
     ],
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023548589ko.jpg",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "name": "Son Dưỡng Môi Cấp Ẩm Có Màu Uriage Stick Levres Colored (9 Tông Màu)",
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023548589ko.jpg",
@@ -11226,7 +11170,6 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023748566ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0023/A00000023748555ko.jpeg"
     ],
-    "rank": 12,
     "options": [
       {
         "image_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/item/2026/10/01/938_01001549.png",
@@ -11393,7 +11336,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000238153%2Freview_user_6.png?alt=media&token=8b203dde-d5bd-46c0-af30-a9b25e9f1813"
     ],
     "category": "cosmetics",
-    "rank": 61,
     "usage": "1. Vặn nhẹ phần đáy để đẩy son lên một lượng vừa đủ khoảng 1mm. 2. Thoa nhẹ nhàng từ lòng môi rồi tán đều dần ra phía viền môi. 3. Thoa thêm một lớp ở giữa lòng môi để tăng cường hiệu ứng căng bóng đa chiều.",
     "originalPrice": 14000,
     "nameKr": "[NEW 한정기획/과즙꿀광] 태오앤더 쥬시탱탱 글레이즈 9colors (기획/단품)",
@@ -11438,7 +11380,6 @@
     "nameKr": "[8+1매 단독기획] 메디힐 하이퍼 겔마스크 4종 (콜라겐/PDRN/마데카소사이드/히알루론산)",
     "is_enriched": true,
     "priceVnd": 515970,
-    "rank": 72,
     "is_sold_out": false,
     "isPublished": true,
     "originalPrice": 36000,
@@ -11507,7 +11448,6 @@
   },
   {
     "discountRate": "12%",
-    "rank": 84,
     "is_sold_out": false,
     "isPublished": true,
     "nameKr": "[잡티미백/TXA] 셀리맥스 트라넥삼산 브라이트닝 크림 랩핑 마스크 5매 기획 (+1매)",
@@ -11580,7 +11520,6 @@
     "isChallenge": true,
     "isSoldOut": false,
     "nameKr": "[NEW산리오캐릭터즈 /1등 틴트] 롬앤 더 쥬시 래스팅 틴트 (쿠로미/한교동)",
-    "rank": 94,
     "subCategory": "",
     "foreignPrice": 9900,
     "photoReviews": [
@@ -12067,7 +12006,6 @@
   {
     "options": [],
     "isPublished": true,
-    "rank": 19,
     "originalPrice": 33000,
     "is_sold_out": false,
     "images": [
@@ -12198,14 +12136,13 @@
     "nameKr": "[NEW카라멜증정]얼터너티브스테레오 무드 레이어 스틱 크레용 1.4g",
     "updatedAt": "2026-10-03T11:18:09.664Z",
     "category": "cosmetics",
-    "rank": 14,
     "isDiscontinued": false,
     "goodsNo": "A000000243859",
     "id": "A000000243859"
   },
   {
     "is_enriched": true,
-    "price": 9150,
+    "price": 9300,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000244834&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=72",
     "isPublished": true,
     "is_sold_out": false,
@@ -12620,9 +12557,9 @@
         "price_vnd": 190418
       }
     ],
-    "rank": 32,
+    "rank": 83,
     "status": "published",
-    "priceVnd": 187346,
+    "priceVnd": 190418,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000244834%2Freviews%2Freview_user_1.jpg?alt=media&token=64920096-4a55-4fcc-bff4-750308a22457",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000244834%2Freviews%2Freview_user_2.jpg?alt=media&token=ad85bac1-78aa-4645-ab06-274fe65b1d9c",
@@ -12635,7 +12572,7 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000244834%2Freviews%2Fproduct_detail_1.jpg?alt=media&token=fbefe665-22e6-471e-ac97-a0ced05d264a",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000244834%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=db42ddbe-2df7-4083-a630-c8b177b6989b"
     ],
-    "foreignPrice": 9150,
+    "foreignPrice": 9300,
     "origin": "Store Olive Young Korea",
     "goodsNo": "A000000244834",
     "brandKr": "Peripera",
@@ -12657,7 +12594,7 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000244834%2Fproduct_detail_1.jpg?alt=media&token=3c7d8d2e-ac42-4e9c-a5b5-f727baa79914",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000244834%2Fproduct_detail_2.jpg?alt=media&token=dfac030b-bcfa-48d7-b310-c55a4a3ef641"
     ],
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000244834%2Fmain_thumbnail.jpg?alt=media&token=1328e308-1a94-4f06-888f-eab712528325",
     "nameKr": "[곡물라떼 컬러 NEW] 페리페라 무드 글로이 틴트 32 Colors",
     "storageProvider": "firebase_storage",
@@ -12740,7 +12677,6 @@
     "goodsNo": "A000000244929",
     "price": 27400,
     "description": "Mỹ phẩm từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "rank": 97,
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000244929%2Fmain_thumbnail.jpg?alt=media&token=7d412848-979f-4815-8a10-bd2f09c44e35",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000244929%2Freview_user_1.png?alt=media&token=fac02167-9675-4a5b-acbb-6b05dd2d0cdb",
@@ -12773,7 +12709,6 @@
     "subCategory": "",
     "status": "published",
     "name": "Tinh Chất Ampoule Cấp Ẩm Chuyên Sâu Aestura Atobarrier 365 Cera-Hyal Hydro Ampoule (Set 30ml + Refill 30ml)",
-    "rank": 64,
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000245091%2Fmain_thumbnail.jpg?alt=media&token=0554c9a9-b87f-42e1-a1cd-2aa56a2b750b",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000245091%2Freview_user_1.png?alt=media&token=2e3cabe1-371e-43a7-b391-8375663c40ec",
@@ -12823,7 +12758,7 @@
     "price": 12900,
     "is_sold_out": false,
     "status": "published",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "discountRate": "28%",
     "brandKr": "Fwee",
     "category": "cosmetics",
@@ -13189,7 +13124,7 @@
     "nameKr": "[앵콜요청템/버터립밤증정] 퓌 3D 볼류밍 글로스 5.3g 단품/기획",
     "subCategory": "",
     "priceVnd": 264128,
-    "rank": 24,
+    "rank": 41,
     "id": "A000000246445"
   },
   {
@@ -13210,7 +13145,6 @@
     "is_enriched": true,
     "name": "Sáp trang điểm đa năng bắt sáng làm mịn da Wakemake Off Cherry Collection Dạng Thỏi",
     "price": 11200,
-    "rank": 81,
     "subCategory": "skincare",
     "nameKr": "[오프체리 컬렉션]웨이크메이크 헬시글로우/소프트블러링 밤 스틱/래스팅글로우 스틱(단품/기획)",
     "createdAt": "2026-10-03T15:43:58.000Z",
@@ -14003,7 +13937,6 @@
     "id": "A000000247099"
   },
   {
-    "rank": 5,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/55382ca315934244b2f1cbee3b9233341790994494752.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/b50c1e7cf8284047b2279fd4afb9c1f11790991732056.png"
@@ -14091,7 +14024,6 @@
     "category": "cosmetics",
     "isDiscontinued": false,
     "nameKr": "[NCT 재민PICK] 이즈앤트리 어니언 뉴페어 겔크림 플러스 50ml 기획 (+겔크림 플러스 20ml, 패드 2매)",
-    "rank": 99,
     "title": "잠시만 기다려 주세요 - 올리브영",
     "id": "A000000247776"
   },
@@ -14182,7 +14114,6 @@
     "is_enriched": true,
     "origin": "Store Olive Young Korea",
     "brand": "Listerine",
-    "rank": 14,
     "goodsNo": "A000000248175",
     "createdAt": "2026-10-03T15:43:58.000Z",
     "nameKr": "[호빵맨 콜라보] 리스테린 캐비티케어/토탈케어플러스 750ml (+100ml*2+세균맨/짤랑이/호빵맨 랜덤가글컵)",
@@ -14220,7 +14151,6 @@
     "title": "잠시만 기다려 주세요 - 올리브영",
     "discountRate": "30%",
     "storageProvider": "firebase_storage",
-    "rank": 69,
     "updatedAt": "2026-10-03T11:18:09.665Z",
     "category": "cosmetics",
     "brand": "Primera",
@@ -14462,9 +14392,9 @@
     "nameKr": "[NEW 말차향 출시] 티엘라 퍼퓸 너리싱 바디크림 200ml 4종 단품/기획 (+바디크림 증정)",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000249154&tab=review",
     "brandKr": "티엘라",
-    "updatedAt": "2026-10-03T11:18:09.665Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "originalPrice": 32000,
-    "rank": 48,
+    "rank": 7,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000249154%2Fmain_thumbnail.jpg?alt=media&token=fb766690-6525-4be9-8a99-4efc56e24551",
     "id": "A000000249154"
   },
@@ -14493,12 +14423,12 @@
     "storageProvider": "firebase_storage",
     "originalPrice": 30000,
     "isSoldOut": false,
-    "priceVnd": 614250,
-    "rank": 55,
+    "priceVnd": 472972,
+    "rank": 23,
     "nameKr": "[단독기획/모공탄력] 셀리맥스 더 비타 A 레티날 샷 타이트닝 부스터 15ml 기획(+3ml)",
     "discountRate": "0%",
     "description": "Mỹ phẩm Celimax 15ml +3ml (15ml) từ thương hiệu Celimax là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "price": 30000,
+    "price": 23100,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000250199%2Freviews%2Freview_user_1.png?alt=media&token=c6751513-1fe3-495a-bf9a-495c6c8860bf",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000250199%2Freviews%2Freview_user_2.png?alt=media&token=a9f96853-cc6a-4d01-b8ad-a2b444a86e32",
@@ -14511,13 +14441,13 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000250199%2Freviews%2Fproduct_detail_1.jpg?alt=media&token=178ac563-86e0-46f8-9688-6f3035794c66",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000250199%2Freviews%2Fproduct_detail_2.png?alt=media&token=e3a96b3d-ba5c-48b3-af01-46038ff02953"
     ],
-    "foreignPrice": 30000,
+    "foreignPrice": 23100,
     "name": "Tinh Chất Tăng Cường Thu Nhỏ Lỗ Chân Lông Tăng Đàn Hồi Celimax The Vita A Retinal Shot Tightening Booster (Set 15ml + Tặng Kèm 3ml)",
     "subCategory": "",
     "origin": "Store Olive Young Korea",
     "category": "cosmetics",
     "goodsNo": "A000000250199",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "isDiscontinued": false,
     "status": "published",
@@ -14526,7 +14456,6 @@
   },
   {
     "discountRate": "15%",
-    "rank": 8,
     "description": "Xịt khóa nền ứng dụng công nghệ kiểm soát nhiệt độ giúp lớp trang điểm bền màu, lâu trôi và tươi mới lên tới 24 giờ. Hạt sương siêu mịn thẩm thấu nhanh, ngăn ngừa hiện tượng mốc phấn, nứt nền hoặc bóng nhờn khó chịu. Phù hợp cho mọi loại da, đặc biệt là da dầu và da thường xuyên phải trang điểm nhiều giờ.",
     "nameKr": "[24시간고정] 어반디케이 올나이터 메이크업 세팅 픽서 118ml/30ml 중 택 1",
     "originalPrice": 47000,
@@ -14622,7 +14551,6 @@
     "isSoldOut": false,
     "title": "잠시만 기다려 주세요 - 올리브영",
     "brandKr": "누니",
-    "rank": 38,
     "subCategory": "lip",
     "nameKr": "[1등립오일/올영단독] 누니 애플 립 오일 12종",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000251720%2Fmain_thumbnail.jpg?alt=media&token=a321453b-708e-451f-afca-598fb7407707",
@@ -14720,7 +14648,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000252917%2Freviews%2Fproduct_detail_1.jpg?alt=media&token=f7a82a8b-a429-4576-9dc6-65ab0aaf7375",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000252917%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=7b0604e7-6049-45a2-a7ab-57276e88269a"
     ],
-    "rank": 94,
     "goodsNo": "A000000252917",
     "price": 74400,
     "category": "cosmetics",
@@ -14886,7 +14813,6 @@
     ],
     "foreignPrice": 29000,
     "origin": "Store Olive Young Korea",
-    "rank": 75,
     "originalPrice": 38000,
     "createdAt": "2026-10-03T15:43:58.000Z",
     "id": "A000000253122"
@@ -14903,7 +14829,6 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000253592&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=82",
     "options": [],
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000253592%2Fmain_thumbnail.jpg?alt=media&token=753eb9cb-9e7e-48fc-9c6f-953d14b32f0f",
-    "rank": 77,
     "description": "Kem Dưỡng Ẩm Phục Hồi Celimax TXA 35ml +14ml (35ml) từ thương hiệu Celimax là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "priceVnd": 1462509,
     "goodsNo": "A000000253592",
@@ -14970,7 +14895,6 @@
     "goodsNo": "A000000253617",
     "storageProvider": "firebase_storage",
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "rank": 87,
     "options": [
       {
         "is_sold_out": false,
@@ -15063,7 +14987,6 @@
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000253919%2Fmain_thumbnail.jpg?alt=media&token=1fcaf3ca-9f33-4d37-9c3b-135ff8d69690",
     "name": "Mặt Nạ Tăng Sinh Collagen Căng Bóng Da Juvelook PDLLA Collagen Boosting Mask Set 5 Miếng",
     "brand": "Juvelook",
-    "rank": 92,
     "category": "cosmetics",
     "isDiscontinued": false,
     "title": "잠시만 기다려 주세요 - 올리브영",
@@ -15118,7 +15041,6 @@
     "status": "published",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "updatedAt": "2026-10-03T15:43:58.000Z",
-    "rank": 81,
     "brand": "Arencia",
     "storageProvider": "firebase_storage",
     "originalPrice": 46500,
@@ -15170,7 +15092,7 @@
     "discountRate": "10%",
     "goodsNo": "A000000255256",
     "description": "Son Kem Lì NEW 7g+4 2g 12 colors (7g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa t��nh trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "rank": 51,
+    "rank": 94,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000255256%2Fmain_thumbnail.jpg?alt=media&token=bcf98b5e-f0da-4e20-8994-cde1d5ca2719",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000255256&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=92",
     "nameKr": "[NEW/이시안공동개발] 라카 퍼펙트 트윈 립 4.7g+4.2g 12 colors",
@@ -15325,7 +15247,7 @@
     "storageProvider": "firebase_storage",
     "brandKr": "Laka",
     "name": "Son Môi Hai Đầu Đa Năng Laka Perfect Twin Lip (Set 4.7g + 4.2g / 12 Tone Màu)",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "origin": "Store Olive Young Korea",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "isPublished": true,
@@ -15376,7 +15298,6 @@
     ],
     "foreignPrice": 26200,
     "brandKr": "Skinfood",
-    "rank": 35,
     "description": "Bông Dưỡng Da Toner Pad Skinfood 1+1 +PDRN (60 Miếng) từ thương hiệu Skinfood là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu tinh chất Rose PDRN chiết xuất thực vật cùng phức hợp peptide. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp thu nhỏ lỗ chân lông, cải thiện bề mặt da thô ráp và mang lại hiệu ứng căng bóng rạng rỡ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "id": "A000000255585"
@@ -15435,11 +15356,11 @@
         "status": "available"
       }
     ],
-    "price": 28900,
+    "price": 27900,
     "goodsNo": "A000000255682",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000255682&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=70",
     "status": "published",
-    "foreignPrice": 28900,
+    "foreignPrice": 27900,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000255682%2Freviews%2Freview_user_1.png?alt=media&token=5b60653b-3455-4441-8bca-4da70e6dcf19",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000255682%2Freviews%2Freview_user_2.png?alt=media&token=332a2491-e422-4550-a1ab-93470d250f87",
@@ -15453,12 +15374,12 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000255682%2Freviews%2Fproduct_detail_2.png?alt=media&token=ffb6e9af-11df-4352-a605-b9434e0a25fa"
     ],
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "priceVnd": 591728,
+    "priceVnd": 571252,
     "isSoldOut": false,
     "description": "Bông Dưỡng Da Toner Pad 160 1+1 140 PDRN (160 Miếng) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu tinh chất Rose PDRN chiết xuất thực vật cùng phức hợp peptide. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp thu nhỏ lỗ chân lông, cải thiện bề mặt da thô ráp và mang lại hiệu ứng căng bóng rạng rỡ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "name": "Bông Dưỡng Da Toner Pad Se Khít Lỗ Chân Lông Medicube Toner Pad (Set 160 Miếng + Refill 140 Miếng Tùy Chọn Zero Pore/PDRN/Deep Vita C)",
     "brand": "Medicube",
-    "rank": 99,
+    "rank": 69,
     "isDiscontinued": false,
     "discountRate": "12%",
     "title": "잠시만 기다려 주세요 - 올리브영",
@@ -15481,7 +15402,7 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000255682%2Fproduct_detail_2.png?alt=media&token=ab22cede-9f21-4e4a-a942-35e9a43e98ac"
     ],
     "brandKr": "Medicube",
-    "updatedAt": "2026-10-03T15:48:02.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "isChallenge": true,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000255682%2Fmain_thumbnail.png?alt=media&token=7333f36f-575d-41dc-9134-6899f097c94b",
     "id": "A000000255682"
@@ -15492,14 +15413,14 @@
     "discountRate": "30%",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "origin": "Store Olive Young Korea",
-    "priceVnd": 544635,
+    "priceVnd": 538492,
     "goodsNo": "A000000255752",
-    "rank": 78,
+    "rank": 27,
     "storageProvider": "firebase_storage",
-    "price": 26600,
+    "price": 26300,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0025/A00000025575225ko.jpg",
     "is_enriched": true,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "is_sold_out": false,
     "isPublished": true,
     "nameKr": "[수분진정/세럼증정] 닥터지 레드블레미쉬 클리어 수딩크림 EX 70ml기획 (+30ml+세럼10ml*2ea)",
@@ -15514,7 +15435,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/8b9ba43298e64b50a2c463e4883a5f971791012903067.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/a7f94ab2591c4feba83558e9aca4a2531791007862912.png"
     ],
-    "foreignPrice": 26600,
+    "foreignPrice": 26300,
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0025/A00000025575225ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0025/A00000025575208ko.jpg",
@@ -15534,7 +15455,6 @@
     "isChallenge": true,
     "options": [],
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "rank": 61,
     "isDiscontinued": false,
     "category": "cosmetics",
     "images": [
@@ -15604,7 +15524,6 @@
     "priceVnd": 386978,
     "title": "잠시만 기다려 주세요 - 올리브영",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000257072&tab=review",
-    "rank": 12,
     "brand": "numbuzin",
     "is_sold_out": false,
     "goodsNo": "A000000257072",
@@ -15729,7 +15648,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000257324%2Freviews%2Fproduct_detail_1.jpg?alt=media&token=a5ac5947-3910-4e72-bd25-d1b4f2200bc4",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000257324%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=7926c2af-5e25-4de8-8179-ca681750f3f9"
     ],
-    "rank": 90,
     "title": "잠시만 기다려 주세요 - 올리브영",
     "status": "published",
     "id": "A000000257324"
@@ -15741,7 +15659,7 @@
     "isSoldOut": false,
     "nameKr": "에스트라 아토베리어365 하이드로 수딩크림 80ml 기획 (+수딩크림 10ml+클렌징폼 30g)",
     "options": [],
-    "priceVnd": 844594,
+    "priceVnd": 530302,
     "isPublished": true,
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000258834%2Fmain_thumbnail.jpg?alt=media&token=98ed016e-7ce5-482b-acea-0edb147fa400",
@@ -15758,7 +15676,7 @@
     ],
     "isChallenge": true,
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "foreignPrice": 41250,
+    "foreignPrice": 25900,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000258834%2Freviews%2Freview_user_1.png?alt=media&token=184fcba0-577a-4386-a3f9-93454f3a0c71",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000258834%2Freviews%2Freview_user_2.png?alt=media&token=ff3fc02a-c5b0-4f87-be71-8785095fd002",
@@ -15772,11 +15690,11 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000258834%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=1ea7fec3-e1c8-49ae-b1f9-1883f2f84188"
     ],
     "is_sold_out": false,
-    "rank": 30,
+    "rank": 58,
     "brand": "Aestura",
     "name": "Kem Dưỡng Ẩm Làm Dịu Phục Hồi Aestura Atobarrier 365 Hydro Soothing Cream (Set 80ml + Tặng Kem 10ml + Sữa Rửa Mặt 30g)",
     "subCategory": "",
-    "updatedAt": "2026-10-03T15:48:02.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "originalPrice": 33000,
     "isDiscontinued": false,
     "origin": "Store Olive Young Korea",
@@ -15785,7 +15703,7 @@
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "discountRate": "0%",
     "description": "Kem Dưỡng Ẩm Phục Hồi Aestura 365 80ml 10ml+ (80ml) từ thương hiệu Aestura là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "price": 41250,
+    "price": 25900,
     "brandKr": "Aestura",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000258834%2Fmain_thumbnail.jpg?alt=media&token=98ed016e-7ce5-482b-acea-0edb147fa400",
     "id": "A000000258834"
@@ -15830,7 +15748,6 @@
     "category": "cosmetics",
     "status": "published",
     "is_enriched": true,
-    "rank": 76,
     "brand": "LG Pra.L",
     "priceVnd": 9950850,
     "nameKr": "[고출력 미백디바이스] LG 프라엘 멜라빔 토닝 (단품/기획)",
@@ -15857,7 +15774,7 @@
   {
     "usage": "1. Dùng vào buổi tối ở bước dưỡng da cuối cùng.\n2. Lấy một lượng kem vừa đủ và xoa nhẹ trong lòng bàn tay để các viên nang hòa tan hoàn toàn.\n3. Thoa đều lên mặt, massage nâng cơ nhẹ nhàng và luôn dùng kem chống nắng vào sáng hôm sau.",
     "description": "Kem dưỡng dạng viên nang chứa Retinal thế hệ mới giúp thúc đẩy tái tạo tế bào, làm mờ nếp nhăn và se khít lỗ chân lông rõ rệt. Công nghệ bọc nang độc đáo bảo toàn hoạt chất tối ưu, giảm thiểu nguy cơ kích ứng cho làn da khi sử dụng. Phù hợp cho da xuất hiện dấu hiệu lão hóa, da có lỗ chân lông to và kém săn chắc.",
-    "rank": 30,
+    "rank": 54,
     "category": "cosmetics",
     "status": "published",
     "origin": "Store Olive Young Korea",
@@ -15866,13 +15783,13 @@
     "storageProvider": "firebase_storage",
     "brandKr": "포들",
     "isDiscontinued": false,
-    "foreignPrice": 28800,
+    "foreignPrice": 27360,
     "photoReviews": [],
     "subCategory": "cream",
-    "price": 28800,
+    "price": 27360,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000259386&tab=review",
     "is_sold_out": false,
-    "priceVnd": 589680,
+    "priceVnd": 560196,
     "options": [
       {
         "price_krw": 28800,
@@ -15892,7 +15809,7 @@
     "nameKr": "[소이현PICK] 포들 밤 레티날 모공 리셋 솔루션 캡슐 크림 55g",
     "goodsNo": "A000000259386",
     "discountRate": "17%",
-    "updatedAt": "2026-10-03T11:18:09.666Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "brand": "Podle",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "images": [
@@ -15921,7 +15838,6 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0025/A00000025955513ko.png"
     ],
     "updatedAt": "2026-10-03T15:43:58.000Z",
-    "rank": 55,
     "originalPrice": 59800,
     "priceVnd": 735052,
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
@@ -15954,7 +15870,6 @@
     "updatedAt": "2026-10-03T15:43:58.000Z",
     "originalPrice": 33000,
     "brandKr": "에이프릴스킨",
-    "rank": 90,
     "priceVnd": 493448,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0025/A00000025987264ko.jpg",
     "nameKr": "[NEW][리뉴얼/철벽커버] 에이프릴스킨 히어로쿠션 2.0 (본품+리필+퍼프2개)",
@@ -16074,7 +15989,6 @@
     "title": "잠시만 기다려 주세요 - 올리브영",
     "is_sold_out": false,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000260483%2Fmain_thumbnail.png?alt=media&token=e6340178-1022-4692-9562-39855807b840",
-    "rank": 65,
     "isChallenge": true,
     "brand": "fwee",
     "isPublished": true,
@@ -16188,7 +16102,6 @@
     "isPublished": true,
     "nameKr": "[9/5 하루특가] [2천만돌파] 비플레인 녹두 약산성 클렌징폼 160ml 더블 기획",
     "isChallenge": true,
-    "rank": 3,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000260522&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=6",
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000260522%2Freviews%2Freview_user_1.png?alt=media&token=53edb34b-b740-4e96-a1c8-dd54cea87390",
@@ -16219,7 +16132,7 @@
     "storageProvider": "firebase_storage",
     "isPublished": true,
     "nameKr": "셀리맥스 더 비타 A 레티날 샷 타이트닝 듀얼 크림 50ml",
-    "foreignPrice": 74000,
+    "foreignPrice": 37000,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000261065%2Freviews%2Freview_user_1.png?alt=media&token=f4950620-408e-4fe7-8f60-722724524eb2",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000261065%2Freviews%2Freview_user_2.png?alt=media&token=b690ef0f-fd57-41c1-9e2e-bd0619a4651e",
@@ -16233,9 +16146,9 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000261065%2Freviews%2Fproduct_detail_2.png?alt=media&token=144fdbf4-df02-4139-aed0-30cb6d4fe4ef"
     ],
     "brandKr": "Celimax",
-    "price": 74000,
+    "price": 37000,
     "subCategory": "",
-    "rank": 21,
+    "rank": 70,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000261065&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=39",
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000261065%2Fmain_thumbnail.jpg?alt=media&token=d333c09b-4b02-4ecf-8a72-e34cbae9b3b4",
@@ -16251,13 +16164,12 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000261065%2Fproduct_detail_2.png?alt=media&token=5a6fe309-5900-4332-95e0-668dce02c65c"
     ],
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "updatedAt": "2026-10-03T15:48:02.000Z",
-    "priceVnd": 1515150,
+    "updatedAt": "2026-10-20T09:36:28.000Z",
+    "priceVnd": 757575,
     "description": "Kem Dưỡng Ẩm Phục Hồi Celimax 50ml (50ml) từ thương hiệu Celimax là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "id": "A000000261065"
   },
   {
-    "rank": 37,
     "category": "cosmetics",
     "description": "Tinh Chất Serum Wellage 100 100ml +60ml (100ml) từ thương hiệu Wellage là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "nameKr": "[스테디셀러 특가] 웰라쥬 리얼 히알루로닉 블루 100 앰플 100ml 기획 (+60ml 리필+수딩크림 30ml)",
@@ -16342,7 +16254,7 @@
         "subtitle_vi": "Set tiện lợi đi kèm thìa gạt chuyên dụng lấy sáp hợp vệ sinh và sạch sẽ"
       }
     ],
-    "rank": 47,
+    "rank": 87,
     "category": "cosmetics",
     "storageProvider": "firebase_storage",
     "brand": "Fully",
@@ -16375,7 +16287,7 @@
     "priceVnd": 358312,
     "origin": "Store Olive Young Korea",
     "originalPrice": 17800,
-    "updatedAt": "2026-10-03T11:18:09.667Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "description": "Sáp tẩy trang đột phá với kết cấu kem chuyển thành dầu mịn màng giúp hòa tan dễ dàng lớp trang điểm, cặn bẩn và sợi bã nhờn sâu trong lỗ chân lông. Công thức dịu nhẹ không gây cay mắt hay căng rát, duy trì độ ẩm tự nhiên cho làn da luôn mềm mại sau khi làm sạch. Phù hợp cho mọi loại da, đặc biệt là da dầu, da có nhiều sợi bã nhờn và mụn đầu đen.",
     "name": "Sáp Tẩy Trang Làm Sạch Bã Nhờn Dạng Kem Chuyển Dầu Fully Melting Cream To Oil 50ml",
     "brandKr": "풀리",
@@ -16383,7 +16295,6 @@
     "id": "A000000261788"
   },
   {
-    "rank": 96,
     "originalPrice": 35000,
     "origin": "Store Olive Young Korea",
     "isPublished": true,
@@ -16455,7 +16366,7 @@
   },
   {
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026186405ko.jpg",
-    "rank": 42,
+    "rank": 5,
     "status": "published",
     "storageProvider": "firebase_storage",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000261864&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=3",
@@ -16491,19 +16402,19 @@
       }
     ],
     "isPublished": true,
-    "priceVnd": 675675,
+    "priceVnd": 530302,
     "originalPrice": 33000,
     "is_sold_out": false,
     "nameKr": "[9/5 하루특가] 에스트라 아토베리어365 크림 80ml 기획(+토너25ml+클렌징폼3g*3EA)",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "subCategory": "",
-    "foreignPrice": 33000,
+    "foreignPrice": 25900,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/406b4d589ee745f2992de8048ece3a881791007384534.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/26db033dfad94c52a58562e8bdacef611791006156375.png"
     ],
     "brandKr": "Aestura",
-    "price": 33000,
+    "price": 25900,
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026186405ko.jpg",
@@ -16534,7 +16445,6 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000262413&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=2",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "isSoldOut": false,
-    "rank": 7,
     "brandKr": "Mediheal",
     "storageProvider": "firebase_storage",
     "photoReviews": [
@@ -16675,7 +16585,6 @@
     "priceVnd": 509828,
     "nameKr": "[산리오캐릭터즈 에디션] 메디힐 마데카소사이드 수분 흔적 더마 세럼 50+50mL(+폼폼푸린 스마트톡)",
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
-    "rank": 58,
     "isPublished": false,
     "options": [],
     "isChallenge": true,
@@ -16717,7 +16626,6 @@
     "id": "A000000262436"
   },
   {
-    "rank": 100,
     "goodsNo": "A000000262530",
     "discountRate": "33%",
     "originalPrice": 34000,
@@ -16837,7 +16745,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000262602%2Fproduct_detail_1.png?alt=media&token=492c5a9f-ccec-45c6-b654-773ee7f938b8",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000262602%2Fproduct_detail_2.png?alt=media&token=79c76d46-3c32-4cfa-b3f9-5f6b002e41b0"
     ],
-    "rank": 64,
     "storageProvider": "firebase_storage",
     "originalPrice": 57500,
     "description": "Tinh Chất Serum Anua 100 30ml (30ml) từ thương hiệu Anua là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
@@ -16905,7 +16812,6 @@
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000262603%2Fmain_thumbnail.jpg?alt=media&token=62acb80c-280b-4150-bb20-bc33f15084fc",
     "isChallenge": true,
     "isPublished": true,
-    "rank": 9,
     "isSoldOut": false,
     "options": [
       {
@@ -17001,7 +16907,6 @@
     ],
     "isChallenge": true,
     "goodsNo": "A000000262620",
-    "rank": 39,
     "foreignPrice": 21900,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000262620%2Freviews%2Freview_user_1.png?alt=media&token=59bad1bb-1b8f-4e76-b67c-56e855990da7",
@@ -17044,7 +16949,6 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000262623&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=31",
     "is_sold_out": false,
     "is_enriched": true,
-    "rank": 31,
     "category": "cosmetics",
     "goodsNo": "A000000262623",
     "origin": "Store Olive Young Korea",
@@ -17153,7 +17057,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000262817%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=0cc8e9a6-b498-473b-ab5f-d901afa99b97"
     ],
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000262817&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=49",
-    "rank": 49,
     "description": "Tinh Chất Serum Innisfree 30ml (30ml) từ thương hiệu Innisfree là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu tinh chất rau má Madecassoside đậm đặc kết hợp phức hợp Cica làm dịu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp làm dịu nốt mụn sưng đỏ, làm mờ vết thâm sau mụn và phục hồi hàng rào màng tế bào da bị tổn thương, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "brandKr": "Innisfree",
     "originalPrice": 48000,
@@ -17256,7 +17159,6 @@
     "isChallenge": true,
     "nameKr": "[9/5 하루특가/산리오캐릭터즈/김용명PICK] 체이싱래빗 올어바웃 커버크림 한정기획(글로우/퍼플)",
     "is_sold_out": false,
-    "rank": 89,
     "storageProvider": "firebase_storage",
     "id": "A000000262835"
   },
@@ -17282,7 +17184,6 @@
     "foreignPrice": 24000,
     "priceVnd": 491400,
     "price": 24000,
-    "rank": 64,
     "nameKr": "[1+1][손거울 증정] 한율 쑥히알 세럼 40ml 리필 기획 (+40ml 리필+산리오 헬로키티 손거울(랜덤))",
     "options": [
       {
@@ -17348,7 +17249,6 @@
     "foreignPrice": 19900,
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "brandKr": "Hanyul",
-    "rank": 23,
     "storageProvider": "firebase_storage",
     "nameKr": "[산리오] 한율 팩폼 120mL 기획 2종 중 택 1 (+15mL+한교동 모공브러시&케이스)",
     "priceVnd": 407452,
@@ -17487,7 +17387,6 @@
     "brandKr": "한율",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000262945%2Fmain_thumbnail.jpg?alt=media&token=f893d890-215d-43f9-85dd-6eebf1217b11",
     "category": "cosmetics",
-    "rank": 98,
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000262945%2Fmain_thumbnail.jpg?alt=media&token=0ccbb910-97c6-4e2f-865f-57570bc91326",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000262945%2Freview_user_1.png?alt=media&token=8b1af46d-5cf5-49dc-96f5-b5707c559f39",
@@ -17508,7 +17407,6 @@
     "priceVnd": 839475,
     "updatedAt": "2026-10-03T15:48:02.000Z",
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "rank": 20,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263009&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=25",
     "origin": "Store Olive Young Korea",
     "brand": "La Roche-Posay",
@@ -17569,7 +17467,7 @@
     "is_enriched": true,
     "category": "cosmetics",
     "is_sold_out": false,
-    "rank": 41,
+    "rank": 28,
     "isPublished": true,
     "discountRate": "25%",
     "brand": "La Roche-Posay",
@@ -17589,7 +17487,7 @@
     "originalPrice": 72000,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263017&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=4",
     "price": 54000,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "priceVnd": 1105650,
     "description": "Tinh Chất Serum La Roche-Posay B5+ 200ml 5ml+ 50ml+ (200ml) từ thương hiệu La Roche-Posay là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu tinh chất rau má Madecassoside đậm đặc kết hợp phức hợp Cica làm dịu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp làm dịu nốt mụn sưng đỏ, làm mờ vết thâm sau mụn và phục hồi hàng rào màng tế bào da bị tổn thương, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "id": "A000000263017"
@@ -17606,7 +17504,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263019%2Freview_user_5.png?alt=media&token=72ef89c0-b65c-4f07-b19b-c61bce4a46fe",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263019%2Fproduct_detail_2.jpg?alt=media&token=3dc90785-eeb1-4fd2-a35a-846bbccfef1d"
     ],
-    "rank": 50,
     "isDiscontinued": false,
     "description": "Tinh Chất Serum La Roche-Posay 100ml 5ml (100ml) từ thương hiệu La Roche-Posay là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu tinh chất rau má Madecassoside đậm đặc kết hợp phức hợp Cica làm dịu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp làm dịu nốt mụn sưng đỏ, làm mờ vết thâm sau mụn và phục hồi hàng rào màng tế bào da bị tổn thương, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "price": 52000,
@@ -17742,7 +17639,6 @@
     "name": "Má Hồng Dạng Lỏng Hiệu Ứng Căng Bóng Amuse Dew Serum Liquid Blush (7 Tông Màu)",
     "goodsNo": "A000000263020",
     "origin": "Store Olive Young Korea",
-    "rank": 35,
     "is_enriched": true,
     "brandKr": "Amuse",
     "images": [
@@ -17801,7 +17697,6 @@
     "status": "published",
     "is_sold_out": false,
     "origin": "Store Olive Young Korea",
-    "rank": 91,
     "goodsNo": "A000000263021",
     "updatedAt": "2026-10-03T15:48:02.000Z",
     "brandKr": "La Roche-Posay",
@@ -17878,7 +17773,6 @@
     ],
     "storageProvider": "firebase_storage",
     "brand": "Abib",
-    "rank": 40,
     "is_sold_out": true,
     "originalPrice": 40000,
     "isPublished": false,
@@ -17918,7 +17812,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263036%2Freviews%2Fproduct_detail_2.png?alt=media&token=e01a0912-78ea-48bf-bc5c-46051cb5f258"
     ],
     "foreignPrice": 4800,
-    "rank": 34,
     "brand": "Abib",
     "isDiscontinued": false,
     "brandKr": "Abib",
@@ -17993,19 +17886,18 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263055%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=f4d0aa55-3768-4985-8f7b-9df7360c79ae"
     ],
     "foreignPrice": 62400,
-    "rank": 57,
     "isPublished": true,
     "isChallenge": true,
     "is_sold_out": false,
     "id": "A000000263055"
   },
   {
-    "rank": 71,
+    "rank": 86,
     "category": "cosmetics",
     "nameKr": "[스테디셀러 특가][누렁이 콜라보] 제로이드 인텐시브 크림 80ml+50ml 기획 (+누렁이 파우치)",
     "brand": "Zeroid",
     "is_sold_out": false,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263068%2Freviews%2Freview_user_1.png?alt=media&token=c03496ad-c32f-4ffd-a91e-cb9767871048",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263068%2Freviews%2Freview_user_2.png?alt=media&token=23e4a451-0121-4ff2-bf80-720f4cb49498",
@@ -18110,7 +18002,6 @@
     "subCategory": "cream",
     "brand": "Bioderma",
     "isDiscontinued": false,
-    "rank": 4,
     "originalPrice": 50500,
     "brandKr": "바이오더마",
     "nameKr": "[9월올영픽] 바이오더마 시카비오 크림+ 100ml 더블 기획",
@@ -18171,7 +18062,6 @@
     "foreignPrice": 38700,
     "usage": "1. Làm ướt đều toàn bộ khuôn mặt với nước ấm. 2. Bơm 2-3 lần bọt rửa mặt ra tay và nhẹ nhàng massage khắp mặt theo chuyển động tròn. 3. Rửa sạch lại kỹ càng bằng nước ấm và thấm khô nhẹ nhàng bằng khăn mềm.",
     "priceVnd": 792382,
-    "rank": 52,
     "isSoldOut": false,
     "subCategory": "cleanser",
     "brand": "Zeroid",
@@ -18238,7 +18128,6 @@
     "brand": "Bioderma",
     "isDiscontinued": false,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263073&tab=review",
-    "rank": 86,
     "foreignPrice": 1900,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263073%2Freviews%2Freview_user_1.png?alt=media&token=c74fd2ea-c29a-4c1e-9e7d-ffd3b9815f92",
@@ -18293,7 +18182,6 @@
     "isPublished": true,
     "is_sold_out": false,
     "status": "published",
-    "rank": 87,
     "options": [
       {
         "subtitle_vi": "T��ng hồng san hô rạng rỡ, làm mờ rãnh môi mềm mịn",
@@ -18539,7 +18427,6 @@
     "updatedAt": "2026-10-03T15:48:02.000Z",
     "isPublished": true,
     "isChallenge": true,
-    "rank": 83,
     "storageProvider": "firebase_storage",
     "brandKr": "Lagom",
     "foreignPrice": 24600,
@@ -18577,7 +18464,7 @@
     "category": "cosmetics",
     "name": "Kem Chống Nắng Dưỡng Ẩm Cấp Nước Round Lab Birch Juice Moisturizing Sunscreen (Set Mua 1 Tặng 1 50ml + Tặng Kèm Tinh Chất 8ml)",
     "is_sold_out": false,
-    "rank": 22,
+    "rank": 20,
     "origin": "Store Olive Young Korea",
     "brandKr": "Round Lab",
     "subCategory": "",
@@ -18590,7 +18477,7 @@
     "status": "published",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263510&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=44",
     "priceVnd": 501638,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "description": "Tinh Chất Serum Round Lab 1+1 50ml 1+1 8ml (50ml) từ thương hiệu Round Lab là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "price": 24500,
     "originalPrice": 25000,
@@ -18617,7 +18504,6 @@
     ],
     "goodsNo": "A000000263530",
     "originalPrice": 47500,
-    "rank": 96,
     "origin": "Store Olive Young Korea",
     "isPublished": true,
     "priceVnd": 550778,
@@ -18662,7 +18548,6 @@
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263542%2Fmain_thumbnail.jpg?alt=media&token=b081b7d6-f0a5-420d-a188-ea010d3a8a7e",
     "name": "Tinh Chất Ampoule Chống Oxy Hóa Phục Hồi Physiogel Dailymune Ampoule (Set 20ml + 20ml + Tặng 1 Mặt Nạ)",
     "storageProvider": "firebase_storage",
-    "rank": 48,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263542&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=34",
     "brand": "Physiogel",
     "origin": "Store Olive Young Korea",
@@ -18749,7 +18634,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263555%2Fproduct_detail_1.jpg?alt=media&token=ba1864e8-a512-4771-8391-0d64be69f5dc",
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263555%2Fproduct_detail_2.jpg?alt=media&token=bc7a10af-22df-49fd-89a1-4934aba53b73"
     ],
-    "rank": 27,
     "foreignPrice": 18900,
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263555%2Freviews%2Freview_user_1.png?alt=media&token=86b133bf-e234-4132-811e-7d35e1a6414b",
@@ -18825,7 +18709,6 @@
     "name": "Tinh Chất Serum Mờ Thâm Sáng Da Goodal Green Tangerine Vita C Dark Spot Care Serum Alpha Phiên Bản Sanrio (Set 50ml + Lõi Thay 50ml + Quà Tặng Nam Châm Pompompurin)",
     "originalPrice": 43000,
     "price": 29900,
-    "rank": 4,
     "status": "published",
     "storageProvider": "firebase_storage",
     "description": "Tinh Chất Serum Goodal 50+50ml (50+50ml) từ thương hiệu Goodal là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu dẫn xuất Vitamin C tươi cùng Niacinamide dưỡng sáng. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp ức chế melanin, làm mờ thâm nám tàn nhang và nuôi dưỡng làn da đều màu sáng mịn tự nhiên, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
@@ -18921,7 +18804,6 @@
     "status": "published",
     "category": "cosmetics",
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "rank": 63,
     "discountRate": "10%",
     "brand": "Vodana",
     "description": "Son Kem Lì từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu 30.000ppm phức hợp đạm Keratin và 36 loại acid amin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp phục hồi biểu bì tóc hư tổn nặng do uốn nhuộm nhiệt, lấp đầy lõi tóc và mang lại độ bóng mượt bồng bềnh tức thì, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
@@ -18954,7 +18836,7 @@
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "is_sold_out": false,
     "priceVnd": 552825,
-    "rank": 45,
+    "rank": 32,
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026366412ko.png",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026366404ko.jpg",
@@ -18969,7 +18851,7 @@
     "brandKr": "Torriden",
     "discountRate": "25%",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263664&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=12",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "nameKr": "[7일특가/올영픽] 토리든 다이브인 저분자 히알루론산 세럼 50ml 리필 기획(+50ml 리필+자석인형) (시나모롤)",
     "category": "cosmetics",
     "description": "Tinh Chất Serum Torriden 50ml +50ml (50ml) từ thương hiệu Torriden là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
@@ -19009,7 +18891,6 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263681&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=73",
     "subCategory": "",
     "nameKr": "[9월 올영픽] 토리든 다이브인 저분자 히알루론산 수딩 크림 100ml 더블 기획 (+메쉬백) (시나모롤)",
-    "rank": 73,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263681%2Fmain_thumbnail.png?alt=media&token=71eed687-e0dd-4cd3-a763-255a76077e61",
     "originalPrice": 42000,
     "category": "cosmetics",
@@ -19068,7 +18949,6 @@
     "description": "Kem Dưỡng Ẩm Phục Hồi S.Nature 60ml (60ml) từ thương hiệu S.Nature là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263782%2Fmain_thumbnail.png?alt=media&token=b302dba4-bf2c-4493-bb70-1ac858216ebb",
     "originalPrice": 43000,
-    "rank": 10,
     "isSoldOut": false,
     "usage": "Sử dụng hàng ngày theo chu trình chăm sóc da cơ bản.",
     "status": "published",
@@ -19086,7 +18966,6 @@
     "subCategory": "makeup",
     "brandKr": "쿼드쎄라",
     "usage": "1. Rửa sạch mặt và thoa đều một lượng kem dưỡng ẩm hoặc gel chuyên dụng lên toàn mặt. 2. Khởi động máy, chọn chế độ năng lượng thích hợp và áp nhẹ bề mặt đầu dẫn lên da. 3. Nhẹ nhàng di chuyển máy từ dưới lên trên và từ trong ra ngoài theo đường nét gương mặt trong 5 đến 10 phút.",
-    "rank": 91,
     "discountRate": "10%",
     "nameKr": "[올영 전체 1위/화장전날 디바이스] 쿼드쎄라 틴즈 물방울초음파 홈케어 디바이스",
     "updatedAt": "2026-10-03T11:18:09.669Z",
@@ -19216,7 +19095,6 @@
     "price": 26100,
     "nameKr": "[패키지리뉴얼/톤별맞춤] 오프라 슬림 미니 하이라이터 (+기획/본품)",
     "storageProvider": "firebase_storage",
-    "rank": 88,
     "name": "Phấn Bắt Sáng Tạo Khối Căng Bóng OFRA Slim Mini Highlighter 4g",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263862&tab=review",
     "priceVnd": 534398,
@@ -19247,7 +19125,6 @@
     "isPublished": true,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000263939%2Fmain_thumbnail.png?alt=media&token=376e5a14-a4ef-440d-982b-027864439798",
     "isChallenge": true,
-    "rank": 74,
     "brand": "Ongredients",
     "is_sold_out": false,
     "origin": "Store Olive Young Korea",
@@ -19364,7 +19241,6 @@
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000264301%2Freviews%2Fproduct_detail_2.jpg?alt=media&token=a3aa25b7-a60e-4b60-806c-c58a138e29da"
     ],
     "foreignPrice": 24200,
-    "rank": 89,
     "discountRate": "47%",
     "storageProvider": "firebase_storage",
     "isDiscontinued": false,
@@ -19413,7 +19289,6 @@
     ],
     "priceVnd": 581695,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000264302%2Fmain_thumbnail_sold.jpg?alt=media&token=f165e2a8-6237-4230-8724-6397a2431512",
-    "rank": 66,
     "isSoldOut": false,
     "originalPrice": 47800,
     "is_sold_out": true,
@@ -19443,8 +19318,8 @@
   },
   {
     "photoReviews": [],
-    "foreignPrice": 22000,
-    "price": 22000,
+    "foreignPrice": 25500,
+    "price": 25500,
     "is_sold_out": false,
     "isPublished": true,
     "images": [
@@ -19460,15 +19335,15 @@
     "nameKr": "에스트라 아토베리어365 로션 150ml 기획(+토너25ml+클렌징폼3g*3EA)",
     "options": [],
     "name": "Sữa Dưỡng Ẩm Củng Cố Hàng Rào Bảo Vệ Da Aestura Atobarrier 365 Lotion 150ml (Tặng Toner 25ml + Sữa Rửa Mặt 3g x 3)",
-    "priceVnd": 450450,
+    "priceVnd": 522112,
     "brand": "Aestura",
     "isDiscontinued": false,
-    "rank": 62,
+    "rank": 55,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000264460%2Fmain_thumbnail.jpg?alt=media&token=feb70b12-6d5c-4eee-a912-bb6d6bcae5f9",
     "brandKr": "Aestura",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "description": "Sữa Rửa Mặt Làm Sạch Sâu Aestura 365 150ml 25ml+ (150ml) từ thương hiệu Aestura là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu chiết xuất dầu thực vật lên men kết hợp các acid béo dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cuốn trôi sạch sâu bụi mịn và cặn trang điểm cứng đầu mà không gây khô căng, duy trì độ pH lý tưởng cho da, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "updatedAt": "2026-10-03T11:18:09.669Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "status": "published",
     "discountRate": "33%",
     "category": "cosmetics",
@@ -19486,7 +19361,6 @@
     "origin": "Store Olive Young Korea",
     "isDiscontinued": false,
     "subCategory": "makeup",
-    "rank": 6,
     "goodsNo": "A000000264464",
     "category": "cosmetics",
     "options": [
@@ -19567,7 +19441,6 @@
     "goodsNo": "A000000265060",
     "options": [],
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000265060&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=80",
-    "rank": 80,
     "brand": "Menokin",
     "createdAt": "2026-10-03T15:43:58.000Z",
     "category": "cosmetics",
@@ -19624,7 +19497,6 @@
     "brand": "Banila Co",
     "category": "cosmetics",
     "subCategory": "skincare",
-    "rank": 21,
     "status": "published",
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809702ko.jpg",
     "brandKr": "바닐라코",
@@ -19632,7 +19504,6 @@
   },
   {
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "rank": 31,
     "status": "published",
     "discountRate": "28%",
     "isDiscontinued": false,
@@ -19750,7 +19621,6 @@
     "price": 69790,
     "is_enriched": true,
     "status": "published",
-    "rank": 25,
     "isPublished": true,
     "origin": "Store Olive Young Korea",
     "updatedAt": "2026-10-03T15:43:58.000Z",
@@ -19760,7 +19630,6 @@
   {
     "foreignPrice": 3710,
     "photoReviews": [],
-    "rank": 63,
     "storageProvider": "firebase_storage",
     "images": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000265728%2Fmain_thumbnail.jpg?alt=media&token=1f83bf20-6f91-4f46-8dc9-1099c50544cd"
@@ -19835,7 +19704,6 @@
     "updatedAt": "2026-10-03T11:18:09.669Z",
     "priceVnd": 408476,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000267287&tab=review",
-    "rank": 29,
     "productImage": "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FA000000267287%2Fmain_thumbnail.jpg?alt=media&token=335d6cf7-2d7f-43ae-8bf7-c7151d6c9c49",
     "status": "published",
     "price": 19950,
@@ -19946,7 +19814,6 @@
     "is_sold_out": false,
     "originalPrice": 33000,
     "is_enriched": true,
-    "rank": 65,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/6cd42972b7c24a26a48b4e15c4be14221791006158675.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/cba085aeffba491e9779b885bf82e36b1791004460305.png"
@@ -19963,7 +19830,6 @@
   },
   {
     "goodsNo": "A000000267517",
-    "rank": 11,
     "foreignPrice": 24400,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/2028f1e94903498a83b36fecceebc5551790987485578.png",
@@ -20061,7 +19927,6 @@
     "foreignPrice": 14200,
     "updatedAt": "2026-10-03T15:43:58.000Z",
     "brand": "Banila Co",
-    "rank": 61,
     "nameKr": "[10월 올영픽/조앤프렌즈] 바닐라코 클린잇제로 말차 클렌징밤 100ml 기획 (+세안밴드)",
     "id": "A000000267519"
   },
@@ -20103,7 +19968,6 @@
     "foreignPrice": 6900,
     "originalPrice": 10000,
     "nameKr": "[10월 올영픽/호빵맨 콜라보] 필리밀리 호빵맨 콜라보 3종 모음",
-    "rank": 27,
     "brandKr": "필리밀리",
     "id": "A000000267614"
   },
@@ -20143,14 +20007,12 @@
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809702ko.jpg",
     "subCategory": "skincare",
     "brand": "Lotte Wellfood",
-    "rank": 23,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000267664&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=23",
     "priceVnd": 53030,
     "discountRate": "26%",
     "id": "A000000267664"
   },
   {
-    "rank": 7,
     "is_enriched": true,
     "createdAt": "2026-10-03T15:43:58.000Z",
     "isPublished": true,
@@ -20186,7 +20048,7 @@
     "id": "A000000267744"
   },
   {
-    "price": 28400,
+    "price": 28900,
     "is_enriched": true,
     "is_sold_out": false,
     "discountRate": "29%",
@@ -20198,10 +20060,10 @@
     "brandKr": "메디힐",
     "originalPrice": 39900,
     "name": "Bông Dưỡng Da Toner Pad Cấp Ẩm Phục Hồi Mediheal Derma Toner Pad Seoul Edition 100 Miếng Tặng 100 Miếng Kèm Túi",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000267747&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=18",
     "nameKr": "[10월 올영픽/파우치 증정] 메디힐 더마 토너패드 100+100매 서울 에디션 3종 골라담기",
-    "priceVnd": 581490,
+    "priceVnd": 591728,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A000000267747240ko.png",
     "options": [
       {
@@ -20243,10 +20105,10 @@
     ],
     "brand": "Mediheal",
     "createdAt": "2026-10-03T15:43:58.000Z",
-    "rank": 18,
+    "rank": 13,
     "goodsNo": "A000000267747",
     "status": "published",
-    "foreignPrice": 28400,
+    "foreignPrice": 28900,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/ee8e6b56b7424ce9aa9a8f518f64c9c81791010778556.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/b6ef858332ab47d9ba00220eec03b9c51791007544981.png"
@@ -20262,7 +20124,7 @@
     "category": "cosmetics",
     "brand": "Mediheal",
     "createdAt": "2026-10-03T15:43:58.000Z",
-    "rank": 33,
+    "rank": 52,
     "options": [
       {
         "price_krw": 24200,
@@ -20289,7 +20151,7 @@
         "discount_rate": "43%"
       }
     ],
-    "foreignPrice": 24200,
+    "foreignPrice": 24900,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/224f33d99a3840b2ace7f7d106cba16c1791009811077.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/4f8ef29b3b40433e9faa134587f36bd71791009800952.png"
@@ -20299,36 +20161,36 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026774817ko.png"
     ],
     "goodsNo": "A000000267748",
-    "priceVnd": 495495,
+    "priceVnd": 509828,
     "status": "published",
     "brandKr": "메디힐",
     "discountRate": "44%",
-    "price": 24200,
+    "price": 24900,
     "origin": "Store Olive Young Korea",
     "isPublished": true,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000267748&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=33",
     "is_sold_out": false,
     "name": "Tinh Chất Làm Dịu Phục Hồi Da Mediheal Madecassoside Derma Serum Seoul Edition (50ml + 50ml Tặng Thẻ Hành Lý)",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "is_enriched": true,
     "originalPrice": 43000,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026774814ko.png",
     "id": "A000000267748"
   },
   {
-    "rank": 28,
+    "rank": 68,
     "subCategory": "skincare",
     "createdAt": "2026-10-03T15:43:58.000Z",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/45b208d7a5aa48aaa04b78b8be4b4c431791008406494.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/25f52e90928d41eda81eb899aa21e4c91791008121215.png"
     ],
-    "foreignPrice": 11600,
+    "foreignPrice": 11700,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000267909&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=28",
     "options": [],
     "brand": "Senka",
     "status": "published",
-    "priceVnd": 237510,
+    "priceVnd": 239558,
     "origin": "Store Olive Young Korea",
     "goodsNo": "A000000267909",
     "brandKr": "센카",
@@ -20342,8 +20204,8 @@
     ],
     "discountRate": "34%",
     "is_sold_out": false,
-    "updatedAt": "2026-10-03T15:43:58.000Z",
-    "price": 11600,
+    "updatedAt": "2026-10-20T09:36:28.000Z",
+    "price": 11700,
     "originalPrice": 17600,
     "isPublished": true,
     "nameKr": "[10월 올영픽/대용량/양파쿵야] 센카 퍼펙트 휩 페이셜 워시 150g 더블기획 (+15g+인형키링)",
@@ -20365,7 +20227,6 @@
     "priceVnd": 687960,
     "brand": "Lador",
     "discountRate": "20%",
-    "rank": 46,
     "name": "Nước Hoa Dưỡng Tóc Lưu Hương Mềm Mượt Lador Hair Perfume (30ml Tặng Dầu Dưỡng Tóc 10ml)",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/03efc37b29a94b28902c23dce7baf25e1790980727123.png",
@@ -20426,7 +20287,6 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000268068&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=60",
     "name": "Kem dưỡng ẩm phục hồi bảo vệ da Real Barrier Extreme Pro Cera Cream Set 70ml x 2 Tặng Kèm Nước Hoa Hồng 50ml Và Sữa Dưỡng 40ml",
     "brand": "Real Barrier",
-    "rank": 60,
     "category": "cosmetics",
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026806809ko.jpg",
     "nameKr": "[10월올영픽/조슈아] 리얼베리어 익스트림 프로세라 크림 70ml 1+1 기획 (+토너 50ml+로션 40ml)",
@@ -20478,7 +20338,6 @@
     "price": 32300,
     "discountRate": "34%",
     "status": "published",
-    "rank": 70,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000268107&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=70",
     "priceVnd": 661342,
     "origin": "Store Olive Young Korea",
@@ -20544,15 +20403,15 @@
       }
     ],
     "subCategory": "skincare",
-    "rank": 50,
+    "rank": 24,
     "status": "published",
     "discountRate": "35%",
     "origin": "Store Olive Young Korea",
     "goodsNo": "A000000268374",
     "createdAt": "2026-10-03T15:43:58.000Z",
-    "priceVnd": 489352,
+    "priceVnd": 509828,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000268374&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=50",
-    "price": 23900,
+    "price": 24900,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026837404ko.jpg",
     "nameKr": "[5일특가/10월 올영픽] 마녀공장 퓨어 소이빈 클렌징오일 200ml 2입 기획 (+25ml+폼20ml)",
     "originalPrice": 37000,
@@ -20560,13 +20419,13 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/6b0da898508f4e0486cf4a9fc334377f1791010701088.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/f62c6808f5da4686ba1552548a09cc851791010698802.png"
     ],
-    "foreignPrice": 23900,
+    "foreignPrice": 24900,
     "brandKr": "마녀공장",
     "brand": "Manyo Factory",
     "is_sold_out": false,
     "isPublished": true,
     "category": "cosmetics",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026837404ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026837403ko.jpg",
@@ -20583,10 +20442,10 @@
     "discountRate": "27%",
     "is_enriched": true,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809702ko.jpg",
-    "rank": 26,
+    "rank": 82,
     "is_sold_out": false,
     "originalPrice": 36000,
-    "price": 26300,
+    "price": 27000,
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809702ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809701ko.png",
@@ -20609,13 +20468,13 @@
     "origin": "Store Olive Young Korea",
     "subCategory": "skincare",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000268380&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=26",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
-    "priceVnd": 538492,
+    "updatedAt": "2026-10-20T09:36:28.000Z",
+    "priceVnd": 552825,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/db2cf6ead2644e3c9768e5d643ce64061791002921073.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/edd2b237e357499aa0653b1addda6b901791001243368.png"
     ],
-    "foreignPrice": 26300,
+    "foreignPrice": 27000,
     "brand": "Clio",
     "id": "A000000268380"
   },
@@ -20643,7 +20502,6 @@
     "subCategory": "skincare",
     "brandKr": "닥터지",
     "nameKr": "[호빵맨 콜라보] 닥터지 브라이트닝 필링젤 120g 한정 기획 (+60g +히알시카세럼 2ml +호빵맨 손거울)",
-    "rank": 8,
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809702ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809701ko.png",
@@ -20677,7 +20535,6 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/html/crop/A000000268097/202610010001/crop2/d2awjssdq42p8p.cloudfront.net/parnell/oliveyoung/PN0002-2-v4/20260921/detail_01.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/html/crop/A000000268097/202610010001/crop0/d2awjssdq42p8p.cloudfront.net/parnell/oliveyoung/PN0002-2-v4/20260921/detail_02.jpg"
     ],
-    "rank": 56,
     "goodsNo": "A000000268571",
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809702ko.jpg",
     "price": 8400,
@@ -20733,7 +20590,6 @@
     "price": 36200,
     "nameKr": "[10월 올영픽/마뗑킴 에디션] 라네즈X마뗑킴 에센셜 블러링 피니시 파우더 7g 기획 (+파우치)",
     "is_sold_out": false,
-    "rank": 9,
     "is_enriched": true,
     "discountRate": "2%",
     "id": "A000000268585"
@@ -20763,7 +20619,6 @@
     "origin": "Store Olive Young Korea",
     "goodsNo": "A000000268586",
     "brand": "Laneige",
-    "rank": 1,
     "subCategory": "skincare",
     "status": "published",
     "originalPrice": 47000,
@@ -20825,7 +20680,6 @@
     "name": "Phấn nền mỏng nhẹ mịn lì che khuyết điểm AGE20's Skin First Hidden Prep 12.5g Kèm Lõi Thay Thế",
     "brand": "AGE20's",
     "category": "cosmetics",
-    "rank": 86,
     "options": [
       {
         "is_sold_out": false,
@@ -20950,7 +20804,6 @@
     "isPublished": true,
     "category": "cosmetics",
     "discountRate": "47%",
-    "rank": 63,
     "is_enriched": true,
     "updatedAt": "2026-10-03T15:43:58.000Z",
     "options": [
@@ -21236,7 +21089,6 @@
     "updatedAt": "2026-10-03T15:43:58.000Z",
     "discountRate": "61%",
     "status": "published",
-    "rank": 36,
     "origin": "Store Olive Young Korea",
     "category": "cosmetics",
     "id": "A000000268891"
@@ -21244,7 +21096,6 @@
   {
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026809702ko.jpg",
     "isPublished": true,
-    "rank": 16,
     "options": [],
     "is_sold_out": false,
     "discountRate": "47%",
@@ -21286,30 +21137,30 @@
   {
     "goodsNo": "A000000269161",
     "brand": "Arocell",
-    "updatedAt": "2026-10-03T15:43:58.000Z",
+    "updatedAt": "2026-10-20T09:36:28.000Z",
     "originalPrice": 24000,
     "subCategory": "skincare",
     "discountRate": "15%",
     "options": [],
     "category": "cosmetics",
     "origin": "Store Olive Young Korea",
-    "rank": 85,
+    "rank": 22,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026916105ko.jpg",
     "status": "published",
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026916105ko.jpg",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026916101ko.jpg"
     ],
-    "price": 20400,
+    "price": 21800,
     "name": "Mặt nạ nâng cơ căng bóng trẻ hóa da Arocell Super Collagen Mask 2.0 ECM Active 5 Miếng",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000269161&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=85",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/b7342fd87b0f43d3b3d96ccacb377b161791011638007.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/4af8727933524ce0a6715919a98de3421791009158614.png"
     ],
-    "foreignPrice": 20400,
+    "foreignPrice": 21800,
     "is_enriched": true,
-    "priceVnd": 417690,
+    "priceVnd": 446355,
     "is_sold_out": false,
     "isPublished": true,
     "brandKr": "아로셀",
@@ -21455,7 +21306,6 @@
     "createdAt": "2026-10-03T15:43:58.000Z",
     "is_sold_out": false,
     "isPublished": true,
-    "rank": 6,
     "originalPrice": 46600,
     "priceVnd": 735052,
     "discountRate": "23%",
@@ -21494,7 +21344,6 @@
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0026/A00000026928306ko.jpg"
     ],
     "isPublished": true,
-    "rank": 44,
     "discountRate": "19%",
     "is_sold_out": false,
     "createdAt": "2026-10-03T15:43:58.000Z",
@@ -21605,7 +21454,6 @@
     "origin": "Store Olive Young Korea",
     "is_sold_out": false,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0100/A00000100170501ko.jpg",
-    "rank": 3,
     "id": "A000001001705"
   },
   {
@@ -21802,7 +21650,6 @@
     "is_enriched": true,
     "originalPrice": 22000,
     "productImage": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0100/A00000100175004ko.png",
-    "rank": 20,
     "images": [
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0100/A00000100175004ko.png",
       "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0100/A00000100175005ko.png"
@@ -21835,7 +21682,6 @@
     "discountRate": "29%",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000001001752&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=39",
     "priceVnd": 202702,
-    "rank": 39,
     "brand": "10X10",
     "origin": "Store Olive Young Korea",
     "originalPrice": 14000,
@@ -22224,7 +22070,6 @@
     "discountRate": "12%",
     "updatedAt": "2026-10-03T15:48:02.000Z",
     "price": 49900,
-    "rank": 51,
     "status": "published",
     "photoReviews": [
       "https://firebasestorage.googleapis.com/v0/b/tavyorder.firebasestorage.app/o/products%2FB000000263418%2Freviews%2Freview_user_1.png?alt=media&token=2c9c1ffc-0c1a-4a91-99de-00e85ef1b687",

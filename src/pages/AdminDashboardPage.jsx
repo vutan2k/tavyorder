@@ -11,6 +11,17 @@ import { APP_VERSION } from '../data/appVersion';
 import { getOrderTotalVnd } from '../utils/priceCalculator';
 import { aggregateCustomers } from '../utils/customerAggregator';
 import { verifyAdminSession, AUTH_GUARD_CONFIG } from '../utils/adminAuthGuard';
+import { db } from '../firebase';
+import { doc, onSnapshot } from 'firebase/firestore';
+import { getCurrentTimeKeys } from '../services/analyticsTracker';
+import {
+  getLocalTelegramConfig,
+  saveTelegramConfig,
+  fetchTelegramConfigFromDB,
+  analyzeProductPriceVolatility,
+  dispatchDaily8PmTelegramReport,
+  applyPendingPriceToProduct
+} from '../services/telegramNotificationService';
 import {
   BarChart3,
   ShoppingBag,
@@ -19,6 +30,7 @@ import {
   LogOut,
   RefreshCw,
   TrendingUp,
+  TrendingDown,
   CreditCard,
   Calculator,
   ChevronRight,
@@ -34,7 +46,12 @@ import {
   Users,
   FileText,
   Bot,
-  ShieldCheck
+  ShieldCheck,
+  Eye,
+  EyeOff,
+  Send,
+  Bell,
+  Check
 } from 'lucide-react';
 
 export default function AdminDashboardPage() {
@@ -45,6 +62,7 @@ export default function AdminDashboardPage() {
     rates,
     updateRates,
     products,
+    updateProduct,
     pendingProducts,
     adminTheme,
     setAdminTheme,
@@ -64,6 +82,44 @@ export default function AdminDashboardPage() {
   const totalCustomers = useMemo(() => {
     return aggregateCustomers(usersList, orders, rates).length;
   }, [usersList, orders, rates]);
+
+  // 📊 Thống kê lượng truy cập Website Realtime (Hôm nay, Tuần này, Tháng này, Năm này)
+  const [siteTraffic, setSiteTraffic] = useState({
+    today: 0,
+    thisWeek: 0,
+    thisMonth: 0,
+    thisYear: 0,
+    allTime: 0
+  });
+
+  useEffect(() => {
+    if (!db || !db.type) return;
+    const statsRef = doc(db, 'site_analytics', 'overview');
+    const unsubscribe = onSnapshot(
+      statsRef,
+      (snap) => {
+        if (snap.exists()) {
+          const data = snap.data() || {};
+          const { dayKey, weekKey, monthKey, yearKey } = getCurrentTimeKeys();
+          const todayVal = data.days?.[dayKey] ?? data[`days.${dayKey}`] ?? 0;
+          const weekVal = data.weeks?.[weekKey] ?? data[`weeks.${weekKey}`] ?? 0;
+          const monthVal = data.months?.[monthKey] ?? data[`months.${monthKey}`] ?? 0;
+          const yearVal = data.years?.[yearKey] ?? data[`years.${yearKey}`] ?? 0;
+          setSiteTraffic({
+            today: Number(todayVal) || 0,
+            thisWeek: Number(weekVal) || 0,
+            thisMonth: Number(monthVal) || 0,
+            thisYear: Number(yearVal) || 0,
+            allTime: Number(data.allTime) || 0
+          });
+        }
+      },
+      (err) => {
+        console.debug('[Admin Traffic] Lỗi lắng nghe site_analytics:', err);
+      }
+    );
+    return () => unsubscribe();
+  }, []);
 
   // Sync activeTab from URL pathname
   useEffect(() => {
@@ -342,6 +398,204 @@ export default function AdminDashboardPage() {
       setIsSavingRates(false);
     }
   };
+
+  // ════════════════════════════════════════════════════════════════════════
+  // CẤU HÌNH BOT TELEGRAM & BÁO CÁO TỰ ĐỘNG 20:00 (LƯỢT TRUY CẬP & GIÁ)
+  // ════════════════════════════════════════════════════════════════════════
+  const [telegramCfg, setTelegramCfg] = useState(() => getLocalTelegramConfig());
+  const [showBotToken, setShowBotToken] = useState(false);
+  const [isSavingTelegram, setIsSavingTelegram] = useState(false);
+  const [isSendingTelegram, setIsSendingTelegram] = useState(false);
+  const [isScanningPriceAlert, setIsScanningPriceAlert] = useState(false);
+  const [lastTelegramPreview, setLastTelegramPreview] = useState(null);
+
+  useEffect(() => {
+    let mounted = true;
+    fetchTelegramConfigFromDB().then((cfg) => {
+      if (mounted && cfg) setTelegramCfg(cfg);
+    });
+    return () => { mounted = false; };
+  }, []);
+
+  // Tự động kiểm tra biến động giá hiện hành của toàn bộ sản phẩm trên web
+  const livePriceVolatility = useMemo(() => {
+    return analyzeProductPriceVolatility(products || [], { rates });
+  }, [products, rates]);
+
+  // Lưu cấu hình Telegram
+  const handleSaveTelegramSettings = async (e) => {
+    if (e) e.preventDefault();
+    setIsSavingTelegram(true);
+    try {
+      const saved = await saveTelegramConfig(telegramCfg);
+      setTelegramCfg(saved);
+      if (showToast) showToast('Đã lưu cấu hình Bot Telegram 20:00 thành công!', 'success');
+    } catch (err) {
+      if (showToast) showToast('Lỗi lưu cấu hình Telegram: ' + err.message, 'error');
+    } finally {
+      setIsSavingTelegram(false);
+    }
+  };
+
+  // Gửi báo cáo 20:00 ngay lập tức vào Telegram (Lượt truy cập hôm nay + Biến động giá)
+  const handleSendTelegramReportNow = async () => {
+    if (isSendingTelegram) return;
+    setIsSendingTelegram(true);
+    try {
+      const res = await dispatchDaily8PmTelegramReport({
+        products: products || [],
+        siteTraffic,
+        rates,
+        customConfig: telegramCfg
+      });
+
+      if (res.success) {
+        setTelegramCfg(prev => ({
+          ...prev,
+          lastSentAt: res.sentAt,
+          lastStatus: 'sent_ok'
+        }));
+        setLastTelegramPreview({
+          sentAt: res.sentAt,
+          todayVisits: res.trafficSummary?.todayVisits || 0,
+          discrepancyCount: res.priceReport?.discrepancyCount || 0
+        });
+        if (showToast) {
+          showToast(
+            `Đã gửi báo cáo tới Telegram (${telegramCfg.chatId}) thành công! (Truy cập: ${res.trafficSummary?.todayVisits || 0} lượt | Biến động giá: ${res.priceReport?.discrepancyCount || 0} SP)`,
+            'success'
+          );
+        }
+      } else {
+        if (showToast) showToast(`Lỗi gửi Telegram: ${res.error}`, 'error');
+      }
+    } catch (err) {
+      if (showToast) showToast(`Lỗi kết nối Telegram: ${err.message}`, 'error');
+    } finally {
+      setIsSendingTelegram(false);
+    }
+  };
+
+  // Quét đối chiếu giá toàn bộ sản phẩm trên web (Chế độ Alert-Only: Không tự đè giá, gắn nút cập nhật) + Gửi cảnh báo Telegram
+  const handleScanPriceAndAlertTelegram = async () => {
+    if (isScanningPriceAlert) return;
+    setIsScanningPriceAlert(true);
+    try {
+      const report = analyzeProductPriceVolatility(products || [], { rates });
+
+      // Ghi nhận trạng thái đề xuất giá mới (pendingPriceUpdate) lên từng sản phẩm có biến động để hiện nút cập nhật
+      if (updateProduct && report.discrepancies.length > 0) {
+        report.annotatedProducts.forEach((p) => {
+          if (p.pendingPriceUpdate?.hasDiscrepancy) {
+            updateProduct(p.goodsNo, {
+              pendingPriceUpdate: p.pendingPriceUpdate,
+              priceChangeAlert: p.priceChangeAlert
+            });
+          }
+        });
+      }
+
+      const res = await dispatchDaily8PmTelegramReport({
+        products: report.annotatedProducts,
+        siteTraffic,
+        rates,
+        customConfig: telegramCfg
+      });
+
+      if (res.success) {
+        setTelegramCfg(prev => ({ ...prev, lastSentAt: res.sentAt, lastStatus: 'sent_ok' }));
+        if (showToast) {
+          showToast(
+            `Đã đối chiếu ${report.totalProducts} sản phẩm (Phát hiện ${report.discrepancyCount} SP biến động giá) và gửi cảnh báo về Telegram!`,
+            'success'
+          );
+        }
+      } else {
+        if (showToast) showToast(`Đã quét giá nhưng lỗi gửi Telegram: ${res.error}`, 'warning');
+      }
+    } catch (err) {
+      if (showToast) showToast(`Lỗi quét biến động giá: ${err.message}`, 'error');
+    } finally {
+      setIsScanningPriceAlert(false);
+    }
+  };
+
+  // Duyệt cập nhật giá mới cho 1 sản phẩm ngay từ danh sách cảnh báo
+  const handleApproveSinglePriceUpdate = (item) => {
+    if (!item || !updateProduct) return;
+    const targetProd = (products || []).find(p => p.goodsNo === item.goodsNo);
+    if (!targetProd) return;
+
+    const updated = applyPendingPriceToProduct(
+      {
+        ...targetProd,
+        pendingPriceUpdate: {
+          newForeignPrice: item.sourceForeignPrice,
+          newOriginalPrice: item.sourceOriginalPrice,
+          source: item.sourceLabel
+        }
+      },
+      rates
+    );
+
+    updateProduct(item.goodsNo, updated);
+    if (showToast) {
+      showToast(
+        `Đã cập nhật giá mới cho "${item.name}": ${item.webForeignPrice.toLocaleString('vi-VN')}₩ ➔ ${item.sourceForeignPrice.toLocaleString('vi-VN')}₩ (${updated.priceVnd.toLocaleString('vi-VN')}đ)!`,
+        'success'
+      );
+    }
+  };
+
+  // Duyệt cập nhật toàn bộ sản phẩm có biến động giá lên web 1-click
+  const handleApproveAllPriceUpdates = () => {
+    const list = livePriceVolatility.discrepancies || [];
+    if (list.length === 0 || !updateProduct) return;
+
+    list.forEach((item) => {
+      const targetProd = (products || []).find(p => p.goodsNo === item.goodsNo);
+      if (targetProd) {
+        const updated = applyPendingPriceToProduct(
+          {
+            ...targetProd,
+            pendingPriceUpdate: {
+              newForeignPrice: item.sourceForeignPrice,
+              newOriginalPrice: item.sourceOriginalPrice,
+              source: item.sourceLabel
+            }
+          },
+          rates
+        );
+        updateProduct(item.goodsNo, updated);
+      }
+    });
+
+    if (showToast) {
+      showToast(`Đã cập nhật giá mới thành công cho toàn bộ ${list.length} sản phẩm trên website!`, 'success');
+    }
+  };
+
+  // Tự động kích hoạt đúng 20:00 (8h tối) nếu trình duyệt Admin đang mở và hôm nay chưa gửi
+  useEffect(() => {
+    if (!telegramCfg.enabled) return;
+    const vhHour = Number(
+      timeNow.toLocaleString('en-US', { timeZone: 'Asia/Ho_Chi_Minh', hour: '2-digit', hour12: false })
+    );
+    const vhMinute = Number(
+      timeNow.toLocaleString('en-US', { timeZone: 'Asia/Ho_Chi_Minh', minute: '2-digit' })
+    );
+    const [targetH, targetM] = String(telegramCfg.scheduleTime || '20:00').split(':').map(Number);
+    const { dayKey } = getCurrentTimeKeys(timeNow);
+
+    if (
+      vhHour === (targetH || 20) &&
+      vhMinute === (targetM || 0) &&
+      telegramCfg.lastDailyReportDate !== dayKey &&
+      !isSendingTelegram
+    ) {
+      handleSendTelegramReportNow();
+    }
+  }, [timeNow, telegramCfg.enabled, telegramCfg.scheduleTime, telegramCfg.lastDailyReportDate]);
 
   const handleLogout = () => {
     logoutAdmin();
@@ -772,6 +1026,116 @@ export default function AdminDashboardPage() {
                 <span>Phòng Điều Hành AI</span>
                 <ChevronRight size={14} />
               </button>
+            </div>
+
+            {/* 📊 Thống Kê Lượng Truy Cập Website (Hôm Nay, Tuần Này, Tháng Này, Năm Này) */}
+            <div
+              className="admin-panel-card"
+              style={{
+                backgroundColor: isDark ? '#1E293B' : '#FFF',
+                borderRadius: '10px',
+                padding: '16px',
+                border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                boxShadow: '0 1px 2px rgba(0,0,0,0.03)'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px', flexWrap: 'wrap', gap: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <Eye size={16} color={isDark ? '#F8FAFC' : '#0F172A'} />
+                  <span style={{ fontWeight: 800, fontSize: '0.82rem', letterSpacing: '0.03em', color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                    LƯỢNG TRUY CẬP WEBSITE
+                  </span>
+                </div>
+                <span style={{
+                  fontSize: '0.68rem',
+                  fontWeight: 700,
+                  padding: '3px 8px',
+                  borderRadius: '6px',
+                  backgroundColor: isDark ? '#0F172A' : '#F1F5F9',
+                  color: isDark ? '#94A3B8' : '#64748B',
+                  border: isDark ? '1px solid #334155' : '1px solid #E2E8F0'
+                }}>
+                  Tổng cộng: {siteTraffic.allTime.toLocaleString('vi-VN')} lượt
+                </span>
+              </div>
+
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                gap: '10px'
+              }}>
+                {/* Tham số 1: Hôm nay */}
+                <div style={{
+                  backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
+                  border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                  borderRadius: '8px',
+                  padding: '12px 14px'
+                }}>
+                  <div style={{ fontSize: '0.68rem', fontWeight: 700, color: isDark ? '#94A3B8' : '#64748B', letterSpacing: '0.04em' }}>
+                    HÔM NAY
+                  </div>
+                  <div style={{ fontSize: '1.25rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '4px', fontFamily: 'monospace, sans-serif' }}>
+                    {siteTraffic.today.toLocaleString('vi-VN')}
+                  </div>
+                  <div style={{ fontSize: '0.68rem', color: isDark ? '#64748B' : '#94A3B8', marginTop: '2px' }}>
+                    Lượt truy cập
+                  </div>
+                </div>
+
+                {/* Tham số 2: Tuần này */}
+                <div style={{
+                  backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
+                  border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                  borderRadius: '8px',
+                  padding: '12px 14px'
+                }}>
+                  <div style={{ fontSize: '0.68rem', fontWeight: 700, color: isDark ? '#94A3B8' : '#64748B', letterSpacing: '0.04em' }}>
+                    TUẦN NÀY
+                  </div>
+                  <div style={{ fontSize: '1.25rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '4px', fontFamily: 'monospace, sans-serif' }}>
+                    {siteTraffic.thisWeek.toLocaleString('vi-VN')}
+                  </div>
+                  <div style={{ fontSize: '0.68rem', color: isDark ? '#64748B' : '#94A3B8', marginTop: '2px' }}>
+                    Lượt truy cập
+                  </div>
+                </div>
+
+                {/* Tham số 3: Tháng này */}
+                <div style={{
+                  backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
+                  border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                  borderRadius: '8px',
+                  padding: '12px 14px'
+                }}>
+                  <div style={{ fontSize: '0.68rem', fontWeight: 700, color: isDark ? '#94A3B8' : '#64748B', letterSpacing: '0.04em' }}>
+                    THÁNG NÀY
+                  </div>
+                  <div style={{ fontSize: '1.25rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '4px', fontFamily: 'monospace, sans-serif' }}>
+                    {siteTraffic.thisMonth.toLocaleString('vi-VN')}
+                  </div>
+                  <div style={{ fontSize: '0.68rem', color: isDark ? '#64748B' : '#94A3B8', marginTop: '2px' }}>
+                    Lượt truy cập
+                  </div>
+                </div>
+
+                {/* Tham số 4: Năm này */}
+                <div style={{
+                  backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
+                  border: isDark ? '1px solid #334155' : '1px solid #E2E8F0',
+                  borderRadius: '8px',
+                  padding: '12px 14px'
+                }}>
+                  <div style={{ fontSize: '0.68rem', fontWeight: 700, color: isDark ? '#94A3B8' : '#64748B', letterSpacing: '0.04em' }}>
+                    NĂM NÀY
+                  </div>
+                  <div style={{ fontSize: '1.25rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '4px', fontFamily: 'monospace, sans-serif' }}>
+                    {siteTraffic.thisYear.toLocaleString('vi-VN')}
+                  </div>
+                  <div style={{ fontSize: '0.68rem', color: isDark ? '#64748B' : '#94A3B8', marginTop: '2px' }}>
+                    Lượt truy cập
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* 4 Essential KPI Cards */}
@@ -1435,6 +1799,374 @@ export default function AdminDashboardPage() {
                 </button>
               </div>
             </form>
+
+            {/* ════════════════════════════════════════════════════════════ */}
+            {/* THÔNG BÁO BOT TELEGRAM TỰ ĐỘNG 20:00 (LƯỢT TRUY CẬP & GIÁ)    */}
+            {/* ════════════════════════════════════════════════════════════ */}
+            <div style={{
+              backgroundColor: isDark ? '#1E293B' : '#FFF',
+              borderRadius: '10px',
+              padding: '18px',
+              border: `1px solid ${isDark ? '#334155' : '#E2E8F0'}`,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '16px',
+              boxShadow: '0 1px 2px rgba(0,0,0,0.03)'
+            }}>
+              {/* Header */}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <Bell size={18} color="#10B981" />
+                  <div>
+                    <h2 style={{ fontSize: '0.95rem', fontWeight: 800, margin: 0, color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                      Bot Telegram Báo Cáo Tự Động 20:00 (8h Tối)
+                    </h2>
+                    <div style={{ fontSize: '0.75rem', color: isDark ? '#94A3B8' : '#64748B', marginTop: '2px' }}>
+                      Mỗi 20:00 tối tự động gửi Tổng lượt truy cập ngày + Cảnh báo biến động giá toàn bộ sản phẩm so với trên web
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    const nextEnabled = !telegramCfg.enabled;
+                    const nextCfg = { ...telegramCfg, enabled: nextEnabled };
+                    setTelegramCfg(nextCfg);
+                    saveTelegramConfig(nextCfg);
+                    if (showToast) {
+                      showToast(
+                        nextEnabled ? 'Đã BẬT tự động gửi báo cáo Telegram lúc 20:00 mỗi tối!' : 'Đã TẮT tự động gửi báo cáo Telegram.',
+                        nextEnabled ? 'success' : 'info'
+                      );
+                    }
+                  }}
+                  style={{
+                    backgroundColor: telegramCfg.enabled ? '#10B981' : (isDark ? '#334155' : '#CBD5E1'),
+                    color: '#FFF',
+                    border: 'none',
+                    borderRadius: '999px',
+                    padding: '6px 14px',
+                    fontSize: '0.76rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px'
+                  }}
+                >
+                  <CheckCircle2 size={14} />
+                  <span>{telegramCfg.enabled ? 'ĐANG BẬT (20:00 HẰNG NGÀY)' : 'ĐANG TẮT'}</span>
+                </button>
+              </div>
+
+              {/* Live Summary Strip */}
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',
+                gap: '10px',
+                padding: '12px',
+                borderRadius: '8px',
+                backgroundColor: isDark ? '#0F172A' : '#F8FAFC',
+                border: `1px solid ${isDark ? '#334155' : '#E2E8F0'}`
+              }}>
+                <div>
+                  <div style={{ fontSize: '0.7rem', color: isDark ? '#94A3B8' : '#64748B', fontWeight: 700 }}>
+                    TRUY CẬP HÔM NAY
+                  </div>
+                  <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#10B981', marginTop: '2px', fontFamily: 'monospace' }}>
+                    {siteTraffic.today.toLocaleString('vi-VN')} lượt
+                  </div>
+                  <div style={{ fontSize: '0.68rem', color: isDark ? '#64748B' : '#94A3B8' }}>
+                    Tổng tích lũy: {siteTraffic.allTime.toLocaleString('vi-VN')}
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ fontSize: '0.7rem', color: isDark ? '#94A3B8' : '#64748B', fontWeight: 700 }}>
+                    ĐỐI CHIẾU GIÁ WEB
+                  </div>
+                  <div style={{ fontSize: '1.05rem', fontWeight: 900, color: livePriceVolatility.discrepancyCount > 0 ? '#F59E0B' : (isDark ? '#F8FAFC' : '#0F172A'), marginTop: '2px', fontFamily: 'monospace' }}>
+                    {livePriceVolatility.discrepancyCount > 0
+                      ? `${livePriceVolatility.discrepancyCount} SP lệch giá`
+                      : `${livePriceVolatility.totalProducts} SP khớp 100%`}
+                  </div>
+                  <div style={{ fontSize: '0.68rem', color: isDark ? '#64748B' : '#94A3B8' }}>
+                    🔻 Giảm: {livePriceVolatility.priceDropsCount} • 🔺 Tăng: {livePriceVolatility.priceIncreasesCount}
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ fontSize: '0.7rem', color: isDark ? '#94A3B8' : '#64748B', fontWeight: 700 }}>
+                    LẦN GỬI GẦN NHẤT
+                  </div>
+                  <div style={{ fontSize: '0.82rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A', marginTop: '4px' }}>
+                    {telegramCfg.lastSentAt
+                      ? new Date(telegramCfg.lastSentAt).toLocaleString('vi-VN', { hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit' })
+                      : 'Chưa gửi hôm nay'}
+                  </div>
+                  <div style={{ fontSize: '0.68rem', color: '#10B981', fontWeight: 700 }}>
+                    Lịch hẹn: {telegramCfg.scheduleTime || '20:00'} tối hằng ngày
+                  </div>
+                </div>
+              </div>
+
+              {/* Config Inputs Form */}
+              <form onSubmit={handleSaveTelegramSettings} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px' }}>
+                  <div>
+                    <label style={{ fontSize: '0.78rem', fontWeight: 700, color: isDark ? '#F8FAFC' : '#0F172A', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                      <span>Telegram Bot Token</span>
+                      <button
+                        type="button"
+                        onClick={() => setShowBotToken(prev => !prev)}
+                        style={{ background: 'none', border: 'none', color: '#38BDF8', fontSize: '0.72rem', fontWeight: 700, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
+                      >
+                        {showBotToken ? <EyeOff size={12} /> : <Eye size={12} />}
+                        <span>{showBotToken ? 'Ẩn' : 'Hiện'}</span>
+                      </button>
+                    </label>
+                    <input
+                      type={showBotToken ? 'text' : 'password'}
+                      value={telegramCfg.botToken || ''}
+                      onChange={(e) => setTelegramCfg(prev => ({ ...prev, botToken: e.target.value }))}
+                      placeholder="Nhập Bot Token từ @BotFather..."
+                      style={{
+                        marginTop: '6px',
+                        width: '100%',
+                        padding: '8px 12px',
+                        borderRadius: '6px',
+                        border: `1px solid ${isDark ? '#334155' : '#CBD5E1'}`,
+                        backgroundColor: isDark ? '#0F172A' : '#FFF',
+                        color: isDark ? '#F8FAFC' : '#0F172A',
+                        fontSize: '0.82rem',
+                        fontFamily: 'monospace'
+                      }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ fontSize: '0.78rem', fontWeight: 700, color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                      Telegram Chat ID Nhận Thông Báo
+                    </label>
+                    <input
+                      type="text"
+                      value={telegramCfg.chatId || ''}
+                      onChange={(e) => setTelegramCfg(prev => ({ ...prev, chatId: e.target.value }))}
+                      placeholder="VD: 8575761420"
+                      style={{
+                        marginTop: '6px',
+                        width: '100%',
+                        padding: '8px 12px',
+                        borderRadius: '6px',
+                        border: `1px solid ${isDark ? '#334155' : '#CBD5E1'}`,
+                        backgroundColor: isDark ? '#0F172A' : '#FFF',
+                        color: isDark ? '#F8FAFC' : '#0F172A',
+                        fontSize: '0.82rem',
+                        fontFamily: 'monospace',
+                        fontWeight: 700
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px', paddingTop: '6px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <Clock size={15} color={isDark ? '#94A3B8' : '#64748B'} />
+                    <span style={{ fontSize: '0.8rem', fontWeight: 700, color: isDark ? '#CBD5E1' : '#334155' }}>
+                      Giờ báo cáo tự động mỗi tối:
+                    </span>
+                    <input
+                      type="time"
+                      value={telegramCfg.scheduleTime || '20:00'}
+                      onChange={(e) => setTelegramCfg(prev => ({ ...prev, scheduleTime: e.target.value || '20:00' }))}
+                      style={{
+                        padding: '5px 10px',
+                        borderRadius: '6px',
+                        border: `1px solid ${isDark ? '#334155' : '#CBD5E1'}`,
+                        backgroundColor: isDark ? '#0F172A' : '#FFF',
+                        color: isDark ? '#F8FAFC' : '#0F172A',
+                        fontSize: '0.82rem',
+                        fontFamily: 'monospace',
+                        fontWeight: 800
+                      }}
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={isSavingTelegram}
+                    style={{
+                      backgroundColor: isDark ? '#334155' : '#E2E8F0',
+                      color: isDark ? '#F8FAFC' : '#0F172A',
+                      border: 'none',
+                      borderRadius: '6px',
+                      padding: '7px 14px',
+                      fontSize: '0.78rem',
+                      fontWeight: 700,
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {isSavingTelegram ? 'Đang lưu...' : 'Lưu Cấu Hình Telegram'}
+                  </button>
+                </div>
+              </form>
+
+              {/* Action Buttons: Send Report Now & Scan Price Volatility */}
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+                paddingTop: '12px',
+                borderTop: `1px solid ${isDark ? '#334155' : '#F1F5F9'}`
+              }}>
+                <button
+                  type="button"
+                  onClick={handleSendTelegramReportNow}
+                  disabled={isSendingTelegram}
+                  style={{
+                    flex: '1 1 220px',
+                    backgroundColor: '#10B981',
+                    color: '#FFF',
+                    border: 'none',
+                    borderRadius: '8px',
+                    padding: '10px 16px',
+                    fontSize: '0.82rem',
+                    fontWeight: 800,
+                    cursor: isSendingTelegram ? 'not-allowed' : 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px',
+                    boxShadow: '0 4px 12px rgba(16, 185, 129, 0.25)'
+                  }}
+                >
+                  <Send size={15} />
+                  <span>{isSendingTelegram ? 'Đang gửi tới Telegram...' : '📨 Gửi Báo Cáo 20h Ngay (Truy Cập + Giá)'}</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleScanPriceAndAlertTelegram}
+                  disabled={isScanningPriceAlert}
+                  style={{
+                    flex: '1 1 220px',
+                    backgroundColor: isDark ? '#0F172A' : '#1E293B',
+                    color: '#F8FAFC',
+                    border: `1px solid ${isDark ? '#334155' : '#0F172A'}`,
+                    borderRadius: '8px',
+                    padding: '10px 16px',
+                    fontSize: '0.82rem',
+                    fontWeight: 800,
+                    cursor: isScanningPriceAlert ? 'not-allowed' : 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px'
+                  }}
+                >
+                  <RefreshCw size={15} className={isScanningPriceAlert ? 'animate-spin' : ''} />
+                  <span>{isScanningPriceAlert ? 'Đang đối chiếu kho hàng...' : '🔍 Quét Biến Động Giá & Báo Telegram'}</span>
+                </button>
+              </div>
+
+              {/* Price Discrepancies Action List (with 1-click Update Buttons on Web Admin) */}
+              {livePriceVolatility.discrepancies.length > 0 && (
+                <div style={{
+                  marginTop: '4px',
+                  padding: '14px',
+                  borderRadius: '8px',
+                  backgroundColor: isDark ? '#0F172A' : '#FFFBEB',
+                  border: `1px solid ${isDark ? '#78350F' : '#FDE68A'}`,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '10px'
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <AlertCircle size={16} color="#F59E0B" />
+                      <span style={{ fontSize: '0.82rem', fontWeight: 800, color: isDark ? '#FDE68A' : '#92400E' }}>
+                        Phát hiện {livePriceVolatility.discrepancies.length} sản phẩm có biến động giá so với trên web
+                      </span>
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={handleApproveAllPriceUpdates}
+                      style={{
+                        backgroundColor: '#10B981',
+                        color: '#FFF',
+                        border: 'none',
+                        borderRadius: '6px',
+                        padding: '6px 12px',
+                        fontSize: '0.75rem',
+                        fontWeight: 800,
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px'
+                      }}
+                    >
+                      <Check size={14} />
+                      <span>Cập Nhật Tất Cả ({livePriceVolatility.discrepancies.length} SP) Lên Web</span>
+                    </button>
+                  </div>
+
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '260px', overflowY: 'auto' }}>
+                    {livePriceVolatility.discrepancies.slice(0, 20).map((item) => {
+                      const isDrop = item.changeType === 'drop';
+                      return (
+                        <div
+                          key={item.goodsNo}
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: '10px',
+                            padding: '8px 10px',
+                            borderRadius: '6px',
+                            backgroundColor: isDark ? '#1E293B' : '#FFFFFF',
+                            border: `1px solid ${isDark ? '#334155' : '#E2E8F0'}`,
+                            flexWrap: 'wrap'
+                          }}
+                        >
+                          <div style={{ flex: 1, minWidth: '180px' }}>
+                            <div style={{ fontSize: '0.78rem', fontWeight: 800, color: isDark ? '#F8FAFC' : '#0F172A' }}>
+                              [{item.brand}] {item.name}
+                            </div>
+                            <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B', fontFamily: 'monospace', marginTop: '2px' }}>
+                              SKU: {item.goodsNo} • Web: {item.webForeignPrice.toLocaleString('vi-VN')}₩ ({item.webPriceVnd.toLocaleString('vi-VN')}đ) ➔ Mới: <strong style={{ color: isDrop ? '#10B981' : '#F59E0B' }}>{item.sourceForeignPrice.toLocaleString('vi-VN')}₩ ({item.sourcePriceVnd.toLocaleString('vi-VN')}đ) [{item.changePercent > 0 ? '+' : ''}{item.changePercent}%]</strong>
+                            </div>
+                          </div>
+
+                          <button
+                            type="button"
+                            onClick={() => handleApproveSinglePriceUpdate(item)}
+                            style={{
+                              backgroundColor: '#2563EB',
+                              color: '#FFF',
+                              border: 'none',
+                              borderRadius: '6px',
+                              padding: '5px 10px',
+                              fontSize: '0.72rem',
+                              fontWeight: 800,
+                              cursor: 'pointer',
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '4px',
+                              whiteSpace: 'nowrap'
+                            }}
+                          >
+                            <Check size={12} />
+                            <span>Cập nhật giá</span>
+                          </button>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         )}
       </main>

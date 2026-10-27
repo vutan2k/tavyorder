@@ -10,6 +10,10 @@ import {
   Download, Copy, ArrowUpDown, ChevronDown, ChevronUp, CheckCheck
 } from 'lucide-react';
 import { getCategoryLabel as getClassifierCategoryLabel } from '../services/categoryClassifier';
+import {
+  analyzeProductPriceVolatility,
+  applyPendingPriceToProduct
+} from '../services/telegramNotificationService';
 
 export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
   const isDark = isDarkProp !== undefined
@@ -51,6 +55,45 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
   const krwRate = rates?.KRW?.rate || 19.5;
   const serviceFee = rates?.serviceFeePercent || 5;
 
+  // Đối chiếu giá sản phẩm đang bán trên web với giá nguồn Hàn Quốc
+  const priceVolatilityReport = useMemo(() => {
+    return analyzeProductPriceVolatility(products || [], { rates });
+  }, [products, rates]);
+
+  const discrepancyMap = useMemo(() => {
+    const map = {};
+    (priceVolatilityReport.discrepancies || []).forEach(d => {
+      if (d.goodsNo) map[d.goodsNo] = d;
+    });
+    return map;
+  }, [priceVolatilityReport]);
+
+  const handleApplyNewPrice = (e, prod) => {
+    if (e && e.stopPropagation) e.stopPropagation();
+    if (!prod || !updateProduct) return;
+    const disc = discrepancyMap[prod.goodsNo];
+    const updated = applyPendingPriceToProduct(
+      {
+        ...prod,
+        pendingPriceUpdate: disc
+          ? {
+              newForeignPrice: disc.sourceForeignPrice,
+              newOriginalPrice: disc.sourceOriginalPrice,
+              source: disc.sourceLabel
+            }
+          : prod.pendingPriceUpdate
+      },
+      rates
+    );
+    updateProduct(prod.goodsNo, updated);
+    if (showToast) {
+      showToast(
+        `Đã cập nhật giá mới cho "${prod.name}": ${Number(prod.foreignPrice || prod.price || 0).toLocaleString('vi-VN')}₩ ➔ ${updated.foreignPrice.toLocaleString('vi-VN')}₩ (${updated.priceVnd.toLocaleString('vi-VN')}đ)!`,
+        'success'
+      );
+    }
+  };
+
   // Lọc và sắp xếp sản phẩm
   const filteredProducts = useMemo(() => {
     let result = products.filter(p => {
@@ -62,9 +105,11 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
         (p.nameKr && p.nameKr.toLowerCase().includes(searchTerm.toLowerCase()));
 
       const isOutOfStock = Boolean(p.isOutOfStock);
+      const hasPriceAlert = Boolean(discrepancyMap[p.goodsNo] || p.pendingPriceUpdate?.hasDiscrepancy || p.priceChangeAlert?.hasChanged);
       const matchStock = stockFilter === 'all' ||
         (stockFilter === 'in_stock' && !isOutOfStock) ||
-        (stockFilter === 'out_of_stock' && isOutOfStock);
+        (stockFilter === 'out_of_stock' && isOutOfStock) ||
+        (stockFilter === 'price_alert' && hasPriceAlert);
 
       return matchCat && matchSearch && matchStock;
     });
@@ -500,6 +545,7 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
             <option value="all">Tất cả tình trạng kho</option>
             <option value="in_stock">Còn hàng</option>
             <option value="out_of_stock">Tạm hết hàng</option>
+            <option value="price_alert">⚡ Biến động giá ({priceVolatilityReport.discrepancyCount})</option>
           </select>
         </div>
       </div>
@@ -798,28 +844,57 @@ export default function AdminProductCatalog({ isDark: isDarkProp } = {}) {
                         {/* Merged Price (VNĐ & Won) */}
                         <td style={{ padding: '8px 12px', textAlign: 'right', borderRight: isDark ? '1px solid #334155' : '1px solid #E2E8F0' }}>
                           <div style={{ fontWeight: 700, color: isDark ? '#F8FAFC' : '#0F172A', fontSize: '0.85rem', fontFamily: 'monospace', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '6px' }}>
-                            {prod.priceChangeAlert?.hasChanged && (
+                            {(discrepancyMap[prod.goodsNo] || prod.priceChangeAlert?.hasChanged) && (
                               <span style={{
-                                backgroundColor: prod.priceChangeAlert.changeType === 'drop' ? (isDark ? '#064E3B' : '#ECFDF5') : (isDark ? '#78350F' : '#FEF3C7'),
-                                color: prod.priceChangeAlert.changeType === 'drop' ? '#10B981' : '#F59E0B',
+                                backgroundColor: (discrepancyMap[prod.goodsNo]?.changeType || prod.priceChangeAlert?.changeType) === 'drop' ? (isDark ? '#064E3B' : '#ECFDF5') : (isDark ? '#78350F' : '#FEF3C7'),
+                                color: (discrepancyMap[prod.goodsNo]?.changeType || prod.priceChangeAlert?.changeType) === 'drop' ? '#10B981' : '#F59E0B',
                                 fontSize: '0.68rem',
                                 padding: '1px 5px',
                                 borderRadius: '4px',
                                 fontWeight: 800
                               }}>
-                                {prod.priceChangeAlert.changeType === 'drop' ? `🔻 ${Math.abs(prod.priceChangeAlert.changePercent)}%` : `🔺 +${prod.priceChangeAlert.changePercent}%`}
+                                {(discrepancyMap[prod.goodsNo]?.changeType || prod.priceChangeAlert?.changeType) === 'drop'
+                                  ? `🔻 ${Math.abs(discrepancyMap[prod.goodsNo]?.changePercent || prod.priceChangeAlert?.changePercent || 0)}%`
+                                  : `🔺 +${discrepancyMap[prod.goodsNo]?.changePercent || prod.priceChangeAlert?.changePercent || 0}%`}
                               </span>
                             )}
                             <span>{vnd.toLocaleString('vi-VN')} đ</span>
                           </div>
                           <div style={{ fontSize: '0.72rem', color: isDark ? '#94A3B8' : '#64748B', fontFamily: 'monospace', marginTop: '2px' }}>
                             {won.toLocaleString('vi-VN')} ₩
+                            {discrepancyMap[prod.goodsNo] && discrepancyMap[prod.goodsNo].sourceForeignPrice !== won && (
+                              <span style={{ color: '#10B981', fontWeight: 800, marginLeft: '6px' }}>
+                                ➔ {discrepancyMap[prod.goodsNo].sourceForeignPrice.toLocaleString('vi-VN')} ₩
+                              </span>
+                            )}
                           </div>
                         </td>
 
                         {/* Action Buttons */}
                         <td style={{ padding: '6px 8px', textAlign: 'center' }} onClick={(e) => e.stopPropagation()}>
-                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', flexWrap: 'wrap' }}>
+                            {discrepancyMap[prod.goodsNo] && discrepancyMap[prod.goodsNo].sourceForeignPrice !== won && (
+                              <button
+                                title={`Cập nhật giá nguồn mới: ${discrepancyMap[prod.goodsNo].sourceForeignPrice.toLocaleString('vi-VN')} ₩`}
+                                onClick={(e) => handleApplyNewPrice(e, prod)}
+                                style={{
+                                  backgroundColor: '#10B981',
+                                  color: '#FFF',
+                                  border: 'none',
+                                  borderRadius: '5px',
+                                  padding: '4px 8px',
+                                  fontSize: '0.7rem',
+                                  fontWeight: 800,
+                                  cursor: 'pointer',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '3px'
+                                }}
+                              >
+                                <Check size={12} />
+                                <span>Cập nhật giá</span>
+                              </button>
+                            )}
                             <button
                               title="Chỉnh sửa chi tiết"
                               onClick={() => handleOpenEdit(prod)}

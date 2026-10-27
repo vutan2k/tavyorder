@@ -70,13 +70,18 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
 
   const allPhotos = useMemo(() => {
     const list = [];
-    if (optionImage) list.push(optionImage);
-    if (defaultProductImage) list.push(defaultProductImage);
+    const isSold = Boolean(product?.is_sold_out || product?.status === 'out_of_stock');
+    if (isSold && defaultProductImage) {
+      list.push(defaultProductImage);
+    } else {
+      if (optionImage) list.push(optionImage);
+      if (defaultProductImage) list.push(defaultProductImage);
+    }
     list.push(...reviewPhotos);
 
     const unique = dedupeImageList(list.filter(Boolean));
     return unique.length > 0 ? unique : (defaultProductImage ? [defaultProductImage] : []);
-  }, [reviewPhotos, defaultProductImage, optionImage]);
+  }, [reviewPhotos, defaultProductImage, optionImage, product?.is_sold_out, product?.status]);
 
   const [activeSlide, setActiveSlide] = useState(0);
   const [zoomIndex, setZoomIndex] = useState(null); // Fullscreen HD Lightbox Index

@@ -14,9 +14,11 @@
     "scrape:naver": "node scripts/scrape_korean_health_products.js --source=naver",
     "scrape:playwright": "node scripts/playwright_ai_scraper.js",
     "scrape:playwright:headful": "HEADLESS=false MAX_PRODUCTS=10 node scripts/playwright_ai_scraper.js",
+    "sync:live-catalog": "python3 scripts/master_live_catalog_sync.py",
     "sync:prices": "node scripts/auto_price_sync_bot.js --once",
     "bot:price-sync": "node scripts/auto_price_sync_bot.js --once",
     "bot:scheduler": "node scripts/auto_price_sync_bot.js --interval=60",
+    "bot:telegram-8pm": "node scripts/telegram_daily_8pm_notifier.js",
     "self-check": "oxlint && vite build",
     "ai-worker": "node scripts/ai_manager_worker.js",
     "preview": "vite preview"

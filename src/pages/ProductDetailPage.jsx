@@ -163,11 +163,16 @@ export default function ProductDetailPage() {
 
   const allImages = useMemo(() => {
     const list = [];
-    if (activeOption?.image_url) {
-      list.push(getHighResUrl(activeOption.image_url));
-    }
-    if (defaultProductImage) {
+    const isSold = Boolean(product?.is_sold_out || product?.status === 'out_of_stock');
+    if (isSold && defaultProductImage) {
       list.push(defaultProductImage);
+    } else {
+      if (activeOption?.image_url) {
+        list.push(getHighResUrl(activeOption.image_url));
+      }
+      if (defaultProductImage) {
+        list.push(defaultProductImage);
+      }
     }
     if (Array.isArray(product?.images)) {
       list.push(...product.images.map(getHighResUrl));

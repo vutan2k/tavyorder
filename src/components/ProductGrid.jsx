@@ -189,74 +189,86 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                 </div>
 
                 <div>
-                  {/* 2 Dòng Giá Rõ Ràng: Giá tại Hàn & Giá về tay */}
-                  <div
-                    className="product-card-price-box"
-                    style={{ marginBottom: '10px', background: 'var(--bg-subtle-purple, #F8F6FA)', padding: '8px 10px', borderRadius: '10px' }}
-                  >
-                    <div
-                      className="product-card-price-krw-row"
-                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.72rem', color: 'var(--text-muted, #6B7280)', marginBottom: '2px' }}
-                    >
-                      <span>Giá Hàn:</span>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                        {(Number(product.originalPrice || product.origin_price_krw) > Number(product.foreignPrice)) && (
-                          <span style={{ textDecoration: 'line-through', color: '#9CA3AF', fontSize: '0.68rem' }}>
-                            {formatKrw(product.originalPrice || product.origin_price_krw)}
-                          </span>
-                        )}
-                        <strong style={{ color: 'var(--text-dark, #374151)', fontWeight: 700 }}>{formatKrw(product.foreignPrice)}</strong>
-                      </div>
-                    </div>
-                    <div
-                      className="product-card-price-vnd-row"
-                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}
-                    >
-                      <span style={{ fontSize: '0.76rem', fontWeight: 700, color: 'var(--text-dark)' }}>Về tay:</span>
-                      <strong style={{ fontSize: '0.98rem', color: 'var(--text-dark)', fontWeight: 800 }}>{formatVnd(calculatedVnd)}</strong>
-                    </div>
-                  </div>
+                  {/* Check if sold out */}
+                  {(() => {
+                    const isProductSoldOut = Boolean(product.is_sold_out || product.status === 'out_of_stock');
+                    return (
+                      <>
+                        {/* 2 Dòng Giá Rõ Ràng: Giá tại Hàn & Giá về tay */}
+                        <div
+                          className="product-card-price-box"
+                          style={{ marginBottom: '10px', background: 'var(--bg-subtle-purple, #F8F6FA)', padding: '8px 10px', borderRadius: '10px' }}
+                        >
+                          <div
+                            className="product-card-price-krw-row"
+                            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.72rem', color: 'var(--text-muted, #6B7280)', marginBottom: '2px' }}
+                          >
+                            <span>Giá Hàn:</span>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                              {(Number(product.originalPrice || product.origin_price_krw) > Number(product.foreignPrice)) && (
+                                <span style={{ textDecoration: 'line-through', color: '#9CA3AF', fontSize: '0.68rem' }}>
+                                  {formatKrw(product.originalPrice || product.origin_price_krw)}
+                                </span>
+                              )}
+                              <strong style={{ color: 'var(--text-dark, #374151)', fontWeight: 700 }}>{formatKrw(product.foreignPrice)}</strong>
+                            </div>
+                          </div>
+                          <div
+                            className="product-card-price-vnd-row"
+                            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}
+                          >
+                            <span style={{ fontSize: '0.76rem', fontWeight: 700, color: 'var(--text-dark)' }}>Về tay:</span>
+                            <strong style={{ fontSize: '0.98rem', color: 'var(--text-dark)', fontWeight: 800 }}>{formatVnd(calculatedVnd)}</strong>
+                          </div>
+                        </div>
 
-                  {/* Buttons Action: Xem Chi Tiết & Đặt Mua Ngay */}
-                  <div
-                    className="product-card-actions"
-                    style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px' }}
-                  >
-                    <button
-                      className="product-card-btn-detail"
-                      onClick={() => onViewDetail && onViewDetail(product)}
-                      style={{
-                        padding: '8px 0',
-                        borderRadius: '24px',
-                        border: '1px solid var(--border-color)',
-                        backgroundColor: 'var(--bg-white, #FFF)',
-                        color: 'var(--text-dark)',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                      }}
-                      title="Xem chi tiết"
-                    >
-                      <Eye size={18} />
-                    </button>
+                        {/* Buttons Action: Xem Chi Tiết & Đặt Mua Ngay */}
+                        <div
+                          className="product-card-actions"
+                          style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px' }}
+                        >
+                          <button
+                            className="product-card-btn-detail"
+                            onClick={() => onViewDetail && onViewDetail(product)}
+                            style={{
+                              padding: '8px 0',
+                              borderRadius: '24px',
+                              border: '1px solid var(--border-color)',
+                              backgroundColor: 'var(--bg-white, #FFF)',
+                              color: 'var(--text-dark)',
+                              cursor: 'pointer',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center'
+                            }}
+                            title="Xem chi tiết"
+                          >
+                            <Eye size={18} />
+                          </button>
 
-                    <button
-                      className="btn-gold product-card-btn-cart"
-                      onClick={(e) => onSelectProduct(product, e)}
-                      style={{ 
-                        width: '100%', 
-                        justifyContent: 'center', 
-                        padding: '8px 0',
-                        borderRadius: '24px',
-                        display: 'flex',
-                        alignItems: 'center'
-                      }}
-                      title="Thêm vào giỏ hàng"
-                    >
-                      <ShoppingBag size={18} />
-                    </button>
-                  </div>
+                          <button
+                            className={isProductSoldOut ? 'product-card-btn-cart' : 'btn-gold product-card-btn-cart'}
+                            disabled={isProductSoldOut}
+                            onClick={(e) => !isProductSoldOut && onSelectProduct(product, e)}
+                            style={{ 
+                              width: '100%', 
+                              justifyContent: 'center', 
+                              padding: '8px 0',
+                              borderRadius: '24px',
+                              display: 'flex',
+                              alignItems: 'center',
+                              backgroundColor: isProductSoldOut ? '#E5E7EB' : undefined,
+                              color: isProductSoldOut ? '#9CA3AF' : undefined,
+                              cursor: isProductSoldOut ? 'not-allowed' : 'pointer'
+                            }}
+                            title={isProductSoldOut ? "Tạm hết hàng" : "Thêm vào giỏ hàng"}
+                          >
+                            <ShoppingBag size={18} />
+                          </button>
+                        </div>
+                      </>
+                    );
+                  })()}
                 </div>
               </div>
             </div>

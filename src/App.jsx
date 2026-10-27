@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppProvider';
 import { ToastProvider } from './components/Toast';
@@ -8,6 +8,7 @@ import ScrollToTop from './components/ScrollToTop';
 import LoadingSpinner from './components/LoadingSpinner';
 import Navbar from './components/Navbar';
 import ChatWidget from './components/ChatWidget/ChatWidget';
+import { trackSiteVisit } from './services/analyticsTracker';
 
 import KROrderHomePage from './pages/KROrderHomePage';
 
@@ -24,6 +25,10 @@ const PolicyPage = lazy(() => import('./pages/PolicyPage'));
 const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage'));
 
 export default function App() {
+  useEffect(() => {
+    trackSiteVisit();
+  }, []);
+
   return (
     <ErrorBoundary>
       <AppProvider>
