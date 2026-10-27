@@ -369,27 +369,6 @@ export default function KROrderHomePage() {
                   <span>Đăng nhập / Đăng ký</span>
                 </Link>
               )}
-
-              {/* Nút chuyển đổi Dark/Light Mode trên Mobile */}
-              <button
-                onClick={() => toggleUserTheme()}
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  cursor: 'pointer',
-                  color: 'var(--text-dark)',
-                  fontSize: '0.92rem',
-                  fontWeight: 600,
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                  padding: '6px 0',
-                  textAlign: 'left'
-                }}
-              >
-                {userTheme === 'dark' ? <Sun size={18} color="#FBBF24" /> : <Moon size={18} />}
-                <span>{userTheme === 'dark' ? 'Chế độ: Đang bật Tối 🌙 (Bấm để chuyển Sáng)' : 'Chế độ: Đang bật Sáng ☀️ (Bấm để chuyển Tối)'}</span>
-              </button>
             </div>
 
             {/* 2. Nhóm Danh mục sản phẩm */}
