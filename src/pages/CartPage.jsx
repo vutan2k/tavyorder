@@ -54,13 +54,16 @@ export default function CartPage() {
   const formatVnd = (n) => (n || n === 0) ? `${new Intl.NumberFormat('vi-VN').format(Math.round(n))} VNĐ` : '0 VNĐ';
   const formatKrw = (n) => new Intl.NumberFormat('ko-KR').format(n) + ' ₩';
 
-  // Hàm tính đơn giá VND cho từng sản phẩm (Single Source of Truth, làm tròn chính xác theo đồng)
+  // Hàm tính đơn giá VND cho từng sản phẩm (Single Source of Truth, tỷ giá & phí động theo Admin)
   const getItemUnitVnd = (item) => {
+    const won = Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0;
+    if (won > 0) {
+      return Math.round(won * krwRate * serviceFeeMultiplier);
+    }
     if (typeof item.priceVnd === 'number' && item.priceVnd > 0) {
       return Math.round(item.priceVnd);
     }
-    const won = Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0;
-    return Math.round(won * krwRate * serviceFeeMultiplier);
+    return 0;
   };
 
   const getItemOptionText = (item) => {

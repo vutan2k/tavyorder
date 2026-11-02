@@ -569,11 +569,6 @@ export default function ProductDetailPage() {
                           ) : (
                             <>
                               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '4px' }}>
-                                {optDiscount && (
-                                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-dark, #000000)' }}>
-                                    -{optDiscount.replace('-', '')}
-                                  </span>
-                                )}
                                 <strong style={{ fontSize: '0.86rem', color: 'var(--text-dark, #000000)' }}>
                                   {formatVnd(optVnd)}
                                 </strong>

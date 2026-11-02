@@ -587,11 +587,6 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                       </div>
                       <div style={{ textAlign: 'right', flexShrink: 0 }}>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '4px' }}>
-                          {optDiscount && (
-                            <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#EF4444' }}>
-                              {optDiscount}
-                            </span>
-                          )}
                           <strong style={{ fontSize: '0.84rem', color: isSelected ? '#1D4ED8' : 'var(--text-dark)' }}>
                             {formatKrw(optPriceWon)}
                           </strong>
