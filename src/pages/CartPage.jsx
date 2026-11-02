@@ -63,6 +63,15 @@ export default function CartPage() {
     return Math.round(won * krwRate * serviceFeeMultiplier);
   };
 
+  const getItemOptionText = (item) => {
+    if (typeof item?.options === 'string' && item.options) return item.options;
+    if (typeof item?.selectedOptionName === 'string' && item.selectedOptionName) return item.selectedOptionName;
+    if (item?.selectedOption && typeof item.selectedOption === 'object') {
+      return item.selectedOption.name_vi || item.selectedOption.name_kr || item.selectedOption.name || '';
+    }
+    return '';
+  };
+
   const subTotalKrw = cart.reduce((sum, item) => sum + ((Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0) * (Number(item.qty) || 1)), 0);
   const subTotalVnd = cart.reduce((sum, item) => sum + (getItemUnitVnd(item) * (Number(item.qty) || 1)), 0);
   const MIN_ORDER_AMOUNT_VND = 1000000; // Đơn hàng tối thiểu 1.000.000 VNĐ
@@ -138,6 +147,7 @@ export default function CartPage() {
         country,
         items: cart.map(item => ({
           ...item,
+          options: getItemOptionText(item),
           priceVnd: getItemUnitVnd(item)
         })),
         totalVnd: totalAmountVnd,
@@ -254,7 +264,9 @@ export default function CartPage() {
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                       <div>
                         <h4 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-dark)', marginBottom: '4px' }}>{item.name}</h4>
-                        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{item.options}</p>
+                        {getItemOptionText(item) ? (
+                          <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{getItemOptionText(item)}</p>
+                        ) : null}
                       </div>
                       <button onClick={() => removeFromCart(item.cartItemId || item.goodsNo)} style={{ background: 'none', border: 'none', color: '#EF4444', cursor: 'pointer', padding: '4px' }}>
                         <Trash2 size={18} />

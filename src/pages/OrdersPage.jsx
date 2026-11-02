@@ -438,7 +438,10 @@ export default function OrdersPage() {
                                 <ExternalLink size={14} style={{ opacity: 0.7 }} />
                               </h4>
                               <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                                {item.options ? `${item.options} | ` : ''}Số lượng: x{item.qty || 1}
+                                {(() => {
+                                  const optStr = typeof item.options === 'string' ? item.options : (item.selectedOptionName || item.selectedOption?.name_vi || item.selectedOption?.name_kr || '');
+                                  return optStr ? `${optStr} | ` : '';
+                                })()}Số lượng: x{item.qty || 1}
                               </p>
                             </div>
                           </div>
@@ -468,7 +471,7 @@ export default function OrdersPage() {
                               <ExternalLink size={14} style={{ opacity: 0.7 }} />
                             </h4>
                             <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-                              Thương hiệu: {order.brand} | Quy cách: {order.options} | Số lượng: x{order.qty || 1}
+                              Thương hiệu: {order.brand} | Quy cách: {typeof order.options === 'string' ? order.options : (order.selectedOptionName || 'Tiêu chuẩn')} | Số lượng: x{order.qty || 1}
                             </p>
                           </div>
                         </div>

@@ -487,6 +487,12 @@ export default function PaymentPage() {
                           )}
                           <div style={{ minWidth: 0, textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>
                             <div style={{ fontWeight: 600, color: 'var(--text-dark)' }}>{item.name || 'Sản phẩm mua hộ'}</div>
+                            {(() => {
+                              const optText = typeof item.options === 'string' ? item.options : (item.selectedOptionName || item.selectedOption?.name_vi || item.selectedOption?.name_kr || '');
+                              return optText ? (
+                                <div style={{ fontSize: '0.74rem', color: '#6B7280' }}>Phân loại: {optText}</div>
+                              ) : null;
+                            })()}
                             <div style={{ color: '#9CA3AF', fontSize: '0.76rem' }}>Số lượng: {item.qty || 1} • Giá gốc: ₩{(Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0).toLocaleString()}</div>
                           </div>
                         </div>

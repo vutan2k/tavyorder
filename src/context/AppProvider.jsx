@@ -485,7 +485,17 @@ export const AppProvider = ({ children }) => {
       const savedCart = localStorage.getItem('tavy_cart');
       if (savedCart) {
         const parsed = JSON.parse(savedCart);
-        if (Array.isArray(parsed)) return parsed;
+        if (Array.isArray(parsed)) {
+          return parsed.map(item => {
+            let optStr = '';
+            if (typeof item.options === 'string') optStr = item.options;
+            else if (typeof item.selectedOptionName === 'string') optStr = item.selectedOptionName;
+            else if (item.selectedOption && typeof item.selectedOption === 'object') {
+              optStr = item.selectedOption.name_vi || item.selectedOption.name_kr || item.selectedOption.name || '';
+            }
+            return { ...item, options: optStr };
+          });
+        }
       }
     } catch (e) {
       console.warn('Error reading tavy_cart:', e);
@@ -1375,7 +1385,14 @@ export const AppProvider = ({ children }) => {
 
   const addToCart = (product, qty = 1) => {
     if (!product) return;
-    const targetId = getCartItemId(product);
+    let optStr = '';
+    if (typeof product.options === 'string') optStr = product.options;
+    else if (typeof product.selectedOptionName === 'string') optStr = product.selectedOptionName;
+    else if (product.selectedOption && typeof product.selectedOption === 'object') {
+      optStr = product.selectedOption.name_vi || product.selectedOption.name_kr || product.selectedOption.name || '';
+    }
+    const sanitizedProduct = { ...product, options: optStr };
+    const targetId = getCartItemId(sanitizedProduct);
     let newCart = [];
     setCart((prev) => {
       const existingIndex = prev.findIndex((item) => getCartItemId(item) === targetId);
@@ -1384,7 +1401,7 @@ export const AppProvider = ({ children }) => {
           idx === existingIndex ? { ...item, qty: item.qty + qty } : item
         );
       } else {
-        newCart = [...prev, { ...product, cartItemId: targetId, qty }];
+        newCart = [...prev, { ...sanitizedProduct, cartItemId: targetId, qty }];
       }
       return newCart;
     });

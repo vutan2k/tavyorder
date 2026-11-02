@@ -187,10 +187,12 @@ export default function ProductDetailPage() {
   // Thêm vào giỏ hàng
   const handleAddToCart = (shouldRedirect = false) => {
     if (!product) return;
+    const optDisplayName = activeOption ? getOptionDisplayName(activeOption, selectedOptionIndex) : (typeof product.options === 'string' ? product.options : '');
     const cartItem = {
       ...product,
       selectedOption: activeOption,
-      selectedOptionName: activeOption ? getOptionDisplayName(activeOption, selectedOptionIndex) : null,
+      selectedOptionName: optDisplayName,
+      options: optDisplayName,
       priceVnd: calculatedVnd,
       foreignPrice: activeWonPrice,
       qty: 1
