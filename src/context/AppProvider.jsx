@@ -95,21 +95,37 @@ const sanitizeProducts = (arr) => {
       const isCosmeticCat = !p.category || p.category === 'cosmetics' || p.category === 'skincare' || p.category === 'makeup' || p.category === 'haircare' || p.category === 'bodycare';
       const cleanCat = isCosmeticCat ? 'cosmetics' : p.category;
 
-      if (gNo && SALE_PRICES_MAP[gNo]) {
-        const info = SALE_PRICES_MAP[gNo];
-        return {
-          ...p,
-          category: cleanCat,
-          foreignPrice: info.salePrice,
-          originalPrice: info.originalPrice,
-          price: info.salePrice,
-          priceSyncStatus: 'synced_oliveyoung'
-        };
-      }
-      return {
+      const base = {
         ...p,
         category: cleanCat
       };
+
+      if (gNo && SALE_PRICES_MAP[gNo]) {
+        const info = SALE_PRICES_MAP[gNo];
+        base.foreignPrice = info.salePrice;
+        base.originalPrice = info.originalPrice;
+        base.price = info.salePrice;
+        base.priceSyncStatus = 'synced_oliveyoung';
+      }
+
+      // Tự động chuẩn hóa trạng thái tồn kho: nếu còn option khả dụng thì sản phẩm cha là Còn Hàng
+      if (Array.isArray(base.options) && base.options.length > 0) {
+        const hasAvailableOption = base.options.some(
+          opt => !opt.is_sold_out && opt.status !== 'out_of_stock'
+        );
+        if (hasAvailableOption) {
+          base.is_sold_out = false;
+          base.isSoldOut = false;
+          base.status = 'published';
+          base.isPublished = true;
+        } else {
+          base.is_sold_out = true;
+          base.isSoldOut = true;
+          base.status = 'out_of_stock';
+        }
+      }
+
+      return base;
     });
 };
 

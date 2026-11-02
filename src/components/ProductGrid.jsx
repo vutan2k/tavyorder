@@ -191,7 +191,9 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                 <div>
                   {/* Check if sold out */}
                   {(() => {
-                    const isProductSoldOut = Boolean(product.is_sold_out || product.status === 'out_of_stock');
+                    const isProductSoldOut = Array.isArray(product.options) && product.options.length > 0
+                      ? !product.options.some(opt => !opt.is_sold_out && opt.status !== 'out_of_stock')
+                      : Boolean(product.is_sold_out || product.status === 'out_of_stock' || product.isSoldOut);
                     return (
                       <>
                         {/* 2 Dòng Giá Rõ Ràng: Giá tại Hàn & Giá về tay */}
@@ -261,7 +263,7 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                               color: isProductSoldOut ? '#9CA3AF' : undefined,
                               cursor: isProductSoldOut ? 'not-allowed' : 'pointer'
                             }}
-                            title={isProductSoldOut ? "Tạm hết hàng" : "Thêm vào giỏ hàng"}
+                            title={isProductSoldOut ? "Tạm hết hàng" : (Array.isArray(product.options) && product.options.length > 0 ? "Chọn phân loại & Đặt mua" : "Thêm vào giỏ hàng")}
                           >
                             <ShoppingBag size={18} />
                           </button>
