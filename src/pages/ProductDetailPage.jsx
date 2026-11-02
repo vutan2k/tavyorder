@@ -446,43 +446,19 @@ export default function ProductDetailPage() {
                     {formatVnd(calculatedOriginalVnd)}
                   </span>
                 )}
-                {product.discountRate && (
-                  <span style={{ 
-                    backgroundColor: 'var(--text-dark, #000000)', 
-                    color: 'var(--bg-white, #FFFFFF)', 
-                    fontWeight: 800, 
-                    fontSize: '0.78rem', 
-                    padding: '2px 8px', 
-                    borderRadius: '6px' 
-                  }}>
-                    -{product.discountRate}%
-                  </span>
-                )}
               </div>
               <div style={{ fontSize: '0.76rem', color: 'var(--text-muted, #71717A)', marginTop: '4px' }}>
-                Giá gốc tại Hàn: <strong>{formatKrw(activeWonPrice)}</strong> (Tỷ giá: 1 KRW ~ {effectiveKrwRate.toFixed(1)} VNĐ)
+                Giá gốc tại Hàn: <strong>{formatKrw(activeWonPrice)}</strong>
               </div>
             </div>
 
             {/* Chọn Phân Loại (Chuẩn Olive Young Hàn Quốc phiên dịch Tiếng Việt) */}
             {hasOptions && (
               <div style={{ marginBottom: '24px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                <div style={{ marginBottom: '10px' }}>
                   <label style={{ display: 'block', fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-dark, #374151)' }}>
                     Chọn phân loại ({options.length} lựa chọn):
                   </label>
-                  {activeOption && (
-                    <span style={{
-                      fontSize: '0.74rem',
-                      fontWeight: 700,
-                      color: (activeOption.is_sold_out || activeOption.status === 'out_of_stock') ? '#EF4444' : '#10B981',
-                      backgroundColor: (activeOption.is_sold_out || activeOption.status === 'out_of_stock') ? '#FEE2E2' : '#D1FAE5',
-                      padding: '2px 8px',
-                      borderRadius: '6px'
-                    }}>
-                      {(activeOption.is_sold_out || activeOption.status === 'out_of_stock') ? 'Hết hàng' : 'Còn hàng tại Hàn Quốc'}
-                    </span>
-                  )}
                 </div>
 
                 <div style={{
@@ -584,19 +560,27 @@ export default function ProductDetailPage() {
                         </div>
 
                         <div style={{ textAlign: 'right', flexShrink: 0 }}>
-                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '4px' }}>
-                            {optDiscount && (
-                              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-dark, #000000)' }}>
-                                -{optDiscount.replace('-', '')}
-                              </span>
-                            )}
-                            <strong style={{ fontSize: '0.86rem', color: 'var(--text-dark, #000000)' }}>
-                              {formatVnd(optVnd)}
-                            </strong>
-                          </div>
-                          <div style={{ fontSize: '0.72rem', color: 'var(--text-muted, #71717A)' }}>
-                            {formatKrw(optWon)}
-                          </div>
+                          {isSoldOut ? (
+                            <span style={{ fontSize: '0.76rem', fontWeight: 700, color: '#EF4444' }}>
+                              Hết hàng
+                            </span>
+                          ) : (
+                            <>
+                              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '4px' }}>
+                                {optDiscount && (
+                                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-dark, #000000)' }}>
+                                    -{optDiscount.replace('-', '')}
+                                  </span>
+                                )}
+                                <strong style={{ fontSize: '0.86rem', color: 'var(--text-dark, #000000)' }}>
+                                  {formatVnd(optVnd)}
+                                </strong>
+                              </div>
+                              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted, #71717A)' }}>
+                                {formatKrw(optWon)}
+                              </div>
+                            </>
+                          )}
                         </div>
                       </button>
                     );
