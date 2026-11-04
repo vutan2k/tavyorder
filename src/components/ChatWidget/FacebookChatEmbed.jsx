@@ -3,7 +3,7 @@ import { MessageCircle, ExternalLink, ShieldCheck, Clock, Send } from 'lucide-re
 
 export default function FacebookChatEmbed({ isMobile }) {
   // Liên kết thực tế tới Facebook Messenger & Profile của TAVY Korea
-  const facebookPageId = '100062954372060';
+  const facebookPageId = '1372746382596305';
   const facebookMessengerUrl = `https://www.facebook.com/messages/t/${facebookPageId}`;
   const facebookProfileUrl = `https://www.facebook.com/${facebookPageId}`;
 
