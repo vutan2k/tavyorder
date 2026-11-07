@@ -507,7 +507,7 @@ export default function KROrderHomePage() {
               </div>
 
               <a
-                href="https://www.facebook.com/messages/t/1372746382596305"
+                href="https://m.me/122098145037531964"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="consult-banner-btn"

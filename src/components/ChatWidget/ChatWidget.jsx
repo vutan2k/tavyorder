@@ -12,8 +12,8 @@ export default function ChatWidget() {
   const displayZaloPhone = '0935 861 690';
 
   // Link Facebook Messenger & Profile của TAVY Korea
-  const facebookPageId = '1372746382596305';
-  const facebookMessengerUrl = `https://www.facebook.com/messages/t/${facebookPageId}`;
+  const facebookPageId = '122098145037531964';
+  const facebookMessengerUrl = `https://m.me/${facebookPageId}`;
 
   // Chỉ hiển thị 2 nút Chat tư vấn ở Trang chủ, ẩn hoàn toàn ở tất cả các tab và trang khác
   const homeRoutes = ['/', '/home', '/products', '/catalog', '/kr-order'];
