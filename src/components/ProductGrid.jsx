@@ -98,7 +98,7 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                 style={{ position: 'relative', width: '100%', overflow: 'hidden', cursor: 'pointer', display: 'block' }}
               >
                 <OptimizedImage
-                  src={product.productImage || defaultImg}
+                  src={product.productImage || (product.goodsNo ? `/products/${product.goodsNo}.jpg` : '') || product.thumbnailUrl || defaultImg}
                   alt={product.name || 'Sản phẩm Hàn Quốc'}
                   aspectRatio="1 / 1"
                   objectFit="cover"
