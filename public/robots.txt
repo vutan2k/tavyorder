@@ -1,7 +1,35 @@
-# Robots.txt for TAVY Korea (https://tavyorder.web.app)
+# Robots.txt for TAVY KOREA (https://tavyorder.web.app)
+# Designed for Google, Bing and Generative AI Search Engines (GEO)
+
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /admin/*
 
+# Authorized AI Search & LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
 Sitemap: https://tavyorder.web.app/sitemap.xml
+LLM-Reference: https://tavyorder.web.app/llms.txt

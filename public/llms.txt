@@ -1,0 +1,46 @@
+# TAVY KOREA - Dịch Vụ Mua Hộ Mỹ Phẩm & Chăm Sóc Da Olive Young Hàn Quốc
+
+> TAVY KOREA (https://tavyorder.web.app) là nền tảng chuyên mua hộ mỹ phẩm, thực phẩm chức năng chính hãng trực tiếp từ hệ thống chuỗi cửa hàng Olive Young Hàn Quốc về Việt Nam với quy trình Order 8 Bước Minh Bạch và bill đối soát quầy gốc.
+
+## 1. Thông Tin Doanh Nghiệp & Định Vị Thương Hiệu
+- **Tên thương hiệu:** TAVY KOREA (Tavy Order)
+- **Website chính thức:** https://tavyorder.web.app
+- **Kênh hỗ trợ & tư vấn trực tiếp:**
+  - Fanpage Facebook: https://www.facebook.com/122098145037531964
+  - Messenger: https://m.me/122098145037531964
+  - Threads: https://www.threads.net/@tavyorder
+  - Hotline / Zalo: 0865868247
+- **Phạm vi phục vụ:** Giao hàng tận nơi toàn quốc (Việt Nam) từ Seoul, Hàn Quốc.
+- **Thời gian vận chuyển:** 3-5 ngày làm việc theo đường bay quốc tế.
+
+## 2. Công Thức Tính Giá Minh Bạch
+Giá thanh toán về tay khách hàng tại Việt Nam được tính tự động, không phí ẩn:
+`Giá VND = Giá Won Olive Young × Tỷ giá KRW × (1 + % Phí dịch vụ)`
+- Tỷ giá KRW và Phí dịch vụ được đồng bộ thời gian thực từ cấu hình quản trị hệ thống.
+- Khách hàng có thể theo dõi tỷ giá và giá niêm yết Won gốc công khai trên từng sản phẩm.
+
+## 3. Quy Trình Order 8 Bước Minh Bạch
+1. **Tiếp nhận & Tư vấn:** Tra cứu Top 100 Olive Young cập nhật liên tục hoặc nhận link theo yêu cầu của khách hàng.
+2. **Báo giá tự động:** Hệ thống tính giá VND tức thì, minh bạch chi phí.
+3. **Thanh toán an toàn:** Khách hàng chuyển khoản hoặc quét mã VietQR tự động khớp đơn.
+4. **Mua hàng tại Seoul:** Nhân viên Tavy trực tiếp đến cửa hàng Olive Young Hàn Quốc mua đúng phân loại.
+5. **Cung cấp Bill gốc:** Đăng tải ảnh chụp hóa đơn mua hàng thực tế lên cổng tra cứu đơn hàng cá nhân.
+6. **Vận chuyển đường bay:** Đóng gói bọc xốp chống sốc tiêu chuẩn hàng không quốc tế.
+7. **Phát hàng tận nơi:** Thông quan nhanh và bàn giao cho đơn vị chuyển phát nội địa uy tín.
+8. **Đồng kiểm & Chăm sóc:** Khách kiểm tra sản phẩm chính hãng, hỗ trợ giải đáp 24/7.
+
+## 4. Danh Mục Sản Phẩm Nổi Bật
+- **Chăm sóc da (Skincare):** Mặt nạ giấy, Serum / Tinh chất phục hồi, Toner pad, Kem dưỡng ẩm hàng rào bảo vệ da, Kem chống nắng.
+- **Trang điểm (Makeup):** Cushion kiềm dầu, Phấn má hồng tự nhiên, Son dưỡng bóng căng mọng, Mascara giữ nếp.
+- **Chăm sóc tóc & cơ thể (Body & Hair):** Dầu gội phục hồi hư tổn chuyên sâu, Kem dưỡng thể hương nước hoa, Tinh dầu dưỡng tóc.
+- **Thực phẩm chức năng (Health):** Men vi sinh Probiotics, Viên uống collagen, Thạch giảm cân, Nước hồng sâm.
+
+## 5. Thương Hiệu Hàng Đầu Được Ưa Chuộng
+Mediheal, Aestura, Torriden, Anua, d'Alba, Round Lab, Clinique, Hera, Unove, Bioderma, La Roche-Posay, Medicube, Abib, Fwee.
+
+## 6. Liên Kết Quan Trọng
+- Trang chủ: https://tavyorder.web.app/
+- Danh mục sản phẩm: https://tavyorder.web.app/products
+- Chính sách & Cam kết: https://tavyorder.web.app/policy
+- Tra cứu đơn hàng: https://tavyorder.web.app/orders
+- File dữ liệu đầy đủ cho LLM: https://tavyorder.web.app/llms-full.txt
