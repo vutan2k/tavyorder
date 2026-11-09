@@ -565,7 +565,7 @@ export const AppProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : defaultRates;
   });
 
-  const CURRENT_CATALOG_VER = 'v5.4_pure_gdas_user_reviews';
+  const CURRENT_CATALOG_VER = 'v5.5_highend_department_store_collection';
 
   const [products, setProducts] = useState(() => {
     try {

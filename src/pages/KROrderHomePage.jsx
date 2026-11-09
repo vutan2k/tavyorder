@@ -30,6 +30,7 @@ export default function KROrderHomePage() {
 
   const categories = [
     { id: 'all', name: 'Tất cả sản phẩm' },
+    { id: 'highend', name: 'High-End (Hàng Hiệu)' },
     { id: 'lipstick', name: 'Son môi' },
     { id: 'foundation', name: 'Kem nền & Che khuyết điểm' },
     { id: 'cushion', name: 'Phấn nước (Cushion)' },
@@ -116,9 +117,19 @@ export default function KROrderHomePage() {
       const name = (product.name || '').toLowerCase();
       const nameKr = (product.nameKr || product.koreanTitle || '').toLowerCase();
 
+      // High-End Department Store exclusive tab
+      if (activeCategory === 'highend') {
+        return Boolean(product.isHighEnd || product.category === 'highend');
+      }
+
+      // If viewing other categories (except 'all'), strictly isolate high-end products
+      if (activeCategory !== 'all' && product.isHighEnd) {
+        return false;
+      }
+
       // Top navbar link fallback
       if (activeCategory === 'cosmetics') {
-        return cat !== 'ginseng' && cat !== 'supplements' && !/sâm|hồng sâm|nấm|protein|thực phẩm chức năng|viên uống/i.test(name);
+        return !product.isHighEnd && cat !== 'ginseng' && cat !== 'supplements' && !/sâm|hồng sâm|nấm|protein|thực phẩm chức năng|viên uống/i.test(name);
       }
 
       // Direct category or subCategory match
@@ -225,6 +236,7 @@ export default function KROrderHomePage() {
               <ul className="nav-links">
                 <li><a href="#" onClick={(e) => handleNavCategoryClick(e, 'all')} className={activeCategory === 'all' ? 'active' : ''}>TRANG CHỦ</a></li>
                 <li><a href="#products" onClick={(e) => handleNavCategoryClick(e, 'cosmetics')} className={activeCategory === 'cosmetics' ? 'active' : ''}>MỸ PHẨM</a></li>
+                <li><a href="#products" onClick={(e) => handleNavCategoryClick(e, 'highend')} className={activeCategory === 'highend' ? 'active' : ''}>HIGH-END</a></li>
                 <li><a href="#products" onClick={(e) => handleNavCategoryClick(e, 'ginseng')} className={activeCategory === 'ginseng' ? 'active' : ''}>SÂM NẤM</a></li>
                 <li><a href="#products" onClick={(e) => handleNavCategoryClick(e, 'supplements')} className={activeCategory === 'supplements' ? 'active' : ''}>THỰC PHẨM CHỨC NĂNG</a></li>
                 <li><Link to="/policy">QUY ĐỊNH & CHÍNH SÁCH</Link></li>
@@ -377,6 +389,7 @@ export default function KROrderHomePage() {
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '14px', margin: 0, padding: 0 }}>
               <li><a href="#" onClick={(e) => handleNavCategoryClick(e, 'all')} style={{ color: activeCategory === 'all' ? 'var(--purple-primary)' : 'var(--text-dark)', fontWeight: activeCategory === 'all' ? 700 : 600, textDecoration: 'none', fontSize: '0.9rem' }}>Tất cả sản phẩm</a></li>
+              <li><a href="#products" onClick={(e) => handleNavCategoryClick(e, 'highend')} style={{ color: activeCategory === 'highend' ? 'var(--purple-primary)' : 'var(--text-dark)', fontWeight: activeCategory === 'highend' ? 700 : 600, textDecoration: 'none', fontSize: '0.9rem' }}>High-End (Hàng Hiệu)</a></li>
               <li><a href="#products" onClick={(e) => handleNavCategoryClick(e, 'lipstick')} style={{ color: activeCategory === 'lipstick' ? 'var(--purple-primary)' : 'var(--text-dark)', fontWeight: activeCategory === 'lipstick' ? 700 : 600, textDecoration: 'none', fontSize: '0.9rem' }}>Son môi</a></li>
               <li><a href="#products" onClick={(e) => handleNavCategoryClick(e, 'foundation')} style={{ color: activeCategory === 'foundation' ? 'var(--purple-primary)' : 'var(--text-dark)', fontWeight: activeCategory === 'foundation' ? 700 : 600, textDecoration: 'none', fontSize: '0.9rem' }}>Kem nền & Cushion</a></li>
               <li><a href="#products" onClick={(e) => handleNavCategoryClick(e, 'eyeshadow')} style={{ color: activeCategory === 'eyeshadow' ? 'var(--purple-primary)' : 'var(--text-dark)', fontWeight: activeCategory === 'eyeshadow' ? 700 : 600, textDecoration: 'none', fontSize: '0.9rem' }}>Phấn mắt & Phấn má</a></li>

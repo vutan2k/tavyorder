@@ -5,7 +5,7 @@
 - Website: https://tavyorder.web.app
 - Hotline/Zalo: 0865868247
 - Fanpage: https://www.facebook.com/122098145037531964
-- Tổng số sản phẩm trong cơ sở dữ liệu: 349
+- Tổng số sản phẩm trong cơ sở dữ liệu: 369
 
 ## Bảng Danh Sách Sản Phẩm (Kèm Giá Won & Giá VND Về Tay)
 - **Kem Chống Nắng Dưỡng Ẩm LA ROCHE-POSAY Uvidea Anthelios Melt-In Cream**
@@ -2101,4 +2101,124 @@
   - Mã hàng (goodsNo): A000000253729
   - Giá Olive Young: 44.900 KRW (~1.138.000 đ)
   - Link chi tiết: https://tavyorder.web.app/san-pham/serum-eucerin-even-radiance-brightening-booster-30ml-a000000253729
+
+- **Son Dưỡng Dior Addict Lip Glow Có Màu Cao Cấp (Nhiều Tone Màu)**
+  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000001
+  - Giá Olive Young: 50.000 KRW (~1.268.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/son-duong-dior-addict-lip-glow-co-mau-cao-cap-nhieu-tone-mau-he0000000001
+
+- **Son Bóng Dưỡng Căng Mọng Môi Dior Addict Lip Maximizer 6ml**
+  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000002
+  - Giá Olive Young: 52.000 KRW (~1.318.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/son-bong-duong-cang-mong-moi-dior-addict-lip-maximizer-6ml-he0000000002
+
+- **Son Kem Lì Kháng Nước Không Lem Dior Rouge Forever Liquid 6ml**
+  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000003
+  - Giá Olive Young: 61.000 KRW (~1.546.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/son-kem-li-khang-nuoc-khong-lem-dior-rouge-forever-liquid-6ml-he0000000003
+
+- **Phấn Nước Căng Bóng Dior Forever Skin Glow Cushion (Hộp + Lõi)**
+  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000004
+  - Giá Olive Young: 108.000 KRW (~2.738.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/phan-nuoc-cang-bong-dior-forever-skin-glow-cushion-hop-loi-he0000000004
+
+- **Son Dưỡng Bóng Căng Mọng YSL Candy Glaze Lip Gloss Stick**
+  - Thương hiệu: YSL Beauty | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000005
+  - Giá Olive Young: 49.000 KRW (~1.242.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/son-duong-bong-cang-mong-ysl-candy-glaze-lip-gloss-stick-he0000000005
+
+- **Son Thỏi Vuông Lì Mịn YSL Rouge Pur Couture The Slim 2.2g**
+  - Thương hiệu: YSL Beauty | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000006
+  - Giá Olive Young: 55.000 KRW (~1.394.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/son-thoi-vuong-li-min-ysl-rouge-pur-couture-the-slim-2-2g-he0000000006
+
+- **Phấn Nước Vỏ Da Đen YSL Encre de Peau Le Cushion (Hộp + Lõi)**
+  - Thương hiệu: YSL Beauty | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000007
+  - Giá Olive Young: 103.000 KRW (~2.611.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/phan-nuoc-vo-da-den-ysl-encre-de-peau-le-cushion-hop-loi-he0000000007
+
+- **Son Dưỡng Thỏi Trắng Cao Cấp Chanel Rouge Coco Baume 3g**
+  - Thương hiệu: Chanel | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000008
+  - Giá Olive Young: 55.000 KRW (~1.394.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/son-duong-thoi-trang-cao-cap-chanel-rouge-coco-baume-3g-he0000000008
+
+- **Tinh Chất Khởi Nguồn Tái Sinh Da Sulwhasoo First Care Serum VI**
+  - Thương hiệu: Sulwhasoo | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000009
+  - Giá Olive Young: 140.000 KRW (~3.549.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/tinh-chat-khoi-nguon-tai-sinh-da-sulwhasoo-first-care-serum-vi-he0000000009
+
+- **Kem Sâm Ngăn Lão Hóa Chuyên Sâu Sulwhasoo Concentrated Ginseng Cream 60ml**
+  - Thương hiệu: Sulwhasoo | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000010
+  - Giá Olive Young: 270.000 KRW (~6.845.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/kem-sam-ngan-lao-hoa-chuyen-sau-sulwhasoo-concentrated-ginseng-cream-60ml-he0000000010
+
+- **Tinh Chất Phục Hồi Chống Lão Hóa Ban Đêm Estée Lauder ANR Serum**
+  - Thương hiệu: Estée Lauder | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000011
+  - Giá Olive Young: 182.000 KRW (~4.614.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/tinh-chat-phuc-hoi-chong-lao-hoa-ban-dem-estee-lauder-anr-serum-he0000000011
+
+- **Kem Nền Kiềm Dầu Che Phủ Hoàn Hảo Estée Lauder Double Wear 30ml**
+  - Thương hiệu: Estée Lauder | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000012
+  - Giá Olive Young: 84.000 KRW (~2.129.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/kem-nen-kiem-dau-che-phu-hoan-hao-estee-lauder-double-wear-30ml-he0000000012
+
+- **Nước Thần Phục Hồi Tái Tạo Da Trắng Sáng SK-II Facial Treatment Essence**
+  - Thương hiệu: SK-II | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000013
+  - Giá Olive Young: 269.000 KRW (~6.819.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-than-phuc-hoi-tai-tao-da-trang-sang-sk-ii-facial-treatment-essence-he0000000013
+
+- **Serum Trẻ Hóa Da Tăng Cường Vi Sinh Lancôme Advanced Génifique**
+  - Thương hiệu: Lancôme | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000014
+  - Giá Olive Young: 185.000 KRW (~4.690.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/serum-tre-hoa-da-tang-cuong-vi-sinh-lancome-advanced-genifique-he0000000014
+
+- **Kem Dưỡng Tái Sinh Phục Hồi Da Thần Kỳ La Mer Crème de la Mer**
+  - Thương hiệu: La Mer | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000015
+  - Giá Olive Young: 310.000 KRW (~7.859.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/kem-duong-tai-sinh-phuc-hoi-da-than-ky-la-mer-creme-de-la-mer-he0000000015
+
+- **Serum Mờ Thâm Nám Sáng Da Chuyên Sâu Kiehl's Clearly Corrective**
+  - Thương hiệu: Kiehl's | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000016
+  - Giá Olive Young: 145.000 KRW (~3.676.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/serum-mo-tham-nam-sang-da-chuyen-sau-kiehl-s-clearly-corrective-he0000000016
+
+- **Nước Hoa Jo Malone London English Pear & Freesia Cologne Quả Lê & Lan Nam Phi**
+  - Thương hiệu: Jo Malone London | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000017
+  - Giá Olive Young: 115.000 KRW (~2.915.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-jo-malone-london-english-pear-freesia-cologne-qua-le-lan-nam-phi-he0000000017
+
+- **Dầu Tẩy Trang Dịu Nhẹ Bobbi Brown Soothing Cleansing Oil**
+  - Thương hiệu: Bobbi Brown | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000018
+  - Giá Olive Young: 84.000 KRW (~2.129.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/dau-tay-trang-diu-nhe-bobbi-brown-soothing-cleansing-oil-he0000000018
+
+- **Son Thỏi Siêu Lì Nhẹ Môi NARS Powermatte Lipstick 1.5g**
+  - Thương hiệu: NARS | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000019
+  - Giá Olive Young: 46.000 KRW (~1.166.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/son-thoi-sieu-li-nhe-moi-nars-powermatte-lipstick-1-5g-he0000000019
+
+- **Son Thỏi Bóng Mượt Môi MAC Lustreglass Lipstick 3g**
+  - Thương hiệu: M.A.C | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000020
+  - Giá Olive Young: 42.000 KRW (~1.065.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/son-thoi-bong-muot-moi-mac-lustreglass-lipstick-3g-he0000000020
 
