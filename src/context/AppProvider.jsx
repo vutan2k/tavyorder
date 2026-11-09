@@ -565,7 +565,7 @@ export const AppProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : defaultRates;
   });
 
-  const CURRENT_CATALOG_VER = 'v5.5_highend_department_store_collection';
+  const CURRENT_CATALOG_VER = 'v5.6_highend_pure_studio_and_official_pricing';
 
   const [products, setProducts] = useState(() => {
     try {
