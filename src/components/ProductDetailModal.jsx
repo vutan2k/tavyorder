@@ -620,6 +620,68 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
             </div>
           )}
 
+          {/* Hướng dẫn sử dụng */}
+          {product.usage && (
+            <div style={{
+              margin: '4px 0',
+              fontSize: '0.84rem',
+              color: 'var(--text-muted, #4B5563)',
+              lineHeight: '1.5',
+              backgroundColor: '#F0FDF4',
+              padding: '10px 14px',
+              borderRadius: '12px',
+              border: '1px solid #BBF7D0'
+            }}>
+              <div style={{ fontWeight: 700, color: '#166534', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <span>💡</span> Hướng dẫn sử dụng:
+              </div>
+              <div style={{ whiteSpace: 'pre-line' }}>{product.usage}</div>
+            </div>
+          )}
+
+          {/* Ảnh review thực tế từ người dùng */}
+          {Array.isArray(product.photoReviews) && product.photoReviews.length > 0 && (
+            <div style={{
+              margin: '4px 0 6px 0',
+              backgroundColor: '#FFFBEB',
+              padding: '10px 14px',
+              borderRadius: '12px',
+              border: '1px solid #FDE68A'
+            }}>
+              <div style={{ fontSize: '0.84rem', fontWeight: 700, color: '#92400E', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <span>📸</span> Ảnh review thực tế ({product.photoReviews.length}):
+              </div>
+              <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '4px', scrollbarWidth: 'thin' }}>
+                {product.photoReviews.map((imgUrl, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => {
+                      const idx = allPhotos.indexOf(imgUrl);
+                      if (idx !== -1) {
+                        setZoomIndex(idx);
+                      } else {
+                        setZoomIndex(0);
+                      }
+                    }}
+                    style={{
+                      flex: '0 0 68px',
+                      height: '68px',
+                      borderRadius: '8px',
+                      overflow: 'hidden',
+                      border: '1px solid #FCD34D',
+                      cursor: 'pointer',
+                      padding: 0,
+                      backgroundColor: '#FFFFFF'
+                    }}
+                  >
+                    <img src={imgUrl} alt={`Review ${i + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* 4. KHỐI GIÁ TIỀN */}
           <div style={{
             background: 'var(--bg-subtle-purple, #F8F6FA)',
