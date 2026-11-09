@@ -639,20 +639,23 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
             </div>
           )}
 
-          {/* Ảnh review thực tế từ người dùng */}
-          {Array.isArray(product.photoReviews) && product.photoReviews.length > 0 && (
-            <div style={{
-              margin: '4px 0 6px 0',
-              backgroundColor: '#FFFBEB',
-              padding: '10px 14px',
-              borderRadius: '12px',
-              border: '1px solid #FDE68A'
-            }}>
+          {/* Ảnh review thực tế từ người dùng (100% GDAS người mua thật) */}
+          {Array.isArray(product.photoReviews) && product.photoReviews.filter(s => s && s.includes('gdasEditor')).length > 0 && (
+            <div 
+              className="product-photo-reviews-container"
+              style={{
+                margin: '4px 0 6px 0',
+                backgroundColor: '#FFFBEB',
+                padding: '10px 14px',
+                borderRadius: '12px',
+                border: '1px solid #FDE68A'
+              }}
+            >
               <div style={{ fontSize: '0.84rem', fontWeight: 700, color: '#92400E', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span>📸</span> Ảnh review thực tế ({product.photoReviews.length}):
+                <span>📸</span> Ảnh review thực tế ({product.photoReviews.filter(s => s && s.includes('gdasEditor')).length}):
               </div>
               <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '4px', scrollbarWidth: 'thin' }}>
-                {product.photoReviews.map((imgUrl, i) => (
+                {product.photoReviews.filter(s => s && s.includes('gdasEditor')).map((imgUrl, i) => (
                   <button
                     key={i}
                     type="button"

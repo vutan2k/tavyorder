@@ -565,7 +565,7 @@ export const AppProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : defaultRates;
   });
 
-  const CURRENT_CATALOG_VER = 'v5.3_all_oliveyoung_sale_prices_verified';
+  const CURRENT_CATALOG_VER = 'v5.4_pure_gdas_user_reviews';
 
   const [products, setProducts] = useState(() => {
     try {
