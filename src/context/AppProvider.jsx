@@ -565,7 +565,7 @@ export const AppProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : defaultRates;
   });
 
-  const CURRENT_CATALOG_VER = 'v5.7_highend_dior_liquid_packshot_fix';
+  const CURRENT_CATALOG_VER = 'v5.8_highend_10_luxury_additions';
 
   const [products, setProducts] = useState(() => {
     try {

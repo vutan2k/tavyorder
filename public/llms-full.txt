@@ -5,7 +5,7 @@
 - Website: https://tavyorder.web.app
 - Hotline/Zalo: 0865868247
 - Fanpage: https://www.facebook.com/122098145037531964
-- Tổng số sản phẩm trong cơ sở dữ liệu: 369
+- Tổng số sản phẩm trong cơ sở dữ liệu: 379
 
 ## Bảng Danh Sách Sản Phẩm (Kèm Giá Won & Giá VND Về Tay)
 - **Kem Chống Nắng Dưỡng Ẩm LA ROCHE-POSAY Uvidea Anthelios Melt-In Cream**
@@ -2221,4 +2221,64 @@
   - Mã hàng (goodsNo): HE0000000020
   - Giá Olive Young: 42.000 KRW (~1.065.000 đ)
   - Link chi tiết: https://tavyorder.web.app/san-pham/son-thoi-bong-muot-moi-mac-lustreglass-lipstick-3g-he0000000020
+
+- **Nước Hoa Nữ Chanel Chance Eau Tendre Eau de Parfum Cao Cấp**
+  - Thương hiệu: Chanel | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000021
+  - Giá Olive Young: 144.000 KRW (~3.650.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-nu-chanel-chance-eau-tendre-eau-de-parfum-cao-cap-he0000000021
+
+- **Nước Hoa Nữ YSL Libre Eau de Parfum Biểu Tượng Quyến Rũ**
+  - Thương hiệu: Yves Saint Laurent | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000022
+  - Giá Olive Young: 155.000 KRW (~3.929.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-nu-ysl-libre-eau-de-parfum-bieu-tuong-quyen-ru-he0000000022
+
+- **Nước Hoa Nam Dior Sauvage Eau de Toilette Đẳng Cấp Mạnh Mẽ**
+  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000023
+  - Giá Olive Young: 119.000 KRW (~3.017.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-nam-dior-sauvage-eau-de-toilette-dang-cap-manh-me-he0000000023
+
+- **Nước Hoa Nữ Miss Dior Blooming Bouquet Eau de Toilette Dịu Dàng**
+  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000024
+  - Giá Olive Young: 99.000 KRW (~2.510.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-nu-miss-dior-blooming-bouquet-eau-de-toilette-diu-dang-he0000000024
+
+- **Nước Hoa Niche Cao Cấp Le Labo Santal 33 Eau de Parfum (Mùi Gỗ Đàn Hương)**
+  - Thương hiệu: Le Labo | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000025
+  - Giá Olive Young: 140.000 KRW (~3.549.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-niche-cao-cap-le-labo-santal-33-eau-de-parfum-mui-go-dan-huong-he0000000025
+
+- **Son Thỏi Lì Cao Cấp Tom Ford Lip Color Matte Vỏ Đen Viền Vàng**
+  - Thương hiệu: Tom Ford | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000026
+  - Giá Olive Young: 79.000 KRW (~2.003.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/son-thoi-li-cao-cap-tom-ford-lip-color-matte-vo-den-vien-vang-he0000000026
+
+- **Nước Cân Bằng Cánh Hoa Cúc Kiehl Calendula Herbal-Extract Toner**
+  - Thương hiệu: Kiehl's | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000027
+  - Giá Olive Young: 35.000 KRW (~887.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-can-bang-canh-hoa-cuc-kiehl-calendula-herbal-extract-toner-he0000000027
+
+- **Phấn Má Hồng Tự Nhiên Đổi Màu Theo Độ pH Dior Rosy Glow Blush**
+  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000028
+  - Giá Olive Young: 66.000 KRW (~1.673.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/phan-ma-hong-tu-nhien-doi-mau-theo-do-ph-dior-rosy-glow-blush-he0000000028
+
+- **Phấn Phủ Bột 4 Ô Màu Hiệu Chỉnh Da Givenchy Prisme Libre Loose Powder**
+  - Thương hiệu: Givenchy | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000029
+  - Giá Olive Young: 92.000 KRW (~2.332.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/phan-phu-bot-4-o-mau-hieu-chinh-da-givenchy-prisme-libre-loose-powder-he0000000029
+
+- **Dầu Tẩy Trang Thảo Mộc Cao Cấp Shu Uemura Ultime8 Sublime Beauty Cleansing Oil**
+  - Thương hiệu: Shu Uemura | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000030
+  - Giá Olive Young: 55.000 KRW (~1.394.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/dau-tay-trang-thao-moc-cao-cap-shu-uemura-ultime8-sublime-beauty-cleansing-oil-he0000000030
 
