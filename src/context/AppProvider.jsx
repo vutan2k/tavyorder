@@ -565,7 +565,7 @@ export const AppProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : defaultRates;
   });
 
-  const CURRENT_CATALOG_VER = 'v5.8_highend_10_luxury_additions';
+  const CURRENT_CATALOG_VER = 'v5.9_highend_batch_1794247007';
 
   const [products, setProducts] = useState(() => {
     try {
