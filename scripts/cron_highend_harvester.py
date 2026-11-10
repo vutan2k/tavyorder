@@ -90,7 +90,7 @@ def tan_vision_qc(image_data, prompt_text):
 def search_packshot_on_naver(tab_id, query):
     url = f"https://search.shopping.naver.com/search/all?query={urllib.parse.quote(query)}"
     ChromeTabManager.navigate_tab(tab_id, url)
-    time.sleep(3.0)
+    time.sleep(5.0)
     js = '''(() => {
         const imgs = Array.from(document.querySelectorAll('img'))
             .map(i => i.src)
@@ -171,8 +171,8 @@ def harvest_batch(limit=10, priority='NORMAL'):
                 failed_skus[gid] = fail_cnt
                 print(f"⚠️ Chưa tìm được packshot chuẩn cho {gid} (Lần trượt {fail_cnt}/3).")
 
-            # Stealth delay 8s - 12s
-            time.sleep(8.5)
+            # Stealth human delay cực chậm 15s - 20s chống chặn IP
+            time.sleep(18.0)
 
     state['failed_skus'] = failed_skus
     if not newly_ready:
