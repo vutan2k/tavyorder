@@ -5,7 +5,7 @@
 - Website: https://tavyorder.web.app
 - Hotline/Zalo: 0865868247
 - Fanpage: https://www.facebook.com/122098145037531964
-- Tổng số sản phẩm trong cơ sở dữ liệu: 379
+- Tổng số sản phẩm trong cơ sở dữ liệu: 405
 
 ## Bảng Danh Sách Sản Phẩm (Kèm Giá Won & Giá VND Về Tay)
 - **Kem Chống Nắng Dưỡng Ẩm LA ROCHE-POSAY Uvidea Anthelios Melt-In Cream**
@@ -2281,4 +2281,160 @@
   - Mã hàng (goodsNo): HE0000000030
   - Giá Olive Young: 55.000 KRW (~1.394.000 đ)
   - Link chi tiết: https://tavyorder.web.app/san-pham/dau-tay-trang-thao-moc-cao-cap-shu-uemura-ultime8-sublime-beauty-cleansing-oil-he0000000030
+
+- **Nước Hoa Nam Chanel Bleu de Chanel Eau de Parfum Đẳng Cấp Phái Mạnh**
+  - Thương hiệu: Chanel | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000031
+  - Giá Olive Young: 172.000 KRW (~4.360.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-nam-chanel-bleu-de-chanel-eau-de-parfum-dang-cap-phai-manh-he0000000031
+
+- **Nước Hoa Nữ Chanel Coco Mademoiselle Eau de Parfum Quyến Rũ Kiêu Kỳ**
+  - Thương hiệu: Chanel | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000032
+  - Giá Olive Young: 144.000 KRW (~3.650.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-nu-chanel-coco-mademoiselle-eau-de-parfum-quyen-ru-kieu-ky-he0000000032
+
+- **Nước Hoa Niche Diptyque Fleur de Peau Eau de Parfum (Hương Da Thịt Độc Bản)**
+  - Thương hiệu: Diptyque | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000033
+  - Giá Olive Young: 328.000 KRW (~8.315.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-niche-diptyque-fleur-de-peau-eau-de-parfum-huong-da-thit-doc-ban-he0000000033
+
+- **Nước Hoa Niche Diptyque Do Son Eau de Parfum (Hoa Huệ Đồ Sơn Việt Nam)**
+  - Thương hiệu: Diptyque | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000034
+  - Giá Olive Young: 328.000 KRW (~8.315.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-niche-diptyque-do-son-eau-de-parfum-hoa-hue-do-son-viet-nam-he0000000034
+
+- **Nước Hoa Unisex Maison Margiela Replica Jazz Club EDT Ấm Áp Hoài Niệm**
+  - Thương hiệu: Maison Margiela | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000035
+  - Giá Olive Young: 129.000 KRW (~3.270.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-unisex-maison-margiela-replica-jazz-club-edt-am-ap-hoai-niem-he0000000035
+
+- **Nước Hoa Unisex Maison Margiela Replica Lazy Sunday Morning EDT Tinh Khôi**
+  - Thương hiệu: Maison Margiela | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000036
+  - Giá Olive Young: 129.000 KRW (~3.270.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-unisex-maison-margiela-replica-lazy-sunday-morning-edt-tinh-khoi-he0000000036
+
+- **Nước Hoa Niche Cao Cấp Byredo Blanche Eau de Parfum Tối Giản Bắc Âu**
+  - Thương hiệu: Byredo | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000037
+  - Giá Olive Young: 280.000 KRW (~7.098.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-niche-cao-cap-byredo-blanche-eau-de-parfum-toi-gian-bac-au-he0000000037
+
+- **Nước Hoa Niche Xa Xỉ Tom Ford Oud Wood Eau de Parfum Quý Tộc**
+  - Thương hiệu: Tom Ford | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000038
+  - Giá Olive Young: 250.000 KRW (~6.338.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-niche-xa-xi-tom-ford-oud-wood-eau-de-parfum-quy-toc-he0000000038
+
+- **Nước Hoa Jo Malone Wood Sage & Sea Salt Cologne Hương Muối Biển Anh Quốc**
+  - Thương hiệu: Jo Malone | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000039
+  - Giá Olive Young: 122.000 KRW (~3.093.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-jo-malone-wood-sage-sea-salt-cologne-huong-muoi-bien-anh-quoc-he0000000039
+
+- **Nước Hoa Jo Malone Peony & Blush Suede Cologne Hoa Mẫu Đơn Quý Phái**
+  - Thương hiệu: Jo Malone | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000040
+  - Giá Olive Young: 122.000 KRW (~3.093.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-jo-malone-peony-blush-suede-cologne-hoa-mau-don-quy-phai-he0000000040
+
+- **Nước Hoa Hoàng Gia Creed Aventus Eau de Parfum Vị Vua Quyền Lực**
+  - Thương hiệu: Creed | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000041
+  - Giá Olive Young: 390.000 KRW (~9.887.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-hoang-gia-creed-aventus-eau-de-parfum-vi-vua-quyen-luc-he0000000041
+
+- **Nước Hoa Creed Silver Mountain Water Eau de Parfum Suối Nguồn Núi Tuyết**
+  - Thương hiệu: Creed | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000042
+  - Giá Olive Young: 390.000 KRW (~9.887.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-creed-silver-mountain-water-eau-de-parfum-suoi-nguon-nui-tuyet-he0000000042
+
+- **Nước Hoa Niche Byredo Gypsy Water Eau de Parfum Lãng Du Tự Do**
+  - Thương hiệu: Byredo | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000045
+  - Giá Olive Young: 280.000 KRW (~7.098.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-niche-byredo-gypsy-water-eau-de-parfum-lang-du-tu-do-he0000000045
+
+- **Phấn Nền Hạt Nước Chanel Les Beiges Water-Fresh Tint Mỏng Nhẹ Tự Nhiên**
+  - Thương hiệu: Chanel | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000048
+  - Giá Olive Young: 107.000 KRW (~2.712.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/phan-nen-hat-nuoc-chanel-les-beiges-water-fresh-tint-mong-nhe-tu-nhien-he0000000048
+
+- **Dầu Dưỡng Tái Sinh Mật Ong Đảo Ouessant Guerlain Abeille Royale Watery Oil**
+  - Thương hiệu: Guerlain | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000049
+  - Giá Olive Young: 145.000 KRW (~3.676.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/dau-duong-tai-sinh-mat-ong-dao-ouessant-guerlain-abeille-royale-watery-oil-he0000000049
+
+- **Nước Thần Tái Sinh Năng Lượng Da La Mer The Treatment Lotion Cao Cấp**
+  - Thương hiệu: La Mer | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000050
+  - Giá Olive Young: 175.000 KRW (~4.436.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-than-tai-sinh-nang-luong-da-la-mer-the-treatment-lotion-cao-cap-he0000000050
+
+- **Nước Hoa Niche Diptyque Tam Dao Eau de Parfum (Rừng Gỗ Đàn Hương Tam Đảo)**
+  - Thương hiệu: Diptyque | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000044
+  - Giá Olive Young: 328.000 KRW (~8.315.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-hoa-niche-diptyque-tam-dao-eau-de-parfum-rung-go-dan-huong-tam-dao-he0000000044
+
+- **Tinh Chất Chống Lão Hóa Kép Tế Bào Toàn Diện Clarins Double Serum**
+  - Thương hiệu: Clarins | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000047
+  - Giá Olive Young: 125.000 KRW (~3.169.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/tinh-chat-chong-lao-hoa-kep-te-bao-toan-dien-clarins-double-serum-he0000000047
+
+- **Kem Dưỡng Ẩm Số 1 Toàn Cầu Kiehl's Ultra Facial Cream Cấp Ẩm 72H**
+  - Thương hiệu: Kiehl's | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000046
+  - Giá Olive Young: 33.000 KRW (~837.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/kem-duong-am-so-1-toan-cau-kiehl-s-ultra-facial-cream-cap-am-72h-he0000000046
+
+- **Nước Thần Căng Bóng Tái Tạo Da Lancôme Clarifique Dual Essence**
+  - Thương hiệu: Lancôme | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000054
+  - Giá Olive Young: 145.000 KRW (~3.676.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-than-cang-bong-tai-tao-da-lancome-clarifique-dual-essence-he0000000054
+
+- **Kem Mắt Giảm Thâm Quầng Estée Lauder ANR Eye Supercharged Gel-Creme**
+  - Thương hiệu: Estée Lauder | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000053
+  - Giá Olive Young: 115.000 KRW (~2.915.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/kem-mat-giam-tham-quang-estee-lauder-anr-eye-supercharged-gel-creme-he0000000053
+
+- **Serum Retinol Vi Liều Tái Tạo Trẻ Hóa Da Kiehl's Daily Micro-Dose**
+  - Thương hiệu: Kiehl's | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000055
+  - Giá Olive Young: 79.000 KRW (~2.003.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/serum-retinol-vi-lieu-tai-tao-tre-hoa-da-kiehl-s-daily-micro-dose-he0000000055
+
+- **Nước Thần Tái Sinh Làn Da SK-II Facial Treatment Essence (Chứa 90% Pitera)**
+  - Thương hiệu: SK-II | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000056
+  - Giá Olive Young: 139.000 KRW (~3.524.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/nuoc-than-tai-sinh-lan-da-sk-ii-facial-treatment-essence-chua-90-pitera-he0000000056
+
+- **Kem Dưỡng Tái Sinh Thần Thánh La Mer Crème de la Mer Xa Xỉ Bậc Nhất**
+  - Thương hiệu: La Mer | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000057
+  - Giá Olive Young: 245.000 KRW (~6.211.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/kem-duong-tai-sinh-than-thanh-la-mer-creme-de-la-mer-xa-xi-bac-nhat-he0000000057
+
+- **Sữa Dưỡng Cân Bằng Sinh Thái Da Sisley Ecological Compound Cao Cấp**
+  - Thương hiệu: Sisley | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000059
+  - Giá Olive Young: 195.000 KRW (~4.943.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/sua-duong-can-bang-sinh-thai-da-sisley-ecological-compound-cao-cap-he0000000059
+
+- **Kem Nền Căng Bóng 24H Dior Forever Skin Glow 24H Foundation**
+  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000063
+  - Giá Olive Young: 93.000 KRW (~2.358.000 đ)
+  - Link chi tiết: https://tavyorder.web.app/san-pham/kem-nen-cang-bong-24h-dior-forever-skin-glow-24h-foundation-he0000000063
 

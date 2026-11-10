@@ -1,0 +1,16 @@
+[2026-11-03T03:09:41.903Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f1771 error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-04T09:43:55.102Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f1794 error. Code: 1 Message: 1 CANCELLED: Call cancelled
+[2026-11-04T13:12:17.966Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f1798 error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-04T13:27:42.650Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f179a error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-04T13:32:26.467Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f179b error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-04T13:36:58.936Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f179c error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-05T02:06:31.079Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17aa error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-05T02:08:45.706Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17ac error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-05T02:49:56.791Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17ad error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-05T02:53:58.124Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17ae error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-05T15:26:09.324Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17bd error. Code: 1 Message: 1 CANCELLED: Call cancelled
+[2026-11-05T15:49:39.741Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17be error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-05T20:55:42.567Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17c5 error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-06T13:39:45.312Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17d8 error. Code: 1 Message: 1 CANCELLED: Call cancelled
+[2026-11-07T17:34:13.339Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17f8 error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-07T19:52:34.746Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x896f17fb error. Code: 1 Message: 1 CANCELLED: Call cancelled

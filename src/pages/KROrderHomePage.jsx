@@ -122,14 +122,9 @@ export default function KROrderHomePage() {
         return Boolean(product.isHighEnd || product.category === 'highend');
       }
 
-      // If viewing other categories (except 'all'), strictly isolate high-end products
-      if (activeCategory !== 'all' && product.isHighEnd) {
-        return false;
-      }
-
       // Top navbar link fallback
       if (activeCategory === 'cosmetics') {
-        return !product.isHighEnd && cat !== 'ginseng' && cat !== 'supplements' && !/sâm|hồng sâm|nấm|protein|thực phẩm chức năng|viên uống/i.test(name);
+        return cat !== 'ginseng' && cat !== 'supplements' && !/sâm|hồng sâm|nấm|protein|thực phẩm chức năng|viên uống/i.test(name);
       }
 
       // Direct category or subCategory match

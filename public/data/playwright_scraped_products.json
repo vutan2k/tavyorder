@@ -4264,7 +4264,9 @@
     "category_vi": "Chăm sóc da",
     "thumbnailUrl": "/products/A000000177984.jpg",
     "isHighEnd": true,
-    "departmentStore": "Shinsegae Department Store"
+    "departmentStore": "Shinsegae Department Store",
+    "priceKrw": 34000,
+    "priceKrwFormatted": "₩34,000"
   },
   {
     "nameKr": "[블프특가]웨이크메이크 소프트 블러링 아이팔레트(단품) | 올리브영",
@@ -7594,7 +7596,7 @@
     "status": "available",
     "is_sold_out": false,
     "lastAuditedAt": "2026-11-09T10:52:05Z",
-    "brand": "Hera",
+    "brand": "HERA",
     "appliedServiceFeePercent": 30,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202777&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=36",
     "rank": null,
@@ -7605,7 +7607,9 @@
     "category_vi": "Chăm sóc da",
     "thumbnailUrl": "/products/A000000202777.jpg",
     "isHighEnd": true,
-    "departmentStore": "Shinsegae Department Store"
+    "departmentStore": "Shinsegae Department Store",
+    "priceKrw": 62900,
+    "priceKrwFormatted": "₩62,900"
   },
   {
     "productImage": "/products/A000000203943.jpg",
@@ -33551,7 +33555,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.706Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.706Z",
+    "priceKrw": 50000,
+    "priceKrwFormatted": "₩50,000"
   },
   {
     "id": "HE0000000002",
@@ -33660,7 +33666,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.706Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.706Z",
+    "priceKrw": 52000,
+    "priceKrwFormatted": "₩52,000"
   },
   {
     "id": "HE0000000003",
@@ -33759,7 +33767,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.706Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.706Z",
+    "priceKrw": 61000,
+    "priceKrwFormatted": "₩61,000"
   },
   {
     "id": "HE0000000004",
@@ -33848,7 +33858,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 108000,
+    "priceKrwFormatted": "₩108,000"
   },
   {
     "id": "HE0000000005",
@@ -33947,7 +33959,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 57000,
+    "priceKrwFormatted": "₩57,000"
   },
   {
     "id": "HE0000000006",
@@ -34046,7 +34060,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 55000,
+    "priceKrwFormatted": "₩55,000"
   },
   {
     "id": "HE0000000007",
@@ -34135,7 +34151,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 103000,
+    "priceKrwFormatted": "₩103,000"
   },
   {
     "id": "HE0000000008",
@@ -34234,7 +34252,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 52000,
+    "priceKrwFormatted": "₩52,000"
   },
   {
     "id": "HE0000000009",
@@ -34313,7 +34333,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 105000,
+    "priceKrwFormatted": "₩105,000"
   },
   {
     "id": "HE0000000010",
@@ -34382,7 +34404,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 270000,
+    "priceKrwFormatted": "₩270,000"
   },
   {
     "id": "HE0000000011",
@@ -34392,7 +34416,7 @@
     "name_vi": "Tinh Chất Phục Hồi Chống Lão Hóa Ban Đêm Estée Lauder ANR Serum 50ml",
     "nameKr": "어드밴스드 나이트 리페어 싱크로나이즈드 멀티-리커버리 콤플렉스",
     "name_kr": "어드밴스드 나이트 리페어 싱크로나이즈드 멀티-리커버리 콤플렉스",
-    "brand": "Estée Lauder",
+    "brand": "ESTÉE LAUDER",
     "brand_vi": "Estée Lauder",
     "brand_kr": "Estée Lauder",
     "category": "highend",
@@ -34461,7 +34485,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 200000,
+    "priceKrwFormatted": "₩200,000"
   },
   {
     "id": "HE0000000012",
@@ -34471,7 +34497,7 @@
     "name_vi": "Kem Nền Kiềm Dầu Che Phủ Hoàn Hảo Estée Lauder Double Wear 30ml",
     "nameKr": "더블웨어 스테이-인-플레이스 메이크업",
     "name_kr": "더블웨어 스테이-인-플레이스 메이크업",
-    "brand": "Estée Lauder",
+    "brand": "ESTÉE LAUDER",
     "brand_vi": "Estée Lauder",
     "brand_kr": "Estée Lauder",
     "category": "highend",
@@ -34550,7 +34576,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 84000,
+    "priceKrwFormatted": "₩84,000"
   },
   {
     "id": "HE0000000013",
@@ -34619,7 +34647,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 269000,
+    "priceKrwFormatted": "₩269,000"
   },
   {
     "id": "HE0000000014",
@@ -34629,7 +34659,7 @@
     "name_vi": "Serum Trẻ Hóa Da Tăng Cường Vi Sinh Lancôme Advanced Génifique 50ml",
     "nameKr": "어드밴스드 제니피끄 세럼",
     "name_kr": "어드밴스드 제니피끄 세럼",
-    "brand": "Lancôme",
+    "brand": "LANCÔME",
     "brand_vi": "Lancôme",
     "brand_kr": "Lancôme",
     "category": "highend",
@@ -34688,7 +34718,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 185000,
+    "priceKrwFormatted": "₩185,000"
   },
   {
     "id": "HE0000000015",
@@ -34698,7 +34730,7 @@
     "name_vi": "Kem Dưỡng Tái Sinh Phục Hồi Da Thần Kỳ La Mer Crème de la Mer 30ml",
     "nameKr": "크렘 드 라 메르",
     "name_kr": "크렘 드 라 메르",
-    "brand": "La Mer",
+    "brand": "LA MER",
     "brand_vi": "La Mer",
     "brand_kr": "La Mer",
     "category": "highend",
@@ -34757,7 +34789,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 322000,
+    "priceKrwFormatted": "₩322,000"
   },
   {
     "id": "HE0000000016",
@@ -34826,7 +34860,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 136000,
+    "priceKrwFormatted": "₩136,000"
   },
   {
     "id": "HE0000000017",
@@ -34905,7 +34941,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 122000,
+    "priceKrwFormatted": "₩122,000"
   },
   {
     "id": "HE0000000018",
@@ -34915,7 +34953,7 @@
     "name_vi": "Dầu Tẩy Trang Dịu Nhẹ Bobbi Brown Soothing Cleansing Oil 200ml",
     "nameKr": "수딩 클렌징 오일",
     "name_kr": "수딩 클렌징 오일",
-    "brand": "Bobbi Brown",
+    "brand": "BOBBI BROWN",
     "brand_vi": "Bobbi Brown",
     "brand_kr": "Bobbi Brown",
     "category": "highend",
@@ -34974,7 +35012,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 84000,
+    "priceKrwFormatted": "₩84,000"
   },
   {
     "id": "HE0000000019",
@@ -35063,7 +35103,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 46000,
+    "priceKrwFormatted": "₩46,000"
   },
   {
     "id": "HE0000000020",
@@ -35152,7 +35194,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-09T16:49:23.707Z"
+    "lastAuditedAt": "2026-11-09T16:49:23.707Z",
+    "priceKrw": 42000,
+    "priceKrwFormatted": "₩42,000"
   },
   {
     "id": "HE0000000021",
@@ -35231,7 +35275,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 144000,
+    "priceKrwFormatted": "₩144,000"
   },
   {
     "id": "HE0000000022",
@@ -35310,7 +35356,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 155000,
+    "priceKrwFormatted": "₩155,000"
   },
   {
     "id": "HE0000000023",
@@ -35389,7 +35437,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 119000,
+    "priceKrwFormatted": "₩119,000"
   },
   {
     "id": "HE0000000024",
@@ -35468,7 +35518,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 99000,
+    "priceKrwFormatted": "₩99,000"
   },
   {
     "id": "HE0000000025",
@@ -35547,7 +35599,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 140000,
+    "priceKrwFormatted": "₩140,000"
   },
   {
     "id": "HE0000000026",
@@ -35636,7 +35690,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 79000,
+    "priceKrwFormatted": "₩79,000"
   },
   {
     "id": "HE0000000027",
@@ -35715,7 +35771,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 35000,
+    "priceKrwFormatted": "₩35,000"
   },
   {
     "id": "HE0000000028",
@@ -35804,7 +35862,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 66000,
+    "priceKrwFormatted": "₩66,000"
   },
   {
     "id": "HE0000000029",
@@ -35883,7 +35943,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 92000,
+    "priceKrwFormatted": "₩92,000"
   },
   {
     "id": "HE0000000030",
@@ -35952,7 +36014,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-09T17:33:04.199Z"
+    "lastAuditedAt": "2026-11-09T17:33:04.199Z",
+    "priceKrw": 55000,
+    "priceKrwFormatted": "₩55,000"
   },
   {
     "id": "HE0000000031",
@@ -36031,7 +36095,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-09T17:56:42.415Z"
+    "lastAuditedAt": "2026-11-09T17:56:42.415Z",
+    "priceKrw": 172000,
+    "priceKrwFormatted": "₩172,000"
   },
   {
     "id": "HE0000000032",
@@ -36110,7 +36176,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-09T17:56:42.415Z"
+    "lastAuditedAt": "2026-11-09T17:56:42.415Z",
+    "priceKrw": 144000,
+    "priceKrwFormatted": "₩144,000"
   },
   {
     "id": "HE0000000033",
@@ -36169,7 +36237,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-09T17:56:42.415Z"
+    "lastAuditedAt": "2026-11-09T17:56:42.415Z",
+    "priceKrw": 328000,
+    "priceKrwFormatted": "₩328,000"
   },
   {
     "id": "HE0000000034",
@@ -36228,7 +36298,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-09T17:56:42.415Z"
+    "lastAuditedAt": "2026-11-09T17:56:42.415Z",
+    "priceKrw": 328000,
+    "priceKrwFormatted": "₩328,000"
   },
   {
     "id": "HE0000000035",
@@ -36297,7 +36369,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-09T17:56:42.415Z"
+    "lastAuditedAt": "2026-11-09T17:56:42.415Z",
+    "priceKrw": 129000,
+    "priceKrwFormatted": "₩129,000"
   },
   {
     "id": "HE0000000036",
@@ -36366,7 +36440,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-09T17:56:42.415Z"
+    "lastAuditedAt": "2026-11-09T17:56:42.415Z",
+    "priceKrw": 129000,
+    "priceKrwFormatted": "₩129,000"
   },
   {
     "id": "HE0000000037",
@@ -36435,7 +36511,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-09T17:56:42.415Z"
+    "lastAuditedAt": "2026-11-09T17:56:42.415Z",
+    "priceKrw": 280000,
+    "priceKrwFormatted": "₩280,000"
   },
   {
     "id": "HE0000000038",
@@ -36514,7 +36592,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-09T17:56:42.415Z"
+    "lastAuditedAt": "2026-11-09T17:56:42.415Z",
+    "priceKrw": 250000,
+    "priceKrwFormatted": "₩250,000"
   },
   {
     "id": "HE0000000039",
@@ -36593,7 +36673,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:11:34.329Z",
     "updatedAt": "2026-11-09T18:11:34.329Z",
-    "lastAuditedAt": "2026-11-09T18:11:34.329Z"
+    "lastAuditedAt": "2026-11-09T18:11:34.329Z",
+    "priceKrw": 122000,
+    "priceKrwFormatted": "₩122,000"
   },
   {
     "id": "HE0000000040",
@@ -36672,7 +36754,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:11:34.329Z",
     "updatedAt": "2026-11-09T18:11:34.329Z",
-    "lastAuditedAt": "2026-11-09T18:11:34.329Z"
+    "lastAuditedAt": "2026-11-09T18:11:34.329Z",
+    "priceKrw": 122000,
+    "priceKrwFormatted": "₩122,000"
   },
   {
     "id": "HE0000000041",
@@ -36741,7 +36825,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:11:34.329Z",
     "updatedAt": "2026-11-09T18:11:34.329Z",
-    "lastAuditedAt": "2026-11-09T18:11:34.329Z"
+    "lastAuditedAt": "2026-11-09T18:11:34.329Z",
+    "priceKrw": 390000,
+    "priceKrwFormatted": "₩390,000"
   },
   {
     "id": "HE0000000042",
@@ -36810,7 +36896,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:11:34.330Z",
     "updatedAt": "2026-11-09T18:11:34.330Z",
-    "lastAuditedAt": "2026-11-09T18:11:34.330Z"
+    "lastAuditedAt": "2026-11-09T18:11:34.330Z",
+    "priceKrw": 390000,
+    "priceKrwFormatted": "₩390,000"
   },
   {
     "id": "HE0000000045",
@@ -36879,7 +36967,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:26:49.323Z",
     "updatedAt": "2026-11-09T18:26:49.323Z",
-    "lastAuditedAt": "2026-11-09T18:26:49.323Z"
+    "lastAuditedAt": "2026-11-09T18:26:49.323Z",
+    "priceKrw": 280000,
+    "priceKrwFormatted": "₩280,000"
   },
   {
     "id": "HE0000000048",
@@ -36958,7 +37048,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:41:27.340Z",
     "updatedAt": "2026-11-09T18:41:27.340Z",
-    "lastAuditedAt": "2026-11-09T18:41:27.340Z"
+    "lastAuditedAt": "2026-11-09T18:41:27.340Z",
+    "priceKrw": 107000,
+    "priceKrwFormatted": "₩107,000"
   },
   {
     "id": "HE0000000049",
@@ -37027,7 +37119,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T19:00:18.466Z",
     "updatedAt": "2026-11-09T19:00:18.466Z",
-    "lastAuditedAt": "2026-11-09T19:00:18.466Z"
+    "lastAuditedAt": "2026-11-09T19:00:18.466Z",
+    "priceKrw": 145000,
+    "priceKrwFormatted": "₩145,000"
   },
   {
     "id": "HE0000000050",
@@ -37096,7 +37190,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T19:18:21.286Z",
     "updatedAt": "2026-11-09T19:18:21.286Z",
-    "lastAuditedAt": "2026-11-09T19:18:21.286Z"
+    "lastAuditedAt": "2026-11-09T19:18:21.286Z",
+    "priceKrw": 175000,
+    "priceKrwFormatted": "₩175,000"
   },
   {
     "id": "HE0000000044",
@@ -37155,7 +37251,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:03:21.467Z",
     "updatedAt": "2026-11-09T21:03:21.467Z",
-    "lastAuditedAt": "2026-11-09T21:03:21.467Z"
+    "lastAuditedAt": "2026-11-09T21:03:21.467Z",
+    "priceKrw": 328000,
+    "priceKrwFormatted": "₩328,000"
   },
   {
     "id": "HE0000000047",
@@ -37234,7 +37332,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:03:21.467Z",
     "updatedAt": "2026-11-09T21:03:21.467Z",
-    "lastAuditedAt": "2026-11-09T21:03:21.467Z"
+    "lastAuditedAt": "2026-11-09T21:03:21.467Z",
+    "priceKrw": 125000,
+    "priceKrwFormatted": "₩125,000"
   },
   {
     "id": "HE0000000046",
@@ -37313,7 +37413,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:32:06.191Z",
     "updatedAt": "2026-11-09T21:32:06.191Z",
-    "lastAuditedAt": "2026-11-09T21:32:06.191Z"
+    "lastAuditedAt": "2026-11-09T21:32:06.191Z",
+    "priceKrw": 33000,
+    "priceKrwFormatted": "₩33,000"
   },
   {
     "id": "HE0000000054",
@@ -37382,7 +37484,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:49:46.525Z",
     "updatedAt": "2026-11-09T21:49:46.525Z",
-    "lastAuditedAt": "2026-11-09T21:49:46.525Z"
+    "lastAuditedAt": "2026-11-09T21:49:46.525Z",
+    "priceKrw": 145000,
+    "priceKrwFormatted": "₩145,000"
   },
   {
     "id": "HE0000000053",
@@ -37392,7 +37496,7 @@
     "name_vi": "Kem Mắt Giảm Thâm Quầng Estée Lauder ANR Eye Supercharged Gel-Creme",
     "nameKr": "에스티로더 갈색병 아이 젤 크림",
     "name_kr": "에스티로더 갈색병 아이 젤 크림",
-    "brand": "Estée Lauder",
+    "brand": "ESTÉE LAUDER",
     "brand_vi": "Estée Lauder",
     "brand_kr": "Estée Lauder",
     "category": "highend",
@@ -37441,7 +37545,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:49:46.525Z",
     "updatedAt": "2026-11-09T21:49:46.525Z",
-    "lastAuditedAt": "2026-11-09T21:49:46.525Z"
+    "lastAuditedAt": "2026-11-09T21:49:46.525Z",
+    "priceKrw": 115000,
+    "priceKrwFormatted": "₩115,000"
   },
   {
     "id": "HE0000000055",
@@ -37510,7 +37616,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:04:21.538Z",
     "updatedAt": "2026-11-09T22:04:21.538Z",
-    "lastAuditedAt": "2026-11-09T22:04:21.538Z"
+    "lastAuditedAt": "2026-11-09T22:04:21.538Z",
+    "priceKrw": 79000,
+    "priceKrwFormatted": "₩79,000"
   },
   {
     "id": "HE0000000056",
@@ -37589,7 +37697,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:04:21.538Z",
     "updatedAt": "2026-11-09T22:04:21.538Z",
-    "lastAuditedAt": "2026-11-09T22:04:21.538Z"
+    "lastAuditedAt": "2026-11-09T22:04:21.538Z",
+    "priceKrw": 139000,
+    "priceKrwFormatted": "₩139,000"
   },
   {
     "id": "HE0000000057",
@@ -37658,7 +37768,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:19:16.064Z",
     "updatedAt": "2026-11-09T22:19:16.064Z",
-    "lastAuditedAt": "2026-11-09T22:19:16.064Z"
+    "lastAuditedAt": "2026-11-09T22:19:16.064Z",
+    "priceKrw": 245000,
+    "priceKrwFormatted": "₩245,000"
   },
   {
     "id": "HE0000000059",
@@ -37727,7 +37839,9 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:37:20.446Z",
     "updatedAt": "2026-11-09T22:37:20.446Z",
-    "lastAuditedAt": "2026-11-09T22:37:20.446Z"
+    "lastAuditedAt": "2026-11-09T22:37:20.446Z",
+    "priceKrw": 195000,
+    "priceKrwFormatted": "₩195,000"
   },
   {
     "id": "HE0000000063",
@@ -37806,6 +37920,8 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:56:19.631Z",
     "updatedAt": "2026-11-09T22:56:19.631Z",
-    "lastAuditedAt": "2026-11-09T22:56:19.631Z"
+    "lastAuditedAt": "2026-11-09T22:56:19.631Z",
+    "priceKrw": 93000,
+    "priceKrwFormatted": "₩93,000"
   }
 ]

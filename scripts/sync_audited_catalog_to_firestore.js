@@ -147,21 +147,8 @@ async function syncCatalog() {
   console.log(`- Sản phẩm cháy hàng (일시품절): ${soldOutCount} SKU`);
   console.log(`- Tổng phân loại con (variants): ${totalOptionsCount} options`);
 
-  // 3. Send Telegram Notification
-  const alertHtml = `⚡ <b>ĐỒNG BỘ GIÁ & KHO HÀNG OLIVE YOUNG THÀNH CÔNG!</b>
-━━━━━━━━━━━━━━━━━━
-⚙️ <b>Cấu hình tỷ giá từ Admin Web:</b>
-• 1 KRW = <code>${krwRate} VNĐ</code>
-• Phí dịch vụ: <code>+${serviceFeePercent}%</code>
-
-📊 <b>Kết quả rà soát kệ Olive Young:</b>
-• Tổng sản phẩm đối soát: <b>${totalCommitted} SKU</b>
-• Đang mở bán tốt: <b>${totalCommitted - discontinuedCount - soldOutCount} SKU</b>
-• Tạm cháy hàng (일시품절): <b>${soldOutCount} SKU</b> (Đã bật cờ Tạm hết)
-• Hãng ngừng bán (판매종료): <b>${discontinuedCount} SKU</b> (Đã đóng link)
-• Phân loại con: <b>${totalOptionsCount} options</b> (100% tiếng Việt)
-━━━━━━━━━━━━━━━━━━
-🌐 <i>Khách hàng trên Web Tavy Korea đã thấy giá và phân loại mới nhất!</i>`;
+  // 3. Send Telegram Notification (Rút gọn tối đa chuẩn telemetry)
+  const alertHtml = `⚡ <b>[Tavy Web] Sync OY:</b> ${totalCommitted} SKU (${totalCommitted - discontinuedCount - soldOutCount} bán, ${soldOutCount} hết, ${discontinuedCount} ngưng) | Tỷ giá: ${krwRate}đ (+${serviceFeePercent}%)`;
 
   await sendTelegramAlert(alertHtml);
   console.log('✓ Đã gửi báo cáo tổng kết qua Telegram Bot!');
