@@ -199,10 +199,10 @@ export const AppProvider = ({ children }) => {
       const saved = localStorage.getItem('user_auth');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed && parsed.email !== 'admin@tavykorea.vn') {
+        if (parsed && parsed.uid && parsed.email && parsed.email !== 'admin@tavykorea.vn' && parsed.uid !== 'test_user_tan123') {
           return {
-            uid: parsed.uid || 'test_user_tan123',
-            email: parsed.email || 'tan123@tavykorea.vn',
+            uid: parsed.uid,
+            email: parsed.email,
             displayName: parsed.name || 'Khách Hàng TAVY'
           };
         }
@@ -238,11 +238,23 @@ export const AppProvider = ({ children }) => {
       };
     }
 
-    const adminPass = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_ADMIN_PASSWORD) || 'admin123';
-    if (password === adminPass || password === 'admin123' || password === 'Vvtan2606@') {
-      try {
-        await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', 'admin123').catch(() => {});
-      } catch {}
+    const nodeEnvPass = (typeof process !== 'undefined' && (process.env?.FIREBASE_ADMIN_PASSWORD || process.env?.VITE_ADMIN_PASSWORD)) || '';
+    let isVerifiedAdmin = false;
+
+    if (password && String(password).trim().length > 0) {
+      if (nodeEnvPass && password === nodeEnvPass) {
+        isVerifiedAdmin = true;
+      } else if (auth) {
+        try {
+          await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', password);
+          isVerifiedAdmin = true;
+        } catch {
+          isVerifiedAdmin = false;
+        }
+      }
+    }
+
+    if (isVerifiedAdmin) {
       recordSuccessfulLogin();
       createAdminSession();
       setIsAdminAuthenticated(true);
@@ -380,34 +392,7 @@ export const AppProvider = ({ children }) => {
     };
   }, []);
 
-  // Tự động tạo & đồng bộ tài khoản test tan123 vào Database Firestore
-  useEffect(() => {
-    const syncTestUserInDB = async () => {
-      try {
-        const testRef = doc(db, 'users', 'test_user_tan123');
-        const snap = await getDoc(testRef);
-        if (!snap.exists()) {
-          const testData = {
-            uid: 'test_user_tan123',
-            username: 'tan123',
-            email: 'tan123@tavykorea.vn',
-            name: 'Khách Hàng Test (Tan123)',
-            phone: '0912345678',
-            address: 'Store TAVY KOREA, 123 Lê Lợi, Quận 1, TP. Hồ Chí Minh',
-            role: 'test_user',
-            createdAt: new Date().toISOString()
-          };
-          await setDoc(testRef, testData);
-          console.log('✅ [Database] Đã tạo tài khoản test_user_tan123 trong Firestore!');
-        }
-      } catch (err) {
-        console.warn('Sync test user error:', err);
-      }
-    };
-    syncTestUserInDB();
-  }, []);
-
-  // Tự động khôi phục đăng nhập Firebase Auth Admin khi làm mới trang (F5) CHỈ khi đang ở trang Admin, có phiên admin hợp lệ và chưa có tài khoản nào đăng nhập
+  // Tự động đồng bộ trạng thái Firebase Auth Admin khi làm mới trang (F5) CHỈ khi đang ở trang Admin, có phiên admin hợp lệ và chưa có tài khoản nào đăng nhập
   useEffect(() => {
     const autoLoginAdmin = async () => {
       const isAdminPath = typeof window !== 'undefined' && window.location.pathname.startsWith('/admin');
@@ -415,9 +400,10 @@ export const AppProvider = ({ children }) => {
       // Tuyệt đối không tự động đăng nhập admin nếu không ở trang admin, session không hợp lệ hoặc người dùng đang đăng nhập tài khoản cá nhân
       if (isAdminPath && isSessionValid && !authUser) {
         try {
-          const adminPass = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_ADMIN_PASSWORD) || 'admin123';
-          await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', adminPass);
-          console.log("⚡ [Firebase Auto-login] Đăng nhập Admin thành công!");
+          const nodeAdminPass = (typeof process !== 'undefined' && (process.env?.FIREBASE_ADMIN_PASSWORD || process.env?.VITE_ADMIN_PASSWORD)) || '';
+          if (nodeAdminPass && auth) {
+            await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', nodeAdminPass);
+          }
         } catch (err) {
           console.warn("⚠️ [Firebase Auto-login] Thất bại:", err.message);
         }
@@ -530,27 +516,40 @@ export const AppProvider = ({ children }) => {
     });
   }, [orders, currentUser?.email, currentUser?.phone]);
 
-  // Realtime Orders Subscription (Đồng bộ thời gian thực 100% giữa Admin và Khách hàng)
+  // Realtime Orders Subscription (Chỉ tải toàn bộ đơn khi là Admin; khách đăng nhập chỉ tải đơn theo email của chính họ; khách vãng lai không dump DB)
   useEffect(() => {
+    if (!isAdminAuthenticated && !currentUser?.email) {
+      return;
+    }
+    const filterEmail = isAdminAuthenticated ? null : currentUser?.email;
     const unsubscribe = subscribeToOrders(
       (updatedOrders) => {
         setOrders(updatedOrders);
-        try { localStorage.setItem('beauty_orders', JSON.stringify(updatedOrders)); } catch {}
+        if (isAdminAuthenticated) {
+          try { localStorage.setItem('beauty_orders', JSON.stringify(updatedOrders)); } catch {}
+        }
       },
-      (err) => console.warn('Firestore orders sync:', err)
+      (err) => console.warn('Firestore orders sync:', err),
+      filterEmail
     );
     return () => unsubscribe();
-  }, []);
+  }, [isAdminAuthenticated, currentUser?.email]);
 
-  // Worker chạy ngầm mỗi phút kiểm tra và hủy các đơn hàng chưa cọc quá 15 phút (chỉ chạy khi Admin đăng nhập để tránh write amplification)
+  // Worker chạy ngầm mỗi phút kiểm tra và hủy các đơn hàng chưa cọc quá 15 phút (+60s ân hạn chống xung đột gia hạn/up bill)
   useEffect(() => {
     if (!isAdminAuthenticated) return;
     const interval = setInterval(() => {
-      const now = new Date();
+      const nowMs = Date.now();
       orders.forEach(o => {
-        if (o.status === 'pending' && o.paymentDue) {
-          const expDate = new Date(o.paymentDue);
-          if (now > expDate) {
+        if (
+          o.status === 'pending' &&
+          o.paymentStatus === 'unpaid' &&
+          !o.customerReportedPaid &&
+          !o.depositProofImage &&
+          o.paymentDue
+        ) {
+          const expMs = new Date(o.paymentDue).getTime();
+          if (Number.isFinite(expMs) && (nowMs - expMs) > 60000) {
             updateOrderStatusInDB(o.id, { status: 'cancelled', cancelReason: 'Hết hạn thanh toán cọc 15 phút' })
               .catch(err => console.warn('Lỗi tự động hủy đơn:', err));
           }
@@ -565,7 +564,7 @@ export const AppProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : defaultRates;
   });
 
-  const CURRENT_CATALOG_VER = 'v5.9_highend_batch_1794264984';
+  const CURRENT_CATALOG_VER = 'v6.0_comprehensive_price_and_catalog_sync';
 
   const [products, setProducts] = useState(() => {
     try {
@@ -833,8 +832,13 @@ export const AppProvider = ({ children }) => {
     }
   });
 
-  // Realtime subscription to Firestore 'users' collection
+  // Realtime subscription to Firestore 'users' collection (Strictly Admin-only to prevent dumping customer PII into browser localStorage)
   useEffect(() => {
+    if (!isAdminAuthenticated) {
+      setUsersList([]);
+      try { localStorage.removeItem('beauty_users'); } catch {}
+      return;
+    }
     const unsubscribe = subscribeToUsers(
       (remoteUsers) => {
         if (Array.isArray(remoteUsers)) {
@@ -845,13 +849,14 @@ export const AppProvider = ({ children }) => {
       (err) => console.warn('Firestore users sync fallback:', err)
     );
     return () => unsubscribe();
-  }, []);
+  }, [isAdminAuthenticated]);
 
   useEffect(() => {
+    if (!isAdminAuthenticated) return;
     try {
       localStorage.setItem('beauty_users', JSON.stringify(usersList));
     } catch {}
-  }, [usersList]);
+  }, [usersList, isAdminAuthenticated]);
 
   // Update Customer Profile and synchronize associated orders
   const updateCustomer = async (customerId, customerData) => {
@@ -1039,8 +1044,9 @@ export const AppProvider = ({ children }) => {
     }
   });
 
-  // Sync Firestore Pending Products Realtime
+  // Sync Firestore Pending Products Realtime (Strictly Admin-only)
   useEffect(() => {
+    if (!isAdminAuthenticated) return;
     const unsubscribe = subscribeToPendingProducts((remoteItems) => {
       if (remoteItems && Array.isArray(remoteItems)) {
         const clean = sanitizeProducts(remoteItems);
@@ -1048,7 +1054,7 @@ export const AppProvider = ({ children }) => {
       }
     });
     return () => unsubscribe();
-  }, []);
+  }, [isAdminAuthenticated]);
 
   // Tự động loại bỏ khỏi Hàng Chờ Duyệt (pendingProducts) nếu sản phẩm ĐÃ TỒN TẠI trong Kho Sản Phẩm (products)
   useEffect(() => {
@@ -1098,9 +1104,21 @@ export const AppProvider = ({ children }) => {
     });
   };
 
-  // Listener CÁCH 1: Nhận tin nhắn trực tiếp trong bộ nhớ Browser từ Extension (ZERO Limit & KHÔNG NẢY TAB)
+  // Listener CÁCH 1: Nhận tin nhắn trực tiếp trong bộ nhớ Browser từ Extension (Có kiểm tra Origin nghiêm ngặt)
   useEffect(() => {
+    const ALLOWED_EXT_ORIGINS = new Set([
+      typeof window !== 'undefined' ? window.location.origin : '',
+      'https://tavyorder.web.app',
+      'https://tavyorder.firebaseapp.com',
+      'https://www.oliveyoung.co.kr',
+      'https://oliveyoung.co.kr'
+    ]);
+
     const handleExtensionMessage = (event) => {
+      const origin = String(event.origin || '');
+      const isTrustedOrigin = ALLOWED_EXT_ORIGINS.has(origin) || origin.startsWith('chrome-extension://');
+      if (!isTrustedOrigin) return;
+
       if (
         event.data &&
         event.data.source === 'TAVY_EXTENSION' &&
@@ -1409,56 +1427,45 @@ export const AppProvider = ({ children }) => {
     }
     const sanitizedProduct = { ...product, options: optStr };
     const targetId = getCartItemId(sanitizedProduct);
-    let newCart = [];
     setCart((prev) => {
       const existingIndex = prev.findIndex((item) => getCartItemId(item) === targetId);
-      if (existingIndex > -1) {
-        newCart = prev.map((item, idx) =>
-          idx === existingIndex ? { ...item, qty: item.qty + qty } : item
-        );
-      } else {
-        newCart = [...prev, { ...sanitizedProduct, cartItemId: targetId, qty }];
+      const nextCart = existingIndex > -1
+        ? prev.map((item, idx) => (idx === existingIndex ? { ...item, qty: item.qty + qty } : item))
+        : [...prev, { ...sanitizedProduct, cartItemId: targetId, qty }];
+      if (activePendingOrder) {
+        queueMicrotask(() => syncActivePendingOrderItems(nextCart));
       }
-      return newCart;
+      return nextCart;
     });
-
-    if (activePendingOrder) {
-      setTimeout(() => {
-        setCart(currentCart => {
-          syncActivePendingOrderItems(currentCart);
-          return currentCart;
-        });
-      }, 50);
-    }
   };
 
   const removeFromCart = (targetId) => {
-    let newCart = [];
     setCart((prev) => {
-      newCart = prev.filter((item) => getCartItemId(item) !== targetId && (item.goodsNo || item.id) !== targetId);
+      const nextCart = prev.filter((item) => getCartItemId(item) !== targetId && (item.goodsNo || item.id) !== targetId);
       if (activePendingOrder) {
-        if (newCart.length === 0) {
-          deleteOrderFromDB(activePendingOrder.id).catch(() => {});
-          setOrders(oPrev => oPrev.filter(o => o.id !== activePendingOrder.id));
-        } else {
-          syncActivePendingOrderItems(newCart);
-        }
+        queueMicrotask(() => {
+          if (nextCart.length === 0) {
+            deleteOrderFromDB(activePendingOrder.id).catch(() => {});
+            setOrders(oPrev => oPrev.filter(o => o.id !== activePendingOrder.id));
+          } else {
+            syncActivePendingOrderItems(nextCart);
+          }
+        });
       }
-      return newCart;
+      return nextCart;
     });
   };
 
   const updateCartQty = (targetId, qty) => {
     if (qty <= 0) return removeFromCart(targetId);
-    let newCart = [];
     setCart((prev) => {
-      newCart = prev.map((item) =>
+      const nextCart = prev.map((item) =>
         (getCartItemId(item) === targetId || (item.goodsNo || item.id) === targetId) ? { ...item, qty } : item
       );
       if (activePendingOrder) {
-        syncActivePendingOrderItems(newCart);
+        queueMicrotask(() => syncActivePendingOrderItems(nextCart));
       }
-      return newCart;
+      return nextCart;
     });
   };
 
@@ -1482,32 +1489,6 @@ export const AppProvider = ({ children }) => {
   };
 
   const loginUser = async (identifier, password) => {
-    const cleanId = (identifier || '').trim().toLowerCase();
-    const cleanPw = (password || '').trim();
-
-    if (cleanId === 'tan123' || cleanId === 'tan123@tavykorea.vn' || cleanId.includes('tan123')) {
-      if (cleanPw === 'tan123' || cleanPw === 'admin123') {
-        const testUser = {
-          uid: 'test_user_tan123',
-          email: 'tan123@tavykorea.vn',
-          displayName: 'Khách Hàng Test (Tan123)'
-        };
-        const testProfile = {
-          name: 'Khách Hàng Test (Tan123)',
-          email: 'tan123@tavykorea.vn',
-          phone: '0912345678',
-          address: 'Store TAVY KOREA, Quận 1, TP. Hồ Chí Minh',
-          addressBook: []
-        };
-        setAuthUser(testUser);
-        setProfile(testProfile);
-        localStorage.setItem('user_auth', JSON.stringify(testProfile));
-        return { success: true, user: testUser };
-      } else {
-        return { success: false, message: 'Mật khẩu không chính xác.' };
-      }
-    }
-
     try {
       clearAdminSession();
       setIsAdminAuthenticated(false);
@@ -1597,8 +1578,9 @@ export const AppProvider = ({ children }) => {
       if ('phone' in safeUpdates && safeUpdates.phone !== undefined) safeUpdates.phone = sanitizePhone(safeUpdates.phone);
       if ('address' in safeUpdates && safeUpdates.address !== undefined) safeUpdates.address = sanitizeText(safeUpdates.address);
       
-      const uid = authUser?.uid || profile?.uid || profile?.id || 'test_user_tan123';
-      const email = authUser?.email || profile?.email || 'tan123@tavykorea.vn';
+      const uid = authUser?.uid || profile?.uid || profile?.id;
+      const email = authUser?.email || profile?.email || '';
+      if (!uid) return { success: false, error: new Error('Missing UID'), message: 'Phiên đăng nhập không hợp lệ' };
 
       const updatedProfile = {
         ...(profile || {}),

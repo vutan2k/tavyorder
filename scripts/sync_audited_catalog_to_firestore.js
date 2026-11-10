@@ -5,7 +5,8 @@ import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
 
-dotenv.config({ path: '/Users/tan/tavy-korea/.env' });
+dotenv.config({ path: '/Users/tan/.hermes/.env' });
+dotenv.config({ path: '/Users/tan/tavy-korea/.env', override: true });
 
 const firebaseConfig = {
   apiKey: process.env.VITE_FIREBASE_API_KEY,
@@ -20,11 +21,14 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-const TELEGRAM_BOT_TOKEN = '8887086946:AAGQ6xm1KA4fH9Ibd1In0tkLUnH7etKWbzA';
-const TELEGRAM_CHAT_ID = '8575761420';
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || process.env.VITE_TELEGRAM_BOT_TOKEN || '';
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '8575761420';
 const AUDITED_CATALOG_PATH = '/Users/tan/Desktop/theasd_auto_bot/tavy_catalog_audited_variants.json';
+const ALL_CATALOG_PATH = '/Users/tan/tavy-korea/public/data/all_products_catalog.json';
+const PLAYWRIGHT_PATH = '/Users/tan/tavy-korea/public/data/playwright_scraped_products.json';
 
 async function sendTelegramAlert(htmlText) {
+  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return false;
   try {
     const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
     const res = await fetch(url, {
@@ -38,7 +42,7 @@ async function sendTelegramAlert(htmlText) {
       })
     });
     const data = await res.json();
-    return data.ok;
+    return Boolean(res.ok && data.ok);
   } catch (err) {
     console.error('Failed to send Telegram alert:', err.message);
     return false;
@@ -48,26 +52,26 @@ async function sendTelegramAlert(htmlText) {
 function calculateDynamicVnd(won, krwRate, feePercent) {
   if (!won || won <= 0) return 0;
   const numWon = Number(won);
-  const rate = Number(krwRate) || 20;
-  const mult = 1 + (Number(feePercent) || 5) / 100.0;
+  const rate = Number(krwRate) || 19.5;
+  const mult = 1 + (Number(feePercent ?? 5)) / 100.0;
   return Math.round((numWon * rate * mult) / 1000.0) * 1000;
 }
 
 async function syncCatalog() {
   console.log('🚀 Bắt đầu đồng bộ catalog & phân loại tiếng Việt vào Firestore...');
   const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
-  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || 'admin123';
+  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '';
   await signInWithEmailAndPassword(auth, adminEmail, adminPass);
   console.log('✓ Đã đăng nhập Firebase Admin.');
 
   // 1. Fetch live rates from Firestore
   const ratesSnap = await getDoc(doc(db, 'system_config', 'rates'));
-  let krwRate = 20;
+  let krwRate = 19.5;
   let serviceFeePercent = 5;
 
   if (ratesSnap.exists()) {
     const rData = ratesSnap.data();
-    krwRate = rData.KRW?.rate || rData.krwRate || 20;
+    krwRate = rData.KRW?.rate || rData.krwRate || 19.5;
     if (rData.serviceFeePercent !== undefined) {
       serviceFeePercent = Number(rData.serviceFeePercent);
     }
@@ -89,41 +93,68 @@ async function syncCatalog() {
   let soldOutCount = 0;
   let discontinuedCount = 0;
   let totalOptionsCount = 0;
+  const finalCatalog = [];
 
   for (const item of catalog) {
     const docId = item.goodsNo || item.id;
     if (!docId) continue;
 
     // Recalculate price with dynamic rates from Admin
-    const saleKrw = item.salePrice || 0;
-    const origKrw = item.originalPrice || saleKrw;
+    let minOptKrw = 0;
+    if (Array.isArray(item.options) && item.options.length > 0) {
+      const inStockOpts = item.options.filter(o => !o.isSoldOut && !o.is_sold_out && (o.price_krw || o.price));
+      const targetOpts = inStockOpts.length > 0 ? inStockOpts : item.options;
+      const validPrices = targetOpts.map(o => Number(o.price_krw || o.price || 0)).filter(p => p > 0);
+      if (validPrices.length > 0) {
+        minOptKrw = Math.min(...validPrices);
+      }
+    }
+    const saleKrw = minOptKrw || item.salePrice || item.foreignPrice || item.originalPriceWon || item.originalPrice || 0;
+    const origKrw = item.originalPriceWon || item.originalPrice || saleKrw;
     const saleVnd = calculateDynamicVnd(saleKrw, krwRate, serviceFeePercent);
     const origVnd = calculateDynamicVnd(origKrw, krwRate, serviceFeePercent);
 
     if (item.isDiscontinued) discontinuedCount++;
     if (item.isSoldOut && !item.isDiscontinued) soldOutCount++;
 
-    // Recalculate option prices
+    const imgUrl = `/products/${docId}.jpg`;
+
+    // Recalculate option prices & normalize sold-out flags (both isSoldOut and is_sold_out)
     const updatedOptions = (item.options || []).map(opt => {
-      const optKrw = opt.price_krw || saleKrw;
+      const optKrw = opt.price_krw || opt.price || saleKrw;
+      const optSoldOut = Boolean(opt.isSoldOut || opt.is_sold_out || opt.status === 'sold_out' || opt.status === 'out_of_stock');
       return {
         ...opt,
+        imageUrl: imgUrl,
+        isSoldOut: optSoldOut,
+        is_sold_out: optSoldOut,
+        price_krw: optKrw,
         price_vnd: calculateDynamicVnd(optKrw, krwRate, serviceFeePercent)
       };
     });
     totalOptionsCount += updatedOptions.length;
 
+    const itemSoldOut = Boolean(item.isSoldOut || item.is_sold_out);
     const updatePayload = {
       ...item,
+      isSoldOut: itemSoldOut,
+      is_sold_out: itemSoldOut,
+      foreignPrice: saleKrw,
+      price: saleKrw,
       salePrice: saleKrw,
       originalPrice: origKrw,
+      originalPriceWon: origKrw,
       priceVnd: saleVnd,
       originalPriceVnd: origVnd,
+      productImage: imgUrl,
+      thumbnailUrl: imgUrl,
+      images: [imgUrl],
       options: updatedOptions,
       appliedKrwRate: krwRate,
       appliedServiceFeePercent: serviceFeePercent,
       lastAuditedAt: new Date().toISOString()
     };
+    finalCatalog.push(updatePayload);
 
     const docRef = doc(db, 'products', docId);
     batch.set(docRef, updatePayload, { merge: true });
@@ -141,6 +172,12 @@ async function syncCatalog() {
   if (opCount > 0) {
     await batch.commit();
   }
+
+  // Cập nhật lại các file JSON catalog chuẩn trên đĩa
+  fs.writeFileSync(AUDITED_CATALOG_PATH, JSON.stringify(finalCatalog, null, 2), 'utf8');
+  fs.writeFileSync(ALL_CATALOG_PATH, JSON.stringify(finalCatalog, null, 2), 'utf8');
+  fs.writeFileSync(PLAYWRIGHT_PATH, JSON.stringify(finalCatalog, null, 2), 'utf8');
+  console.log('✓ Đã cập nhật toàn bộ file JSON catalog trên ổ cứng.');
 
   console.log(`\n✅ ĐỒNG BỘ THÀNH CÔNG ${totalCommitted} SẢN PHẨM LÊN FIRESTORE!`);
   console.log(`- Sản phẩm ngừng bán hẳn: ${discontinuedCount} SKU`);
