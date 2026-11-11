@@ -11,12 +11,28 @@ import Footer from '../components/Footer';
 import { triggerFlyToCart } from '../utils/flyToCart';
 import { GuestOrderTrackingBar, GuestOrderStatusCard } from '../components/GuestOrderTracking';
 import { findGuestOrders } from '../services/guestTrackingService';
+import { lookupGuestOrdersInDB } from '../services/dbService';
 
 export default function KROrderHomePage() {
   const { oliveYoungCatalog, rates, currentUser, logoutUser, cart, addToCart, orders, userTheme, toggleUserTheme } = useContext(AppContext);
   const [detailProduct, setDetailProduct] = useState(null);
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeCategory, setActiveCategory] = useState(() => {
+    try {
+      return sessionStorage.getItem('tavy_catalog_category') || 'all';
+    } catch {
+      return 'all';
+    }
+  });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const selectCategory = (catId) => {
+    setActiveCategory(catId);
+    try {
+      sessionStorage.setItem('tavy_catalog_category', catId);
+      sessionStorage.setItem('tavy_catalog_page', '1');
+      sessionStorage.removeItem('tavy_catalog_restore_pending');
+    } catch {}
+  };
 
   // Guest Order Tracking State
   const [trackingQuery, setTrackingQuery] = useState('');
@@ -51,36 +67,25 @@ export default function KROrderHomePage() {
     { id: 'supplements', name: 'Thực phẩm chức năng' }
   ];
 
-  // Dynamic sample suggestions from existing orders or standard fallbacks
+  // Sample suggestions chuẩn (Tuyệt đối không lấy SĐT/mã đơn thật từ mảng orders để tránh lộ thông tin khách)
   const sampleSuggestions = useMemo(() => {
-    const list = [];
-    if (Array.isArray(orders) && orders.length > 0) {
-      const firstOrder = orders[0];
-      if (firstOrder?.id) {
-        list.push({ label: `Thử mã: ${firstOrder.id.replace(/^ORD-?/i, '')}`, value: firstOrder.id.replace(/^ORD-?/i, '') });
-      }
-      const phone = firstOrder?.customerPhone || firstOrder?.phone;
-      if (phone) {
-        list.push({ label: `Thử SĐT: ${phone}`, value: phone });
-      }
-    }
-    if (list.length === 0) {
-      list.push(
-        { label: 'Thử SĐT: 0912345678', value: '0912345678' },
-        { label: 'Thử SĐT: 0935861690', value: '0935861690' }
-      );
-    }
-    return list;
-  }, [orders]);
+    return [
+      { label: 'Thử SĐT: 0912345678', value: '0912345678' },
+      { label: 'Thử SĐT: 0987654321', value: '0987654321' }
+    ];
+  }, []);
 
-  // Handle Guest Tracking Search
-  const handleTrackingSearch = (query) => {
+  // Handle Guest Tracking Search (Hỗ trợ cả đơn trong phiên và tra cứu trực tiếp từ Firestore theo SĐT 10 số / Mã ORD-...)
+  const handleTrackingSearch = async (query) => {
     const term = String(query || '').trim();
     if (!term) return;
 
     setIsSearching(true);
-    const results = findGuestOrders(term, orders || []);
     setTrackingQuery(term);
+    let results = findGuestOrders(term, orders || []);
+    if (results.length === 0) {
+      results = await lookupGuestOrdersInDB(term, orders || []);
+    }
     setMatchedOrders(results);
     setSelectedOrderIndex(0);
     setHasSearched(true);
@@ -127,52 +132,83 @@ export default function KROrderHomePage() {
         return cat !== 'ginseng' && cat !== 'supplements' && !/sâm|hồng sâm|nấm|protein|thực phẩm chức năng|viên uống/i.test(name);
       }
 
-      // Direct category or subCategory match
-      if (cat === activeCategory || subCat === activeCategory) return true;
+      // If high-end perfume, do not match any cosmetic categories
+      if (subCat === 'perfume' && activeCategory !== 'perfume') return false;
 
-      // Smart Vietnamese & Korean Name & Semantic matching per category
+      // Direct category or subCategory match
+      if (subCat === activeCategory) return true;
+      if (cat === activeCategory && !['skincare', 'makeup', 'highend'].includes(cat)) return true;
+
+      // Smart Vietnamese & Korean Name & Semantic matching per category (High Precision, Zero Noise)
       switch (activeCategory) {
         case 'lipstick':
-          return cat === 'lipstick' || /son|tint|lip|thỏi|thoa môi/i.test(name) || /립|tint|lipstick/i.test(nameKr);
+          if (/kem đánh răng|rucipello|kẹp tóc|nước súc miệng|sáp trang điểm|bắt sáng|phấn nền|kem nền|nước hoa|đồ sơn|\bdo son\b/i.test(name)) return false;
+          if (/(?:치약|클립|향수|파운데이션)/i.test(nameKr)) return false;
+          return /(?:\bson\b|\btint\b|\blipstick\b|\blip balm\b|\blip gloss\b|dưỡng môi|thoa môi)/i.test(name) || /(?:립스틱|틴트|립밤|립글로스|립 오일|립플럼퍼)/i.test(nameKr);
+
         case 'foundation':
-          return cat === 'foundation' || cat === 'concealer' ||
-            /kem nền|foundation|bb cream|cc cream|cover cream|che khuyết|kem lót|lotion che/i.test(name) ||
-            /파운데이션|비비|컨실러|프라이머/i.test(nameKr);
+          if (/cushion|phấn nước/i.test(name)) return false;
+          return /(?:kem nền|phấn nền|\bfoundation\b|\bbb cream\b|\bcc cream\b|che khuyết|kem lót|lotion che)/i.test(name) || /(?:파운데이션|비비|컨실러|프라이머)/i.test(nameKr);
+
         case 'cushion':
-          return cat === 'cushion' || /cushion|phấn nước|phấn tươi/i.test(name) || /쿠션|팩트/i.test(nameKr);
+          if (/bảng mắt|phấn mắt|palette/i.test(name) || /(?:아이섀도|팔레트)/i.test(nameKr)) return false;
+          return /(?:\bcushion\b|phấn nước|phấn tươi)/i.test(name) || /쿠션/i.test(nameKr);
+
         case 'eyeshadow':
-          return cat === 'eyeshadow' || /phấn mắt|bảng mắt|bảng phấn mắt|eyeshadow|eye shadow|shadow/i.test(name) || /아이섀도|섀도우/i.test(nameKr);
+          return /(?:phấn mắt|bảng mắt|bảng phấn mắt|\beyeshadow\b|eye shadow|\bpalette\b)/i.test(name) || /(?:아이섀도|섀도우|아이 팔레트)/i.test(nameKr);
+
         case 'blush':
-          return cat === 'blush' || /má hồng|phấn má|blush|blusher|cheek/i.test(name) || /블러셔|치크/i.test(nameKr);
+          return /(?:má hồng|phấn má|\bblush\b|\bblusher\b|\bcheek\b)/i.test(name) || /(?:블러셔|치크)/i.test(nameKr);
+
         case 'powder':
-          return cat === 'powder' || /phấn phủ|bột phủ|kiềm dầu|powder|no-sebum/i.test(name) || /파우더/i.test(nameKr);
+          if (/kem nền|phấn nền|cushion|bảng mắt/i.test(name)) return false;
+          return /(?:phấn phủ|bột phủ|kiềm dầu|\bpowder\b|no-sebum)/i.test(name) || /파우더/i.test(nameKr);
+
         case 'eye_makeup':
-          return cat === 'mascara' || cat === 'eyeliner' || cat === 'eyebrow' ||
-            /mascara|kẻ mắt|kẻ mày|chì mày|chuốt mi|eyeliner|eyebrow/i.test(name) ||
-            /마스카라|아이라이너|아이브로우/i.test(nameKr);
+          return cat === 'eye_makeup' || cat === 'mascara' || cat === 'eyeliner' || cat === 'eyebrow' ||
+            /(?:mascara|kẻ mắt|kẻ mày|chì mày|chuốt mi|\beyeliner\b|\beyebrow\b)/i.test(name) ||
+            /(?:마스카라|아이라이너|아이브로우)/i.test(nameKr);
+
         case 'serum':
-          return cat === 'serum' || /serum|tinh chất|ampoule|essence/i.test(name) || /세럼|앰플|에센스/i.test(nameKr);
+          if (/kem dưỡng|sữa dưỡng|dầu gội|sữa tắm|kem đánh răng|sữa rửa mặt|nước tẩy trang/i.test(name)) return false;
+          return /(?:\bserum\b|tinh chất|\bampoule\b|\bessence\b)/i.test(name) || /(?:세럼|앰플|에센스)/i.test(nameKr);
+
         case 'cream':
-          return cat === 'cream' || ((/kem dưỡng|dưỡng ẩm|cấp ẩm|cream|lotion|emulsion|moisturizer/i.test(name) || /크림|보습/i.test(nameKr)) &&
-            !/chống nắng|body|rửa mặt|nền|che khuyết|lót/i.test(name));
+          if (/chống nắng|body|toàn thân|rửa mặt|kem nền|phấn nền|che khuyết|kem lót|tóc|răng|ngâm rửa|tay|chân/i.test(name)) return false;
+          return (/(?:kem dưỡng|dưỡng ẩm|cấp ẩm|\bcream\b|\blotion\b|emulsion|moisturizer)/i.test(name) || /(?:크림|보습)/i.test(nameKr));
+
         case 'mask':
-          return cat === 'mask' || /mặt nạ|mask|sheet mask|sleeping mask|đắp mặt/i.test(name) || /마스크팩|마스크/i.test(nameKr);
+          if (/bọt rửa mặt|pack to foam/i.test(name)) return false;
+          return /(?:mặt nạ|\bmask\b|sheet mask|sleeping mask|đắp mặt)/i.test(name) || /(?:마스크팩|마스크)/i.test(nameKr);
+
         case 'suncare':
-          return cat === 'suncare' || /chống nắng|kem chống nắng|sunscreen|sun cream|suncream|sun stick/i.test(name) || /선크림|선케어/i.test(nameKr);
+          if (/xịt khoáng|\bmist\b/i.test(name)) return false;
+          return /(?:chống nắng|kem chống nắng|sunscreen|sun cream|suncream|sun stick|sun cushion|\bkcn\b)/i.test(name) || /(?:선크림|선케어|선스틱|선쿠션)/i.test(nameKr);
+
         case 'cleanser':
-          return cat === 'cleanser' || /sữa rửa mặt|gel rửa mặt|bọt rửa mặt|cleanser|cleansing foam|pack to foam/i.test(name) || /클렌징폼|폼클렌징/i.test(nameKr);
+          if (/kính áp tròng|\blens\b|mụn đầu đen|sebum softener|body|tắm|nước súc miệng/i.test(name)) return false;
+          return /(?:sữa rửa mặt|gel rửa mặt|bọt rửa mặt|cleanser|cleansing foam|pack to foam|\bsrm\b)/i.test(name) || /(?:클렌징폼|폼클렌징)/i.test(nameKr);
+
         case 'makeup_remover':
-          return cat === 'makeup_remover' || /tẩy trang|nước tẩy trang|dầu tẩy trang|sáp tẩy trang|sữa tẩy trang|cleansing oil|cleansing water|cleansing balm/i.test(name) || /클렌징오일|클렌징워터/i.test(nameKr);
+          return /(?:tẩy trang|nước tẩy trang|dầu tẩy trang|sáp tẩy trang|sữa tẩy trang|cleansing oil|cleansing water|cleansing balm)/i.test(name) || /(?:클렌징오일|클렌징워터|클렌징밤)/i.test(nameKr);
+
         case 'toner_pad':
-          return cat === 'toner_pad' || cat === 'toner' || /toner|pad|bông toner|nước hoa hồng|nước cân bằng/i.test(name) || /토너|토너패드|스킨/i.test(nameKr);
+          if (/bông tẩy trang/i.test(name)) return false;
+          return /(?:\btoner\b|toner pad|\bpad\b|bông toner|nước hoa hồng|nước cân bằng|xịt khoáng|\bmist\b)/i.test(name) || /(?:토너|토너패드|스킨|미스트)/i.test(nameKr);
+
         case 'haircare':
-          return cat === 'haircare' || /tóc|dầu gội|dầu xả|ủ tóc|dưỡng tóc|tạo kiểu tóc|hair|shampoo/i.test(name) || /헤어|샴푸|트리트먼트/i.test(nameKr);
+          return /(?:tóc|dầu gội|dầu xả|ủ tóc|dưỡng tóc|tạo kiểu tóc|\bhair\b|\bshampoo\b)/i.test(name) || /(?:헤어|샴푸|트리트먼트)/i.test(nameKr);
+
         case 'bodycare':
-          return cat === 'bodycare' || cat === 'exfoliator' || /sữa tắm|dưỡng thể|body|toàn thân|vệ sinh phụ nữ|đánh răng|kem đánh răng|tẩy tế bào chết body/i.test(name) || /바디|치약/i.test(nameKr);
+          if (/rửa mặt/i.test(name)) return false;
+          return cat === 'exfoliator' || /(?:sữa tắm|dưỡng thể|\bbody\b|toàn thân|vệ sinh phụ nữ|đánh răng|kem đánh răng|bàn chải|tẩy tế bào chết body)/i.test(name) || /(?:바디|치약)/i.test(nameKr);
+
         case 'ginseng':
-          return cat === 'ginseng' || /sâm|hồng sâm|cao hồng sâm|nước hồng sâm|nấm|linh chi|ginseng/i.test(name) || /홍삼|인삼/i.test(nameKr);
+          return /(?:sâm|hồng sâm|cao hồng sâm|nước hồng sâm|nấm|linh chi|ginseng)/i.test(name) || /(?:홍삼|인삼)/i.test(nameKr);
+
         case 'supplements':
-          return cat === 'supplements' || /protein|viên uống|bột uống|thực phẩm chức năng|men vi sinh|vitamin|supplement/i.test(name) || /단백질|유산균/i.test(nameKr);
+          return /(?:protein|viên uống|bột uống|thực phẩm chức năng|men vi sinh|vitamin|supplement|thạch uống|nước uống đẹp da)/i.test(name) || /(?:단백질|유산균|비타민)/i.test(nameKr);
+
         default:
           return false;
       }
@@ -181,7 +217,7 @@ export default function KROrderHomePage() {
 
   const handleNavCategoryClick = (e, catId) => {
     e.preventDefault();
-    setActiveCategory(catId);
+    selectCategory(catId);
     if (catId === 'all') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
@@ -492,7 +528,7 @@ export default function KROrderHomePage() {
                 <button
                   key={cat.id}
                   type="button"
-                  onClick={() => setActiveCategory(cat.id)}
+                  onClick={() => selectCategory(cat.id)}
                   className={`category-filter-btn ${activeCategory === cat.id ? 'active' : ''}`}
                 >
                   {cat.name}
@@ -503,6 +539,7 @@ export default function KROrderHomePage() {
             {/* Lưới sản phẩm */}
             <ProductGrid
               products={filteredProducts}
+              activeCategory={activeCategory}
               krwRate={krwRate * serviceFeeMultiplier}
               onSelectProduct={handleAddToCart}
               onViewDetail={setDetailProduct}
