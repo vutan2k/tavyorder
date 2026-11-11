@@ -178,8 +178,12 @@ export default function KROrderHomePage() {
           return (/(?:kem dưỡng|dưỡng ẩm|cấp ẩm|\bcream\b|\blotion\b|emulsion|moisturizer)/i.test(name) || /(?:크림|보습)/i.test(nameKr));
 
         case 'mask':
-          if (/bọt rửa mặt|pack to foam/i.test(name)) return false;
-          return /(?:mặt nạ|\bmask\b|sheet mask|sleeping mask|đắp mặt)/i.test(name) || /(?:마스크팩|마스크)/i.test(nameKr);
+          if (/tóc|\bhair\b|ủ tóc|dầu gội|dầu xả/i.test(name) || /헤어|샴푸|트리트먼트/i.test(nameKr)) return false;
+          if (/son|\btint\b|\blip\b|dưỡng môi|thoa môi/i.test(name) || /립스틱|틴트|립밤|립마스크/i.test(nameKr)) return false;
+          if (/bọt rửa mặt|pack to foam|sữa rửa mặt|gel rửa mặt/i.test(name)) return false;
+          if (/orthomol|vital|ginger|shot|protein|sữa lắc|thực phẩm|viên uống|album/i.test(name)) return false;
+          if (/^(?:serum|tinh chất|ampoule|kem dưỡng|kem lót|dung dịch làm mềm)/i.test(name)) return false;
+          return /(?:mặt nạ|\bmask\b|sheet mask|sleeping mask|đắp mặt)/i.test(name) || /(?:마스크팩)/i.test(nameKr);
 
         case 'suncare':
           if (/xịt khoáng|\bmist\b/i.test(name)) return false;

@@ -564,7 +564,7 @@ export const AppProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : defaultRates;
   });
 
-  const CURRENT_CATALOG_VER = 'v6.2_clean_category_taxonomy_1794300000';
+  const CURRENT_CATALOG_VER = 'v6.3_perfect_mask_and_haircare_taxonomy_1794301000';
 
   const [products, setProducts] = useState(() => {
     try {
