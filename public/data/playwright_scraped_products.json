@@ -19,7 +19,7 @@
     ],
     "appliedKrwRate": 19.5,
     "firestoreId": "A000000010462",
-    "lastAuditedAt": "2026-11-11T01:32:52.078Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.442Z",
     "origin": "Korea",
     "category": "Kem chống nắng",
     "originalPriceVnd": 963000,
@@ -100,7 +100,7 @@
     "originPrice": 20900,
     "salePrice": 11900,
     "discountRate": "43%",
-    "lastAuditedAt": "2026-11-11T01:32:52.082Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.446Z",
     "category": "Lotion dưỡng thể",
     "optionsCount": 2,
     "photoReviews": [],
@@ -223,7 +223,7 @@
     "foreignPrice": 31900,
     "isAvailable": true,
     "status": "available",
-    "lastAuditedAt": "2026-11-11T01:32:52.083Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.446Z",
     "rank": null,
     "name_vi": "Nước Tẩy Trang Dịu Nhẹ Cho Da Nhạy Cảm Bioderma Sensibio H2O (Set Đôi 500ml + 500ml)",
     "name_kr": "[설윤PICK] 바이오더마 센시비오 H2O 500ml 2입 | 올리브영",
@@ -250,7 +250,7 @@
     "isSoldOut": false,
     "updatedAt": "2026-11-02T08:44:45Z",
     "foreignPrice": 16910,
-    "lastAuditedAt": "2026-11-11T01:32:52.083Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.447Z",
     "productImage": "/products/A000000121286.jpg",
     "price": 16910,
     "priceChangeAlert": {
@@ -363,7 +363,7 @@
     "brand": "Bioderma",
     "is_enriched": true,
     "foreignPrice": 25900,
-    "lastAuditedAt": "2026-11-11T01:32:52.084Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.447Z",
     "name": "Nước tẩy trang làm sạch dịu nhẹ Bioderma Sensibio H2O 850ml",
     "productImage": "/products/A000000130319.jpg",
     "originalPriceVnd": 951000,
@@ -412,7 +412,7 @@
     "originalPriceWon": 37500
   },
   {
-    "lastAuditedAt": "2026-11-11T01:32:52.084Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.447Z",
     "priceChangeAlert": {
       "changeType": "drop",
       "oldForeignPrice": 9800,
@@ -944,7 +944,7 @@
     "goodsNo": "A000000139063",
     "originalPriceVnd": 1217000,
     "originalPrice": 48000,
-    "lastAuditedAt": "2026-11-11T01:32:52.084Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.448Z",
     "nameKr": "[1위 쿠션/홀리데이 에디션] 정샘물 에센셜 스킨 누더 쿠션 (본품+리필) | 올리브영",
     "is_enriched": true,
     "category": "Cushion",
@@ -1011,7 +1011,7 @@
     "nameKr": "[11월 올영픽 /1등 핸드크림] 비욘드 클래식 살냄새 핸드크림 100ml 4종 (다마고치 에디션 및 단품) | 올리브영",
     "price": 7130,
     "is_sold_out": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.085Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.448Z",
     "categoryPath": "Chăm sóc cơ thể > Chăm sóc tay > Kem dưỡng tay",
     "originalPriceVnd": 355000,
     "name": "Kem Dưỡng Da Tay Hương Nước Hoa BEYOND Classic Hand Cream 100ml",
@@ -1186,7 +1186,7 @@
     "foreignPrice": 7930,
     "thumbnailUrl": "/products/A000000144554.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.085Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.449Z",
     "usage": "Thoa vào bất kỳ lúc nào tay cần dưỡng ẩm, đặc biệt sau khi rửa tay hoặc trước khi ra ngoài: lấy một lượng nhỏ, massage từ cổ tay lên mu bàn tay và các ngón, chú ý vùng da quanh móng. Với 6 mùi hương nước hoa, nên chọn mùi phù hợp tâm trạng và tránh thoa quá nhiều để không bị nồng; có thể dùng như bước dưỡng tay cuối cùng trong ngày.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -1492,7 +1492,7 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000148549&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=74",
     "is_sold_out": false,
     "createdAt": "2026-10-03T15:43:58.000Z",
-    "lastAuditedAt": "2026-11-11T01:32:52.090Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.450Z",
     "appliedServiceFeePercent": 30,
     "id": "A000000148549",
     "isSoldOut": false,
@@ -1527,7 +1527,7 @@
     "createdAt": "2026-10-18T10:50:36.000Z",
     "priceVnd": 631000,
     "goodsNo": "A000000149211",
-    "lastAuditedAt": "2026-11-11T01:32:52.092Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.450Z",
     "originalPrice": 38000,
     "salePrice": 24900,
     "productImage": "/products/A000000149211.jpg",
@@ -1673,7 +1673,7 @@
     "originPrice": 36000,
     "discountRate": "25%",
     "id": "A000000149501",
-    "lastAuditedAt": "2026-11-11T01:32:52.092Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.450Z",
     "rank": 89,
     "name_vi": "Dầu Gội Giảm Rụng Củng Cố Da Đầu LABO-H Scalp Strengthening Shampoo 750ml Kèm Chai 100ml",
     "name_kr": "[몬치치] NEW라보에이치 두피강화샴푸 750ML+100ML [탈모증상완화] | 올리브영",
@@ -1734,7 +1734,7 @@
     "foreignPrice": 20900,
     "thumbnailUrl": "/products/A000000150361.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.093Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.451Z",
     "usage": "Dùng sau bước kem lót và kem nền: tán màu sáng lên toàn bộ bầu mắt làm lớp nền, sau đó dùng cọ nhỏ tán màu đậm hơn ở đuôi mắt và đường viền mi để tạo chiều sâu. Với bảng 9-10 tông màu, nên dùng cọ dẹt cho màu nhũ và cọ tán cho màu lì, kết hợp kem lót mắt để giữ màu lâu trôi cả ngày.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -1807,7 +1807,7 @@
     "brand": "S.Nature",
     "origin": "Store Olive Young Korea",
     "foreignPrice": 28000,
-    "lastAuditedAt": "2026-11-11T01:32:52.093Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.451Z",
     "rank": null,
     "name_vi": "Kem dưỡng cấp ẩm se khít lỗ chân lông S.Nature Aqua Squalane 60ml Tặng Kèm 30ml",
     "name_kr": "[1등 모공 수분천재크림] 에스네이처 아쿠아 스쿠알란 수분크림 60ml 기획(+크림 30ml 증정) | 올리브영",
@@ -1877,7 +1877,7 @@
       "/products/A000000157452.jpg"
     ],
     "is_sold_out": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.093Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.451Z",
     "isAvailable": true,
     "originalPrice": 25600,
     "appliedServiceFeePercent": 30,
@@ -1914,7 +1914,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/b359678522cc4f8b8281d8fc8689daa71794136523783.png"
     ],
     "updatedAt": "2026-11-02T08:44:45Z",
-    "lastAuditedAt": "2026-11-11T01:32:52.093Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.451Z",
     "description": "Tinh chất chứa 10% Niacinamide kết hợp cùng 1% Zinc PCA giúp kiểm soát bã nhờn, làm dịu các nốt mụn viêm và se khít lỗ chân lông hiệu quả. Sản phẩm hỗ trợ làm mờ các vết thâm sau mụn và tái cân bằng sắc tố, giúp làn da sáng mịn và đều màu hơn. Phù hợp lý tưởng cho làn da dầu mụn, da hỗn hợp và lỗ chân lông to.",
     "status": "available",
     "price": 15700,
@@ -1989,7 +1989,7 @@
       "diffWon": -4320
     },
     "foreignPrice": 25500,
-    "lastAuditedAt": "2026-11-11T01:32:52.093Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.452Z",
     "isDiscontinued": false,
     "status": "available",
     "salePrice": 25500,
@@ -2220,7 +2220,7 @@
     "originalPriceWon": 36000
   },
   {
-    "lastAuditedAt": "2026-11-11T01:32:52.094Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.452Z",
     "discountRate": "15%",
     "originalPriceVnd": 403000,
     "appliedServiceFeePercent": 30,
@@ -2330,7 +2330,7 @@
     "goodsNo": "A000000161438",
     "nameKr": "[근본 볼륨치트키] 다슈 클래식 스타일 그루밍토닉 펌프 200ml 기획 (+100ml 증정) | 올리브영",
     "brand": "다슈",
-    "lastAuditedAt": "2026-11-11T01:32:52.094Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.452Z",
     "salePrice": 12800,
     "originalPrice": 18000,
     "isAvailable": true,
@@ -2384,7 +2384,7 @@
     "id": "A000000162114",
     "appliedServiceFeePercent": 30,
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.094Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.452Z",
     "description": "Mỹ phẩm 120ml 120ml+120ml (120ml) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "brand": "So Natural",
     "originalPrice": 42000,
@@ -2560,7 +2560,7 @@
     "originPrice": 24000,
     "discountRate": "18%",
     "salePrice": 19500,
-    "lastAuditedAt": "2026-11-11T01:32:52.094Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.452Z",
     "price": 19500,
     "priceChangeAlert": {
       "hasChanged": true,
@@ -2638,7 +2638,7 @@
     "originPrice": 24900,
     "originalPrice": 24900,
     "createdAt": "2026-10-03T15:43:58.000Z",
-    "lastAuditedAt": "2026-11-11T01:32:52.095Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.453Z",
     "appliedServiceFeePercent": 30,
     "priceChangeAlert": {
       "hasChanged": true,
@@ -2674,7 +2674,7 @@
       "lastChecked": "2026-11-01T07:59:17.000Z",
       "diffWon": -450
     },
-    "lastAuditedAt": "2026-11-11T01:32:52.095Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.453Z",
     "nameKr": "[올영픽/단독기획] 롱테이크 트리트먼트 200+100ML*샌달우드/블랙티앤피그) | 올리브영",
     "goodsNo": "A000000168243",
     "isSoldOut": false,
@@ -2807,7 +2807,7 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000170042&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=77",
     "nameKr": "디어스킨 리얼모달 생리대 7종 택 1 (패드/라이너/슈퍼롱/입는오버나이트) | 올리브영",
     "isDiscontinued": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.095Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.453Z",
     "category": "Băng vệ sinh dạng miếng",
     "name": "Băng vệ sinh tự nhiên mềm mại Dearskin Real Modal 7 Loại Tùy Chọn",
     "originalPrice": 7900,
@@ -2952,7 +2952,7 @@
     "origin": "Korea",
     "isDiscontinued": false,
     "createdAt": "2026-10-22T20:00:00.000Z",
-    "lastAuditedAt": "2026-11-11T01:32:52.095Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.454Z",
     "appliedKrwRate": 19.5,
     "id": "A000000170361",
     "firestoreId": "A000000170361",
@@ -3266,7 +3266,7 @@
     "originPrice": 15000,
     "usage": "1. Dùng cọ má hồng lấy một lượng phấn vừa đủ và gõ nhẹ để loại bỏ bớt bột phấn thừa. 2. Quét nhẹ nhàng lên vùng gò má theo phong cách trang điểm yêu thích. 3. Dặm thêm một lớp mỏng nữa nếu muốn màu sắc lên đậm và rõ nét hơn.",
     "originalPrice": 15000,
-    "lastAuditedAt": "2026-11-11T01:32:52.096Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.454Z",
     "nameKr": "[올영PICK/미래밍디 공동개발] 네이밍 플러피 파우더 블러쉬 22colors 단품/기획 | 올리브영",
     "priceVnd": 276000,
     "appliedKrwRate": 19.5,
@@ -3396,7 +3396,7 @@
     "hasOptions": true,
     "categoryPath": "Chăm sóc tóc > Tinh chất dưỡng tóc > Dầu dưỡng tóc",
     "price": 27900,
-    "lastAuditedAt": "2026-11-11T01:32:52.096Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.454Z",
     "isAvailable": true,
     "priceChangeAlert": {
       "changePercent": -3.5,
@@ -3451,7 +3451,7 @@
     "optionsCount": 0,
     "updatedAt": "2026-11-02T08:44:45Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171423&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=2",
-    "lastAuditedAt": "2026-11-11T01:32:52.096Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.455Z",
     "description": "Unove (/) 320ml / từ thương hiệu Unove là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu 30.000ppm phức hợp đạm Keratin và 36 loại acid amin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào da giúp phục hồi biểu bì tóc hư tổn nặng do uốn nhuộm nhiệt, lấp đầy lõi tóc và mang lại độ bóng mượt bồng bềnh tức thì, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu da rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho mọi loại da kể cả làn da nhạy cảm nhất.",
     "status": "available",
     "price": 29800,
@@ -3516,7 +3516,7 @@
     "originalPriceWon": 42000
   },
   {
-    "lastAuditedAt": "2026-11-11T01:32:52.097Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.455Z",
     "discountRate": "35%",
     "originalPriceVnd": 1366000,
     "appliedServiceFeePercent": 30,
@@ -3589,7 +3589,7 @@
   },
   {
     "discountRate": "22%",
-    "lastAuditedAt": "2026-11-11T01:32:52.097Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.455Z",
     "originalPriceVnd": 355000,
     "isAvailable": false,
     "appliedServiceFeePercent": 30,
@@ -4026,7 +4026,7 @@
     "originalPriceWon": 14000
   },
   {
-    "lastAuditedAt": "2026-11-11T01:32:52.097Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.455Z",
     "productImage": "/products/A000000174309.jpg",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000174309&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=40",
     "isDiscontinued": true,
@@ -4114,7 +4114,7 @@
     ],
     "firestoreId": "A000000174439",
     "isAvailable": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.097Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.456Z",
     "appliedKrwRate": 19.5,
     "brand": "Aromatica",
     "hasOptions": true,
@@ -4492,7 +4492,7 @@
     "status": "out_of_stock",
     "originalPrice": 40000,
     "firestoreId": "A000000177984",
-    "lastAuditedAt": "2026-11-11T01:32:52.098Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.456Z",
     "description": "Son bóng cao cấp mang đến làn môi căng mọng đầy đặn với gam màu trong trẻo chuẩn phong cách MLBB sang trọng. Chứa tinh dầu dưỡng tự nhiên giúp nuôi dưỡng môi mềm mượt, làm đầy rãnh môi mà không gây cảm giác bết dính nặng nề. Bảng màu đa dạng và tinh tế, tôn lên nét quyến rũ tự nhiên cho đôi môi suốt cả ngày.",
     "foreignPrice": 34000,
     "originalPriceVnd": 1014000,
@@ -4716,7 +4716,7 @@
     ],
     "usage": "Dùng sau khi đã thoa kem lót mắt: dùng cọ tán đều màu sáng nhất lên toàn bầu mắt, sau đó dùng cọ nhỏ hơn để tán màu đậm vào đuôi mắt và đường viền mi, cuối cùng dùng ngón tay vỗ nhẹ để blend mềm. Với tông Leopard Hello Kitty có thể dùng màu nhũ ở giữa bầu mắt để tạo điểm nhấn, tránh tán quá tay gây lem.",
     "firestoreId": "A000000180532",
-    "lastAuditedAt": "2026-11-11T01:32:52.098Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.456Z",
     "origin": "Store Olive Young Korea",
     "description": "Mỹ phẩm từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "isSoldOut": true,
@@ -4756,7 +4756,7 @@
     ],
     "nameKr": "[리센느 원이PICK/1등 겔 마스크] 바이오던스 리얼 딥 마스크 4매 5종(콜라겐/세라놀/PDRN/씨켈프/비타) | 올리브영",
     "category": "Mặt nạ gel",
-    "lastAuditedAt": "2026-11-11T01:32:52.098Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.457Z",
     "appliedServiceFeePercent": 30,
     "updatedAt": "2026-11-02T08:44:45Z",
     "originPrice": 20000,
@@ -4811,7 +4811,7 @@
   {
     "hasOptions": true,
     "id": "A000000183059",
-    "lastAuditedAt": "2026-11-11T01:32:52.099Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.457Z",
     "nameKr": "어노브 딥 데미지 리페어 샴푸 500ml 더블/듀오 기획 | 올리브영",
     "updatedAt": "2026-11-02T08:44:45Z",
     "is_enriched": true,
@@ -5005,7 +5005,7 @@
     "appliedKrwRate": 19.5,
     "brand": "바이오던스",
     "originalPrice": 80000,
-    "lastAuditedAt": "2026-11-11T01:32:52.111Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.463Z",
     "updatedAt": "2026-11-02T08:44:45Z",
     "nameKr": "[블프특가/대용량] 바이오던스 리얼 딥 마스크 16매 3종 (콜라겐/세라놀/PDRN) | 올리브영",
     "category": "Mặt nạ gel",
@@ -5033,7 +5033,7 @@
     "updatedAt": "2026-11-02T08:44:45Z",
     "isDiscontinued": false,
     "nameKr": "[10년 연속 1위] 아이오페 맨 올데이 퍼펙트 올인원 120ml 기획 (+30ml) | 올리브영",
-    "lastAuditedAt": "2026-11-11T01:32:52.112Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.463Z",
     "categoryPath": "Chăm sóc da > Lotion > All-in-one",
     "originPrice": 38000,
     "priceChangeAlert": {
@@ -5105,7 +5105,7 @@
     "brandKr": "",
     "originPrice": 18000,
     "categoryPath": "Trang điểm > Trang điểm môi > Son tint",
-    "lastAuditedAt": "2026-11-11T01:32:52.112Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.464Z",
     "updatedAt": "2026-11-02T08:44:45Z",
     "originalPriceVnd": 456000,
     "is_enriched": true,
@@ -5511,7 +5511,7 @@
   },
   {
     "hasOptions": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.112Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.464Z",
     "id": "A000000185903",
     "nameKr": "[리필+파우치 증정/11월 올영픽] VDL 커버 스테인 퍼펙팅 쿠션 기획 | 올리브영",
     "updatedAt": "2026-11-02T08:44:45Z",
@@ -5830,7 +5830,7 @@
     "originalPriceVnd": 603000,
     "originPrice": 23800,
     "usage": "Dùng sáng và tối ở bước đầu tiên: lấy lượng bằng hạt đậu, tạo bọt với nước ấm rồi massage vòng tròn 30-60 giây, tránh vùng mắt, rửa sạch bằng nước mát. Với da mụn, chỉ rửa tối đa 2 lần/ngày và tránh chà mạnh vùng đang viêm để không làm tổn thương thêm.",
-    "lastAuditedAt": "2026-11-11T01:32:52.112Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.464Z",
     "isDiscontinued": false,
     "name": "Sữa Rửa Mặt Cho Da Mụn Blanc Nature Acne Cleansing Foam (Tùy Chọn Lẻ Hoặc Set)",
     "nameKr": "블랑네이처 아크네 클렌징 폼 단품/기획 | 올리브영",
@@ -5865,7 +5865,7 @@
     "updatedAt": "2026-11-02T08:44:45Z",
     "goodsNo": "A000000186792",
     "status": "available",
-    "lastAuditedAt": "2026-11-11T01:32:52.113Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.464Z",
     "description": "Mỹ phẩm 298g 4 (298g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "name": "Kem Tẩy Tế Bào Chết Toàn Thân Mịn Màng Dưỡng Ẩm Dove Exfoliating Body Polish Scrub (Hũ 298g Tùy Chọn 4 Mùi)",
     "firestoreId": "A000000186792",
@@ -6065,7 +6065,7 @@
     "isPublished": true,
     "originalPrice": 21900,
     "brandKr": "",
-    "lastAuditedAt": "2026-11-11T01:32:52.113Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.464Z",
     "name_vi": "Sữa Rửa Mặt Dịu Nhẹ Cân Bằng pH Beplain Mung Bean Đậu Xanh 160ml + 40ml",
     "name_kr": "[말끔모공/국민클폼]비플레인 녹두 약산성 클렌징폼기획 160ml+40ml 기획 | 올리브영",
     "brand_vi": "Beplain",
@@ -6077,7 +6077,7 @@
   },
   {
     "origin": "Store Olive Young Korea",
-    "lastAuditedAt": "2026-11-11T01:32:52.113Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.464Z",
     "brand": "Clio",
     "appliedServiceFeePercent": 30,
     "isSoldOut": false,
@@ -6522,7 +6522,7 @@
     "nameKr": "플라이밀 단백질쉐이크 45g | 올리브영",
     "isPublished": true,
     "originalPrice": 3900,
-    "lastAuditedAt": "2026-11-11T01:32:52.113Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.465Z",
     "brandKr": "",
     "usage": "1. Vặn mở nắp túi và cho vào khoảng 150ml nước lọc, sữa tươi hoặc sữa hạt đến vạch chỉ dẫn. 2. Vặn chặt nắp lại và lắc mạnh túi trong khoảng 10-15 giây cho bột hòa tan đều. 3. Mở nắp và thưởng thức trực tiếp hương vị thơm ngon từ túi.",
     "rank": null,
@@ -6560,7 +6560,7 @@
     "goodsNo": "A000000190369",
     "nameKr": "[판매량 1억개 돌파/대용량] AHC 텐 레볼루션 리얼 아이크림 포 페이스 더블 기획 | 올리브영",
     "brand": "AHC",
-    "lastAuditedAt": "2026-11-11T01:32:52.113Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.465Z",
     "salePrice": 26900,
     "originalPrice": 39000,
     "isAvailable": true,
@@ -6598,7 +6598,7 @@
   },
   {
     "status": "available",
-    "lastAuditedAt": "2026-11-11T01:32:52.113Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.465Z",
     "originalPrice": 29000,
     "updatedAt": "2026-11-02T08:44:45Z",
     "brandKr": "",
@@ -6717,7 +6717,7 @@
     "foreignPrice": 22300,
     "thumbnailUrl": "/products/A000000192782.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.114Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.465Z",
     "usage": "Dùng sáng và tối sau serum: lấy lượng bằng hạt đậu cho toàn mặt, vỗ nhẹ đến khi thấm, có thể thoa thêm lớp mỏng lên vùng da khô. Vì chứa squalane, nên thoa khi da còn hơi ẩm sau toner để khóa ẩm tốt hơn, và tránh dùng quá nhiều vào mùa hè với da dầu.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/fa9a30ad48714160b4bfcfbeacd23d461794214323840.png",
@@ -6950,7 +6950,7 @@
     "status": "available",
     "originPrice": 11000,
     "productImage": "/products/A000000198343.jpg",
-    "lastAuditedAt": "2026-11-11T01:32:52.114Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.465Z",
     "foreignPrice": 11000,
     "rank": 80,
     "name_vi": "Bút Kẻ Mắt Chì Chống Nước Lâu Trôi Clio Sharp So Simple Waterproof Pencil Liner (Tùy Chọn Đơn Hoặc Set Đôi)",
@@ -6980,7 +6980,7 @@
     "isSoldOut": false,
     "foreignPrice": 9600,
     "is_enriched": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.114Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.466Z",
     "appliedKrwRate": 19.5,
     "goodsNo": "A000000199182",
     "originalPrice": 12000,
@@ -7222,7 +7222,7 @@
     "images": [
       "/products/A000000200614.jpg"
     ],
-    "lastAuditedAt": "2026-11-11T01:32:52.114Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.466Z",
     "options": [
       {
         "id": 1,
@@ -7350,7 +7350,7 @@
     "isSoldOut": true,
     "origin": "Store Olive Young Korea",
     "rank": null,
-    "lastAuditedAt": "2026-11-11T01:32:52.114Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.466Z",
     "usage": "Dùng sáng và tối sau toner, trước kem dưỡng: lấy 2-3 giọt, vỗ nhẹ lên vùng da mụn và vùng chữ T, tránh thoa quá nhiều lớp. Với da đang có mụn viêm, nên thử trên vùng nhỏ trước và tránh dùng chung với retinol hoặc acid mạnh trong cùng một buổi để giảm nguy cơ kích ứng.",
     "originPrice": 56100,
     "originalPrice": 56100,
@@ -7478,7 +7478,7 @@
     "title": "잠시만 기다려 주세요 - 올리브영",
     "foreignPrice": 20600,
     "is_sold_out": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.114Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.466Z",
     "productImage": "/products/A000000201055.jpg",
     "originalPriceVnd": 608000,
     "images": [
@@ -7585,7 +7585,7 @@
     ],
     "optionsCount": 4,
     "status": "available",
-    "lastAuditedAt": "2026-11-11T01:32:52.115Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.466Z",
     "foreignPrice": 26900,
     "category": "Tonic/ampoule da đầu",
     "name": "Tinh chất chăm sóc chân tóc ngăn gãy rụng LABO-H Hair Line Ampoule Monchhichi Edition Set Đôi Tặng Kèm Dầu Gội 50ml",
@@ -7713,7 +7713,7 @@
     "status": "available",
     "is_sold_out": false,
     "category": "Kem chống nắng",
-    "lastAuditedAt": "2026-11-11T01:32:52.115Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.466Z",
     "appliedServiceFeePercent": 30,
     "productImage": "/products/A000000202446.jpg",
     "isAvailable": true,
@@ -7821,7 +7821,7 @@
     "productImage": "/products/A000000202771.jpg",
     "isChallenge": true,
     "appliedKrwRate": 19.5,
-    "lastAuditedAt": "2026-11-11T01:32:52.115Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.466Z",
     "foreignPrice": 1950,
     "brand": "Prote-One",
     "salePrice": 1950,
@@ -8069,7 +8069,7 @@
     "isAvailable": false,
     "status": "available",
     "is_sold_out": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.115Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.467Z",
     "brand": "Hera",
     "appliedServiceFeePercent": 30,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202777&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=36",
@@ -8309,7 +8309,7 @@
     "storageProvider": "firebase_storage",
     "isSoldOut": true,
     "origin": "Store Olive Young Korea",
-    "lastAuditedAt": "2026-11-11T01:32:52.115Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.467Z",
     "usage": "Dùng sau khi kẹp mi cong, trước bước kẻ mắt nếu muốn. Đưa cọ từ gốc mi kéo zic-zac lên ngọn 1-2 lớp, lớp đầu để khô rồi mới chải lớp hai để giữ nếp tốt hơn. Tránh chải quá nhiều lớp vì dễ vón; tẩy trang bằng sản phẩm chuyên dụng cho mascara chống nước.",
     "originPrice": 16000,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000203943&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=26",
@@ -8326,7 +8326,7 @@
     "originalPriceWon": 16000
   },
   {
-    "lastAuditedAt": "2026-11-11T01:32:52.115Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.467Z",
     "foreignPrice": 19530,
     "id": "A000000204014",
     "isAvailable": true,
@@ -8439,7 +8439,7 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206826&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=78",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "description": "Kem Chống Nắng Aestura UV365 40ml+20ml (40ml) từ thương hiệu Aestura là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "lastAuditedAt": "2026-11-11T01:32:52.116Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.467Z",
     "status": "available",
     "price": 21900,
     "firestoreId": "A000000206826",
@@ -8553,7 +8553,7 @@
     "name": "Mặt Nạ Giấy Dưỡng Da Chuyên Sâu Numbuzin Mask Sheet (Hộp 10 Miếng - Tùy Chọn 5 Loại)",
     "originalPrice": 40000,
     "id": "A000000206850",
-    "lastAuditedAt": "2026-11-11T01:32:52.116Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.467Z",
     "brandKr": "",
     "is_sold_out": true,
     "salePrice": 15500,
@@ -8709,7 +8709,7 @@
     "status": "available",
     "originPrice": 3900,
     "productImage": "/products/A000000208162.jpg",
-    "lastAuditedAt": "2026-11-11T01:32:52.116Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.467Z",
     "foreignPrice": 3900,
     "rank": null,
     "name_vi": "Bột Bổ Sung Protein Dinh Dưỡng Tiện Lợi Delight Project Protein Shake (Gói 45g Tùy Chọn Vị)",
@@ -8803,7 +8803,7 @@
       "lastChecked": "2026-11-01T07:59:17.000Z",
       "newPriceVnd": 64000
     },
-    "lastAuditedAt": "2026-11-11T01:32:52.116Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.468Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000208842&tab=review",
     "appliedServiceFeePercent": 30,
     "firestoreId": "A000000208842",
@@ -8841,7 +8841,7 @@
     "originalPriceWon": 8400
   },
   {
-    "lastAuditedAt": "2026-11-11T01:32:52.116Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.468Z",
     "discountRate": "19%",
     "originalPriceVnd": 456000,
     "appliedServiceFeePercent": 30,
@@ -9234,7 +9234,7 @@
     "category": "Mặt nạ giấy",
     "updatedAt": "2026-11-02T08:44:45Z",
     "originalPrice": 15000,
-    "lastAuditedAt": "2026-11-11T01:32:52.116Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.468Z",
     "originPrice": 15000,
     "brand": "웰라쥬",
     "hasOptions": false,
@@ -9287,7 +9287,7 @@
   },
   {
     "status": "available",
-    "lastAuditedAt": "2026-11-11T01:32:52.117Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.468Z",
     "originalPrice": 67000,
     "updatedAt": "2026-11-02T08:44:45Z",
     "brandKr": "",
@@ -9481,7 +9481,7 @@
       }
     ],
     "origin": "Store Olive Young Korea",
-    "lastAuditedAt": "2026-11-11T01:32:52.117Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.468Z",
     "appliedServiceFeePercent": 30,
     "storageProvider": "firebase_storage",
     "title": "잠시만 기다려 주세요 - 올리브영",
@@ -9559,7 +9559,7 @@
     "isAvailable": true,
     "appliedKrwRate": 19.5,
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.117Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.468Z",
     "foreignPrice": 20300,
     "originalPrice": 23000,
     "brandKr": "",
@@ -9592,7 +9592,7 @@
     "isAvailable": true,
     "updatedAt": "2026-11-02T08:44:45Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000213569&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=55",
-    "lastAuditedAt": "2026-11-11T01:32:52.117Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.468Z",
     "optionsCount": 26,
     "photoReviews": [],
     "storageProvider": "firebase_storage",
@@ -9914,7 +9914,7 @@
   },
   {
     "rank": null,
-    "lastAuditedAt": "2026-11-11T01:32:52.117Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.469Z",
     "status": "available",
     "originalPrice": 33000,
     "is_enriched": true,
@@ -10052,7 +10052,7 @@
     "updatedAt": "2026-11-02T08:44:45Z",
     "category": "Essence/serum/ampoule",
     "originalPrice": 52500,
-    "lastAuditedAt": "2026-11-11T01:32:52.117Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.469Z",
     "originPrice": 52500,
     "hasOptions": false,
     "brand": "Klairs",
@@ -10123,7 +10123,7 @@
     "originalPrice": 18500,
     "categoryPath": "Chăm sóc chống nắng > Kem chống nắng > Kem chống nắng",
     "firestoreId": "A000000217330",
-    "lastAuditedAt": "2026-11-11T01:32:52.118Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.469Z",
     "optionsCount": 6,
     "photoReviews": [],
     "discountRate": "46%",
@@ -10261,7 +10261,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/686051eba45d468c925960446664ca6f1794212321386.png"
     ],
     "optionsCount": 0,
-    "lastAuditedAt": "2026-11-11T01:32:52.118Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.469Z",
     "originalPriceVnd": 51000,
     "appliedServiceFeePercent": 30,
     "is_sold_out": false,
@@ -10378,7 +10378,7 @@
     "brandKr": "",
     "categoryPath": "Phụ kiện làm đẹp > Dụng cụ tóc/cơ thể > Lược chải tóc",
     "is_sold_out": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.118Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.469Z",
     "id": "A000000217703",
     "updatedAt": "2026-11-02T08:44:45Z",
     "hasOptions": true,
@@ -10449,7 +10449,7 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000217765&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=91",
     "salePrice": 22000,
     "id": "A000000217765",
-    "lastAuditedAt": "2026-11-11T01:32:52.118Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.469Z",
     "brand": "Illiyoon",
     "appliedKrwRate": 19.5,
     "name": "Sữa dưỡng thể cấp ẩm phục hồi da Illiyoon Ceramide Ato Lotion 600ml",
@@ -10625,7 +10625,7 @@
     "subCategory": "body",
     "isPublished": true,
     "category": "Lotion dưỡng thể",
-    "lastAuditedAt": "2026-11-11T01:32:52.118Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.469Z",
     "nameKr": "[11월 올영픽 / 화해1등] 비욘드 바디타민 로션(착색미백/탄력/보습) 3종 기획 택1 | 올리브영",
     "salePrice": 18900,
     "originalPriceVnd": 659000,
@@ -10740,7 +10740,7 @@
     "origin": "Store Olive Young Korea",
     "isAvailable": true,
     "discountRate": "0%",
-    "lastAuditedAt": "2026-11-11T01:32:52.118Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.469Z",
     "images": [
       "/products/A000000218845.jpg"
     ],
@@ -10765,7 +10765,7 @@
     "originalPriceWon": 34800
   },
   {
-    "lastAuditedAt": "2026-11-11T01:32:52.118Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.469Z",
     "discountRate": "37%",
     "originalPriceVnd": 1369000,
     "optionsCount": 0,
@@ -10845,7 +10845,7 @@
     "firestoreId": "A000000221807",
     "originalPrice": 35000,
     "origin": "Korea",
-    "lastAuditedAt": "2026-11-11T01:32:52.119Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.470Z",
     "appliedKrwRate": 19.5,
     "productImage": "/products/A000000221807.jpg",
     "updatedAt": "2026-11-02T08:44:45Z",
@@ -10954,7 +10954,7 @@
     "name": "Tinh Chất Cấp Ẩm Phục Hồi Da Anua PDRN Hyaluronic Acid Capsule 100 30ml + Lõi Refill 30ml",
     "isSoldOut": false,
     "goodsNo": "A000000222698",
-    "lastAuditedAt": "2026-11-11T01:32:52.119Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.470Z",
     "isDiscontinued": false,
     "hasOptions": false,
     "options": [
@@ -11018,7 +11018,7 @@
     "updatedAt": "2026-11-02T08:44:45Z",
     "subCategory": "",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.119Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.470Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000222837&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=95",
     "origin": "Store Olive Young Korea",
     "originalPrice": 32000,
@@ -11089,7 +11089,7 @@
   },
   {
     "originPrice": 27900,
-    "lastAuditedAt": "2026-11-11T01:32:52.119Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.470Z",
     "options": [
       {
         "id": 1,
@@ -11305,7 +11305,7 @@
     ],
     "origin": "Store Olive Young Korea",
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:52.119Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.470Z",
     "storageProvider": "firebase_storage",
     "originalPriceVnd": 507000,
     "images": [
@@ -11324,7 +11324,7 @@
     "firestoreId": "A000000224229",
     "category": "Mascara",
     "updatedAt": "2026-11-02T08:44:45Z",
-    "lastAuditedAt": "2026-11-11T01:32:52.119Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.470Z",
     "origin": "Korea",
     "originalPrice": 28000,
     "images": [
@@ -11421,7 +11421,7 @@
     "appliedKrwRate": 19.5,
     "brand": "Celladix",
     "status": "out_of_stock",
-    "lastAuditedAt": "2026-11-11T01:32:52.119Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.470Z",
     "options": [
       {
         "id": 1,
@@ -11485,7 +11485,7 @@
     "brand": "Derma Factory",
     "appliedKrwRate": 19.5,
     "status": "available",
-    "lastAuditedAt": "2026-11-11T01:32:52.119Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.470Z",
     "options": [
       {
         "id": 1,
@@ -11677,7 +11677,7 @@
     "discountRate": "7%",
     "photoReviews": [],
     "optionsCount": 9,
-    "lastAuditedAt": "2026-11-11T01:32:52.119Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.470Z",
     "appliedKrwRate": 19.5,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000225250&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=42",
     "goodsNo": "A000000225250",
@@ -11710,7 +11710,7 @@
     "isChallenge": true,
     "brand": "ilso",
     "isSoldOut": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.120Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.471Z",
     "id": "A000000225736",
     "hasOptions": false,
     "categoryPath": "Tẩy trang/làm sạch > Peeling & tẩy da chết > Tẩy da chết mặt",
@@ -11740,7 +11740,7 @@
       "newForeignPrice": 17960
     },
     "isPublished": true,
-    "subCategory": "cleanser",
+    "subCategory": "exfoliator",
     "firestoreId": "A000000225736",
     "description": "Dung dịch ủ mụn thông minh giúp làm mềm và đẩy mụn đầu đen, bã nhờn tích tụ sâu trong lỗ chân lông trồi lên bề mặt một cách êm dịu. Công thức chứa chiết xuất thực vật lành tính giúp làm sạch sâu mà không gây giãn nở lỗ chân lông hay đau rát da. Thích hợp cho da dầu, da hỗn hợp có nhiều sợi bã nhờn vùng mũi và cằm.",
     "goodsNo": "A000000225736",
@@ -11839,7 +11839,7 @@
     "category": "Essence/serum/ampoule",
     "originPrice": 64000,
     "originalPrice": 64000,
-    "lastAuditedAt": "2026-11-11T01:32:52.120Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.471Z",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "rank": null,
     "name_vi": "Tinh chất mờ thâm nám dưỡng sáng da Anua TXA Niacin Dark Spot Serum Set 30ml x 2 chai",
@@ -11854,7 +11854,7 @@
     "firestoreId": "A000000227133",
     "category": "Xịt tạo kiểu/xịt giữ nếp",
     "updatedAt": "2026-11-02T08:44:45Z",
-    "lastAuditedAt": "2026-11-11T01:32:52.120Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.471Z",
     "origin": "Korea",
     "originalPrice": 18900,
     "images": [
@@ -12308,7 +12308,7 @@
     "salePrice": 5000,
     "id": "A000000230581",
     "isDiscontinued": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.120Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.471Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230581&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=76",
     "discountRate": "12%",
     "priceVnd": 127000,
@@ -12380,7 +12380,7 @@
     "originalPrice": 22000,
     "description": "Mỹ phẩm Numbuzin 100 từ thương hiệu Numbuzin là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "storageProvider": "firebase_storage",
-    "lastAuditedAt": "2026-11-11T01:32:52.120Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.471Z",
     "options": [
       {
         "id": 1,
@@ -12439,7 +12439,7 @@
     "categoryPath": "Mặt nạ > Mặt nạ giấy > Mặt nạ giấy",
     "brand": "Anua",
     "appliedKrwRate": 19.5,
-    "lastAuditedAt": "2026-11-11T01:32:52.120Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.471Z",
     "status": "available",
     "options": [
       {
@@ -12630,7 +12630,7 @@
     "firestoreId": "A000000231884",
     "originalPrice": 30000,
     "createdAt": "2026-10-03T15:43:58.000Z",
-    "lastAuditedAt": "2026-11-11T01:32:52.120Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.471Z",
     "options": [
       {
         "id": 1,
@@ -12700,7 +12700,7 @@
     "salePrice": 30900,
     "brand": "Wellage",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000231885&tab=review",
-    "lastAuditedAt": "2026-11-11T01:32:52.121Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.471Z",
     "optionsCount": 0,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/9cc0473ae928448f93b2e488aa41c2631794214196171.png",
@@ -12767,7 +12767,7 @@
     "subCategory": "",
     "isPublished": true,
     "usage": "Dùng vào buổi tối trên da khô tay và khô mặt, lấy lượng bằng đồng xu nhỏ massage nhẹ toàn mặt 1-2 phút để hòa tan kem chống nắng và makeup, sau đó nhũ hóa với nước ấm rồi rửa lại bằng sữa rửa mặt. Với da dầu mụn, nên massage kỹ vùng mũi và cằm nhưng tránh chà xát mạnh; không dùng khi da đang có vết thương hở.",
-    "lastAuditedAt": "2026-11-11T01:32:52.121Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.472Z",
     "isAvailable": true,
     "price": 15600,
     "originalPrice": 20000,
@@ -12878,7 +12878,7 @@
     "isDiscontinued": false,
     "salePrice": 19600,
     "brand": "셀라딕스",
-    "lastAuditedAt": "2026-11-11T01:32:52.121Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.472Z",
     "photoReviews": [],
     "optionsCount": 0,
     "id": "A000000232067",
@@ -12968,7 +12968,7 @@
     "foreignPrice": 34400,
     "thumbnailUrl": "/products/A000000232081.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.121Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.472Z",
     "usage": "Dùng sáng/tối ở bước làm sạch thứ hai (double cleanse) sau dầu tẩy trang: cho 1-2 pump ra lòng bàn tay, tạo bọt rồi massage 60 giây và rửa sạch với nước ấm. Với da khô/nhạy cảm, chỉ nên dùng 1 lần/ngày vào buổi tối và giữ lại lớp ẩm bằng toner ngay sau khi rửa để tránh khô căng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/165e7902febf40358de8f6cf4b2574961794217322698.png",
@@ -12988,7 +12988,7 @@
     "photoReviews": [],
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232098&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=79",
     "is_sold_out": true,
-    "lastAuditedAt": "2026-11-11T01:32:52.121Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.472Z",
     "brandKr": "",
     "discountRate": "29%",
     "title": "잠시만 기다려 주세요 - 올리브영",
@@ -13495,7 +13495,7 @@
     "brandKr": "",
     "priceVnd": 302000,
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:52.121Z",
+    "lastAuditedAt": "2026-11-11T01:35:22.472Z",
     "createdAt": "2026-10-22T20:00:00.000Z",
     "images": [
       "/products/A000000232666.jpg"
@@ -13570,7 +13570,7 @@
     "salePrice": 21900,
     "storageProvider": "firebase_storage",
     "category": "Kem chống nắng",
-    "lastAuditedAt": "2026-11-11T01:32:55.712Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.946Z",
     "price": 21900,
     "categoryPath": "Chăm sóc chống nắng > Kem chống nắng > Kem chống nắng",
     "nameKr": "[양현종 PICK] 메디힐 마데카소사이드 수분 선세럼 흔적 리페어 50+50g 기획 | 올리브영",
@@ -13668,7 +13668,7 @@
       "hasChanged": true
     },
     "productImage": "/products/A000000233171.jpg",
-    "lastAuditedAt": "2026-11-11T01:32:55.713Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.946Z",
     "isAvailable": true,
     "category": "Cushion",
     "updatedAt": "2026-11-02T08:44:45Z",
@@ -13821,7 +13821,7 @@
     "photoReviews": [],
     "optionsCount": 4,
     "updatedAt": "2026-11-02T08:44:45Z",
-    "lastAuditedAt": "2026-11-11T01:32:55.713Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.947Z",
     "brandKr": "",
     "brand": "Mediheal",
     "hasOptions": true,
@@ -13923,7 +13923,7 @@
     "hasOptions": true,
     "name": "Son Bóng Dưỡng Căng Mộng Alternative Stereo Lip Potion Caramel Glaze (8ml)",
     "isDiscontinued": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.713Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.947Z",
     "priceVnd": 400000,
     "appliedKrwRate": 19.5,
     "categoryPath": "Trang điểm > Trang điểm môi > Son tint",
@@ -14320,7 +14320,7 @@
       "oldPriceVnd": 493000
     },
     "hasOptions": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.713Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.947Z",
     "productImage": "/products/A000000234422.jpg",
     "isAvailable": true,
     "updatedAt": "2026-11-02T08:44:45Z",
@@ -14406,7 +14406,7 @@
     "foreignPrice": 21200,
     "goodsNo": "A000000235050",
     "productImage": "/products/A000000235050.jpg",
-    "lastAuditedAt": "2026-11-11T01:32:55.713Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.947Z",
     "priceVnd": 537000,
     "options": [
       {
@@ -14592,7 +14592,7 @@
     "isAvailable": false,
     "is_sold_out": false,
     "category": "Chăm sóc môi",
-    "lastAuditedAt": "2026-11-11T01:32:55.714Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.947Z",
     "originalPrice": 15000,
     "firestoreId": "A000000235485",
     "appliedKrwRate": 19.5,
@@ -14661,7 +14661,7 @@
     "foreignPrice": 43900,
     "thumbnailUrl": "/products/A000000236420.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.714Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.948Z",
     "usage": "Dùng buổi tối ở bước serum sau toner: lấy 1-2 pump, thoa đều và vỗ nhẹ, bắt đầu 2 lần/tuần rồi tăng dần khi da đã quen với retinol. Bắt buộc dùng kem chống nắng vào sáng hôm sau, tránh dùng chung với AHA/BHA/vitamin C trong cùng buổi và không dùng khi da đang bong tróc hoặc có vết thương hở.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/347755113cdc47bca8882197c5e646f71794123625590.png",
@@ -14708,7 +14708,7 @@
     "hasOptions": false,
     "isDiscontinued": false,
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.714Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.948Z",
     "appliedKrwRate": 19.5,
     "originPrice": 64000,
     "originalPriceVnd": 1622000,
@@ -14755,7 +14755,7 @@
     "status": "available",
     "name": "Sữa Dưỡng Thể Cấp Ẩm Mềm Mịn Da Johnson's Hello Kitty Beauty Lotion 500ml Tùy Chọn Mùi Hương",
     "is_enriched": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.714Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.948Z",
     "salePrice": 14500,
     "brandKr": "",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000237485&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=12",
@@ -14870,7 +14870,7 @@
   },
   {
     "appliedKrwRate": 19.5,
-    "lastAuditedAt": "2026-11-11T01:32:55.714Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.948Z",
     "is_sold_out": false,
     "status": "available",
     "isSoldOut": false,
@@ -15041,7 +15041,7 @@
     "hasOptions": true,
     "isDiscontinued": false,
     "name": "Mặt Nạ Thạch Dưỡng Da Chuyên Sâu Mediheal Hyper Gel Mask (Set 8+1 Miếng - 4 Phân Loại)",
-    "lastAuditedAt": "2026-11-11T01:32:55.714Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.948Z",
     "priceVnd": 613000,
     "appliedKrwRate": 19.5,
     "categoryPath": "Mặt nạ > Mặt nạ giấy > Mặt nạ gel",
@@ -15182,7 +15182,7 @@
     "isDiscontinued": false,
     "isChallenge": true,
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.714Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.948Z",
     "originPrice": 26800,
     "appliedKrwRate": 19.5,
     "originalPriceVnd": 679000,
@@ -15246,7 +15246,7 @@
     "images": [
       "/products/A000000241210.jpg"
     ],
-    "lastAuditedAt": "2026-11-11T01:32:55.714Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.949Z",
     "name": "Son Tint Bóng Căng Mộng Lâu Trôi Rom&nd The Juicy Lasting Tint (Bản Hợp Tác Sanrio Kuromi / Hangyodon)",
     "storageProvider": "firebase_storage",
     "productImage": "/products/A000000241210.jpg",
@@ -15869,7 +15869,7 @@
     "priceVnd": 640000,
     "brandKr": "",
     "originPrice": 33000,
-    "lastAuditedAt": "2026-11-11T01:32:55.715Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.949Z",
     "updatedAt": "2026-11-02T08:44:45Z",
     "price": 25250,
     "name": "Nước Hoa Dạng Sáp Lưu Hương Tiện Lợi Tislo Solid Perfume 4g Tùy Chọn 1 Trong 4 Mùi",
@@ -15962,7 +15962,7 @@
     "discountRate": "15%",
     "category": "Chì kẻ môi",
     "description": "Son bút chì dạng sáp mềm mịn hỗ trợ định hình dáng môi và tạo hiệu ứng loang viền môi đầy đặn tự nhiên. Chất son lì êm ái, bám màu tốt mà không gây vón cục hay làm lộ rãnh môi khô rát. Phù hợp cho mọi phong cách trang điểm, có thể dùng làm viền môi hoặc làm lớp son lót nền môi.",
-    "lastAuditedAt": "2026-11-11T01:32:55.715Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.949Z",
     "usage": "1. Vặn lõi son lên một đoạn ngắn khoảng 1-2mm.\n2. Nhẹ nhàng kẻ viền môi theo dáng mong muốn hoặc tạo hiệu ứng môi tràn viền.\n3. Dùng đầu ngón tay hoặc cọ tán nhẹ vào lòng môi để màu sắc chuyển tiếp tự nhiên.",
     "optionsCount": 10,
     "photoReviews": [],
@@ -16155,7 +16155,7 @@
     "goodsNo": "A000000244834",
     "storageProvider": "firebase_storage",
     "productImage": "/products/A000000244834.jpg",
-    "lastAuditedAt": "2026-11-11T01:32:55.715Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.949Z",
     "priceVnd": 232000,
     "options": [
       {
@@ -16622,7 +16622,7 @@
     "isAvailable": true,
     "originalPrice": 41000,
     "nameKr": "지노마스터 질유산균 30캡슐 기획 (+보라지유 5일분) (1개월분) | 올리브영",
-    "lastAuditedAt": "2026-11-11T01:32:55.715Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.950Z",
     "priceVnd": 682000,
     "goodsNo": "A000000244929",
     "isSoldOut": false,
@@ -16702,7 +16702,7 @@
     "priceVnd": 843000,
     "originPrice": 47500,
     "goodsNo": "A000000245091",
-    "lastAuditedAt": "2026-11-11T01:32:55.715Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.950Z",
     "storageProvider": "firebase_storage",
     "usage": "Dùng vào buổi sáng và tối ở bước serum/ampoule sau toner: lấy 2-3 giọt, vỗ nhẹ toàn mặt rồi ấn nhẹ vùng da khô ráp để ampoule thấm sâu. Vì là ampoule cấp ẩm chuyên sâu, nên khóa ẩm ngay bằng kem dưỡng và tránh dùng chung lúc với acid mạnh nếu da đang nhạy cảm.",
     "rank": 95,
@@ -16741,7 +16741,7 @@
     "updatedAt": "2026-11-02T08:44:45Z",
     "productImage": "/products/A000000245794.jpg",
     "goodsNo": "A000000245794",
-    "lastAuditedAt": "2026-11-11T01:32:55.716Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.950Z",
     "foreignPrice": 29640,
     "hasOptions": false,
     "category": "Skin/toner",
@@ -17087,7 +17087,7 @@
     "firestoreId": "A000000246286",
     "hasOptions": true,
     "id": "A000000246286",
-    "lastAuditedAt": "2026-11-11T01:32:55.716Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.950Z",
     "price": 5500,
     "priceVnd": 139000,
     "originalPriceVnd": 152000,
@@ -17132,7 +17132,7 @@
     "is_sold_out": true,
     "isDiscontinued": false,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000246445&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=60",
-    "lastAuditedAt": "2026-11-11T01:32:55.716Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.950Z",
     "storageProvider": "firebase_storage",
     "isAvailable": false,
     "appliedKrwRate": 19.5,
@@ -17591,7 +17591,7 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000247099&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=81",
     "brand": "Wakemake",
     "priceVnd": 203000,
-    "lastAuditedAt": "2026-11-11T01:32:55.716Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.950Z",
     "isSoldOut": true,
     "brandKr": "",
     "originPrice": 16000,
@@ -18402,7 +18402,7 @@
     },
     "storageProvider": "firebase_storage",
     "is_enriched": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.716Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.951Z",
     "options": [
       {
         "id": 1,
@@ -18494,7 +18494,7 @@
     "is_sold_out": false,
     "isSoldOut": false,
     "brand": "Isntree",
-    "lastAuditedAt": "2026-11-11T01:32:55.717Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.951Z",
     "categoryPath": "Chăm sóc da > Kem dưỡng > Kem dưỡng",
     "goodsNo": "A000000247776",
     "isAvailable": true,
@@ -18554,7 +18554,7 @@
     "createdAt": "2026-10-03T15:43:58.000Z",
     "originalPrice": 11500,
     "originPrice": 11500,
-    "lastAuditedAt": "2026-11-11T01:32:55.717Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.951Z",
     "salePrice": 5750,
     "nameKr": "[호빵맨 콜라보] 리스테린 캐비티케어/토탈케어플러스 750ml (+100ml*2+세균맨/짤랑이/호빵맨 랜덤가글컵) | 올리브영",
     "options": [
@@ -18777,7 +18777,7 @@
     "usage": "1. Tắm sạch cơ thể và lau khô bằng khăn mềm.\n2. Lấy một lượng kem dưỡng thể vừa đủ ra lòng bàn tay.\n3. Thoa đều khắp cơ thể và massage nhẹ nhàng ở các vùng da khô như khuỷu tay, đầu gối.",
     "storageProvider": "firebase_storage",
     "goodsNo": "A000000249154",
-    "lastAuditedAt": "2026-11-11T01:32:55.717Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.951Z",
     "rank": 21,
     "name_vi": "Kem Dưỡng Thể Hương Nước Hoa Tiella Perfume Nourishing Body Cream 200ml (Tặng Kèm Kem Dưỡng Thể)",
     "name_kr": "[NEW 말차향 출시] 티엘라 퍼퓸 너리싱 바디크림 200ml 4종 단품/기획 (+바디크림 증정) | 올리브영",
@@ -18805,7 +18805,7 @@
     "origin": "Store Olive Young Korea",
     "name": "Tinh Chất Tăng Cường Thu Nhỏ Lỗ Chân Lông Tăng Đàn Hồi Celimax The Vita A Retinal Shot Tightening Booster (Set 15ml + Tặng Kèm 3ml)",
     "subCategory": "",
-    "lastAuditedAt": "2026-11-11T01:32:55.717Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.951Z",
     "isPublished": true,
     "categoryPath": "Chăm sóc da > Essence/serum/ampoule > Essence/serum/ampoule",
     "originalPriceVnd": 761000,
@@ -18902,7 +18902,7 @@
     },
     "isChallenge": true,
     "storageProvider": "firebase_storage",
-    "lastAuditedAt": "2026-11-11T01:32:55.717Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.951Z",
     "options": [
       {
         "id": "opt_A000000250243_1",
@@ -19098,7 +19098,7 @@
     "originalPriceVnd": 482000,
     "brandKr": "",
     "name": "Dầu Dưỡng Môi Chiết Xuất Táo Căng Mọng Nooni Apple Lip Oil 12 Màu Tùy Chọn",
-    "lastAuditedAt": "2026-11-11T01:32:55.717Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.952Z",
     "salePrice": 15900,
     "storageProvider": "firebase_storage",
     "is_sold_out": false,
@@ -19286,7 +19286,7 @@
     "subCategory": "",
     "name": "Kem Dưỡng Phục Hồi Tái Tạo Da La Roche-Posay Cicaplast Baume B5+ & Multi-Repair Cream (Set 100ml + Tặng Tinh Chất Cica 50%)",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.717Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.952Z",
     "originalPriceVnd": 2358000,
     "category": "Kem dưỡng",
     "goodsNo": "A000000252917",
@@ -19498,7 +19498,7 @@
     "originPrice": 38000,
     "status": "available",
     "id": "A000000253122",
-    "lastAuditedAt": "2026-11-11T01:32:55.718Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.952Z",
     "rank": null,
     "name_vi": "Phấn nước che phủ cao bền màu Fwee All Day Cover Black Cushion Hộp Kèm Lõi Thay Thế",
     "name_kr": "[10월 올영픽] 퓌 올데이 커버 블랙 쿠션 리필 기획 | 올리브영",
@@ -19553,7 +19553,7 @@
     ],
     "originalPriceVnd": 887000,
     "brandKr": "",
-    "lastAuditedAt": "2026-11-11T01:32:55.718Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.952Z",
     "appliedKrwRate": 19.5,
     "isChallenge": true,
     "origin": "Store Olive Young Korea",
@@ -19610,7 +19610,7 @@
         "is_sold_out": true
       }
     ],
-    "lastAuditedAt": "2026-11-11T01:32:55.718Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.952Z",
     "originalPrice": 37000,
     "isPublished": true,
     "subCategory": "",
@@ -19721,7 +19721,7 @@
     },
     "storageProvider": "firebase_storage",
     "subCategory": "mask",
-    "lastAuditedAt": "2026-11-11T01:32:55.718Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.952Z",
     "updatedAt": "2026-11-02T08:44:45Z",
     "isPublished": true,
     "appliedKrwRate": 19.5,
@@ -19771,7 +19771,7 @@
     "firestoreId": "A000000254006",
     "originalPrice": 34000,
     "name": "Kem Dưỡng Tăng Sinh Collagen JUVE LOOK PDLLA Protecting Cream 50ml",
-    "lastAuditedAt": "2026-11-11T01:32:55.718Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.952Z",
     "originalPriceVnd": 862000,
     "isDiscontinued": false,
     "brand": "쥬베룩",
@@ -19844,7 +19844,7 @@
     "images": [
       "/products/A000000254661.jpg"
     ],
-    "lastAuditedAt": "2026-11-11T01:32:55.718Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.952Z",
     "id": "A000000254661",
     "origin": "Store Olive Young Korea",
     "goodsNo": "A000000254661",
@@ -19890,7 +19890,7 @@
       "/products/A000000254978.jpg"
     ],
     "origin": "Korea",
-    "lastAuditedAt": "2026-11-11T01:32:55.718Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.953Z",
     "originalPrice": 35000,
     "brand": "어반디케이",
     "isSoldOut": false,
@@ -20027,7 +20027,7 @@
     "foreignPrice": 39700,
     "thumbnailUrl": "/products/A000000255227.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.719Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.953Z",
     "usage": "Dùng ngay sau bước rửa mặt, sáng và tối, như một lớp toner essence đầu tiên. Lấy lượng cỡ đồng xu, vỗ nhẹ hoặc dùng vòi xịt mist tặng kèm xịt đều toàn mặt rồi vỗ cho thấm. Với da khô, có thể layer 2-3 lần (7-skin method) để tăng cấp ẩm trước khi dùng serum.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -20192,7 +20192,7 @@
         "is_sold_out": false
       }
     ],
-    "lastAuditedAt": "2026-11-11T01:32:55.719Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.953Z",
     "is_enriched": true,
     "hasOptions": true,
     "priceVnd": 418000,
@@ -20288,7 +20288,7 @@
     "category": "Pad",
     "discountRate": "38%",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000255585&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=35",
-    "lastAuditedAt": "2026-11-11T01:32:55.719Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.953Z",
     "id": "A000000255585",
     "originPrice": 42000,
     "storageProvider": "firebase_storage",
@@ -20309,7 +20309,7 @@
   {
     "originPrice": 33000,
     "origin": "Store Olive Young Korea",
-    "lastAuditedAt": "2026-11-11T01:32:55.719Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.953Z",
     "brand": "Medicube",
     "salePrice": 25900,
     "images": [
@@ -20415,7 +20415,7 @@
     "firestoreId": "A000000255752",
     "appliedKrwRate": 19.5,
     "description": "Tinh Chất Serum Dr.G EX 70ml +30ml+ 10ml (70ml) từ thương hiệu Dr.G là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "lastAuditedAt": "2026-11-11T01:32:55.719Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.953Z",
     "appliedServiceFeePercent": 30,
     "isSoldOut": false,
     "subCategory": "",
@@ -20528,7 +20528,7 @@
     "description": "Tinh Chất Serum 1+1 30ml+30ml (30ml) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu Ceramide tinh khiết củng cố cấu trúc lipid sinh học. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp hàn gắn hàng rào bảo vệ da suy yếu, ngăn ngừa mất nước và bảo vệ da tối ưu trước tác nhân môi trường, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "name": "Tinh Chất Phục Hồi Hàng Rào Dưỡng Ẩm Layer Lab Niosome Panthenol 5% Serum (Set Đôi 1+1 30ml + 30ml)",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000255852&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=61",
-    "lastAuditedAt": "2026-11-11T01:32:55.719Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.953Z",
     "isDiscontinued": false,
     "originalPriceVnd": 1318000,
     "brand": "Layer Lab",
@@ -20620,7 +20620,7 @@
     "isChallenge": true,
     "appliedKrwRate": 19.5,
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "lastAuditedAt": "2026-11-11T01:32:55.719Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.953Z",
     "is_sold_out": false,
     "brand": "numbuzin",
     "priceChangeAlert": {
@@ -20702,7 +20702,7 @@
     "salePrice": 19600,
     "is_sold_out": false,
     "price": 19600,
-    "lastAuditedAt": "2026-11-11T01:32:55.719Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.954Z",
     "isChallenge": true,
     "nameKr": "[SNS대란템] 퓨리븐 퍼플 가루 보색치약 40g | 올리브영",
     "appliedKrwRate": 19.5,
@@ -20776,7 +20776,7 @@
     "foreignPrice": 27000,
     "thumbnailUrl": "/products/A000000258291.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.720Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.954Z",
     "usage": "Dùng ngay sau toner, sáng và tối, ở bước serum cấp ẩm. Lấy 3-5 giọt, vỗ nhẹ toàn mặt khi da còn ẩm để khóa nước; có thể layer 2 lần cho da khô. Vì là HA phân tử thấp, nên thoa lên da ẩm và khóa bằng kem dưỡng ngay sau đó để tránh hút ẩm ngược trong môi trường khô lạnh.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/770c2a703a2b4fcbb2d1063cb7961ab81794213442347.png",
@@ -20807,7 +20807,7 @@
       "/products/A000000258297.jpg"
     ],
     "createdAt": "2026-10-22T20:00:00.000Z",
-    "lastAuditedAt": "2026-11-11T01:32:55.720Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.954Z",
     "origin": "Korea",
     "options": [
       {
@@ -20890,7 +20890,7 @@
     "categoryPath": "Chăm sóc da > Kem dưỡng > Kem dưỡng",
     "nameKr": "[11월 올영픽] 에스트라 아토베리어365 하이드로 수딩크림 80ml 기획 (+수딩크림 10ml+클렌징폼 30g) | 올리브영",
     "price": 25400,
-    "lastAuditedAt": "2026-11-11T01:32:55.720Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.954Z",
     "isSoldOut": false,
     "appliedKrwRate": 19.5,
     "description": "Kem Dưỡng Ẩm Phục Hồi Aestura 365 80ml 10ml+ (80ml) từ thương hiệu Aestura là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
@@ -20968,7 +20968,7 @@
     "foreignPrice": 12900,
     "photoReviews": [],
     "optionsCount": 3,
-    "lastAuditedAt": "2026-11-11T01:32:55.720Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.954Z",
     "images": [
       "/products/A000000258848.jpg"
     ],
@@ -21053,7 +21053,7 @@
     "salePrice": 10200,
     "originalPriceVnd": 352000,
     "brandKr": "",
-    "lastAuditedAt": "2026-11-11T01:32:55.720Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.954Z",
     "price": 10200,
     "isSoldOut": false,
     "isDiscontinued": false,
@@ -21207,7 +21207,7 @@
     ],
     "is_sold_out": false,
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.720Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.954Z",
     "origin": "Store Olive Young Korea",
     "categoryPath": "Chăm sóc da > Thiết bị chăm sóc da > Thiết bị chăm sóc da",
     "rank": null,
@@ -21233,7 +21233,7 @@
     "storageProvider": "firebase_storage",
     "brand": "Podle",
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:55.720Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.955Z",
     "isDiscontinued": false,
     "firestoreId": "A000000259386",
     "productImage": "/products/A000000259386.jpg",
@@ -21355,7 +21355,7 @@
         "is_sold_out": false
       }
     ],
-    "lastAuditedAt": "2026-11-11T01:32:55.720Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.955Z",
     "price": 33900,
     "originalPrice": 59800,
     "status": "available",
@@ -21386,7 +21386,7 @@
     "priceVnd": 606000,
     "originPrice": 33000,
     "hasOptions": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.721Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.955Z",
     "appliedServiceFeePercent": 30,
     "priceChangeAlert": {
       "oldPriceVnd": 493000,
@@ -21492,7 +21492,7 @@
         "is_sold_out": false
       }
     ],
-    "lastAuditedAt": "2026-11-11T01:32:55.721Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.955Z",
     "hasOptions": false,
     "priceVnd": 710000,
     "name": "Sữa Rửa Mặt Tẩy Trang Phục Hồi Làm Dịu Jumiso D-Panthenol Barrier Soothing Cleansing Milk 300ml Tặng Kèm Túi Nạp 100ml Và Sữa Rửa Mặt 20g",
@@ -21541,7 +21541,7 @@
     "originalPrice": 39000,
     "status": "available",
     "isDiscontinued": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.721Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.955Z",
     "brandKr": "",
     "is_sold_out": false,
     "appliedServiceFeePercent": 30,
@@ -21613,7 +21613,7 @@
     "brandKr": "",
     "originalPriceVnd": 558000,
     "isDiscontinued": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.721Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.955Z",
     "updatedAt": "2026-11-02T08:44:45Z",
     "originPrice": 22000,
     "images": [
@@ -21744,7 +21744,7 @@
     "name": "Sữa Rửa Mặt Đậu Xanh Lành Tính pH Cân Bằng Beplain Mung Bean pH-Balanced Cleansing Foam (Set Đôi 160ml + 160ml)",
     "usage": "Dùng sáng và tối sau bước tẩy trang. Lấy lượng bằng hạt đậu, tạo bọt trong lòng bàn tay với chút nước rồi massage nhẹ 30 giây, tránh chà xát mạnh vùng má. Rửa lại bằng nước ấm; da khô nên dùng 1 lần/ngày vào buổi tối và chỉ rửa nước vào buổi sáng.",
     "is_sold_out": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.721Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.955Z",
     "salePrice": 23900,
     "originalPrice": 26000,
     "appliedServiceFeePercent": 30,
@@ -21784,7 +21784,7 @@
     "status": "available",
     "updatedAt": "2026-11-02T08:44:45Z",
     "is_sold_out": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.721Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.955Z",
     "rank": 39,
     "storageProvider": "firebase_storage",
     "brandKr": "",
@@ -21911,7 +21911,7 @@
     "discountRate": "42%",
     "nameKr": "[속건조필수템] 웰라쥬 리얼 히알루로닉 블루 100 앰플 100ml 기획 (+60ml 리필+수딩크림 30ml) | 올리브영",
     "category": "Essence/serum/ampoule",
-    "lastAuditedAt": "2026-11-11T01:32:55.721Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.956Z",
     "storageProvider": "firebase_storage",
     "appliedServiceFeePercent": 30,
     "photoReviews": [],
@@ -21951,7 +21951,7 @@
     "originalPrice": 38000,
     "isDiscontinued": false,
     "goodsNo": "A000000261442",
-    "lastAuditedAt": "2026-11-11T01:32:55.721Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.956Z",
     "productImage": "/products/A000000261442.jpg",
     "status": "available",
     "foreignPrice": 38000,
@@ -22061,7 +22061,7 @@
       "hasChanged": true,
       "changePercent": 57.9
     },
-    "lastAuditedAt": "2026-11-11T01:32:55.721Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.956Z",
     "productImage": "/products/A000000261463.jpg",
     "updatedAt": "2026-11-02T08:44:45Z",
     "originalPrice": 30000,
@@ -22088,7 +22088,7 @@
     "status": "available",
     "discountRate": "1%",
     "storageProvider": "firebase_storage",
-    "subCategory": "cleanser",
+    "subCategory": "makeup_remover",
     "isPublished": true,
     "firestoreId": "A000000261788",
     "description": "Sáp tẩy trang đột phá với kết cấu kem chuyển thành dầu mịn màng giúp hòa tan dễ dàng lớp trang điểm, cặn bẩn và sợi bã nhờn sâu trong lỗ chân lông. Công thức dịu nhẹ không gây cay mắt hay căng rát, duy trì độ ẩm tự nhiên cho làn da luôn mềm mại sau khi làm sạch. Phù hợp cho mọi loại da, đặc biệt là da dầu, da có nhiều sợi bã nhờn và mụn đầu đen.",
@@ -22104,7 +22104,7 @@
     "is_sold_out": false,
     "foreignPrice": 17500,
     "originalPriceVnd": 451000,
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.956Z",
     "is_enriched": true,
     "hasOptions": true,
     "name": "Sáp Tẩy Trang Làm Sạch Bã Nhờn Dạng Kem Chuyển Dầu Fully Melting Cream To Oil 50ml",
@@ -22217,7 +22217,7 @@
     "name": "Mặt Nạ Thạch Căng Bóng Cấp Ẩm Chuyên Sâu Biodance Real Deep Mask (Set 7+1 Miếng - Tặng Phụ Kiện Sanrio)",
     "status": "available",
     "category": "Mặt nạ gel",
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.956Z",
     "brand": "Biodance",
     "appliedKrwRate": 19.5,
     "rank": null,
@@ -22234,7 +22234,7 @@
     "priceVnd": 753000,
     "originalPrice": 33000,
     "id": "A000000261864",
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.956Z",
     "description": "Kem Dưỡng Ẩm Phục Hồi Aestura 365 80ml 25ml+ (80ml) từ thương hiệu Aestura là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp Hyaluronic Acid đa tầng kết hợp Ceramide khóa ẩm. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cấp nước sâu tận hạ bì, giải cứu làn da thiếu ẩm khô ráp và duy trì bề mặt da căng mọng suốt cả ngày, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "brandKr": "",
     "firestoreId": "A000000261864",
@@ -22338,7 +22338,7 @@
     "description": "Mediheal 100+100 7 từ thương hiệu Mediheal là giải pháp chăm sóc da chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào da giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu da rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho mọi loại da kể cả làn da nhạy cảm nhất.",
     "appliedKrwRate": 19.5,
     "isAvailable": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.956Z",
     "categoryPath": "cosmetics",
     "originalPrice": 39900,
     "origin": "Store Olive Young Korea",
@@ -22396,7 +22396,7 @@
     "isDiscontinued": true,
     "goodsNo": "A000000262436",
     "productImage": "/products/A000000262436.jpg",
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.956Z",
     "status": "out_of_stock",
     "foreignPrice": 24900,
     "hasOptions": false,
@@ -22458,7 +22458,7 @@
     "priceVnd": 581000,
     "id": "A000000262530",
     "originalPrice": 34000,
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.956Z",
     "brandKr": "",
     "description": "Sữa Rửa Mặt Làm Sạch Sâu 200ml 200ml+ 21ml+ (200ml) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu chiết xuất dầu thực vật lên men kết hợp các acid béo dịu nhẹ. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp cuốn trôi sạch sâu bụi mịn và cặn trang điểm cứng đầu mà không gây khô căng, duy trì độ pH lý tưởng cho da, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "foreignPrice": 22900,
@@ -22530,7 +22530,7 @@
     "storageProvider": "firebase_storage",
     "brand": "Anua",
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.957Z",
     "isDiscontinued": false,
     "firestoreId": "A000000262602",
     "productImage": "/products/A000000262602.jpg",
@@ -22634,7 +22634,7 @@
     "originalPrice": 64000,
     "brand": "Anua",
     "goodsNo": "A000000262603",
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.957Z",
     "nameKr": "[산리오캐릭터즈 콜라보] 아누아 피디알엔 히알루론산 100 수분 크림 60ml 더블기획(+시나모롤 집게핀) | 올리브영",
     "id": "A000000262603",
     "rank": null,
@@ -22675,10 +22675,10 @@
     "isPublished": true,
     "brand": "Anua",
     "goodsNo": "A000000262620",
-    "subCategory": "cleanser",
+    "subCategory": "makeup_remover",
     "salePrice": 19900,
     "firestoreId": "A000000262620",
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.957Z",
     "storageProvider": "firebase_storage",
     "description": "Dầu tẩy trang chứa chiết xuất lá diếp cá giúp làm sạch sâu bụi bẩn, lớp trang điểm và bã nhờn ẩn sâu trong lỗ chân lông. Kết cấu lỏng nhẹ, dễ dàng nhũ hóa mà không gây bí tắc hay hình thành mụn ẩn. Phù hợp cho mọi loại da, đặc biệt là da dầu mụn và da nhạy cảm dễ kích ứng.",
     "originalPriceVnd": 758000,
@@ -22797,7 +22797,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/8ce8ea2d869b4b5cbf02807793fb2cf41791011977756.png"
     ],
     "optionsCount": 5,
-    "lastAuditedAt": "2026-11-11T01:32:55.722Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.957Z",
     "discountRate": "45%",
     "priceChangeAlert": {
       "newPriceVnd": 256000,
@@ -22865,7 +22865,7 @@
       "newPriceVnd": 543000,
       "diffWon": -21500
     },
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.957Z",
     "id": "A000000262817",
     "updatedAt": "2026-11-02T08:44:45Z",
     "originalPrice": 48000,
@@ -22944,7 +22944,7 @@
     "photoReviews": [],
     "optionsCount": 0,
     "appliedKrwRate": 19.5,
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.957Z",
     "storageProvider": "firebase_storage",
     "discountRate": "32%",
     "appliedServiceFeePercent": 30,
@@ -23002,7 +23002,7 @@
     "salePrice": 19900,
     "description": "Mỹ phẩm 120mL +15mL+ (120mL) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "firestoreId": "A000000262944",
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.957Z",
     "productImage": "/products/A000000262944.jpg",
     "originalPrice": 28000,
     "title": "잠시만 기다려 주세요 - 올리브영",
@@ -23085,7 +23085,7 @@
     "optionsCount": 0,
     "photoReviews": [],
     "appliedKrwRate": 19.5,
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.957Z",
     "storageProvider": "firebase_storage",
     "discountRate": "31%",
     "appliedServiceFeePercent": 30,
@@ -23209,7 +23209,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/01/c972764dd51649d095b777a2fe4183de1793459087284.png"
     ],
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.957Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263009&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=25",
     "originalPrice": 41000,
     "isAvailable": true,
@@ -23224,7 +23224,7 @@
     "originalPriceWon": 41000
   },
   {
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.958Z",
     "price": 44900,
     "discountRate": "34%",
     "originPrice": 69000,
@@ -23343,7 +23343,7 @@
       }
     ],
     "brand": "La Roche-Posay",
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.958Z",
     "is_sold_out": false,
     "goodsNo": "A000000263017",
     "storageProvider": "firebase_storage",
@@ -23399,7 +23399,7 @@
     "discountRate": "0%",
     "originalPrice": 52000,
     "price": 37900,
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.958Z",
     "hasOptions": false,
     "salePrice": 37900,
     "usage": "Dùng ở bước kem dưỡng cuối cùng buổi tối (và sáng nếu cần), lấy lượng cỡ hạt đậu chấm điểm 5 vùng rồi massage nhẹ theo chiều từ trong ra ngoài đến khi thấm. Có thể dùng như kem phục hồi sau treatment hoặc lớp khóa ẩm sau serum, tránh vùng mắt và dùng kem chống nắng ban ngày.",
@@ -23430,7 +23430,7 @@
     "brandKr": "",
     "isPublished": true,
     "subCategory": "",
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.958Z",
     "discountRate": "17%",
     "priceChangeAlert": {
       "newForeignPrice": 15000,
@@ -23554,7 +23554,7 @@
     "price": 83200,
     "categoryPath": "Chăm sóc da > Kem dưỡng > Kem dưỡng",
     "isChallenge": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.723Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.958Z",
     "usage": "Dùng ở bước kem dưỡng cuối chu trình buổi tối, lấy lượng cỡ hạt đậu massage nhẹ toàn mặt hoặc bôi dày vùng khô/đỏ, có thể dùng cho cả body. Tránh bôi lớp dày trên da dầu mụn và luôn dùng kem chống nắng vào ban ngày để bảo vệ hàng rào da.",
     "salePrice": 83200,
     "rank": null,
@@ -23605,7 +23605,7 @@
     "images": [
       "/products/A000000263035.jpg"
     ],
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.958Z",
     "isSoldOut": true,
     "appliedServiceFeePercent": 30,
     "brand": "Abib",
@@ -23701,7 +23701,7 @@
     "goodsNo": "A000000263036",
     "name": "Tinh Chất Serum Làm Dịu Phục Hồi Da Abib Heartleaf TECA Capsule Serum Calming Drop (Set Đôi 50ml Tặng Miếng Dán Mụn & Hộp Sanrio)",
     "hasOptions": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.958Z",
     "isPublished": true,
     "originalPrice": 48000,
     "subCategory": "",
@@ -23750,7 +23750,7 @@
     "status": "available",
     "priceVnd": 1077000,
     "price": 42480,
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.958Z",
     "hasOptions": false,
     "updatedAt": "2026-11-02T08:44:45Z",
     "name": "Nước Hoa Hồng Cấp Ẩm Chuyên Sâu Bioderma Hydrabio Toner (Set Đôi 500ml + 500ml)",
@@ -23840,7 +23840,7 @@
       }
     ],
     "brand": "Zeroid",
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.958Z",
     "goodsNo": "A000000263068",
     "is_sold_out": true,
     "storageProvider": "firebase_storage",
@@ -23906,7 +23906,7 @@
     "originalPrice": 45500,
     "category": "cosmetics",
     "isChallenge": true,
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.959Z",
     "storageProvider": "firebase_storage",
     "updatedAt": "2026-11-02T08:44:45Z",
     "originPrice": 45500,
@@ -23968,7 +23968,7 @@
     "brandKr": "",
     "isSoldOut": true,
     "originalPriceVnd": 1090000,
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.959Z",
     "origin": "Store Olive Young Korea",
     "images": [
       "/products/A000000263072.jpg"
@@ -24027,7 +24027,7 @@
     "appliedServiceFeePercent": 30,
     "category": "Essence/serum/ampoule",
     "nameKr": "[설윤 PICK] 바이오더마 하이드라비오 에센스 로션 200ml 기획 (+펌프용기+파우치) | 올리브영",
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.959Z",
     "hasOptions": false,
     "firestoreId": "A000000263073",
     "description": "Nước hoa hồng dạng tinh chất lỏng nhẹ ứng dụng phức hợp sinh học Aquagenium giúp kích thích da tự tái tạo và tuần hoàn độ ẩm từ sâu bên trong. Sản phẩm hỗ trợ thanh lọc nhẹ nhàng tế bào chết bề mặt nhờ Salicylic Acid, trả lại làn da mịn màng, căng mọng và rạng rỡ. Đặc biệt lý tưởng cho làn da thiếu nước, da khô ráp, xỉn màu và nhạy cảm.",
@@ -24211,7 +24211,7 @@
     "goodsNo": "A000000263099",
     "name": "Son kem lì làm mờ rãnh môi Peripera Mood Blur Tint 9 Màu Tặng Kèm Son Mini",
     "discountRate": "0%",
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.959Z",
     "price": 13000,
     "optionsCount": 12,
     "photoReviews": [
@@ -24312,7 +24312,7 @@
     "optionsCount": 0,
     "photoReviews": [],
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.959Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263428&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=24",
     "isAvailable": true,
     "originalPrice": 29000,
@@ -24376,7 +24376,7 @@
       }
     ],
     "nameKr": "[1+1/1등썬] 라운드랩 자작나무 수분 선크림 50ml 1+1 기획 (+수분 선세럼 8ml) | 올리브영",
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.959Z",
     "goodsNo": "A000000263510",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263510&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=44",
     "isDiscontinued": false,
@@ -24414,7 +24414,7 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263530&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=85",
     "isAvailable": false,
     "brand": "Physiogel",
-    "lastAuditedAt": "2026-11-11T01:32:55.724Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.959Z",
     "foreignPrice": 26900,
     "status": "out_of_stock",
     "brandKr": "",
@@ -24473,7 +24473,7 @@
     "originalPriceWon": 47500
   },
   {
-    "lastAuditedAt": "2026-11-11T01:32:55.725Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.959Z",
     "price": 54000,
     "discountRate": "30%",
     "originPrice": 78000,
@@ -24550,7 +24550,7 @@
   },
   {
     "rank": null,
-    "lastAuditedAt": "2026-11-11T01:32:55.725Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.960Z",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "productImage": "/products/A000000263555.jpg",
     "originalPriceVnd": 558000,
@@ -24682,7 +24682,7 @@
       }
     ],
     "nameKr": "[블프특가/산리오 콜라보] 구달 청귤 비타C 잡티케어 세럼 알파 50+50ml 리필 기획(+폼폼푸린 마그넷 피규어) | 올리브영",
-    "lastAuditedAt": "2026-11-11T01:32:55.725Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.960Z",
     "goodsNo": "A000000263562",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263562&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=4",
     "isDiscontinued": false,
@@ -24781,7 +24781,7 @@
       }
     ],
     "categoryPath": "Chăm sóc tóc > Thiết bị tóc/cọ > Máy uốn tóc",
-    "lastAuditedAt": "2026-11-11T01:32:55.725Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.960Z",
     "photoReviews": [],
     "optionsCount": 5,
     "originalPrice": 85000,
@@ -24888,7 +24888,7 @@
       }
     ],
     "is_sold_out": false,
-    "lastAuditedAt": "2026-11-11T01:32:55.725Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.960Z",
     "rank": null,
     "name_vi": "Tinh Chất Cấp Nước Sâu Phục Hồi Da Torriden Dive-In Low Molecular Hyaluronic Acid Serum (Set 50ml + Refill 50ml Tặng Kèm Búp Bê Cinnamoroll)",
     "name_kr": "토리든 다이브인 저분자 히알루론산 세럼 50ml 리필 기획 (+50ml 리필+자석인형) (시나모롤) | 올리브영",
@@ -24934,7 +24934,7 @@
         "is_sold_out": false
       }
     ],
-    "lastAuditedAt": "2026-11-11T01:32:55.725Z",
+    "lastAuditedAt": "2026-11-11T01:35:25.960Z",
     "hasOptions": false,
     "nameKr": "토리든 다이브인 저분자 히알루론산 수딩 크림 100ml 더블 기획 (+메쉬백) (시나모롤) | 올리브영",
     "priceVnd": 707000,
@@ -25043,7 +25043,7 @@
     "appliedServiceFeePercent": 30,
     "brand": "OBgE",
     "createdAt": "2026-10-18T10:50:36.000Z",
-    "lastAuditedAt": "2026-11-11T01:32:58.753Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.006Z",
     "isAvailable": true,
     "nameKr": "[1등 덱스향수/신규2종 향출시] NEW 오브제 퍼퓸 4종 50ml | 올리브영",
     "appliedKrwRate": 19.5,
@@ -25108,7 +25108,7 @@
     "storageProvider": "firebase_storage",
     "originPrice": 43000,
     "originalPrice": 43000,
-    "lastAuditedAt": "2026-11-11T01:32:58.753Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.006Z",
     "priceChangeAlert": {
       "oldPriceVnd": 481000,
       "newForeignPrice": 22300,
@@ -25216,7 +25216,7 @@
     "category": "Thiết bị chăm sóc da",
     "is_sold_out": false,
     "originalPriceVnd": 5045000,
-    "lastAuditedAt": "2026-11-11T01:32:58.753Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.006Z",
     "name": "Máy Chăm Sóc Da Nâng Cơ Sóng Siêu Âm Quadthera Teens Waterdrop Ultrasound Home Care Device",
     "isAvailable": true,
     "originalPrice": 199000,
@@ -25356,7 +25356,7 @@
     "appliedServiceFeePercent": 30,
     "productImage": "/products/A000000263862.jpg",
     "brand": "OFRA",
-    "lastAuditedAt": "2026-11-11T01:32:58.753Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.006Z",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "isAvailable": false,
     "nameKr": "[패키지리뉴얼/톤별맞춤] 오프라 슬림 미니 하이라이터 (+기획/본품) | 올리브영",
@@ -25435,7 +25435,7 @@
     "hasOptions": false,
     "originPrice": 36000,
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:58.753Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.006Z",
     "isChallenge": true,
     "originalPriceVnd": 913000,
     "originalPrice": 36000,
@@ -25464,7 +25464,7 @@
     "price": 24600,
     "origin": "Store Olive Young Korea",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000264301&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=23",
-    "lastAuditedAt": "2026-11-11T01:32:58.753Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.006Z",
     "rank": 5,
     "title": "잠시만 기다려 주세요 - 올리브영",
     "categoryPath": "Chăm sóc da > Essence/serum/ampoule > Essence/serum/ampoule",
@@ -25573,7 +25573,7 @@
     "storageProvider": "firebase_storage",
     "originPrice": 47800,
     "originalPrice": 47800,
-    "lastAuditedAt": "2026-11-11T01:32:58.753Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.007Z",
     "priceChangeAlert": {
       "newForeignPrice": 28410,
       "oldForeignPrice": 29900,
@@ -25662,7 +25662,7 @@
     "title": "잠시만 기다려 주세요 - 올리브영",
     "appliedKrwRate": 19.5,
     "id": "A000000264460",
-    "lastAuditedAt": "2026-11-11T01:32:58.754Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.007Z",
     "subCategory": "",
     "isPublished": true,
     "categoryPath": "Chăm sóc da > Lotion > Lotion",
@@ -25728,7 +25728,7 @@
     "name": "Mascara Đầu Kim Loại Định Hình Mi Chống Trôi Tekira Anti Gravity Metal Cara 3g (2 Màu Tùy Chọn)",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000264464&tab=review",
     "priceVnd": 477000,
-    "lastAuditedAt": "2026-11-11T01:32:58.754Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.007Z",
     "options": [
       {
         "id": "opt_A000000264464_1",
@@ -25800,7 +25800,7 @@
     "subCategory": "skincare",
     "category": "Xịt khoáng",
     "id": "A000000265060",
-    "lastAuditedAt": "2026-11-11T01:32:58.754Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.007Z",
     "appliedKrwRate": 19.5,
     "name": "Xịt khoáng bọt căng bóng cấp ẩm Menokin 30s Quick Glow Hydra Lift 98ml Tặng Kèm 30ml",
     "nameKr": "[박보영PICK/화잘먹미스트] 메노킨 30초 퀵 글로우 버블 캡슐 미스트 하이드라 리프트 98ml 기획 (+30ml) | 올리브영",
@@ -25846,7 +25846,7 @@
     "originalPrice": 44900,
     "price": 34900,
     "productImage": "/products/A000000265485.jpg",
-    "lastAuditedAt": "2026-11-11T01:32:58.754Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.007Z",
     "goodsNo": "A000000265485",
     "foreignPrice": 34900,
     "optionsCount": 2,
@@ -25962,7 +25962,7 @@
     "title": "잠시만 기다려 주세요 - 올리브영",
     "appliedKrwRate": 19.5,
     "id": "A000000265712",
-    "lastAuditedAt": "2026-11-11T01:32:58.754Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.007Z",
     "subCategory": "sunscreen",
     "price": 24900,
     "categoryPath": "Chăm sóc chống nắng > Kem chống nắng > Kem chống nắng",
@@ -26030,7 +26030,7 @@
     "subCategory": "skincare",
     "salePrice": 71610,
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.754Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.007Z",
     "status": "available",
     "firestoreId": "A000000265724",
     "isAvailable": true,
@@ -26089,7 +26089,7 @@
     "hasOptions": true,
     "brandKr": "",
     "isDiscontinued": false,
-    "lastAuditedAt": "2026-11-11T01:32:58.754Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.008Z",
     "isChallenge": true,
     "category": "Sinh tố protein",
     "origin": "Store Olive Young Korea",
@@ -26169,7 +26169,7 @@
     "isPublished": true,
     "subCategory": "lip",
     "originalPriceVnd": 532000,
-    "lastAuditedAt": "2026-11-11T01:32:58.755Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.008Z",
     "price": 21000,
     "originalPrice": 21000,
     "isSoldOut": false,
@@ -26365,7 +26365,7 @@
     "createdAt": "2026-10-03T15:43:58.000Z",
     "foreignPrice": 26730,
     "is_sold_out": false,
-    "lastAuditedAt": "2026-11-11T01:32:58.755Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.008Z",
     "salePrice": 26730,
     "rank": null,
     "name_vi": "Kem dưỡng làm dịu giảm đỏ cân bằng pH Zeroid Pimprove Red Control Cream pH4 80ml Tặng Kèm Kem 10ml Và Tinh Chất 7ml",
@@ -26397,7 +26397,7 @@
     "originalPriceVnd": 1014000,
     "isAvailable": true,
     "nameKr": "[조앤프렌즈] 바닐라코 클린잇제로 오리지널 클렌징밤 100ml 더블기획 (+3ml*4ea+복조리 파우치) | 올리브영",
-    "lastAuditedAt": "2026-11-11T01:32:58.755Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.008Z",
     "is_sold_out": false,
     "categoryPath": "Tẩy trang/làm sạch > Dầu/sáp > Sáp tẩy trang",
     "brand": "Banila Co",
@@ -26481,7 +26481,7 @@
     "brandKr": "",
     "is_enriched": true,
     "isDiscontinued": false,
-    "lastAuditedAt": "2026-11-11T01:32:58.755Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.008Z",
     "category": "Sáp tẩy trang",
     "foreignPrice": 15600,
     "origin": "Store Olive Young Korea",
@@ -26572,7 +26572,7 @@
     "appliedServiceFeePercent": 30,
     "discountRate": "0%",
     "brandKr": "",
-    "lastAuditedAt": "2026-11-11T01:32:58.755Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.008Z",
     "goodsNo": "A000000267643",
     "id": "A000000267643",
     "appliedKrwRate": 19.5,
@@ -26664,7 +26664,7 @@
     "images": [
       "/products/A000000267744.jpg"
     ],
-    "lastAuditedAt": "2026-11-11T01:32:58.755Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.008Z",
     "categoryPath": "Chăm sóc da > Kem dưỡng > Kem dưỡng",
     "category": "Kem dưỡng",
     "optionsCount": 0,
@@ -26734,7 +26734,7 @@
     "subCategory": "skincare",
     "category": "Pad",
     "id": "A000000267747",
-    "lastAuditedAt": "2026-11-11T01:32:58.755Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.009Z",
     "appliedKrwRate": 19.5,
     "name": "Bông Dưỡng Da Toner Pad Cấp Ẩm Phục Hồi Mediheal Derma Toner Pad Seoul Edition 100 Miếng Tặng 100 Miếng Kèm Túi",
     "nameKr": "[11월 올영픽/1위 패드] 메디힐 더마 토너패드 100+100매 7종 골라담기 | 올리브영",
@@ -26922,7 +26922,7 @@
     "price": 23900,
     "firestoreId": "A000000267748",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.756Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.009Z",
     "goodsNo": "A000000267748",
     "subCategory": "skincare",
     "images": [
@@ -27012,7 +27012,7 @@
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000267909&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=28",
     "is_enriched": true,
     "priceVnd": 297000,
-    "lastAuditedAt": "2026-11-11T01:32:58.756Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.009Z",
     "options": [
       {
         "id": "opt_A000000267909_1",
@@ -27116,7 +27116,7 @@
     "appliedKrwRate": 19.5,
     "firestoreId": "A000000267922",
     "discountRate": "0%",
-    "lastAuditedAt": "2026-11-11T01:32:58.756Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.009Z",
     "productImage": "/products/A000000267922.jpg",
     "isAvailable": true,
     "origin": "Korea",
@@ -27190,7 +27190,7 @@
       }
     ],
     "status": "available",
-    "lastAuditedAt": "2026-11-11T01:32:58.756Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.009Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000267969&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=46",
     "originalPrice": 42000,
     "salePrice": 33600,
@@ -27261,7 +27261,7 @@
         "is_sold_out": false
       }
     ],
-    "lastAuditedAt": "2026-11-11T01:32:58.756Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.009Z",
     "categoryPath": "Chăm sóc da > Kem dưỡng > Kem dưỡng",
     "updatedAt": "2026-11-02T08:44:45Z",
     "status": "available",
@@ -27318,7 +27318,7 @@
     },
     "firestoreId": "A000000268161",
     "isDiscontinued": false,
-    "lastAuditedAt": "2026-11-11T01:32:58.756Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.009Z",
     "options": [
       {
         "id": 1,
@@ -27419,7 +27419,7 @@
     ],
     "updatedAt": "2026-11-02T08:44:45Z",
     "appliedKrwRate": 19.5,
-    "lastAuditedAt": "2026-11-11T01:32:58.756Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.010Z",
     "originPrice": 37000,
     "isSoldOut": false,
     "status": "available",
@@ -27470,7 +27470,7 @@
     "nameKr": "클리오 킬 커버 파운웨어 쿠션 단품/기획(+리필+블러쉬밤+퍼프 증정)(풍년다방에디션) | 올리브영",
     "brandKr": "",
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.757Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.010Z",
     "originalPrice": 36000,
     "subCategory": "skincare",
     "isPublished": true,
@@ -27759,7 +27759,7 @@
     "images": [
       "/products/A000000268419.jpg"
     ],
-    "lastAuditedAt": "2026-11-11T01:32:58.757Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.010Z",
     "categoryPath": "Mặt nạ > Miếng dán > Miếng dán",
     "id": "A000000268419",
     "salePrice": 29900,
@@ -27832,7 +27832,7 @@
     "isAvailable": true,
     "appliedKrwRate": 19.5,
     "createdAt": "2026-10-03T15:43:58.000Z",
-    "lastAuditedAt": "2026-11-11T01:32:58.757Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.010Z",
     "id": "A000000268585",
     "subCategory": "skincare",
     "isPublished": true,
@@ -27903,7 +27903,7 @@
       "/products/A000000268586.jpg"
     ],
     "is_enriched": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.757Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.010Z",
     "categoryPath": "Trang điểm > Trang điểm nền > Cushion",
     "id": "A000000268586",
     "salePrice": 46500,
@@ -27963,7 +27963,7 @@
       "diffWon": -4090,
       "lastChecked": "2026-11-01T07:59:17.000Z"
     },
-    "lastAuditedAt": "2026-11-11T01:32:58.757Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.010Z",
     "priceVnd": 933000,
     "brand": "AGE20's",
     "category": "Kem nền",
@@ -28115,7 +28115,7 @@
     "appliedServiceFeePercent": 30,
     "brand": "퐁당",
     "originalPrice": 28000,
-    "lastAuditedAt": "2026-11-11T01:32:58.757Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.010Z",
     "isAvailable": true,
     "updatedAt": "2026-11-02T08:44:45Z",
     "categoryPath": "Chăm sóc da > Essence/serum/ampoule > Essence/serum/ampoule",
@@ -28177,7 +28177,7 @@
     "appliedKrwRate": 19.5,
     "firestoreId": "A000000268711",
     "discountRate": "25%",
-    "lastAuditedAt": "2026-11-11T01:32:58.757Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.011Z",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000268711&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=84",
     "productImage": "/products/A000000268711.jpg",
     "isAvailable": true,
@@ -28221,7 +28221,7 @@
     "originalPriceVnd": 758000,
     "isAvailable": false,
     "nameKr": "올리브영 온라인몰",
-    "lastAuditedAt": "2026-11-11T01:32:58.757Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.011Z",
     "is_sold_out": true,
     "categoryPath": "cosmetics",
     "priceVnd": 428000,
@@ -28296,7 +28296,7 @@
     "isDiscontinued": false,
     "is_enriched": true,
     "isSoldOut": false,
-    "lastAuditedAt": "2026-11-11T01:32:58.758Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.011Z",
     "goodsNo": "A000000268891",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000268891&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=36",
     "originalPrice": 9600,
@@ -28537,7 +28537,7 @@
     "brand": "Arocell",
     "discountRate": "24%",
     "updatedAt": "2026-11-02T08:44:45Z",
-    "lastAuditedAt": "2026-11-11T01:32:58.758Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.011Z",
     "appliedKrwRate": 19.5,
     "brandKr": "",
     "photoReviews": [],
@@ -28574,7 +28574,7 @@
   {
     "isAvailable": true,
     "category": "Mặt nạ giấy",
-    "lastAuditedAt": "2026-11-11T01:32:58.758Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.011Z",
     "createdAt": "2026-10-03T15:43:58.000Z",
     "name": "Mặt nạ nâng cơ căng bóng trẻ hóa da Arocell Super Collagen Mask 2.0 ECM Active 5 Miếng",
     "price": 20710,
@@ -28655,7 +28655,7 @@
     "nameKr": "[NEW 유시몰X헌터] 한정콜라보굿즈 유시몰 베스트셀러 기획 9종 | 올리브영",
     "originalPrice": 46600,
     "is_sold_out": false,
-    "lastAuditedAt": "2026-11-11T01:32:58.758Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.011Z",
     "priceVnd": 378000,
     "status": "available",
     "isPublished": true,
@@ -28848,7 +28848,7 @@
     "categoryPath": "Sản phẩm chăm sóc răng miệng > Kem đánh răng > Chăm sóc làm trắng",
     "priceVnd": 986000,
     "hasOptions": false,
-    "lastAuditedAt": "2026-11-11T01:32:58.758Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.011Z",
     "is_sold_out": false,
     "discountRate": "12%",
     "originalPriceVnd": 1128000,
@@ -28992,7 +28992,7 @@
     "id": "A000001001705",
     "subCategory": "skincare",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.758Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.012Z",
     "isAvailable": true,
     "category": "Phấn phủ/phanh nén",
     "brandKr": "",
@@ -29030,7 +29030,7 @@
     "hasOptions": true,
     "nameKr": "[신제품/장벽크림버블팩] 메노킨 30초 퀵 크림 버블 마스크 (모이스처/리프트) | 올리브영",
     "price": 24200,
-    "lastAuditedAt": "2026-11-11T01:32:58.758Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.012Z",
     "createdAt": "2026-10-22T20:00:00.000Z",
     "firestoreId": "A000001001706",
     "options": [
@@ -29300,7 +29300,7 @@
       }
     ],
     "nameKr": "[NEW] 퓌 치크칩 기획/단품 (크림/베이크드/파우더) | 올리브영",
-    "lastAuditedAt": "2026-11-11T01:32:58.759Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.012Z",
     "is_sold_out": true,
     "categoryPath": "Trang điểm > Trang điểm nền > Phấn má hồng",
     "priceVnd": 393000,
@@ -29418,7 +29418,7 @@
     ],
     "isDiscontinued": false,
     "origin": "Korea",
-    "lastAuditedAt": "2026-11-11T01:32:58.759Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.012Z",
     "categoryPath": "Trang điểm > Trang điểm nền > Cushion",
     "originalPriceVnd": 735000,
     "priceVnd": 657000,
@@ -29536,7 +29536,7 @@
     "status": "available",
     "category": "BB/CC",
     "price": 20880,
-    "lastAuditedAt": "2026-11-11T01:32:58.759Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.012Z",
     "isSoldOut": false,
     "firestoreId": "A000001001865",
     "goodsNo": "A000001001865",
@@ -29604,7 +29604,7 @@
     "foreignPrice": 39000,
     "thumbnailUrl": "/products/A000001002019.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.759Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.012Z",
     "usage": "Dùng buổi tối ở bước kem dưỡng cuối cùng, hoặc buổi sáng khi da kích ứng; thoa lớp mỏng lên vùng khô/đỏ, có thể dùng lượng dày hơn như mask qua đêm. Tránh thoa lên vết thương hở và nên dùng kem chống nắng vào ban ngày khi da đang phục hồi.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/79f3dbcaaafb46f681d9a5212fbc48d21794220031587.png",
@@ -29672,7 +29672,7 @@
     "foreignPrice": 25600,
     "thumbnailUrl": "/products/A000001002234.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.759Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.013Z",
     "usage": "Dùng ngay sau bước rửa mặt, sáng và tối; thấm một lượng vừa đủ ra bông tẩy trang hoặc lòng bàn tay rồi vỗ nhẹ toàn mặt và cổ. Với da khô/nhạy cảm nên vỗ nhẹ thay vì lau mạnh, và layer thêm kem dưỡng ngay sau đó để khóa ẩm.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/339815dac740455fbe781cfe6d92a7f91794211795125.png",
@@ -29737,7 +29737,7 @@
     "foreignPrice": 44800,
     "thumbnailUrl": "/products/A000001002235.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.759Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.013Z",
     "usage": "Dùng buổi tối ở bước dưỡng cuối, tập trung vùng da khô nứt, đỏ hoặc đang bong tróc; thoa lớp mỏng rồi massage nhẹ, có thể dùng lớp dày hơn như mask qua đêm. Sáp khá đặc nên chỉ dùng lượng nhỏ, tránh vùng da dầu mụn và không thay thế kem chống nắng ban ngày.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -29794,7 +29794,7 @@
     "foreignPrice": 24900,
     "thumbnailUrl": "/products/A000001002236.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.759Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.013Z",
     "usage": "Dùng ở bước làm sạch đầu tiên, sáng và tối; thấm đủ ướt bông tẩy trang, đặt lên vùng mắt/môi vài giây rồi lau nhẹ từ trong ra ngoài, không chà xát. Với da nhạy cảm nên rửa lại bằng sữa rửa mặt dịu nhẹ sau đó để tránh cặn.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/9e0db41646754c4585723bb454fb86071794220259191.png",
@@ -29859,7 +29859,7 @@
     "foreignPrice": 14900,
     "thumbnailUrl": "/products/A000001002281.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.759Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.013Z",
     "usage": "Dùng sáng và tối ở bước làm sạch; làm ướt mặt, tạo bọt với một lượng nhỏ rồi massage vòng tròn 30-60 giây và rửa sạch. Chọn Green cho da dầu/mụn, Rosehip cho da khô/xỉn màu, Blue Hyssop cho da nhạy cảm; tránh dùng quá nhiều để không làm khô da.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -29916,7 +29916,7 @@
     "foreignPrice": 43400,
     "thumbnailUrl": "/products/A000001002385.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.759Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.013Z",
     "usage": "Dùng sáng và tối sau toner/essence; lấy lượng bằng đồng xu, vỗ nhẹ hoặc massage đều toàn mặt và cổ cho đến khi thấm. Với da rất khô có thể layer 2 lớp mỏng, và nên dùng kem dưỡng sau đó để khóa ẩm, đặc biệt vào mùa lạnh.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/b4a92dc87fe8442cbe74e3e31e3518f91794219609190.png",
@@ -29981,7 +29981,7 @@
     "foreignPrice": 43400,
     "thumbnailUrl": "/products/A000001002386.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.013Z",
     "usage": "Dùng sáng và tối ở bước kem dưỡng sau lotion/serum; lấy lượng bằng hạt đậu, chấm 5 điểm rồi massage nhẹ từ trong ra ngoài. Với da nhạy cảm nên vỗ nhẹ thay vì chà xát, và có thể dùng ampoule ceramide trước để tăng hiệu quả phục hồi hàng rào da.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/a7f7532923cf44a3aee6bd9b869a1c751794218348119.png",
@@ -30049,7 +30049,7 @@
     "foreignPrice": 23100,
     "thumbnailUrl": "/products/A000001002590.jpg",
     "isPublished": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.013Z",
     "usage": "Dùng buổi tối ở bước serum/tinh chất sau toner; lấy 2-3 giọt, vỗ nhẹ toàn mặt, tránh vùng mắt và môi. Vì chứa retinal, cần dùng kem chống nắng vào ban ngày, bắt đầu 2-3 lần/tuần để da làm quen và không kết hợp với AHA/BHA mạnh cùng lúc.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -30071,7 +30071,7 @@
     "goodsNo": "B000000263418",
     "title": "잠시만 기다려 주세요 - 올리브영",
     "isChallenge": true,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.013Z",
     "price": 56900,
     "isDiscontinued": false,
     "options": [
@@ -30469,7 +30469,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000230421.jpg",
     "usage": "Dùng buổi tối ở bước làm sạch đầu tiên trên da khô; lấy lượng bằng đồng xu, massage nhẹ 30-60 giây để hòa tan makeup và bã nhờn, thêm nước để tạo bọt rồi rửa sạch. Với da dầu/mụn nên massage kỹ vùng mũi và cằm, sau đó rửa lại bằng sữa rửa mặt dịu nhẹ.",
     "photoReviews": [],
@@ -30517,7 +30517,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000190610.jpg",
     "usage": "Dùng cho tóc ẩm hoặc khô ở bước tạo kiểu cuối cùng: lắc đều, xịt cách tóc 20-25cm thành từng lớp mỏng, tập trung vào chân tóc để giữ nếp. Tránh xịt quá gần vì dễ bết; nếu tóc khô cứng, xịt một chút nước ấm rồi tạo kiểu lại.",
     "photoReviews": [],
@@ -30565,7 +30565,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000245840.jpg",
     "usage": "Uống 1 gói trước khi uống rượu 30 phút và 1 gói sau khi kết thúc buổi tiệc với 200ml nước ấm. Không dùng thay thế nước lọc; người có bệnh gan/thận nên tham khảo ý kiến bác sĩ trước khi dùng.",
     "photoReviews": [],
@@ -30613,7 +30613,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/B000000255486.jpg",
     "usage": "Uống 1 lon lạnh sau bữa ăn hoặc khi thèm đồ uống có gas, tốt nhất vào buổi chiều để hỗ trợ tiêu hóa. Lắc nhẹ trước khi uống và bảo quản ngăn mát; không uống khi bụng đói nếu dạ dày nhạy cảm.",
     "photoReviews": [],
@@ -30661,7 +30661,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000261733.jpg",
     "usage": "Đặt 1 viên vào khay/ngăn tủ quần áo, giày dép hoặc nhà vệ sinh, mỗi không gian 1 viên cho diện tích khoảng 2-3m². Thay viên mới sau 1-2 tháng hoặc khi hết mùi; tránh đặt trực tiếp lên vải sáng màu vì có thể để lại vết.",
     "photoReviews": [
@@ -30720,7 +30720,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000236767.jpg",
     "usage": "Dùng ngay sau bước rửa mặt vào sáng và tối: lấy 1 miếng, lau nhẹ theo chiều từ trong ra ngoài, tập trung vùng mũi và cằm có lỗ chân lông to. Không chà xát mạnh; đậy kín nắp để pad không bị khô, và có thể dùng mặt nhẵn để vỗ nhẹ thay vì lau nếu da nhạy cảm.",
     "photoReviews": [],
@@ -30768,7 +30768,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000238899.jpg",
     "usage": "Dùng vào bước cuối chu trình dưỡng da (sau serum/kem) hoặc bôi lớp dày lên vùng da khô nứt, môi, gót chân vào buổi tối. Lấy lượng bằng hạt đậu, làm ấm giữa hai ngón tay rồi vỗ nhẹ lên da ẩm để tránh bí; ban ngày chỉ cần lớp mỏng vì sản phẩm khá đặc.",
     "photoReviews": [
@@ -30827,7 +30827,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000001002209.jpg",
     "usage": "Thoa vào bước kem dưỡng cuối cùng của buổi sáng và tối, lấy lượng bằng hạt đậu cho toàn mặt và vỗ nhẹ theo chiều từ dưới lên. Với da rất khô hoặc đang kích ứng, có thể layer 2 lớp mỏng thay vì 1 lớp dày; dùng mặt nạ Intensive Cream 1-2 lần/tuần khi da cần phục hồi.",
     "photoReviews": [
@@ -30883,7 +30883,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000202912.jpg",
     "usage": "Thoa trực tiếp lên môi, bắt đầu từ giữa môi rồi tán đều ra viền, có thể dùng đầu ngón tay để tạo hiệu ứng gradient Hàn Quốc. Với finish bóng gel, nên thoa lớp mỏng và chờ 30 giây trước khi ăn uống; dặm lại sau khi ăn để giữ màu.",
     "photoReviews": [],
@@ -30931,7 +30931,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000001005367.jpg",
     "usage": "Sau khi đã thoa kem nền/che khuyết điểm, dùng cọ hoặc đầu ngón tay lấy một lượng nhỏ phấn mắt, gõ nhẹ để rũ phấn thừa rồi tán từ bầu mắt ra ngoài. Với gel tail, dùng cọ nhỏ vẽ sát chân mi; với piece balm, thoa lớp mỏng và tán đều để tránh vón cục.",
     "photoReviews": [
@@ -30987,7 +30987,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000001001887.jpg",
     "usage": "Dùng vào bước serum sau khi rửa mặt và toner, sáng và tối: lấy 2-3 giọt, vỗ nhẹ lên toàn mặt, tập trung vùng mũi và má có lỗ chân lông to. Có thể dùng mặt nạ serum kèm theo 1-2 lần/tuần; nếu da nhạy cảm, bắt đầu với 1 lần/ngày vào buổi tối.",
     "photoReviews": [],
@@ -31035,7 +31035,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000261742.jpg",
     "usage": "Dùng vào bước serum sau toner, sáng và tối: lấy 3-4 giọt, vỗ nhẹ lên da đang còn ẩm để tăng hấp thụ. Với da đang kích ứng hoặc sau treatment, có thể dùng 2 lần/ngày; luôn dùng kem chống nắng vào ban ngày vì madecassoside giúp phục hồi nhưng không thay thế chống nắng.",
     "photoReviews": [
@@ -31091,7 +31091,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000211936.jpg",
     "usage": "Dùng sau bước kem lót và trước phấn phủ: lấy lượng bằng hạt đậu, chấm 5 điểm lên mặt rồi tán đều bằng mút ẩm hoặc cọ, vỗ nhẹ để kem fit vào da. Với da khô, trộn thêm 1 giọt serum hoặc kem dưỡng để tránh mốc; dặm lại vùng chữ T sau 4-5 giờ nếu cần.",
     "photoReviews": [],
@@ -31139,7 +31139,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.760Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000184299.jpg",
     "usage": "Sau khi đã hoàn thiện kem nền, dùng cọ hoặc đầu ngón tay lấy một lượng nhỏ phấn má, gõ nhẹ rũ phấn thừa rồi tán từ gò má ra ngoài theo hình tròn. Với dạng stain, thoa lớp mỏng và tán nhanh vì sản phẩm set nhanh; có thể dùng làm phấn mắt hoặc son nhẹ nếu muốn tiệp màu.",
     "photoReviews": [],
@@ -31187,7 +31187,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000001003137.jpg",
     "usage": "Uống 1 viên/ngày sau bữa ăn sáng hoặc trưa với 200ml nước, không uống khi bụng đói để tránh khó chịu. Dùng đều đặn ít nhất 4-8 tuần để thấy hiệu quả; không dùng quá liều khuyến nghị và tham khảo bác sĩ nếu đang dùng thuốc khác.",
     "photoReviews": [
@@ -31243,7 +31243,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000269434.jpg",
     "usage": "Dùng vào buổi tối sau toner và serum dưỡng: lấy lượng bằng hạt đậu, thoa lên da khô, tránh vùng mắt và môi, sau đó dùng kem dưỡng khóa ẩm. Bắt đầu với 2-3 lần/tuần trong 2-4 tuần đầu để da làm quen retinol; luôn dùng kem chống nắng SPF50+ vào ban ngày và không dùng chung với AHA/BHA mạnh trong cùng buổi tối.",
     "photoReviews": [
@@ -31299,7 +31299,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000269535.jpg",
     "usage": "Dùng buổi tối ở bước serum sau toner: nhỏ 2-3 giọt, vỗ nhẹ toàn mặt, tránh vùng mắt và môi. Vì chứa retinol, tuần đầu chỉ dùng 2-3 lần/tối rồi tăng dần, bắt buộc chống nắng SPF50+ vào sáng hôm sau và không layer chung với AHA/BHA hay vitamin C nồng độ cao.",
     "photoReviews": [],
@@ -31347,7 +31347,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000178972.jpg",
     "usage": "Dùng buổi sáng sau khi đã tán đều kem nền: chấm từng nét ngắn theo hướng sợi lông mày, đầu nhỏ để viền đuôi, đầu dẹt để lấp thân mày rồi chải nhẹ bằng cọ đầu bút. Với da dầu, phủ một lớp phấn phủ mỏng lên mày để giữ nét cả ngày.",
     "photoReviews": [],
@@ -31395,7 +31395,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000231589.jpg",
     "usage": "Dùng cả sáng và tối ở bước kem dưỡng cuối cùng (trước kem chống nắng vào ban ngày): lấy lượng bằng hạt đậu lớn, chấm 5 điểm rồi massage nhẹ theo chiều từ trong ra ngoài. Phù hợp da nhạy cảm/da đang treatment, có thể layer thêm một lớp mỏng lên vùng má khô ráp.",
     "photoReviews": [],
@@ -31443,7 +31443,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000117457.jpg",
     "usage": "Thay băng 3-4 giờ/lần vào ngày kinh nhiều và 4-6 giờ/lần ngày ít, vệ sinh tay trước khi dùng và thay mới hoàn toàn sau mỗi lần đi vệ sinh. Chọn loại cánh hoặc tampon theo lưu lượng, không dùng quá 8 giờ/lần để tránh vi khuẩn phát triển.",
     "photoReviews": [],
@@ -31491,7 +31491,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.014Z",
     "productImage": "/products/A000000208395.jpg",
     "usage": "Dùng sau khi kẹp mi và trước khi gắn mi giả: chải từ gốc mi theo chuyển động zic-zac lên đến đầu mi, đợi 10 giây rồi chải lớp 2 nếu cần dày. Bản Slim dùng cho mi dưới và mi ngắn, bản Volume cho mi trên; tẩy trang bằng dầu tẩy trang chuyên dụng để tránh rụng mi.",
     "photoReviews": [],
@@ -31539,7 +31539,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000016697.jpg",
     "usage": "Xịt cách mặt 20-25cm sau bước rửa mặt hoặc bất cứ lúc nào da khô, căng do điều hòa/nắng nóng, vỗ nhẹ cho thấm rồi khóa ẩm bằng kem dưỡng. Có thể dùng để làm ẩm bông tẩy trang hoặc fix lớp trang điểm; không thay thế kem chống nắng.",
     "photoReviews": [],
@@ -31588,7 +31588,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000250346.jpg",
     "usage": "Dùng sáng và tối ở bước serum sau toner: nhấn 2-3 lần vào lòng bàn tay, vỗ nhẹ lên mặt và cổ theo chiều từ dưới lên. Với da nhạy cảm nên thử trên vùng quai hàm trước 24 giờ; ban ngày bắt buộc dùng kem chống nắng vì serum phục hồi làm da nhạy cảm với UV hơn.",
     "photoReviews": [],
@@ -31636,7 +31636,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000001002589.jpg",
     "usage": "Dùng sáng và tối sau toner: nhỏ 3-4 giọt, vỗ nhẹ toàn mặt và có thể dùng cho cả vùng cổ. Vì chứa noni giàu dưỡng chất, nên tránh layer cùng retinol trong cùng một buổi tối; bảo quản nơi thoáng mát, tránh ánh nắng trực tiếp để giữ hoạt chất.",
     "photoReviews": [],
@@ -31684,7 +31684,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000001003106.jpg",
     "usage": "Dùng như nước hoa dầu: chấm 1-2 giọt lên điểm mạch (cổ tay, sau tai, hõm cổ) và tán nhẹ, không xịt trực tiếp lên mặt hoặc quần áo sáng màu. Tránh vùng da tổn thương; với da nhạy cảm nên thử trên cổ tay 24 giờ trước khi dùng rộng.",
     "photoReviews": [],
@@ -31732,7 +31732,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000174217.jpg",
     "usage": "Đánh răng 2 lần/ngày, mỗi lần lấy lượng bằng hạt đậu, chải trong 2 phút theo động tác xoay tròn nhẹ và súc kỹ. Dùng thêm chỉ nha khoa và nước súc miệng để duy trì hơi thở thơm; tránh nuốt, không dùng cho trẻ dưới 6 tuổi.",
     "photoReviews": [],
@@ -31780,7 +31780,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000136300.jpg",
     "usage": "Dùng sau khi kẻ mày và trước mascara: kẻ sát chân mi theo từng nét ngắn, đầu mảnh cho đuôi mắt và đầu dày cho mí trên. Vì là kẻ nước chống trôi, nên đợi 5 giây khô rồi mới mở mắt hoàn toàn; tẩy trang bằng dầu tẩy trang để tránh lem và kích ứng mắt.",
     "photoReviews": [],
@@ -31828,7 +31828,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000176600.jpg",
     "usage": "Dùng sau khi tắm khi da còn ẩm nhẹ: thoa lượng vừa đủ toàn thân, massage nhẹ vùng khuỷu tay, đầu gối và gót chân khô ráp. Với da nhạy cảm nên thử trên cánh tay trước; tránh bôi lên vết thương hở và không dùng cho mặt nếu không có chỉ định.",
     "photoReviews": [
@@ -31884,7 +31884,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000175954.jpg",
     "usage": "Dùng buổi sáng sau kem lót và kem chống nắng: lấy lượng bằng đồng xu, dặm đều từ giữa mặt ra ngoài bằng bông mút ẩm, dặm thêm lớp mỏng ở vùng cần che phủ. Với bản refill, giữ nguyên khung và thay lõi; set kèm chì kem má nên dùng má trước mắt để tránh lem.",
     "photoReviews": [],
@@ -31932,7 +31932,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000260216.jpg",
     "usage": "Dùng buổi tối ở bước serum/tinh chất sau toner: nhỏ 2-3 giọt, vỗ nhẹ toàn mặt, tránh vùng mắt. Vì chứa hoạt chất phục hồi, không layer cùng retinol hay AHA/BHA trong cùng buổi tối; ban ngày bắt buộc kem chống nắng và bảo quản lọ refill kín, tránh ánh sáng.",
     "photoReviews": [],
@@ -31980,7 +31980,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000235472.jpg",
     "usage": "Dùng trên da đầu ẩm sau khi gội, ở bước serum da đầu trước kem ủ: chia tóc thành từng rẽ, nhỏ 2-3 giọt lên da đầu và massage bằng đầu ngón tay 1-2 phút, không cần xả lại. Dùng 3-4 lần/tuần; tránh để serum chảy vào mắt và không dùng chung với sản phẩm chứa cồn mạnh.",
     "photoReviews": [],
@@ -32028,7 +32028,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000212703.jpg",
     "usage": "Dùng sáng và tối ở bước đầu tiên của chu trình: lấy lượng bằng hạt đậu, thêm nước tạo bọt rồi massage nhẹ theo vòng tròn 30-60 giây và rửa sạch với nước ấm. Bản Xanh (tràm trà) hợp da dầu/mụn, bản Đỏ (rau má) cho da nhạy cảm, bản Gạo dưỡng ẩm — tránh chà xát mạnh và không dùng quá 2 lần/ngày để giữ hàng rào da.",
     "photoReviews": [],
@@ -32076,7 +32076,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000001002585.jpg",
     "usage": "Set trang điểm mắt dùng vào bước cuối chu trình makeup: kẻ mắt sát chân mi, đánh phấn mắt từ mí trong ra ngoài theo lớp mỏng rồi tán đều bằng cọ. Vì là bản kỷ niệm gồm nhiều texture, hãy dùng kem lót mắt trước để màu bám lâu, và tẩy trang chuyên dụng cho vùng mắt vào buổi tối.",
     "photoReviews": [],
@@ -32124,7 +32124,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000182630.jpg",
     "usage": "Dùng ngay sau rửa mặt, sáng và tối, thay bước toner nước: lấy 1 miếng dán đắp lên má/trán 3-5 phút rồi vuốt nhẹ phần essence còn lại khắp mặt, không cần rửa lại. Bản Số 1 (làm sạch) hợp da dầu mụn dùng buổi tối, bản Số 5 (dưỡng ẩm) hợp da khô dùng buổi sáng trước serum.",
     "photoReviews": [],
@@ -32172,7 +32172,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000001001884.jpg",
     "usage": "Dùng sáng và tối ở bước lotion/essence sau toner và trước kem dưỡng: lấy 2-3 giọt (hoặc 1 lần bơm) vỗ nhẹ lên da ẩm cho thấm đều. Với da nhạy cảm hoặc đang dùng retinol/vitamin C, thoa lớp mỏng trước để đệm ẩm và luôn dùng kem chống nắng ban ngày.",
     "photoReviews": [],
@@ -32220,7 +32220,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000001001696.jpg",
     "usage": "Dùng buổi sáng sau bước kem lót/chống nắng: chấm 5 điểm lên mặt rồi tán đều bằng mút ẩm hoặc cọ, dặm thêm lớp mỏng ở vùng cần che phủ. Kem dưỡng tặng kèm thoa trước khi trang điểm 5-10 phút để nền mịn, và tẩy trang kỹ vào cuối ngày.",
     "photoReviews": [],
@@ -32268,7 +32268,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000251265.jpg",
     "usage": "Dùng sau kem nền và phấn phủ, trước bước highlight: lấy lượng bằng hạt gạo, gõ nhẹ bông để bớt phấn rồi tán từ gò má hướng lên thái dương. Với 9 màu bản giới hạn, chọn tông lì cho da dầu và tông có nhũ nhẹ cho da khô; tránh tán quá tay làm lem nền.",
     "photoReviews": [],
@@ -32316,7 +32316,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000189181.jpg",
     "usage": "Dùng sáng và tối ngay sau rửa mặt: thấm ra bông hoặc lòng bàn tay, vỗ nhẹ toàn mặt và có thể đắp mask 5 phút ở vùng da đỏ/mụn. Bản 500ml dùng làm toner lau nhẹ cho da dầu mụn, bản 250ml vỗ trực tiếp cho da nhạy cảm; tránh vùng mắt và dùng chống nắng ban ngày.",
     "photoReviews": [],
@@ -32364,7 +32364,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000246345.jpg",
     "usage": "Dùng ở bước cuối trang điểm môi: lấy đầu cọ chấm 1-2 điểm giữa môi rồi tán đều ra viền, có thể layer thêm lớp mỏng để lên màu đậm hơn. Với finish blur, thoa kem dưỡng môi trước 5 phút nếu môi khô, và dùng chì kẻ tặng kèm để viền môi gọn trước khi tán tint.",
     "photoReviews": [],
@@ -32412,7 +32412,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000233123.jpg",
     "usage": "Dùng buổi sáng sau toner/serum và trước phấn phủ: lấy 1 lần bơm, tán đều bằng mút ẩm từ giữa mặt ra ngoài, dặm thêm ở vùng cần che phủ. Với thành phần PDRN dưỡng da, nên dùng kem lót ẩm trước để nền không bị khô; 20ml tặng kèm dùng như kem dưỡng ban đêm sau tẩy trang.",
     "photoReviews": [],
@@ -32460,7 +32460,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.761Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "productImage": "/products/A000000185046.jpg",
     "usage": "Dùng sau phấn mắt, trước mascara: kẻ một đường sát chân mi từ trong ra ngoài, đầu bút mảnh nên kẻ từng đoạn ngắn rồi nối liền. Vì là loại waterproof, hãy để khô 10-15 giây trước khi mở mắt và dùng tẩy trang dầu cho vùng mắt vào buổi tối để tránh lem.",
     "photoReviews": [],
@@ -32509,7 +32509,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.762Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "usage": "Dùng sáng và tối sau toner, trước kem dưỡng: lấy 2-3 giọt vỗ nhẹ lên da ẩm, có thể layer 2 lớp ở vùng má khô. Với texture căng mọng, thoa khi da còn ẩm để giữ nước tốt hơn và luôn khóa ẩm bằng kem dưỡng; tránh dùng chung lúc với acid mạnh nếu da nhạy cảm.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/e78d1d65bd2e4926bd5debe4dcf17e421794150962772.png",
@@ -32568,7 +32568,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.762Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.015Z",
     "usage": "Dùng buổi sáng sau toner, trước kem dưỡng: lấy 2-3 giọt vỗ nhẹ toàn mặt, bắt đầu với 2-3 lần/tuần rồi tăng dần khi da quen. Với vitamin C nồng độ cao, tránh dùng chung lúc với retinol/AHA và bắt buộc dùng kem chống nắng SPF50+ ban ngày; bảo quản nơi thoáng mát, tránh ánh sáng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/4d65dbf8ce63411d9090b60ca5d0f8051794090201121.png",
@@ -32627,7 +32627,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.762Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.016Z",
     "usage": "Dùng sáng và tối sau toner, trước kem dưỡng: lấy 2-3 giọt vỗ nhẹ lên da, tập trung vùng da khô và chảy xệ. Với PDRN và bạch dương, nên thoa sau bước essence làm ẩm và trước kem khóa ẩm; da nhạy cảm nên thử ở vùng quai hàm trước khi dùng toàn mặt.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/65a3b9b086044222a2ed85403a62b9ca1794216580521.png",
@@ -32686,7 +32686,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:32:58.762Z",
+    "lastAuditedAt": "2026-11-11T01:35:29.016Z",
     "usage": "Dùng sáng và tối sau toner: lấy 1-2 lần bơm dạng bọt, vỗ nhẹ lên da ẩm cho thấm đều, có thể dùng thay essence khi da cần cấp ẩm nhanh. Với dung tích 95ml dạng bọt nhẹ, thích hợp layer 2 lớp ở vùng má khô và luôn khóa ẩm bằng kem dưỡng để tránh bay hơi.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/3eb3739c9eb841c38ec8d557f92f644f1794037075293.png",
@@ -32745,7 +32745,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.873Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.175Z",
     "usage": "Dùng sáng và tối sau toner/serum, trước kem dưỡng: lấy 2-3 giọt ấm trong lòng bàn tay rồi vỗ nhẹ lên da, tập trung vùng da khô ráp và hàng rào yếu. Với squalane phục hồi, thoa sau bước essence làm ẩm và trước kem khóa ẩm; da dầu chỉ nên dùng 1-2 giọt vào buổi tối để tránh bí da.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/6c5a3d2fc6b940b19b8cb9057ec9445d1794122255551.png",
@@ -32804,7 +32804,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.874Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.175Z",
     "usage": "Dùng vào bước che khuyết điểm sau kem nền: chấm lượng nhỏ từng ô màu lên vùng cần che (ô xanh cho quầng thâm, ô cam cho mụn đỏ, ô sáng cho vùng tối), rồi vỗ nhẹ bằng đầu ngón tay hoặc tán bằng cọ ẩm để hòa vào da. Chỉ lấy một lớp mỏng mỗi lần và build dần để tránh cakey; set bằng phấn bột mịn nếu da dầu.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/e28bf1895bd84a4ba3745077f5f89e5e1794218325834.png",
@@ -32863,7 +32863,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.874Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.175Z",
     "usage": "Dùng buổi tối ở bước cuối chu trình dưỡng (sau serum, trước hoặc thay kem chống nắng buổi sáng nếu da khô). Lấy lượng cỡ hạt đậu lớn, ấm sản phẩm giữa hai lòng bàn tay rồi ép nhẹ lên toàn mặt theo chiều từ trong ra ngoài. Với da dầu, chỉ dùng lượng bằng hạt đậu nhỏ và tránh vùng chữ T để không bí da.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/b8d1de0b687c4a8cb3b82894b5a5169d1793660897341.png",
@@ -32922,7 +32922,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.874Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.175Z",
     "usage": "Dùng cả sáng và tối ở bước kem dưỡng, sau toner/serum và trước kem chống nắng vào ban ngày. Lấy lượng cỡ đồng xu nhỏ, chấm 5 điểm trên mặt rồi massage nhẹ theo vòng tròn hướng lên để squalane thẩm thấu. Da nhạy cảm nên thử trên vùng quai hàm trước, và luôn dùng kem chống nắng phía trên vào ban ngày.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/8fc8d06fae534f2a9ed77d427b4b8ecf1794190590411.png",
@@ -32981,7 +32981,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.874Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.175Z",
     "usage": "Dùng 2-3 lần/tuần vào buổi tối sau bước rửa mặt và toner, đắp mặt nạ lên da sạch và để 15-20 phút. Gỡ mặt nạ rồi vỗ nhẹ phần essence còn lại cho thấm, có thể dùng tiếp kem dưỡng để khóa ẩm. Không cần rửa lại; với da dầu mụn nên giới hạn 1-2 lần/tuần để tránh quá ẩm.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/55bd4fe8250447f8b4bf7c489a1e22691794181422785.png",
@@ -33039,7 +33039,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng vào bước trang điểm mắt sau kem lót mắt: lấy phấn bằng cọ dẹt cho màu nền toàn bộ mí, sau đó dùng cọ nhỏ hơn để tán màu đậm vào đuôi mắt và bầu mắt. Vỗ cọ để bỏ phấn thừa trước khi lên mắt và tán theo từng lớp mỏng để tránh rơi phấn; dùng kem lót mắt giúp màu bám lâu hơn.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/d5ba0c795ad5410e8a4a81c5de198f961794139376350.png",
@@ -33098,7 +33098,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng sau kem nền: xoay nhẹ đầu bút để lấy sản phẩm, chấm 2-3 điểm lên vùng cần che rồi vỗ nhẹ bằng đầu ngón tay hoặc mút ẩm. Chọn màu gần với tông da hoặc sáng hơn 1 tone cho vùng quầng thâm; tránh kéo lê để không làm trôi lớp nền bên dưới.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/a45dadfc96aa498c80676388de4d53c51794209497848.png",
@@ -33157,7 +33157,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Đây là set trang điểm mắt: dùng bảng màu ở bước phấn mắt sau kem lót mắt, tán màu sáng toàn bầu mắt rồi nhấn màu đậm ở đuôi mắt và viền mí dưới. Dùng cọ vỗ nhẹ lấy phấn và tán từng lớp mỏng; kết hợp son/tint trong set ở bước cuối trang điểm môi để hài hòa tông màu.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/b4d37927ebfe457d9c91c7097812b8151794216869643.png",
@@ -33216,7 +33216,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng nước hoa khô bằng cách chà nhẹ ngón tay lên sáp rồi thoa lên điểm mạch cổ tay, sau tai hoặc vùng cổ — không thoa lên mặt. Có thể dặm lại 2-3 lần trong ngày khi hương phai; bảo quản nơi khô mát để sáp không bị chảy, và tránh vùng da đang kích ứng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/17c1e166ce15467ba523fa8b3985d6431793770877458.png",
@@ -33275,7 +33275,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng ngay sau bước rửa mặt, cả sáng và tối: lấy lượng cỡ đồng xu, vỗ nhẹ lên da ẩm theo từng lớp đến khi thấm hết để phục hồi hàng rào ẩm. Với da nhạy cảm hoặc đang treatment, có thể layer 2-3 lần (7-skin method) thay vì dùng nhiều một lúc; luôn khóa ẩm bằng kem dưỡng sau đó.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/88b0f7dc5f5e40328361b357de8a50631794199917404.png",
@@ -33328,7 +33328,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng vào bước tẩy trang buổi tối: thấm đủ lượng sữa tẩy trang ra bông cotton, đặt lên mắt/môi 10 giây rồi lau nhẹ từ trong ra ngoài, sau đó rửa lại bằng sữa rửa mặt. Với da nhạy cảm, dùng tay massage nhẹ thay vì bông cotton để giảm ma sát; không cần rửa lại nếu da khô nhưng nên double cleanse khi trang điểm đậm.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/af3e08706d9b491fa8fc71167ce156601794206782973.png",
@@ -33387,7 +33387,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng trên tóc ẩm sau khi gội, tập trung từ giữa đến ngọn tóc và tránh chân tóc để không bết. Lấy lượng cỡ hạt đậu, thoa đều rồi sấy hoặc tạo kiểu để có hiệu ứng straight-slick; có thể dùng một lượng rất nhỏ lên tóc khô để dặm lại phần đuôi tóc xơ.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/6e90cb4e01674289b6bf04ad34de2e531794211155413.png",
@@ -33446,7 +33446,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Uống 1 chai 150ml mỗi ngày, tốt nhất vào buổi sáng hoặc trước bữa ăn 30 phút; lắc đều trước khi uống. Đây là thực phẩm bổ sung, không thay thế nước lọc hàng ngày và không dùng thay bữa chính; người có bệnh nền hoặc đang mang thai nên tham khảo ý kiến bác sĩ.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/f25bf36dad4f4e7ebba973fb36ddf8ca1794219827012.png",
@@ -33502,7 +33502,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng ở bước cuối trang điểm môi: lấy một lớp mỏng bằng đầu applicator, có thể dặm thêm lớp thứ hai ở giữa môi để tạo hiệu ứng plumping bóng. Dùng riêng cho lớp finish bóng hoặc thoa lên trên son tint để tăng độ ẩm; tránh ăn uống ngay sau khi thoa và dặm lại khi cần.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/3ca5747fa505424eb3ef9f44293a46f11794195110237.png",
@@ -33558,7 +33558,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng buổi tối ở bước kem dưỡng cuối chu trình, đặc biệt sau các buổi treatment/laser hoặc khi da đang kích ứng. Lấy lượng cỡ hạt đậu lớn, vỗ nhẹ lên toàn mặt và layer dày hơn ở vùng da tổn thương; ban ngày vẫn cần kem chống nắng phổ rộng vì da đang phục hồi nhạy cảm với UV.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -33606,7 +33606,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng vào bước kem lót trang điểm sau kem dưỡng và kem chống nắng: lấy lượng cỡ hạt đậu, tán đều từ giữa mặt ra ngoài bằng tay hoặc mút để tạo lớp nền mịn. Vỗ nhẹ để sản phẩm bám đều trước khi apply kem nền; với da dầu có thể dùng lượng ít hơn và set bằng phấn bột để kiềm dầu lâu hơn.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -33654,7 +33654,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng vào bước che khuyết điểm sau kem nền: chấm một lượng nhỏ cỡ hạt gạo lên vùng cần che (quầng thâm, mụn, đỏ), vỗ nhẹ bằng đầu ngón tay hoặc cọ ẩm để tán đều, có thể trộn 2-3 màu để khớp tone da. Với quầng thâm, dùng màu cam/san hô trước rồi phủ màu sáng hơn lên trên; set bằng phấn phủ mỏng để tránh cakey.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/29ad85f9dc604305bf2ab88aaf5c2b8f1794217863404.png",
@@ -33710,7 +33710,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng vào bước base buổi sáng sau kem chống nắng: lắc đều cushion, lấy lượng vừa đủ bằng puff (không ấn quá mạnh), vỗ dứt khoát từ giữa mặt lan ra viền để tránh viền nền. Với da khô nên dùng cọ mini tán mỏng lớp đầu, lớp thứ hai chỉ chấm ở vùng cần che phủ; nhớ đậy nắp kín và vệ sinh puff hàng tuần.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/4f7839d77cea43e986533b501a060cf71794183157244.png",
@@ -33766,7 +33766,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Dùng trên tóc ẩm hoặc khô ở bước dưỡng cuối cùng sau gội: xịt/lấy một lượng cỡ đồng xu nhỏ vào lòng bàn tay, miết đều rồi thoa từ thân tóc xuống ngọn, tránh chân tóc. Có thể dùng lại vào buổi sáng lên ngọn tóc khô để làm mượt và lưu hương; không cần xả lại.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/e7c1c22c0c7e4d72aab7d3a887435fea1794220267510.png",
@@ -33822,7 +33822,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.875Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.176Z",
     "usage": "Đây là sản phẩm thực phẩm (socola), không phải mỹ phẩm: dùng như món ăn vặt, mỗi lần 1-2 viên, không thay thế bữa chính. Bảo quản nơi khô mát dưới 25°C tránh ánh nắng để socola không chảy; người ăn kiêng hoặc dị ứng sữa/đậu phộng nên đọc kỹ nhãn trước khi dùng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/2bce532c33ac4be598ea1100160845a91794219589855.png",
@@ -33878,7 +33878,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng ở bước serum buổi tối (và sáng nếu da không quá dầu) sau toner, trước kem dưỡng: nhỏ 2-3 giọt ra lòng bàn tay, vỗ nhẹ áp lên toàn mặt, ưu tiên vùng da khô/đỏ do treatment. Vì là serum phục hồi sau laser, nên tránh dùng chung lúc với AHA/BHA/retinol nồng độ cao và bắt buộc chống nắng ban ngày.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -33926,7 +33926,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Đây là sản phẩm dinh dưỡng dạng uống: dùng 1 hộp (330ml) mỗi lần, lắc đều trước khi uống, phù hợp bữa sáng hoặc bữa phụ. Bảo quản ngăn mát và dùng hết sau khi mở; người dị ứng sữa hoặc cần kiểm soát đường nên xem bảng thành phần trước khi dùng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/ec39cb19d124457eaccf8303da502a781794217102114.png",
@@ -33982,7 +33982,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng ở bước má hồng sau kem nền/phấn phủ: lấy một lượng rất nhỏ bằng cọ, gõ nhẹ cọ để rũ phấn thừa rồi tán từ gò má hướng lên thái dương theo chuyển động nhẹ. Với má hồng dạng bột, nên tán lớp mỏng rồi build dần để tránh mảng màu; da khô có thể dùng cọ ẩm để bám màu tốt hơn.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/45bad1c2161545a286b071f224ba00f31794142908281.png",
@@ -34038,7 +34038,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng trước khi sấy/duỗi/uốn: lấy một lượng cỡ hạt đậu vào lòng bàn tay, thoa đều lên tóc ẩm từ thân đến ngọn (tránh chân tóc), sau đó mới dùng máy nhiệt. Sản phẩm tạo lớp bảo vệ nhiệt nên không cần xả lại; với tóc dày có thể chia tóc thành từng lọn để thoa đều hơn.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/a31b95b333724759a13ee20e227d48141794213323530.png",
@@ -34094,7 +34094,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng ở bước gội: làm ướt tóc, lấy lượng vừa đủ (khoảng 1-2 lần bơm tùy độ dài tóc), massage da đầu bằng đầu ngón tay 1-2 phút rồi xả sạch; có thể gội lần hai nếu tóc nhiều dầu. Vì là dầu gội chăm sóc da đầu, nên massage kỹ vùng chân tóc thay vì chà xát thân tóc, và dùng kèm dầu xả cho ngọn tóc.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/74766aafb38e48bbbf20dd61e4d6f8da1794206392598.png",
@@ -34150,7 +34150,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Đây là thực phẩm bổ sung dạng gói: dùng 1 gói/lần, có thể uống trực tiếp hoặc pha với nước ấm, thường dùng trước bữa ăn 15-30 phút. Không dùng thay thế bữa ăn và nên tham khảo ý kiến chuyên gia nếu đang dùng thuốc hoặc có bệnh dạ dày.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -34198,7 +34198,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng thay băng vệ sinh thông thường: thay mỗi 3-4 giờ hoặc khi thấy ẩm, vệ sinh tay trước khi dán và thay; chọn loại theo lượng kinh nguyệt (ngày ít dùng loại mỏng, ngày nhiều dùng loại dày hơn). Không dùng quá 8 giờ liên tục và bỏ băng đã dùng vào thùng rác kín.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/7b3d948f44244e5bb5020b08e8029d101794210008920.png",
@@ -34254,7 +34254,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng ở bước son cuối cùng: lấy một lượng nhỏ bằng cọ applicator, thoa từ giữa môi ra viền, có thể layer 1-2 lớp để tăng độ bóng. Với son bóng, nên thoa lớp mỏng trước rồi build dần để tránh lem; tránh ăn uống ngay sau khi thoa và có thể dùng kèm chì kẻ môi để định hình viền.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/0813522bf0ce404c9f9761038384b9fe1794147591537.png",
@@ -34310,7 +34310,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng ở bước son: thoa một lớp lip base mỏng để làm đều màu môi và tăng độ bám, sau đó thoa gel gloss từ giữa môi ra ngoài bằng applicator. Có thể layer thêm lớp gloss thứ hai ở giữa môi để tạo hiệu ứng căng bóng; tránh chà xát mạnh và tẩy trang kỹ bằng dầu tẩy trang vào cuối ngày.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/5fb74541d3004e43895dc04e87c641631794220464679.png",
@@ -34366,7 +34366,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng cho tóc hư tổn nặng ở bước dưỡng sau gội: lấy một lượng cỡ đồng xu, thoa lên tóc ẩm từ thân đến ngọn, tránh chân tóc, có thể ủ 3-5 phút rồi xả nhẹ hoặc để lại một phần làm lớp dưỡng không xả. Với tóc khô xơ, dùng 2-3 lần/tuần và kết hợp dầu gội dịu nhẹ để tránh gãy rụng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/1f65d6d83591490cbcf838104bf216a31794072096435.png",
@@ -34422,7 +34422,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng ở bước serum sáng và tối sau toner: nhỏ 2-3 giọt, vỗ nhẹ lên toàn mặt, ưu tiên vùng da đỏ/viêm do mụn hoặc sau treatment. Serum rau má - TECA phù hợp da nhạy cảm, có thể layer thêm kem dưỡng phục hồi; ban ngày vẫn cần chống nắng vì da đang trong giai đoạn phục hồi.",
     "photoReviews": [],
     "is_sold_out": false,
@@ -34470,7 +34470,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng 20ml (nắp đong) súc miệng 60 giây rồi nhổ, không cần tráng lại bằng nước — dùng 2 lần/ngày sau khi đánh răng. Với lọ 1L dùng sáng & tối, lọ 150ml tiện mang theo; tránh ăn uống trong 30 phút sau súc để hoạt chất ổn định hơi thở.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/3f0d9d2532c3446da649147ad92d7dea1794193829539.png",
@@ -34526,7 +34526,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Lấy lượng bằng hạt đậu (khoảng 1ml) thoa lên tay hoặc vùng body khô sau khi tắm 3 phút khi da còn ẩm, massage vòng tròn đến khi thấm. Dùng buổi tối để hương perfume lưu lâu; tập trung khuỷu tay, đầu gối và vùng da khô ráp.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/5857d892addc437eab41f86a8eac1cfe1794213625364.png",
@@ -34582,7 +34582,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng sáng và tối ngay sau bước toner: nhỏ 3–4 giọt ra lòng bàn tay, vỗ nhẹ áp lên toàn mặt theo chiều từ trong ra ngoài. Layer thêm kem dưỡng sau 1 phút; buổi sáng bắt buộc dùng kem chống nắng vì essence tăng độ nhạy cảm ánh sáng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/5e178ed601f64f9495f2ed6c5a712cfa1794184831959.png",
@@ -34638,7 +34638,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Sáng & tối, sau toner: nhỏ 3–4 giọt Hyalu B5, vỗ nhẹ lên da ẩm (không chà xát mạnh vì HA dễ tạo màng dính). Với da nhạy cảm nên thử 2–3 giọt trước; buổi sáng khóa ẩm bằng kem Hyalu 3ml kèm theo rồi chống nắng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/4e0df68eda98438291b1baece108ba841794191986266.png",
@@ -34694,7 +34694,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.876Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Tối: làm ướt mặt, lấy lượng bằng đồng xu, tạo bọt trong lòng bàn tay rồi massage 30–45 giây, rửa sạch bằng nước ấm. Sáng chỉ dùng 1 lần nếu da dầu; lọ 30ml dùng khi đi du lịch — tránh massage quá lâu gây khô căng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/5568166878b24137845d55cabefa4b5a1794196315461.png",
@@ -34750,7 +34750,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.177Z",
     "usage": "Dùng tối sau toner, chấm 2–3 giọt lên vùng mụn và vùng chữ T dầu, vỗ nhẹ đến khi thấm — không bôi toàn mặt nếu da khô. Với mụn viêm đang sưng, thoa lớp mỏng qua đêm; ban ngày dùng kem chống nắng vì ampoule cân bằng dầu có thể làm da nhạy cảm.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/e54a787c89b14a869baedec3bb8c97bb1794152215870.png",
@@ -34806,7 +34806,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Nhai 3 viên/ngày (1 lần hoặc chia 2 lần) sau bữa ăn, không uống khi bụng đói để tránh cồn ruột. Hộp 70 viên dùng đúng 24 ngày; bảo quản nơi khô mát, tránh ánh nắng vì vitamin C dễ oxy hóa.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/eb6f09c621ae44a88701fdc08bd29e201794210591057.png",
@@ -34862,7 +34862,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Dùng 2–3 lần/tuần vào buổi tối sau toner: đắp mặt nạ gel 15–20 phút, sau đó vỗ nhẹ phần serum còn lại thay vì rửa. Với da nhạy cảm nên thử 10 phút trước; không dùng chung lúc với retinol/AHA để tránh kích ứng.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/f427602f11cd4b0986c648955fd578c81794122333406.png",
@@ -34918,7 +34918,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Dùng tối sau toner: nhỏ 3–4 giọt Mela B3, chấm điểm lên vùng thâm/nám rồi vỗ nhẹ toàn mặt. Bắt buộc dùng kem chống nắng SPF50+ vào sáng hôm sau; với da nhạy cảm nên bắt đầu 2–3 lần/tuần rồi tăng dần.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/3189de5add584a32bae54e544229d1fa1794220878314.png",
@@ -34974,7 +34974,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Dùng tối trước bước rửa mặt: cho 2–3 pump lên tay khô, massage mặt khô 45–60 giây để hòa tan makeup & dầu thừa, nhũ hóa với nước rồi rửa sạch. Với da mụn nên tránh massage mạnh vùng mụn viêm; sau đó dùng sữa rửa mặt để làm sạch kép.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/f666a11eb6414d7ab53ef0032f881cf41794200268500.png",
@@ -35030,7 +35030,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Dùng sau kem lót: chấm 3 điểm dưới mắt và vùng thâm mụn, tán bằng đầu cọ hoặc ngón tay ấn nhẹ (không miết) để che phủ tự nhiên. Chọn tone 21 cho da sáng; set bằng phấn phủ mỏng để không bị cakey sau 4–6 giờ.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/5c0dd1ed3f2f4e6591c4f3d0914fe8101794208109140.png",
@@ -35086,7 +35086,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Lắc đều, xịt 2–3 lần lên vùng da body khô (đặc biệt khuỷu tay, đầu gối, cẳng chân) sau khi tắm 3 phút, massage nhẹ đến khi thấm. Dùng tối để dưỡng sâu qua đêm; ban ngày nên xịt lại sau khi tắm biển/hồ bơi vì da mất ẩm nhanh.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/761e4918c78049178877ddf9b928bef41794208012882.png",
@@ -35142,7 +35142,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Sáng & tối sau rửa mặt: thấm ra bông hoặc lòng bàn tay, vỗ nhẹ toàn mặt 2–3 lớp (layer) để làm dịu da. Với da đang kích ứng, dùng như toner duy nhất và tránh chà xát; bảo quản ngăn mát tủ lạnh để tăng cảm giác mát dịu.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/ff6aedffd6e94b048047d6867a9fbde91794220081830.png",
@@ -35198,7 +35198,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Dùng sau kem lót & kem chống nắng: lấy lượng bằng hạt đậu, vỗ đều bằng bông cushion từ giữa mặt ra ngoài, lớp mỏng thứ 2 cho vùng cần che phủ. Tone Kem Be hợp da trung bình, Hồng Nude hợp da sáng; set bằng phấn phủ để giữ glow không bị trôi.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/27/aaa2f816d42741da848690da862dc51e1793031346140.png",
@@ -35254,7 +35254,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Dùng tối sau serum: lấy lượng bằng hạt đậu, thoa theo chiều từ dưới lên và từ trong ra ngoài, dùng dụng cụ nâng cơ kèm theo massage nhẹ 2–3 phút vùng hàm & gò má. Với da nhạy cảm nên thử 1 vùng nhỏ trước; buổi sáng dùng lớp mỏng và chống nắng đầy đủ.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/4a7b5e52f4af48709c00c32b01ace5831794219757029.png",
@@ -35310,7 +35310,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Dùng vào bước cuối chu trình trang điểm hoặc thoa lại giữa ngày khi môi khô xỉn màu: lấy 1-2 lượt cọ từ đầu cọ, chấm 3 điểm giữa môi rồi miết đều theo chiều môi, vỗ nhẹ viền môi để màu loang tự nhiên. Vì chứa PDRN và dưỡng ẩm, nên thoa lớp mỏng trước khi ngủ cũng được; tránh chà xát mạnh và nhớ dặm lại sau khi ăn uống.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/82d6ca2d31524fe4b067e5da3b6961a21794211927952.png",
@@ -35366,7 +35366,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Dùng như bữa phụ lành mạnh vào giữa buổi sáng hoặc trước khi tập 30-60 phút, mỗi lần 1 gói (khoảng 1 khẩu phần) ăn trực tiếp hoặc kèm sữa chua/trái cây. Vì là bánh chip ngũ cốc, nên uống đủ nước và không thay thế bữa chính; người ăn kiêng nên cân đối tổng calo trong ngày.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/824ceec5fa5d4826a508a4743261b72e1794210676374.png",
@@ -35422,7 +35422,7 @@
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "usage": "Dùng vào buổi sáng sau bước rửa mặt và toner, trước kem dưỡng: lấy 2-3 giọt ra lòng bàn tay, vỗ nhẹ đều lên mặt và cổ, tập trung vùng thâm nám. Bắt buộc dùng kem chống nắng ban ngày vì sản phẩm làm sáng da; da nhạy cảm nên thử ở vùng nhỏ trước và tránh dùng chung với retinol/AHA nồng độ cao trong cùng một bước.",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/650f3f34cefa457381d9930388eda10c1794194208643.png",
@@ -35561,7 +35561,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.877Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.178Z",
     "salePrice": 50000
   },
   {
@@ -35677,7 +35677,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.878Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 52000
   },
   {
@@ -35782,7 +35782,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.878Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 61000
   },
   {
@@ -35876,7 +35876,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.878Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 108000
   },
   {
@@ -35981,7 +35981,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.878Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 57000
   },
   {
@@ -36086,7 +36086,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.878Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 55000
   },
   {
@@ -36180,7 +36180,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.878Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 103000
   },
   {
@@ -36285,7 +36285,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.878Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 52000
   },
   {
@@ -36368,7 +36368,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.878Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 55000
   },
   {
@@ -36440,7 +36440,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.878Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 168000
   },
   {
@@ -36523,7 +36523,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.179Z",
     "salePrice": 132000
   },
   {
@@ -36617,7 +36617,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 84000
   },
   {
@@ -36689,7 +36689,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 269000
   },
   {
@@ -36761,7 +36761,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 185000
   },
   {
@@ -36833,7 +36833,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 322000
   },
   {
@@ -36905,7 +36905,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 136000
   },
   {
@@ -36988,7 +36988,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 122000
   },
   {
@@ -37004,7 +37004,7 @@
     "brand_kr": "Bobbi Brown",
     "category": "highend",
     "category_vi": "Hàng Hiệu Bách Hóa",
-    "subCategory": "cleanser",
+    "subCategory": "makeup_remover",
     "departmentStore": "Shinsegae / Bobbi Brown Boutique",
     "isHighEnd": true,
     "foreignPrice": 84000,
@@ -37060,7 +37060,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 84000
   },
   {
@@ -37154,7 +37154,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 46000
   },
   {
@@ -37248,7 +37248,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.879Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 42000
   },
   {
@@ -37331,7 +37331,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.180Z",
     "salePrice": 144000
   },
   {
@@ -37414,7 +37414,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 155000
   },
   {
@@ -37497,7 +37497,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 119000
   },
   {
@@ -37580,7 +37580,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 99000
   },
   {
@@ -37663,7 +37663,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 140000
   },
   {
@@ -37757,7 +37757,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 79000
   },
   {
@@ -37840,7 +37840,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 35000
   },
   {
@@ -37934,7 +37934,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 66000
   },
   {
@@ -38017,7 +38017,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 92000
   },
   {
@@ -38033,7 +38033,7 @@
     "brand_kr": "Shu Uemura",
     "category": "highend",
     "category_vi": "Hàng Hiệu Bách Hóa",
-    "subCategory": "cleanser",
+    "subCategory": "makeup_remover",
     "departmentStore": "Shinsegae Department Store",
     "isHighEnd": true,
     "foreignPrice": 55000,
@@ -38089,7 +38089,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.880Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 55000
   },
   {
@@ -38172,7 +38172,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.181Z",
     "salePrice": 172000
   },
   {
@@ -38255,7 +38255,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 144000
   },
   {
@@ -38316,7 +38316,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 328000
   },
   {
@@ -38377,7 +38377,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 328000
   },
   {
@@ -38449,7 +38449,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 129000
   },
   {
@@ -38521,7 +38521,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 129000
   },
   {
@@ -38593,7 +38593,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 280000
   },
   {
@@ -38676,7 +38676,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 250000
   },
   {
@@ -38759,7 +38759,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:11:34.329Z",
     "updatedAt": "2026-11-09T18:11:34.329Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 122000
   },
   {
@@ -38842,7 +38842,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:11:34.329Z",
     "updatedAt": "2026-11-09T18:11:34.329Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 122000
   },
   {
@@ -38914,7 +38914,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:11:34.329Z",
     "updatedAt": "2026-11-09T18:11:34.329Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 390000
   },
   {
@@ -38986,7 +38986,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:11:34.330Z",
     "updatedAt": "2026-11-09T18:11:34.330Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.881Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 390000
   },
   {
@@ -39058,7 +39058,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:26:49.323Z",
     "updatedAt": "2026-11-09T18:26:49.323Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.882Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.182Z",
     "salePrice": 280000
   },
   {
@@ -39141,7 +39141,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T18:41:27.340Z",
     "updatedAt": "2026-11-09T18:41:27.340Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.882Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.183Z",
     "salePrice": 107000
   },
   {
@@ -39213,7 +39213,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T19:00:18.466Z",
     "updatedAt": "2026-11-09T19:00:18.466Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.882Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.183Z",
     "salePrice": 145000
   },
   {
@@ -39285,7 +39285,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T19:18:21.286Z",
     "updatedAt": "2026-11-09T19:18:21.286Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.882Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.183Z",
     "salePrice": 175000
   },
   {
@@ -39346,7 +39346,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:03:21.467Z",
     "updatedAt": "2026-11-09T21:03:21.467Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.882Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.183Z",
     "salePrice": 328000
   },
   {
@@ -39429,7 +39429,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:03:21.467Z",
     "updatedAt": "2026-11-09T21:03:21.467Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.882Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.183Z",
     "salePrice": 125000
   },
   {
@@ -39512,7 +39512,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:32:06.191Z",
     "updatedAt": "2026-11-09T21:32:06.191Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.882Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.183Z",
     "salePrice": 33000
   },
   {
@@ -39584,7 +39584,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:49:46.525Z",
     "updatedAt": "2026-11-09T21:49:46.525Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.882Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.183Z",
     "salePrice": 145000
   },
   {
@@ -39645,7 +39645,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T21:49:46.525Z",
     "updatedAt": "2026-11-09T21:49:46.525Z",
-    "lastAuditedAt": "2026-11-11T01:33:00.882Z",
+    "lastAuditedAt": "2026-11-11T01:35:31.183Z",
     "salePrice": 115000
   },
   {
@@ -39717,7 +39717,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:04:21.538Z",
     "updatedAt": "2026-11-09T22:04:21.538Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.670Z",
+    "lastAuditedAt": "2026-11-11T01:35:32.936Z",
     "salePrice": 79000
   },
   {
@@ -39800,7 +39800,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:04:21.538Z",
     "updatedAt": "2026-11-09T22:04:21.538Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z",
+    "lastAuditedAt": "2026-11-11T01:35:32.936Z",
     "salePrice": 139000
   },
   {
@@ -39872,7 +39872,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:19:16.064Z",
     "updatedAt": "2026-11-09T22:19:16.064Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z",
+    "lastAuditedAt": "2026-11-11T01:35:32.936Z",
     "salePrice": 245000
   },
   {
@@ -39944,7 +39944,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:37:20.446Z",
     "updatedAt": "2026-11-09T22:37:20.446Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z",
+    "lastAuditedAt": "2026-11-11T01:35:32.936Z",
     "salePrice": 195000
   },
   {
@@ -40027,7 +40027,7 @@
     "isPublished": true,
     "createdAt": "2026-11-09T22:56:19.631Z",
     "updatedAt": "2026-11-09T22:56:19.631Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z",
+    "lastAuditedAt": "2026-11-11T01:35:32.936Z",
     "salePrice": 93000
   },
   {
@@ -40089,7 +40089,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:08:11.000Z",
     "updatedAt": "2026-11-10T17:08:11.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.936Z"
   },
   {
     "id": "A000001002584",
@@ -40150,7 +40150,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:08:21.000Z",
     "updatedAt": "2026-11-10T17:08:21.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.936Z"
   },
   {
     "id": "A000000236968",
@@ -40211,7 +40211,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:08:32.000Z",
     "updatedAt": "2026-11-10T17:08:32.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.936Z"
   },
   {
     "id": "A000000248500",
@@ -40272,7 +40272,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:08:43.000Z",
     "updatedAt": "2026-11-10T17:08:43.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.936Z"
   },
   {
     "id": "A000000268289",
@@ -40333,7 +40333,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:08:54.000Z",
     "updatedAt": "2026-11-10T17:08:54.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000232298",
@@ -40394,7 +40394,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:09:06.000Z",
     "updatedAt": "2026-11-10T17:09:06.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000253296",
@@ -40455,7 +40455,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:09:17.000Z",
     "updatedAt": "2026-11-10T17:09:17.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000001002526",
@@ -40516,7 +40516,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:09:28.000Z",
     "updatedAt": "2026-11-10T17:09:28.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000188221",
@@ -40577,7 +40577,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:09:39.000Z",
     "updatedAt": "2026-11-10T17:09:39.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000268499",
@@ -40638,7 +40638,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:09:51.000Z",
     "updatedAt": "2026-11-10T17:09:51.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000217101",
@@ -40699,7 +40699,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:10:02.000Z",
     "updatedAt": "2026-11-10T17:10:02.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000254204",
@@ -40760,7 +40760,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:10:14.000Z",
     "updatedAt": "2026-11-10T17:10:14.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000228276",
@@ -40821,7 +40821,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:10:27.000Z",
     "updatedAt": "2026-11-10T17:10:27.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.671Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000223349",
@@ -40882,7 +40882,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:10:39.000Z",
     "updatedAt": "2026-11-10T17:10:39.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "B000001005677",
@@ -40943,7 +40943,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:10:51.000Z",
     "updatedAt": "2026-11-10T17:10:51.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000254726",
@@ -41004,7 +41004,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:11:01.000Z",
     "updatedAt": "2026-11-10T17:11:01.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000189177",
@@ -41065,7 +41065,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:11:13.000Z",
     "updatedAt": "2026-11-10T17:11:13.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000001003808",
@@ -41126,7 +41126,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:11:26.000Z",
     "updatedAt": "2026-11-10T17:11:26.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000230821",
@@ -41187,7 +41187,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:11:37.000Z",
     "updatedAt": "2026-11-10T17:11:37.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000251335",
@@ -41248,7 +41248,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:11:48.000Z",
     "updatedAt": "2026-11-10T17:11:48.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000154178",
@@ -41309,7 +41309,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:11:59.000Z",
     "updatedAt": "2026-11-10T17:11:59.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.937Z"
   },
   {
     "id": "A000000268074",
@@ -41370,7 +41370,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:12:10.000Z",
     "updatedAt": "2026-11-10T17:12:10.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.938Z"
   },
   {
     "id": "A000000232725",
@@ -41431,7 +41431,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:12:21.000Z",
     "updatedAt": "2026-11-10T17:12:21.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.938Z"
   },
   {
     "id": "A000000245089",
@@ -41492,7 +41492,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:12:34.000Z",
     "updatedAt": "2026-11-10T17:12:34.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.938Z"
   },
   {
     "id": "A000000156811",
@@ -41553,7 +41553,7 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:12:45.000Z",
     "updatedAt": "2026-11-10T17:12:45.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.938Z"
   },
   {
     "id": "A000000002972",
@@ -41614,6 +41614,6 @@
     "isHighEnd": false,
     "createdAt": "2026-11-10T17:12:58.000Z",
     "updatedAt": "2026-11-10T17:12:58.000Z",
-    "lastAuditedAt": "2026-11-11T01:33:02.672Z"
+    "lastAuditedAt": "2026-11-11T01:35:32.938Z"
   }
 ]
