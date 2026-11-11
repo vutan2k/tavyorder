@@ -24,6 +24,7 @@ PROJECT_DIR = '/Users/tan/tavy-korea'
 sys.path.append(os.path.join(PROJECT_DIR, 'scripts'))
 
 from chrome_coordinator import ChromeCoordinator, ChromeTabManager, run_applescript
+from product_taxonomy_engine import classify_product
 
 load_dotenv('/Users/tan/.hermes/.env')
 load_dotenv(os.path.join(PROJECT_DIR, '.env'))
@@ -308,6 +309,10 @@ def run_sync():
                 tr = call_tanlam_translate(it['brand'], it['name'], opt_names)
                 print(f"   ✓ Dịch sang tiếng Việt: {tr.get('name_vi')}")
 
+                # Phân loại tự động 3 tầng (Olive Young Category IDs + Negative Filter + Semantic Rules)
+                taxonomy = classify_product(it['name'], tr.get('name_vi') or it['name'], metas)
+                print(f"   ✓ Phân loại tự động: [{taxonomy['category']} / {taxonomy['subCategory']}] ({taxonomy['category_vi']})")
+
                 # Calculate pricing
                 min_won = it['salePriceWon']
                 orig_won = it['originalPriceWon'] or min_won
@@ -348,9 +353,9 @@ def run_sync():
                     'brand': tr.get('brand_vi') or it['brand'],
                     'brand_vi': tr.get('brand_vi') or it['brand'],
                     'brand_kr': it['brand'],
-                    'category': tr.get('category') or 'skincare',
-                    'category_vi': 'Chăm sóc da',
-                    'subCategory': tr.get('subCategory') or 'cream',
+                    'category': taxonomy['category'],
+                    'category_vi': taxonomy['category_vi'],
+                    'subCategory': taxonomy['subCategory'],
                     'rank': rank,
                     'foreignPrice': min_won,
                     'price': min_won,

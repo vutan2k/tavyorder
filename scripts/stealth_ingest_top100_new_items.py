@@ -17,6 +17,7 @@ import os
 import random
 import urllib.request
 from pathlib import Path
+from product_taxonomy_engine import classify_product
 
 BASE_DIR = "/Users/tan/tavy-korea"
 ROUTER_URL = "http://127.0.0.1:20128/v1/chat/completions"
@@ -215,7 +216,7 @@ def fetch_live_rates():
         const auth = getAuth(app);
         const db = getFirestore(app);
         async function run() {
-            await signInWithEmailAndPassword(auth, process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn', process.env.FIREBASE_ADMIN_PASSWORD || 'admin123');
+            await signInWithEmailAndPassword(auth, process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn', (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || ''));
             const snap = await getDoc(doc(db, 'system_config', 'rates'));
             if (snap.exists()) {
                 console.log(JSON.stringify(snap.data()));
@@ -377,6 +378,9 @@ Trả về DUY NHẤT một mảng JSON 15 phần tử:
         category_vi = t_info.get("category_vi") or "Chăm sóc da"
         options_vi = t_info.get("options_vi") or []
 
+        # Phân loại tự động 3 tầng
+        tax = classify_product(p["nameKr"], name_vi)
+
         sale_krw = p["salePriceKrw"] or 0
         orig_krw = p["originalPriceKrw"] or sale_krw
 
@@ -408,8 +412,10 @@ Trả về DUY NHẤT một mảng JSON 15 phần tử:
             "nameKr": p["nameKr"],
             "brand": brand_vi,
             "brandKr": p["brandKr"],
-            "category": category_vi,
-            "categoryPath": " > ".join(p["crumbs"]) if p["crumbs"] else category_vi,
+            "category": tax["category"],
+            "category_vi": tax["category_vi"],
+            "subCategory": tax["subCategory"],
+            "categoryPath": " > ".join(p["crumbs"]) if p["crumbs"] else tax["category_vi"],
             "salePrice": sale_krw,
             "originalPrice": orig_krw,
             "priceVnd": price_vnd,
@@ -460,7 +466,7 @@ Trả về DUY NHẤT một mảng JSON 15 phần tử:
     const db = getFirestore(app);
 
     async function commit() {
-        await signInWithEmailAndPassword(auth, process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn', process.env.FIREBASE_ADMIN_PASSWORD || 'admin123');
+        await signInWithEmailAndPassword(auth, process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn', (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || ''));
         const items = JSON.parse(fs.readFileSync('/tmp/new_top15_ingest_payload.json', 'utf8'));
         const batch = writeBatch(db);
         for (const item of items) {
@@ -496,15 +502,16 @@ Trả về DUY NHẤT một mảng JSON 15 phần tử:
     alert_lines.append("━━━━━━━━━━━━━━━━━━")
     alert_lines.append("👉 Khách hàng trên web đã có thể đặt hàng ngay lập tức!")
 
-    bot_token = "8887086946:AAGQ6xm1KA4fH9Ibd1In0tkLUnH7etKWbzA"
-    chat_id = "8575761420"
-    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-    urllib.request.urlopen(urllib.request.Request(
-        url,
-        data=json.dumps({"chat_id": chat_id, "text": "\n".join(alert_lines), "parse_mode": "HTML"}).encode("utf-8"),
-        headers={"Content-Type": "application/json"}
-    ), timeout=15)
-    print("✓ Đã gửi thông báo chúc mừng qua Telegram Bot!")
+    bot_token = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("VITE_TELEGRAM_BOT_TOKEN") or ""
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID") or "8575761420"
+    if bot_token:
+        url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+        urllib.request.urlopen(urllib.request.Request(
+            url,
+            data=json.dumps({"chat_id": chat_id, "text": "\n".join(alert_lines), "parse_mode": "HTML"}).encode("utf-8"),
+            headers={"Content-Type": "application/json"}
+        ), timeout=15)
+        print("✓ Đã gửi thông báo chúc mừng qua Telegram Bot!")
 
 if __name__ == "__main__":
     main()
