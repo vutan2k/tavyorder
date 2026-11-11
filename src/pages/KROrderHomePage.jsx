@@ -186,7 +186,7 @@ export default function KROrderHomePage() {
           return /(?:chống nắng|kem chống nắng|sunscreen|sun cream|suncream|sun stick|sun cushion|\bkcn\b)/i.test(name) || /(?:선크림|선케어|선스틱|선쿠션)/i.test(nameKr);
 
         case 'cleanser':
-          if (/kính áp tròng|\blens\b|mụn đầu đen|sebum softener|body|tắm|nước súc miệng/i.test(name)) return false;
+          if (/kính áp tròng|\blens\b|mụn đầu đen|sebum softener|body|tắm|nước súc miệng|dầu tẩy trang|sáp tẩy trang|nước tẩy trang/i.test(name)) return false;
           return /(?:sữa rửa mặt|gel rửa mặt|bọt rửa mặt|cleanser|cleansing foam|pack to foam|\bsrm\b)/i.test(name) || /(?:클렌징폼|폼클렌징)/i.test(nameKr);
 
         case 'makeup_remover':
