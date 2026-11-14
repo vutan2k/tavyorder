@@ -52,9 +52,9 @@ def classify_product(name_kr: str, name_vi: str = "", metas: Optional[Dict[str, 
     ]):
         return {'category': 'bodycare', 'subCategory': 'bodycare', 'category_vi': 'Chăm sóc cơ thể'}
 
-    # Nước hoa High-End (Perfume)
+    # Nước hoa Olive Young / Phổ thông (Perfume & Body Mist -> bodycare, KHÔNG gán vào highend của bách hóa)
     if any(k in text for k in ['향수', 'nước hoa', 'eau de parfum', 'eau de toilette', 'diptyque', 'do son', 'bleu de chanel']):
-        return {'category': 'highend', 'subCategory': 'perfume', 'category_vi': 'Nước hoa cao cấp'}
+        return {'category': 'bodycare', 'subCategory': 'perfume', 'category_vi': 'Nước hoa & Hương thơm'}
 
     # -------------------------------------------------------------------------
     # 2. TẦNG 2: MẶT NẠ CHUYÊN SÂU (Chỉ nhận mặt nạ da mặt, loại trừ hoàn toàn quà tặng/tóc/môi)

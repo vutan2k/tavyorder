@@ -122,9 +122,13 @@ export default function KROrderHomePage() {
       const name = (product.name || '').toLowerCase();
       const nameKr = (product.nameKr || product.koreanTitle || '').toLowerCase();
 
-      // High-End Department Store exclusive tab
+      // High-End Department Store exclusive tab: strictly isolate to HE* Department Store SKUs
+      const isDeptStoreHighEnd = Boolean(product.isHighEnd && String(product.goodsNo || '').startsWith('HE'));
       if (activeCategory === 'highend') {
-        return Boolean(product.isHighEnd || product.category === 'highend');
+        return isDeptStoreHighEnd;
+      }
+      if (isDeptStoreHighEnd) {
+        return false;
       }
 
       // Top navbar link fallback
