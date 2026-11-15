@@ -1,9 +1,16 @@
 rules_version = '2';
 service firebase.storage {
   match /b/{bucket}/o {
+    function isAdmin() {
+      return request.auth != null && (
+        request.auth.token.email == 'admin@tavykorea.vn' ||
+        request.auth.token.email == 'tanvv1991@gmail.com'
+      );
+    }
+
     match /{allPaths=**} {
       allow read: if true;
-      allow write: if true;
+      allow write: if isAdmin();
     }
   }
 }

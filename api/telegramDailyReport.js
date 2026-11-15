@@ -4,6 +4,7 @@
  */
 
 import { initializeApp, getApps } from 'firebase/app';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { getFirestore, doc, getDoc, getDocs, collection } from 'firebase/firestore';
 import {
   DEFAULT_TELEGRAM_CONFIG,
@@ -14,7 +15,7 @@ import {
 } from '../src/services/telegramNotificationService.js';
 
 const firebaseConfig = {
-  apiKey: process.env.VITE_FIREBASE_API_KEY || 'AIzaSyCQ_cpZLNbZdgGpDzea9GlpCL8vbeb_emo',
+  apiKey: process.env.VITE_FIREBASE_API_KEY || process.env.FIREBASE_API_KEY || '',
   authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN || 'tavyorder.firebaseapp.com',
   projectId: process.env.VITE_FIREBASE_PROJECT_ID || 'tavyorder',
   storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET || 'tavyorder.firebasestorage.app',
@@ -23,7 +24,17 @@ const firebaseConfig = {
 };
 
 const app = getApps().length > 0 ? getApps()[0] : initializeApp(firebaseConfig);
+const auth = getAuth(app);
 const db = getFirestore(app);
+
+async function ensureServerAdminAuth() {
+  if (auth.currentUser) return;
+  const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
+  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '';
+  if (adminPass) {
+    await signInWithEmailAndPassword(auth, adminEmail, adminPass).catch(() => {});
+  }
+}
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -36,6 +47,7 @@ export default async function handler(req, res) {
 
   try {
     const now = new Date();
+    await ensureServerAdminAuth();
 
     // 1. Đọc cấu hình Telegram
     let botCfg = { ...DEFAULT_TELEGRAM_CONFIG };

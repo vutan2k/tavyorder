@@ -22,7 +22,7 @@ const data = JSON.parse(fs.readFileSync('./public/data/playwright_scraped_produc
   try {
     // Authenticate as admin to satisfy Firestore security rules
     const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
-    const adminPass = process.env.VITE_ADMIN_PASSWORD || 'admin123';
+    const adminPass = (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
     console.log(`🔐 Đang xác thực tài khoản Admin (${adminEmail})...`);
     await signInWithEmailAndPassword(auth, adminEmail, adminPass);
     console.log('✅ Xác thực Firebase Auth Admin thành công!');

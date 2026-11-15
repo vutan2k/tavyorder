@@ -25,12 +25,10 @@ export const AUTH_GUARD_CONFIG = {
 const SESSION_SALT = 'TAVY_KOREA_ADMIN_HMAC_SECRET_2026_@DEFENSE';
 
 export function getSessionSecret() {
-  let envPass = 'admin123';
+  let envPass = '';
   try {
-    if (typeof import.meta !== 'undefined' && import.meta.env?.VITE_ADMIN_PASSWORD) {
-      envPass = import.meta.env.VITE_ADMIN_PASSWORD;
-    } else if (typeof process !== 'undefined' && process.env?.VITE_ADMIN_PASSWORD) {
-      envPass = process.env.VITE_ADMIN_PASSWORD;
+    if (typeof process !== 'undefined' && (process.env?.FIREBASE_ADMIN_PASSWORD || process.env?.VITE_ADMIN_PASSWORD)) {
+      envPass = process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD;
     }
   } catch {}
   return `${envPass}::${SESSION_SALT}`;

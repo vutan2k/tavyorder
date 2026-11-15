@@ -41,7 +41,7 @@ async function main() {
 
   // Đăng nhập Admin Firebase Auth
   const adminEmail = 'admin@tavykorea.vn';
-  const adminPass = 'admin123';
+  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '';
   await signInWithEmailAndPassword(auth, adminEmail, adminPass);
   console.log('✅ Xác thực Admin thành công.');
 

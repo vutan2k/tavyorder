@@ -244,7 +244,7 @@ async function main() {
   // 3. Đồng bộ lên Firestore collection 'pending_products'
   console.log('🔐 Đang xác thực Firebase Auth Admin...');
   const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
-  const adminPass = process.env.VITE_ADMIN_PASSWORD || 'admin123';
+  const adminPass = (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   await signInWithEmailAndPassword(auth, adminEmail, adminPass);
   console.log('✅ Xác thực Admin thành công!');
 

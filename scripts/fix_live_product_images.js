@@ -43,7 +43,7 @@ const FALLBACK_CATALOG = '/Users/tan/tavy-korea/public/data/playwright_scraped_p
 
 async function main() {
   console.log('🔐 Đang đăng nhập Firebase Admin...');
-  await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', 'admin123');
+  await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   console.log('✅ Đăng nhập Admin thành công!');
 
   // 1. Upload 8 ảnh SOLD lên Firebase Storage

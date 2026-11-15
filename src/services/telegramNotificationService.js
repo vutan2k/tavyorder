@@ -18,12 +18,15 @@ import {
   calculateVndPrice
 } from './oliveYoungPriceSyncService.js';
 
-const LEGACY_HERMES_BOT_TOKEN = '8897305128:AAGqb7cQhpFx3AVcGyX0pZqooZLetdgXENU';
+const ENV_TELEGRAM_BOT_TOKEN =
+  (typeof import.meta !== 'undefined' && import.meta.env?.VITE_TELEGRAM_BOT_TOKEN) ||
+  (typeof process !== 'undefined' && process.env?.TELEGRAM_BOT_TOKEN) ||
+  '';
 
 // Cấu hình mặc định kết nối tới Bot Telegram riêng của TAVY KOREA (@Antiappsbot - Antiga)
 export const DEFAULT_TELEGRAM_CONFIG = {
   enabled: true,
-  botToken: '8887086946:AAGQ6xm1KA4fH9Ibd1In0tkLUnH7etKWbzA',
+  botToken: ENV_TELEGRAM_BOT_TOKEN,
   botUsername: '@Antiappsbot',
   botName: 'Antiga',
   chatId: '8575761420',
@@ -40,7 +43,7 @@ export const DEFAULT_TELEGRAM_CONFIG = {
 
 export function normalizeBotToken(token) {
   const trimmed = String(token || '').trim();
-  if (!trimmed || trimmed === LEGACY_HERMES_BOT_TOKEN) {
+  if (!trimmed) {
     return DEFAULT_TELEGRAM_CONFIG.botToken;
   }
   return trimmed;
@@ -102,10 +105,12 @@ export async function saveTelegramConfig(newConfig = {}, options = {}) {
   if (options.syncCloud !== false && db && db.type) {
     try {
       const ref = doc(db, 'system_config', 'telegram_bot');
+      // Tuyệt đối KHÔNG ghi botToken lên Firestore để tránh lộ khóa bí mật
+      const { botToken: _omitSecretToken, ...safeCloudConfig } = merged;
       await setDoc(
         ref,
         {
-          ...merged,
+          ...safeCloudConfig,
           updatedAt: serverTimestamp()
         },
         { merge: true }

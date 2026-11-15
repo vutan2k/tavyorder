@@ -24,9 +24,9 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-const AI_API_URL = "http://localhost:20128/v1/chat/completions";
-const AI_API_KEY = "sk-a5baa61b8eb09efe-2zgl83-5d00c109";
-const AI_MODEL = "ag/gemini-3.6-flash-medium";
+const AI_API_URL = process.env.OPENAI_BASE_URL || "http://localhost:20128/v1/chat/completions";
+const AI_API_KEY = process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY || "";
+const AI_MODEL = process.env.OPENAI_MODEL || "ag/gemini-3.6-flash-medium";
 
 const koreanRegex = /[\u3131-\uD79D]/;
 
@@ -176,7 +176,7 @@ async function main() {
 
   // Đồng bộ lên Cloud Firestore
   console.log('🔐 Đang xác thực Firebase Auth Admin...');
-  await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', 'admin123');
+  await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   console.log('✅ Xác thực Admin thành công!');
 
   console.log(`📤 Đang cập nhật ${products.length} sản phẩm tên Tiếng Việt vào Firestore "pending_products"...`);

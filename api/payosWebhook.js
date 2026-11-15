@@ -1,21 +1,34 @@
 import { PayOS } from '@payos/node';
 import { initializeApp, getApps } from 'firebase/app';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { getFirestore, doc, getDoc, updateDoc, collection, query, where, getDocs, serverTimestamp } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: process.env.VITE_FIREBASE_API_KEY || 'AIzaSyCQ_cpZLNbZdgGpDzea9GlpCL8vbeb_emo',
+  apiKey: process.env.VITE_FIREBASE_API_KEY || process.env.FIREBASE_API_KEY || '',
   authDomain: 'tavyorder.firebaseapp.com',
   projectId: 'tavyorder',
 };
 
 const app = getApps().length > 0 ? getApps()[0] : initializeApp(firebaseConfig);
+const auth = getAuth(app);
 const db = getFirestore(app);
 
-const payos = new PayOS({
-  clientId: process.env.PAYOS_CLIENT_ID || 'bbc74f56-8123-458f-b415-02dbfbf266de',
-  apiKey: process.env.PAYOS_API_KEY || '3bb063b7-9e11-4dd0-9255-f63b4e8cf30b',
-  checksumKey: process.env.PAYOS_CHECKSUM_KEY || '2f514fd651f39f09040df22086c1823e31dedcb479cf601003d05110b6e7b189',
-});
+async function ensureServerAdminAuth() {
+  if (auth.currentUser) return;
+  const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
+  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '';
+  if (adminPass) {
+    await signInWithEmailAndPassword(auth, adminEmail, adminPass).catch(() => {});
+  }
+}
+
+function getPayOS() {
+  const clientId = process.env.PAYOS_CLIENT_ID || '';
+  const apiKey = process.env.PAYOS_API_KEY || '';
+  const checksumKey = process.env.PAYOS_CHECKSUM_KEY || '';
+  if (!clientId || !apiKey || !checksumKey) return null;
+  return new PayOS({ clientId, apiKey, checksumKey });
+}
 
 export default async function handler(req, res) {
   // CORS headers
@@ -38,77 +51,78 @@ export default async function handler(req, res) {
       return res.status(400).json({ success: false, message: 'Dữ liệu webhook rỗng' });
     }
 
+    const payos = getPayOS();
+    if (!payos) {
+      console.error('❌ [PayOS Webhook] Từ chối xử lý do thiếu cấu hình PAYOS_CHECKSUM_KEY');
+      return res.status(503).json({ success: false, message: 'PayOS chưa được cấu hình' });
+    }
+
     // Xác thực chữ ký HMAC từ PayOS
     let verifiedData;
     try {
       verifiedData = await payos.webhooks.verify(webhookData);
     } catch (err) {
       console.warn('⚠️ Lỗi hoặc ping thử nghiệm PayOS Webhook:', err.message);
-      // Khi PayOS ping thử nghiệm xác thực URL (confirm webhook), trả về 200 để xác nhận URL hoạt động
       return res.status(200).json({ success: true, message: 'Webhook test received' });
     }
 
-    if (verifiedData && (verifiedData.orderCode || verifiedData.amount)) {
+    if (verifiedData && verifiedData.orderCode) {
+      await ensureServerAdminAuth();
       const orderCodeNum = Number(verifiedData.orderCode);
-      const strCode = String(orderCodeNum);
-      const phoneCandidate = strCode.startsWith('0') ? strCode : ('0' + strCode);
+      const paidAmount = Number(verifiedData.amount) || 0;
 
-      console.log(`⚡ [PayOS Webhook] Nhận thanh toán: ${verifiedData.amount} đ cho đơn code ${orderCodeNum} (SĐT: ${phoneCandidate})`);
+      console.log(`⚡ [PayOS Webhook] Nhận thanh toán: ${paidAmount} đ cho đơn code ${orderCodeNum}`);
 
-      // 1. Tìm đơn theo SĐT chuẩn hoặc chuỗi số
-      let targetDocRef = doc(db, 'orders', phoneCandidate);
-      let snap = await getDoc(targetDocRef);
+      let targetDocRef = null;
+      let snap = null;
 
-      if (!snap.exists()) {
-        targetDocRef = doc(db, 'orders', strCode);
-        snap = await getDoc(targetDocRef);
+      // 1. Tìm theo orderCode lưu trong Firestore
+      const q = query(collection(db, 'orders'), where('orderCode', '==', orderCodeNum));
+      const qSnap = await getDocs(q);
+      if (!qSnap.empty) {
+        targetDocRef = qSnap.docs[0].ref;
+        snap = qSnap.docs[0];
       }
 
       // 2. Tìm theo ORD prefix cũ (backward compatibility)
-      if (!snap.exists()) {
-        targetDocRef = doc(db, 'orders', `ORD-${orderCodeNum}`);
-        snap = await getDoc(targetDocRef);
-      }
-
-      // 3. Tìm theo orderCode nếu ID không khớp
-      if (!snap.exists() && orderCodeNum) {
-        const q = query(collection(db, 'orders'), where('orderCode', '==', orderCodeNum));
-        const qSnap = await getDocs(q);
-        if (!qSnap.empty) {
-          targetDocRef = qSnap.docs[0].ref;
-          snap = qSnap.docs[0];
+      if (!snap || !snap.exists()) {
+        const legacyRef = doc(db, 'orders', `ORD-${orderCodeNum}`);
+        const legacySnap = await getDoc(legacyRef);
+        if (legacySnap.exists()) {
+          targetDocRef = legacyRef;
+          snap = legacySnap;
         }
       }
 
-      // 4. Tìm theo customerPhone
-      if (!snap.exists() && phoneCandidate) {
-        const qPhone = query(collection(db, 'orders'), where('customerPhone', '==', phoneCandidate));
-        const qPhoneSnap = await getDocs(qPhone);
-        if (!qPhoneSnap.empty) {
-          targetDocRef = qPhoneSnap.docs[0].ref;
-          snap = qPhoneSnap.docs[0];
-        }
-      }
+      if (snap && snap.exists()) {
+        const orderData = snap.data() || {};
+        const expectedAmount = Math.round(Number(
+          orderData.quote?.depositNeededVnd ||
+          orderData.quote?.totalVnd ||
+          orderData.totalVnd ||
+          orderData.totalAmount ||
+          0
+        ));
 
-      // 5. Tìm theo totalVnd / exactPaymentAmount
-      if (!snap.exists() && verifiedData.amount) {
-        const qAmount = query(
-          collection(db, 'orders'),
-          where('totalVnd', '==', Number(verifiedData.amount)),
-          where('paymentStatus', '==', 'unpaid')
-        );
-        const qAmountSnap = await getDocs(qAmount);
-        if (!qAmountSnap.empty) {
-          targetDocRef = qAmountSnap.docs[0].ref;
-          snap = qAmountSnap.docs[0];
+        // Bắt buộc đối chiếu số tiền thanh toán thực tế với số tiền đơn hàng trong Firestore
+        if (expectedAmount <= 0 || paidAmount < expectedAmount) {
+          console.error(`🚨 [PayOS Fraud Blocked] Đơn ${snap.id} yêu cầu ${expectedAmount}đ nhưng chỉ nhận ${paidAmount}đ!`);
+          await updateDoc(targetDocRef, {
+            paymentStatus: 'underpaid_flagged',
+            paidAmountVnd: paidAmount,
+            payosTransactionRef: verifiedData.reference || '',
+            updatedAt: serverTimestamp(),
+          });
+          return res.status(200).json({
+            success: false,
+            message: `Số tiền thanh toán (${paidAmount}đ) nhỏ hơn tổng đơn (${expectedAmount}đ)`
+          });
         }
-      }
 
-      if (snap.exists()) {
         await updateDoc(targetDocRef, {
           status: 'deposit_paid',
           paymentStatus: 'paid',
-          paidAmountVnd: verifiedData.amount,
+          paidAmountVnd: paidAmount,
           paidAt: new Date().toISOString(),
           payosTransactionRef: verifiedData.reference || '',
           updatedAt: serverTimestamp(),

@@ -1,61 +1,153 @@
-import React, { useState, useEffect, useMemo, memo } from 'react';
+import React, { useState, useEffect, useMemo, useRef, memo } from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingBag, Eye, ChevronLeft, ChevronRight } from 'lucide-react';
 import { formatVnd, formatKrw } from '../utils/priceCalculator';
 import { getProductUrl } from '../utils/slugify';
 import OptimizedImage from './OptimizedImage';
 
-function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPerPage = 24 }) {
-  const [currentPage, setCurrentPage] = useState(1);
+function ProductGrid({ products, activeCategory = 'all', krwRate, onSelectProduct, onViewDetail, itemsPerPage = 24 }) {
+  const [currentPage, setCurrentPage] = useState(() => {
+    try {
+      const saved = parseInt(sessionStorage.getItem('tavy_catalog_page') || '1', 10);
+      return Number.isFinite(saved) && saved >= 1 ? saved : 1;
+    } catch {
+      return 1;
+    }
+  });
 
+  const prevCategoryRef = useRef(activeCategory);
   useEffect(() => {
-    setCurrentPage(1);
-  }, [products]);
+    if (prevCategoryRef.current !== activeCategory) {
+      prevCategoryRef.current = activeCategory;
+      setCurrentPage(1);
+      try {
+        sessionStorage.setItem('tavy_catalog_page', '1');
+      } catch {}
+    }
+  }, [activeCategory]);
 
   const totalProducts = products?.length || 0;
   // Logic phân trang dạng danh sách trang (Trang 1, Trang 2...)
-  const totalPages = Math.ceil(totalProducts / itemsPerPage);
-  const startIndex = (currentPage - 1) * itemsPerPage;
+  const totalPages = Math.max(1, Math.ceil(totalProducts / itemsPerPage));
+  const effectivePage = totalProducts > 0 ? Math.min(currentPage, totalPages) : currentPage;
+  const startIndex = (effectivePage - 1) * itemsPerPage;
   const currentProducts = useMemo(() => {
     return products?.slice(startIndex, startIndex + itemsPerPage) || [];
   }, [products, startIndex, itemsPerPage]);
 
+  const saveScrollSnapshot = (goodsNo) => {
+    if (typeof window === 'undefined') return;
+    try {
+      const currentY = Math.round(window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0);
+      sessionStorage.setItem('tavy_catalog_page', String(effectivePage));
+      sessionStorage.setItem('tavy_catalog_scroll_y', String(currentY));
+      if (goodsNo) {
+        sessionStorage.setItem('tavy_catalog_last_goods_no', String(goodsNo));
+      }
+      sessionStorage.setItem('tavy_catalog_restore_pending', '1');
+    } catch {}
+  };
+
+  // Khôi phục đúng trang & đúng vị trí cuộn khi khách Back từ trang chi tiết sản phẩm về danh sách
+  useEffect(() => {
+    if (typeof window === 'undefined' || currentProducts.length === 0) return;
+    let rafId = null;
+    let timer1 = null;
+    let timer2 = null;
+    try {
+      const isPending = sessionStorage.getItem('tavy_catalog_restore_pending') === '1';
+      if (!isPending) return;
+
+      const rawSavedY = sessionStorage.getItem('tavy_catalog_scroll_y');
+      const savedY = rawSavedY !== null ? parseInt(rawSavedY, 10) : -1;
+      const lastGoodsNo = sessionStorage.getItem('tavy_catalog_last_goods_no') || '';
+
+      const jumpInstant = (targetTop) => {
+        const htmlEl = document.documentElement;
+        const prevBehavior = htmlEl.style.scrollBehavior;
+        htmlEl.style.scrollBehavior = 'auto';
+        window.scrollTo({ top: targetTop, left: 0, behavior: 'instant' });
+        htmlEl.style.scrollBehavior = prevBehavior;
+      };
+
+      const restorePosition = () => {
+        if (lastGoodsNo) {
+          const cardEl = document.querySelector(`[data-goods-no="${lastGoodsNo}"]`);
+          if (cardEl && Number.isFinite(savedY) && savedY >= 0) {
+            jumpInstant(savedY);
+            const rect = cardEl.getBoundingClientRect();
+            if (rect.bottom < 64 || rect.top > window.innerHeight) {
+              const cardTop = rect.top + (window.scrollY || window.pageYOffset || 0) - Math.max(90, Math.round(window.innerHeight * 0.22));
+              jumpInstant(Math.max(0, cardTop));
+            }
+            return;
+          }
+          if (cardEl) {
+            const rect = cardEl.getBoundingClientRect();
+            const cardTop = rect.top + (window.scrollY || window.pageYOffset || 0) - Math.max(90, Math.round(window.innerHeight * 0.22));
+            jumpInstant(Math.max(0, cardTop));
+            return;
+          }
+        }
+        if (Number.isFinite(savedY) && savedY >= 0) {
+          jumpInstant(savedY);
+        }
+      };
+
+      restorePosition();
+      rafId = requestAnimationFrame(() => {
+        restorePosition();
+        timer1 = setTimeout(restorePosition, 60);
+        timer2 = setTimeout(() => {
+          restorePosition();
+          try {
+            sessionStorage.removeItem('tavy_catalog_restore_pending');
+          } catch {}
+        }, 160);
+      });
+    } catch {}
+    return () => {
+      if (rafId !== null) cancelAnimationFrame(rafId);
+      if (timer1) clearTimeout(timer1);
+      if (timer2) clearTimeout(timer2);
+    };
+  }, [currentProducts.length, effectivePage]);
+
   const handlePageChange = (newPage) => {
-    if (newPage < 1 || newPage > totalPages || newPage === currentPage) return;
+    if (newPage < 1 || newPage > totalPages || newPage === effectivePage) return;
+    setCurrentPage(newPage);
+    try {
+      sessionStorage.setItem('tavy_catalog_page', String(newPage));
+      sessionStorage.removeItem('tavy_catalog_restore_pending');
+      sessionStorage.removeItem('tavy_catalog_scroll_y');
+      sessionStorage.removeItem('tavy_catalog_last_goods_no');
+    } catch {}
     if (typeof window !== 'undefined') {
       const elem = document.getElementById('products') || document.querySelector('.product-grid-container');
       if (elem) {
         const yOffset = -70;
         const y = elem.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: Math.max(0, y), behavior: 'auto' });
+        const htmlEl = document.documentElement;
+        const prevBehavior = htmlEl.style.scrollBehavior;
+        htmlEl.style.scrollBehavior = 'auto';
+        window.scrollTo({ top: Math.max(0, y), left: 0, behavior: 'instant' });
+        htmlEl.style.scrollBehavior = prevBehavior;
       }
     }
-    setCurrentPage(newPage);
   };
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && currentPage > 1) {
-      const elem = document.getElementById('products') || document.querySelector('.product-grid-container');
-      if (elem) {
-        const yOffset = -70;
-        const y = elem.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: Math.max(0, y), behavior: 'auto' });
-      }
-    }
-  }, [currentPage]);
 
   const pageNumbers = useMemo(() => {
     if (totalPages <= 7) {
       return Array.from({ length: totalPages }, (_, i) => i + 1);
     }
-    if (currentPage <= 4) {
+    if (effectivePage <= 4) {
       return [1, 2, 3, 4, 5, '...', totalPages];
     }
-    if (currentPage >= totalPages - 3) {
+    if (effectivePage >= totalPages - 3) {
       return [1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
     }
-    return [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
-  }, [currentPage, totalPages]);
+    return [1, '...', effectivePage - 1, effectivePage, effectivePage + 1, '...', totalPages];
+  }, [effectivePage, totalPages]);
 
   return (
     <div>
@@ -79,6 +171,7 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
           return (
             <div
               key={product.goodsNo || `grid-prod-${pIdx}`}
+              data-goods-no={product.goodsNo || ''}
               className="product-card"
               style={{
                 borderRadius: '14px',
@@ -94,6 +187,7 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
               {/* Product Image with Optimized Mobile Shimmer & Lazy Loading */}
               <Link
                 to={productUrl}
+                onClick={() => saveScrollSnapshot(product.goodsNo)}
                 className="product-card-image-wrap"
                 style={{ position: 'relative', width: '100%', overflow: 'hidden', cursor: 'pointer', display: 'block' }}
               >
@@ -155,7 +249,11 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
                 style={{ padding: '12px', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'space-between' }}
               >
                 <div>
-                  <Link to={productUrl} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <Link
+                    to={productUrl}
+                    onClick={() => saveScrollSnapshot(product.goodsNo)}
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                  >
                     <h3
                       className="product-card-title"
                       style={{
@@ -306,7 +404,7 @@ function ProductGrid({ products, krwRate, onSelectProduct, onViewDetail, itemsPe
               );
             }
 
-            const isActive = pNum === currentPage;
+            const isActive = pNum === effectivePage;
             return (
               <button
                 key={`page-${pNum}`}

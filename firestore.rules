@@ -17,15 +17,11 @@ service cloud.firestore {
       return isAuthenticated() && request.auth.uid == userId;
     }
 
-    function isTestAccount(userId) {
-      return userId == "test_user_tan123";
-    }
-
-    // 1. Users Collection - Strict lockdown except owner, admin, or test_user_tan123
+    // 1. Users Collection - Strict lockdown to owner or admin (removed test_user_tan123 backdoor)
     match /users/{userId} {
-      allow read: if isTestAccount(userId) || isOwner(userId) || isAdmin();
-      allow create: if isTestAccount(userId) || isAuthenticated();
-      allow update: if isTestAccount(userId) || isOwner(userId) || isAdmin();
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isAuthenticated() && (request.auth.uid == userId || isAdmin());
+      allow update: if isOwner(userId) || isAdmin();
       allow delete: if isAdmin();
     }
 
@@ -43,30 +39,17 @@ service cloud.firestore {
                (!('paymentStatus' in data) || data.paymentStatus == 'unpaid');
       }
 
-      // Helper function: Whitelist permitted fields for guest/customer order update (deposit proof upload, payment report, or cart update if order is still pending/unpaid)
-      function isAllowedPendingCartUpdate() {
-        let current = resource.data;
-        let incoming = request.resource.data;
-        return (current.status == 'pending' || current.status == 'quoted') &&
-               current.paymentStatus == 'unpaid' &&
-               (!('status' in incoming) || incoming.status == 'pending') &&
-               (!('paymentStatus' in incoming) || incoming.paymentStatus == 'unpaid') &&
-               incoming.keys().hasAll(['customerName', 'customerPhone', 'items', 'totalVnd']) &&
-               incoming.customerName is string && incoming.customerName.size() > 0 &&
-               incoming.customerPhone == orderId &&
-               incoming.items is list && incoming.items.size() > 0 &&
-               incoming.totalVnd is number && incoming.totalVnd > 0;
-      }
-
       function isAllowedGuestOrderUpdate() {
         let allowedKeys = ['depositProofImage', 'depositProofUploadedAt', 'customerReportedPaid', 'paymentDue', 'updatedAt'];
-        return request.resource.data.diff(resource.data).affectedKeys().hasOnly(allowedKeys) || isAllowedPendingCartUpdate();
+        return request.resource.data.diff(resource.data).affectedKeys().hasOnly(allowedKeys) &&
+               (!('depositProofImage' in request.resource.data) ||
+                (request.resource.data.depositProofImage is string && request.resource.data.depositProofImage.size() < 800000));
       }
 
-      // Read single document: Admin, order owner (by UID/Email), or direct order ID lookup (e.g. payment page)
+      // Read single document: Admin, order owner (by UID/Email), or single-doc lookup by exact Order ID / 10-digit VN Phone (list remains strictly blocked)
       allow get: if isAdmin() || 
                     (isAuthenticated() && (resource.data.userId == request.auth.uid || resource.data.userEmail == request.auth.token.email)) ||
-                    resource.id == orderId;
+                    (resource == null || orderId.matches('^ORD-[0-9A-Za-z_-]{6,}$') || orderId.matches('^0[35789][0-9]{8}$'));
 
       // Query/list orders: Restricted strictly to authenticated admins or user filtering by own email
       allow list: if isAdmin() || 
@@ -90,21 +73,20 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
-    // 4. System Config (Exchange rates, shipping fees)
+    // 4. System Config (Exchange rates, shipping fees — block public read of telegram_bot secret)
     match /system_config/{configId} {
-      allow read: if true;
+      allow read: if configId != "telegram_bot" || isAdmin();
       allow write: if isAdmin();
     }
 
-    // 5. Pending Products
+    // 5. Pending Products (Strictly restricted to Admin)
     match /pending_products/{productId} {
-      allow read: if true;
-      allow write: if true;
+      allow read, write: if isAdmin();
     }
 
-    // 6. AI Operations Manager Tasks (Hermes Realtime Queue)
+    // 6. AI Operations Manager Tasks (Strictly restricted to Admin)
     match /ai_manager_tasks/{taskId} {
-      allow read, write: if true;
+      allow read, write: if isAdmin();
     }
 
     // 7. Site Analytics (Pageviews Counter - Today, Week, Month, Year)
@@ -114,6 +96,17 @@ service cloud.firestore {
       allow create, update: if docId == "overview" &&
         request.resource.data.keys().hasOnly(['allTime', 'days', 'weeks', 'months', 'years', 'lastUpdated']) &&
         (!('allTime' in request.resource.data) || request.resource.data.allTime is number);
+      allow delete: if isAdmin();
+    }
+
+    // 8. Guest Phone Order Index (Single-doc get by exact 10-digit VN phone, no list)
+    match /guest_phone_orders/{phoneId} {
+      allow get: if phoneId.matches('^0[35789][0-9]{8}$');
+      allow list: if isAdmin();
+      allow create, update: if phoneId.matches('^0[35789][0-9]{8}$')
+        && request.resource.data.keys().hasOnly(['phone', 'orderIds', 'updatedAt'])
+        && request.resource.data.orderIds is list
+        && request.resource.data.orderIds.size() <= 50;
       allow delete: if isAdmin();
     }
   }

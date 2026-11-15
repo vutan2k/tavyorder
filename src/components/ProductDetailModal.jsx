@@ -47,7 +47,9 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(0);
 
   useEffect(() => {
-    setSelectedOptionIndex(0);
+    const opts = Array.isArray(product?.options) ? product.options : [];
+    const firstAvailableIdx = opts.findIndex(o => o && !o.is_sold_out && !o.isSoldOut && o.status !== 'out_of_stock' && o.status !== 'sold_out');
+    setSelectedOptionIndex(firstAvailableIdx >= 0 ? firstAvailableIdx : 0);
   }, [product]);
 
   const activeOption = hasOptions ? options[selectedOptionIndex] : null;
@@ -70,7 +72,7 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
 
   const allPhotos = useMemo(() => {
     const list = [];
-    const isSold = Boolean(product?.is_sold_out || product?.status === 'out_of_stock');
+    const isSold = Boolean(product?.is_sold_out || product?.isSoldOut || product?.status === 'out_of_stock' || product?.status === 'sold_out');
     if (isSold && defaultProductImage) {
       list.push(defaultProductImage);
     } else {
@@ -81,7 +83,7 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
 
     const unique = dedupeImageList(list.filter(Boolean));
     return unique.length > 0 ? unique : (defaultProductImage ? [defaultProductImage] : []);
-  }, [reviewPhotos, defaultProductImage, optionImage, product?.is_sold_out, product?.status]);
+  }, [reviewPhotos, defaultProductImage, optionImage, product?.is_sold_out, product?.isSoldOut, product?.status]);
 
   const [activeSlide, setActiveSlide] = useState(0);
   const [zoomIndex, setZoomIndex] = useState(null); // Fullscreen HD Lightbox Index
@@ -114,7 +116,54 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
     }
   }, [zoomIndex]);
 
-  // Lắng nghe phím Escape để lùi 1 bước: đóng Lightbox trước, nếu Lightbox đã đóng thì mới đóng Modal chi tiết
+  // Lắng nghe phím Escape & nút Back trình duyệt/điện thoại (popstate) để đóng Lightbox / Modal tại chỗ (StrictMode-safe)
+  const onCloseRef = useRef(onClose);
+  useEffect(() => {
+    onCloseRef.current = onClose;
+  }, [onClose]);
+
+  const zoomIndexRef = useRef(zoomIndex);
+  useEffect(() => {
+    zoomIndexRef.current = zoomIndex;
+  }, [zoomIndex]);
+
+  useEffect(() => {
+    if (!product || typeof window === 'undefined') return;
+    try {
+      if (!window.history.state?.tavyProductModal) {
+        window.history.pushState({ ...(window.history.state || {}), tavyProductModal: true }, '');
+      }
+    } catch {}
+
+    const handlePopState = () => {
+      if (zoomIndexRef.current !== null) {
+        setZoomIndex(null);
+        try {
+          window.history.pushState({ ...(window.history.state || {}), tavyProductModal: true }, '');
+        } catch {}
+        return;
+      }
+      if (onCloseRef.current) {
+        onCloseRef.current();
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [product]);
+
+  const dismissModal = () => {
+    if (typeof window !== 'undefined' && window.history.state?.tavyProductModal) {
+      try {
+        window.history.back();
+        return;
+      } catch {}
+    }
+    if (onClose) onClose();
+  };
+
   useEffect(() => {
     if (!product) return;
     const handleKeyDown = (e) => {
@@ -122,8 +171,8 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
         if (zoomIndex !== null) {
           e.stopPropagation();
           setZoomIndex(null);
-        } else if (onClose) {
-          onClose();
+        } else {
+          dismissModal();
         }
       }
     };
@@ -131,12 +180,24 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
       window.addEventListener('keydown', handleKeyDown);
       return () => window.removeEventListener('keydown', handleKeyDown);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [product, zoomIndex, onClose]);
 
   if (!product) return null;
 
-  const isOptionSoldOut = Boolean(activeOption?.is_sold_out || activeOption?.status === 'out_of_stock');
-  const activeWon = activeOption?.price_krw ? Number(activeOption.price_krw) : (Number(product?.foreignPrice ?? product?.priceKrw ?? product?.priceWon ?? product?.price) || 0);
+  const isOptionSoldOut = Boolean(
+    activeOption?.is_sold_out ||
+    activeOption?.isSoldOut ||
+    activeOption?.status === 'out_of_stock' ||
+    activeOption?.status === 'sold_out' ||
+    product?.is_sold_out ||
+    product?.isSoldOut ||
+    product?.status === 'out_of_stock' ||
+    product?.status === 'sold_out'
+  );
+  const activeWon = (activeOption?.price_krw || activeOption?.price)
+    ? Number(activeOption.price_krw || activeOption.price)
+    : (Number(product?.foreignPrice ?? product?.priceKrw ?? product?.priceWon ?? product?.price) || 0);
   const originalWon = activeOption?.original_price_krw
     ? Number(activeOption.original_price_krw)
     : (Number(product?.originalPrice || product?.origin_price_krw) || 0);
@@ -145,7 +206,7 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
     : (product?.discountRate || (product?.discount_percent ? `-${product.discount_percent}%` : null));
   const discountBadge = discountBadgeRaw ? (discountBadgeRaw.startsWith('-') ? discountBadgeRaw : `-${discountBadgeRaw}`) : null;
   const hasDiscount = originalWon > activeWon;
-  const calculatedVnd = Math.round(activeWon * krwRate);
+  const calculatedVnd = Number(activeOption?.price_vnd) || Math.round(activeWon * krwRate);
   const formatVnd = (n) => (n || n === 0) ? `${new Intl.NumberFormat('vi-VN').format(Math.round(n))} VNĐ` : '0 VNĐ';
   const formatKrw = (n) => `₩${(n || 0).toLocaleString('vi-VN')}`;
 
@@ -194,7 +255,7 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
 
   return (
     <div 
-      onClick={onClose}
+      onClick={dismissModal}
       style={{
         position: 'fixed',
         top: 0, left: 0, right: 0, bottom: 0,
@@ -222,7 +283,7 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
       >
         {/* Nút Đóng Modal */}
         <button
-          onClick={onClose}
+          onClick={dismissModal}
           aria-label="Đóng"
           style={{
             position: 'absolute',
@@ -515,9 +576,9 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
               }}>
                 {options.map((opt, idx) => {
                   const isSelected = idx === selectedOptionIndex;
-                  const isSoldOut = Boolean(opt.is_sold_out || opt.status === 'out_of_stock');
-                  const optPriceWon = opt.price_krw ? Number(opt.price_krw) : Number(product.foreignPrice);
-                  const optPriceVnd = Math.round(optPriceWon * krwRate);
+                  const isSoldOut = Boolean(opt.is_sold_out || opt.isSoldOut || opt.status === 'out_of_stock' || opt.status === 'sold_out');
+                  const optPriceWon = (opt.price_krw || opt.price) ? Number(opt.price_krw || opt.price) : Number(product.foreignPrice);
+                  const optPriceVnd = Number(opt.price_vnd) || Math.round(optPriceWon * krwRate);
                   const optDiscount = opt.discount_percent ? `-${opt.discount_percent}%` : null;
 
                   return (
@@ -743,13 +804,15 @@ export default function ProductDetailModal({ product, krwRate, onClose, onOrderN
                   ...product,
                   cartItemId: `${product.goodsNo || product.id}_${activeOption.id || activeOption.name_vi || activeOption.name_kr}`,
                   selectedOption: activeOption,
-                  options: activeOption.name_vi || activeOption.name_kr,
-                  foreignPrice: activeOption.price_krw || product.foreignPrice,
-                  price: activeOption.price_krw || product.price,
-                  productImage: activeOption.image_url || product.productImage
+                  selectedOptionId: activeOption.id || activeOption.name_vi || activeOption.name_kr,
+                  options: activeOption.name_vi || activeOption.name_kr || activeOption.name,
+                  foreignPrice: activeWon,
+                  price: activeWon,
+                  priceVnd: calculatedVnd,
+                  productImage: activeOption.image_url || activeOption.imageUrl || product.productImage
                 } : product;
                 if (onOrderNow) onOrderNow(payloadItem, e);
-                if (onClose) onClose();
+                dismissModal();
               }}
               className={isOptionSoldOut ? '' : 'btn-gold'}
               style={{

@@ -26,7 +26,19 @@ export default function Navbar({ logoSrc: _logoSrc } = {}) {
         width: '100%',
       }}>
         {/* Logo Link */}
-        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
+        <Link
+          to="/"
+          onClick={() => {
+            try {
+              sessionStorage.removeItem('tavy_catalog_restore_pending');
+              sessionStorage.removeItem('tavy_catalog_scroll_y');
+              sessionStorage.removeItem('tavy_catalog_last_goods_no');
+              sessionStorage.setItem('tavy_catalog_page', '1');
+              sessionStorage.setItem('tavy_catalog_category', 'all');
+            } catch {}
+          }}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}
+        >
           <img
             src="/tavy-logo.png"
             alt="TAVY Logo"

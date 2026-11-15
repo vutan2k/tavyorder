@@ -63,7 +63,7 @@ export const QUALITY_CASCADE_ORDER = [
 /** Resolve OpenAI API configuration from env or localStorage */
 export const getOpenAIConfig = () => {
   const baseUrl = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_OPENAI_BASE_URL) || 'http://localhost:20128/v1';
-  const apiKey = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_OPENAI_API_KEY) || 'sk-a5baa61b8eb09efe-2zgl83-5d00c109';
+  const apiKey = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_OPENAI_API_KEY) || '';
   const model = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_OPENAI_MODEL) || 'ag/gemini-3.6-flash-medium';
   return { baseUrl, apiKey, model };
 };
@@ -594,7 +594,7 @@ export async function fetchJinaMarkdown(targetUrl) {
 
   // 1. Firebase Cloud Function proxy
   try {
-    const fnUrl = `https://scrapejina-r5ncp5gdvq-uc.a.run.app?url=${encodeURIComponent(cleanUrl)}`;
+    const fnUrl = `https://scrapejina-rkn7dgrfkq-uc.a.run.app?url=${encodeURIComponent(cleanUrl)}`;
     const r = await fetchWithTimeout(fnUrl, { headers: { 'Accept': 'application/json' } }, 10000);
     if (r.ok) {
       const j = await r.json();

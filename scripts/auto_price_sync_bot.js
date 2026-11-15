@@ -157,7 +157,7 @@ async function runPriceSyncSession() {
 
   if (auth && firebaseConfig.apiKey) {
     try {
-      await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', process.env.VITE_ADMIN_PASSWORD || 'admin123');
+      await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || ''));
       console.log('🔑 [Firebase Auth] Đăng nhập Admin thành công (admin@tavykorea.vn)');
     } catch (e) {
       console.warn('⚠️ [Firebase Auth] Đăng nhập thất bại:', e.message);

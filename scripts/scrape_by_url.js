@@ -13,9 +13,12 @@ import {
 
 const GEMINI_API_KEY = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY || '';
 const OPENAI_BASE_URL = process.env.VITE_OPENAI_BASE_URL || process.env.OPENAI_BASE_URL || 'http://localhost:20128/v1';
-const OPENAI_API_KEY = process.env.VITE_OPENAI_API_KEY || process.env.OPENAI_API_KEY || 'sk-a5baa61b8eb09efe-2zgl83-5d00c109';
+const OPENAI_API_KEY = process.env.VITE_OPENAI_API_KEY || process.env.OPENAI_API_KEY || '';
 const OPENAI_MODEL = process.env.VITE_OPENAI_MODEL || process.env.OPENAI_MODEL || 'ag/gemini-3.6-flash-medium';
-const KRW_TO_VND = 18.5;
+const DEFAULT_KRW_RATE = 19.5;
+const DEFAULT_SERVICE_FEE_PERCENT = 5;
+const calculateDynamicVnd = (won, krwRate = DEFAULT_KRW_RATE, feePercent = DEFAULT_SERVICE_FEE_PERCENT) =>
+  Math.round((Number(won || 0) * Number(krwRate) * (1 + Number(feePercent) / 100)) / 1000) * 1000;
 
 const firebaseConfig = {
   apiKey: process.env.VITE_FIREBASE_API_KEY || "AIzaSyDummyKeyForScraperSync12345",
@@ -121,7 +124,7 @@ async function scrapeSingleProductByUrl(url) {
     const brandInfo = extractBrandFromTitleOrDom(detailData.nameKr, detailData.brand);
     const categoryInfo = classifyCosmeticsCategory(detailData.nameKr, '');
 
-    const calculatedPrice = Math.round(detailData.foreignPrice * KRW_TO_VND);
+    const calculatedPrice = calculateDynamicVnd(detailData.foreignPrice);
     const productObj = {
       id: goodsNo,
       goodsNo: goodsNo,
@@ -133,7 +136,7 @@ async function scrapeSingleProductByUrl(url) {
       subCategory: categoryInfo.subCategory,
       foreignPrice: detailData.foreignPrice,
       price: calculatedPrice,
-      originalPrice: Math.round(detailData.originalPrice * KRW_TO_VND),
+      originalPrice: calculateDynamicVnd(detailData.originalPrice),
       productImage: detailData.mainImg,
       images: detailData.albumImgs,
       photoReviews: detailData.reviewImgs,

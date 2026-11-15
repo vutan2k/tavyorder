@@ -52,7 +52,7 @@ async function runMigration() {
   console.log('🚀 BẮT ĐẦU QUY TRÌNH ĐẨY ẢNH & ĐỒNG BỘ CATALOG LÊN CLOUD...');
 
   const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
-  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || 'admin123';
+  const adminPass = (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   await signInWithEmailAndPassword(auth, adminEmail, adminPass);
   console.log('🔐 Đã xác thực Firebase Admin:', adminEmail);
 

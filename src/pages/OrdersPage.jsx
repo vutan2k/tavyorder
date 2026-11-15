@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import {
@@ -8,6 +8,9 @@ import {
   Truck, Scale, Info, Play, X, Zap, MessageSquare
 } from 'lucide-react';
 import ProductDetailModal from '../components/ProductDetailModal';
+import { GuestOrderTrackingBar, GuestOrderStatusCard } from '../components/GuestOrderTracking';
+import { findGuestOrders } from '../services/guestTrackingService';
+import { lookupGuestOrdersInDB } from '../services/dbService';
 import { ORDER_STEPS, getOrderStepIndex, getStatusConfig } from '../data/orderStatuses';
 import { getOrderTotalVnd, formatVnd, formatKrw, getVndFromWon } from '../utils/priceCalculator';
 import { getEmbedVideoUrl, isEmbeddableVideo } from '../utils/videoUrlHelper';
@@ -20,8 +23,47 @@ export default function OrdersPage() {
   const [detailProduct, setDetailProduct] = useState(null);
   const [activeMediaModal, setActiveMediaModal] = useState(null); // { type: 'video' | 'image', url: string, title: string }
 
+  // State tra cứu cho khách vãng lai & đồng bộ đơn theo SĐT
+  const [guestQuery, setGuestQuery] = useState('');
+  const [guestResults, setGuestResults] = useState([]);
+  const [selectedGuestIdx, setSelectedGuestIdx] = useState(0);
+  const [hasGuestSearched, setHasGuestSearched] = useState(false);
+  const [isGuestSearching, setIsGuestSearching] = useState(false);
+  const [phoneLinkedOrders, setPhoneLinkedOrders] = useState([]);
+
   const krwRate = rates?.KRW?.rate || 19.5;
   const serviceFeeMultiplier = 1 + (rates?.serviceFeePercent ?? 5) / 100;
+
+  useEffect(() => {
+    let active = true;
+    if (currentUser?.phone) {
+      lookupGuestOrdersInDB(currentUser.phone, orders || [])
+        .then((res) => {
+          if (active && Array.isArray(res)) setPhoneLinkedOrders(res);
+        })
+        .catch(() => {});
+    } else {
+      setPhoneLinkedOrders([]);
+    }
+    return () => {
+      active = false;
+    };
+  }, [currentUser?.phone, orders]);
+
+  const handleGuestLookup = async (query) => {
+    const term = String(query || '').trim();
+    if (!term) return;
+    setIsGuestSearching(true);
+    setGuestQuery(term);
+    let matched = findGuestOrders(term, orders || []);
+    if (matched.length === 0) {
+      matched = await lookupGuestOrdersInDB(term, orders || []);
+    }
+    setGuestResults(matched);
+    setSelectedGuestIdx(0);
+    setHasGuestSearched(true);
+    setIsGuestSearching(false);
+  };
 
   const handleProductClick = (item, order) => {
     const itemName = item?.name || order?.productName;
@@ -43,26 +85,74 @@ export default function OrdersPage() {
   };
 
   if (!currentUser) {
+    const selectedGuestOrder = guestResults[selectedGuestIdx] || guestResults[0] || null;
     return (
-      <div className="container" style={{ paddingTop: '80px', paddingBottom: '80px', textAlign: 'center' }}>
-        <Package size={54} style={{ color: 'var(--purple-primary)', marginBottom: '16px' }} />
-        <h2 style={{ fontSize: '1.6rem', fontWeight: 700, marginBottom: '8px', color: 'var(--text-dark)' }}>Vui lòng đăng nhập</h2>
-        <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>
-          Bạn cần đăng nhập tài khoản để theo dõi lịch sử và tiến trình vận chuyển đơn hàng của mình.
-        </p>
-        <button className="btn-gold" onClick={() => navigate('/login')}>
-          Đăng nhập ngay
-        </button>
+      <div className="container" style={{ paddingTop: '48px', paddingBottom: '80px', maxWidth: '820px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '24px' }}>
+          <Package size={48} style={{ color: 'var(--purple-primary)', marginBottom: '12px' }} />
+          <h2 style={{ fontSize: '1.6rem', fontWeight: 700, marginBottom: '8px', color: 'var(--text-dark)' }}>
+            Tra Cứu Tiến Trình Đơn Hàng
+          </h2>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '16px', fontSize: '0.92rem' }}>
+            Nhập Số điện thoại 10 số hoặc Mã đơn hàng (ORD-...) để kiểm tra hành trình vận chuyển Hàn - Việt.
+          </p>
+        </div>
+
+        <GuestOrderTrackingBar
+          onSearch={handleGuestLookup}
+          isSearching={isGuestSearching}
+          initialQuery={guestQuery}
+          totalMatched={hasGuestSearched ? guestResults.length : null}
+          sampleSuggestions={[
+            { label: 'Thử SĐT: 0912345678', value: '0912345678' },
+            { label: 'Thử SĐT: 0987654321', value: '0987654321' }
+          ]}
+        />
+
+        {hasGuestSearched && selectedGuestOrder && (
+          <div style={{ marginTop: '20px' }}>
+            <GuestOrderStatusCard
+              order={selectedGuestOrder}
+              matchedOrders={guestResults}
+              selectedOrderIndex={selectedGuestIdx}
+              onSelectOrder={setSelectedGuestIdx}
+              rates={rates}
+              onOpenMediaModal={(media) => setActiveMediaModal(media)}
+              onClose={() => {
+                setHasGuestSearched(false);
+                setGuestResults([]);
+              }}
+            />
+          </div>
+        )}
+
+        <div style={{ marginTop: '32px', textAlign: 'center', borderTop: '1px solid var(--border-color, #E5E7EB)', paddingTop: '24px' }}>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '12px', fontSize: '0.88rem' }}>
+            Hoặc đăng nhập bằng Google để tự động lưu lịch sử tất cả đơn hàng:
+          </p>
+          <button className="btn-gold" onClick={() => navigate('/login')}>
+            Đăng nhập ngay
+          </button>
+        </div>
       </div>
     );
   }
 
-  // Lọc danh sách đơn của người dùng
-  const userOrders = orders.filter(
-    (o) =>
-      (o.userEmail && o.userEmail.toLowerCase() === currentUser.email.toLowerCase()) ||
-      (o.customerPhone && currentUser.phone && o.customerPhone === currentUser.phone)
-  );
+  // Lọc danh sách đơn của người dùng (Gộp cả đơn theo email và đơn tra cứu theo SĐT)
+  const currentUserEmailLower = currentUser?.email?.toLowerCase?.() || '';
+  const mergedOrdersMap = new Map();
+  (orders || []).forEach((o) => {
+    if (
+      (Boolean(currentUserEmailLower) && o.userEmail?.toLowerCase?.() === currentUserEmailLower) ||
+      (Boolean(o.customerPhone && currentUser?.phone) && o.customerPhone === currentUser.phone)
+    ) {
+      mergedOrdersMap.set(o.id, o);
+    }
+  });
+  (phoneLinkedOrders || []).forEach((o) => {
+    if (o && o.id) mergedOrdersMap.set(o.id, o);
+  });
+  const userOrders = Array.from(mergedOrdersMap.values());
 
   const filteredOrders = userOrders.filter((order) => {
     if (activeTab === 'all') return true;

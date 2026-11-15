@@ -173,7 +173,7 @@ export async function syncAllProductsWithOliveYoung() {
   const db = getFirestore(app);
 
   try {
-    await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', 'admin123');
+    await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
     console.log("🔑 Đã xác thực quyền Admin Firebase Auth!");
   } catch (err) {
     console.warn("⚠️ Không thể đăng nhập Admin Auth:", err.message);

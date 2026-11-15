@@ -123,26 +123,53 @@ function loadLatestLocalSourcePrices() {
 }
 
 /**
- * Gửi tin nhắn HTML tới Telegram Bot API
+ * Chia nhỏ nội dung HTML nếu vượt quá trần 4096 ký tự của Telegram API
+ */
+function splitTelegramHtmlChunks(htmlText, maxLen = 3800) {
+  const text = String(htmlText || '');
+  if (text.length <= maxLen) return [text];
+  const lines = text.split('\n');
+  const chunks = [];
+  let current = '';
+  for (const line of lines) {
+    if ((current + '\n' + line).length > maxLen && current.length > 0) {
+      chunks.push(current);
+      current = line;
+    } else {
+      current = current ? `${current}\n${line}` : line;
+    }
+  }
+  if (current) chunks.push(current);
+  return chunks;
+}
+
+/**
+ * Gửi tin nhắn HTML tới Telegram Bot API (Tự động chia nhỏ nếu > 3800 ký tự)
  */
 async function sendTelegramHtml(botToken, chatId, htmlText) {
   const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: chatId,
-      text: htmlText,
-      parse_mode: 'HTML',
-      disable_web_page_preview: true
-    })
-  });
+  const chunks = splitTelegramHtmlChunks(htmlText, 3800);
+  let lastResult = null;
 
-  const data = await res.json();
-  if (!res.ok || !data.ok) {
-    throw new Error(data.description || `Telegram HTTP ${res.status}`);
+  for (const chunk of chunks) {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: chunk,
+        parse_mode: 'HTML',
+        disable_web_page_preview: true
+      })
+    });
+
+    const data = await res.json();
+    if (!res.ok || !data.ok) {
+      throw new Error(data.description || `Telegram HTTP ${res.status}`);
+    }
+    lastResult = data.result;
   }
-  return data.result;
+  return lastResult;
 }
 
 /**
@@ -157,9 +184,11 @@ export async function runDaily8PmTelegramReport() {
   let isAdminAuthenticated = false;
   try {
     const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
-    const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || 'admin123';
-    await signInWithEmailAndPassword(auth, adminEmail, adminPass);
-    isAdminAuthenticated = true;
+    const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '';
+    if (adminPass) {
+      await signInWithEmailAndPassword(auth, adminEmail, adminPass);
+      isAdminAuthenticated = true;
+    }
   } catch {
     // Tiếp tục chạy ở chế độ đọc public
   }
@@ -205,12 +234,17 @@ export async function runDaily8PmTelegramReport() {
     `🏷️ [Đối Chiếu Giá] Tổng: ${priceReport.totalProducts} SKU | Khớp 100%: ${priceReport.matchedCount} SKU | Biến động: ${priceReport.discrepancyCount} SKU (🔻 Giảm: ${priceReport.priceDropsCount}, 🔺 Tăng: ${priceReport.priceIncreasesCount})`
   );
 
-  // Nếu có sản phẩm chênh lệch giá và đã xác thực Admin, lưu trường `pendingPriceUpdate` lên Firestore (Chế độ Alert-Only: giữ nguyên giá đang bán để Admin bấm nút cập nhật)
+  // Nếu có sản phẩm chênh lệch giá và đã xác thực Admin, lưu trường `pendingPriceUpdate` lên Firestore (Chia batch <= 400 lệnh để không vượt trần 500 lệnh của Firestore)
   if (isAdminAuthenticated && priceReport.discrepancies.length > 0) {
     try {
-      const batch = writeBatch(db);
-      for (const prod of priceReport.annotatedProducts) {
-        if (prod.pendingPriceUpdate?.hasDiscrepancy && prod.goodsNo) {
+      const itemsToUpdate = priceReport.annotatedProducts.filter(
+        prod => prod.pendingPriceUpdate?.hasDiscrepancy && prod.goodsNo
+      );
+      const BATCH_LIMIT = 400;
+      for (let i = 0; i < itemsToUpdate.length; i += BATCH_LIMIT) {
+        const chunk = itemsToUpdate.slice(i, i + BATCH_LIMIT);
+        const batch = writeBatch(db);
+        for (const prod of chunk) {
           batch.set(
             doc(db, 'products', prod.goodsNo),
             {
@@ -220,9 +254,9 @@ export async function runDaily8PmTelegramReport() {
             { merge: true }
           );
         }
+        await batch.commit();
       }
-      await batch.commit();
-      console.log(`💾 [Firestore Sync] Đã lưu trạng thái chờ duyệt giá cho ${priceReport.discrepancies.length} SKU trên Web Admin.`);
+      console.log(`💾 [Firestore Sync] Đã lưu trạng thái chờ duyệt giá cho ${itemsToUpdate.length} SKU trên Web Admin.`);
     } catch {
       // Ignore if unauthenticated write
     }
@@ -239,13 +273,12 @@ export async function runDaily8PmTelegramReport() {
   const tgResult = await sendTelegramHtml(botConfig.botToken, botConfig.chatId, messageHtml);
   console.log(`✅ [Telegram Sent] Đã gửi báo cáo thành công tới Chat ID ${botConfig.chatId} (Message ID: ${tgResult.message_id})`);
 
-  // 5. Lưu dấu thời gian gửi và đồng bộ cấu hình bot mới vào Firestore `system_config/telegram_bot`
+  // 5. Lưu dấu thời gian gửi vào Firestore `system_config/telegram_bot` (Không lưu botToken công khai)
   if (isAdminAuthenticated) {
     try {
       await setDoc(
         doc(db, 'system_config', 'telegram_bot'),
         {
-          botToken: botConfig.botToken,
           botUsername: '@Antiappsbot',
           botName: 'Antiga',
           chatId: botConfig.chatId,

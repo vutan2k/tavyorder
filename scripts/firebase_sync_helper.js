@@ -26,7 +26,7 @@ const LOCAL_PRODUCTS_DIR = '/Users/tan/tavy-korea/public/products';
 
 async function loginAdmin() {
   const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
-  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || 'admin123';
+  const adminPass = (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   await signInWithEmailAndPassword(auth, adminEmail, adminPass);
 }
 

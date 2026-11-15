@@ -29,7 +29,7 @@ const db = getFirestore(app);
 async function main() {
   console.log('🔐 Đang đăng nhập Firebase Admin...');
   const adminEmail = envGet('VITE_ADMIN_EMAIL', 'admin@tavykorea.vn');
-  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || 'admin123';
+  const adminPass = (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   await signInWithEmailAndPassword(auth, adminEmail, adminPass);
   console.log('✅ Đăng nhập Admin thành công:', adminEmail);
 

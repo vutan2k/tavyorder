@@ -16,6 +16,7 @@ import { extractGoodsNoFromSlug, generateProductSlug, getProductUrl } from '../u
 import { getOptionDisplayName } from '../utils/koreanOptionTranslator';
 import OptimizedImage from '../components/OptimizedImage';
 import Footer from '../components/Footer';
+import { useToast } from '../components/Toast';
 
 // Chuẩn hóa URL ảnh HD sắc nét từ Olive Young
 const getHighResUrl = (url) => {
@@ -57,6 +58,7 @@ const dedupeImageList = (urls) => {
 export default function ProductDetailPage() {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const showToast = useToast();
   const { 
     products, 
     publishedProducts, 
@@ -118,9 +120,11 @@ export default function ProductDetailPage() {
       });
   }, [slug, products, publishedProducts]);
 
-  // Reset option khi sản phẩm thay đổi
+  // Reset option khi sản phẩm thay đổi (Ưu tiên chọn sẵn phân loại đầu tiên còn hàng)
   useEffect(() => {
-    setSelectedOptionIndex(0);
+    const opts = Array.isArray(product?.options) ? product.options : [];
+    const firstAvailableIdx = opts.findIndex(o => o && !o.is_sold_out && !o.isSoldOut && o.status !== 'out_of_stock' && o.status !== 'sold_out');
+    setSelectedOptionIndex(firstAvailableIdx >= 0 ? firstAvailableIdx : 0);
     setActiveImageIndex(0);
   }, [product]);
 
@@ -133,6 +137,13 @@ export default function ProductDetailPage() {
   const options = Array.isArray(product?.options) ? product.options : [];
   const hasOptions = options.length > 0;
   const activeOption = hasOptions ? options[selectedOptionIndex] : null;
+  const isCurrentOptionSoldOut = Boolean(
+    activeOption?.is_sold_out ||
+    activeOption?.isSoldOut ||
+    activeOption?.status === 'out_of_stock' ||
+    activeOption?.status === 'sold_out' ||
+    (!hasOptions && (product?.is_sold_out || product?.isSoldOut || product?.status === 'out_of_stock' || product?.status === 'sold_out'))
+  );
 
   // Tính giá sản phẩm
   const activeWonPrice = useMemo(() => {
@@ -186,22 +197,28 @@ export default function ProductDetailPage() {
 
   // Thêm vào giỏ hàng
   const handleAddToCart = (shouldRedirect = false) => {
-    if (!product) return;
+    if (!product || isCurrentOptionSoldOut) return;
     const optDisplayName = activeOption ? getOptionDisplayName(activeOption, selectedOptionIndex) : (typeof product.options === 'string' ? product.options : '');
+    const selectedOptId = activeOption ? (activeOption.id || activeOption.name_vi || activeOption.name_kr || optDisplayName) : undefined;
     const cartItem = {
       ...product,
       selectedOption: activeOption,
+      selectedOptionId: selectedOptId,
       selectedOptionName: optDisplayName,
       options: optDisplayName,
       priceVnd: calculatedVnd,
       foreignPrice: activeWonPrice,
+      price: activeWonPrice,
+      productImage: (activeOption?.image_url ? getHighResUrl(activeOption.image_url) : '') || defaultProductImage,
       qty: 1
     };
     if (addToCart) {
-      addToCart(cartItem);
+      addToCart(cartItem, 1);
     }
     if (shouldRedirect) {
       navigate('/cart');
+    } else if (showToast) {
+      showToast('Đã thêm sản phẩm vào giỏ hàng!', 'success');
     }
   };
 
@@ -304,9 +321,63 @@ export default function ProductDetailPage() {
       {/* Breadcrumb */}
       <div style={{ backgroundColor: 'var(--bg-white, #FFFFFF)', borderBottom: '1px solid var(--border-color, #E5E7EB)', padding: '12px 16px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.82rem', color: 'var(--text-muted, #6B7280)', flexWrap: 'wrap' }}>
-          <Link to="/" style={{ color: 'var(--text-muted, #4B5563)', textDecoration: 'none' }}>Trang chủ</Link>
+          <button
+            type="button"
+            onClick={() => {
+              try {
+                if (sessionStorage.getItem('tavy_catalog_scroll_y') || sessionStorage.getItem('tavy_catalog_page')) {
+                  sessionStorage.setItem('tavy_catalog_restore_pending', '1');
+                }
+              } catch {}
+              if (window.history.length > 1) {
+                navigate(-1);
+              } else {
+                navigate('/');
+              }
+            }}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px',
+              background: 'none',
+              border: 'none',
+              padding: 0,
+              color: 'var(--text-dark, #111827)',
+              fontWeight: 700,
+              fontSize: '0.82rem',
+              cursor: 'pointer'
+            }}
+          >
+            <ArrowLeft size={14} /> Quay lại
+          </button>
           <ChevronRight size={14} />
-          <Link to="/#products" style={{ color: 'var(--text-muted, #4B5563)', textDecoration: 'none' }}>Mỹ phẩm Olive Young</Link>
+          <Link
+            to="/"
+            onClick={() => {
+              try {
+                if (sessionStorage.getItem('tavy_catalog_scroll_y') || sessionStorage.getItem('tavy_catalog_page')) {
+                  sessionStorage.setItem('tavy_catalog_restore_pending', '1');
+                }
+              } catch {}
+            }}
+            style={{ color: 'var(--text-muted, #4B5563)', textDecoration: 'none' }}
+          >
+            Trang chủ
+          </Link>
+          <ChevronRight size={14} />
+          <Link
+            to="/"
+            onClick={() => {
+              try {
+                if (sessionStorage.getItem('tavy_catalog_scroll_y') || sessionStorage.getItem('tavy_catalog_page')) {
+                  sessionStorage.setItem('tavy_catalog_restore_pending', '1');
+                }
+              } catch {}
+            }}
+            style={{ color: 'var(--text-muted, #4B5563)', textDecoration: 'none' }}
+          >
+            Mỹ phẩm Olive Young
+          </Link>
           {product.brand && (
             <>
               <ChevronRight size={14} />
@@ -589,17 +660,19 @@ export default function ProductDetailPage() {
             {/* Nút Hành Động */}
             <div style={{ display: 'flex', gap: '12px', marginBottom: '28px', flexWrap: 'wrap' }}>
               <button
+                type="button"
+                disabled={isCurrentOptionSoldOut}
                 onClick={() => handleAddToCart(false)}
                 style={{
                   flex: '1 1 180px',
-                  backgroundColor: 'var(--bg-white, #FFFFFF)',
-                  color: 'var(--text-dark, #000000)',
-                  border: '2px solid var(--text-dark, #000000)',
+                  backgroundColor: isCurrentOptionSoldOut ? '#F3F4F6' : 'var(--bg-white, #FFFFFF)',
+                  color: isCurrentOptionSoldOut ? '#9CA3AF' : 'var(--text-dark, #000000)',
+                  border: isCurrentOptionSoldOut ? '2px solid #E5E7EB' : '2px solid var(--text-dark, #000000)',
                   padding: '12px 20px',
                   borderRadius: '10px',
                   fontWeight: 700,
                   fontSize: '0.92rem',
-                  cursor: 'pointer',
+                  cursor: isCurrentOptionSoldOut ? 'not-allowed' : 'pointer',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -607,29 +680,31 @@ export default function ProductDetailPage() {
                   transition: 'all 0.2s ease'
                 }}
               >
-                <ShoppingBag size={18} /> Thêm Vào Giỏ
+                <ShoppingBag size={18} /> {isCurrentOptionSoldOut ? 'Tạm Hết Hàng' : 'Thêm Vào Giỏ'}
               </button>
 
               <button
+                type="button"
+                disabled={isCurrentOptionSoldOut}
                 onClick={() => handleAddToCart(true)}
                 style={{
                   flex: '1 1 200px',
-                  backgroundColor: 'var(--text-dark, #000000)',
-                  color: 'var(--bg-white, #FFFFFF)',
+                  backgroundColor: isCurrentOptionSoldOut ? '#E5E7EB' : 'var(--text-dark, #000000)',
+                  color: isCurrentOptionSoldOut ? '#9CA3AF' : 'var(--bg-white, #FFFFFF)',
                   border: 'none',
                   padding: '12px 20px',
                   borderRadius: '10px',
                   fontWeight: 700,
                   fontSize: '0.92rem',
-                  cursor: 'pointer',
-                  boxShadow: '0 4px 14px rgba(0, 0, 0, 0.18)',
+                  cursor: isCurrentOptionSoldOut ? 'not-allowed' : 'pointer',
+                  boxShadow: isCurrentOptionSoldOut ? 'none' : '0 4px 14px rgba(0, 0, 0, 0.18)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: '8px'
                 }}
               >
-                Mua Ngay
+                {isCurrentOptionSoldOut ? 'Hết Hàng' : 'Mua Ngay'}
               </button>
             </div>
 

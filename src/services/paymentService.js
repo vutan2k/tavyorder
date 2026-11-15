@@ -66,44 +66,48 @@ export async function createPayOSPaymentLink({ orderId, amount }) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 6000);
 
-    // Ưu tiên gọi endpoint PayOS Serverless Function trên Vercel
+    // Ưu tiên số 1: Gọi Cloud Function chính thức trên Firebase (đối chiếu trực tiếp totalVnd từ Firestore)
+    const cloudFunctionUrl = 'https://createpayospaymentlink-rkn7dgrfkq-uc.a.run.app';
     try {
-      const isVercelHost = typeof window !== 'undefined' && window.location.hostname.includes('vercel.app');
-      const vercelEndpoint = isVercelHost
-        ? '/api/createPayOSPaymentLink'
-        : 'https://oderho.vercel.app/api/createPayOSPaymentLink';
-
-      const resVercel = await fetch(vercelEndpoint, {
+      const res = await fetch(cloudFunctionUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ orderId, amount }),
         signal: controller.signal,
       });
-      if (resVercel.ok) {
-        const data = await resVercel.json();
+      if (res.ok) {
+        const data = await res.json();
         if (data && data.success) {
           clearTimeout(timer);
           return data;
         }
       }
+    } catch (_cfErr) {
+      // Fallback sang endpoint nội bộ nếu đang chạy trên Vercel
+    }
+
+    // Fallback: Gọi Serverless Function nội bộ nếu đang trên Vercel
+    try {
+      const isVercelHost = typeof window !== 'undefined' && window.location.hostname.includes('vercel.app');
+      if (isVercelHost) {
+        const resVercel = await fetch('/api/createPayOSPaymentLink', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ orderId, amount }),
+          signal: controller.signal,
+        });
+        clearTimeout(timer);
+        if (resVercel.ok) {
+          const data = await resVercel.json();
+          if (data && data.success) {
+            return data;
+          }
+        }
+      }
     } catch (_vErr) {
-      // Bỏ qua và thử Cloud Function
+      // Bỏ qua và fallback sang VietQR
     }
-
-    // Fallback thử Cloud Function nếu có
-    const cloudFunctionUrl = 'https://createpayospaymentlink-jswsqm45ja-uc.a.run.app';
-    const res = await fetch(cloudFunctionUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ orderId, amount }),
-      signal: controller.signal,
-    });
     clearTimeout(timer);
-
-    if (res.ok) {
-      const data = await res.json();
-      return data;
-    }
     return { success: false, fallback: true };
   } catch (err) {
     // Luôn fallback an toàn sang VietQR MB Bank nếu không gọi được API

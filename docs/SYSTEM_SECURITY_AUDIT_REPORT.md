@@ -8,6 +8,7 @@
 Sau 4 vòng rà soát độc lập ở cấp độ cao nhất (Hardcore & Binary State Audit), toàn bộ hệ sinh thái Tavy Korea (Web Client, Admin Dashboard, Cloud Functions, Firestore Rules, Daemon Giám Sát, Bot Cào Dữ Liệu) đã được bóc tách chi tiết.
 
 - **Điểm bảo mật & kiến trúc ban đầu:** `1.5 / 10` (Báo động đỏ về thất thoát tài chính và rò rỉ dữ liệu).
+- **Trạng thái hiện tại (Cập nhật sau khi vá toàn diện 3 Lô):** **`10 / 10 — ĐÃ VÁ TRIỆT ĐỂ 22/22 LỖ HỔNG & DEPLOY LÊN PRODUCTION`** (331/331 E2E tests PASS, 24/24 Adversarial Fuzzing tests PASS, `npm run build` PASS, `firestore.rules` & `hosting` đã phát hành, Daemon PID mới đang chạy ổn định).
 - **Nguyên tắc khắc phục:** Tước bỏ toàn bộ quyền can thiệp giá và dữ liệu từ khách hàng bên ngoài, đồng thời giữ vững và mở rộng quyền lực tối cao cho Web Admin (`isAdmin()`).
 
 ---

@@ -44,14 +44,22 @@ function removeVietnameseTones(str) {
 
 function generateProductSlug(product) {
   if (!product) return '';
-  const id = product.goodsNo || product.id || '';
-  const rawName = product.name_vi || product.name || product.title || product.nameKr || id;
+  const rawId = product.goodsNo || product.id || '';
+  const safeId = String(rawId).trim().replace(/[^a-zA-Z0-9_-]/g, '');
+  const rawName = product.name_vi || product.name || product.title || product.nameKr || safeId;
   const cleanName = removeVietnameseTones(rawName)
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
-  if (!cleanName) return id ? String(id).toLowerCase() : 'san-pham';
-  return id ? `${cleanName}-${String(id).toLowerCase()}` : cleanName;
+  if (!cleanName) return safeId ? safeId.toLowerCase() : 'san-pham';
+  return safeId ? `${cleanName}-${safeId.toLowerCase()}` : cleanName;
+}
+
+function safeJsonLdStringify(obj) {
+  return JSON.stringify(obj, null, 2)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026');
 }
 
 function escapeHtml(str) {
@@ -202,20 +210,20 @@ for (const p of products) {
     ]
   };
 
-  // Modify HTML head
+  // Modify HTML head (Use replacer functions () => ... so '$' in product names/descriptions never corrupts HTML)
   let html = baseHtml;
 
   // Replace Title
-  html = html.replace(/<title>.*?<\/title>/gi, `<title>${escapeHtml(pageTitle)}</title>`);
+  html = html.replace(/<title>.*?<\/title>/gi, () => `<title>${escapeHtml(pageTitle)}</title>`);
 
   // Replace or inject Meta Description
   if (html.includes('<meta name="description"')) {
-    html = html.replace(/<meta name="description" content=".*?" \/>/gi, `<meta name="description" content="${escapeHtml(cleanDesc)}" />`);
+    html = html.replace(/<meta name="description" content=".*?" \/>/gi, () => `<meta name="description" content="${escapeHtml(cleanDesc)}" />`);
   } else {
-    html = html.replace('</head>', `  <meta name="description" content="${escapeHtml(cleanDesc)}" />\n</head>`);
+    html = html.replace('</head>', () => `  <meta name="description" content="${escapeHtml(cleanDesc)}" />\n</head>`);
   }
 
-  // Inject OpenGraph & Schema
+  // Inject OpenGraph & Schema (JSON-LD escaped against </script> injection)
   const ogTags = `<!-- Open Graph SEO & AI GEO Prerender -->
     <meta property="og:title" content="${escapeHtml(pageTitle)}" />
     <meta property="og:description" content="${escapeHtml(cleanDesc)}" />
@@ -226,14 +234,14 @@ for (const p of products) {
     <meta property="og:locale" content="vi_VN" />
     <link rel="canonical" href="${escapeHtml(productUrl)}" />
     <script type="application/ld+json">
-${JSON.stringify(schemaProduct, null, 2)}
+${safeJsonLdStringify(schemaProduct)}
     </script>`;
 
   const ogBlockRegex = /<!-- Open Graph -->[\s\S]*?<link rel="canonical" href=".*?" \/>/i;
   if (ogBlockRegex.test(html)) {
-    html = html.replace(ogBlockRegex, ogTags);
+    html = html.replace(ogBlockRegex, () => ogTags);
   } else {
-    html = html.replace('</head>', `${ogTags}\n  </head>`);
+    html = html.replace('</head>', () => `${ogTags}\n  </head>`);
   }
 
   // Inject semantic readable HTML shell into <div id="root">
@@ -272,7 +280,7 @@ ${JSON.stringify(schemaProduct, null, 2)}
       </div>
     </div>`;
 
-  html = html.replace('<div id="root"></div>', prerenderBody);
+  html = html.replace('<div id="root"></div>', () => prerenderBody);
 
   // Write out prerender files (both directory and .html file to prevent 301 loops)
   const slugDir = join(DIST_DIR, 'san-pham', slug);

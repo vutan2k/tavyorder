@@ -19,12 +19,15 @@ const __dirname = path.dirname(__filename);
 
 const GEMINI_API_KEY = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY || '';
 const OPENAI_BASE_URL = process.env.VITE_OPENAI_BASE_URL || process.env.OPENAI_BASE_URL || 'http://localhost:20128/v1';
-const OPENAI_API_KEY = process.env.VITE_OPENAI_API_KEY || process.env.OPENAI_API_KEY || 'sk-a5baa61b8eb09efe-2zgl83-5d00c109';
+const OPENAI_API_KEY = process.env.VITE_OPENAI_API_KEY || process.env.OPENAI_API_KEY || '';
 const OPENAI_MODEL = process.env.VITE_OPENAI_MODEL || process.env.OPENAI_MODEL || 'ag/gemini-3.6-flash-medium';
 const HEADLESS = process.env.HEADLESS === 'true'; // Default headful mode when requested by user to observe live browser clicks
 const MAX_PRODUCTS = parseInt(process.env.MAX_PRODUCTS || '10', 10);
 
-const KRW_TO_VND = 18.5; // Default fallback exchange rate
+const DEFAULT_KRW_RATE = 19.5;
+const DEFAULT_SERVICE_FEE_PERCENT = 5;
+const calculateDynamicVnd = (won, krwRate = DEFAULT_KRW_RATE, feePercent = DEFAULT_SERVICE_FEE_PERCENT) =>
+  Math.round((Number(won || 0) * Number(krwRate) * (1 + Number(feePercent) / 100)) / 1000) * 1000;
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 let lastAiCallTimestamp = 0;
@@ -576,7 +579,7 @@ async function runPlaywrightAIScraper() {
 
         // Translate with OpenAI / Gemini AI Vision / Language Model (có Rate Limiter 3.5s & Exponential Backoff)
         const aiResult = await translateProductWithAI(nameKr, brand);
-        const calculatedVndPrice = Math.round(foreignPrice * KRW_TO_VND);
+        const calculatedVndPrice = calculateDynamicVnd(foreignPrice);
 
         const productObj = {
           id: goodsNo,

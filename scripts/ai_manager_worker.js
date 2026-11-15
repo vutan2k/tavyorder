@@ -9,6 +9,7 @@
  */
 
 import { initializeApp, getApps } from 'firebase/app';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import {
   getFirestore,
   collection,
@@ -26,6 +27,9 @@ import {
 } from 'firebase/firestore';
 import os from 'node:os';
 import process from 'node:process';
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '/Users/tan/tavy-korea/.env', override: true });
 
 // Cấu hình kết nối Cloud Firestore
 const firebaseConfig = {
@@ -38,6 +42,7 @@ const firebaseConfig = {
 };
 
 const app = getApps().length > 0 ? getApps()[0] : initializeApp(firebaseConfig);
+const auth = getAuth(app);
 const db = getFirestore(app);
 
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
@@ -384,8 +389,20 @@ function startListening() {
   });
 }
 
-// Bắt đầu lắng nghe
-startListening();
+// Đăng nhập Admin rồi bắt đầu lắng nghe
+(async () => {
+  const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
+  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '';
+  if (adminPass) {
+    try {
+      await signInWithEmailAndPassword(auth, adminEmail, adminPass);
+      console.log('✓ Đã xác thực quyền Admin với Cloud Firestore.');
+    } catch (err) {
+      console.error('❌ Lỗi đăng nhập Admin Firebase:', err.message);
+    }
+  }
+  startListening();
+})();
 
 // Giữ tiến trình chạy nền không thoát
 process.on('SIGINT', () => {

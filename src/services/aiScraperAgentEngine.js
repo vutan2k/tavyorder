@@ -20,7 +20,7 @@ import { VERIFIED_OLIVEYOUNG_PRICES } from './oliveYoungPriceSyncService.js';
 /** Lấy OpenAI / Custom AI config từ env hoặc localStorage */
 const getOpenAIConfig = () => {
   const baseUrl = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_OPENAI_BASE_URL) || 'http://localhost:20128/v1';
-  const apiKey = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_OPENAI_API_KEY) || 'sk-a5baa61b8eb09efe-2zgl83-5d00c109';
+  const apiKey = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_OPENAI_API_KEY) || '';
   const model = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_OPENAI_MODEL) || 'ag/gemini-3.6-flash-medium';
   return { baseUrl, apiKey, model };
 };
@@ -280,7 +280,7 @@ export async function runAIScraperAgent(url) {
 
     // a) Firebase Cloud Function proxy (server-side, không CORS — tin cậy nhất)
     try {
-      const fnUrl = `https://scrapejina-r5ncp5gdvq-uc.a.run.app?url=${encodeURIComponent(cleanUrl)}`;
+      const fnUrl = `https://scrapejina-rkn7dgrfkq-uc.a.run.app?url=${encodeURIComponent(cleanUrl)}`;
       const r = await fetchWithTimeout(fnUrl, { headers: { 'Accept': 'application/json' } });
       if (r.ok) {
         const j = await r.json();

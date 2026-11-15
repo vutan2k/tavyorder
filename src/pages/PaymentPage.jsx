@@ -106,15 +106,7 @@ export default function PaymentPage() {
     return () => clearInterval(interval);
   }, [order?.paymentDue]);
 
-  // 3. Tự động chuyển về trạng thái 'pending' nếu hết hạn 15 phút
-  useEffect(() => {
-    if (timeLeft <= 0 && order && order.paymentStatus === 'unpaid' && order.status !== 'pending') {
-      updateDoc(doc(db, 'orders', orderId), {
-        status: 'pending',
-        updatedAt: serverTimestamp(),
-      }).catch(console.warn);
-    }
-  }, [timeLeft, order, orderId]);
+  // 3. Không tự ý ghi trường 'status' từ phía client khách vãng lai (tuân thủ Firestore Security Rules)
 
   // 4. Số tiền VND cọc 100% đồng nhất hoàn toàn với giá tiền giỏ hàng (không delta)
   const transferVnd = useMemo(() => {
@@ -156,14 +148,13 @@ export default function PaymentPage() {
     });
   }, []);
 
-  // Gia hạn thêm 15 phút
+  // Gia hạn thêm 15 phút (Chỉ cập nhật paymentDue & updatedAt theo đúng whitelist isAllowedGuestOrderUpdate)
   const handleRenewPayment = async () => {
     if (!orderId) return;
     try {
       const newDue = new Date(Date.now() + PAYMENT_DEADLINE_MS).toISOString();
       await updateDoc(doc(db, 'orders', orderId), {
         paymentDue: newDue,
-        status: 'pending',
         updatedAt: serverTimestamp(),
       });
       setTimeLeft(PAYMENT_DEADLINE_MS);
@@ -241,19 +232,65 @@ export default function PaymentPage() {
     }
   };
 
+  // Nén ảnh biên lai xuống dưới trần Firestore (< 200KB) để tránh lỗi vượt 1MiB/doc
+  const compressProofImage = (file, maxDimension = 1000, quality = 0.72) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onerror = () => reject(new Error('Không thể đọc file ảnh'));
+      reader.onload = () => {
+        const rawDataUrl = reader.result;
+        if (typeof Image === 'undefined' || typeof document === 'undefined') {
+          resolve(rawDataUrl);
+          return;
+        }
+        const img = new Image();
+        img.onerror = () => resolve(rawDataUrl);
+        img.onload = () => {
+          try {
+            let { width, height } = img;
+            if (width > maxDimension || height > maxDimension) {
+              if (width >= height) {
+                height = Math.round((height * maxDimension) / width);
+                width = maxDimension;
+              } else {
+                width = Math.round((width * maxDimension) / height);
+                height = maxDimension;
+              }
+            }
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, width, height);
+            let compressed = canvas.toDataURL('image/jpeg', quality);
+            if (compressed.length > 700000) {
+              compressed = canvas.toDataURL('image/jpeg', 0.5);
+            }
+            resolve(compressed);
+          } catch {
+            resolve(rawDataUrl);
+          }
+        };
+        img.src = rawDataUrl;
+      };
+      reader.readAsDataURL(file);
+    });
+  };
+
   // Xử lý chọn ảnh biên lai chuyển tiền dự phòng
-  const handleProofImageChange = (e) => {
+  const handleProofImageChange = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    if (file.size > 5 * 1024 * 1024) {
-      alert('Vui lòng chọn ảnh có dung lượng dưới 5MB.');
+    if (file.size > 10 * 1024 * 1024) {
+      alert('Vui lòng chọn ảnh có dung lượng dưới 10MB.');
       return;
     }
-    const reader = new FileReader();
-    reader.onload = () => {
-      setProofImageBase64(reader.result);
-    };
-    reader.readAsDataURL(file);
+    try {
+      const compressedBase64 = await compressProofImage(file);
+      setProofImageBase64(compressedBase64);
+    } catch {
+      alert('Không thể xử lý ảnh biên lai. Vui lòng thử ảnh khác.');
+    }
   };
 
   // Gửi ảnh biên lai chuyển tiền lên Firestore

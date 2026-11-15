@@ -208,7 +208,7 @@ def run_sync():
     newly_added_items = []
     if new_items_list:
         with ChromeCoordinator(bot_name='TavyManager_VIP', task_name='ingest_new_top100', priority='VIP'):
-            tab_id = '2076735278'
+            tab_id = ChromeTabManager.get_or_create_tab('oliveyoung.co.kr', 'https://www.oliveyoung.co.kr/store/main/getBestList.do') or '2076735398'
             for idx, it in enumerate(new_items_list):
                 gid = it['goodsNo']
                 rank = it['rank']

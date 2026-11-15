@@ -63,62 +63,49 @@ export function findGuestOrders(searchTerm, ordersList = []) {
   const matches = ordersList.filter((order) => {
     if (!order || typeof order !== 'object') return false;
 
-    // 1. Order ID Matching (exact, prefix-stripped, substring, digits)
+    // 1. Order ID Matching (exact, prefix-stripped, digits — NO substring .includes leak)
     const orderId = String(order.id || order._id || '').trim();
     const orderIdLower = orderId.toLowerCase();
     const orderIdNoPrefix = orderIdLower.replace(/^(ord-?|#)/i, '');
     const orderIdDigits = orderId.replace(/\D/g, '');
 
     const isIdExact = orderIdLower === queryLower;
-    const isIdSub = isPureNumericQuery
-      ? (orderIdLower === queryLower || orderIdLower === `ord-${queryNoPrefix}` || orderIdLower === `ord${queryNoPrefix}`)
-      : orderIdLower.includes(queryLower);
-    const isIdNoPrefixMatch = queryNoPrefix.length >= 3 && (
-      orderIdNoPrefix === queryNoPrefix ||
-      (!isPureNumericQuery && orderIdNoPrefix.includes(queryNoPrefix))
-    );
-    const isIdDigitsMatch = isPureNumericQuery && queryDigits.length >= 4 && (
+    const isIdWithPrefix = orderIdLower === `ord-${queryNoPrefix}` || orderIdLower === `ord${queryNoPrefix}`;
+    const isIdNoPrefixMatch = queryNoPrefix.length >= 3 && orderIdNoPrefix === queryNoPrefix;
+    const isIdDigitsMatch = isPureNumericQuery && queryDigits.length >= 5 && (
       orderIdDigits === queryDigits ||
       orderIdNoPrefix === queryDigits
     );
 
-    const matchId = isIdExact || isIdSub || isIdNoPrefixMatch || isIdDigitsMatch;
+    const matchId = isIdExact || isIdWithPrefix || isIdNoPrefixMatch || isIdDigitsMatch;
     if (matchId) return true;
 
-    // 2. Customer Phone Matching (normalized & raw digits)
-    // Only match phone numbers if the query does NOT contain alphabetical characters (prevents alphanumeric Order ID digit leakage)
+    // 2. Customer Phone Matching (Strict 10-digit normalized equality — no prefix/substring leak)
+    // Only match phone numbers if the query does NOT contain alphabetical characters
     if (!isQueryAlphabetical) {
       const oPhone = normalizePhone(order.customerPhone || order.phone || '');
       const oRawPhone = String(order.customerPhone || order.phone || '').replace(/\D/g, '');
 
       const matchPhone = (
-        (queryPhone.length >= 4 && oPhone.length >= 4 && (
-          oPhone === queryPhone ||
-          oPhone.includes(queryPhone) ||
-          queryPhone.includes(oPhone)
-        )) ||
-        (queryDigits.length >= 4 && oRawPhone.length >= 4 && (
-          oRawPhone === queryDigits ||
-          oRawPhone.includes(queryDigits) ||
-          queryDigits.includes(oRawPhone)
-        ))
+        (queryPhone.length >= 10 && oPhone.length >= 10 && oPhone === queryPhone) ||
+        (queryDigits.length >= 10 && oRawPhone.length >= 10 && oRawPhone === queryDigits)
       );
       if (matchPhone) return true;
     }
 
-    // 3. Tracking Codes & Flight Code Matching
+    // 3. Tracking Codes & Flight Code Matching (Exact match only)
     const trackingCode = String(order.trackingCode || '').trim().toLowerCase();
     const domesticTrackingCode = String(order.domesticTrackingCode || '').trim().toLowerCase();
     const flightCode = String(order.flightCode || '').trim().toLowerCase();
 
     const matchTracking = (
-      (trackingCode && (trackingCode === queryLower || trackingCode.includes(queryLower))) ||
-      (domesticTrackingCode && (domesticTrackingCode === queryLower || domesticTrackingCode.includes(queryLower))) ||
-      (flightCode && (flightCode === queryLower || flightCode.includes(queryLower)))
+      (trackingCode && trackingCode === queryLower) ||
+      (domesticTrackingCode && domesticTrackingCode === queryLower) ||
+      (flightCode && (flightCode === queryLower || flightCode.split(/[\s-]+/)[0] === queryLower))
     );
     if (matchTracking) return true;
 
-    // 4. Customer Email Matching (fallback)
+    // 4. Customer Email Matching (Exact case-insensitive match)
     const userEmail = String(order.userEmail || '').trim().toLowerCase();
     if (userEmail && userEmail === queryLower) {
       return true;

@@ -25,7 +25,7 @@ async function run() {
   console.log('🚀 Đang đẩy dữ liệu Usage & PhotoReviews lên Firestore...');
 
   const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
-  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || 'admin123';
+  const adminPass = (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   await signInWithEmailAndPassword(auth, adminEmail, adminPass);
   console.log('✓ Đã đăng nhập Firebase Admin.');
 

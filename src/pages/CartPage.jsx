@@ -18,7 +18,7 @@ import {
 } from '../utils/securityUtils';
 
 export default function CartPage() {
-  const { cart, removeFromCart, updateCartQty, clearCart, currentUser, createOrder, rates, orders } = useContext(AppContext);
+  const { cart, products, removeFromCart, updateCartQty, clearCart, currentUser, createOrder, rates, orders } = useContext(AppContext);
   const navigate = useNavigate();
   const showToast = useToast();
 
@@ -54,14 +54,45 @@ export default function CartPage() {
   const formatVnd = (n) => (n || n === 0) ? `${new Intl.NumberFormat('vi-VN').format(Math.round(n))} VNĐ` : '0 VNĐ';
   const formatKrw = (n) => new Intl.NumberFormat('ko-KR').format(n) + ' ₩';
 
+  // Đối chiếu giá sản phẩm/biến thể trực tiếp từ danh mục gốc (products) để chống sửa giá trong localStorage
+  const resolveCatalogItem = (item) => {
+    const itemId = item?.goodsNo || item?.id;
+    const catalogProd = Array.isArray(products)
+      ? products.find(p => (p.goodsNo || p.id) === itemId)
+      : null;
+    if (!catalogProd) return item;
+
+    const opts = Array.isArray(catalogProd.options) ? catalogProd.options : [];
+    const optLabel = getItemOptionText(item);
+    const matchedOpt = (item.selectedOptionId || optLabel)
+      ? opts.find(o => (o.id && o.id === item.selectedOptionId) || (o.name_vi || o.name_kr || o.name) === optLabel)
+      : null;
+
+    const authWon = Number(
+      matchedOpt?.price_krw ?? matchedOpt?.price ?? matchedOpt?.foreignPrice ??
+      catalogProd.foreignPrice ?? catalogProd.price ?? item.foreignPrice ?? item.price
+    ) || 0;
+    const authVnd = matchedOpt
+      ? (Number(matchedOpt.price_vnd) || Math.round(authWon * krwRate * serviceFeeMultiplier))
+      : (Number(catalogProd.priceVnd) || Math.round(authWon * krwRate * serviceFeeMultiplier));
+
+    return {
+      ...item,
+      foreignPrice: authWon,
+      price: authWon,
+      priceVnd: authVnd
+    };
+  };
+
   // Hàm tính đơn giá VND cho từng sản phẩm (Single Source of Truth, tỷ giá & phí động theo Admin)
   const getItemUnitVnd = (item) => {
-    const won = Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0;
+    const verified = resolveCatalogItem(item);
+    const won = Number(verified.foreignPrice ?? verified.priceKrw ?? verified.priceWon ?? verified.price) || 0;
     if (won > 0) {
       return Math.round(won * krwRate * serviceFeeMultiplier);
     }
-    if (typeof item.priceVnd === 'number' && item.priceVnd > 0) {
-      return Math.round(item.priceVnd);
+    if (typeof verified.priceVnd === 'number' && verified.priceVnd > 0) {
+      return Math.round(verified.priceVnd);
     }
     return 0;
   };
@@ -69,13 +100,17 @@ export default function CartPage() {
   const getItemOptionText = (item) => {
     if (typeof item?.options === 'string' && item.options) return item.options;
     if (typeof item?.selectedOptionName === 'string' && item.selectedOptionName) return item.selectedOptionName;
+    if (typeof item?.selectedOption === 'string' && item.selectedOption) return item.selectedOption;
     if (item?.selectedOption && typeof item.selectedOption === 'object') {
       return item.selectedOption.name_vi || item.selectedOption.name_kr || item.selectedOption.name || '';
     }
     return '';
   };
 
-  const subTotalKrw = cart.reduce((sum, item) => sum + ((Number(item.foreignPrice ?? item.priceKrw ?? item.priceWon ?? item.price) || 0) * (Number(item.qty) || 1)), 0);
+  const subTotalKrw = cart.reduce((sum, item) => {
+    const verified = resolveCatalogItem(item);
+    return sum + ((Number(verified.foreignPrice ?? verified.priceKrw ?? verified.priceWon ?? verified.price) || 0) * (Number(item.qty) || 1));
+  }, 0);
   const subTotalVnd = cart.reduce((sum, item) => sum + (getItemUnitVnd(item) * (Number(item.qty) || 1)), 0);
   const MIN_ORDER_AMOUNT_VND = 1000000; // Đơn hàng tối thiểu 1.000.000 VNĐ
   const isMinOrderMet = subTotalVnd >= MIN_ORDER_AMOUNT_VND;
@@ -141,18 +176,23 @@ export default function CartPage() {
         : { bankName: 'MBbank', accountNumber: '1330042000' };
 
       const totalAmountVnd = subTotalVnd;
+      const randSuffix = Math.floor(1000 + Math.random() * 9000);
+      const uniqueOrderId = `ORD-${Date.now()}-${randSuffix}`;
       const orderData = {
-        id: cleanPhone, // Dùng trực tiếp SĐT khách hàng làm định danh chính, bỏ hoàn toàn mã ORD
+        id: uniqueOrderId, // Sinh mã đơn duy nhất ORD-{timestamp}-{rand} để không ghi đè mất đơn cũ của cùng SĐT
         customerName: trimmedName,
         customerPhone: cleanPhone,
         customerAddress: trimmedAddress,
         customerNote: cleanNote,
         country,
-        items: cart.map(item => ({
-          ...item,
-          options: getItemOptionText(item),
-          priceVnd: getItemUnitVnd(item)
-        })),
+        items: cart.map(item => {
+          const verified = resolveCatalogItem(item);
+          return {
+            ...verified,
+            options: getItemOptionText(item),
+            priceVnd: getItemUnitVnd(item)
+          };
+        }),
         totalVnd: totalAmountVnd,
         totalAmount: totalAmountVnd,
         subTotalKrw: subTotalKrw,
@@ -180,8 +220,8 @@ export default function CartPage() {
         colors: ['#00FF00', '#10B981', '#F4EAD3'],
       });
 
-      // Navigate tới trang thanh toán cọc 100% bằng định danh SĐT
-      const targetOrderId = res?.id || activePendingOrder?.id || cleanPhone;
+      // Navigate tới trang thanh toán cọc 100% bằng mã đơn duy nhất
+      const targetOrderId = res?.id || uniqueOrderId;
       navigate(`/payment/${targetOrderId}`);
     } catch (error) {
       console.error('Error submitting order:', error);

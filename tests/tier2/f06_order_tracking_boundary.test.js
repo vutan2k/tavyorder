@@ -178,7 +178,7 @@ test('[F6-B10] Single-digit and boundary phone mismatch isolation', () => {
     assertEquals(res.length, 0, `Query '${queryPhone}' must not match 0912345678`);
   });
 
-  // Valid variations and partial prefix queries that MUST match
+  // Valid 10-digit phone variations that MUST match
   const validMatches = [
     '0912345678',
     '+84912345678',
@@ -186,7 +186,7 @@ test('[F6-B10] Single-digit and boundary phone mismatch isolation', () => {
     '84912345678',
     '840912345678',
     '0912-345-678',
-    '091234567' // Partial prefix search (at least 4 digits)
+    '912345678' // 9-digit normalized to 0912345678
   ];
 
   validMatches.forEach((queryPhone) => {

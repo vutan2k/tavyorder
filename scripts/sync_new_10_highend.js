@@ -32,7 +32,7 @@ function calculateVnd(krw, krwRate, feePercent) {
 async function run() {
   console.log('🚀 Bắt đầu tích hợp 10 sản phẩm High-End mới vào hệ thống...');
   
-  await signInWithEmailAndPassword(auth, process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn', process.env.FIREBASE_ADMIN_PASSWORD || 'admin123');
+  await signInWithEmailAndPassword(auth, process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn', (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || ''));
   console.log('✓ Đã đăng nhập Firebase Admin.');
 
   // Đọc rates

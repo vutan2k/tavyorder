@@ -17,6 +17,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { initializeApp, getApps } from 'firebase/app';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import {
   getFirestore,
   collection,
@@ -27,6 +28,9 @@ import {
   setDoc,
   serverTimestamp
 } from 'firebase/firestore';
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '/Users/tan/tavy-korea/.env', override: true });
 
 import {
   VERIFIED_KOREAN_HEALTH_CATALOG,
@@ -61,7 +65,24 @@ const firebaseConfig = {
 };
 
 const app = getApps().length > 0 ? getApps()[0] : initializeApp(firebaseConfig);
+const auth = getAuth(app);
 const db = getFirestore(app);
+
+let adminAuthReady = null;
+async function ensureAdminAuth() {
+  if (auth.currentUser) return;
+  if (!adminAuthReady) {
+    const adminEmail = process.env.VITE_ADMIN_EMAIL || 'admin@tavykorea.vn';
+    const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '';
+    adminAuthReady = adminPass
+      ? signInWithEmailAndPassword(auth, adminEmail, adminPass).catch((err) => {
+          adminAuthReady = null;
+          console.error('MCP Admin Auth Error:', err.message);
+        })
+      : Promise.resolve();
+  }
+  await adminAuthReady;
+}
 
 // Khởi tạo MCP Server
 const server = new McpServer({
@@ -476,6 +497,7 @@ server.tool(
 
 // Khởi chạy transport stdio
 async function run() {
+  await ensureAdminAuth();
   const transport = new StdioServerTransport();
   await server.connect(transport);
   console.error('🚀 TAVY KOREA Admin MCP Server v2.0 (Firestore Live) is running on stdio');

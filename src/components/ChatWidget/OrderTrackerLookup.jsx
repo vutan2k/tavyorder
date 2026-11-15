@@ -2,6 +2,8 @@ import React, { useState, useContext } from 'react';
 import { AppContext } from '../../context/AppContext';
 import { getStatusConfig, getOrderStepIndex, ORDER_STEPS } from '../../data/orderStatuses';
 import { getOrderTotalVnd, formatVnd, formatKrw } from '../../utils/priceCalculator';
+import { findGuestOrders } from '../../services/guestTrackingService';
+import { lookupGuestOrdersInDB } from '../../services/dbService';
 import { Search, Package, Check, ExternalLink, Video, FileText, PackageCheck, Scale, Plane, Truck, ArrowLeft } from 'lucide-react';
 
 export default function OrderTrackerLookup({ onBack, isMobile }) {
@@ -13,22 +15,18 @@ export default function OrderTrackerLookup({ onBack, isMobile }) {
   const krwRate = rates?.KRW?.rate || 19.5;
   const serviceFeeMultiplier = 1 + (rates?.serviceFeePercent ?? 5) / 100;
 
-  const handleSearch = (e) => {
+  const handleSearch = async (e) => {
     e?.preventDefault();
-    const query = searchTerm.trim().toLowerCase();
+    const query = searchTerm.trim();
     if (!query) return;
 
     setHasSearched(true);
-    const found = orders?.find((o) => {
-      const matchId = (o.id || '').toLowerCase().includes(query);
-      const matchPhone = (o.customerPhone || '').includes(query);
-      const matchEmail = (o.userEmail || '').toLowerCase().includes(query);
-      const matchFlight = (o.flightCode || '').toLowerCase().includes(query);
-      const matchTracking = (o.trackingCode || '').toLowerCase().includes(query) || (o.domesticTrackingCode || '').toLowerCase().includes(query);
-      return matchId || matchPhone || matchEmail || matchFlight || matchTracking;
-    });
+    let matched = findGuestOrders(query, orders || []);
+    if (matched.length === 0) {
+      matched = await lookupGuestOrdersInDB(query, orders || []);
+    }
 
-    setSearchedOrder(found || null);
+    setSearchedOrder(matched[0] || null);
   };
 
   const formatVnd = (n) => (n || n === 0) ? `${new Intl.NumberFormat('vi-VN').format(Math.round(n))} VNĐ` : '0 VNĐ';

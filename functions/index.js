@@ -25,11 +25,42 @@ function getPayOS() {
   return payOSInstance;
 }
 
-exports.scrapeJina = onRequest({ cors: true }, async (req, res) => {
-  res.set('Access-Control-Allow-Origin', '*');
+const ALLOWED_ORIGINS = new Set([
+  'https://tavyorder.web.app',
+  'https://tavyorder.firebaseapp.com',
+  'https://oderho.vercel.app',
+  'http://localhost:3000',
+  'http://127.0.0.1:3000'
+]);
+
+const ALLOWED_JINA_HOSTS = [
+  'oliveyoung.co.kr',
+  'naver.com',
+  'coupang.com',
+  'hwahae.co.kr',
+  'glowpick.com',
+  'wconcept.co.kr',
+  'musinsa.com',
+  'kurly.com',
+  'shinsegaemall.com',
+  'ssg.com'
+];
+
+function applyCors(req, res) {
+  const origin = req.headers?.origin || '';
+  if (ALLOWED_ORIGINS.has(origin)) {
+    res.set('Access-Control-Allow-Origin', origin);
+  } else {
+    res.set('Access-Control-Allow-Origin', 'https://tavyorder.web.app');
+  }
+  res.set('Vary', 'Origin');
+}
+
+exports.scrapeJina = onRequest({ cors: false }, async (req, res) => {
+  applyCors(req, res);
   if (req.method === 'OPTIONS') {
     res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.set('Access-Control-Allow-Headers', 'Content-Type, Accept');
+    res.set('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization');
     return res.status(204).send('');
   }
   try {
@@ -37,6 +68,19 @@ exports.scrapeJina = onRequest({ cors: true }, async (req, res) => {
     if (!url || !/^https?:\/\//.test(url)) {
       return res.status(400).json({ error: 'URL không hợp lệ' });
     }
+    let parsedHost = '';
+    try {
+      parsedHost = new URL(url).hostname.toLowerCase();
+    } catch {
+      return res.status(400).json({ error: 'URL không hợp lệ' });
+    }
+    const isAllowedDomain = ALLOWED_JINA_HOSTS.some(
+      domain => parsedHost === domain || parsedHost.endsWith(`.${domain}`)
+    );
+    if (!isAllowedDomain) {
+      return res.status(403).json({ error: 'Domain không nằm trong danh sách cho phép của Tavy Korea' });
+    }
+
     const jinaUrl = `https://r.jina.ai/${url}`;
     const jinaKey = process.env.JINA_API_KEY || '';
     const headers = { 'Accept': 'text/markdown' };
@@ -59,10 +103,10 @@ exports.scrapeJina = onRequest({ cors: true }, async (req, res) => {
 });
 
 /**
- * Endpoint 1: Tạo Payment Link PayOS VietQR Động
+ * Endpoint 1: Tạo Payment Link PayOS VietQR Động (Lấy số tiền chuẩn từ Firestore, chống giả mạo amount)
  */
-exports.createPayOSPaymentLink = onRequest({ cors: true }, async (req, res) => {
-  res.set('Access-Control-Allow-Origin', '*');
+exports.createPayOSPaymentLink = onRequest({ cors: false }, async (req, res) => {
+  applyCors(req, res);
   if (req.method === 'OPTIONS') {
     res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.set('Access-Control-Allow-Headers', 'Content-Type, Accept');
@@ -70,9 +114,27 @@ exports.createPayOSPaymentLink = onRequest({ cors: true }, async (req, res) => {
   }
 
   try {
-    const { orderId, amount } = req.body || {};
-    if (!orderId || !amount) {
-      return res.status(400).json({ success: false, error: 'Thiếu orderId hoặc amount' });
+    const { orderId } = req.body || {};
+    if (!orderId) {
+      return res.status(400).json({ success: false, error: 'Thiếu orderId' });
+    }
+
+    // Đọc đơn hàng trực tiếp từ Firestore để lấy số tiền chuẩn (Chặn đứng lỗ hổng truyền amount=2000 từ Client)
+    const orderDocRef = db.collection('orders').doc(String(orderId));
+    const orderSnap = await orderDocRef.get();
+    if (!orderSnap.exists) {
+      return res.status(404).json({ success: false, error: 'Không tìm thấy đơn hàng trên hệ thống' });
+    }
+    const orderData = orderSnap.data() || {};
+    const authoritativeAmount = Math.round(Number(
+      orderData.quote?.depositNeededVnd ||
+      orderData.quote?.totalVnd ||
+      orderData.totalVnd ||
+      orderData.totalAmount ||
+      0
+    ));
+    if (!Number.isFinite(authoritativeAmount) || authoritativeAmount < 2000) {
+      return res.status(400).json({ success: false, error: 'Tổng tiền đơn hàng trên hệ thống không hợp lệ' });
     }
 
     const payOS = getPayOS();
@@ -86,23 +148,22 @@ exports.createPayOSPaymentLink = onRequest({ cors: true }, async (req, res) => {
       });
     }
 
-    // Chuyển orderId chuỗi (VD: ORD-509218) sang số duy nhất cho PayOS (giới hạn an toàn số nguyên)
-    const numericPart = parseInt(orderId.replace(/\D/g, ''), 10) || Math.floor(Date.now() / 1000);
-    const orderCode = Number(numericPart);
+    // Sinh orderCode nguyên dương duy nhất (12 chữ số < MAX_SAFE_INTEGER) để tránh lỗi trùng orderCode khi tạo lại link
+    const orderCode = Number(String(Date.now()).slice(-9) + String(Math.floor(100 + Math.random() * 900)));
 
     const body = {
       orderCode: orderCode,
-      amount: Number(amount),
-      description: `Coc ${orderId.slice(0, 15)}`,
+      amount: authoritativeAmount,
+      description: `Coc ${String(orderId).slice(0, 15)}`,
       returnUrl: `https://tavyorder.web.app/payment/${orderId}`,
       cancelUrl: `https://tavyorder.web.app/payment/${orderId}`,
     };
 
     const paymentLinkData = await payOS.paymentRequests.create(body);
 
-    // Lưu orderCode vào đơn hàng trong Firestore để webhook dễ dàng đối chiếu
+    // Lưu orderCode vào đơn hàng trong Firestore để webhook đối chiếu chính xác
     try {
-      await db.collection('orders').doc(orderId).set({
+      await orderDocRef.set({
         orderCode: orderCode,
         payosPaymentLinkId: paymentLinkData.paymentLinkId || '',
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -111,7 +172,7 @@ exports.createPayOSPaymentLink = onRequest({ cors: true }, async (req, res) => {
       console.warn('Lỗi lưu orderCode vào order:', saveErr.message);
     }
 
-    return res.json({ success: true, isConfigured: true, data: paymentLinkData, orderCode });
+    return res.json({ success: true, isConfigured: true, data: paymentLinkData, orderCode, amount: authoritativeAmount });
   } catch (err) {
     console.error('Lỗi tạo PayOS Payment Link:', err);
     return res.status(200).json({
@@ -123,9 +184,10 @@ exports.createPayOSPaymentLink = onRequest({ cors: true }, async (req, res) => {
 });
 
 /**
- * Endpoint 2: PayOS Webhook - Tự động đối soát & xác nhận cọc 100% khi nhận tin chuyển khoản
+ * Endpoint 2: PayOS Webhook - Tự động đối soát chữ ký HMAC & số tiền thực nhận với totalVnd trong Firestore
  */
-exports.payosWebhook = onRequest({ cors: true }, async (req, res) => {
+exports.payosWebhook = onRequest({ cors: false }, async (req, res) => {
+  applyCors(req, res);
   try {
     const webhookData = req.body;
     if (!webhookData) {
@@ -133,68 +195,81 @@ exports.payosWebhook = onRequest({ cors: true }, async (req, res) => {
     }
 
     const payOS = getPayOS();
-    // Verify HMAC Signature chữ ký từ PayOS
+    if (!payOS) {
+      console.error('❌ [PayOS Webhook] Từ chối xử lý do thiếu cấu hình PAYOS_CHECKSUM_KEY');
+      return res.status(503).json({ success: false, message: 'PayOS chưa được cấu hình' });
+    }
+
+    // Verify HMAC Signature chữ ký từ PayOS (Bắt buộc)
     let verifiedData;
     try {
-      if (payOS) {
-        verifiedData = await payOS.webhooks.verify(webhookData);
-      } else {
-        verifiedData = webhookData.data || webhookData;
-      }
+      verifiedData = await payOS.webhooks.verify(webhookData);
     } catch (err) {
-      // Trong môi trường testing/local giả lập, nếu không có chữ ký thật thì ghi nhận cảnh báo
-      if (process.env.NODE_ENV === 'test' || process.env.FUNCTIONS_EMULATOR) {
-        console.warn('⚠️ [Test Mode] Bỏ qua xác thực chữ ký PayOS Webhook:', err.message);
-        verifiedData = webhookData.data || webhookData;
-      } else {
-        console.error('❌ Chữ ký PayOS Webhook không hợp lệ:', err);
-        return res.status(400).json({ success: false, message: 'Invalid webhook signature' });
-      }
+      console.error('❌ Chữ ký PayOS Webhook không hợp lệ:', err);
+      return res.status(400).json({ success: false, message: 'Invalid webhook signature' });
     }
 
     if (verifiedData && verifiedData.orderCode) {
       const orderCodeNum = Number(verifiedData.orderCode);
       const searchId = `ORD-${orderCodeNum}`;
+      const paidAmount = Number(verifiedData.amount) || 0;
 
-      console.log(`⚡ [PayOS Webhook] Nhận xác nhận thanh toán cho đơn hàng ${searchId} (orderCode: ${orderCodeNum}), số tiền: ${verifiedData.amount} đ`);
+      console.log(`⚡ [PayOS Webhook] Nhận xác nhận thanh toán cho orderCode: ${orderCodeNum}, số tiền: ${paidAmount} đ`);
 
-      // Tìm kiếm đơn hàng trong Firestore DB theo Document ID hoặc orderCode/id field
-      let orderDocRef = db.collection('orders').doc(searchId);
-      let orderSnap = await orderDocRef.get();
+      // Tìm kiếm đơn hàng trong Firestore DB theo orderCode hoặc Document ID
+      let orderDocRef = null;
+      let orderSnap = null;
 
-      if (!orderSnap.exists) {
-        // Tìm kiếm query nếu ID không trùng tuyệt đối hoặc query theo orderCode
-        let querySnap = await db.collection('orders').where('orderCode', '==', orderCodeNum).limit(1).get();
-        if (querySnap.empty) {
-          querySnap = await db.collection('orders').where('id', '==', searchId).limit(1).get();
-        }
-        // Dự phòng đối soát chính xác theo số tiền lẻ độc nhất (exactPaymentAmount)
-        if (querySnap.empty && verifiedData.amount) {
-          querySnap = await db.collection('orders')
-            .where('exactPaymentAmount', '==', Number(verifiedData.amount))
-            .where('paymentStatus', '==', 'unpaid')
-            .limit(1)
-            .get();
-        }
-        if (!querySnap.empty) {
-          orderDocRef = querySnap.docs[0].ref;
-          orderSnap = querySnap.docs[0];
+      let querySnap = await db.collection('orders').where('orderCode', '==', orderCodeNum).limit(1).get();
+      if (!querySnap.empty) {
+        orderDocRef = querySnap.docs[0].ref;
+        orderSnap = querySnap.docs[0];
+      } else {
+        const directRef = db.collection('orders').doc(searchId);
+        const directSnap = await directRef.get();
+        if (directSnap.exists) {
+          orderDocRef = directRef;
+          orderSnap = directSnap;
         }
       }
 
-      if (orderSnap.exists) {
+      if (orderSnap && orderSnap.exists) {
+        const orderData = orderSnap.data() || {};
+        const expectedAmount = Math.round(Number(
+          orderData.quote?.depositNeededVnd ||
+          orderData.quote?.totalVnd ||
+          orderData.totalVnd ||
+          orderData.totalAmount ||
+          0
+        ));
+
+        // Bắt buộc đối chiếu số tiền thanh toán thực tế với số tiền đơn hàng trong Firestore
+        if (expectedAmount <= 0 || paidAmount < expectedAmount) {
+          console.error(`🚨 [PayOS Fraud Blocked] Đơn ${orderSnap.id} yêu cầu ${expectedAmount}đ nhưng chỉ nhận ${paidAmount}đ!`);
+          await orderDocRef.update({
+            paymentStatus: 'underpaid_flagged',
+            paidAmountVnd: paidAmount,
+            payosTransactionRef: verifiedData.reference || '',
+            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+          });
+          return res.status(200).json({
+            success: false,
+            message: `Số tiền thanh toán (${paidAmount}đ) nhỏ hơn tổng đơn (${expectedAmount}đ)`
+          });
+        }
+
         await orderDocRef.update({
           status: 'deposit_paid', // Tự động đổi trạng thái sang "Đã cọc 100%"
-          paymentStatus: 'paid',   // Đã thanh toán
-          paidAmountVnd: verifiedData.amount,
+          paymentStatus: 'paid',   // Đã thanh toán đủ
+          paidAmountVnd: paidAmount,
           paidAt: new Date().toISOString(),
           payosTransactionRef: verifiedData.reference || '',
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         });
-        console.log(`✅ [PayOS Webhook] Đã cập nhật đơn hàng ${searchId} sang 'Đã cọc 100%' thành công!`);
+        console.log(`✅ [PayOS Webhook] Đã cập nhật đơn hàng ${orderSnap.id} sang 'Đã cọc 100%' thành công!`);
         return res.json({ success: true, message: 'Đã xác nhận đơn hàng thành công' });
       } else {
-        console.warn(`⚠️ [PayOS Webhook] Không tìm thấy đơn hàng ${searchId} trong Database`);
+        console.warn(`⚠️ [PayOS Webhook] Không tìm thấy đơn hàng với orderCode ${orderCodeNum} trong Database`);
       }
     }
 

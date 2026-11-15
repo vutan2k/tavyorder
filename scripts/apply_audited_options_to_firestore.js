@@ -28,7 +28,7 @@ async function main() {
   const audited = JSON.parse(readFileSync(dataFile, 'utf8'));
 
   console.log('🔐 Đang đăng nhập Admin Auth...');
-  await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', 'admin123');
+  await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   console.log('✅ Đăng nhập Admin thành công!');
 
   for (const [goodsNo, scrapedOpts] of Object.entries(audited)) {

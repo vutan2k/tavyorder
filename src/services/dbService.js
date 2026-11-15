@@ -1,6 +1,7 @@
 import {
   collection,
   doc,
+  getDoc,
   setDoc,
   deleteDoc,
   updateDoc,
@@ -9,9 +10,11 @@ import {
   where,
   orderBy,
   serverTimestamp,
-  writeBatch
+  writeBatch,
+  arrayUnion
 } from 'firebase/firestore';
 import { db } from '../firebase';
+import { normalizePhone, findGuestOrders } from './guestTrackingService';
 
 // Collection References
 const ORDERS_COLLECTION = 'orders';
@@ -82,8 +85,8 @@ export const withTimeout = (promise, ms = 8000, errorMsg = 'Quá thời gian k�
  * 2. Create New Order
  */
 export const createOrderInDB = async (orderData) => {
-  const rawPhone = orderData.customerPhone ? String(orderData.customerPhone).replace(/\D/g, '') : '';
-  const orderId = orderData.id || rawPhone || `${Date.now()}`;
+  const randSuffix = Math.floor(1000 + Math.random() * 9000);
+  const orderId = orderData.id || `ORD-${Date.now()}-${randSuffix}`;
   const docRef = doc(db, ORDERS_COLLECTION, orderId);
   const nowIso = new Date().toISOString();
   
@@ -102,11 +105,91 @@ export const createOrderInDB = async (orderData) => {
 
   try {
     await withTimeout(setDoc(docRef, payload), 8000);
+    // Ghi chỉ mục tra cứu đơn theo SĐT 10 số cho khách vãng lai (phục vụ getDoc đơn lẻ, không mở list)
+    const cleanPhone = normalizePhone(payload.customerPhone || '');
+    if (/^0[35789]\d{8}$/.test(cleanPhone)) {
+      const phoneIdxRef = doc(db, 'guest_phone_orders', cleanPhone);
+      setDoc(phoneIdxRef, {
+        phone: cleanPhone,
+        orderIds: arrayUnion(orderId),
+        updatedAt: nowIso
+      }, { merge: true }).catch(() => {});
+    }
     return { success: true, id: orderId, order: payload };
   } catch (err) {
     console.warn("Firestore createOrderInDB error:", err);
     throw err;
   }
+};
+
+/**
+ * 2b. Tra cứu đơn hàng an toàn từ Firestore theo đúng Mã đơn (ORD-...) hoặc SĐT 10 số
+ * (Sử dụng getDoc đơn lẻ, tuyệt đối không dùng list query toàn cục)
+ */
+export const lookupGuestOrdersInDB = async (rawQuery, localOrders = []) => {
+  const term = String(rawQuery || '').trim();
+  if (!term) return [];
+
+  const localMatched = findGuestOrders(term, localOrders);
+  const byId = new Map(localMatched.map((o) => [o.id, o]));
+
+  try {
+    const cleanPhone = normalizePhone(term);
+    const candidateIds = new Set();
+
+    // 1. Nếu khách nhập mã đơn (ORD-... hoặc mã đơn cụ thể >= 5 ký tự)
+    const upperTerm = term.toUpperCase();
+    if (upperTerm.startsWith('ORD-')) {
+      candidateIds.add(upperTerm);
+      candidateIds.add(term);
+    } else if (/^[A-Za-z0-9_-]{6,}$/.test(term) && !/^0[35789]\d{8}$/.test(cleanPhone)) {
+      candidateIds.add(term);
+      candidateIds.add(`ORD-${term}`);
+    }
+
+    // 2. Nếu khách nhập đúng SĐT 10 số chuẩn Việt Nam
+    if (/^0[35789]\d{8}$/.test(cleanPhone)) {
+      candidateIds.add(cleanPhone); // Tương thích đơn cũ dùng SĐT làm ID
+      try {
+        const idxSnap = await getDoc(doc(db, 'guest_phone_orders', cleanPhone));
+        if (idxSnap.exists()) {
+          const ids = idxSnap.data()?.orderIds;
+          if (Array.isArray(ids)) {
+            ids.forEach((id) => {
+              if (id && typeof id === 'string') candidateIds.add(id);
+            });
+          }
+        }
+      } catch {}
+    }
+
+    // 3. Tải từng đơn theo ID bằng getDoc
+    const fetchedDocs = await Promise.all(
+      Array.from(candidateIds).slice(0, 20).map(async (id) => {
+        try {
+          const snap = await getDoc(doc(db, ORDERS_COLLECTION, id));
+          if (!snap.exists()) return null;
+          const data = snap.data();
+          const createdAtIso = data.createdAt?.toDate
+            ? data.createdAt.toDate().toISOString()
+            : (typeof data.createdAt === 'string' ? data.createdAt : new Date().toISOString());
+          return { id: snap.id, ...data, createdAt: createdAtIso };
+        } catch {
+          return null;
+        }
+      })
+    );
+
+    for (const item of fetchedDocs) {
+      if (item && item.id) {
+        byId.set(item.id, item);
+      }
+    }
+  } catch (err) {
+    console.warn('lookupGuestOrdersInDB fallback:', err);
+  }
+
+  return findGuestOrders(term, Array.from(byId.values()));
 };
 
 /**

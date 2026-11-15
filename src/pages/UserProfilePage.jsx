@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import CascadingAddressSelector from '../components/CascadingAddressSelector';
 import ProductDetailModal from '../components/ProductDetailModal';
+import { lookupGuestOrdersInDB } from '../services/dbService';
 import { ORDER_STEPS, getOrderStepIndex } from '../data/orderStatuses';
 import { getOrderTotalVnd, formatVnd, formatKrw } from '../utils/priceCalculator';
 
@@ -19,6 +20,23 @@ export default function UserProfilePage() {
   const [activeOrderTab, setActiveOrderTab] = useState('all');
   const [copiedCode, setCopiedCode] = useState('');
   const [detailProduct, setDetailProduct] = useState(null);
+  const [phoneLinkedOrders, setPhoneLinkedOrders] = useState([]);
+
+  useEffect(() => {
+    let active = true;
+    if (currentUser?.phone) {
+      lookupGuestOrdersInDB(currentUser.phone, orders || [])
+        .then((res) => {
+          if (active && Array.isArray(res)) setPhoneLinkedOrders(res);
+        })
+        .catch(() => {});
+    } else {
+      setPhoneLinkedOrders([]);
+    }
+    return () => {
+      active = false;
+    };
+  }, [currentUser?.phone, orders]);
 
   const krwRate = rates?.KRW?.rate || 19.5;
   const serviceFeeMultiplier = 1 + (rates?.serviceFeePercent ?? 5) / 100;
@@ -167,12 +185,21 @@ export default function UserProfilePage() {
     );
   }
 
-  // Lọc đơn hàng của người dùng
-  const userOrders = (orders || []).filter(
-    (o) =>
-      (o.userEmail && o.userEmail.toLowerCase() === currentUser.email.toLowerCase()) ||
-      (o.customerPhone && currentUser.phone && o.customerPhone === currentUser.phone)
-  );
+  // Lọc đơn hàng của người dùng (Gộp cả đơn theo email và đơn tra cứu theo SĐT trên Firestore)
+  const currentUserEmailLower = currentUser?.email?.toLowerCase?.() || '';
+  const mergedOrdersMap = new Map();
+  (orders || []).forEach((o) => {
+    if (
+      (Boolean(currentUserEmailLower) && o.userEmail?.toLowerCase?.() === currentUserEmailLower) ||
+      (Boolean(o.customerPhone && currentUser?.phone) && o.customerPhone === currentUser.phone)
+    ) {
+      mergedOrdersMap.set(o.id, o);
+    }
+  });
+  (phoneLinkedOrders || []).forEach((o) => {
+    if (o && o.id) mergedOrdersMap.set(o.id, o);
+  });
+  const userOrders = Array.from(mergedOrdersMap.values());
 
   const filteredOrders = userOrders.filter((order) => {
     if (activeOrderTab === 'all') return true;

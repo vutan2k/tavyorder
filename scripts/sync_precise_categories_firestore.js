@@ -29,7 +29,7 @@ async function main() {
   const products = JSON.parse(raw);
 
   console.log('🔐 Đang xác thực Firebase Auth Admin...');
-  await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', 'admin123');
+  await signInWithEmailAndPassword(auth, 'admin@tavykorea.vn', process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   console.log('✅ Xác thực Admin thành công!');
 
   console.log(`📤 Đang cập nhật ${products.length} sản phẩm phân loại chuẩn vào Firestore "pending_products"...`);

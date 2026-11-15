@@ -119,8 +119,7 @@ function buildPlan(docs) {
 async function main() {
   const adminEmail = envGet('VITE_ADMIN_EMAIL', 'admin@tavykorea.vn');
   // .env VITE_ADMIN_PASSWORD hiện là mật khẩu UI admin, KHÔNG phải Firebase Auth password.
-  // Firebase Auth dùng admin123 (theo các script sync khác trong repo).
-  const adminPass = process.env.FIREBASE_ADMIN_PASSWORD || 'admin123';
+    const adminPass = (process.env.FIREBASE_ADMIN_PASSWORD || process.env.VITE_ADMIN_PASSWORD || '');
   await signInWithEmailAndPassword(auth, adminEmail, adminPass);
   console.log('Admin auth OK:', adminEmail);
 
