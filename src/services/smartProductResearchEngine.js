@@ -861,6 +861,51 @@ export async function scrapeProductFromSource(source, targetUrlOrKeyword, onProg
 
     if (isUrl || /^A[0-9]{11,12}$/i.test(targetUrlOrKeyword)) {
       const fullUrl = isUrl ? targetUrlOrKeyword : `https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=${targetUrlOrKeyword}`;
+      
+      // Ưu tiên 1: Thử cào qua endpoint nội bộ stealth curl_cffi (cực nhanh, ~15MB RAM, bypass Akamai)
+      if (gNo) {
+        try {
+          emit('stealth_scraper', `Đang cào dữ liệu qua Stealth Engine (goodsNo: ${gNo})...`, 'info');
+          const stealthRes = await fetch(`/api/scrapeOliveYoung?goodsNo=${encodeURIComponent(gNo)}`);
+          if (stealthRes.ok) {
+            const stealthData = await stealthRes.json();
+            if (stealthData && stealthData.success && stealthData.titleKr) {
+              const cleanTitle = cleanAndUnescapeKoreanText(stealthData.titleKr);
+              const saleP = Number(stealthData.salePrice) || Number(stealthData.originPrice) || 0;
+              const origP = Number(stealthData.originPrice) || saleP;
+              const discP = origP > saleP ? Math.round(((origP - saleP) / origP) * 100) : 0;
+              
+              const product = {
+                goodsNo: gNo,
+                name: cleanTitle,
+                nameKr: cleanTitle,
+                brand: 'Olive Young',
+                brandKr: '올리브영',
+                category: 'skincare',
+                foreignPrice: saleP,
+                originalPrice: origP,
+                discountPercent: discP,
+                productImage: stealthData.images?.[0] || '',
+                images: Array.isArray(stealthData.images) && stealthData.images.length > 0 ? stealthData.images : [],
+                photoReviews: [],
+                ingredients: [],
+                description: `Sản phẩm chính hãng Olive Young Hàn Quốc. Mã sản phẩm: ${gNo}`,
+                origin: 'Store Olive Young Seoul, Hàn Quốc',
+                rating: 5,
+                reviewsCount: 0,
+                source: 'oliveyoung',
+                productUrl: fullUrl
+              };
+              emit('stealth_success', `✅ Cào thành công qua Stealth Engine: "${cleanTitle.slice(0, 40)}..."`, 'success');
+              return { success: true, product };
+            }
+          }
+        } catch {
+          emit('stealth_fallback', 'Stealth API không phản hồi, fallback sang AI Scraper Agent...', 'warning');
+        }
+      }
+
+      // Ưu tiên 2: Fallback sang runAIScraperAgent
       const res = await runAIScraperAgent(fullUrl);
       if (res && res.success && res.product) {
         const p = res.product;
