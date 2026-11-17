@@ -564,7 +564,7 @@ export const AppProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : defaultRates;
   });
 
-  const CURRENT_CATALOG_VER = 'v6.3_master_update_1794923971872';
+  const CURRENT_CATALOG_VER = 'v6.3_master_update_1794955388206';
 
   const [products, setProducts] = useState(() => {
     try {
