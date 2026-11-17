@@ -994,7 +994,7 @@
     ],
     "storageProvider": "firebase_storage",
     "is_sold_out": false,
-    "rank": 22,
+    "rank": 19,
     "usage": "Dùng sau bước kem lót và kem che khuyết điểm: lấy một lượng vừa đủ bằng cách ấn nhẹ mút vào cushion (không ấn mạnh để tránh lấy quá nhiều), vỗ đều lên mặt theo chiều từ trong ra ngoài, tập trung vùng cần che phủ. Với lớp finish mỏng nhẹ tự nhiên, nên dặm thêm lớp mỏng ở vùng chữ T và cố định bằng phấn phủ nếu da dầu.",
     "isAvailable": true,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000139063&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=13",
@@ -1733,7 +1733,7 @@
     "discountRate": "25%",
     "id": "A000000149501",
     "lastAuditedAt": "2026-11-11T02:19:54.561Z",
-    "rank": 59,
+    "rank": 69,
     "name_vi": "Dầu Gội Giảm Rụng Củng Cố Da Đầu LABO-H Scalp Strengthening Shampoo 750ml Kèm Chai 100ml",
     "name_kr": "[몬치치] NEW라보에이치 두피강화샴푸 750ML+100ML [탈모증상완화] | 올리브영",
     "brand_vi": "LABO-H",
@@ -2744,7 +2744,7 @@
     "originalPriceVnd": 631000,
     "priceVnd": 454000,
     "nameKr": "일리윤 프레쉬모이스춰 스크럽워시 400ml*2 기획 | 올리브영",
-    "salePrice": 17900,
+    "salePrice": 16900,
     "appliedKrwRate": 19.5,
     "hasOptions": false,
     "originPrice": 24900,
@@ -2763,7 +2763,7 @@
       "newPriceVnd": 367000,
       "oldPriceVnd": 336000
     },
-    "rank": null,
+    "rank": 33,
     "name_vi": "Sữa Tắm Tẩy Tế Bào Chết Cấp Ẩm Tươi Mát Illiyoon Fresh Moisture Scrub Wash Set 2 Chai 400ml",
     "name_kr": "일리윤 프레쉬모이스춰 스크럽워시 400ml*2 기획 | 올리브영",
     "brand_vi": "Illiyoon",
@@ -3606,7 +3606,7 @@
     "category": "haircare",
     "isPublished": true,
     "productImage": "/products/A000000171423.jpg",
-    "rank": 19,
+    "rank": 2,
     "usage": "Dùng 1-2 lần/tuần sau khi gội: lấy lượng bằng quả bóng golf, thoa đều từ giữa đến ngọn tóc, ủ 5-10 phút (có thể dùng mũ ủ hoặc khăn nóng) rồi xả sạch với nước ấm. Với tóc hư tổn nặng có thể dùng mỗi lần gội, nhưng tránh thoa lên da đầu để không gây bết.",
     "storageProvider": "firebase_storage",
     "originalPrice": 42000,
@@ -3722,7 +3722,7 @@
     "price": 34900,
     "category": "Lotion dưỡng thể",
     "usage": "Dùng ngay sau khi tắm khi da còn ẩm: lấy lượng bằng đồng xu, thoa đều toàn thân bằng chuyển động massage nhẹ từ dưới lên, tập trung vùng khô như khuỷu tay, đầu gối. Có thể dùng cho mặt và body, phù hợp cả da nhạy cảm và trẻ nhỏ; với da rất khô có thể thoa thêm lớp thứ hai sau 2-3 phút.",
-    "rank": 51,
+    "rank": 29,
     "name_vi": "Sữa Dưỡng Thể Dưỡng Ẩm Dịu Nhẹ Illiyoon Ceramide Ato Lotion (Set Đôi Siêu Tiết Kiệm 600ml + 600ml)",
     "name_kr": "[5년연속1위] 일리윤 세라마이드 아토 로션기획(600ML+600ML) | 올리브영",
     "brand_vi": "Illiyoon",
@@ -4631,7 +4631,28 @@
     "title": "잠시만 기다려 주세요 - 올리브영",
     "storageProvider": "firebase_storage",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000177984&tab=review",
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/cd8c1f7b0e8f48ffa0d6a1e339ad398e1794913848702.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2171823a392349c9a84c84b1fe460d761794878431200.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/068cfb9736d041fcbcb8ba79af7569531794688646587.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/62c5f8de9bd6462ea0bcb63134c59ee41794634573596.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/d3953cb2a56e44f7a95081fa728eb5cb1794589863119.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/9bdae102555942eabedb6457976c4a1a1794575136489.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/ed1be073188c40d992b0d709fe2dc62e1794574625447.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/8d6ad5c4b5b546719cda0d8de7d1ed911791600142560.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/78fb0cd8d6a64d56b9de1ecbf5ae67331791600149539.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/111ff8e4ab6d4a808ec3327ce768ae8d1791600155810.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/6493cbe464de4eb0b4ebab10c89430ac1791600162452.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/a4639db3ea85435d9587bce99dd6ac481791600168457.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/425e766038264ceb923232fab85aaf851791600173717.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/5857e605c24c45ca9413440d905d446e1791600181774.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/5d8b1e5305db49a9b2cd9c85e8ba28741791600187811.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/b2b4fdec30304de584fcbc27f9c583dc1791600193389.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/10/16e1b5d759fa495db805d4c960a250d41791600199318.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/e56d35fe6e184008a1146ea54dc442d61793770182170.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/b336bd29b095489db8cca587d860bec51793770185696.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/29ccd50d04ed40eca0be525480e28dcd1793770189518.png"
+    ],
     "optionsCount": 23,
     "isAvailable": false,
     "priceChangeAlert": {
@@ -4646,8 +4667,8 @@
       "newPriceVnd": 696000
     },
     "categoryPath": "Trang điểm > Trang điểm môi > Son bóng",
-    "isSoldOut": true,
-    "is_sold_out": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
     "usage": "1. Sử dụng đầu cọ đi kèm lấy một lượng son vừa phải. 2. Thoa nhẹ nhàng từ giữa lòng môi rồi tán đều ra toàn bộ bờ môi. 3. Có thể thoa chồng lên lớp son màu yêu thích để tạo hiệu ứng căng mọng đa chiều.",
     "status": "out_of_stock",
     "originalPrice": 40000,
@@ -4657,7 +4678,7 @@
     "foreignPrice": 34000,
     "originalPriceVnd": 1014000,
     "category": "makeup",
-    "salePrice": 34000,
+    "salePrice": 36000,
     "price": 34000,
     "subCategory": "lipstick",
     "productImage": "/products/A000000177984.jpg",
@@ -4679,7 +4700,7 @@
     "isDiscontinued": false,
     "appliedServiceFeePercent": 30,
     "brand": "HERA",
-    "rank": null,
+    "rank": 94,
     "name_vi": "Son bóng căng mọng môi HERA Sensual Nude Gloss 5g (13 màu)",
     "name_kr": "[홀리데이 출시] 헤라 센슈얼 누드 글로스 15 Colors 기획/단품 | 올리브영",
     "brand_vi": "HERA",
@@ -5102,7 +5123,7 @@
       }
     ],
     "productImage": "/products/A000000183059.jpg",
-    "rank": 99,
+    "rank": 71,
     "name_vi": "Dầu Gội Phục Hồi Tóc Hư Tổn Chuyên Sâu Unove Deep Damage Repair Shampoo (Set Đôi 500ml + 500ml Bản Powerpuff Girls)",
     "name_kr": "어노브 딥 데미지 리페어 샴푸 500ml 더블/듀오 기획 | 올리브영",
     "brand_vi": "Unove",
@@ -5718,7 +5739,7 @@
     "usage": "1. Dùng bông mút ấn nhẹ vào lõi phấn để lấy lượng kem nền vừa phải.\n2. Dặm nhẹ và đều tay lên khắp khuôn mặt theo hướng từ trong ra ngoài.\n3. Dặm thêm một lớp mỏng tại các vùng da có khuyết điểm cần tăng cường độ che phủ.",
     "category": "Cushion",
     "brandKr": "",
-    "rank": 54,
+    "rank": 46,
     "subCategory": "makeup",
     "origin": "Store Olive Young Korea",
     "isPublished": true,
@@ -6050,7 +6071,7 @@
     "isAvailable": true,
     "appliedKrwRate": 19.5,
     "is_sold_out": false,
-    "rank": null,
+    "rank": 80,
     "name_vi": "Sữa Rửa Mặt Cho Da Mụn Blanc Nature Acne Cleansing Foam (Tùy Chọn Lẻ Hoặc Set)",
     "name_kr": "블랑네이처 아크네 클렌징 폼 단품/기획 | 올리브영",
     "brand_vi": "Blanc Nature",
@@ -6218,7 +6239,7 @@
     },
     "category": "Sữa rửa mặt dạng bọt/gel",
     "categoryPath": "Tẩy trang/làm sạch > Sữa rửa mặt dạng bọt/gel > Sữa rửa mặt dạng bọt/gel",
-    "rank": 30,
+    "rank": 34,
     "isDiscontinued": false,
     "origin": "Store Olive Young Korea",
     "images": [
@@ -6905,7 +6926,7 @@
   {
     "source": "oliveyoung_top100_ranking",
     "appliedServiceFeePercent": 30,
-    "rank": 36,
+    "rank": 23,
     "category": "Chăm sóc da",
     "status": "available",
     "brandKr": "에스네이처",
@@ -7195,7 +7216,7 @@
     "productImage": "/products/A000000198343.jpg",
     "lastAuditedAt": "2026-11-11T10:56:28Z",
     "foreignPrice": 11000,
-    "rank": 71,
+    "rank": null,
     "name_vi": "Bút Kẻ Mắt Chì Chống Nước Lâu Trôi Clio Sharp So Simple Waterproof Pencil Liner (Tùy Chọn Đơn Hoặc Set Đôi)",
     "name_kr": "[NO.1 아이라이너] 클리오 샤프 쏘 심플 워터프루프 펜슬라이너 단품/더블기획 | 올리브영",
     "brand_vi": "Clio",
@@ -7701,7 +7722,7 @@
     "updatedAt": "2026-11-02T08:44:45Z",
     "originPrice": 24000,
     "goodsNo": "A000000201055",
-    "rank": null,
+    "rank": 66,
     "isDiscontinued": false,
     "nameKr": "[11월올영픽][퍼프,브러쉬기획] 롬앤 베러 댄 컨투어 (기획/단품) | 올리브영",
     "category": "Phấn tạo khối",
@@ -7753,7 +7774,7 @@
     ],
     "originalPrice": 24000,
     "isAvailable": false,
-    "salePrice": 20700,
+    "salePrice": 20900,
     "origin": "Store Olive Young Korea",
     "name_vi": "Phấn Tạo Khối Định Hình Gương Mặt Romand Better Than Contour Phiên Bản Kuromi",
     "name_kr": "[11월올영픽][퍼프,브러쉬기획] 롬앤 베러 댄 컨투어 (기획/단품) | 올리브영",
@@ -8175,7 +8196,22 @@
     "brandKr": "",
     "originalPriceVnd": 1876000,
     "optionsCount": 14,
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/3497e562e03a41ae9e67eec5e0161ddc1794905839785.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/790cf8bcdf99412db7418545f98dd5691794822872803.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/c002dcfd6cb74471bea576d09f1a57601794799717075.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/cea38a84418143ab803bf67801240f381794792428217.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/07a3820e2e8444769aec45b71215efbe1794707285777.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/7fcbbbc48c5a4d93afb367d58108243e1794677734977.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/e3727d41d5fe46b486a661bdc196b0701794479960582.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/433d70a0d3ca4da1bb2c937277e315f81794799723123.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/4a1211c1b43f4c72b33879a45713e6911794799729479.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/18/1798620cce1343309f084bf0d3888b031789733490170.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/f266cc7fbfdf479c98faf6a64b5dcd8f1792676148250.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/a02ca0da49c545ec9c8a4bc63b8cab4d1792676149834.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/dced05d106d84e4ea40887e6e23abe801792676151434.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/c57464d2f8d14c56bdec6da5981cc41a1793943775179.png"
+    ],
     "discountRate": "15%",
     "usage": "Dùng vào bước nền sau kem lót và trước phấn phủ, buổi sáng. Lấy lượng bằng hạt đậu, dùng bông mút vỗ đều từ giữa mặt ra ngoài, lớp mỏng rồi tăng dần ở vùng cần che phủ. Với da dầu, thấm dầu giấy trước khi dặm lại và tránh chồng lớp quá dày để không bị cakey.",
     "originPrice": 74000,
@@ -8356,7 +8392,7 @@
     "brand": "Hera",
     "appliedServiceFeePercent": 30,
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000202777&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=36",
-    "rank": null,
+    "rank": 90,
     "name_vi": "Phấn Nước Che Phủ Kiềm Dầu Hera Black Cushion Foundation (Set 15g + Lõi Thay Thế 15g - 9 Tone Màu)",
     "name_kr": "[NEW 로지 아이보리 단독 출시] 헤라 블랙 쿠션 파운데이션 10 Colors 본품+리필 기획 | 올리브영",
     "brand_vi": "Hera",
@@ -10268,7 +10304,7 @@
     "originalPriceWon": 20000
   },
   {
-    "rank": 64,
+    "rank": 55,
     "lastAuditedAt": "2026-11-11T10:59:43Z",
     "status": "available",
     "originalPrice": 33000,
@@ -10610,7 +10646,7 @@
     "brandKr": "",
     "brand": "Mediheal",
     "foreignPrice": 1000,
-    "rank": 68,
+    "rank": 49,
     "hasOptions": false,
     "isPublished": true,
     "subCategory": "",
@@ -11229,7 +11265,7 @@
     "salePrice": 33900,
     "category": "Essence/serum/ampoule",
     "usage": "Dùng sáng và tối ở bước serum sau toner, nhỏ 2-3 giọt ra lòng bàn tay rồi vỗ nhẹ lên vùng da có mụn và da dầu, tránh chà xát mạnh. Với da nhạy cảm nên bắt đầu 1 lần/ngày vào buổi tối, và luôn dùng kem chống nắng vào ban ngày vì serum giảm mụn có thể làm da nhạy cảm với nắng.",
-    "rank": 74,
+    "rank": null,
     "name_vi": "Tinh Chất Serum Dịu Da Giảm Mụn Fation Nosca9 Trouble Serum (Set 50ml + Lõi Thay 40ml + Kem Dưỡng 10ml)",
     "name_kr": "파티온 노스카나인 트러블 세럼 50ml 리필 기획 (+리필40ml+크림10ml) | 올리브영",
     "brand_vi": "Fation",
@@ -11252,7 +11288,7 @@
       "/products/A000000221807.jpg"
     ],
     "foreignPrice": 29200,
-    "rank": 50,
+    "rank": 44,
     "isDiscontinued": false,
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/98c1fe26401b4291af108c4ea8d254b11794214050432.png",
@@ -11399,7 +11435,7 @@
     "appliedServiceFeePercent": 30,
     "foreignPrice": 27500,
     "productImage": "/products/A000000222698.jpg",
-    "rank": 58,
+    "rank": 25,
     "name_vi": "Tinh Chất Cấp Ẩm Phục Hồi Da Anua PDRN Hyaluronic Acid Capsule 100 30ml + Lõi Refill 30ml",
     "name_kr": "[수지세럼] 아누아 피디알엔 히알루론산 캡슐 100 세럼 30mL 기획 (+30mL 리필팩) | 올리브영",
     "brand_vi": "Anua",
@@ -11725,7 +11761,7 @@
     "images": [
       "/products/A000000223414.jpg"
     ],
-    "rank": 8,
+    "rank": 1,
     "name_vi": "Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại)",
     "name_kr": "[11월 올영픽/15년 연속 1위] 메디힐 에센셜 마스크팩 10/10+1매 기획 7종 골라담기 | 올리브영",
     "brand_vi": "Mediheal",
@@ -13198,7 +13234,7 @@
     "originalPriceVnd": 1268000,
     "categoryPath": "Chăm sóc da > Essence/serum/ampoule > Essence/serum/ampoule",
     "nameKr": "[속건조필수템] 웰라쥬 리얼 히알루로닉 블루 100 앰플 75ml 2입 기획 | 올리브영",
-    "rank": 76,
+    "rank": 52,
     "updatedAt": "2026-11-02T08:44:45Z",
     "usage": "1. Sau bước toner cân bằng da, lấy một lượng tinh chất vừa đủ bằng ống hút.\n2. Chấm đều tinh chất lên các điểm trán, má và cằm.\n3. Thoa nhẹ nhàng và vỗ đều khắp mặt cho dưỡng chất thẩm thấu hoàn toàn.",
     "priceChangeAlert": {
@@ -13407,7 +13443,7 @@
     "appliedServiceFeePercent": 30,
     "hasOptions": false,
     "originPrice": 19600,
-    "rank": 72,
+    "rank": null,
     "name_vi": "Gel Rửa Mặt Dịu Nhẹ Giảm Mụn CELLADIX Trouble Clear Low pH 131 Cleanser 200ml",
     "name_kr": "셀라딕스 트러블 클리어 약산성 131 젤클렌저 200ml | 올리브영",
     "brand_vi": "셀라딕스",
@@ -13455,7 +13491,7 @@
     "status": "available",
     "brandKr": "제로이드",
     "updatedAt": "2026-11-02T13:23:42Z",
-    "rank": 60,
+    "rank": 18,
     "source": "oliveyoung_top100_ranking",
     "originalPriceVnd": 1090000,
     "priceVnd": 872000,
@@ -14121,7 +14157,7 @@
       "changeType": "drop"
     },
     "is_enriched": true,
-    "rank": 88,
+    "rank": 70,
     "isDiscontinued": false,
     "name_vi": "Tinh Chất Chống Nắng Phục Hồi Mờ Thâm Mediheal Madecassoside Moisture Sun Serum Blemish Repair (Set 50g + 50g + Mini 15g)",
     "name_kr": "[양현종 PICK] 메디힐 마데카소사이드 수분 선세럼 흔적 리페어 50+50g 기획 | 올리브영",
@@ -14505,10 +14541,10 @@
     "subCategory": "",
     "firestoreId": "A000000234394",
     "storageProvider": "firebase_storage",
-    "salePrice": 15900,
+    "salePrice": 15770,
     "description": "Son Kem Lì NEW 8ml (8ml) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "originalPriceVnd": 482000,
-    "rank": null,
+    "rank": 76,
     "category": "Son tint",
     "appliedServiceFeePercent": 30,
     "nameKr": "[11월올영픽] 얼터너티브스테레오 립 포션 카라멜 글레이즈 8ml | 올리브영",
@@ -14916,7 +14952,7 @@
         "is_sold_out": false
       }
     ],
-    "rank": 34,
+    "rank": 63,
     "name_vi": "Mặt Nạ Sủi Bọt Làm Sạch Và Dưỡng Ẩm Nhanh Menokin 30-Second Quick Bubble Mask (Tùy Chọn 6 Loại + Tặng Kèm 30ml)",
     "name_kr": "[1위 원조 버블팩] 메노킨 30초 퀵 버블 마스크 6종 택1(+30ml 증정) | 올리브영",
     "brand_vi": "Menokin",
@@ -15178,7 +15214,7 @@
     "priceVnd": 1113000,
     "productImage": "/products/A000000236420.jpg",
     "brandKr": "아이오페",
-    "rank": 16,
+    "rank": 32,
     "salePrice": 43800,
     "originalPrice": 59000,
     "nameKr": "[11월 올영픽/스피큘 레티놀] 아이오페 레티젝션 세럼 30+25mL 리필 기획",
@@ -15663,7 +15699,7 @@
     "isPublished": true,
     "subCategory": "",
     "firestoreId": "A000000239102",
-    "salePrice": 25200,
+    "salePrice": 24900,
     "storageProvider": "firebase_storage",
     "description": "Mỹ phẩm Mediheal 8+1 PDRN (8+1 Miếng) từ thương hiệu Mediheal là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu tinh chất rau má Madecassoside đậm đặc kết hợp phức hợp Cica làm dịu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp làm dịu nốt mụn sưng đỏ, làm mờ vết thâm sau mụn và phục hồi hàng rào màng tế bào da bị tổn thương, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "originalPriceVnd": 913000,
@@ -15716,7 +15752,7 @@
         "is_sold_out": false
       }
     ],
-    "rank": null,
+    "rank": 82,
     "name_vi": "Mặt Nạ Thạch Dưỡng Da Chuyên Sâu Mediheal Hyper Gel Mask (Set 8+1 Miếng - 4 Phân Loại)",
     "name_kr": "[8+1매 단독기획] 메디힐 하이퍼 겔마스크 4종 (콜라겐/PDRN/마데카소사이드/히알루론산) | 올리브영",
     "brand_vi": "Mediheal",
@@ -16430,7 +16466,7 @@
       "changePercent": -5.1
     },
     "category": "Son tint",
-    "rank": null,
+    "rank": 61,
     "isSoldOut": false,
     "title": "잠시만 기다려 주세요 - 올리브영",
     "price": 9400,
@@ -16440,7 +16476,7 @@
     "brandKr": "",
     "originPrice": 13000,
     "usage": "Thoa 1-2 lớp mỏng lên môi sạch vào buổi sáng hoặc khi cần thêm màu, chờ 30 giây rồi mới ăn uống để lớp tint bóng set đều và lâu trôi. Vì là tint bóng nên hạn chế chà xát mạnh, và nếu môi khô nên lót son dưỡng mỏng trước để màu lên mịn, đều hơn.",
-    "salePrice": 9700,
+    "salePrice": 9900,
     "name_vi": "Son Tint Bóng Căng Mộng Lâu Trôi Rom&nd The Juicy Lasting Tint (Bản Hợp Tác Sanrio Kuromi / Hangyodon)",
     "name_kr": "[11월올영픽][NEW컬러/기획][롬앤10주년] 더 쥬시 래스팅 틴트 | 올리브영",
     "brand_vi": "Rom&nd",
@@ -16760,7 +16796,7 @@
     "originalPrice": 13000,
     "hasOptions": true,
     "nameKr": "페리페라 무드 글로이 틴트 32 Colors (+푸딩 말랑이 키링&스티커 증정) | 올리브영",
-    "salePrice": 9300,
+    "salePrice": 13000,
     "foreignPrice": 9150,
     "goodsNo": "A000000244834",
     "storageProvider": "firebase_storage",
@@ -17163,7 +17199,7 @@
     "appliedKrwRate": 19.5,
     "categoryPath": "Trang điểm > Trang điểm môi > Son tint",
     "originPrice": 13000,
-    "rank": null,
+    "rank": 98,
     "name_vi": "Son Tint Bóng Dưỡng Môi Căng Mọng Peripera Ink Mood Glowy Tint (Bảng 32 Màu Chọn)",
     "name_kr": "페리페라 무드 글로이 틴트 32 Colors (+푸딩 말랑이 키링&스티커 증정) | 올리브영",
     "brand_vi": "Peripera",
@@ -17345,7 +17381,7 @@
     "lastAuditedAt": "2026-11-11T10:56:28Z",
     "storageProvider": "firebase_storage",
     "usage": "Dùng vào buổi sáng và tối ở bước serum/ampoule sau toner: lấy 2-3 giọt, vỗ nhẹ toàn mặt rồi ấn nhẹ vùng da khô ráp để ampoule thấm sâu. Vì là ampoule cấp ẩm chuyên sâu, nên khóa ẩm ngay bằng kem dưỡng và tránh dùng chung lúc với acid mạnh nếu da đang nhạy cảm.",
-    "rank": 82,
+    "rank": 86,
     "name_vi": "Tinh Chất Ampoule Cấp Ẩm Chuyên Sâu Aestura Atobarrier 365 Cera-Hyal Hydro Ampoule (Set 30ml + Refill 30ml)",
     "name_kr": "[11월 올영픽] 에스트라 아토베리어365 세라-히알 속수분 앰플 30ml+30ml 리필 기획 | 올리브영",
     "brand_vi": "Aestura",
@@ -17440,7 +17476,7 @@
     "goodsNo": "A000000246286",
     "isAvailable": false,
     "salePrice": 5700,
-    "rank": 63,
+    "rank": 47,
     "brand": "Peripera",
     "categoryPath": "Trang điểm > Trang điểm mắt > Kẻ lông mày",
     "is_sold_out": false,
@@ -19451,7 +19487,7 @@
     "storageProvider": "firebase_storage",
     "goodsNo": "A000000249154",
     "lastAuditedAt": "2026-11-11T02:19:58.143Z",
-    "rank": 2,
+    "rank": null,
     "name_vi": "Kem Dưỡng Thể Hương Nước Hoa Tiella Perfume Nourishing Body Cream 200ml (Tặng Kèm Kem Dưỡng Thể)",
     "name_kr": "[NEW 말차향 출시] 티엘라 퍼퓸 너리싱 바디크림 200ml 4종 단품/기획 (+바디크림 증정) | 올리브영",
     "brand_vi": "Tiella",
@@ -20089,7 +20125,7 @@
     "category": "Cushion",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000253122&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=75",
     "is_enriched": true,
-    "salePrice": 27550,
+    "salePrice": 29000,
     "goodsNo": "A000000253122",
     "priceVnd": 698000,
     "nameKr": "[10월 올영픽] 퓌 올데이 커버 블랙 쿠션 리필 기획 | 올리브영",
@@ -20213,7 +20249,7 @@
     "status": "available",
     "id": "A000000253122",
     "lastAuditedAt": "2026-11-11T02:19:58.144Z",
-    "rank": null,
+    "rank": 97,
     "name_vi": "Phấn nước che phủ cao bền màu Fwee All Day Cover Black Cushion Hộp Kèm Lõi Thay Thế",
     "name_kr": "[10월 올영픽] 퓌 올데이 커버 블랙 쿠션 리필 기획 | 올리브영",
     "brand_vi": "Fwee",
@@ -21184,7 +21220,7 @@
     "appliedKrwRate": 19.5,
     "categoryPath": "Mặt nạ > Pad > Pad",
     "title": "잠시만 기다려 주세요 - 올리브영",
-    "rank": null,
+    "rank": 89,
     "name_vi": "Bông Dưỡng Da Toner Pad Se Khít Lỗ Chân Lông Medicube Toner Pad (Set 160 Miếng + Refill 140 Miếng Tùy Chọn Zero Pore/PDRN/Deep Vita C)",
     "name_kr": "[1등모공패드/대용량160매] 메디큐브 패드 3종 1+1 140매 리필 기획 (제로모공패드/PDRN겔패드/딥비타씨패드) | 올리브영",
     "brand_vi": "Medicube",
@@ -21267,7 +21303,7 @@
     "originPrice": 38000,
     "categoryPath": "Chăm sóc da > Kem dưỡng > Kem dưỡng",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000255752&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=77",
-    "rank": 44,
+    "rank": 72,
     "name_vi": "Kem Dưỡng Dạng Gel Cấp Ẩm Làm Dịu Da Dr.G Red Blemish Clear Soothing Cream EX (Set 70ml + Tặng Kem 30ml + Serum 10ml x 2)",
     "name_kr": "[수분진정/세럼증정] 닥터지 레드블레미쉬 클리어 수딩크림 EX 70ml기획 (+30ml+세럼10ml*2ea) | 올리브영",
     "brand_vi": "Dr.G",
@@ -21540,7 +21576,7 @@
     "originalPriceWon": 24800
   },
   {
-    "rank": 20,
+    "rank": 12,
     "updatedAt": "2026-11-02T13:23:42Z",
     "isAvailable": true,
     "images": [
@@ -21758,7 +21794,7 @@
     "isAvailable": true,
     "origin": "Store Olive Young Korea",
     "category": "Kem dưỡng",
-    "rank": null,
+    "rank": 73,
     "name_vi": "Kem Dưỡng Ẩm Làm Dịu Phục Hồi Aestura Atobarrier 365 Hydro Soothing Cream (Set 80ml + Tặng Kem 10ml + Sữa Rửa Mặt 30g)",
     "name_kr": "[11월 올영픽] 에스트라 아토베리어365 하이드로 수딩크림 80ml 기획 (+수딩크림 10ml+클렌징폼 30g) | 올리브영",
     "brand_vi": "Aestura",
@@ -22211,7 +22247,7 @@
     "is_enriched": true,
     "updatedAt": "2026-11-02T08:44:45Z",
     "appliedServiceFeePercent": 30,
-    "rank": 40,
+    "rank": 31,
     "goodsNo": "A000000259555",
     "storageProvider": "firebase_storage",
     "isDiscontinued": false,
@@ -22291,7 +22327,7 @@
     "appliedKrwRate": 19.5,
     "isPublished": true,
     "subCategory": "skincare",
-    "rank": 12,
+    "rank": null,
     "name_vi": "Phấn nước che phủ cao bền màu Aprilskin Hero Cushion 2.0 Kèm Lõi Và 2 Bông Phấn",
     "name_kr": "[NEW][리뉴얼/철벽커버] 에이프릴스킨 히어로쿠션 2.0 (본품+리필+퍼프2개) | 올리브영",
     "brand_vi": "Aprilskin",
@@ -22439,7 +22475,7 @@
     "hasOptions": false,
     "categoryPath": "Chăm sóc da > Essence/serum/ampoule > Essence/serum/ampoule",
     "isSoldOut": false,
-    "rank": 49,
+    "rank": null,
     "name_vi": "Tinh Chất Cấp Ẩm Phục Hồi FAVORIPS Hydration Boosting Serum 30ml",
     "name_kr": "[화잘먹] 페이보릿 수분조 세럼 30ml | 올리브영",
     "brand_vi": "페이보릿",
@@ -24158,7 +24194,7 @@
     "isPublished": true,
     "storageProvider": "firebase_storage",
     "subCategory": "",
-    "rank": 17,
+    "rank": 9,
     "salePrice": 29300,
     "firestoreId": "A000000263009",
     "status": "available",
@@ -24480,8 +24516,8 @@
     "appliedServiceFeePercent": 30,
     "is_enriched": true,
     "id": "A000000263020",
-    "salePrice": 15200,
-    "rank": null,
+    "salePrice": 15300,
+    "rank": 87,
     "originPrice": 18000,
     "nameKr": "[11월올영픽/스프코어에디션] 어뮤즈 듀 세럼 리퀴드 블러쉬 기획 (+팡팡이 퍼프 증정) | 올리브영",
     "priceVnd": 388000,
@@ -25540,7 +25576,7 @@
     "isChallenge": true,
     "foreignPrice": 54000,
     "priceVnd": 1369000,
-    "salePrice": 54000,
+    "salePrice": 51300,
     "hasOptions": false,
     "title": "잠시만 기다려 주세요 - 올리브영",
     "productImage": "/products/A000000263542.jpg",
@@ -25574,7 +25610,7 @@
     "appliedServiceFeePercent": 30,
     "status": "available",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263542&dispCatNo=90000010009&trackingCd=Best_Sellingbest&t_page=%EB%9E%AD%ED%82%B9&t_click=%ED%8C%90%EB%A7%A4%EB%9E%AD%ED%82%B9_%EC%A0%84%EC%B2%B4_%EC%83%81%ED%92%88%EC%83%81%EC%84%B8&t_number=34",
-    "rank": null,
+    "rank": 60,
     "name_vi": "Tinh Chất Ampoule Chống Oxy Hóa Phục Hồi Physiogel Dailymune Ampoule (Set 20ml + 20ml + Tặng 1 Mặt Nạ)",
     "name_kr": "피지오겔 사이언수티컬즈 데일리뮨 앰플 세럼 더블 기획 (+마스크1매) | 올리브영",
     "brand_vi": "Physiogel",
@@ -26960,7 +26996,7 @@
     "salePrice": 31000,
     "status": "available",
     "isDiscontinued": false,
-    "rank": 75,
+    "rank": null,
     "name_vi": "Xịt khoáng bọt căng bóng cấp ẩm Menokin 30s Quick Glow Hydra Lift 98ml Tặng Kèm 30ml",
     "name_kr": "[박보영PICK/화잘먹미스트] 메노킨 30초 퀵 글로우 버블 캡슐 미스트 하이드라 리프트 98ml 기획 (+30ml) | 올리브영",
     "brand_vi": "Menokin",
@@ -27892,7 +27928,7 @@
     "foreignPrice": 28200,
     "brandKr": "",
     "firestoreId": "A000000267747",
-    "rank": 18,
+    "rank": 14,
     "isPublished": true,
     "subCategory": "skincare",
     "category": "Pad",
@@ -28222,7 +28258,7 @@
         "is_sold_out": false
       }
     ],
-    "rank": 95,
+    "rank": null,
     "name_vi": "Sữa Rửa Mặt Tạo Bọt Sạch Sâu Senka Perfect Whip Facial Wash Onion Koongya Edition (150g x 2 Tuýp Tặng Kèm 15g Và Móc Khóa Bông)",
     "name_kr": "[대용량/양파쿵야] 센카 퍼펙트 휩 페이셜 워시 150g 더블기획 (+15g+인형키링) | 올리브영",
     "brand_vi": "Senka",
@@ -28545,7 +28581,7 @@
     "originalPriceWon": 39000
   },
   {
-    "rank": 29,
+    "rank": 22,
     "isDiscontinued": false,
     "price": 24900,
     "is_sold_out": false,
@@ -30813,7 +30849,7 @@
     "originalPriceVnd": 1318000,
     "nameKr": "[11월 올영픽] 라로슈포제 시카플라스트 멀티 리페어 크림 100ml 기획 (+시카크림 15ml+시카에센스 7.5ml)",
     "originalPrice": 52000,
-    "rank": 24,
+    "rank": 20,
     "source": "oliveyoung_top100_ranking",
     "brand": "La Roche-Posay",
     "status": "available",
@@ -30954,7 +30990,7 @@
     "nameKr": "[인보라 PICK/11월 올영픽] 바이오더마 시카비오 포마드 100ml 더블 기획",
     "brand": "Bioderma",
     "isDiscontinued": false,
-    "rank": 31,
+    "rank": 37,
     "createdAt": "2026-11-02T13:23:42Z",
     "originalPrice": 56000,
     "optionsCount": 0,
@@ -31036,7 +31072,7 @@
     "isDiscontinued": false,
     "categoryPath": "클렌징 > 워터/밀크 > 클렌징워터",
     "source": "oliveyoung_top100_ranking",
-    "rank": 46,
+    "rank": 40,
     "originalPriceVnd": 951000,
     "priceVnd": 631000,
     "isAvailable": true,
@@ -31177,7 +31213,7 @@
     "status": "available",
     "isSoldOut": false,
     "hasOptions": false,
-    "rank": 28,
+    "rank": 38,
     "goodsNo": "A000001002385",
     "id": "A000001002385",
     "nameKr": "[11월 올영픽] 에스트라 아토베리어365 로션 300ml 기획 (+로션 30ml+캡슐토너 25ml)",
@@ -31283,7 +31319,7 @@
     "brand": "Cellimax",
     "originalPriceVnd": 761000,
     "appliedKrwRate": 19.5,
-    "rank": 66,
+    "rank": 57,
     "images": [
       "/products/A000001002590.jpg"
     ],
@@ -31684,7 +31720,29 @@
     "brandKr": "",
     "brand": "Prote-One",
     "categoryPath": "Thực phẩm > Quản lý chế độ ăn/inner beauty > Sinh tố protein",
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/a1e35830d389477aa14f337224df13d61794891028568.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/ee3f5a420e934672b9de46f14eee0a231794844857358.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/2189a6523e1541de92a23580d068823b1794808834731.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/82c2557f00ab4bcc8c405834c9ee30e01794786940003.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/7190e5f1aec9425fac80b2d7594483b01794309580173.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/95197a4bfbde46e7951685ce44f9e0611794217686855.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/11933afd673a4aeb9c7eddf252f83ae21794197933058.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/6731a2d2372542d292b4e7813f893c491793684074730.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/bdb13270297d4a4f9cbf48a1fb4755161793684084227.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/a429e8ea41604f3f8bfd9e5667fb1eba1793684096245.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/dd79a55f55c740fc995803db82eae49e1793411610855.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/5fce6f571c2d4382aa2267ad0f1273061793411629235.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/88d6ad771f9e42dca83d98fe0c7896a91793411638616.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/23/f70907b5cfd24618a88b79a41bebcb231792711471163.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/23/f5e62adf50ba4be6850318b77e18564a1792711478833.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/23/b5b010f52ede42588ee4e212df752c571792711486479.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/23/ba06dfed627548d5abf48fe52103c6541792711499515.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/521ad8877fc942f0930f0be398e079911793411725713.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/c8b8bcfcaef84c91aea5dca99a1e8f391793411738454.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/e4ca6d7634c1413cb01417fba71feb5a1793411750330.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/6c4bc327ceaf449799b13edad139034b1792680666959.png"
+    ],
     "optionsCount": 28,
     "description": "Mỹ phẩm 490g 2 (490g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "priceVnd": 1442000,
@@ -31931,14 +31989,37 @@
     "lastAuditedAt": "2026-11-11T02:20:01.317Z",
     "productImage": "/products/B000000255486.jpg",
     "usage": "Uống 1 lon lạnh sau bữa ăn hoặc khi thèm đồ uống có gas, tốt nhất vào buổi chiều để hỗ trợ tiêu hóa. Lắc nhẹ trước khi uống và bảo quản ngăn mát; không uống khi bụng đói nếu dạ dày nhạy cảm.",
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/0a82e7bca47740f4b08727606bc1d9171794890659715.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/5f9eae5e8bea4555bba0f01da0826aa51794838652687.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/919b4a49e8254159a8a4568f5a4d364a1794801334838.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/0fb5b800792443a5a2613e032f47b6931794779982701.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/e5d51ec896ee4a30a6bada154ecee1981794779847342.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/2187dde40786449b87a98a5cb8d78ff51794745127054.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/deea6b5caa09428d91a4da26fca4f3b71794722012167.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/1611e118e0d347d787cead249da63d711794294343039.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/3835c79d079045f0be8d6f7a970148521794311230575.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/c4b765404c9d4bbcb14692f3caf4661c1794311232411.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/c49633b72e8d46c08c806c102e935f231794311234164.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/439862b3d7c9462d8b0c386166a21aaf1794311247539.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/ce9140230ab947339a398f855ad02c831794311251156.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/4b3b894709eb44268958d0cee8dba10f1794311252850.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/e19de6185f9b47399836e3f2a853e0251794301357848.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/26a2f5eee39c486fa22ffd946b993ea41794301360376.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/a8b79f0d032340f7ae97a9c443b6109f1794301363428.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/df976b428e6046bea588dfddc4a69c531794627396415.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/344dc069a7f049cdb3304611a9d52c0b1794627402905.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/9584bb7f00f14b7e90a9daaefcb2a5081794627409185.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/0f9fc96288374e1eaa95da77b35698221794890714537.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/9b917bd828304932a5f5c2c6be52afcf1794890663796.png"
+    ],
     "is_sold_out": false,
     "price": 14900,
     "originalPriceWon": 19800
   },
   {
     "goodsNo": "A000000261733",
-    "rank": 32,
+    "rank": 27,
     "name": "Viên Khử Mùi Dạng Rắn Hetras 300g Set 2 Hộp (5 Loại)",
     "name_vi": "Viên Khử Mùi Dạng Rắn Hetras 300g Set 2 Hộp (5 Loại)",
     "name_kr": "[품절대란템] 헤트라스 고체탈취제 300g 2개입 5종",
@@ -32115,7 +32196,7 @@
   },
   {
     "goodsNo": "A000001002209",
-    "rank": 23,
+    "rank": 39,
     "name": "Kem Dưỡng Zeroid Intensive 80ml + 50ml Set Kèm 2 Mặt Nạ Intensive Cream",
     "name_vi": "Kem Dưỡng Zeroid Intensive 80ml + 50ml Set Kèm 2 Mặt Nạ Intensive Cream",
     "name_kr": "[11월 올영픽/대용량] 제로이드 인텐시브 크림 80ml + 50ml 기획 (+인텐시브 크림 마스크 2매)",
@@ -32227,7 +32308,7 @@
   },
   {
     "goodsNo": "A000001005367",
-    "rank": 39,
+    "rank": 28,
     "name": "Phấn Mắt Holika Holika My Fave Piece Eyeshadow / Gel Tail / Piece Balm",
     "name_vi": "Phấn Mắt Holika Holika My Fave Piece Eyeshadow / Gel Tail / Piece Balm",
     "name_kr": "[11월 올영픽/NEW 젤테일]홀리카홀리카 마이페이브 피스 아이섀도우/젤테일/피스 밤",
@@ -32283,7 +32364,7 @@
   },
   {
     "goodsNo": "A000001001887",
-    "rank": 35,
+    "rank": 10,
     "name": "Serum Numbuzin Số 3 Lỗ Chân Lông Mịn Màng 30ml Set Đôi Kèm 1 Mặt Nạ Serum",
     "name_vi": "Serum Numbuzin Số 3 Lỗ Chân Lông Mịn Màng 30ml Set Đôi Kèm 1 Mặt Nạ Serum",
     "name_kr": "[11월 올영픽] 넘버즈인 3번 보들보들 모공결 세럼 30ml 더블 기획 (+결세럼팩 1매)",
@@ -32342,7 +32423,7 @@
   },
   {
     "goodsNo": "A000000261742",
-    "rank": null,
+    "rank": 95,
     "name": "Serum Derma Mediheal Madecassoside 50ml + 50ml Set 1+1",
     "name_vi": "Serum Derma Mediheal Madecassoside 50ml + 50ml Set 1+1",
     "name_kr": "[1+1/업그레이드 수분흔적세럼] 메디힐 마데카소사이드 더마 세럼 50+50mL 기획",
@@ -32351,7 +32432,7 @@
     "brand_kr": "메디힐",
     "category": "serum",
     "category_vi": "Serum",
-    "salePrice": 24900,
+    "salePrice": 24500,
     "originalPrice": 43000,
     "foreignPrice": 24900,
     "thumbnailUrl": "/products/A000000261742.jpg",
@@ -32516,7 +32597,7 @@
   },
   {
     "goodsNo": "A000001003137",
-    "rank": 41,
+    "rank": null,
     "name": "Thực phẩm bổ sung Denps True Vitamin Max 5 loại chọn 1",
     "name_vi": "Thực phẩm bổ sung Denps True Vitamin Max 5 loại chọn 1",
     "name_kr": "[골라담기] 덴프스 트루바이타민 맥스 5종 택1\n원산지 : 상품설명 또는 구매정보 페이지 참조",
@@ -32572,7 +32653,7 @@
   },
   {
     "goodsNo": "A000000269434",
-    "rank": 57,
+    "rank": 51,
     "name": "Serum IOPE Super Bounce Retinol Nhập Môn 30ml + 30ml Refill",
     "name_vi": "Serum IOPE Super Bounce Retinol Nhập Môn 30ml + 30ml Refill",
     "name_kr": "[11월 올영픽/입문 레티놀] 아이오페 슈퍼바운스 세럼 30+30mL 리필 기획",
@@ -32628,7 +32709,7 @@
   },
   {
     "goodsNo": "A000000269535",
-    "rank": 14,
+    "rank": 24,
     "name": "Ampoule Innisfree Retinol Cica Mờ Lỗ Chân Lông 30ml Set Đôi Kèm Gel Mask 1 Miếng",
     "name_vi": "Ampoule Innisfree Retinol Cica Mờ Lỗ Chân Lông 30ml Set Đôi Kèm Gel Mask 1 Miếng",
     "name_kr": "[11월 올영픽/저자극레티놀앰플] 이니스프리 레티놀 시카 모공 흔적 앰플 30ml 더블 기획 (+겔 마스크 1매)",
@@ -32743,7 +32824,7 @@
   },
   {
     "goodsNo": "A000000231589",
-    "rank": 47,
+    "rank": 65,
     "name": "Kem Dưỡng Zeroid Soothing Cỡ Lớn 80ml + 50ml",
     "name_vi": "Kem Dưỡng Zeroid Soothing Cỡ Lớn 80ml + 50ml",
     "name_kr": "[11월 올영픽/대용량] 제로이드 수딩 크림 80ml + 50ml 기획",
@@ -32802,7 +32883,7 @@
   },
   {
     "goodsNo": "A000000117457",
-    "rank": 73,
+    "rank": 50,
     "name": "Băng Vệ Sinh Collman 100% Cotton Hữu Cơ 3 Loại Chọn 1",
     "name_vi": "Băng Vệ Sinh Collman 100% Cotton Hữu Cơ 3 Loại Chọn 1",
     "name_kr": "[흡수체 까지 유기농 순면 100%] 콜만 생리대 중대형/중소형/팬티라이너 3종 택 1",
@@ -32861,7 +32942,7 @@
   },
   {
     "goodsNo": "A000000208395",
-    "rank": null,
+    "rank": 77,
     "name": "Mascara Kim Loại Neogen Slim/Volume (Lẻ/Set)",
     "name_vi": "Mascara Kim Loại Neogen Slim/Volume (Lẻ/Set)",
     "name_kr": "[1등품절템/한정수량/100만개 판매] 네오젠 슬림/볼륨 메탈 마스카라 (단품/기획)",
@@ -32870,9 +32951,9 @@
     "brand_kr": "네오젠",
     "category": "eye_makeup",
     "category_vi": "Trang điểm mắt",
-    "salePrice": 15900,
+    "salePrice": 19800,
     "originalPrice": 24000,
-    "foreignPrice": 15900,
+    "foreignPrice": 19800,
     "thumbnailUrl": "/products/A000000208395.jpg",
     "images": [
       "/products/A000000208395.jpg"
@@ -32890,11 +32971,11 @@
         "is_sold_out": true
       }
     ],
-    "isSoldOut": true,
+    "isSoldOut": false,
     "isPublished": true,
     "status": "out_of_stock",
     "id": "A000000208395",
-    "priceVnd": 403000,
+    "priceVnd": 502000,
     "originalPriceVnd": 608000,
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
@@ -32914,13 +32995,13 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/ff7f7523d26f4a5daa39a7303a9bb3db1793454477935.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/8aa679a2b3094faf8557b1bcbab0bee61793454482248.png"
     ],
-    "is_sold_out": true,
-    "price": 15900,
+    "is_sold_out": false,
+    "price": 19800,
     "originalPriceWon": 24000
   },
   {
     "goodsNo": "A000000016697",
-    "rank": null,
+    "rank": 42,
     "name": "Xịt Khoáng Dưỡng Ẩm Avene Thermal Spring Water 300ml",
     "name_vi": "Xịt Khoáng Dưỡng Ẩm Avene Thermal Spring Water 300ml",
     "name_kr": "[11월 올영픽/1등 미스트] 아벤느 오떼르말 수분 미스트 300ml",
@@ -32929,7 +33010,7 @@
     "brand_kr": "아벤느",
     "category": "skincare",
     "category_vi": "Chăm sóc da",
-    "salePrice": 9900,
+    "salePrice": 9200,
     "originalPrice": 27000,
     "foreignPrice": 9900,
     "thumbnailUrl": "/products/A000000016697.jpg",
@@ -33320,7 +33401,7 @@
   },
   {
     "goodsNo": "A000000175954",
-    "rank": 93,
+    "rank": 64,
     "name": "Cushion NAMING Layered Fit Bản Refill Kèm Quà Tặng Chì Kem Má",
     "name_vi": "Cushion NAMING Layered Fit Bản Refill Kèm Quà Tặng Chì Kem Má",
     "name_kr": "[올영PICK/예쁜피부표현] 네이밍 레이어드 핏 쿠션 리필 기획 (+치크빔 증정)",
@@ -33659,7 +33740,7 @@
   },
   {
     "goodsNo": "A000001001884",
-    "rank": null,
+    "rank": 35,
     "name": "Sữa Dưỡng Avene Idrance Essence-in-Lotion 200ml Kèm Chai Bơm Essence",
     "name_vi": "Sữa Dưỡng Avene Idrance Essence-in-Lotion 200ml Kèm Chai Bơm Essence",
     "name_kr": "[11월 올영픽] 아벤느 이드랑스 수분 에센스-인-로션 200ml 기획(+에센스 펌프용기)",
@@ -33668,7 +33749,7 @@
     "brand_kr": "아벤느",
     "category": "cream",
     "category_vi": "Kem dưỡng",
-    "salePrice": 19900,
+    "salePrice": 18400,
     "originalPrice": 32000,
     "foreignPrice": 19900,
     "thumbnailUrl": "/products/A000001001884.jpg",
@@ -33715,7 +33796,7 @@
   },
   {
     "goodsNo": "A000001001696",
-    "rank": 97,
+    "rank": null,
     "name": "Kem Nền BB Jung Saem Mool Essential Skin Nuder Recover Kèm Kem Dưỡng 8ml",
     "name_vi": "Kem Nền BB Jung Saem Mool Essential Skin Nuder Recover Kèm Kem Dưỡng 8ml",
     "name_kr": "[11월 올영픽/물크림 8ml 증정] 정샘물 에센셜 스킨 누더 리커버 BB 기획",
@@ -35137,13 +35218,38 @@
     "isPublished": true,
     "status": "available",
     "priceVnd": 456000,
-    "originalPriceVnd": 760000,
+    "originalPriceVnd": 761000,
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
     "lastAuditedAt": "2026-11-11T02:20:03.463Z",
     "usage": "Dùng buổi tối ở bước kem dưỡng cuối chu trình, đặc biệt sau các buổi treatment/laser hoặc khi da đang kích ứng. Lấy lượng cỡ hạt đậu lớn, vỗ nhẹ lên toàn mặt và layer dày hơn ở vùng da tổn thương; ban ngày vẫn cần kem chống nắng phổ rộng vì da đang phục hồi nhạy cảm với UV.",
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/d72822bc270b42a78ba6d9ff836c4dde1794860099295.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/5e9ec569684f41da8991604e341945191794797481334.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/3e90b8e43f7e476a86c014f2af57b5211794761966007.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/5b3d83475a094ca5a80be55a089ad0d01794754002847.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/03e296bc58b9418386ff3eab3eeb600a1794713256778.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/c27fa7d14cf943e09739f870935a20101794708158909.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/e8fd95f3b0004192bc6186ad71d3d1e31794647644281.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/666e33e8778443c68713bfdd5ec4db3e1794795450156.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/4be3d2cb1b2d46d4a76cf1ad580c7cd51794795486014.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/265f8c79c2a54839babb8f9c9d4d630a1794795511971.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/f96208f06e004dafb868915310d68c101794795519605.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/b4edd55aa5774979a9385bf124500f931794795525931.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/200c3fd7513c42e7818363f7463f5dd31794795532482.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/34fb641127704f5e8ebe3e31dfcc80961794325015422.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/39f06853f88443cf897c0d0f2e2774ec1794574646724.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/3025ec89e5a64be1b8a51a08bd27599b1794574653415.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/a3eea4b2b0e2484aaad9644f757460001794574660466.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/70af4c44f5fc4eabaadb579ed65bf4891794574670428.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/e187b118729047a0ab6d762bed655e601794445266087.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/b9716dc2ee84402589005ba1ee0e53001794439622411.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/8c59a53738444bd6a4b968dd48ef2e4a1794439627630.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/bf7bc17df5724995b2c72a5c8e2dd40b1794439632968.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/6b17d253eb754b68b854f7c531a5696f1794439636432.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/37545c72f9554377adad5f425461a9f41794439640564.png"
+    ],
     "is_sold_out": false,
     "price": 18000,
     "originalPriceWon": 30000
@@ -35378,7 +35484,7 @@
   {
     "goodsNo": "A000001002500",
     "id": "A000001002500",
-    "rank": null,
+    "rank": 36,
     "name": "Socola Cadbury Pascal Clinkers 2 Loại",
     "name_vi": "Socola Cadbury Pascal Clinkers 2 Loại",
     "name_kr": "파스칼 클링커스 초콜릿 2종 택1\n원산지 : 상품설명 또는 구매정보 페이지 참조",
@@ -35387,7 +35493,7 @@
     "brand_kr": "캐드베리",
     "category": "health",
     "category_vi": "Thực phẩm",
-    "salePrice": 7900,
+    "salePrice": 7600,
     "originalPrice": 8900,
     "foreignPrice": 7900,
     "productImage": "/products/A000001002500.jpg",
@@ -35474,7 +35580,21 @@
     "appliedServiceFeePercent": 30,
     "lastAuditedAt": "2026-11-11T02:20:03.463Z",
     "usage": "Dùng ở bước serum buổi tối (và sáng nếu da không quá dầu) sau toner, trước kem dưỡng: nhỏ 2-3 giọt ra lòng bàn tay, vỗ nhẹ áp lên toàn mặt, ưu tiên vùng da khô/đỏ do treatment. Vì là serum phục hồi sau laser, nên tránh dùng chung lúc với AHA/BHA/retinol nồng độ cao và bắt buộc chống nắng ban ngày.",
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/2ae28a7e4b334198a570d4b3cf2f3a0f1794797502970.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/824b256e837443d8a0763a0126c6d7381794713448074.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/c1881dad8d0d4d80b52287e521518b9d1794583927590.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/b080d35a74ce4640b98124f0af2a1a4e1794574839484.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/122d3854965746478c9c5334dd82767b1794571508608.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/c2044a3299c64e0b928dbd2a042ab2861794526886590.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/ddbf30546f6240e09256f82aec7ee5c41794445302605.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/aff91003acf44809a0864c9f14da51141794366566769.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/8c39d368c54748a99a4d48d5aa0359181794325062543.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/b2cc2cb37d194c2ebc94c289aa5572011794574848057.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/b381a6f0494343f68ef4982d804dd0501794574857778.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/91212bb42c564b12a4bc39771e925a7f1794298726624.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/4f97f0a5a67a444787ecc54c213d30f01794713455383.png"
+    ],
     "is_sold_out": false,
     "price": 17600,
     "originalPriceWon": 28000
@@ -35746,7 +35866,38 @@
     "appliedServiceFeePercent": 30,
     "lastAuditedAt": "2026-11-11T02:20:03.463Z",
     "usage": "Đây là thực phẩm bổ sung dạng gói: dùng 1 gói/lần, có thể uống trực tiếp hoặc pha với nước ấm, thường dùng trước bữa ăn 15-30 phút. Không dùng thay thế bữa ăn và nên tham khảo ý kiến chuyên gia nếu đang dùng thuốc hoặc có bệnh dạ dày.",
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/fa662657e6d8467e8968510dedf8b01b1794907284065.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/df68d6132dce414394f82e17331a7d1b1794838886638.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/3bdb154b301b40f0b8aaf78e70fb59a81794822273168.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/72387812464944dfad24f460997501a21794776739289.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/75ce485d453e4228bf1d420190db178c1794756806435.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/83307c49fb3c4d9c971178256f54156b1794748992191.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/f38a0ee05c8a40b8941eb245c90be7e71794741921483.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/bd66313380b34d38a2e058430a4857ce1794313656029.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/1ff2ed375b514d5eafff728a555926f61794313660872.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/78a0cf5845574fbcb52ca5f38e148bfe1794313663768.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/4581f55490284ae89ecdfbce444a56a21794313668432.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/862e7cf3e80244d29fa45d58bd4eba391794313673939.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/1c6f38e881fb45228e6a4c9772e08ddc1794489946413.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/39d72522e8e147d2af795a9f4a6663221794489949433.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/89c8a5ba23114e449554a8236720f6421794489952156.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/c91cd38582744a5ab1baac153364e5091794374033464.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/c7ea113a5d29472cad265b756d65b2a81794374035758.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/6771a467913543f2b64ff1bb9d2b08661794374037989.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/3c50adb42c66491abf613f219bf7e6e71794398603576.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/e9a79c9efd8648ac9522a6fbcb5573821794398606671.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/ec856af0d94c412ea31b4e133ff8d8541794398609479.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/a3b1f3d47e6a421288d87cc7c005589f1794398612014.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/af698c95f84c44ce86e3ab2e57a9adc61794572940350.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/2d9f986fd56942e0807fa0221512612f1794572945419.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/e53aa9f6616a449aa3796e272758bf9c1794572951826.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/30b6c98b502349158292bcda6254a14b1794549616023.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/692c3f2f8a09445eafbb3e8403eb3b931794549621943.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/9bb9ad1cd27442638005c2d92b7cc35b1794549631334.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/784cd68283474f499ded0fe5ea0464a91794549638587.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/ede7c70118ad4a71844c45d557d8ffc31794907290206.png"
+    ],
     "is_sold_out": false,
     "price": 19000,
     "originalPriceWon": 29900
@@ -36018,7 +36169,31 @@
     "appliedServiceFeePercent": 30,
     "lastAuditedAt": "2026-11-11T02:20:03.464Z",
     "usage": "Dùng ở bước serum sáng và tối sau toner: nhỏ 2-3 giọt, vỗ nhẹ lên toàn mặt, ưu tiên vùng da đỏ/viêm do mụn hoặc sau treatment. Serum rau má - TECA phù hợp da nhạy cảm, có thể layer thêm kem dưỡng phục hồi; ban ngày vẫn cần chống nắng vì da đang trong giai đoạn phục hồi.",
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/a759c2f7e6f14b89bcf3851e7f90e24b1794919110655.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/537bf3c3ebbd47438eecd4a9b0ca794f1794912761315.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/ee5c40cf419040dba50b6a99b9ba1f881794897196831.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/f7fe0117f0b24d8fb8ab34e4f26b37e51794892072709.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/6d389b21874e4631a08f44fa2f6ee57f1794886693197.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/48f6ed4c898d48598d618fd489a367d71794879589374.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/825bd6ecb7214d239febe8d78f36f1a81794840847628.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/598769d9613d4e87989f29f849a05fb21794879597275.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/3c3e246a9c224ea3b952ee62d305b55e1794879605228.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/c6c93d55f60d414b903117ccabbefd811794879611058.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/eac210a511e7424e9466dac54b47358d1794879617390.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/750a21d632fd4c9294845fe5fcc129ab1794879623873.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/9da6f8d279a149b79a9dd451f3a6007c1794787962766.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/621b4c29070549ae9d7f76941b2e8fcf1794787928819.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/edcadfe1579540aca697f3a62cbab65d1794764993180.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/ca6c06d7b9604e74b630e20667b351031794765010034.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/be614406795d40bcb32de81f0e13b5341794765024294.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/a24afbb7b8c6466ca9ce03b85113eb3e1794835872070.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/fd94356a49f3461ead3089b52a9135561794835880572.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/54885bf63d9149b2aeb2278302c610191794836018262.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/5cbc41b2bb524ee5a37e45d96bb533321794836029591.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/3be3440937a64577854591d50f5447c31794662758504.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7e28dbaf62fe49c4b83e8d8d9011acd21794912803142.png"
+    ],
     "is_sold_out": false,
     "price": 29800,
     "originalPriceWon": 48000
@@ -36082,7 +36257,7 @@
   {
     "goodsNo": "A000001003872",
     "id": "A000001003872",
-    "rank": 65,
+    "rank": null,
     "name": "Kem Dưỡng Tay & Body Tiella Perfume Nourishing 40ml",
     "name_vi": "Kem Dưỡng Tay & Body Tiella Perfume Nourishing 40ml",
     "name_kr": "[NEW]티엘라 퍼퓸 너리싱 핸드&바디크림 40ml",
@@ -36306,7 +36481,7 @@
   {
     "goodsNo": "A000001002058",
     "id": "A000001002058",
-    "rank": 78,
+    "rank": null,
     "name": "Ampoule Celladix Trị Mụn Cân Bằng Dầu Thừa 131",
     "name_vi": "Ampoule Celladix Trị Mụn Cân Bằng Dầu Thừa 131",
     "name_kr": "[피지연화] 셀라딕스 트러블 세범 밸런싱 131 앰플",
@@ -36452,7 +36627,7 @@
     "isPublished": true,
     "status": "available",
     "priceVnd": 251000,
-    "originalPriceVnd": 760000,
+    "originalPriceVnd": 761000,
     "isDiscontinued": false,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
@@ -36530,7 +36705,7 @@
   {
     "goodsNo": "A000001002233",
     "id": "A000001002233",
-    "rank": 79,
+    "rank": null,
     "name": "Gel Rửa Mặt Dầu Tẩy Trang Blanc Nature Acne Cleansing Oil 120ml",
     "name_vi": "Gel Rửa Mặt Dầu Tẩy Trang Blanc Nature Acne Cleansing Oil 120ml",
     "name_kr": "블랑네이처 아크네 클렌징 오일 젤 클렌저 120ml",
@@ -36586,7 +36761,7 @@
   {
     "goodsNo": "A000000012239",
     "id": "A000000012239",
-    "rank": 98,
+    "rank": null,
     "name": "Kem Che Khuyết Điểm Luna Long-Lasting Tip Concealer EX 21 Màu",
     "name_vi": "Kem Che Khuyết Điểm Luna Long-Lasting Tip Concealer EX 21 Màu",
     "name_kr": "[국내1등/NEW 올리브그린 출시] 루나 롱래스팅 팁 컨실러 EX 21colors",
@@ -36755,7 +36930,7 @@
   {
     "goodsNo": "A000000252975",
     "id": "A000000252975",
-    "rank": null,
+    "rank": 58,
     "name": "Cushion Tom The Glow Signature (Kem Be / Hồng Nude)",
     "name_vi": "Cushion Tom The Glow Signature (Kem Be / Hồng Nude)",
     "name_kr": "[물방울초음파 1위] 톰 더 글로우 시그니처 [기획세트/단품] (크림베이지/누디핑크)",
@@ -36923,7 +37098,7 @@
   {
     "goodsNo": "A000000147779",
     "id": "A000000147779",
-    "rank": 43,
+    "rank": 74,
     "name": "Bánh Chip Bagel Delight Project Chọn 1 Vị",
     "name_vi": "Bánh Chip Bagel Delight Project Chọn 1 Vị",
     "name_kr": "딜라이트 프로젝트 베이글칩 택1\n원산지 : 상품설명 또는 구매정보 페이지 참조",
@@ -37157,7 +37332,8 @@
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
     "lastAuditedAt": "2026-11-11T02:20:03.465Z",
-    "salePrice": 50000
+    "salePrice": 50000,
+    "rank": null
   },
   {
     "id": "HE0000000002",
@@ -37273,7 +37449,8 @@
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
     "lastAuditedAt": "2026-11-11T02:20:03.465Z",
-    "salePrice": 52000
+    "salePrice": 52000,
+    "rank": null
   },
   {
     "id": "HE0000000003",
@@ -37378,7 +37555,8 @@
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
     "lastAuditedAt": "2026-11-11T02:20:03.465Z",
-    "salePrice": 61000
+    "salePrice": 61000,
+    "rank": null
   },
   {
     "id": "HE0000000004",
@@ -37472,7 +37650,8 @@
     "createdAt": "2026-11-09T16:49:23.706Z",
     "updatedAt": "2026-11-09T16:49:23.706Z",
     "lastAuditedAt": "2026-11-11T02:20:03.465Z",
-    "salePrice": 108000
+    "salePrice": 108000,
+    "rank": null
   },
   {
     "id": "HE0000000005",
@@ -37577,7 +37756,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.465Z",
-    "salePrice": 57000
+    "salePrice": 57000,
+    "rank": null
   },
   {
     "id": "HE0000000006",
@@ -37682,7 +37862,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.465Z",
-    "salePrice": 55000
+    "salePrice": 55000,
+    "rank": null
   },
   {
     "id": "HE0000000007",
@@ -37776,7 +37957,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.465Z",
-    "salePrice": 103000
+    "salePrice": 103000,
+    "rank": null
   },
   {
     "id": "HE0000000008",
@@ -37881,7 +38063,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.465Z",
-    "salePrice": 52000
+    "salePrice": 52000,
+    "rank": null
   },
   {
     "id": "HE0000000009",
@@ -37964,7 +38147,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 55000
+    "salePrice": 55000,
+    "rank": null
   },
   {
     "id": "HE0000000010",
@@ -38036,7 +38220,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 168000
+    "salePrice": 168000,
+    "rank": null
   },
   {
     "id": "HE0000000011",
@@ -38119,7 +38304,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 132000
+    "salePrice": 132000,
+    "rank": null
   },
   {
     "id": "HE0000000012",
@@ -38213,7 +38399,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 84000
+    "salePrice": 84000,
+    "rank": null
   },
   {
     "id": "HE0000000013",
@@ -38285,7 +38472,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 269000
+    "salePrice": 269000,
+    "rank": null
   },
   {
     "id": "HE0000000014",
@@ -38357,7 +38545,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 185000
+    "salePrice": 185000,
+    "rank": null
   },
   {
     "id": "HE0000000015",
@@ -38429,7 +38618,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 322000
+    "salePrice": 322000,
+    "rank": null
   },
   {
     "id": "HE0000000016",
@@ -38501,7 +38691,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 136000
+    "salePrice": 136000,
+    "rank": null
   },
   {
     "id": "HE0000000017",
@@ -38584,7 +38775,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 122000
+    "salePrice": 122000,
+    "rank": null
   },
   {
     "id": "HE0000000018",
@@ -38656,7 +38848,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 84000
+    "salePrice": 84000,
+    "rank": null
   },
   {
     "id": "HE0000000019",
@@ -38750,7 +38943,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 46000
+    "salePrice": 46000,
+    "rank": null
   },
   {
     "id": "HE0000000020",
@@ -38844,7 +39038,8 @@
     "createdAt": "2026-11-09T16:49:23.707Z",
     "updatedAt": "2026-11-09T16:49:23.707Z",
     "lastAuditedAt": "2026-11-11T02:20:03.466Z",
-    "salePrice": 42000
+    "salePrice": 42000,
+    "rank": null
   },
   {
     "id": "HE0000000021",
@@ -38927,7 +39122,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 144000
+    "salePrice": 144000,
+    "rank": null
   },
   {
     "id": "HE0000000022",
@@ -39010,7 +39206,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 155000
+    "salePrice": 155000,
+    "rank": null
   },
   {
     "id": "HE0000000023",
@@ -39093,7 +39290,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 119000
+    "salePrice": 119000,
+    "rank": null
   },
   {
     "id": "HE0000000024",
@@ -39176,7 +39374,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 99000
+    "salePrice": 99000,
+    "rank": null
   },
   {
     "id": "HE0000000025",
@@ -39259,7 +39458,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 140000
+    "salePrice": 140000,
+    "rank": null
   },
   {
     "id": "HE0000000026",
@@ -39353,7 +39553,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 79000
+    "salePrice": 79000,
+    "rank": null
   },
   {
     "id": "HE0000000027",
@@ -39436,7 +39637,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 35000
+    "salePrice": 35000,
+    "rank": null
   },
   {
     "id": "HE0000000028",
@@ -39530,7 +39732,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 66000
+    "salePrice": 66000,
+    "rank": null
   },
   {
     "id": "HE0000000029",
@@ -39613,7 +39816,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 92000
+    "salePrice": 92000,
+    "rank": null
   },
   {
     "id": "HE0000000030",
@@ -39685,7 +39889,8 @@
     "createdAt": "2026-11-09T17:33:04.199Z",
     "updatedAt": "2026-11-09T17:33:04.199Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 55000
+    "salePrice": 55000,
+    "rank": null
   },
   {
     "id": "HE0000000031",
@@ -39768,7 +39973,8 @@
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 172000
+    "salePrice": 172000,
+    "rank": null
   },
   {
     "id": "HE0000000032",
@@ -39851,7 +40057,8 @@
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
     "lastAuditedAt": "2026-11-11T02:20:03.467Z",
-    "salePrice": 144000
+    "salePrice": 144000,
+    "rank": null
   },
   {
     "id": "HE0000000033",
@@ -39912,7 +40119,8 @@
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 328000
+    "salePrice": 328000,
+    "rank": null
   },
   {
     "id": "HE0000000034",
@@ -39973,7 +40181,8 @@
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 328000
+    "salePrice": 328000,
+    "rank": null
   },
   {
     "id": "HE0000000035",
@@ -40045,7 +40254,8 @@
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 129000
+    "salePrice": 129000,
+    "rank": null
   },
   {
     "id": "HE0000000036",
@@ -40117,7 +40327,8 @@
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 129000
+    "salePrice": 129000,
+    "rank": null
   },
   {
     "id": "HE0000000037",
@@ -40189,7 +40400,8 @@
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 280000
+    "salePrice": 280000,
+    "rank": null
   },
   {
     "id": "HE0000000038",
@@ -40272,7 +40484,8 @@
     "createdAt": "2026-11-09T17:56:42.415Z",
     "updatedAt": "2026-11-09T17:56:42.415Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 250000
+    "salePrice": 250000,
+    "rank": null
   },
   {
     "id": "HE0000000039",
@@ -40355,7 +40568,8 @@
     "createdAt": "2026-11-09T18:11:34.329Z",
     "updatedAt": "2026-11-09T18:11:34.329Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 122000
+    "salePrice": 122000,
+    "rank": null
   },
   {
     "id": "HE0000000040",
@@ -40438,7 +40652,8 @@
     "createdAt": "2026-11-09T18:11:34.329Z",
     "updatedAt": "2026-11-09T18:11:34.329Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 122000
+    "salePrice": 122000,
+    "rank": null
   },
   {
     "id": "HE0000000041",
@@ -40510,7 +40725,8 @@
     "createdAt": "2026-11-09T18:11:34.329Z",
     "updatedAt": "2026-11-09T18:11:34.329Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 390000
+    "salePrice": 390000,
+    "rank": null
   },
   {
     "id": "HE0000000042",
@@ -40582,7 +40798,8 @@
     "createdAt": "2026-11-09T18:11:34.330Z",
     "updatedAt": "2026-11-09T18:11:34.330Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 390000
+    "salePrice": 390000,
+    "rank": null
   },
   {
     "id": "HE0000000045",
@@ -40654,7 +40871,8 @@
     "createdAt": "2026-11-09T18:26:49.323Z",
     "updatedAt": "2026-11-09T18:26:49.323Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 280000
+    "salePrice": 280000,
+    "rank": null
   },
   {
     "id": "HE0000000048",
@@ -40737,7 +40955,8 @@
     "createdAt": "2026-11-09T18:41:27.340Z",
     "updatedAt": "2026-11-09T18:41:27.340Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 107000
+    "salePrice": 107000,
+    "rank": null
   },
   {
     "id": "HE0000000049",
@@ -40809,7 +41028,8 @@
     "createdAt": "2026-11-09T19:00:18.466Z",
     "updatedAt": "2026-11-09T19:00:18.466Z",
     "lastAuditedAt": "2026-11-11T02:20:03.468Z",
-    "salePrice": 145000
+    "salePrice": 145000,
+    "rank": null
   },
   {
     "id": "HE0000000050",
@@ -40881,7 +41101,8 @@
     "createdAt": "2026-11-09T19:18:21.286Z",
     "updatedAt": "2026-11-09T19:18:21.286Z",
     "lastAuditedAt": "2026-11-11T02:20:03.469Z",
-    "salePrice": 175000
+    "salePrice": 175000,
+    "rank": null
   },
   {
     "id": "HE0000000044",
@@ -40942,7 +41163,8 @@
     "createdAt": "2026-11-09T21:03:21.467Z",
     "updatedAt": "2026-11-09T21:03:21.467Z",
     "lastAuditedAt": "2026-11-11T02:20:03.469Z",
-    "salePrice": 328000
+    "salePrice": 328000,
+    "rank": null
   },
   {
     "id": "HE0000000047",
@@ -41025,7 +41247,8 @@
     "createdAt": "2026-11-09T21:03:21.467Z",
     "updatedAt": "2026-11-09T21:03:21.467Z",
     "lastAuditedAt": "2026-11-11T02:20:03.469Z",
-    "salePrice": 125000
+    "salePrice": 125000,
+    "rank": null
   },
   {
     "id": "HE0000000046",
@@ -41108,7 +41331,8 @@
     "createdAt": "2026-11-09T21:32:06.191Z",
     "updatedAt": "2026-11-09T21:32:06.191Z",
     "lastAuditedAt": "2026-11-11T02:20:03.469Z",
-    "salePrice": 33000
+    "salePrice": 33000,
+    "rank": null
   },
   {
     "id": "HE0000000054",
@@ -41180,7 +41404,8 @@
     "createdAt": "2026-11-09T21:49:46.525Z",
     "updatedAt": "2026-11-09T21:49:46.525Z",
     "lastAuditedAt": "2026-11-11T02:20:03.469Z",
-    "salePrice": 145000
+    "salePrice": 145000,
+    "rank": null
   },
   {
     "id": "HE0000000053",
@@ -41241,7 +41466,8 @@
     "createdAt": "2026-11-09T21:49:46.525Z",
     "updatedAt": "2026-11-09T21:49:46.525Z",
     "lastAuditedAt": "2026-11-11T02:20:03.469Z",
-    "salePrice": 115000
+    "salePrice": 115000,
+    "rank": null
   },
   {
     "id": "HE0000000055",
@@ -41313,7 +41539,8 @@
     "createdAt": "2026-11-09T22:04:21.538Z",
     "updatedAt": "2026-11-09T22:04:21.538Z",
     "lastAuditedAt": "2026-11-11T02:20:05.282Z",
-    "salePrice": 79000
+    "salePrice": 79000,
+    "rank": null
   },
   {
     "id": "HE0000000056",
@@ -41396,7 +41623,8 @@
     "createdAt": "2026-11-09T22:04:21.538Z",
     "updatedAt": "2026-11-09T22:04:21.538Z",
     "lastAuditedAt": "2026-11-11T02:20:05.282Z",
-    "salePrice": 139000
+    "salePrice": 139000,
+    "rank": null
   },
   {
     "id": "HE0000000057",
@@ -41468,7 +41696,8 @@
     "createdAt": "2026-11-09T22:19:16.064Z",
     "updatedAt": "2026-11-09T22:19:16.064Z",
     "lastAuditedAt": "2026-11-11T02:20:05.282Z",
-    "salePrice": 245000
+    "salePrice": 245000,
+    "rank": null
   },
   {
     "id": "HE0000000059",
@@ -41540,7 +41769,8 @@
     "createdAt": "2026-11-09T22:37:20.446Z",
     "updatedAt": "2026-11-09T22:37:20.446Z",
     "lastAuditedAt": "2026-11-11T02:20:05.282Z",
-    "salePrice": 195000
+    "salePrice": 195000,
+    "rank": null
   },
   {
     "id": "HE0000000063",
@@ -41623,7 +41853,8 @@
     "createdAt": "2026-11-09T22:56:19.631Z",
     "updatedAt": "2026-11-09T22:56:19.631Z",
     "lastAuditedAt": "2026-11-11T02:20:05.282Z",
-    "salePrice": 93000
+    "salePrice": 93000,
+    "rank": null
   },
   {
     "id": "A000000161996",
@@ -42143,7 +42374,7 @@
     "category": "supplements",
     "category_vi": "Chăm sóc da",
     "subCategory": "supplements",
-    "rank": null,
+    "rank": 99,
     "foreignPrice": 35800,
     "price": 35800,
     "originPrice": 44000,
@@ -42575,7 +42806,7 @@
     "category": "makeup",
     "category_vi": "Chăm sóc da",
     "subCategory": "lipstick",
-    "rank": 80,
+    "rank": null,
     "foreignPrice": 22900,
     "price": 22900,
     "originPrice": 33000,
@@ -42852,13 +43083,13 @@
     "category": "makeup",
     "category_vi": "Chăm sóc da",
     "subCategory": "lipstick",
-    "rank": null,
+    "rank": 68,
     "foreignPrice": 17800,
     "price": 17800,
     "originPrice": 21000,
     "originalPrice": 21000,
     "originalPriceWon": 21000,
-    "salePrice": 17800,
+    "salePrice": 17640,
     "priceVnd": 451000,
     "originalPriceVnd": 532000,
     "appliedKrwRate": 19.5,
@@ -42924,13 +43155,13 @@
     "category": "skincare",
     "category_vi": "Chăm sóc da",
     "subCategory": "cleanser",
-    "rank": null,
+    "rank": 85,
     "foreignPrice": 23300,
     "price": 23300,
     "originPrice": 29000,
     "originalPrice": 29000,
     "originalPriceWon": 29000,
-    "salePrice": 23300,
+    "salePrice": 24600,
     "priceVnd": 591000,
     "originalPriceVnd": 735000,
     "appliedKrwRate": 19.5,
@@ -42993,7 +43224,7 @@
     "category": "bodycare",
     "category_vi": "Chăm sóc da",
     "subCategory": "serum",
-    "rank": null,
+    "rank": 88,
     "foreignPrice": 16200,
     "price": 16200,
     "originPrice": 18000,
@@ -43131,7 +43362,7 @@
     "category": "bodycare",
     "category_vi": "Chăm sóc da",
     "subCategory": "body_wash",
-    "rank": 10,
+    "rank": null,
     "foreignPrice": 29500,
     "price": 29500,
     "originPrice": 43900,
@@ -43200,7 +43431,7 @@
     "category": "skincare",
     "category_vi": "Chăm sóc da",
     "subCategory": "suncare",
-    "rank": 38,
+    "rank": 41,
     "foreignPrice": 33900,
     "price": 33900,
     "originPrice": 51000,
@@ -43338,7 +43569,7 @@
     "category": "bodycare",
     "category_vi": "Chăm sóc da",
     "subCategory": "cream",
-    "rank": 27,
+    "rank": 56,
     "foreignPrice": 13500,
     "price": 13500,
     "originPrice": 15000,
@@ -43529,7 +43760,8 @@
     "isPublished": true,
     "createdAt": "2026-11-11T08:05:11.449Z",
     "updatedAt": "2026-11-11T08:05:11.449Z",
-    "lastAuditedAt": "2026-11-11T08:05:11.449Z"
+    "lastAuditedAt": "2026-11-11T08:05:11.449Z",
+    "rank": null
   },
   {
     "id": "HE0000000068",
@@ -43608,7 +43840,8 @@
     "isPublished": true,
     "createdAt": "2026-11-11T08:05:11.450Z",
     "updatedAt": "2026-11-11T08:05:11.450Z",
-    "lastAuditedAt": "2026-11-11T08:05:11.450Z"
+    "lastAuditedAt": "2026-11-11T08:05:11.450Z",
+    "rank": null
   },
   {
     "id": "A000001005839",
@@ -43632,7 +43865,7 @@
     "originalPriceWon": 30000,
     "salePrice": 21000,
     "priceVnd": 402000,
-    "originalPriceVnd": 760000,
+    "originalPriceVnd": 761000,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
     "discountRate": "47%",
@@ -43642,7 +43875,35 @@
     "images": [
       "/products/A000001005839.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/c790a6a471484970885a4a6efa03dd5a1794911240604.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/04b98bbd4b9449569c70289a53d49ee71794898988163.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/6c8d2cf53fd2470f9f7dc04eae9e9bc71794897523645.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2a0fe3489c984bc7adae372418e873281794897357864.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/6ba6634b57e64604baf593a017d9a4b21794891052042.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/3a788c474b9a4018b4589e490938fc9a1794889679469.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/f3cd74afa90b41daba9b7372bc7813c81794887630353.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/5fb4a9a6a96746a8a6f456f27a5ca3131794544516457.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/c947c6a8104b4a0b8e1bb90038969fac1794544522169.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/1e9ff54081d4475982dfc87f7ed6c5911794544526009.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/eb10b4650be54b8798514107fbcccd141794544529875.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/f5dd77a13c604d879d3901125a1cc1f51794544535017.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/acd3af959856415eac744a96b32e510d1794544541434.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/dd1f63a9b52c438aaf5037d404241a561794544545907.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/2bad36d0551a4092870deb27bbc4ad761794488814064.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/f36736d0fb4c4c30bcaf495d71462d1e1794488818370.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/39f90790594f4e94a98c1043100b274c1794488825476.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/2a6bd24fabe84ec08af1f80e94ace5f61794403885136.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/5a013a1af7054253bce9bb1a1bd110de1794403258586.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/41122649f7a04039bfa6d80fc974f95a1794426135906.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/6315473b594e4787888dc1629c732f321794620460896.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/28fb454634e7481f8eff5540d3ea070f1794620703281.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/d52e116b5e58432d87c65402bd1a6bbb1794620902708.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/9a9262d2d1f245c1b3a6e6a12739be9f1794621545468.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/14575387b2334e5d8b86ed61be3f20e01794621549355.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/8e4de20f5c234549aa5c7e874323299d1794921997282.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/f9c6b1dd7f564218af5c19886708bff01794911243421.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -43703,7 +43964,28 @@
     "images": [
       "/products/A000000249718.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2bf8ba9a30ac4c69aae2367950bf77f61794918881373.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/493cfd8712fc48719feb9574fd202cba1794916651042.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/94809110b6c842c19fbc7623b9b5aa0b1794916699998.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/85f5f267c6434a538735f608d0355b411794906316120.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/a42bd38e173f44c380899a07fe69c2641794903907900.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/917d9706c4484491b7702b3c52862dc91794891843285.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/5284869c5a9045dba01afa71f226051c1794888796207.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/24/c0aed1a505af4230a2aa20a0c859d6e01790242230572.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/24/f563571a3b6048f4b70bef856f90295a1790242243280.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/24/f57dff59215b493c9817ec1d6e9a27d21790242251123.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/e9ebae2c01d545b5a57922c5ad334af91794875635659.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/bbc21d88520443fb8c2c4dc5b10629a41794875638151.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2f31ae6a37044bcabcf7aef86d894a3e1794875640632.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/0d02d836cb604bb19d495862556e27351794845835348.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/04681ce5adfd46a99f16e438f6853a891794845838922.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7652a93e5f994ee59635f9d8382ceb341794845842632.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/2a7a9267859d4ca9a1222ce982625ae91794837370139.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/1da4987f3dc74ac39fd98b54843e15da1794837375390.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/dd78178ec8144471b7faff7d31f139ef1794837377823.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/04434993f11b442980e7bc61db47e7f71794918885743.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -43746,7 +44028,7 @@
     "category": "skincare",
     "category_vi": "Sữa rửa mặt",
     "subCategory": "cleanser",
-    "rank": 84,
+    "rank": 100,
     "foreignPrice": 18400,
     "price": 18400,
     "originPrice": 28000,
@@ -43764,7 +44046,25 @@
     "images": [
       "/products/A000000158513.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/79a323014fbb4ec4aeaacd0d5d19ae361794918842203.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/e20e10202a1e44a7b70951d762bd4cdf1794901051475.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/74c37d7921bb4695bbe717bc0dc0b5461794898144092.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/5ee71098987f45239bc1b1644bbaa55f1794895310304.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/c1fdc00a807a4f568ff50b985afc9b861794892373123.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/af2a60d7784d492594bf2d135eb02fa81794890739822.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/c38874e337f14910b7e878093b636fcd1794844747641.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/24/d2351b25136a48deb1bea3b5e9f097301792853451347.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/24/9f614dc365724d1a91cecc9dd9740fa51792853455832.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/12433e0104814d9684f4f32106a19b591794137846814.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/323c36fba5b24351bf9b66b470c2ebbe1794137857052.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/966f70405a364c4787c65f47f738ca371794137867874.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/7a43fbcacad54495a63dbb6e1f40fc221794137874623.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/aaa5d75f27be4bf69ca90da6dbb147521794455969467.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/1b2a0173cc35462f922834c49efecf081793452821843.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/daf2b68c0a314b2cb28e23feb78f8ebb1793452832082.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/b4f581a557da4f179869de12c92fb9791793452842082.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -43825,7 +44125,27 @@
     "images": [
       "/products/A000000231772.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/78ab8027fc1e4ea2b29774c5ad874b1c1794918777808.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/79b3c62cf7c44995a27272f4dbd42f471794899753773.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/503ddbead552484e94a5c330dbac8b401794892509229.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/89770fdb0e3b4522941d5ee6606bfbcf1794891005865.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/e6092122a6644300a861043fe619dc911794890453851.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/0a2d656d625c4532a259d83e6be1c1bd1794842241706.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/1e1c7071e13b4a1dae29f7dd18bf117c1794840233500.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/18a4c271312247faaa3cb7238f75f8671794318266544.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/8aff6b18a20043608104ce141dad0db51794318268799.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/43fcbd8f2dc04a8aa91bc42a825570641794318271406.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/f0049fd2cc40476ea081935598c11bd71794318273310.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/530f06d23f094dbe84585017e323b8a31794318276153.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/a636e680565547f8bad3766565770aca1793558425295.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/80a7c7accf244fd88b66257a1e9c9bc21793749026066.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/b900caafbf984bd3b07b7991e6a34f1e1794050867044.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/2f5aab03b233473684ae7f529df40a631794050871647.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/d1d3951b0cf6479fafc15b7c8dca5e9f1794050876034.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/a84584a45e5042d09ed3b327df6efe061794918782102.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/74c21f80b24749a1ab15a7cfe78635bf1794918779863.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -43868,7 +44188,7 @@
     "category": "skincare",
     "category_vi": "Toner & Toner Pad",
     "subCategory": "toner_pad",
-    "rank": 94,
+    "rank": null,
     "foreignPrice": 15700,
     "price": 15700,
     "originPrice": 21000,
@@ -43886,7 +44206,20 @@
     "images": [
       "/products/A000000258293.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/6742ba630b904a91b53b54ee0013bf301794903135448.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/937c464f9f1c40ddaaede7e86e0f6c3d1794901578466.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/a5f3c38e10004906bf6d9724094e5a081794901016621.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/9dcf60d9c83a44a8aa919b2c3193512a1794897925325.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/c471280e627f44bdbaac5eaeb960eb101794897316181.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/9dbe22abe50a4871b31ce82666bca5141794824649772.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/ecb54826d49d45918d25172991c2f6c51794804600513.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/4750dc59bd3944b3a16ea1968fc01dc31793932413412.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/74684203ff584352a2c37371e07302c91794743992916.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/29c2eb5ba13145a89c7650155b7671c91794581644481.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/00d00a8c932e4a519633ede0e7a87d991794581158011.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/4dde3b02f3b846f8b484fd1577b9c4b91794124659615.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -43929,7 +44262,7 @@
     "category": "bodycare",
     "category_vi": "Chăm sóc cơ thể",
     "subCategory": "bodycare",
-    "rank": 67,
+    "rank": null,
     "foreignPrice": 13900,
     "price": 13900,
     "originPrice": 18900,
@@ -44608,7 +44941,7 @@
     "originalPriceWon": 30000,
     "salePrice": 21600,
     "priceVnd": 548000,
-    "originalPriceVnd": 760000,
+    "originalPriceVnd": 761000,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
     "discountRate": "28%",
@@ -45948,7 +46281,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T08:46:58.000Z",
     "updatedAt": "2026-11-15T08:46:58.000Z",
-    "lastAuditedAt": "2026-11-15T08:46:58.000Z"
+    "lastAuditedAt": "2026-11-15T08:46:58.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000069",
@@ -46031,7 +46365,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T08:46:58.000Z",
     "updatedAt": "2026-11-15T08:46:58.000Z",
-    "lastAuditedAt": "2026-11-15T08:46:58.000Z"
+    "lastAuditedAt": "2026-11-15T08:46:58.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000074",
@@ -46114,7 +46449,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T08:46:58.000Z",
     "updatedAt": "2026-11-15T08:46:58.000Z",
-    "lastAuditedAt": "2026-11-15T08:46:58.000Z"
+    "lastAuditedAt": "2026-11-15T08:46:58.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000077",
@@ -46197,7 +46533,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T08:46:58.000Z",
     "updatedAt": "2026-11-15T08:46:58.000Z",
-    "lastAuditedAt": "2026-11-15T08:46:58.000Z"
+    "lastAuditedAt": "2026-11-15T08:46:58.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000079",
@@ -46280,7 +46617,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T08:46:58.000Z",
     "updatedAt": "2026-11-15T08:46:58.000Z",
-    "lastAuditedAt": "2026-11-15T08:46:58.000Z"
+    "lastAuditedAt": "2026-11-15T08:46:58.000Z",
+    "rank": null
   },
   {
     "id": "A000001002591",
@@ -46296,7 +46634,7 @@
     "category": "skincare",
     "category_vi": "Serum & Tinh chất",
     "subCategory": "serum",
-    "rank": 90,
+    "rank": null,
     "foreignPrice": 20900,
     "price": 20900,
     "originPrice": 35000,
@@ -47097,8 +47435,8 @@
     "originalPrice": 350000,
     "originalPriceWon": 350000,
     "salePrice": 350000,
-    "priceVnd": 8872000,
-    "originalPriceVnd": 8872000,
+    "priceVnd": 8873000,
+    "originalPriceVnd": 8873000,
     "appliedKrwRate": 19.5,
     "appliedServiceFeePercent": 30,
     "discountRate": "0%",
@@ -47116,7 +47454,7 @@
         "name_vi": "70ml (Full Size)",
         "name_kr": "메종 프란시스 커정 바카라 루쥬 540 오 드 퍼퓸",
         "price_krw": 350000,
-        "price_vnd": 8872000,
+        "price_vnd": 8873000,
         "isSoldOut": false,
         "is_sold_out": false,
         "imageUrl": "/products/HE0000000043.jpg"
@@ -47134,7 +47472,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000051",
@@ -47217,7 +47556,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000052",
@@ -47278,7 +47618,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000058",
@@ -47361,7 +47702,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000061",
@@ -47444,7 +47786,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000062",
@@ -47538,7 +47881,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000064",
@@ -47621,7 +47965,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000065",
@@ -47704,7 +48049,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000066",
@@ -47787,7 +48133,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000070",
@@ -47870,7 +48217,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000071",
@@ -47942,7 +48290,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000072",
@@ -48003,7 +48352,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000073",
@@ -48075,7 +48425,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000075",
@@ -48158,7 +48509,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000076",
@@ -48241,7 +48593,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000078",
@@ -48313,7 +48666,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "HE0000000080",
@@ -48396,7 +48750,8 @@
     "isPublished": true,
     "createdAt": "2026-11-15T18:19:42.000Z",
     "updatedAt": "2026-11-15T18:19:42.000Z",
-    "lastAuditedAt": "2026-11-15T18:19:42.000Z"
+    "lastAuditedAt": "2026-11-15T18:19:42.000Z",
+    "rank": null
   },
   {
     "id": "A000000249163",
@@ -48412,7 +48767,7 @@
     "category": "makeup",
     "category_vi": "Phấn nước (Cushion)",
     "subCategory": "cushion",
-    "rank": 1,
+    "rank": 3,
     "foreignPrice": 24000,
     "price": 24000,
     "originPrice": 30000,
@@ -48430,7 +48785,28 @@
     "images": [
       "/products/A000000249163.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/ab676863bbc042f1a523e930abd7beb51794915540168.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/8db60b7876be491db3586883d8c2e1811794915179173.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/afb091eb38e94fafae1e0c5d160b34331794916535300.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/5c9af9e7dd194167b5e447c45e5882ec1794905700063.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/f46666f647fa4c1ba7610bc506584e851794797943291.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/d6aaf3526e5a4a4d859c2e2b5ff42f521794751072757.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/f2324f78becd4891a25a4ee1d1e59e671794751073640.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/762a7202d5e24e03af9fef8ce3f2fb791794149395926.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/4d1ad3bb453748129ad15884abbfdb721794130616988.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/37cc1f3cf49f45fc9c9fa6b3498000291794130621311.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/ecb386ff855547e0b7876439d9fe38181794130624874.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/866b234270d647d1972af1f4b2b200141794642781738.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/37e5e586270d4564868f8d4c86340a5f1794642808596.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/15c0102cea774c94870b3a53666031f61794642845396.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/9a7268fe86904921a99ba10a59e7b40a1794750078222.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/7669de1abd034b11afd7342f29c67c711794750080516.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/62f3ff9b961543219b9be2dc64157b951794750192293.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/45469af8e58844f1ac63a038393a32b21794317286831.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/1b513b60f47440bea9c1919ca5e5cfa21794317293368.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/f3b7f80a91414565851c963192531db41794317299031.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48506,7 +48882,7 @@
     "category": "makeup",
     "category_vi": "Phấn nước (Cushion)",
     "subCategory": "cushion",
-    "rank": 3,
+    "rank": 13,
     "foreignPrice": 22500,
     "price": 22500,
     "originPrice": 30000,
@@ -48524,7 +48900,16 @@
     "images": [
       "/products/A000000249162.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/3c4a75c654824f82a4ac7107e27a79021794920868506.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/592d74254c3a4d6690ef675d1c3f91291794920787475.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/9a84a6e35ff642a9a0fdf7feb2ac2c821794920219229.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/9f3277a2fa33469d9a50b979decf717c1794920153811.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/879bca1833a84760b3fe6d33ab431d211794727795510.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/4c91edf1ea9f4990b05bf6b71ee3f7c41794651976720.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/f8bd70fbfe144c67aaedc8bd05aeb90b1794592109297.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/b1d882b579ca4561ab3f8c8e523ee4c01794310850178.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48600,7 +48985,7 @@
     "category": "supplements",
     "category_vi": "Thực phẩm chức năng",
     "subCategory": "supplements",
-    "rank": 5,
+    "rank": null,
     "foreignPrice": 27600,
     "price": 27600,
     "originPrice": 32800,
@@ -48749,7 +49134,7 @@
     "category": "skincare",
     "category_vi": "Tẩy trang",
     "subCategory": "makeup_remover",
-    "rank": 6,
+    "rank": 7,
     "foreignPrice": 15900,
     "price": 15900,
     "originPrice": 24900,
@@ -48767,7 +49152,41 @@
     "images": [
       "/products/A000001002587.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7a1e588aae004bfa81a9896dee190d391794920666484.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/9c8405ad6ee34c0d84e038691c4781ce1794918795753.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/9e8082d844b34d64af99016bd673c7401794914937424.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/cf00743978b943dea46adf92cb7f7ebc1794914856847.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7f7c8310734741f7938eadecf93705321794908450649.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/8181040adffb4af9b8c55dc2b6fed6321794905939306.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/f014f9fe9ca0490c8eb7bb20005232691794902450494.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/0541e2eeb3314677b4a62f726817624f1794145547602.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/61b5a71472524febaa7a8a5587beefc81794145548995.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/6ebba7e2e51b4f9bbf8736a56d9fdbd71794145550314.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/9d72b2ec11554cd2ad13fdf2d29a94461794145551954.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/748f1ea2061b4173b658baebd6904e3f1794145553474.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/bb6da82858c440a1a9987bc09c689d4a1793631275680.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/abdd9c6e0a4e4d6585d1d910b3c03b8a1793631279691.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/5e74459f1b0e42d99c2ce552e0472e301793631282757.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/757efb600a7b48a4b3c3521b2331cde91793631285589.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/a2c8ab8f14484a7b87921f34d62f57031794396800338.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/17dc143ec60045cfac02c18688efece31794396810170.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/0138e789ffa84ec19fe911365cf86fb31794396815182.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/f4fd30b82c404f16bc6310851ecc379e1793618239287.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/47f4b38064544f299d6d259d13eca2fd1793618241244.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/92b94ba027a94247b4ad5bb644818c011793618243571.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/36b028c46c5a46df80dd9376980fd60d1793618245849.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/eb951d71b7ab46299d0af45a4496f1de1794229729881.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/d99451436541401a83b45239bad9f2a21794229731414.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/7c4ede9a3ebf4e73b302304688d4c47e1794229732776.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/3b502f95a11b4a4fb8a88de4ba2a01d91794229735592.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/0cfe5808dfc84564987359271b9a52b61794229740617.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/634d16b8518e4a1f995cb2e013ecb7ce1794121766303.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/adc01dc7c7594b44a3ae38040e398ac31794121769906.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/f973fec1629a416b91aa3d40274281801794121775427.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/692e0a09fc6844e9b53e723da56bdca61794920682213.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/e49cae4b5c5e4e888f8127c612d3a92c1794920679889.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48810,7 +49229,7 @@
     "category": "makeup",
     "category_vi": "Kem nền & Che khuyết",
     "subCategory": "foundation",
-    "rank": 7,
+    "rank": null,
     "foreignPrice": 16000,
     "price": 16000,
     "originPrice": 32000,
@@ -48871,7 +49290,7 @@
     "category": "skincare",
     "category_vi": "Kem dưỡng da",
     "subCategory": "cream",
-    "rank": 9,
+    "rank": 5,
     "foreignPrice": 18200,
     "price": 18200,
     "originPrice": 24000,
@@ -48889,7 +49308,21 @@
     "images": [
       "/products/A000001005240.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/d5377f57c3914502a00bfb6ec684ac011794921716857.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/04da24f96bb944eea6f21a2265bd431b1794921581213.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/0bb9a9650cd24b8f9ba8a4b11f2bca991794920712171.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2c107d6391bb4f16a5baf0fe7035483e1794920575350.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2421708124f94cd199bad7fed25482c11794919673904.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/5339503f452a4f9dbeb610e45fe9dea61794918773674.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/28e98b35ff794c56a2efda10cc4ade451794918377706.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/3f9dc6101cfa4f92ad468cb08d3dd0d31794564768450.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/4a4ddfd0efb44c7494ad3f0875d231501794564772332.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/9ad406aaace74ea29dd5c726cd7c2d091794564782203.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/39be521cd8954ec3bdaf363b6eb527201794564788419.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/1ca425295b864c0abdf1a8166da19c871794828699445.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/8b60e9c706fc4814a727559683e5a2521794907726134.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48932,7 +49365,7 @@
     "category": "makeup",
     "category_vi": "Son môi",
     "subCategory": "lipstick",
-    "rank": 11,
+    "rank": null,
     "foreignPrice": 14500,
     "price": 14500,
     "originPrice": 20000,
@@ -49103,7 +49536,7 @@
     "category": "haircare",
     "category_vi": "Chăm sóc tóc",
     "subCategory": "haircare",
-    "rank": 13,
+    "rank": 75,
     "foreignPrice": 18500,
     "price": 18500,
     "originPrice": 26000,
@@ -49121,7 +49554,24 @@
     "images": [
       "/products/A000001004351.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/52412e34d80748ce87fd88e839cd27161794914668391.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/a748e46e7ec1455eb9e6302e305d95c11794899964088.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/d9df0b714a574604bb8c983574b47eae1794896421969.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/5d99ee27bfc44ab0b1407470ec92fdb51794895110283.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/cca48fdf74eb485a966800be788edbdf1794878724134.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2ce840faaba8439b9971d5e0058f25691794852267379.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/3d6a67d93218402b8bfbc8fae20aedeb1794847110711.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/1546a4ce69834863a6b39a9cd66ca8151794378794878.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/32cacbf587bd407aaad35f07c507d4261794378796507.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/af765abbafe044e78a885f253d2d04c11794378798308.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/73e4336b48da4df98721f79894dc80131794325748695.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/e65f1678b0b84b68a592236f0ff0708a1794325752085.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/8d113518ffbf4cec869d5df2f58fb3ca1794325754630.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/daa352378fb84ce8a0cc77aca4ed1f5a1794325757036.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/e3e768df9b044e6f981a3223fb1a89f11794847114215.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/5d62e63fbd514f72ae4ccf6be91199841794666928483.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49164,7 +49614,7 @@
     "category": "bodycare",
     "category_vi": "Nước hoa & Hương thơm",
     "subCategory": "perfume",
-    "rank": 15,
+    "rank": null,
     "foreignPrice": 31500,
     "price": 31500,
     "originPrice": 35000,
@@ -49225,7 +49675,7 @@
     "category": "bodycare",
     "category_vi": "Chăm sóc cơ thể",
     "subCategory": "bodycare",
-    "rank": 21,
+    "rank": null,
     "foreignPrice": 15500,
     "price": 15500,
     "originPrice": 21000,
@@ -49308,7 +49758,7 @@
     "category": "skincare",
     "category_vi": "Chăm sóc da",
     "subCategory": "cream",
-    "rank": 25,
+    "rank": null,
     "foreignPrice": 18000,
     "price": 18000,
     "originPrice": 24000,
@@ -49380,7 +49830,7 @@
     "category": "supplements",
     "category_vi": "Thực phẩm chức năng",
     "subCategory": "supplements",
-    "rank": 26,
+    "rank": null,
     "foreignPrice": 16400,
     "price": 16400,
     "originPrice": 16900,
@@ -49441,7 +49891,7 @@
     "category": "skincare",
     "category_vi": "Kem dưỡng da",
     "subCategory": "cream",
-    "rank": 33,
+    "rank": null,
     "foreignPrice": 33300,
     "price": 33300,
     "originPrice": 37000,
@@ -49502,7 +49952,7 @@
     "category": "skincare",
     "category_vi": "Tẩy trang",
     "subCategory": "makeup_remover",
-    "rank": 37,
+    "rank": 26,
     "foreignPrice": 16100,
     "price": 16100,
     "originPrice": 28500,
@@ -49520,7 +49970,25 @@
     "images": [
       "/products/A000000231175.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/5bf7cad8ec1141f1b35306c7b7138fc21794918155846.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/aa9547ea91e74c2690f08e6712f0e5971794918079489.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/72fa73bc98bc4a55bca16e1ae8ac05f71794917767915.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/bab3675ecbe74728b9dd543635b702421794881655801.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/eb8f69d14d314bd9bb664d1e644151991794879107681.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/5ad8b19089a8423e966bb9aea675cc571794842054943.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/2fb04f41a6c848aeb8104b87d28755281794825686916.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/01/1d0f30b51e074647959f50657293e8ed1793525976953.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/4e5e1288f1294daca633988924ddb7b61794283257647.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/45add22aa5c840ebb5a7c305109529161794283272177.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/7703157b98fd457d806d503e524f2af41794283283133.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/65d050623f2944a98c912efe180a30741794265413654.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/da30c321de5f4c529369cfd38cfa44ef1794265396352.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/5b068a0b1476420aa3d3f3f8e96a297c1794265408513.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/953e1cd1a02745cb97827977df8504ea1794205837171.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/523bd9a6456f498483ebf0a3fda4c8b01794205842593.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/174a3b49e8a941398367d8085c1239d71794205860182.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49585,7 +50053,7 @@
     "category": "skincare",
     "category_vi": "Mặt nạ",
     "subCategory": "mask",
-    "rank": 42,
+    "rank": 43,
     "foreignPrice": 17900,
     "price": 17900,
     "originPrice": 26000,
@@ -49603,7 +50071,38 @@
     "images": [
       "/products/A000000239969.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/03ab860bfed24335acf98d6bd3ba2f001794850391546.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/76ef1378d1344f9b95f1770107ed5a761794847258449.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/26d7f488082e4cb4b375c03f1be21adc1794827691765.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/8e0c32416afd427ba2d80c4082c91d881794827232408.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/4744bb96ce94449ca940e57418096b291794789585665.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/4ffdff729f02416485fe906983a945aa1794746917715.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/e154d62245f14b3ca706d1e1ab0716d01794744766209.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/c74beea9b7434b5d939cc2e636b9f1c61794652293773.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/1f61d0796844437f8f6bf40cf25491c61794652323073.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/3d7fc4ca610a4864bd4a85032b6a49801794652393673.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/baecfa9141bf4878a64361839bbf25611794744769216.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/3e1373478c57457fa98de8cf4853186d1794744773214.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/908af507dfa84ea7a26d5e20d6e061131794744776136.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/58dc576e79f14f4f943b000a7f029b3a1793283766241.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/7e05b53e488d42158dba6304c34230ea1793283774650.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/b7d7e11af89340b1a9b6f1a15f43e9841793283785416.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/a1ca79e4985b47108bb00c147483c64f1794740578789.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/b0e00b4b34d345e0aab1286b71a0968f1794740590779.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/7a0511d41587484783bfa694b2e982c81794740606389.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/d81dcb9f442f40a1bb98495c4466e2d71794112453851.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/78187fe6ad5043f3825582a7f9aeecc81794112456222.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/85637e5cc0af40149d2cddc5aaad074f1794112458356.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/fb4abde91734418aab72c41d27dd81531794112460413.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/dd95232debf74963a7e56c2b4bcbe7921794126482234.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/84a4cdba669746f399f95d3b3c2abc181794126486987.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/1ae4fea02f674ac596c6cdfc279ee4111794126491650.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/33ca2d050aca4a5ab34e8b79f98e58ef1794126495647.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/ca058eb7beba4a7281056c709a3e0a841794126499958.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/50e9ffb66b7f4a00b7f4a8ef08e532fb1794850435282.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/ab21d09458bc498e8a43b1cc7ceb49e21794850422390.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49657,7 +50156,7 @@
     "category": "makeup",
     "category_vi": "Son môi",
     "subCategory": "lipstick",
-    "rank": 48,
+    "rank": null,
     "foreignPrice": 14000,
     "price": 14000,
     "originPrice": 20000,
@@ -49817,7 +50316,7 @@
     "category": "supplements",
     "category_vi": "Thực phẩm chức năng",
     "subCategory": "supplements",
-    "rank": 52,
+    "rank": null,
     "foreignPrice": 3900,
     "price": 3900,
     "originPrice": 3900,
@@ -49900,7 +50399,7 @@
     "category": "skincare",
     "category_vi": "Kem dưỡng da",
     "subCategory": "cream",
-    "rank": 53,
+    "rank": null,
     "foreignPrice": 26700,
     "price": 26700,
     "originPrice": 42000,
@@ -49961,7 +50460,7 @@
     "category": "skincare",
     "category_vi": "Mặt nạ",
     "subCategory": "mask",
-    "rank": 55,
+    "rank": 11,
     "foreignPrice": 16000,
     "price": 16000,
     "originPrice": 27000,
@@ -49979,7 +50478,32 @@
     "images": [
       "/products/A000001001883.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/eb9d5be023db468b825188b11b68077b1794920089978.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/df453b0410d844b49ed7c6c901488d661794905583053.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/a14b499d502e4cfab0e88d3daf6611821794896661977.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/6efd2421ba3b4e90b9585164aa2df2a71794891734894.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/bba6e2c868b243d89e6ebe542b1f67121794872908271.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/6ce728e552fc40d99e9e5997c2a1bda41794831904757.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/5d769fb5e96d415b898774606f17483e1794809063279.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/ca59701e726f4a1cbca5fd68d8ac6b291793577575083.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/326f0d7fc2f24276a1e6cc6f410e10841793577577215.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/31ee0d9639ee404a868e0d2410886a2e1793577579241.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/3a8efbdad7344ee48abeb3aa6a9efffd1793577581747.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/ada47fc600d940c2b7693f9436bde2641793577584092.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/cf8288e1a0da409391011166cd8a1d7e1793706104080.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/27af3369d20a489f87a630050a8acb4a1793706105888.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/ea0c030de61e4e6e90e9c24558ab295c1793706107562.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/d5dd2de5053e4f28a88001bdc5a932ff1793706109356.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/06266298553a422a8a16b993b4b0b7db1793680190978.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/93d11640bcf94146875bbdc5a9c0c1a61793680193087.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/2e026aebca0e43c3856fae9ef2cbb4041793680194898.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/efdb6b083d6f442aa700a2ed70b661861793680197070.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/151308cc28624283aea4983bbdb1c5031793658006193.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/27a35e4779414187ac206c17b03d7bb71793658008080.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/00e1014fef0448d0a13ed1078e1e3eca1793658010006.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/8c081f9109114ac7be0472e259a84bdf1793658011891.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50033,7 +50557,7 @@
     "category": "skincare",
     "category_vi": "Mặt nạ",
     "subCategory": "mask",
-    "rank": 56,
+    "rank": 21,
     "foreignPrice": 26000,
     "price": 26000,
     "originPrice": 42000,
@@ -50051,7 +50575,39 @@
     "images": [
       "/products/A000001001885.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/a0d3972eda554e44ac61b0dec8733dfe1794920403514.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/37d182dc8e9742a0a86aec6b2ff4e4741794896317655.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/1be7c01e854c4f9da93c06db9c94fb561794893516007.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/398cd74976744e5b8ae80a794ed3493f1794874673333.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/a1bab0c4001348bc8ddabf6150b4eded1794816241503.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/b77b65f306af4f37a23eba92c242e3601794792260802.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/52741974e8b24187a27f87c07aae9fd61794726297057.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/20/7c0ca198564f4cdf8e370344848abfe61792506280083.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/20/432da73a6ddf43ad8699896483d860d41792506286298.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/20/c686fed2db444b97b71b793eae47a7191792506291431.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/20/af32d51029f044b58138af6e5f165f931792506297695.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/c40655ea793f471eac7bd3ad2a19b52d1793548231193.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/d51db657d5984f5a93de7b2a113d63b81793548241021.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/c9901e80f0094d44ae4beae47749c61e1793548257297.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/f9e3438ce11d4c188c761cf514206f621793548264103.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/59481291e99943be8246b8501690eeaf1793548269385.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/dc7834ba8519417696bcfe95f762e8b61793861953301.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/305e0b6b4943470e8cd22b24463d33ee1793861958766.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/239445f8ba354a1db1f42e5b5c317a711793861964555.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/e86bd5cd775e4bdebe0f0711f405ebb31793861972316.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/4c7f8b81ea36420b8b281b088a3d028b1793861985906.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/5ad50d4b0b774831a0f02b2f00484cb01793860007450.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/77939b8dd5bf4134816c250a42ae2b881793860016711.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/43f8673c67eb464cba0d352e075efaef1793860022034.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/84eadf3daa1843dfb13032e874b23d441793860027246.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/8a958aaaf69845099635e5683cdefd9e1793860033382.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/f2cb0af28b084bffa226157a11f182401792678404698.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/4a9327081e264d5f910c09fe716a1ee91792678407357.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/bc68dc23f3ba4c37822a30345d47da4c1792678411308.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/f410f726a17e4cca8c41c800151ebf8b1792678414311.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/c0d31ce2d6044e66b21cd6f40e8f91731792678418533.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50105,7 +50661,7 @@
     "category": "supplements",
     "category_vi": "Thực phẩm chức năng",
     "subCategory": "supplements",
-    "rank": 61,
+    "rank": null,
     "foreignPrice": 6000,
     "price": 6000,
     "originPrice": 8000,
@@ -50221,7 +50777,7 @@
     "category": "skincare",
     "category_vi": "Kem dưỡng da",
     "subCategory": "cream",
-    "rank": 62,
+    "rank": 17,
     "foreignPrice": 22000,
     "price": 22000,
     "originPrice": 30000,
@@ -50239,7 +50795,39 @@
     "images": [
       "/products/A000001001833.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/147855f1556b4ee1acf99bcae1c5ff8d1794922501654.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/40c37587d1dd4046b20ca7e5800c9ac41794922422525.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/84934b5b2ace4802a2aeefb4ea53ffe01794921317619.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7198da4a5d464f08a4ef444c4f168ef51794917779708.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2c09509e04344d25981e7831e637bbef1794899475532.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/6bdd23c59d104a899fe4015e6c5790141794895093034.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/3de3d25776aa4d80ba4362c45beb01d31794891424677.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/166ac07ed6064642a30f24b71ed70a4f1793857904982.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/6b7ba06c1b66422fa1087172f4bd0f821793857911004.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/3f32b277c7574883ba5ef75a8dd632031793857916844.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/efa569a919df4dcf99e4f6e55576ca5e1793857926478.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/9276df2875f74b6f8342e642478f993e1793857766290.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/c023c6053de84e5a94d144bc5fb892501793857773978.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/36a731e211e34a5f8c7c4ca06288a11d1793857781345.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/277633887554407a80fc8aa9bd567e2d1793857823080.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/70501e2be21b4d489c035c415d3ae6901793857830845.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/6597e8dcd7d24392b2c04699b52a6d751794129728756.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/28db8b39a6b34e8fb3edb83cdf44493a1794129731394.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/9fe89e2dd2344c91b7afaae2938d78141794129735211.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/4220d989305e4ccf9479c09e891ff00d1794129745840.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/28f63e7881b84bd5b53d2ac7f5812c9a1793804314439.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/b95d6a6d10464513ac00176f76726c941793804441257.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/bffc80b4293445e5a872a1d980cc9c4d1793804447920.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/a8228a7e4fe742599f9f4c912e30065b1793804475389.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/f046043c426c4de486dbfd38d0c075f01793887660097.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/56f4d3fce0f546e4ba8e4b958fa127491793887662895.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/84b547a1010845128fe12d2ebd5c559b1793887667603.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/52b95fbd88bb4d6ca3bcd950f9e3c5441793887670171.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/47d0233033114a31a491572af92ab7ff1793887673731.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/755687cf9c3b43b7ba175a38614c53711794921396497.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/eb193b3fa393450a90ee842428c9d6e71794921360266.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50282,7 +50870,7 @@
     "category": "haircare",
     "category_vi": "Chăm sóc tóc",
     "subCategory": "haircare",
-    "rank": 69,
+    "rank": null,
     "foreignPrice": 20900,
     "price": 20900,
     "originPrice": 22700,
@@ -50354,7 +50942,7 @@
     "category": "skincare",
     "category_vi": "Serum & Tinh chất",
     "subCategory": "serum",
-    "rank": 70,
+    "rank": null,
     "foreignPrice": 35500,
     "price": 35500,
     "originPrice": 67500,
@@ -50415,7 +51003,7 @@
     "category": "skincare",
     "category_vi": "Serum & Tinh chất",
     "subCategory": "serum",
-    "rank": 77,
+    "rank": null,
     "foreignPrice": 110880,
     "price": 110880,
     "originPrice": 132000,
@@ -50487,7 +51075,7 @@
     "category": "skincare",
     "category_vi": "Serum & Tinh chất",
     "subCategory": "serum",
-    "rank": 81,
+    "rank": 62,
     "foreignPrice": 16800,
     "price": 16800,
     "originPrice": 21000,
@@ -50505,7 +51093,16 @@
     "images": [
       "/products/A000001005239.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/8d9dc9d8a367499b848c613a6d62128f1794917504046.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/e3fd54aac0a24da2978eda365ef530a31794907813933.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/87a6aa75300d4cf1866c40166353d2f61794893436483.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/bb75dc8d378947538849806b7d269d081794837689998.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/b3440673aae347278cea9ff8339218ff1794908082781.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/6496c1ecf38c45c6b861f37ea5ce06861794908088635.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/00a781b611c54bfaa33a5dfde0b183561794908092960.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/8c061e948a4449059bd317620c7953f21794907818983.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50548,7 +51145,7 @@
     "category": "skincare",
     "category_vi": "Mặt nạ",
     "subCategory": "mask",
-    "rank": 85,
+    "rank": null,
     "foreignPrice": 11700,
     "price": 11700,
     "originPrice": 20000,
@@ -50609,7 +51206,7 @@
     "category": "skincare",
     "category_vi": "Serum & Tinh chất",
     "subCategory": "serum",
-    "rank": 86,
+    "rank": null,
     "foreignPrice": 22500,
     "price": 22500,
     "originPrice": 30000,
@@ -50670,7 +51267,7 @@
     "category": "makeup",
     "category_vi": "Son môi",
     "subCategory": "lipstick",
-    "rank": 87,
+    "rank": null,
     "foreignPrice": 15200,
     "price": 15200,
     "originPrice": 19000,
@@ -50841,7 +51438,7 @@
     "category": "makeup",
     "category_vi": "Kem nền & Che khuyết",
     "subCategory": "foundation",
-    "rank": 89,
+    "rank": null,
     "foreignPrice": 37500,
     "price": 37500,
     "originPrice": 42000,
@@ -50935,7 +51532,7 @@
     "category": "haircare",
     "category_vi": "Chăm sóc tóc",
     "subCategory": "haircare",
-    "rank": 91,
+    "rank": null,
     "foreignPrice": 29500,
     "price": 29500,
     "originPrice": 37500,
@@ -50996,7 +51593,7 @@
     "category": "skincare",
     "category_vi": "Sữa rửa mặt",
     "subCategory": "cleanser",
-    "rank": 92,
+    "rank": null,
     "foreignPrice": 21900,
     "price": 21900,
     "originPrice": 24000,
@@ -51057,7 +51654,7 @@
     "category": "skincare",
     "category_vi": "Chăm sóc da",
     "subCategory": "cream",
-    "rank": 96,
+    "rank": null,
     "foreignPrice": 379000,
     "price": 379000,
     "originPrice": 499000,
@@ -51118,7 +51715,7 @@
     "category": "haircare",
     "category_vi": "Chăm sóc tóc",
     "subCategory": "haircare",
-    "rank": 100,
+    "rank": 81,
     "foreignPrice": 19600,
     "price": 19600,
     "originPrice": 28000,
@@ -51136,7 +51733,36 @@
     "images": [
       "/products/A000000187090.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/f6deef9d074d455287e673537599230c1794901451666.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/485f8168104f450fa746ad258efe75d51794833562700.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/367fd4b993774070b088cabbefd4c2371794827821226.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/842eef77580f4b5aa8c464b892cc0f721794813663783.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/f7d3a560b0f34204a6501e49463644b11794779486452.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/05b49bef4c424265b1cdc9d0d8866edc1794749739180.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/53849c6dfbb0456d8b8d0721b14063d81794745698118.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/ab7dca68fffb4fb6996e9943bd9dca421794779490314.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/8811f0c9cca14e59a2bbd410200373ea1794779502836.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/70b8552388394980b6c8eda18ff685b61794779510311.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/875af1d2ef6441c0b79ee3a39c17ab571794779518022.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/4b9145cfd6d949faad93acb8949083051794779524225.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/1e0dc9a73eea4c7a8a5543d2efcb6cd51794779530163.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/c8b676f7fec64b42a13b1c24bf81c4ab1794779536776.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/470b7fb70ffe48b8bea525d6e7f8d5311794229687145.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/469b1d0183f24212b9992023f8a0d5761794229696596.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/5d196d76a6e0463bbe5e50d884d2cc031794229707849.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/c2f9016db49341319e514ee7cd9673b31794229711027.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/48edfffbe3ec43a1899668f977aaca171794229717239.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/a2a0a4d9862b44948c9aec84f2f5fe121794229720425.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/d888e283100c454c9b3ded99ff4e65581794229725987.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/5515a84de42f47a585d5c3a56a81a6471794229729119.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/59d8536769ac4d39a77778ad0ef1e3971794457040201.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/247a7ffdd0f9410782f7e1a2485ea0481793766087350.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/d2f4ca8571424b5a92f7b4ebbb4127f01793766091713.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/6575524294bd4558b34a33ddc3b0a00f1793766095175.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/d3393cef7f974d7d9e8617d565f5520b1794901469049.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/22750db558f84e78bafa3b667e1d1f011794901458355.png"
+    ],
     "options": [
       {
         "id": "1",
