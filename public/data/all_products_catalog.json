@@ -40,7 +40,7 @@
     ],
     "id": "A000000010462",
     "updatedAt": "2026-11-02T08:44:45Z",
-    "brand": "라로슈포제",
+    "brand": "La Roche-Posay",
     "is_sold_out": true,
     "hasOptions": false,
     "categoryPath": "Chăm sóc chống nắng > Kem chống nắng > Kem chống nắng",
@@ -299,7 +299,7 @@
     "originalPriceWon": 42000
   },
   {
-    "brand": "박준뷰티랩",
+    "brand": "Park Jun Beauty Lab",
     "appliedKrwRate": 19.5,
     "createdAt": "2026-10-22T20:00:00.000Z",
     "status": "available",
@@ -1258,7 +1258,7 @@
     ],
     "salePrice": 7400,
     "appliedServiceFeePercent": 30,
-    "brand": "비욘드",
+    "brand": "Beyond",
     "rank": null,
     "images": [
       "/products/A000000142709.jpg"
@@ -2681,7 +2681,7 @@
     "is_sold_out": false,
     "goodsNo": "A000000161438",
     "nameKr": "[근본 볼륨치트키] 다슈 클래식 스타일 그루밍토닉 펌프 200ml 기획 (+100ml 증정) | 올리브영",
-    "brand": "다슈",
+    "brand": "Dashu",
     "lastAuditedAt": "2026-11-18T09:00:22.038Z",
     "salePrice": 11900,
     "originalPrice": 18000,
@@ -3396,7 +3396,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/2aacd8971ad8428c8d2dd492923519cb1793629907149.png"
     ],
     "salePrice": 24000,
-    "brand": "바솔",
+    "brand": "Vasol",
     "images": [
       "/products/A000000170361.jpg"
     ],
@@ -5364,7 +5364,7 @@
     "updatedAt": "2026-11-02T08:44:45Z",
     "originPrice": 20000,
     "originalPrice": 20000,
-    "brand": "바이오던스",
+    "brand": "Biodance",
     "categoryPath": "Mặt nạ > Mặt nạ giấy > Mặt nạ gel",
     "priceVnd": 442000,
     "firestoreId": "A000000181343",
@@ -5650,7 +5650,7 @@
     "isDiscontinued": false,
     "originPrice": 80000,
     "appliedKrwRate": 19.5,
-    "brand": "바이오던스",
+    "brand": "Biodance",
     "originalPrice": 80000,
     "lastAuditedAt": "2026-11-18T09:00:22.041Z",
     "updatedAt": "2026-11-02T08:44:45Z",
@@ -5669,7 +5669,7 @@
   },
   {
     "id": "A000000184697",
-    "brand": "아이오페",
+    "brand": "IOPE",
     "appliedKrwRate": 19.5,
     "is_sold_out": false,
     "status": "available",
@@ -7422,7 +7422,7 @@
     "originPrice": 29000,
     "hasOptions": false,
     "priceVnd": 679000,
-    "brand": "더하르나이",
+    "brand": "The Harnay",
     "productImage": "/products/A000000192405.jpg",
     "priceChangeAlert": {
       "newPriceVnd": 594000,
@@ -8586,7 +8586,7 @@
       "lastChecked": "2026-11-01T07:59:17.000Z",
       "hasChanged": true
     },
-    "brand": "식물나라",
+    "brand": "Shingmulnara",
     "name": "Kem Chống Nắng Nâng Tông Gạo SHIKMULNARA Bboyan Rice Tone Up Moisture Sun Cream Phiên Bản Sanrio Hello Kitty (30ml / 100ml)",
     "originPrice": 9800,
     "originalPriceVnd": 433000,
@@ -9432,7 +9432,7 @@
     "images": [
       "/products/A000000204014.jpg"
     ],
-    "brand": "한율",
+    "brand": "Hanyul",
     "isDiscontinued": false,
     "origin": "Korea",
     "salePrice": 19530,
@@ -10345,7 +10345,7 @@
     "originalPrice": 15000,
     "lastAuditedAt": "2026-11-18T09:00:22.045Z",
     "originPrice": 15000,
-    "brand": "웰라쥬",
+    "brand": "Wellage",
     "hasOptions": false,
     "status": "available",
     "priceVnd": 211000,
@@ -10425,7 +10425,7 @@
     "originPrice": 67000,
     "hasOptions": true,
     "priceVnd": 1223000,
-    "brand": "케라스타즈",
+    "brand": "Kerastase",
     "productImage": "/products/A000000212061.jpg",
     "priceChangeAlert": {
       "oldForeignPrice": 50920,
@@ -11383,7 +11383,7 @@
     "isAvailable": false,
     "brandKr": "",
     "updatedAt": "2026-11-02T08:44:45Z",
-    "brand": "식물나라",
+    "brand": "Shingmulnara",
     "isSoldOut": false,
     "goodsNo": "A000000217330",
     "status": "out_of_stock",
@@ -12244,7 +12244,7 @@
     "discountRate": "21%",
     "categoryPath": "Mặt nạ > Mặt nạ giấy > Mặt nạ gel",
     "isAvailable": true,
-    "brand": "바이오던스",
+    "brand": "Biodance",
     "hasOptions": true,
     "salePrice": 29300,
     "originalPriceVnd": 819000,
@@ -12783,7 +12783,7 @@
       }
     ],
     "isDiscontinued": false,
-    "brand": "코스노리",
+    "brand": "Cosnori",
     "goodsNo": "A000000224229",
     "is_sold_out": false,
     "appliedKrwRate": 19.5,
@@ -13436,7 +13436,7 @@
         "is_sold_out": false
       }
     ],
-    "brand": "로레알 프로페셔널",
+    "brand": "L'Oreal Professionnel",
     "goodsNo": "A000000227133",
     "is_sold_out": false,
     "appliedKrwRate": 19.5,
@@ -14544,7 +14544,7 @@
     "is_sold_out": false,
     "isDiscontinued": false,
     "salePrice": 17640,
-    "brand": "셀라딕스",
+    "brand": "Celladix",
     "lastAuditedAt": "2026-11-18T09:00:22.049Z",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/e8b392537114452e9c0fdcad4d8e2a381794923538576.png",
@@ -15204,7 +15204,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/27/c103bae2129e4d6190d105796e7564401793027095916.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/27/afab1357060d43428603828a57cc25a81793027099783.png"
     ],
-    "brand": "올리오",
+    "brand": "Olio",
     "isDiscontinued": false,
     "status": "available",
     "updatedAt": "2026-11-02T08:44:45Z",
@@ -16262,7 +16262,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/13/97a6fbe3a9fa478f8eaab58791b111071791877805583.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/26/98b76dfdbd064d4fb623353b02fbc3ef1793024472083.png"
     ],
-    "brand": "코스알엑스",
+    "brand": "COSRX",
     "isSoldOut": false,
     "appliedKrwRate": 19.5,
     "categoryPath": "Chăm sóc da > Essence/serum/ampoule > Essence/serum/ampoule",
@@ -16592,7 +16592,7 @@
     "is_sold_out": false,
     "nameKr": "[1등콜라겐세럼/한정기획] 바이오던스 포어 퍼펙팅 콜라겐 펩타이드 세럼 30ml 더블 기획 | 올리브영",
     "id": "A000000237409",
-    "brand": "바이오던스",
+    "brand": "Biodance",
     "isAvailable": true,
     "rank": null,
     "name_vi": "Tinh Chất Thu Nhỏ Lỗ Chân Lông BIODANCE Pore Perfecting Collagen Peptide Serum 30ml x 2 Lọ",
@@ -18813,7 +18813,7 @@
     "name": "Dung Dịch Tẩy Tế Bào Chết PAULA'S CHOICE Skin Perfecting 2% BHA Liquid Exfoliant 118ml (+ Tặng Kèm BHA 30ml)",
     "originalPriceVnd": 913000,
     "nameKr": "[화잘먹/단독기획] 폴라초이스 바하 리퀴드 엑스폴리언트 118ml 기획 (+바하 리퀴드 30ml) | 올리브영",
-    "brand": "폴라초이스",
+    "brand": "Paula's Choice",
     "firestoreId": "A000000245794",
     "priceVnd": 730000,
     "brandKr": "",
@@ -22102,7 +22102,7 @@
     "lastAuditedAt": "2026-11-18T09:00:26.059Z",
     "originalPriceVnd": 796000,
     "isDiscontinued": false,
-    "brand": "쥬베룩",
+    "brand": "Juvelook",
     "images": [
       "/products/A000000254006.jpg"
     ],
@@ -22235,7 +22235,7 @@
     "origin": "Korea",
     "lastAuditedAt": "2026-11-18T09:00:26.060Z",
     "originalPrice": 35000,
-    "brand": "어반디케이",
+    "brand": "Urban Decay",
     "isSoldOut": false,
     "firestoreId": "A000000254978",
     "id": "A000000254978",
@@ -23380,7 +23380,7 @@
     "originalPrice": 22000,
     "firestoreId": "A000000258297",
     "appliedKrwRate": 19.5,
-    "brand": "토리든",
+    "brand": "Torriden",
     "productImage": "/products/A000000258297.jpg",
     "priceChangeAlert": {
       "diffWon": 5500,
@@ -23604,7 +23604,7 @@
     "originPrice": 18900,
     "category": "Mận khô/kombucha/giấm táo",
     "name": "Nước Uống Giấm Trắng Lên Men TEAZEN White Balsamic Double-Shot Hộp 10 Gói (Olive / Elderberry)",
-    "brand": "티젠",
+    "brand": "Teazen",
     "createdAt": "2026-10-22T20:00:00.000Z",
     "nameKr": "티젠 화이트&레드 발사믹 더블-샷(올리브/엘더베리/토마토) 10포 | 올리브영",
     "appliedServiceFeePercent": 30,
@@ -23731,7 +23731,7 @@
     ],
     "status": "available",
     "firestoreId": "A000000259209",
-    "brand": "바세린",
+    "brand": "Vaseline",
     "hasOptions": true,
     "foreignPrice": 13900,
     "productImage": "/products/A000000259209.jpg",
@@ -24243,7 +24243,7 @@
     "nameKr": "[화잘먹] 페이보릿 수분조 세럼 30ml | 올리브영",
     "originPrice": 39000,
     "id": "A000000260329",
-    "brand": "페이보릿",
+    "brand": "Favorite",
     "priceVnd": 821000,
     "originalPriceVnd": 913000,
     "originalPrice": 39000,
@@ -24898,7 +24898,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/7af945fde5d243538fb2a6be76e315fd1795059592595.png"
     ],
     "status": "available",
-    "brand": "블랑네이처",
+    "brand": "Blanc Nature",
     "foreignPrice": 30000,
     "priceChangeAlert": {
       "oldPriceVnd": 389000,
@@ -26377,7 +26377,7 @@
       "oldForeignPrice": 69000,
       "newForeignPrice": 44900
     },
-    "brand": "유세린",
+    "brand": "Eucerin",
     "is_sold_out": true,
     "nameKr": "유세린 이븐래디언스 브라이트닝 부스터 세럼 30ml 기획 (+광채 세럼 7ml) | 올리브영",
     "isAvailable": false,
@@ -29534,7 +29534,7 @@
     "originPrice": 44900,
     "categoryPath": "Chăm sóc chống nắng > Cushion chống nắng > Cushion chống nắng",
     "hasOptions": true,
-    "brand": "도미나스",
+    "brand": "Dominas",
     "originalPriceVnd": 1051000,
     "id": "A000000265485",
     "appliedKrwRate": 19.5,
@@ -30362,7 +30362,7 @@
     "goodsNo": "A000000267643",
     "id": "A000000267643",
     "appliedKrwRate": 19.5,
-    "brand": "도미나스",
+    "brand": "Dominas",
     "images": [
       "/products/A000000267643.jpg"
     ],
@@ -30955,7 +30955,7 @@
     "appliedServiceFeePercent": 30,
     "isSoldOut": false,
     "categoryPath": "Chăm sóc da > Kem dưỡng > Kem dưỡng",
-    "brand": "동국제약",
+    "brand": "Dongguk Pharmaceutical",
     "brandKr": "",
     "optionsCount": 0,
     "photoReviews": [
@@ -31217,7 +31217,7 @@
     "updatedAt": "2026-11-02T08:44:45Z",
     "nameKr": "아이오페 레티놀 레티젝션 세럼 기획 20ml (+10ml) | 올리브영",
     "appliedKrwRate": 19.5,
-    "brand": "아이오페",
+    "brand": "IOPE",
     "isAvailable": false,
     "category": "Essence/serum/ampoule",
     "status": "out_of_stock",
@@ -31676,7 +31676,7 @@
     "brandKr": "",
     "priceVnd": 700000,
     "isDiscontinued": false,
-    "brand": "바이오던스",
+    "brand": "Biodance",
     "nameKr": "[1+1/120매 대용량] 바이오던스 아이패치 60+60매 더블 기획 2종 (콜라겐/캐비어 PDRN) | 올리브영",
     "firestoreId": "A000000268419",
     "name": "Mặt Nạ Đắp Mắt Giảm Nhăn BIODANCE Eye Patch Set 60 Miếng x 2 Hộp (Collagen / Caviar PDRN)",
@@ -32177,7 +32177,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/a4966b2df3fd433f84443263fd544b2e1795054243095.png"
     ],
     "appliedServiceFeePercent": 30,
-    "brand": "퐁당",
+    "brand": "Pong Dang",
     "originalPrice": 28000,
     "lastAuditedAt": "2026-11-18T09:00:29.429Z",
     "isAvailable": true,
@@ -33333,7 +33333,7 @@
     "id": "A000001001706",
     "priceVnd": 592000,
     "is_sold_out": false,
-    "brand": "메노킨",
+    "brand": "Menokin",
     "origin": "Korea",
     "rank": null,
     "name_vi": "Mặt Nạ Bọt Kem Phục Hồi Nhanh MENOKIN 30-Second Quick Bubble Mask (Moisture / Lift)",
@@ -33631,7 +33631,7 @@
     "id": "A000001001844",
     "appliedKrwRate": 19.5,
     "originPrice": 29000,
-    "brand": "투슬래시포",
+    "brand": "Two Slash Four",
     "hasOptions": true,
     "name": "Phấn Nước Che Khuyết Điểm TWO SLASH FOUR Erasing Cover Cushion",
     "category": "Cushion",
@@ -33768,7 +33768,7 @@
     "productImage": "/products/A000001001865.jpg",
     "updatedAt": "2026-11-02T08:44:45Z",
     "foreignPrice": 23200,
-    "brand": "티르티르",
+    "brand": "TIRTIR",
     "photoReviews": [
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/b9205865ec844e5ea4d0fa1438fe19f41794143166877.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/e1c0dc9a09174e0f9251ca046f8df4f71793885771299.png",
@@ -45114,7 +45114,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Kem dưỡng ẩm Atopalm Panthenol Cream 80ml (bản lẻ / bản combo) từ thương hiệu 아토팜 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Kem dưỡng ẩm Atopalm Panthenol Cream 80ml (bản lẻ / bản combo) từ thương hiệu Atopalm tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -45186,7 +45186,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Bảng mắt Better Than Palette Bestie Edition (20 ô màu) - Rom&nd 10 năm từ thương hiệu 롬앤 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Bảng mắt Better Than Palette Bestie Edition (20 ô màu) - Rom&nd 10 năm từ thương hiệu rom&nd tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -45258,7 +45258,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Tinh chất dầu dưỡng Silky Oil Serum Curlyshyll 70ml (bản kế hoạch / bản lẻ) từ thương hiệu 커리쉴 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Tinh chất dầu dưỡng Silky Oil Serum Curlyshyll 70ml (bản kế hoạch / bản lẻ) từ thương hiệu Curly Shyll tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -45330,7 +45330,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Serum Anua rau má 77 B3 Zinc trị mụn 30ml (combo đôi) từ thương hiệu 아누아 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Serum Anua rau má 77 B3 Zinc trị mụn 30ml (combo đôi) từ thương hiệu Anua tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -45402,7 +45402,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Nước uống đẹp da ISEBI Airy Face Drink 150ml x 10 chai (Idol V Routine) từ thương hiệu 이세비 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Nước uống đẹp da ISEBI Airy Face Drink 150ml x 10 chai (Idol V Routine) từ thương hiệu Isebi tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -45906,7 +45906,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Sữa rửa mặt tạo bọt La Roche-Posay Toleriane Foaming Cleanser 125ml (tặng kèm sữa rửa mặt dạng sữa 50ml) từ thương hiệu 라로슈포제 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Sữa rửa mặt tạo bọt La Roche-Posay Toleriane Foaming Cleanser 125ml (tặng kèm sữa rửa mặt dạng sữa 50ml) từ thương hiệu La Roche-Posay tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -47441,7 +47441,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Nước cân bằng Torriden Dive-In Hyaluronic Acid phân tử thấp 300ml (tặng kèm 100ml) từ thương hiệu 토리든 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Nước cân bằng Torriden Dive-In Hyaluronic Acid phân tử thấp 300ml (tặng kèm 100ml) từ thương hiệu Torriden tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -47486,7 +47486,28 @@
     "images": [
       "/products/A000000157820.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/26940aa7541b441a892d3f4ebd4313591795067939695.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/6ec6e92a9ab645b1ab41f556c4e9cbb51795050214146.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/4297777bf9c0442a87d48420644ef6c31795028760565.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/5884cef0b06845cbb359b7043631531b1795028666744.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/9cf691602137489b95a3a19c4b2ad6521795010968173.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/b1d3cdb5be2e4818924b191890eca7a31795006694766.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/282649abeb664a41a8aaac4d78206bb71795002754869.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/8fa4cb27eb3e49b6b821d6619304bf2a1794863440694.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/6c2096eff4af485d8cc7dcfb8abf092b1794863451597.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/78a056058e454883bb8e49ecaa070c181794863461725.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/9620652f066c41ddaacbbdcce51b2d581794723912191.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/a8ea5baf60e34cc9a75c31dd22375f001794828884359.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/a62acf38f4d64156a2cccae38253a8bc1794828898535.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/062ef1d9ec7843f0a42ed22ca33f85011794876061607.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7bc49a0299f54dd9b284fd9876c62ea41794842751853.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/6d3a4435216e42f48df279e68b2eb9c41794743041827.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/078c5cb7ad62421496f0d96dc2b4e5191794743046334.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/33251c8c091841c28cd79aef5267ff711794653486018.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/cbab3035394b436aa1d7d71d20bdc7ad1794833237157.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/6ac072bae9974419bac111fde8a9e83a1794637247967.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -47519,11 +47540,11 @@
     "id": "B000000258771",
     "goodsNo": "B000000258771",
     "firestoreId": "B000000258771",
-    "name": "스타벅스 미디엄 윈터팩 (미디엄 50T + 홀리데이 머그컵)",
+    "name": "Set Cà Phê Mùa Đông Starbucks Medium (Medium 50 Gói + Cốc Sứ Holiday)",
     "name_vi": "스타벅스 미디엄 윈터팩 (미디엄 50T + 홀리데이 머그컵)",
     "nameKr": "스타벅스 미디엄 윈터팩 (미디엄 50T + 홀리데이 머그컵)",
     "name_kr": "스타벅스 미디엄 윈터팩 (미디엄 50T + 홀리데이 머그컵)",
-    "brand": "스타벅스",
+    "brand": "Starbucks",
     "brand_vi": "스타벅스",
     "brand_kr": "스타벅스",
     "category": "skincare",
@@ -47551,19 +47572,20 @@
     "options": [
       {
         "id": "1",
-        "name": "스타벅스 미디엄 윈터팩 (미디엄 50T + 홀리데이 머그컵)",
-        "name_vi": "스타벅스 미디엄 윈터팩 (미디엄 50T + 홀리데이 머그컵)",
+        "name": "Set Cà Phê Mùa Đông Starbucks Medium (Medium 50 Gói + Cốc Sứ Holiday)",
+        "name_vi": "Set Cà Phê Mùa Đông Starbucks Medium (Medium 50 Gói + Cốc Sứ Holiday)",
         "name_kr": "스타벅스 미디엄 윈터팩 (미디엄 50T + 홀리데이 머그컵)",
         "price_krw": 21800,
         "price_vnd": 510000,
         "isSoldOut": false,
         "is_sold_out": false,
-        "imageUrl": "/products/B000000258771.jpg"
+        "imageUrl": "/products/B000000258771.jpg",
+        "title": "Set Cà Phê Mùa Đông Starbucks Medium (Medium 50 Gói + Cốc Sứ Holiday)"
       }
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm 스타벅스 미디엄 윈터팩 (미디엄 50T + 홀리데이 머그컵) từ thương hiệu 스타벅스 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Starbucks 미디엄 윈터팩 (미디엄 50T + 홀리데이 머그컵) từ thương hiệu Starbucks tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -47574,7 +47596,8 @@
     "isHighEnd": false,
     "createdAt": "2026-11-13T18:35:39.000Z",
     "updatedAt": "2026-11-13T18:35:39.000Z",
-    "lastAuditedAt": "2026-11-18T09:00:33.722Z"
+    "lastAuditedAt": "2026-11-18T09:00:33.722Z",
+    "title": "Set Cà Phê Mùa Đông Starbucks Medium (Medium 50 Gói + Cốc Sứ Holiday)"
   },
   {
     "id": "A000000248498",
@@ -47608,7 +47631,24 @@
     "images": [
       "/products/A000000248498.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/1aba2ff5c4c842c891c500e70ed03a701794999957677.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/a0c54d3e74454bceaee72b28f665525b1794829037705.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/117e0816b0204928a10ba7971ce784af1794808454181.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/0b7b4cfebc9d473cbb6c224a86d6d5071794743630617.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/05cb287c834c4f29944ca249f5e986c81794740525577.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/0caa90935c6a42bea236b8d4f0d86b3e1794723450988.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/451cfdaea74c4abbb36651089f001ab51794658782096.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/661ada8dfa0142048b9a01adc061570b1794144772280.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/6eb64f7b6fb0442e98739ffbe99c0c941794266783858.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/26/d397dabefcab412b8bfd185c3a9c365d1793019386305.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/07791389ff2d4dd998591a772b0bf4731793285884839.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/41acd5d8c42e46f29626eba0d651692c1793285890054.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/27/7cdfc449bf9048a4b8cd847dc72d10bb1793105510721.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/704a4d3c5bd54a6c96d0b7de768d9ee61794368142732.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/0b9ae6110ca544018ed58ba264a29bc81794158816544.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/17768d547bd24e95a96c5b4bf10fc4531794655273862.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -47624,7 +47664,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm [Độc quyền] Set Toner Anua Diếp Cá 77 Axit Hyaluronic Cấp Ẩm Làm Dịu 350ml Kèm Gói Refill 350ml từ thương hiệu 아누아 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm [Độc quyền] Set Toner Anua Diếp Cá 77 Axit Hyaluronic Cấp Ẩm Làm Dịu 350ml Kèm Gói Refill 350ml từ thương hiệu Anua tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -47669,7 +47709,24 @@
     "images": [
       "/products/A000000107253.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/79e41b60ef2e4de5ac171ecc357d2f681795070870799.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/386262970c79407e8d72b4085a8d06791794994618839.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/e5e4a97e6ca3454e88fc32ee5096c46d1794966257124.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/656963db18e045f3b30ac853bb5bd50f1794914545571.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/e30f839b6bbc4d39a3a34b7356877f6c1794741964550.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/0a3d04f66b2748b1a38404f4af00b8d21794734061715.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/b600191b267d4d3fb6c2f3a09729cdc01794653904263.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/aeafd7b0495e4c9f95b85ca070f955631793976266844.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/e7f1d30690a44d249f358d16f95d42ec1793976282259.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/fc0446a9aa4f4ea6ad0a32088a0b389c1793976291099.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/135284d52b274e0090e0f50d7d2d6c601794032070590.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/fecc52a46c2c42cba810dda376478af11794277408074.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/3150e773f0694b968ae65a59de9f38501793928793308.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/30/f120b0bf33e0451e9680a2dab6ec5ba61793360448355.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/c59c096fc9f541398ef61d22817d763a1794415692287.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/e26939615c134e1abf375049f31067511793244540283.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -47824,11 +47881,11 @@
     "id": "A000000268740",
     "goodsNo": "A000000268740",
     "firestoreId": "A000000268740",
-    "name": "몽잘 바리스칼프 로즈마리샴푸 500ml",
+    "name": "Dầu Gội Chăm Sóc Da Đầu Chiết Xuất Hương Thảo Mongjal Bariscalp 500ml",
     "name_vi": "몽잘 바리스칼프 로즈마리샴푸 500ml",
     "nameKr": "몽잘 바리스칼프 로즈마리샴푸 500ml",
     "name_kr": "몽잘 바리스칼프 로즈마리샴푸 500ml",
-    "brand": "몽잘",
+    "brand": "Mongjal",
     "brand_vi": "몽잘",
     "brand_kr": "몽잘",
     "category": "haircare",
@@ -47852,23 +47909,38 @@
     "images": [
       "/products/A000000268740.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/1267fd4fb5e54b0eac6cae7b70b781c91795062197515.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/be8fb522ec6c4a08a6d8a5d78f6275761795043836911.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/9239566d843a47f5ae05c07ea7e1835d1794926859969.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/3fc9d2711a384a4ca9c3e7c4d663abd11794877657855.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/ddab04403d6a4b77b7c2e3c227ee90411794749872533.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/6c54e6ba58a741ec8e369e6d6844c00d1793802159531.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/04/c7cc64fddbe4494699e69ae30d13ce8d1791046805782.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/99b5d09e9c4040c790de41778402a8231795063118265.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2867a58ea7054d969f41aa3320f3311b1795063124799.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/b1cb40977df743458a0b4bcc54bc27591794877664884.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/e4fd4e58e4ea4ce1a418f6f73a54dfee1794877672254.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/2863f28dad8a428fbda657ba86dd2ff41794749875847.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/69f551b0d3104e9f99fe2a594fea86461794749880145.png"
+    ],
     "options": [
       {
         "id": "1",
-        "name": "몽잘 바리스칼프 로즈마리샴푸 500ml",
-        "name_vi": "몽잘 바리스칼프 로즈마리샴푸 500ml",
+        "name": "Dầu Gội Chăm Sóc Da Đầu Chiết Xuất Hương Thảo Mongjal Bariscalp 500ml",
+        "name_vi": "Dầu Gội Chăm Sóc Da Đầu Chiết Xuất Hương Thảo Mongjal Bariscalp 500ml",
         "name_kr": "몽잘 바리스칼프 로즈마리샴푸 500ml",
         "price_krw": 24200,
         "price_vnd": 566000,
         "isSoldOut": false,
         "is_sold_out": false,
-        "imageUrl": "/products/A000000268740.jpg"
+        "imageUrl": "/products/A000000268740.jpg",
+        "title": "Dầu Gội Chăm Sóc Da Đầu Chiết Xuất Hương Thảo Mongjal Bariscalp 500ml"
       }
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm 몽잘 바리스칼프 로즈마리샴푸 500ml từ thương hiệu 몽잘 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Mongjal 바리스칼프 로즈마리샴푸 500ml từ thương hiệu Mongjal tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -47879,7 +47951,8 @@
     "isHighEnd": false,
     "createdAt": "2026-11-13T18:36:41.000Z",
     "updatedAt": "2026-11-13T18:36:41.000Z",
-    "lastAuditedAt": "2026-11-18T09:00:33.722Z"
+    "lastAuditedAt": "2026-11-18T09:00:33.722Z",
+    "title": "Dầu Gội Chăm Sóc Da Đầu Chiết Xuất Hương Thảo Mongjal Bariscalp 500ml"
   },
   {
     "id": "A000000249895",
@@ -47913,7 +47986,17 @@
     "images": [
       "/products/A000000249895.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/7868838a70114fcfad3c3c4864aa09b41795005827198.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/cfce68d06ab44f919513e297f1f5dbab1794890678182.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/023bbd8b07d7462ebad1ed3ee5379f301794564319380.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/6bc360d9935447c6a7660b3227ddd50d1794445188658.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/0a39113495ea41299cf10b2de10af4271794103661966.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/0ace73a82cc6482fa5658413bb64c42d1793873272346.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/5e8bfe2e61a540a1ad2b8a3b6290724f1793753714392.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/25/ce5494a08e984793b552e25ad2d11b011790323756617.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/25/271136f11f1e4d2d8f617e3ff0d081ea1790340405843.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -47929,7 +48012,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Kem dưỡng mắt Eucerin Hyaluron 3X 15ml - Giảm nếp nhăn, cấp ẩm vùng mắt (Top 1 trong 10 năm liên tiếp) từ thương hiệu 유세린 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Kem dưỡng mắt Eucerin Hyaluron 3X 15ml - Giảm nếp nhăn, cấp ẩm vùng mắt (Top 1 trong 10 năm liên tiếp) từ thương hiệu Eucerin tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -47974,7 +48057,29 @@
     "images": [
       "/products/A000000248462.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/9df842f30b614099a910a712eb03d16f1795047427488.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/7fad656575984047b48e4fb7ae06ab381795047286785.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/7201622e196c485badf95f826e00a3511795046979079.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/d040b79304844742a93b3fb7fe430eb71794918847279.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/9ae80eef4280470281d6a96d309fda241794820317835.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/b06afab24bbd499c98e326893b49662b1794811493229.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/f94a93958a5c46f6a2bbf539a952187e1794771807423.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/8828ca2ae41740f59e37fc5223a178951795047431704.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2a371a1f22c647a89508f115d987b2931795047436692.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/f0ded01640c44eb9b5b8657f32ed75df1795047291036.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/f663789e5fd743a6a0f5f7fdab6e47a01795047295196.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/568364c07e944323ab19152a038514f61793949947130.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/fdcb109aa6d047a3a773996c6f7ef2711793949951360.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/cc6a411df907482389ece6924863f2a91793949955214.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/d86df07be06a4a8d8b69661c6ad2f22a1793850464285.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/497582d40fb444c0848be8439aa1d2711793850469319.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/cb0a1069dbc4478fad2f4726b5a645c11793850483884.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/12c8ef9df3b04ed38b3b4c7398167a901794427994197.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/26/b4e9900f769a42998faabe90ae397ef61792990109937.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/26/81c0bf28df394c3b933db783ffab80aa1792990113502.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/26/60deeebb14b445de8e238b02c1c2df981792990116661.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48035,7 +48140,19 @@
     "images": [
       "/products/A000000120938.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7c7bbbb1a48646c996c423aecec8af6b1794923559155.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/0aa646647bba46698a4357d2af3068751794668325321.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/37a58a8eaa1c4f989abc73830ad75b661794580984448.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/652973b46d6f4c2493836458e4359b241794482980268.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/b2e0dcbe38e44b03adb21370fe41ef631794205050169.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/67bbb6b5128743619a86b2f3554980781794190544490.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/fc98f76653d245c59b865d51fe728b891794060419377.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/aef3f90007ea42b08c0c8b09bc5ca88e1794044365304.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/d3df4df6056341adaa737f4e2f4b05ee1794004340964.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/614039ffcee741c5a8cbc8e287e511eb1793966663499.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/15/a45822eab7f649e89da1342b49a3858c1792051642719.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48096,7 +48213,18 @@
     "images": [
       "/products/A000000259494.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/1556d897a5694e96bb5832eb4cd131561794750936502.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/df2d2ba0ec714284ab2f3e53ee24d01f1794399775439.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/d12dfd90e643482794fa09af581985571793790212906.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/6840cf69733747379028019eba25456e1793735355230.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/0ecece1b76f64d9f8fecb509d3d9c5711793684599826.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/9097fa195838471f83b80f58ad01d0a01793620579170.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/86862cc9d83345348487d0df74bafeeb1793620016979.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/21/7c75e756054048e6ade477df992b74ed1792589776201.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/21/4a2f70362d2f42b588a02197444456f41792589673659.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/04/60e36b4e462e45889db73525d4f2c0331791045182531.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48157,7 +48285,19 @@
     "images": [
       "/products/A000000250100.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/d1d1bcbbca1e4ef8a5e74aef10fdb3f11794995994423.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/207433d6588644d0b4fddc2cd1718c651794872030638.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/d137677b266448ed81dad9601098d6711794642345027.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/d7a2f6bab82b4b66b6ff41f864ae32841794539619570.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/4ba4c98e819148f6bae9458adfa4db191794475583960.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/76226819b36e44bc83ceb0ac871bf8fe1794392237915.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/8f2d35a777524ef3a3879524c19b3b0c1794302465993.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/782d8076730047c682c4cf5c605cc62b1793858265323.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/638400c222a2455099b17ad9dd92b1301794053829050.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/6b2394b2294f4725a7fe75e56ace4ee71793620923694.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/02/5fc08cf3b81b437896bc598ea4cdc6b31790920486923.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48173,7 +48313,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Kem rửa mặt tạo bọt làm sạch sâu La Roche-Posay Effaclar Deep Cleansing Foaming Cream 125ml (dạng bọt kiềm nhẹ, dành cho da dầu mụn) - Bộ quà tặng kèm Effaclar Duo 3ml x2 + Effaclar Serum 3ml x2 từ thương hiệu 라로슈포제 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Kem rửa mặt tạo bọt làm sạch sâu La Roche-Posay Effaclar Deep Cleansing Foaming Cream 125ml (dạng bọt kiềm nhẹ, dành cho da dầu mụn) - Bộ quà tặng kèm Effaclar Duo 3ml x2 + Effaclar Serum 3ml x2 từ thương hiệu La Roche-Posay tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -48218,7 +48358,31 @@
     "images": [
       "/products/A000000258196.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/391fe1ca385b4c0fbcae57e2b17fadaa1795048443170.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/fe7702caa153423992b8728f56c121b21794996595119.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/57a56e05c3be436990c8824db75114e31794994733582.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/64df88734d9744d8b1a1f98a4b1670e01794982260993.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/36386c0f58ed4e06826fce3dd0fcb5fa1794930831668.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/e30cbdb45356423f85c054ecdd24c46d1794929220258.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/8776da815163467ab8f844c4e3b46b951794928171905.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/e141f4df99a74738899f807cbf2beb651794476294391.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/830b9eeb35d744e5bc673f532b1297011794476321050.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/b2a7153c1d2d4332a546b63ac337c7e51794476356821.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/1746f0bfafb84b1082f4d122a7e481a31794994736428.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/44eea4123f1d457e9c1856c1a030d0c71794994739342.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/df351965f7c448f2ba05f4135028d1e61793860921713.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/d79f1a8faf0546939d04fb5cbfaee6101794299584874.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/b83a2ee2fbd54b80a0d55634e6f49a1f1794299589780.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/5641abf1a44947eb83d5934b3c17784d1794299594555.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/954b54cbedfe46d4bc02556df84b85731793968781505.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/cd7c110cce34495db9fbd61290d32e5c1793969279293.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/91a31e84b7a447d8b78bab889aa679061793969238173.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/c9686b4302a9438f860357a6e496677c1793883900969.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/a804fadbf4624e70aa5f529f02bfddd31793883906781.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/efe7376fb22e4be8a9600b01b6dfb5d41793883913514.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/19/a88a3a3c9f754dd7bb43d9372347c3e41792414102141.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48279,7 +48443,28 @@
     "images": [
       "/products/A000000217767.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/604aa1c1de434ead9c021762d1278beb1795017333726.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/c098061eb5eb4b7585bc0a4dd08d469a1795006797384.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/98ba557b360c40e2858b4dd6dd4abf631795006736014.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/3fa23ef5636647cb945cf4197d5827e01794983754747.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/03f41475b8b44982a2e0a2a7013a2a0d1794972340301.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/57c355949b5d47179a192f0f1a3c5ea61794889253500.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/978834a6393b4ae5888d624cb4f719451794878382865.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/1337be275d634202b59625e342f1d6a71794380818121.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/0defc389cc75488d934f8d19a61bf3a71794380822096.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/2f9c6782b12b404b84ac50ecaeed6fd01794380826999.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/28/4c1d02fca0c74b2fb31aed5e0738f8961793113316124.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/28/b1fa7a1058574a9d8e61878362c991a71793113321850.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/28/623702a3ccfc43ef9ac3ca2485f01eb31793113327897.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/24/4a628306be0e4965bee2c14ccf9f25c41792835641898.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/24/a938eefa99d24850a63525d19dafb1e21792835648338.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/24/f3b67d51d6a34111936ccb8913fe8e471792835654308.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/28/4122e442a438404d80a37e672f51bed61793195364187.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/28/bacb111287eb4ebf8b46f9898d6fc76e1793195369595.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/28/070add02da044b8ca39e29e310eef7f41793195383548.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/c5f717d1ee6b4e2aa80a9b2e531598dc1794503938709.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48312,11 +48497,11 @@
     "id": "A000000166385",
     "goodsNo": "A000000166385",
     "firestoreId": "A000000166385",
-    "name": "[고불소] 큐라덴 큐라프록스 엔자이칼 치약 1450",
+    "name": "[Hàm Lượng Fluoride Cao] Kem Đánh Răng Curaden Curaprox Enzycal 1450",
     "name_vi": "[고불소] 큐라덴 큐라프록스 엔자이칼 치약 1450",
     "nameKr": "[고불소] 큐라덴 큐라프록스 엔자이칼 치약 1450",
     "name_kr": "[고불소] 큐라덴 큐라프록스 엔자이칼 치약 1450",
-    "brand": "큐라덴",
+    "brand": "Curaden",
     "brand_vi": "큐라덴",
     "brand_kr": "큐라덴",
     "category": "bodycare",
@@ -48340,23 +48525,36 @@
     "images": [
       "/products/A000000166385.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/0aa59c251ed345b69afbd6bcb3247f641794293997856.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/d83ff4d5fea54c84bcf997d31c684e051794285986406.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/b9c65329956e4c76b596acfa805773831794211987799.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/371d437a69fb4b869c8441702f0a98a11793983152473.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/b5017833c75b48e1a5012e354d087ddd1793852032486.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/64b73523ec174a5db9be143bcb0f13041793611246733.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/21f7feea7a9c47bd802455d0f5e91a481793596218239.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/641fe54216404a59afb821947999df7b1793242146066.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/4388e348703348359a9e4b68ef5718391793235758326.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/09/eaaca54c43694053bc89e90bc4e5d6f81791527732540.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/29/0d15d13eee3847388d5863f26c44e8cb1790689473631.png"
+    ],
     "options": [
       {
         "id": "1",
-        "name": "[고불소] 큐라덴 큐라프록스 엔자이칼 치약 1450",
-        "name_vi": "[고불소] 큐라덴 큐라프록스 엔자이칼 치약 1450",
+        "name": "[Hàm Lượng Fluoride Cao] Kem Đánh Răng Curaden Curaprox Enzycal 1450",
+        "name_vi": "[Hàm Lượng Fluoride Cao] Kem Đánh Răng Curaden Curaprox Enzycal 1450",
         "name_kr": "[고불소] 큐라덴 큐라프록스 엔자이칼 치약 1450",
         "price_krw": 12000,
         "price_vnd": 281000,
         "isSoldOut": false,
         "is_sold_out": false,
-        "imageUrl": "/products/A000000166385.jpg"
+        "imageUrl": "/products/A000000166385.jpg",
+        "title": "[Hàm Lượng Fluoride Cao] Kem Đánh Răng Curaden Curaprox Enzycal 1450"
       }
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm [고불소] 큐라덴 큐라프록스 엔자이칼 치약 1450 từ thương hiệu 큐라덴 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm [고불소] Curaden 큐라프록스 엔자이칼 치약 1450 từ thương hiệu Curaden tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -48367,7 +48565,8 @@
     "isHighEnd": false,
     "createdAt": "2026-11-13T18:38:21.000Z",
     "updatedAt": "2026-11-13T18:38:21.000Z",
-    "lastAuditedAt": "2026-11-18T09:00:33.723Z"
+    "lastAuditedAt": "2026-11-18T09:00:33.723Z",
+    "title": "[Hàm Lượng Fluoride Cao] Kem Đánh Răng Curaden Curaprox Enzycal 1450"
   },
   {
     "id": "A000001002284",
@@ -48401,7 +48600,24 @@
     "images": [
       "/products/A000001002284.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/7122912672ae47308335f819b962bbbd1795021113775.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/5079c4391acc41e5a2285dfc5e361beb1795006251787.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/065be70e5012423a8e2385b64db8fc611794996557646.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/77e4a286ec5a4f7a991072f0b26c12aa1794976752445.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/71e61bffb8b74b15ac14583e9e5238ec1794963051096.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/9c36f7f5a567461bbd2211631e7b37de1794933336522.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/75e308ec6c3145bc8c3464e057a5b2831794928572719.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/a52dc4e4171a45e490482b78c77387be1793776311497.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/578c1ed211e3421096408d5480ccacb71793801370635.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/ff08a12926ae44a682db1dbfb65136ed1793801372702.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/01/c484084761b141ccadf41f7df7ac50511793515946008.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/04f5c6850cbd4c99a79e82dfc43aba8e1793937072769.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/52e843757b6e47b4a8afeb844d3025521793937081930.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/84ae017765174dd8a55c5f941675113a1793937132407.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/71131c07979046b997acdc914ea59de51794551892477.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/aca9f26b1a9f4689903b346b688a84ee1794551895358.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48462,7 +48678,37 @@
     "images": [
       "/products/A000000257248.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/7e09d90bcfac43ff8b43f6b7328d6e6f1795068630863.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2ab61b64ab6d41f88bf14286180602cf1795066130788.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b62ec984fc014edc9f2b42db960a88ea1795054580827.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/f11dfe0a75c44cc1b14be83b5b426b921795053768560.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/a6a65bf6ea5241b8b58042688e21b4091795019431158.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/201c1f4a42904db9917fbba553cc4eb41795005410653.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/827931955ed34a359d1055ef6a4a964d1795003913220.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/f1ddf25b5fca43ada7c88bfcdc3d2e381794879152724.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/74ef43c1269a418eb5e6624e563919c71794879156519.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/81e182cef98d430ea5a5451591d226551794879159964.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/325ee57c6046464fbfa67a50170db2071794201485111.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/85b435ac0545417d8fa1282a6e9650721794201507570.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/b6d0c95919f1475fa18bd54f885d714d1794201510746.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/df035a30ef5f4f938852cca4d8712b971794716015168.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/a70e1dc5e156415c8a952fc8cb5b8e871794715955974.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/93e0c2d490d145d7bb97a7a154610ec91794729217871.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/0742e9607d0945cc9b2aab30ca83f63c1794710825438.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/5323cffd1b8e4b4481fbb48e13f8d5a01794710828846.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/4fe368989659417fa5b05492dc142a661794710832252.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/cb79a4d3fabf488381db4c44b9c1d6571794493912938.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/3951c429b1694d129a760d2a9e3172d11794493915430.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/80cea8aa007543a5872798577c771d4d1794493917817.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/6f0d35302363401b846bb4b244d30f2d1794489029396.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/60e1b76ad5f14bbaa771ffbaaeeecd961794401422749.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/15db4b97a89449be953c7e2bfa900f721794401429839.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/7d5e87f6d9984481a7cb1ac375aa50c81794401437169.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/1c69c10d042e4e78b5fd6eb7ee3ae1a71794321888373.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/896deec73c5b4f4d94beebd392774f941794321891728.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/42a6b626711b463a95d2051517a125651794321896250.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48523,7 +48769,30 @@
     "images": [
       "/products/A000000204949.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/fd5edf943acd4ef095073d3e52766b541794833090595.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/31b1939d16d74fa3b58d582a914c89171794809758247.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/556388d3bd26415caf8b88e14509fad01794737151377.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/b521770e46ee47149826697222fb02011794729762251.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/0b1f67c438df42f4b8f5898567cfa32a1794650559285.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/b4952c38364a424d8f1ca21cda23e6581794619722703.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/1e156d58409c4d918dca9d934eb82bf41794615414296.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/d0fcfe9b51c343159e5dac2fdb991a641793975169166.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/f5e2adf7f0a24c9f927f0da130b244001793975182803.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/c18721b7e7a64402b114447d3f9d18c11793975195654.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/b2bcebca6a864888985628c2f0e947e41793428886992.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/8db6523668964c1abd902636a63460701793428889894.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/53bf973b055547629c8e2bdb8319152c1793428914528.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/8a6e75eea2644112b6436b737f2e96df1793422680756.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/0a23d8fc07e141998f28ab45b9ec03361793422688201.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/f562760d998746d3ac4c360cb8ace5b91793422696389.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/519ae86925c648a0b641d4c30fe8b1181790999743127.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/c664fd7ef16140818c43511ae17799511790999748493.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/03/b2fc56f6a1494a98805bd6452d0dc71d1790999753505.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/80f123c7f781490b9a51009c6d4aebdf1793804804990.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/e5b5b00388b24b86a018d45f3fb7502b1794483002132.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/646366b7c7d74451a83b40a4540ac0081794809762310.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48584,7 +48853,32 @@
     "images": [
       "/products/A000000216520.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/333426c77ae7457b862ec1bf60a588c91795068328648.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/ef554e63cca242058aedc60da43702221795068306243.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d0590967b4e34889a1e01795aa9ecfcc1795068281072.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/da8c1c02dd3a4b0cb00279ecec1481ff1795067232657.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/a8725f99d92242e9a23df9d4073337581794993211002.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2ae997bb36714e02b657c619aa1839b81794918935315.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/0b91f70880c74a0d997ba47c8a26b5011794901705930.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/be85ebe3d6c54a03b78b7f03db74b3541793846649883.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/68199f9b869c4ee3a4d1c96955179a0c1793846655561.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/247cb200f7f74ee79cc9589faaec76c61793846664925.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/5a5e6b494d1b45b1814a4418e40feb1e1794389307494.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/9a50f0805b6b451983d7617f59c36cbe1794389314898.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/1bdf9b335f12455b8f2e7f8c3a577fee1794389323455.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/e3f5fd86ddf84dd199616cb0d050ac841794389330862.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/060cdd01d00a4775901f0847c9bff9a51794389353359.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/e44a18a12e1d4c0fa3597bfce1d7c8101793280658865.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/57bf371239b94ed5888f38e3c0dcff7c1793280676448.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/ee3e2d9b9e8f4b009a9b461fe9e120581793280688501.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/b75cfc309d314372acc07abb6592f3d31793262048225.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/01/080438df9efd45b08a5d64dbda4ff39a1790844304164.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/01/47e9c346f24840078a35546f79b0d8fb1790844308837.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/01/417621a84cd14b7c9d38d3ad1fa57e981790844313367.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/e072d7b35c12405dba354eb6d80db9671794457572073.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/efedbb31683b4226bc65674ea328dfa41793948683179.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48645,7 +48939,22 @@
     "images": [
       "/products/A000000248426.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/3d66432713484674b2b5ecffbdcfb8d91794893930531.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/5f3652c7eaf9413ba57db853549428991794841181369.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/5243b8dd705d4aaa8fe20f95ad49afef1794569358905.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/b4559c63faaf43e7a30d7a338ca2c8691794404818391.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/866b8d6c9b58494fb554dc8920d7268c1794220362905.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/c39264471d094a309eb44bbb080cc05e1794140490857.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/fa02157eeb9a404588a916bbee61f0381794028041061.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/935afa02c26b449c8b6db8b211d1b7e11793455353650.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/1e86b157ae1e40cdbd4f4894e4e7400e1793455356900.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/42a7211d348e42a193fe73d2defe11841793455360789.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/baa5fa05383a46b3acbda42cb5707aa21793455365205.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/fd2dd44f3b074183aa6998e9f47c384b1793635210133.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/21/7a9883cf778e4ebcb0bf59c28e5e356a1789988502993.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/ec6e84ca54f34a4a876beab75bbc40ef1793972303791.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48661,7 +48970,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Kem dưỡng ẩm làm dịu da Anua Heartleaf 77% Hyaluronic Acid 200ml từ thương hiệu 아누아 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Kem dưỡng ẩm làm dịu da Anua Heartleaf 77% Hyaluronic Acid 200ml từ thương hiệu Anua tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -48722,7 +49031,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Kem chống nắng dưỡng ẩm Torriden Dive-In Moisture 60ml (combo 1+1) từ thương hiệu 토리든 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Kem chống nắng dưỡng ẩm Torriden Dive-In Moisture 60ml (combo 1+1) từ thương hiệu Torriden tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -48767,7 +49076,28 @@
     "images": [
       "/products/A000000250140.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b04765f64eeb4ae7995c8c23e5e164571795064727928.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/9b3507da93d44c8dbf45ece2a8117b7a1795058173646.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/17cc401c10294ce4843fa35613ae1ea31794823068424.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/2ff4cc04d5844d04a8b0ecdffb7507f91794561435844.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/880a0185c042459490a8a1678de797871794494777363.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/a8086fe005684de3a5b345047d4c76581794312295535.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/b4e9fce7617b484993aa71b114da76231794279877595.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/30/99b9b2ce08144be5b32814881e3b87ef1793314203169.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/d60dcae36fde40088958d23eca563b7e1793890061104.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/756f40788607417ca122a1b4f1ec7c881794155886945.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/05/b7176cbc8dbe424980639ddddce2e79f1791191581859.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/8be6df4198e8407fab967b973515e18f1793935351696.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/67983b3a393c4ac896eab40c7aadedd91793935368284.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/df0c72b61961433e8350a497b091a1ef1793935376227.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/2a2341e059534f3aad01d0cbcdda0a781793935390387.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/1ff5ce097c274a098862c02c61bcfb401793935395461.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/827ef11559804c5ea4b10ea4bcc8ee1a1793935405364.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/8b517712ce3f40758e374c900aa11f1c1793935411851.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/c9c1e587ecbb49e182e9425427ebcae11793935444135.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/463e9cf848ab4a9bbb7c525f522a63c01795064736857.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48828,7 +49158,22 @@
     "images": [
       "/products/A000000252919.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/e5135b6018934b9b9e96aa58925061f11794726463269.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/165bcf784701457bae06ddc4a4a9bf9e1794668618008.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/1fb94ae19fd840988f04634e1811a2781794663831260.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/ae6e0532a1c545a3af7b1b30bd84c5241794651655576.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/3b5f80f755f34a778550529b066f03251794479759013.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/b83b867cfb784bffacab7ddea56c02471794455648572.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/25d7f504fcd844649535f9f2fb430e761794455630169.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/20/88c6682cb3454c6cb899b226a646268a1789911418750.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/20/fc53b34191ca43f0b8786415724d37a81789911421363.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/20/916e256904634c478236e4af7b0b8d611789911423330.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/76983ac990ea4096ba94a8092a70ebe01794066612828.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/23/2cf17c4f7e844ecba892ec4df1b3ac121792688585757.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/faa3c32e2748438d86ec6510c80e76921794192475431.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/30/d5fbbf405b804ff39e43cd2b8b7d26921793367532980.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48844,7 +49189,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Kem nền La Roche-Posay Uvidea Anthelios Tone-Up Rosy Glow 30ml (tặng kèm serum Mela B3 3ml x2) từ thương hiệu 라로슈포제 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Kem nền La Roche-Posay Uvidea Anthelios Tone-Up Rosy Glow 30ml (tặng kèm serum Mela B3 3ml x2) từ thương hiệu La Roche-Posay tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -48889,7 +49234,23 @@
     "images": [
       "/products/A000000211052.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/16eab5b905174577828cd7a341d144811794878899833.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/58dd02e345f244ec83ce56419510bf611794874546371.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/31c1b66e1f434c719a098b50049063b71794866768360.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/4d96b07a30514f97949f96679c3464311794736310013.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/359a7a800f724300b31099494c2561e41794735626715.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/3a97ffbb6ede44239668b811672015c71794713984046.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/aca5d410a39b4e0da5758f9da49cf9111794455641323.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/ca8e1db23ced4007b198a49c72db66421794874550339.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/22/81f5ef0e09594e849bdbb8a33b735df11790083976083.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/22/492d3bd60f2940c594da3fa482ee5d061790083979742.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/351b2e24e52649c198810ffcc7c57ec91794275818698.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/29/de18c60589d04b78ab500b2023ebebc11793247423112.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/26/1c48014ae6d24e629fb46b4508b5c28c1793014315146.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/a0ce835b03274126baaf9c8e3c08bd451794014393405.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/778c1a7418e6416f9ecbc3425c7b54a51794014397202.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -48905,7 +49266,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Serum Anua 70% chiết xuất đào và Niacinamide 30ml (combo 2 chai) từ thương hiệu 아누아 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Serum Anua 70% chiết xuất đào và Niacinamide 30ml (combo 2 chai) từ thương hiệu Anua tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -48950,7 +49311,26 @@
     "images": [
       "/products/A000001002285.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/22e27e125f014419987d68083eae29a21795049906802.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/39afa20792044f39a41163e75001a0061795015676403.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/a70b1836919940a097caf99f8ca8b9f41795011125492.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/7683a5ad3c424aab8bc355a6b5522d631794966807649.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/9c1ac7a14ce0462ca5bbf10615e4e22e1794959708025.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/424eb9e165e342158c489396d8d87a891794929685672.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/272b861ef9f54ec5b7b062da458c0ec51794929324499.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/559b0ab85d4f4e5d821b0d8a3e34b02d1794805878137.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/9ef1741b79b54448ae1b72443e6053fd1794828439292.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/fbece5d8f4a942ff84316b51571d7e2a1794786969793.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/93aace0e5fa04781ab69108ebce3c8ad1794786978865.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/ce1627b7013342228e68db2d8788a4811794652327239.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/7be384783e6f4f2eae6a7e1962ee7ae41794628936985.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/ea13327d34324fbf8d9c7f873ed9b19a1794442023274.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/01/c1204cd99fc54b4cbe1601cccb880a731793538962886.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/f73cf0bde2c847ba9e1a649178fb315f1794899871603.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/b62baa5c36534d19bf32d84ef13402b01794809312781.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/3f6d7b8f0ebb4a4b9c0f5464695295a41794809316309.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49011,7 +49391,30 @@
     "images": [
       "/products/A000000259560.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/2ed3997b27ce4659a22fc6a0853e3eb91795001143599.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/105bece9e00e4599a2cbb5354ed073c81794985640159.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/a7df99919aef454fafaa797ee531aec31794953396556.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/fa9438d6a4a446babfdead9c320bb7291794915850666.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/cd42b921fd194263ba7acec49245bd2e1794835203919.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/73f91c4339a2433696440af6a31141011794827812867.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/7b3b9f4d643e42c79336503b9add8dd51794824604453.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/21/48689444556c44faa47d4439c83ab0a11792577088778.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/d1b0ffa2ee0d4a4592cf733ec9134f381793777629412.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/08/4a2d55150ee84b2da683e52363c311371791451164080.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/08/d7d77660ab424212bffbf854d81282611791451176686.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/08/4e9af71f63834f67aaeb0b3cc7a0be161791451184327.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/21/6642579faa57421692ca8cb4df98b0021792584324584.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/258aa0f18c8547d3a3b03f11afd969361792668548022.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/a2adb90184384feea7e7f600a96737861793601875226.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/25752b1958104b94849b39de8922873c1794117789478.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/57488990d76747f58d618582e45231441794117801185.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/08/d2687d73c44c4bfeb594cf4cabf164f71794117805783.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/2f76852fe53b4f0e94b3d2110ea600d51793953282110.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/1939043351244455a93980a8047805fb1793752991491.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/40e68fb1e182434da314f77b9f8336691793752995797.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/04/5f88d9dda6f843a18cb40a4cec1a0ccd1793753000176.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49072,7 +49475,22 @@
     "images": [
       "/products/A000000187421.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/54a024b37e214f04822fc2330ce72b7b1795019971111.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/c0c3d5917ccd46a3a9564ae0a86b67031794888005323.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/34fef82a161e463084c13f031fb117561794830149989.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/09/5f09bd418ca447cbb29bb0c6c5a23f461794191520908.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/7c3ce1d639f14302b2d9d8404251c57e1794055452148.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/d8c5b648d8874beaa83fc67861f2b7f31793692690968.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/01/cdbde8772317483e8b77061e7fac07ee1793528149150.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/21/700f310f44c846cfad99d37f8cd0279f1789964782933.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/21/b4d41186d6464ba98da6c3cd4b79e6741789964789104.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/21/f7cc980d58f4421ca8b7b1c37d0468d21789964796359.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/21/717c694919f940c4970e9ef5a9cfa5431792557042992.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/24/815f631a93084979a25ced9de429858f1790219860464.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/09/21/985ced8d8fbe42c6b98fff4c86e1285a1789921267056.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/05/23/0e804ad0fbd64b74ad131a01722d1c871779521793899.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49133,7 +49551,23 @@
     "images": [
       "/products/A000000119524.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/31d0dbc3e09d469e946b1a432702400a1795013111481.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/dd7855b995f5495d93aae363c94e1e1c1794995620605.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/561bcea19a7e46528b440b31ac3f9cb61794868023470.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/083f82d43bb14d599d8fdaf2e38d057d1794827136989.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/a65dd89ca37747e48615e09a32662aff1794729704609.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/5437ce1a52be43078c3b235b0654e87b1794668859239.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/111b94eaf6e24158b287488c35d92d601794624802346.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/ba28fde7f320451bac1287b0e92887ae1794489744231.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/de1803643ccf4c9895d3047e2f48c1801794051922638.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/31/55a44280384543d58fc06f3766674fab1793429798469.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/27/b3e33350254f4d98995f761e24c93c1b1793065580623.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/02/7ddb07af4179468f8af3d5a46fb27e5c1790867090654.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/02/ca6ecd52153e49c595663ee918cd0cad1790867095541.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/02/0c3eabe773cc464e97fba5980c1d2b2d1790867100367.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/a009123fdc6e422c84159fae9bd67bb81794054447087.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49194,7 +49628,37 @@
     "images": [
       "/products/A000000140618.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/bbb6fdc77b3b4730b1268bb4105336721795061906186.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/f9554d9fb87b491eac3c91a32c2243211795017372040.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/a054745588514a52a50210d21f4d51671794991313677.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/2fea1d7a068a4338bd02737f0feff2471794983495445.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/73e41cba06044ba292075dcf888fa2a81794978174149.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/0fae0ed46523443cb78e27abd4f738c91794917437980.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/ea31f963edc9432a94f8e3f5731b35e81794916561623.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/c8351dd75dd3476fac0baeace2d0608f1793873593819.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/8b2351cb331846d99e0561fbba86f97a1793873596392.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/ba452346accd40199450008384a9f0131793873599838.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/471122519d614414ac62ae7a5685e8861793847467876.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/13b466c32a924806b01a626b68d62d331793847471281.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/a9dcd0d258c649f1a7901d4a2acc4bd11793847474431.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/3aa05905279446318f2f6c7a11283b331794758283116.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/e67b82646f5d4929b609a2605faa56331794516864392.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/25/fc6925712353425e90147dbb2bac72141792936229137.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/25/dce2e6f9f3984502900a5ade1adec7a11792936239998.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/25/708f46b33292488c91a340596c9c4d261792936250738.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/f5738e26551b4cd695fee802dd395c881794402170958.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/35b4fed23fd94c768abf325db1452d641794402175037.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/25/67388064ee39474580c54b7bbfb205cc1792935922232.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/25/29a84d2cbcb84458ba496033942082db1792935928734.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/25/51725b147c354bf185e87e41bcbdc89a1792935941871.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/25/5c136ec6fac242d19da1856fb259e3551792934220432.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/25/71eeb29902164126ad307041b80d24e11792934225534.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/25/3346284895ab4f38a16127b78a4403321792934230331.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/960929ccc80e4bd38d6c48ac4ab9a8ec1792679877214.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/d06c3125521141479f2e60a55bcf7ce11792679881412.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/9cb581f573d6449c8bd17d203e3ccff61792679885540.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49210,7 +49674,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Tinh chất dưỡng mi COSNORI Lash Serum 9g (Trong suốt/Đen) - Serum dưỡng mi số 1 từ thương hiệu 코스노리 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Tinh chất dưỡng mi COSNORI Lash Serum 9g (Trong suốt/Đen) - Serum dưỡng mi số 1 từ thương hiệu Cosnori tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -49255,7 +49719,20 @@
     "images": [
       "/products/A000000231328.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/8dc7ec26356746da8339801c3f18e1331795066539020.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/4f9741fbf168447c91adcb89fbb878631794920037711.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7f6f5b67fae14fe9a1fb89c335a6367f1794876597996.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/11fe23b3829841508f8fc836be3582711794757905439.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/e718629a3ab4456b830048615746929a1794746796642.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/e980b25c905a461f851ec404eb91d27d1794737703101.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/ec3a89fd58004a87b7a7ab35140694c21794728894494.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/3d52a7a730894d6497565c40366a53981794050612788.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/2bcf4a1d81c6476ba9c738b4f371e07b1794050625737.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/9b2a432fdd294ad9b4dbc06bb2a808291794737714786.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/ca0da86d79b24d4aa7dfc00e1a7204821793606817369.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/2143c34f80a34adfa287065acf080f451793977536814.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49316,7 +49793,30 @@
     "images": [
       "/products/A000000219331.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/330287e587ef44eb9759097290a930e41795042718267.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/92f1e6b3796645d39620008da97995d01795042423699.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2bb6cdf7471743fdb8a2f0bcaea0b4161795042326733.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/06292c9a1d1b495d92c3e987d22045be1795010910816.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/9dada71bff4740d38cae67767d555af31795000185571.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/bfea0f890a864400859149ea0dd7fe981794998376566.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/6470329b336a4051a7fc0b6f6826ff521794993080962.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/855297eebe0547aaa484d158d388eee51794371972174.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/1279355c902244749475bdf722c300cd1794372582434.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/2a282d93b8dd4df5a1608a1c08e8cbb61794372611736.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/2fb08c06ff8e4a5fae3cb37a0c7ac0671794372626840.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/9fb47fc9f99145939aab7524a5ec71371794792804653.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/afd8a7fbecac45a7bdf07124f888cb731794792807665.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/b7ba109f99364f62a9dc881f200cc3031794792810735.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/bb08d500ba914b7ab05a787dfa283ba21793679797878.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/9a9daf04018e4d64b832b50c20bf6b601793679853912.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/03/d03e0624e87a40e582fd870ca90303701793679860818.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/28/e48f0ff2e0414821a579898d4536b9e81793114447999.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/28/573da55a6f524332a9820ebb09210fcb1793114454094.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/28/b290d9277f1a484a9e01b52105c2f56a1793114461673.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/93cff5373ddf41a29b249c69a9e198cd1794682093822.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/a3ed2590065c4e3bb454dfd951be03681794682290240.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49377,7 +49877,15 @@
     "images": [
       "/products/A000000140183.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/5ca738ea50824a6eb0d7fe77761f767c1795060159628.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/60dde37b56c94c82ad13898decbfdbe71795060111397.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/9303470f6c274ef5a1dc8ea41132364e1794985798784.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/2c37c332eef74c70a980116070a28dba1794976072371.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/475c7f0919ad45b7b27491af0ba38fa61794974240139.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/a1ce526268c2432096d43a35f00571fb1794933934506.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/5f30c33884f447b9934b2d3181800da81794923261251.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49858,7 +50366,15 @@
     "images": [
       "/products/A000001002591.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/28bed9393b824647b0fa0c88919d48361795050512511.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/a96b59d80cd14155ac7197eed845c3f91795050009526.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/084eddb064654152995e84e2df0ee94c1795007429132.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/ad5724fd0918435b908927bbdbb3e89c1795004305223.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/6dfb63a8bb9f4d70bb515dfb465e1c341795002045580.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/1a3e69c025504d5da08f9456fabacc361794992642047.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/a0ce11a02cbe48649964203cb988facc1794986181642.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49919,7 +50435,17 @@
     "images": [
       "/products/A000000219700.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d66d18c0ab8741e7812c0f6244209a401795052867481.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/31081f8a0f744408bc8a73ab8be0c4991795046392312.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/3b6d73c6ef444ec68fae900a35f983a11795042233247.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/c32f35d8c35f46e696d96c0b653a76c11795015921659.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/fadb3e133db2492ab0bc4889708f681c1795000618477.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/630eb0d0d6374d16aabc5be32d4d5e7d1794990407231.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/3fd684b1f5cf4cf9a3472cd9035f8be61794974450493.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/0939d50797874c1ab1712ad7831720461795052919386.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b9c8e5e2b5e243dc8d8e15af7757e2741795052911745.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -49980,7 +50506,15 @@
     "images": [
       "/products/A000000237596.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/b39d73dd4e154d65b480c928043549e41795009458239.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/669c50ae1c914b068b11cefb91c723111795007503981.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/e748842fa1c341e4bb7bdd87968537ad1794967257642.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/d642040a581e4062bc811065c3e63a871794884543044.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/47cecc1c4f3f4d989d25ad96dd11ac471794839218590.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/b1a57d31fcb543e68d1c7d73542fe51d1794786401798.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/2bdce113d8f344edbd3d969271964b481794759816082.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50041,7 +50575,17 @@
     "images": [
       "/products/A000000189370.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/7a6f3af4763043f596c763ba2cbffcd91795070640604.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/885dfeab184948a799da1ef290c692ac1795057509912.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/7e9c94d908984640bef1d424e57e6b171795023136734.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/f266a7f511fb4d24842f7750d77da4911795014136087.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/69e2c83d8f374fd6b378e1752ca80fcd1795013834487.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/b37e4d18a57a43aa849f57bec5f29f381795010580000.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/463ca45740834baaa17ce08c70396cde1795009721163.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2c6c746ec4b44122a93171ba21334eaf1795070675100.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/14f452ec5b0849b48cccf7f072d059c91795070669699.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50102,7 +50646,17 @@
     "images": [
       "/products/A000000230502.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/c989da1faa194a6dacb38be8670598241795020650147.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/21c1365949bd43d2ac41355af745dede1795020528792.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/59cfc6ea87b64bef8c9031fcf25af0401794985711080.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/2ae2bcff9d5f48f384d6c636ef1df9801794817061419.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/c5e027bf6e424a88939070fe0156841f1794482275007.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/a722a9e173ad4e1cb79755d24ef882b51794044257814.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/96ec5c912ffd4304b2daa2d996cacf4d1793594372053.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d20be706ed9344efb672802ed769f6cc1795020660489.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/0520958fe3714821a2bebe31559cda311795020655901.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50163,7 +50717,15 @@
     "images": [
       "/products/A000000238525.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/844a998e55a84fbebf4308a191087a441795053675292.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/85f47931d154416fa0d8528e2add63cf1795044443759.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/dd3d85a86c9d47da835a1509a0e5f79c1794965084525.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/281a65debfe046f5b1d6c7707020bcb11794840131233.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/373f86cb59d443878f77a6343425713c1794745926294.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/b6aef9b5cbfa498b87fb8c52656687b51794743072283.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/eed9c62d62f8446aad7d688bc9d385101794732712105.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50224,7 +50786,15 @@
     "images": [
       "/products/A000000267258.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/24659f105d6342bab5c3de076170555a1795069487041.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b457590773834e13965cd2b5679f31421795066202724.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/ce27bfed0d3f4834a5575c2a31566f641795017252777.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/197263b71ef44ef4bc76564286f329121794921651821.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/9ff3a7094f7b440eaa22b9ee5f41f43b1794921094391.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/bfcb65d0a3e14eb08710adb7f26381ed1794910239805.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7d4c6601597443ee814d7373c9bf7d891794890063016.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50285,7 +50855,15 @@
     "images": [
       "/products/A000000264351.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/7180ccac02334fbabb65cd2b16a53aab1794982586812.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/5d730602fefb44adb49674b3e98cb16e1794786420841.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/e348b91310964520ba8b20703b522fc71794731250618.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/a693588f064b402c97112e3a6f4f92b81794731129700.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/20df66eb6bbe437fb52c1c5eab15f2941794730887015.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/167f825babca479c9ead822e52e577791794713618121.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/90fd3e9059a14a82a541d067b3e637e81794637079067.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50346,7 +50924,15 @@
     "images": [
       "/products/A000000148268.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/20a4c35aa7924cedbfccdb9de33e33831794992769776.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/c6cd50c1dbef4b5997619b41e134eeea1794963990317.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/db0827d108ab4833b58186cb3efec01a1794760195296.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/344a6e3de34042669a8aaf8821b66a991794700177591.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/4e21dbd88ca947d58aa0ee441ee7562a1794700128836.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/a3ca91697af648c79178fe3394fee2601794652927096.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/3c47300247e54bd595ea6be3a3bc46f31794652913414.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50407,7 +50993,15 @@
     "images": [
       "/products/A000000226517.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/d22de196802e45e39282ba66a64f27dc1795010122348.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/ae21fabf2f78456cb61b6ad6bf76bfe31795005982406.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/bd13c6c3b73e4b99996ce3febdcbf8201794997798643.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/cbbd85959dff4b6f8264a3025527a0641794978646324.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/1493da4af4b34e3c8153d40009c736301794925270921.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/de993b75b0fe4408aefa31b0034d681b1794877632992.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/db10d87cd9d447a2a5b341c49f49cfd81794877578752.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50423,7 +51017,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm COSNORI Easy Tone/Mood Changer - Đổi Tông Da/Đổi Mood Tiện Lợi (5 lần dùng/1 lần dùng) từ thương hiệu 코스노리 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm COSNORI Easy Tone/Mood Changer - Đổi Tông Da/Đổi Mood Tiện Lợi (5 lần dùng/1 lần dùng) từ thương hiệu Cosnori tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -50468,7 +51062,15 @@
     "images": [
       "/products/B000000230481.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b57b90612d6942389575ca02e8dc6ecb1795055505155.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/aeeff2c272c34c9fb9a9458970934dad1794714021588.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/c68ad7bf1cb04fda93678558b2f9fbf61794656622558.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/ae593d4c68bf4aed83a3746ad2f9da1c1794653601144.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/0ca116d4b9984ed0a416bc93bf7067551794559722761.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/8c55d7cdd55544b9b211094cf54a03091794470753221.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/71d1e438fede4e1ea78230484ea3b6341794450601183.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50529,7 +51131,15 @@
     "images": [
       "/products/A000000248026.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/8c3882b11a18475caf7c225aa0b16b181795007608495.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/95eac5d73d2f4981bb2366459e1475e71794919946711.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/0ff2be05079049049b68a724038a19fd1794826666620.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/4b239f9be51743bea95f104b11b63b3e1794826650563.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/d11f86e37d8c49b1ae723aeac143b1b11794826642185.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/c3cff5417295497593ce6a3257b499ec1794793739497.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/dfd3fe157f0f4cb2b134c6d4d9e7e4431794789711230.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -50590,7 +51200,15 @@
     "images": [
       "/products/A000000182700.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b68ee7d5cd0a4f92a32646b938f8564b1795062506548.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/d1412a7773ef439eb825cf926a809b941795011512369.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/0705b929750e4c73ad970c75697c56d21795004105264.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/5489a4472c094b2aa4da9769d1edd2111795001461023.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/e082666638974761970c6df249b8fb741794999280434.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/beb02ee2471044be9f1af3f3fe533f151794998394137.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/e2151b7bca0646f482dfae24cf5389f31794997335593.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -52209,7 +52827,17 @@
     "images": [
       "/products/A000001005303.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b48e3427e58d4805a135c93b2b2708d51795066675509.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2e67cfadb5154a749005ba29cf08c5341795066155634.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/29e6098c451b4ddd81436ef747e5a5641795052729712.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/758bb3a6534a452799cb0bb4d9ded48a1795051706523.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/fbae52c127fa427d9b8a28c684c079b31795051696632.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d25ca8d12b0c46d380c27d6366d3032a1795044567001.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/da931e9cd3c046c4a7a9ca419d32239f1795025287284.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/c2daa7eadfa54fef84ac41b69306e2c31795066692428.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/14d78774a9934c5c81085b4ae3bd3aef1795066687309.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -52453,7 +53081,16 @@
     "images": [
       "/products/A000000249717.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/149cad7614c746c18f2480887f18fa2a1795054590674.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/59e44b50e8184e3d8ca7ed542c22910e1795048495753.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/cb1185587e0d4387a802b00fbc188dd11795043277461.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/05cd6d3d3868426e88d48c5f994e90e21795037883614.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/970cee87c9ed495d9bbcacde2f99eb831795017304820.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/9d97e1d5ee1641f196a25b5e909b20381795006971325.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/138554cb518445e98948e0457749f26d1794998449574.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/3efdf7cb232f4ae7bece78bd0bdafa821795054593996.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -52589,7 +53226,17 @@
     "images": [
       "/products/A000000209854.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/771a78a7bff445458f987ff5011a63d21795056749069.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/081a669fbe0545b58fd0b20789f6b18e1795055482262.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/223aba4545c94bafb2f78b6f1b0b18721795051231441.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/63c6dc1b947c4c25afd9b8f8cbbbce0d1795042283784.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/e13012a64c1045639bd34356214af3061795014785237.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/a3f35fe7cae148d382513660d860f91c1795013416326.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/3164cdb6879446d1bb137d206966d13e1795013227810.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b654f81aed1a4e2aaec0e45b6dacb7a21795056807055.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/00c777424aca4d85abf3be571e7868081795056796814.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -52838,7 +53485,17 @@
     "images": [
       "/products/A000000260338.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/ad7160d46de94c5cb645b0854f58961e1795057564476.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/16ca4eee8c95476a95743606b5c52b631795057514949.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/db432874a8fd4a669b330e6b30f850781795050727226.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/44df55d61e1440feb2d96a097d4d896f1795041441791.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/c091dcc252f24afe823d49c56be9041f1795039175226.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/efcbd70d094d44b5a6f53616986c4d401795021449062.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/3c4d8a4b061448d88db01f1ac28c1b7f1795014288944.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/fc15befb5ea94e14ab45bac5f37e65fb1795057570666.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/1300df82bfbd44b483ac18f7bd7279e41795057567629.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -52854,7 +53511,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Nước hoa hồng dạng kem dưỡng ẩm hàng ngày Favorite Daily Cream Toner 160ml từ thương hiệu 페이보릿 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Nước hoa hồng dạng kem dưỡng ẩm hàng ngày Favorite Daily Cream Toner 160ml từ thương hiệu Favorite tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -52899,7 +53556,16 @@
     "images": [
       "/products/A000000268077.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/e770416f2c2e4683abc634cd407fb3391795067988184.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d40b57ea638a439da937b3b9a6c5b76f1795062160835.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/ea67f8c81d8e45deb5ce355225bfe6431795055933796.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/f9b5006d8d0e4683b8e4dc12ae77f4411795054743335.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/5bf2278193874fa6b8b2cf263321d1251795053218712.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d97613a2522f4acfb73525b9d73e1d2c1795053567417.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/cec848aea5ac4c77a6e80d354f211cd61795049189766.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d76a1c605ba944f1b3acd021f9f9e5281795067991448.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -52982,7 +53648,17 @@
     "images": [
       "/products/A000000264984.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/25ac8f6e3abd4a369b60740b1c93b0691795068628492.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/863a66e55d0e423abc6f2ba75175915b1795060368690.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/e0fcc19d1c3f48e7b7a4a5063d9af4ae1795054475638.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/1ff441656419401dacbc3cb2e474a8a71795046651514.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/e519cd6d356d4a27afde0b17d95ac1b51795046262661.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b2dda528b10d4d96835a696d316a14c41795046020482.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/e46e429183664f19af869672069da0e91795038121593.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/1efc32b8596847e4a3f98d6579faca211795068662541.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2b27f8e2417c47b2937a851d344a12c11795068656341.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -53009,7 +53685,7 @@
     ],
     "optionsCount": 2,
     "hasOptions": true,
-    "description": "Sản phẩm Xịt Khóa Nền Cố Định Lớp Trang Điểm 24H Cosnori 24 On Makeup Fixer 120ml từ thương hiệu 코스노리 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Xịt Khóa Nền Cố Định Lớp Trang Điểm 24H Cosnori 24 On Makeup Fixer 120ml từ thương hiệu Cosnori tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -53054,7 +53730,16 @@
     "images": [
       "/products/A000000261269.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/a07cb6121f2746898875b94e44c6f8b91795067914397.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/f9cd3cc7df484fcf948120d2fe444e6c1795066737184.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/fbe2198ef44f4ad3b64e323420e2d0c81795063596299.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/5c5a0940308e497f8f607b5586dc4c2b1795055046224.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/0f82de4ffda44889824981d05020f4541795007292126.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/bee88f2efb8348c8a9560aed59a32b171795007170474.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/c155c4925b3a4d6ba930703bad1337201795004957486.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d51d5b69b7c74417923675995fe62be81795066738894.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -53115,7 +53800,17 @@
     "images": [
       "/products/A000000260337.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2060213780534b8b97bc8d07d9cd30321795067833899.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2e88894f2fd745f9bb3a7edb7a3deff81795054566611.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/eb48817689854c65be23560e435b39ba1795053076427.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/e0be7613b67a4561a3b16780bf11ec831795050685552.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/76b3bea8cb514ac9b2c4a04e029a3ee41795048717782.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/523f4b8ca2be4a1585c5d9ac69b5e3f81795045344723.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/3f0ea032c22b4e3aa62fe51107805ae21795036259566.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/102236dc1a90471b8f1cb7a6e78902871795067861699.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/12d3254a44e34e98a031e4fcfe55dbba1795067856762.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -53131,7 +53826,7 @@
     ],
     "optionsCount": 1,
     "hasOptions": true,
-    "description": "Sản phẩm Kem Dưỡng Làm Mịn Da Favorite 50ml từ thương hiệu 페이보릿 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Kem Dưỡng Làm Mịn Da Favorite 50ml từ thương hiệu Favorite tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -53380,7 +54075,17 @@
     "images": [
       "/products/A000000261603.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b1a5301c99b549848bb3aa6053e598101795070401972.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/4c43acca9888442993e4c0a2f938e5011795070477969.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/87931d49b70e4d10869839c1f9e3a4d31795070214693.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/34c132e0e8e74ee29a273575051e20641795069720786.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/1218bbdbf6f6412e939073513cb9db651795069389012.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/2219c8c85a1147cba1afbb4f3a9553261795068911228.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/dd58384568064e9192a9e53bff245a471795068570951.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/7068e97151b04accad0df5da993b05f81795070419601.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d288e28388794d3aaf05087bf004b7971795070406603.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -53540,7 +54245,15 @@
     "images": [
       "/products/A000000224911.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/5f0a901d4a044c2c85daebe1b46e8c601795064515995.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/4968767777544475a98e5897e3b083901794918470885.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/076be9af66ee4983aaf88173f7b006851794871847268.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/c4dc06b4a2234dae8990adfeb862250c1794725176947.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/241fb7dd3ce346c4b6bc9ac12afbaf4b1794663916313.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/03b7de97cd8a471fb826c232c4edcc751794663763446.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/0f375571d2b540d6bef2a8648fa9c1851794663577792.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -53623,7 +54336,15 @@
     "images": [
       "/products/A000000260515.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/78519d65e7df49049b0c702510c6cc421795067407867.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/678bf9cee7c046c98281a7243e69ab0c1794998660997.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/08762d728ddf47b8ae8d0490b060b1861794982348298.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/ce2645c13b384f249cb27ca5f84236a51794969722318.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/b4d0a290069942a88151383623a7b6c91794925588777.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/c404319afda748d6a89778f0f8537fcc1794923962688.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/21e2fdef93fa4a1297698a17121f910c1794920796523.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -53885,7 +54606,9 @@
     "images": [
       "/products/A000001003000.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/07/23e3305ad40647f9bc387f9efb0331dc1794049248677.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -54066,11 +54789,11 @@
     "id": "A000001003004",
     "goodsNo": "A000001003004",
     "firestoreId": "A000001003004",
-    "name": "테키라 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors",
+    "name": "Bút Kẻ Đa Năng 2 Trong 1 Kẻ Lông Mày & Đường Chân Tóc Tekila 2 Màu",
     "name_vi": "테키라 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors",
     "nameKr": "테키라 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors",
     "name_kr": "테키라 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors",
-    "brand": "테키라",
+    "brand": "Tequila",
     "brand_vi": "테키라",
     "brand_kr": "테키라",
     "category": "haircare",
@@ -54094,34 +54817,45 @@
     "images": [
       "/products/A000001003004.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d175641a112940648547e578239a8cc01795067907344.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/e68b15bf2f514f95ac77cfd7edd109a41795067634823.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/cd85f446445c4b889f0b6c8bcecf9c041795063643640.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/a1f8199259aa475687f854c1e4a2bcae1795059505074.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/292b9d02c75646f8a7a74de2e5a4b1871795045599442.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/39245b27250a49d2bfaf18be8d55f3b31795040867437.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/89b83c82501147fba6b58dd4b98f59e51795017504487.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/222d2dcf7f1d45ffbabbeeac8965303f1795067638987.png"
+    ],
     "options": [
       {
         "id": "1",
-        "name": "블랙",
-        "name_vi": "블랙",
+        "name": "Đen",
+        "name_vi": "Đen",
         "name_kr": "블랙",
         "price_krw": 20900,
         "price_vnd": 489000,
         "isSoldOut": false,
         "is_sold_out": false,
-        "imageUrl": "/products/A000001003004.jpg"
+        "imageUrl": "/products/A000001003004.jpg",
+        "title": "Đen"
       },
       {
         "id": "2",
-        "name": "다크브라운",
-        "name_vi": "다크브라운",
+        "name": "Nâu Đậm",
+        "name_vi": "Nâu Đậm",
         "name_kr": "다크브라운",
         "price_krw": 20900,
         "price_vnd": 489000,
         "isSoldOut": false,
         "is_sold_out": false,
-        "imageUrl": "/products/A000001003004.jpg"
+        "imageUrl": "/products/A000001003004.jpg",
+        "title": "Nâu Đậm"
       }
     ],
     "optionsCount": 2,
     "hasOptions": true,
-    "description": "Sản phẩm 테키라 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors từ thương hiệu 테키라 tại Olive Young Hàn Quốc.",
+    "description": "Sản phẩm Tequila 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors từ thương hiệu Tequila tại Olive Young Hàn Quốc.",
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
@@ -54132,7 +54866,8 @@
     "isHighEnd": false,
     "createdAt": "2026-11-17T01:33:33.815Z",
     "updatedAt": "2026-11-17T01:33:33.815Z",
-    "lastAuditedAt": "2026-11-18T09:00:35.671Z"
+    "lastAuditedAt": "2026-11-18T09:00:35.671Z",
+    "title": "Bút Kẻ Đa Năng 2 Trong 1 Kẻ Lông Mày & Đường Chân Tóc Tekila 2 Màu"
   },
   {
     "id": "A000000232213",
@@ -54166,7 +54901,15 @@
     "images": [
       "/products/A000000232213.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/385d8386bca84828be0ce44fdf6cb98c1794997302894.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/76d724228108494e8016a6cd88d3f6a31794916748372.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/5eae934dd52242939a53b1ad3d22fca41794911535684.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/2fa22f4e45644c37a5ccd6a80c7a8f121794877670269.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/0d98de8fcca841c39b5f39c76b54e7621794857472416.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/fa6080bfca6348cf81e2364cb9cbd7c61794844198452.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/4bbdbabae2324a2aa9d70efab3be938a1794795190571.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -54227,7 +54970,17 @@
     "images": [
       "/products/A000000241852.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/056332abaa974790944fe317c60beb131794376093148.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/4ac9010914fd4643acd97bad45be9e641794294238151.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/13b008200a0149c9b0a7a9966eba80b21793631325198.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/26/9e354fdaae984de2b7a6ecd7f4d8fe191793017309756.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/22/67b90544a1ef485ca15b281a90e1e1111792658247305.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/20/0cecf1759da74dd5a94e8ae43cb52f431792476793012.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/10/12/e8fb238ebc19428da8de43052ac50ee11791815520587.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/c382f79382c847519bf0098545a6a9411794376112314.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/11/d4a1145c40e8491bac4232e7d2fd4a0f1794376106876.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -54369,7 +55122,16 @@
     "images": [
       "/products/A000000264154.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/944ef739b37a4026b9f4b14c9a31aa061795010736870.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/4f842d8afd874dc3b132b9e9d7e0b4f91794998257898.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/7dcdfe285c1d4d6c98e7ca0f25a4fe791794993600517.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/6aeb9e0097ea4a98a68cd68a86c6ee471794992768565.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/3a27e8d64aab4a6ba8e8add06b5402d61794977644039.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/1bf7696b71a245d488e9287cc723718b1794976120793.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/5729b6887e094918a6a2606a1f3206fa1794972587447.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/5e710fab48f44030aefc0588293340d31794998271025.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -54430,7 +55192,15 @@
     "images": [
       "/products/A000000268919.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/4f47152a73ba40028f48d707a2226f981795068809693.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/8cad75f8fc6c4dceaeca936f8737b1551795005736866.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/2ecb0e9b01af40f891a8513ae34f01c41794998041311.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/62a463d5e51b4071b0a94ef7cc5db62a1794993575640.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/b35a2e7c061f401d8fd949c23d293c711794992836407.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/a6894e3350ce46799c503c26a78986d11794971820693.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/a94aed62a9144630b1c0a66babe4c2201794921806065.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -54491,7 +55261,15 @@
     "images": [
       "/products/A000001002174.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/1e1f202e9b484e4f8f58d7bbdd35a94f1795008322382.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/ee8e70701bf74cdb852b9c3c004b7f2a1795005035700.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/2b0b7114b8ca4705ac2bb3091c1a255c1794992752917.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/3fcb18d3689f4523a6fd033786b4edce1794983806228.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/79cc7637322a47fa9a3e8e17c86b1f371794981483875.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/b97d53d2d5e6499392adebf10141847e1794930076772.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/c73fd3151cab49a7b62b0aa82ebe1e361794929996802.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -54662,7 +55440,17 @@
     "images": [
       "/products/A000001001785.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/b0009481992845da8372a9c187a700861794985771218.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/4b7105a98c534fc4ae1e8050da611da01794897340126.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/14/697f60acb8484c44a6b74933554ddbe51794629140180.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/c4ee485a890c488f84d9b92b632347691794545203881.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/c208a0c7fe5c4436a53831eab04ff0c41794542416755.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/13/c56418f498774aa7bc315086db31f1ea1794534186270.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/12/4db502909dde4e4cb19fc8afd95de0d41794482292341.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/a6e2171e8bac4f00af03d787ae2aedcf1794985789040.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/4d51969e88234eeaa553851cb30788081794985779995.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -54756,7 +55544,15 @@
     "images": [
       "/products/A000000239676.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/6782e3732ba8451d9900d19bc26218411794979098688.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/21ea240c68da4c9da2c217c786dfbe151794978533425.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/ad5160e92ecb4f6cb9fb51b39900b5f51794977307372.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/4cc6146fcd544575960ea20e2537557d1794920718103.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/7fe56ba4907e4a888da99642ab714c1f1794906094250.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/d3df91af2ace4961911cc2b3da61ff2d1794829255263.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/16/77605ae9b46c48ffb5a0eb208c45c4ff1794807342035.png"
+    ],
     "options": [
       {
         "id": "1",
@@ -54817,7 +55613,16 @@
     "images": [
       "/products/A000000262740.jpg"
     ],
-    "photoReviews": [],
+    "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/20e2ce6406a14479bcfdb226abbdf2d01795067162867.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/6e49330219b742c28a3f3a817d9672e81795042091432.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/827bfd24634e4ed88208d36e700b80b01795011248611.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/3ec7e6533ada4eb399013aab93e81ce91795010875426.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/8551ff2d85c44e199531c33168e262041794999023785.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/efea6edb0dea46339f74090ddd4b46481794970269487.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/610da74dadfd44de9a43244c25fb53e31794967066677.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/08c23547e02b4c588722b1122f31a3b11795042098470.png"
+    ],
     "options": [
       {
         "id": "1",
