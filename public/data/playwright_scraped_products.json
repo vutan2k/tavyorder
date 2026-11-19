@@ -22379,7 +22379,7 @@
     "appliedKrwRate": 19.5,
     "rank": null,
     "isDiscontinued": false,
-    "salePrice": 41900,
+    "salePrice": 42100,
     "hasOptions": false,
     "nameKr": "[설윤 PICK/11월 올영픽] 바이오더마 하이드라비오 에센스 로션 200ml 2입 기획 (+미스트펌프 증정)",
     "createdAt": "2026-11-02T13:23:42Z",
@@ -22407,13 +22407,13 @@
       "/products/A000000255227.jpg"
     ],
     "appliedServiceFeePercent": 30,
-    "priceVnd": 980000,
+    "priceVnd": 985000,
     "name_vi": "Lotion dưỡng Bioderma Hydrabio Essence Lotion 200ml Set 2 chai (tặng vòi xịt mist)",
     "name_kr": "[설윤 PICK/11월 올영픽] 바이오더마 하이드라비오 에센스 로션 200ml 2입 기획 (+미스트펌프 증정)",
     "brand_vi": "Bioderma",
     "brand_kr": "바이오더마",
     "category_vi": "Chăm sóc da",
-    "foreignPrice": 41900,
+    "foreignPrice": 42100,
     "thumbnailUrl": "/products/A000000255227.jpg",
     "isPublished": true,
     "lastAuditedAt": "2026-11-18T09:00:26.060Z",
@@ -22441,7 +22441,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/10/0308f131e051488391fcfdf3419902371794296788274.png"
     ],
     "is_sold_out": false,
-    "price": 41900,
+    "price": 42100,
     "originalPriceWon": 59000
   },
   {
@@ -22954,13 +22954,13 @@
     "goodsNo": "A000000255752",
     "originalPriceVnd": 889000,
     "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/4cd5a35a7730451f968cf7a9241203131795088540651.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/1e54e9f5d0e34160b27efeda70eef6471795067791791.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/b8c6c449c90b4c99bcc0d647d126706b1795065281731.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/d92b461bdbeb4d659a8b69180c4fbfa61795050260831.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/84b01accb0944c36b5ad6417aae289bc1795044230928.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/e4d7b38b48994bf4b445ea99368b288e1795009874700.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/20cfa545db0d4b9ab6886b4b1ca8e9591794999683251.png",
-      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/080e676678ac4e22966186d5b2bce1dd1794989759342.png",
-      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/e5ac13730520462e8254cdc38fa811dd1794975973656.png",
-      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/42197bbf514e4dcdb477fc43cb6e132f1794960243661.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/61e2d63f0dbe4e0aae0ff280d179aa8e1794746026657.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/667b554ac3c04393b7924cf45d5ea5c81794746082876.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/15/2b7587969f15463282479339c106046f1794746092100.png",
@@ -22975,7 +22975,9 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/68ca23868c624755adbabfa06eda5a891793942200873.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/b4f8d3051757468a9916b8910232f1341793942218590.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/42befafda91244a98cee6357f308551a1793942221928.png",
-      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/2cafbfb27be04af9bdbc529222d8182b1793942226782.png"
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/2cafbfb27be04af9bdbc529222d8182b1793942226782.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/14bc845464e1481892cc4e9cf3fb586f1795088566426.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/19/0d6d90c6e07045b69283880e1b42d7b61795088554289.png"
     ],
     "optionsCount": 0,
     "originPrice": 38000,
