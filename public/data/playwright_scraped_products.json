@@ -8909,7 +8909,7 @@
       "changeType": "drop",
       "hasChanged": true
     },
-    "salePrice": 59200,
+    "salePrice": 66600,
     "isChallenge": true,
     "images": [
       "/products/A000000202777.jpg"
@@ -8919,10 +8919,10 @@
     "origin": "Store Olive Young Korea",
     "isDiscontinued": false,
     "productImage": "/products/A000000202777.jpg",
-    "foreignPrice": 59200,
+    "foreignPrice": 66600,
     "appliedKrwRate": 19.5,
     "isSoldOut": false,
-    "priceVnd": 1385000,
+    "priceVnd": 1558000,
     "brandKr": "",
     "originalPriceVnd": 1732000,
     "optionsCount": 14,
@@ -8949,7 +8949,7 @@
     "usage": "Dùng vào bước nền sau kem lót và trước phấn phủ, buổi sáng. Lấy lượng bằng hạt đậu, dùng bông mút vỗ đều từ giữa mặt ra ngoài, lớp mỏng rồi tăng dần ở vùng cần che phủ. Với da dầu, thấm dầu giấy trước khi dặm lại và tránh chồng lớp quá dày để không bị cakey.",
     "originPrice": 74000,
     "categoryPath": "Trang điểm > Trang điểm nền > Cushion",
-    "price": 59200,
+    "price": 66600,
     "hasOptions": true,
     "nameKr": "[NEW 로지 아이보리 단독 출시] 헤라 블랙 쿠션 파운데이션 10 Colors 본품+리필 기획 | 올리브영",
     "storageProvider": "firebase_storage",
