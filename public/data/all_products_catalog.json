@@ -47479,8 +47479,8 @@
     "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
     "status": "available",
     "isAvailable": true,
-    "isSoldOut": false,
-    "is_sold_out": false,
+    "isSoldOut": true,
+    "is_sold_out": true,
     "isDiscontinued": false,
     "isPublished": true,
     "isHighEnd": false,
@@ -47830,18 +47830,17 @@
       "/products/A000001003808.jpg"
     ],
     "photoReviews": [
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/20/1e561bfb622a4bdea2f096d6d10666f61795164236248.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/20/dc7af1f4c236480aa50c8dd062d3b0c01795139082883.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/2a2a5f3542494bb6a85936d05922c5d61794999108352.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/642fbb2b6f0b4befbaa9f9f78a59b6631794990293320.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/b6a277f3ecab4710886d0f039802b5771794990258145.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/fb0467f4baa54141b73b85535d0c98d61794987885622.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/18/e992d4a42c9c47cd8fe822a64ad249421794982900906.png",
-      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/af195a6df0554704a93f68133b464b971794925208445.png",
-      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/17/77a1e23725f641f2b38510713d85af8a1794923530627.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/0ac16f01bd5444809330c349fa52edfd1793851965976.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/7d865a3d68a84b21b3f410a9d9f7f8571793833859009.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/224d6a7dd03a401a9087e00acc2bda8d1793833863902.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/05/36e941fa43404fb0a244da2434ac9b8e1793834839455.png",
-      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/d8062e57d3b9464c83a8049c0e6030081793622452274.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/36be53ad38d94bce9c4a5cac9747a3321793592809657.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/0da6a46fab2d4c77ac014ddf0e6ad6ac1793592812786.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/a6777bea322f4ada819d176d0fedbd011793592814958.png",
@@ -47851,7 +47850,9 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/01/a5488e4fee754fbbb9d10778ec3e05d51793541588718.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/01/be22e5c66ec24950adcec99cb031a8341793541591252.png",
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/01/2dc3dec529f840c28d5ed09bb6bb2f341793541594770.png",
-      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/9bafae555b0e427cbefcddb3a4c654401793582621868.png"
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/9bafae555b0e427cbefcddb3a4c654401793582621868.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/02/d8062e57d3b9464c83a8049c0e6030081793622452274.png",
+      "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/20/02c93d49bdb64f25a5c752c3569445d31795164240868.png"
     ],
     "options": [
       {
