@@ -11186,7 +11186,7 @@
     "nameKr": "[화잘먹 베이스] 연작 스킨 퍼펙팅 프로텍티브 베이스 프렙 3종 25ml/40ml 기획 | 올리브영",
     "originPrice": 33000,
     "hasOptions": true,
-    "priceVnd": 656000,
+    "priceVnd": 772000,
     "brand": "Yunjak",
     "priceChangeAlert": {
       "changePercent": -10.7,
@@ -11202,12 +11202,12 @@
     "productImage": "/products/A000000213943.jpg",
     "subCategory": "",
     "isPublished": true,
-    "foreignPrice": 28050,
+    "foreignPrice": 33000,
     "firestoreId": "A000000213943",
     "description": "Mỹ phẩm 25ml 40ml (25ml) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "id": "A000000213943",
     "appliedServiceFeePercent": 30,
-    "salePrice": 28050,
+    "salePrice": 33000,
     "storageProvider": "firebase_storage",
     "options": [
       {
@@ -11299,7 +11299,7 @@
       "https://image.oliveyoung.co.kr/uploads/images/gdasEditor/2026/11/06/78d1542b855e467881ebf20a54b6e1751793897992982.png"
     ],
     "isAvailable": false,
-    "price": 28050,
+    "price": 33000,
     "discountRate": "22%",
     "name_vi": "Kem Lót Dưỡng Da Tạo Lớp Nền Hoàn Hảo Yunjak Skin Perfecting Protective Base Prep (Dung Tích 25ml / 40ml)",
     "name_kr": "[화잘먹 베이스] 연작 스킨 퍼펙팅 프로텍티브 베이스 프렙 3종 25ml/40ml 기획 | 올리브영",
