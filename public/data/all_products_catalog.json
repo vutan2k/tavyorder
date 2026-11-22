@@ -8649,8 +8649,8 @@
     "createdAt": "2026-10-22T20:00:00.000Z",
     "appliedKrwRate": 19.5,
     "id": "A000000202446",
-    "priceVnd": 232000,
-    "salePrice": 9900,
+    "priceVnd": 115000,
+    "salePrice": 4900,
     "priceChangeAlert": {
       "changePercent": 8.9,
       "diffWon": 400,
@@ -8665,7 +8665,7 @@
     "brand": "Shingmulnara",
     "name": "Kem Chống Nắng Nâng Tông Gạo SHIKMULNARA Bboyan Rice Tone Up Moisture Sun Cream Phiên Bản Sanrio Hello Kitty (30ml / 100ml)",
     "originPrice": 9800,
-    "originalPriceVnd": 433000,
+    "originalPriceVnd": 229000,
     "images": [
       "/products/A000000202446.jpg"
     ],
@@ -8761,7 +8761,7 @@
     "firestoreId": "A000000202446",
     "discountRate": "50%",
     "hasOptions": true,
-    "price": 9900,
+    "price": 4900,
     "categoryPath": "Chăm sóc chống nắng > Kem chống nắng > Kem chống nắng",
     "status": "available",
     "is_sold_out": false,
@@ -8771,8 +8771,8 @@
     "productImage": "/products/A000000202446.jpg",
     "isAvailable": true,
     "nameKr": "[산리오에디션/헬로키티]식물나라 뽀얀쌀 생기 톤업 수분 선 크림 3종(30ml/100ml) | 올리브영",
-    "originalPrice": 18500,
-    "foreignPrice": 9900,
+    "originalPrice": 9800,
+    "foreignPrice": 4900,
     "brandKr": "",
     "rank": null,
     "name_vi": "Kem Chống Nắng Nâng Tông Gạo SHIKMULNARA Bboyan Rice Tone Up Moisture Sun Cream Phiên Bản Sanrio Hello Kitty (30ml / 100ml)",
@@ -8783,7 +8783,7 @@
     "thumbnailUrl": "/products/A000000202446.jpg",
     "isPublished": true,
     "usage": "Dùng vào buổi sáng ở bước cuối skincare, trước trang điểm: lấy lượng bằng hai đốt ngón tay, thoa đều toàn mặt và cổ, vỗ nhẹ đến khi thấm. Vì là kem nâng tông, nên thoa đều tay và tránh chồng lớp dày để không bị vệt, và nhớ thoa lại sau 2-3 giờ khi ở ngoài trời.",
-    "originalPriceWon": 18500
+    "originalPriceWon": 9800
   },
   {
     "name": "Bột Bổ Sung Protein Hỗ Trợ Dinh Dưỡng Vóc Dáng Prote-One Protein Shake Pouch (Set Mua 1 Tặng 1 40g - 6 Hương Vị)",
