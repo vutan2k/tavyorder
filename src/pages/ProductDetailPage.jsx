@@ -578,7 +578,7 @@ export default function ProductDetailPage() {
               {liveOk && !priceSoldOut && (
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.74rem', color: '#059669', marginTop: '8px' }}>
                   <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#10B981', display: 'inline-block' }} />
-                  {liveAppliesToActive || liveMatchedOptionIdx >= 0
+                  {liveAppliesToActive
                     ? `Giá trực tiếp · ${liveAgeText}`
                     : `Đã kiểm tra giá niêm yết ${formatKrw(Number(live.won))} · ${liveAgeText}`}
                 </div>
