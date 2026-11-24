@@ -32,6 +32,33 @@ function rateLimited(ip) {
   return e.count > RL_MAX;
 }
 
+// ---------- Telegram alert ----------
+function readEnv(key) {
+  if (process.env[key]) return process.env[key];
+  try {
+    const line = fs.readFileSync(path.resolve('.env'), 'utf8').split('\n').find((l) => l.startsWith(key + '='));
+    return line ? line.slice(key.length + 1).trim() : '';
+  } catch { return ''; }
+}
+const alertLog = []; // { at }
+async function sendTelegram(text) {
+  const token = readEnv('TELEGRAM_BOT_TOKEN');
+  const chat = readEnv('TELEGRAM_CHAT_ID');
+  if (!token || !chat) return false;
+  const now = Date.now();
+  while (alertLog.length && now - alertLog[0] > 3600_000) alertLog.shift();
+  if (alertLog.length >= 10) return false; // chống spam
+  alertLog.push(now);
+  try {
+    const r = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ chat_id: chat, text, parse_mode: 'HTML' }),
+    });
+    return r.ok;
+  } catch { return false; }
+}
+
 function authorized(req) {
   if (!API_KEY) return true;
   const given = req.headers['x-api-key'] || '';
@@ -90,6 +117,9 @@ const server = http.createServer(async (req, res) => {
     if (u.pathname === '/health') {
       return send(res, 200, {
         ok: true, service: 'price-api', cacheSize: cache.size,
+        newestCacheAgeSec: cache.size
+          ? Math.round((Date.now() - Math.max(...[...cache.values()].map((v) => v.at))) / 1000)
+          : null,
         cacheTtlSec: CACHE_TTL_MS / 1000, oy: oyStats, uptime: Math.round(process.uptime()),
       });
     }
@@ -129,6 +159,19 @@ const server = http.createServer(async (req, res) => {
         return { ...data, key: keyFor(item) };
       }));
       return send(res, 200, { ok: results.every((r) => r.ok), results });
+    }
+
+    // Alert admin khi Gate 2 không xác nhận được giá
+    if (u.pathname === '/alert' && req.method === 'POST') {
+      let body = '';
+      for await (const chunk of req) body += chunk;
+      let payload = {};
+      try { payload = JSON.parse(body || '{}'); } catch {}
+      const items = Array.isArray(payload.items) ? payload.items.slice(0, 8) : [];
+      const lines = items.map((x) => `• ${x.name || 'SP'}: ${x.reason || x.message || 'không rõ'}`);
+      const text = `🚫 <b>Checkout bị giữ do giá</b>\n${lines.join('\n') || 'Không có chi tiết'}\n<i>${new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })}</i>`;
+      const sent = await sendTelegram(text);
+      return send(res, 200, { ok: true, sent });
     }
 
     // Manifest 150 SKU

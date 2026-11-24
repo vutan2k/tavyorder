@@ -280,3 +280,6 @@ exports.payosWebhook = onRequest({ cors: false }, async (req, res) => {
   }
 });
 
+
+// Gate 2 server-side price verification
+Object.assign(exports, require('./priceGuard'));

@@ -98,6 +98,7 @@ export default function CheckoutPage() {
       const gate = await verifyCart(cart);
       if (!gate.ok) {
         setPriceIssues(gate.issues || []);
+        postAlert(gate.issues || []); // báo admin qua Telegram, không chặn luồng
         showToast('Giá chưa được xác nhận, chưa thể tạo đơn.', 'error');
         setSubmitting(false);
         return;

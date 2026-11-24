@@ -105,3 +105,20 @@ export async function postVerify(items) {
   if (!res.ok) throw new Error(`price_api_http_${res.status}`);
   return res.json();
 }
+
+export async function postAlert(items) {
+  try {
+    const cfg = await getConfig();
+    if (!cfg?.baseUrl) return false;
+    const res = await fetch(`${cfg.baseUrl}/alert`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', 'x-api-key': cfg.apiKey || '' },
+      body: JSON.stringify({ items }),
+      signal: AbortSignal.timeout(8000),
+    });
+    const d = await res.json();
+    return Boolean(d?.sent);
+  } catch {
+    return false;
+  }
+}
