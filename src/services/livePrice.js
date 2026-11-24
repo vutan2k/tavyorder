@@ -1,9 +1,8 @@
 // Live price client — Gate 1 (product detail).
-// Đọc cấu hình API từ Firestore system_config/priceApi, gọi price-api qua tunnel.
+// Dev: gọi thẳng price-api qua tunnel. Production: gọi same-origin /api/price (Vercel proxy).
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 
-const CFG_LABEL = 'system_config/priceApi';
 const CFG_TTL_MS = 5 * 60 * 1000;
 const MANIFEST_TTL_MS = 60 * 60 * 1000;
 const BATCH_TTL_MS = 60 * 1000;
@@ -22,13 +21,23 @@ async function getConfig() {
   return data;
 }
 
+// Production dùng proxy cùng origin để không lộ key/URL tunnel và không vướng CSP.
+function endpoint(cfg) {
+  if (typeof window !== 'undefined') {
+    const host = window.location.hostname;
+    if (host && host !== 'localhost' && host !== '127.0.0.1') {
+      return { base: `${window.location.origin}/api/price`, key: null };
+    }
+  }
+  return { base: cfg.baseUrl, key: cfg.apiKey || '' };
+}
+
 async function apiGet(path) {
   const cfg = await getConfig();
   if (cfg.enabled === false) throw new Error('price_api_disabled');
-  const res = await fetch(`${cfg.baseUrl}${path}`, {
-    headers: { 'x-api-key': cfg.apiKey || '' },
-    signal: AbortSignal.timeout(25000),
-  });
+  const ep = endpoint(cfg);
+  const headers = ep.key ? { 'x-api-key': ep.key } : {};
+  const res = await fetch(`${ep.base}${path}`, { headers, signal: AbortSignal.timeout(25000) });
   if (!res.ok) throw new Error(`price_api_http_${res.status}`);
   return res.json();
 }
@@ -96,9 +105,10 @@ export async function refreshBatch() {
 export async function postVerify(items) {
   const cfg = await getConfig();
   if (cfg.enabled === false) throw new Error('price_api_disabled');
-  const res = await fetch(`${cfg.baseUrl}/verify`, {
+  const ep = endpoint(cfg);
+  const res = await fetch(`${ep.base}/verify`, {
     method: 'POST',
-    headers: { 'content-type': 'application/json', 'x-api-key': cfg.apiKey || '' },
+    headers: { 'content-type': 'application/json', ...(ep.key ? { 'x-api-key': ep.key } : {}) },
     body: JSON.stringify({ items }),
     signal: AbortSignal.timeout(120000),
   });
@@ -110,9 +120,10 @@ export async function postAlert(items) {
   try {
     const cfg = await getConfig();
     if (!cfg?.baseUrl) return false;
-    const res = await fetch(`${cfg.baseUrl}/alert`, {
+    const ep = endpoint(cfg);
+    const res = await fetch(`${ep.base}/alert`, {
       method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-api-key': cfg.apiKey || '' },
+      headers: { 'content-type': 'application/json', ...(ep.key ? { 'x-api-key': ep.key } : {}) },
       body: JSON.stringify({ items }),
       signal: AbortSignal.timeout(8000),
     });
