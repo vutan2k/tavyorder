@@ -17,6 +17,7 @@ import { getOptionDisplayName } from '../utils/koreanOptionTranslator';
 import OptimizedImage from '../components/OptimizedImage';
 import Footer from '../components/Footer';
 import { useToast } from '../components/Toast';
+import useLivePrice from '../hooks/useLivePrice';
 
 // Chuẩn hóa URL ảnh HD sắc nét từ Olive Young
 const getHighResUrl = (url) => {
@@ -160,9 +161,44 @@ export default function ProductDetailPage() {
     return Number(product?.originalPrice || product?.origin_price_krw) || 0;
   }, [product, activeOption]);
 
-  const calculatedVnd = Math.round(activeWonPrice * effectiveKrwRate);
-  const calculatedOriginalVnd = activeOriginalWonPrice > 0 ? Math.round(activeOriginalWonPrice * effectiveKrwRate) : 0;
+  // Gate 1: giá live từ price-api (không fallback giá DB khi cào fail)
+  const live = useLivePrice(product);
+  const liveOk = live.status === 'ok' && Number(live.won) > 0;
+  // Sản phẩm có phân loại: khớp giá live vào phân loại gần nhất (sai lệch ≤10%)
+  const liveMatchedOptionIdx = useMemo(() => {
+    if (!liveOk) return -1;
+    let best = -1;
+    let bestDiff = Infinity;
+    options.forEach((o, i) => {
+      const v = Number(o?.price_krw || o?.price || o?.sale_price) || 0;
+      if (v <= 0) return;
+      const diff = Math.abs(v - Number(live.won));
+      if (diff < bestDiff) { bestDiff = diff; best = i; }
+    });
+    if (best < 0) return -1;
+    const base = Number(options[best]?.price_krw || options[best]?.price || options[best]?.sale_price) || 0;
+    if (!base) return -1;
+    const ratio = Number(live.won) / base;
+    return ratio >= 0.9 && ratio <= 1.1 ? best : -1;
+  }, [liveOk, live.won, options]);
+
+  const liveAppliesToActive = liveOk && (!hasOptions || liveMatchedOptionIdx === selectedOptionIndex);
+  const effectiveWonPrice = liveAppliesToActive ? Number(live.won) : activeWonPrice;
+  const effectiveOriginalWon = liveAppliesToActive && Number(live.originWon) > 0 ? Number(live.originWon) : activeOriginalWonPrice;
+  const priceUnavailable = live.status === 'failed';
+  const priceMismatch = live.status === 'mismatch';
+  const priceSoldOut = liveOk && Boolean(live.soldOut);
+  const priceBlocked = priceUnavailable || priceMismatch;
+  const canBuy = live.status === 'ok' && !isCurrentOptionSoldOut && !priceBlocked && !priceSoldOut;
+
+  const calculatedVnd = Math.round(effectiveWonPrice * effectiveKrwRate);
+  const calculatedOriginalVnd = effectiveOriginalWon > 0 ? Math.round(effectiveOriginalWon * effectiveKrwRate) : 0;
   const hasDiscount = calculatedOriginalVnd > calculatedVnd;
+  const liveAgeText = liveOk
+    ? (live.ageSec && live.ageSec > 60
+        ? `Cập nhật ${Math.floor(live.ageSec / 60)} phút trước`
+        : 'Vừa cập nhật')
+    : '';
 
   // Xử lý danh sách ảnh
   const defaultProductImage = useMemo(() => {
@@ -197,7 +233,12 @@ export default function ProductDetailPage() {
 
   // Thêm vào giỏ hàng
   const handleAddToCart = (shouldRedirect = false) => {
-    if (!product || isCurrentOptionSoldOut) return;
+    if (!product || !canBuy) {
+      if (showToast && product) {
+        showToast(priceMismatch ? 'Giá nguồn đang lệch, tạm khóa để kiểm tra.' : priceUnavailable ? 'Không lấy được giá hiện tại, tạm khóa đặt hàng.' : 'Sản phẩm tạm hết hàng.', 'error');
+      }
+      return;
+    }
     const optDisplayName = activeOption ? getOptionDisplayName(activeOption, selectedOptionIndex) : (typeof product.options === 'string' ? product.options : '');
     const selectedOptId = activeOption ? (activeOption.id || activeOption.name_vi || activeOption.name_kr || optDisplayName) : undefined;
     const cartItem = {
@@ -521,8 +562,53 @@ export default function ProductDetailPage() {
                 )}
               </div>
               <div style={{ fontSize: '0.76rem', color: 'var(--text-muted, #71717A)', marginTop: '4px' }}>
-                Giá gốc tại Hàn: <strong>{formatKrw(activeWonPrice)}</strong>
+                Giá gốc tại Hàn: <strong>{formatKrw(effectiveWonPrice)}</strong>
               </div>
+
+              {live.status === 'loading' && (
+                <div style={{ fontSize: '0.74rem', color: 'var(--text-muted, #71717A)', marginTop: '8px' }}>
+                  Đang kiểm tra giá hiện tại…
+                </div>
+              )}
+
+              {liveOk && !priceSoldOut && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.74rem', color: '#059669', marginTop: '8px' }}>
+                  <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#10B981', display: 'inline-block' }} />
+                  {liveAppliesToActive || liveMatchedOptionIdx >= 0
+                    ? `Giá trực tiếp · ${liveAgeText}`
+                    : `Đã kiểm tra giá niêm yết ${formatKrw(Number(live.won))} · ${liveAgeText}`}
+                </div>
+              )}
+
+              {liveOk && priceSoldOut && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.78rem', fontWeight: 700, color: '#EF4444', marginTop: '8px' }}>
+                  <AlertCircle size={14} /> Hết hàng tại Hàn Quốc
+                </div>
+              )}
+
+              {priceUnavailable && (
+                <div style={{
+                  display: 'flex', alignItems: 'flex-start', gap: '8px', marginTop: '10px',
+                  padding: '10px 12px', borderRadius: '8px',
+                  backgroundColor: '#FEF2F2', border: '1px solid #FECACA',
+                  fontSize: '0.78rem', color: '#B91C1C', lineHeight: 1.45
+                }}>
+                  <AlertCircle size={15} style={{ flexShrink: 0, marginTop: '1px' }} />
+                  <span>Chưa lấy được giá hiện tại nên tạm khóa đặt hàng. Vui lòng thử lại sau ít phút.</span>
+                </div>
+              )}
+
+              {priceMismatch && (
+                <div style={{
+                  display: 'flex', alignItems: 'flex-start', gap: '8px', marginTop: '10px',
+                  padding: '10px 12px', borderRadius: '8px',
+                  backgroundColor: '#FFFBEB', border: '1px solid #FDE68A',
+                  fontSize: '0.78rem', color: '#92400E', lineHeight: 1.45
+                }}>
+                  <AlertCircle size={15} style={{ flexShrink: 0, marginTop: '1px' }} />
+                  <span>Giá nguồn đang lệch với giá niêm yết. Tạm khóa để kiểm tra lại.</span>
+                </div>
+              )}
             </div>
 
             {/* Chọn Phân Loại (Chuẩn Olive Young Hàn Quốc phiên dịch Tiếng Việt) */}
@@ -546,7 +632,7 @@ export default function ProductDetailPage() {
                     const isSelected = selectedOptionIndex === oIdx;
                     const isSoldOut = Boolean(opt.is_sold_out || opt.status === 'out_of_stock');
                     const displayName = getOptionDisplayName(opt, oIdx);
-                    const optWon = Number(opt.price_krw || opt.price || opt.sale_price || activeWonPrice) || 0;
+                    const optWon = (liveOk && liveMatchedOptionIdx === oIdx ? Number(live.won) : 0) || Number(opt.price_krw || opt.price || opt.sale_price || activeWonPrice) || 0;
                     const optVnd = Math.round(optWon * effectiveKrwRate);
                     const optDiscount = opt.discount_rate || (opt.discount_percent ? `${opt.discount_percent}%` : null);
                     const optImg = opt.image_url ? getHighResUrl(opt.image_url) : null;
@@ -654,6 +740,11 @@ export default function ProductDetailPage() {
                     );
                   })}
                 </div>
+                {liveOk && (
+                  <div style={{ fontSize: '0.72rem', color: 'var(--text-muted, #71717A)', marginTop: '8px' }}>
+                    Giá từng phân loại sẽ được xác nhận lại khi thanh toán.
+                  </div>
+                )}
               </div>
             )}
 
@@ -661,18 +752,18 @@ export default function ProductDetailPage() {
             <div style={{ display: 'flex', gap: '12px', marginBottom: '28px', flexWrap: 'wrap' }}>
               <button
                 type="button"
-                disabled={isCurrentOptionSoldOut}
+                disabled={!canBuy}
                 onClick={() => handleAddToCart(false)}
                 style={{
                   flex: '1 1 180px',
-                  backgroundColor: isCurrentOptionSoldOut ? '#F3F4F6' : 'var(--bg-white, #FFFFFF)',
-                  color: isCurrentOptionSoldOut ? '#9CA3AF' : 'var(--text-dark, #000000)',
-                  border: isCurrentOptionSoldOut ? '2px solid #E5E7EB' : '2px solid var(--text-dark, #000000)',
+                  backgroundColor: !canBuy ? '#F3F4F6' : 'var(--bg-white, #FFFFFF)',
+                  color: !canBuy ? '#9CA3AF' : 'var(--text-dark, #000000)',
+                  border: !canBuy ? '2px solid #E5E7EB' : '2px solid var(--text-dark, #000000)',
                   padding: '12px 20px',
                   borderRadius: '10px',
                   fontWeight: 700,
                   fontSize: '0.92rem',
-                  cursor: isCurrentOptionSoldOut ? 'not-allowed' : 'pointer',
+                  cursor: !canBuy ? 'not-allowed' : 'pointer',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -680,31 +771,31 @@ export default function ProductDetailPage() {
                   transition: 'all 0.2s ease'
                 }}
               >
-                <ShoppingBag size={18} /> {isCurrentOptionSoldOut ? 'Tạm Hết Hàng' : 'Thêm Vào Giỏ'}
+                <ShoppingBag size={18} /> {!canBuy ? (priceBlocked ? 'Tạm Khóa Giá' : 'Tạm Hết Hàng') : 'Thêm Vào Giỏ'}
               </button>
 
               <button
                 type="button"
-                disabled={isCurrentOptionSoldOut}
+                disabled={!canBuy}
                 onClick={() => handleAddToCart(true)}
                 style={{
                   flex: '1 1 200px',
-                  backgroundColor: isCurrentOptionSoldOut ? '#E5E7EB' : 'var(--text-dark, #000000)',
-                  color: isCurrentOptionSoldOut ? '#9CA3AF' : 'var(--bg-white, #FFFFFF)',
+                  backgroundColor: !canBuy ? '#E5E7EB' : 'var(--text-dark, #000000)',
+                  color: !canBuy ? '#9CA3AF' : 'var(--bg-white, #FFFFFF)',
                   border: 'none',
                   padding: '12px 20px',
                   borderRadius: '10px',
                   fontWeight: 700,
                   fontSize: '0.92rem',
-                  cursor: isCurrentOptionSoldOut ? 'not-allowed' : 'pointer',
-                  boxShadow: isCurrentOptionSoldOut ? 'none' : '0 4px 14px rgba(0, 0, 0, 0.18)',
+                  cursor: !canBuy ? 'not-allowed' : 'pointer',
+                  boxShadow: !canBuy ? 'none' : '0 4px 14px rgba(0, 0, 0, 0.18)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: '8px'
                 }}
               >
-                {isCurrentOptionSoldOut ? 'Hết Hàng' : 'Mua Ngay'}
+                {!canBuy ? (priceBlocked ? 'Tạm Khóa Giá' : 'Hết Hàng') : 'Mua Ngay'}
               </button>
             </div>
 

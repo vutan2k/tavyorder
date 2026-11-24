@@ -323,6 +323,23 @@ export const saveUserProfileInDB = async (userData) => {
  */
 export const subscribeToProducts = (onUpdate) => {
   try {
+    // Chế độ demo catalog 100 SKU (kích hoạt qua param ?demo=100 hoặc localStorage tavy_demo_mode='100')
+    const isDemo100 = typeof window !== 'undefined' && (
+      window.location.search.includes('demo=100') ||
+      localStorage.getItem('tavy_demo_mode') === '100'
+    );
+
+    if (isDemo100) {
+      console.log("[Demo Mode] Nạp danh mục 100 SKU Tinh Hoa từ /data/demo_100_products.json");
+      fetch('/data/demo_100_products.json')
+        .then(res => res.json())
+        .then(products => {
+          onUpdate(products);
+        })
+        .catch(err => console.error("Lỗi nạp demo catalog:", err));
+      return () => {};
+    }
+
     const colRef = collection(db, PRODUCTS_COLLECTION);
     return onSnapshot(colRef, (snapshot) => {
       const products = snapshot.docs.map(docSnap => ({
