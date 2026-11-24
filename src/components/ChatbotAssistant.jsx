@@ -97,7 +97,7 @@ export default function ChatbotAssistant() {
     }
 
     if (q.includes('thanh toán') || q.includes('cọc') || q.includes('chuyển khoản') || q.includes('bank')) {
-      return `💳 **Chính sách thanh toán:**\n- TAVY hỗ trợ đặt cọc trước **50% hoặc thanh toán 100%** giá trị đơn hàng.\n- Bạn có thể chuyển khoản bằng quét mã **VietQR (MB Bank)** nhanh chóng hoặc chuyển khoản ngân hàng **Woori Bank (Hàn Quốc)** nếu thanh toán bằng Won.`;
+      return `💳 **Chính sách thanh toán:**\n- TAVY yêu cầu đặt cọc **100%** giá trị đơn hàng trước khi mua.\n- Bạn có thể chuyển khoản bằng quét mã **VietQR (MB Bank)** nhanh chóng hoặc chuyển khoản ngân hàng **Woori Bank (Hàn Quốc)** nếu thanh toán bằng Won.`;
     }
 
     return `Cảm ơn câu hỏi của bạn! Mình khuyên bạn nên xem qua dòng sản phẩm dưỡng ẩm **Torriden Low Molecular Hyaluronic Acid** hoặc nước hoa hồng **Anua Heartleaf 77%** cực kỳ lành tính và đang bán chạy số 1 tại Olive Young Seoul lúc này. Bạn có muốn mình tư vấn kỹ hơn về loại da của bạn không?`;
@@ -128,7 +128,7 @@ Nhiệm vụ của bạn:
 2. Tư vấn sản phẩm phù hợp cho khách hàng dựa trên danh mục sản phẩm của cửa hàng dưới đây:
 ${JSON.stringify(OLIVE_YOUNG_CATALOG.map(p => ({ name: p.name, brand: p.brand, category: p.category, price: p.foreignPrice, desc: p.description })))}
 3. Khi giới thiệu sản phẩm, hãy nói rõ thương hiệu, công dụng chính và giá tiền (cả Won và VND quy đổi x19.5).
-4. Giá về tay đã bao gồm trọn gói tiền hàng, phí dịch vụ và cước vận chuyển Air Hàn - Việt (không tính thêm phí ship theo kg), thời gian bay khoảng 3-5 ngày. Hỗ trợ cọc 50% chuyển khoản ngân hàng Việt Nam hoặc Woori Bank Hàn Quốc.
+4. Giá về tay đã bao gồm trọn gói tiền hàng, phí dịch vụ và cước vận chuyển Air Hàn - Việt (không tính thêm phí ship theo kg), thời gian bay khoảng 3-5 ngày. Yêu cầu cọc 100% giá trị đơn hàng, chuyển khoản ngân hàng Việt Nam hoặc Woori Bank Hàn Quốc.
 Hãy trả lời ngắn gọn, tập trung và thu hút khách hàng đặt hàng.`;
 
         const response = await fetch(
