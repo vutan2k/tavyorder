@@ -28,23 +28,43 @@ export default function ChatWidget() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    if (!isMobile) { setHidden(false); return; }
+    let lastY = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      const dy = y - lastY;
+      if (Math.abs(dy) < 8) return;
+      setHidden(dy > 0 && y > 160);
+      lastY = y;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [isMobile]);
+
   if (!isHomePage) {
     return null;
   }
 
-  const btnSize = isMobile ? '44px' : '58px';
+  const btnSize = isMobile ? '40px' : '58px';
 
   return (
     <div
       style={{
         position: 'fixed',
-        bottom: isMobile ? '16px' : '22px',
-        right: isMobile ? '12px' : '22px',
+        bottom: isMobile ? 'calc(10px + env(safe-area-inset-bottom))' : '22px',
+        right: isMobile ? '10px' : '22px',
         zIndex: 9995,
+        transform: hidden ? 'translateY(90px)' : 'translateY(0)',
+        opacity: hidden ? 0 : 1,
+        pointerEvents: hidden ? 'none' : 'auto',
+        transition: 'transform 0.25s ease, opacity 0.2s ease',
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: isMobile ? 'row' : 'column',
         alignItems: 'center',
-        gap: isMobile ? '8px' : '12px',
+        gap: isMobile ? '6px' : '12px',
         fontFamily: 'var(--font-sans, system-ui, sans-serif)'
       }}
     >

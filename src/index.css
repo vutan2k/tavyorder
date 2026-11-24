@@ -1360,8 +1360,9 @@ textarea.input-field {
     margin-right: 6px !important;
   }
   .guest-tracking-input {
-    font-size: 0.78rem !important;
-    padding: 5px 2px !important;
+    font-size: 0.86rem !important;
+    padding: 10px 2px !important;
+    min-height: 44px !important;
   }
   .guest-tracking-clear-btn {
     padding: 2px !important;
@@ -1380,7 +1381,7 @@ textarea.input-field {
     overflow-x: auto !important;
     -webkit-overflow-scrolling: touch !important;
     gap: 8px !important;
-    padding: 6px 4px 14px 4px !important;
+    padding: 6px 18px 14px 4px !important;
     margin-top: 4px !important;
     margin-bottom: 16px !important;
     scrollbar-width: none !important;
