@@ -20,6 +20,7 @@ export default function CheckoutPage() {
   const [receiptBase64, setReceiptBase64] = useState('');
   const [senderName, setSenderName] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  const [priceIssues, setPriceIssues] = useState([]);
   const [successOrderId, setSuccessOrderId] = useState(null);
 
   const krwRate = rates?.KRW?.rate || 19.5;
@@ -90,8 +91,18 @@ export default function CheckoutPage() {
     }
 
     setSubmitting(true);
+    setPriceIssues([]);
 
     try {
+      // Gate 2: xác nhận giá live toàn bộ giỏ, không cache, không fallback
+      const gate = await verifyCart(cart);
+      if (!gate.ok) {
+        setPriceIssues(gate.issues || []);
+        showToast('Giá chưa được xác nhận, chưa thể tạo đơn.', 'error');
+        setSubmitting(false);
+        return;
+      }
+
       const orderData = {
         id: tempOrderId,
         customerName,
@@ -412,8 +423,21 @@ export default function CheckoutPage() {
                   }}
                 >
                   <ShieldCheck size={20} />
-                  {submitting ? 'ĐANG XỬ LÝ...' : 'XÁC NHẬN ĐÃ CHUYỂN KHOẢN'}
+                  {submitting ? 'ĐANG XÁC NHẬN GIÁ...' : 'XÁC NHẬN ĐÃ CHUYỂN KHOẢN'}
                 </button>
+
+                {priceIssues.length > 0 && (
+                  <div style={{ marginTop: '14px', padding: '12px 14px', borderRadius: '10px', backgroundColor: '#FEF2F2', border: '1px solid #FECACA' }}>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#B91C1C', marginBottom: '6px' }}>
+                      Chưa thể tạo đơn — giá cần xác nhận lại
+                    </div>
+                    <ul style={{ margin: 0, paddingLeft: '18px', fontSize: '0.8rem', color: '#7F1D1D', lineHeight: 1.5 }}>
+                      {priceIssues.map((it, idx) => (
+                        <li key={idx}>{it.name ? `${it.name}: ` : ''}{it.message || it.reason}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </form>
             </div>
 

@@ -92,3 +92,16 @@ export async function refreshBatch() {
   batchCache = { data: d?.items || {}, at: Date.now() };
   return d;
 }
+
+export async function postVerify(items) {
+  const cfg = await getConfig();
+  if (cfg.enabled === false) throw new Error('price_api_disabled');
+  const res = await fetch(`${cfg.baseUrl}/verify`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', 'x-api-key': cfg.apiKey || '' },
+    body: JSON.stringify({ items }),
+    signal: AbortSignal.timeout(120000),
+  });
+  if (!res.ok) throw new Error(`price_api_http_${res.status}`);
+  return res.json();
+}
