@@ -4,6 +4,17 @@
  */
 
 export const ORDER_STATUSES = {
+  pending_price_check: {
+    id: 'pending_price_check',
+    stepNumber: 1,
+    label: 'Chờ admin xác nhận giá',
+    shortLabel: 'Chờ xác nhận giá',
+    color: '#DC2626',
+    bgColor: '#FEF2F2',
+    borderColor: '#FCA5A5',
+    stepIndex: 0,
+    desc: 'Giá nguồn thay đổi hoặc không lấy được giá, cần admin xác nhận trước khi xử lý.'
+  },
   pending: {
     id: 'pending',
     stepNumber: 1,

@@ -19,7 +19,7 @@ const KANBAN_COLUMNS = [
     id: 'pending',
     title: 'Chờ cọc',
     color: '#D97706',
-    statuses: ['pending', 'quoted']
+    statuses: ['pending', 'quoted', 'pending_price_check']
   },
   {
     id: 'deposit_paid',
@@ -213,6 +213,40 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
       }
     } catch {
       if (showToast) showToast('Lỗi khi cập nhật trạng thái đơn!', 'error');
+    }
+  };
+
+  const handleResolvePrice = async (order, accept) => {
+    try {
+      if (!accept) {
+        await updateOrderStatusInDB(order.id, {
+          status: 'cancelled',
+          cancelReason: 'Admin huỷ: giá nguồn thay đổi'
+        });
+        if (showToast) showToast(`Đã huỷ đơn #${order.id}`, 'success');
+        return;
+      }
+      const issues = Array.isArray(order.priceIssues) ? order.priceIssues : [];
+      const liveByName = new Map(
+        issues
+          .filter(i => i.reason === 'price_changed' && Number(i.liveWon) > 0)
+          .map(i => [i.name, Number(i.liveWon)])
+      );
+      const items = (order.items || []).map(it =>
+        liveByName.has(it.name) ? { ...it, foreignPrice: liveByName.get(it.name) } : it
+      );
+      await updateOrderStatusInDB(order.id, {
+        items,
+        status: 'pending',
+        priceVerified: true,
+        priceCheck: 'admin_ok',
+        priceVerifiedAt: new Date().toISOString(),
+        priceIssues: [],
+        adminNote: 'Admin xác nhận giá thủ công'
+      });
+      if (showToast) showToast(`Đã xác nhận giá đơn #${order.id}, chuyển về Chờ cọc`, 'success');
+    } catch {
+      if (showToast) showToast('Lỗi khi xử lý giá đơn hàng!', 'error');
     }
   };
 
@@ -622,6 +656,71 @@ export default function AdminOrderManager({ isDark: isDarkProp } = {}) {
                               {order.createdAt ? new Date(order.createdAt).toLocaleDateString('vi-VN') : 'Hôm nay'}
                             </span>
                           </div>
+
+                          {/* Giá cần xác nhận (Gate 2) */}
+                          {order.status === 'pending_price_check' && (
+                            <div style={{
+                              backgroundColor: isDark ? 'rgba(220,38,38,0.12)' : '#FEF2F2',
+                              border: isDark ? '1px solid #7F1D1D' : '1px solid #FECACA',
+                              borderRadius: '6px',
+                              padding: '7px 8px',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '4px'
+                            }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.7rem', fontWeight: 700, color: '#DC2626' }}>
+                                <AlertCircle size={11} /> Chờ xác nhận giá
+                              </div>
+                              {(order.priceIssues || []).slice(0, 3).map((is, idx) => (
+                                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', gap: '8px', fontSize: '0.7rem', color: isDark ? '#FCA5A5' : '#991B1B' }}>
+                                  <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '52%' }}>
+                                    {is.name || 'Sản phẩm'}
+                                  </span>
+                                  <span style={{ whiteSpace: 'nowrap', fontWeight: 600 }}>
+                                    {is.reason === 'price_changed'
+                                      ? `${Number(is.cartWon || 0).toLocaleString('vi-VN')} → ${Number(is.liveWon || 0).toLocaleString('vi-VN')}원`
+                                      : is.reason === 'sold_out' ? 'Hết hàng'
+                                      : is.reason === 'unmapped' ? 'Chưa có nguồn giá'
+                                      : 'Không lấy được giá'}
+                                  </span>
+                                </div>
+                              ))}
+                              <div style={{ display: 'flex', gap: '6px', marginTop: '3px' }}>
+                                <button
+                                  onClick={(e) => { e.stopPropagation(); handleResolvePrice(order, false); }}
+                                  style={{
+                                    flex: 1,
+                                    backgroundColor: isDark ? '#1E293B' : '#FFF',
+                                    border: '1px solid #FCA5A5',
+                                    borderRadius: '6px',
+                                    padding: '5px 0',
+                                    fontSize: '0.72rem',
+                                    fontWeight: 700,
+                                    color: '#DC2626',
+                                    cursor: 'pointer'
+                                  }}
+                                >
+                                  Huỷ đơn
+                                </button>
+                                <button
+                                  onClick={(e) => { e.stopPropagation(); handleResolvePrice(order, true); }}
+                                  style={{
+                                    flex: 1,
+                                    backgroundColor: '#DC2626',
+                                    border: 'none',
+                                    borderRadius: '6px',
+                                    padding: '5px 0',
+                                    fontSize: '0.72rem',
+                                    fontWeight: 700,
+                                    color: '#FFF',
+                                    cursor: 'pointer'
+                                  }}
+                                >
+                                  Xác nhận giá
+                                </button>
+                              </div>
+                            </div>
+                          )}
 
                           {/* Customer Name & Phone */}
                           <div>
