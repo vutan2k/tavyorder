@@ -8,6 +8,8 @@ import CascadingAddressSelector from '../components/CascadingAddressSelector';
 import Footer from '../components/Footer';
 import confetti from 'canvas-confetti';
 import { useToast } from '../components/ToastContext';
+import verifyCart from '../services/priceVerify';
+import { postAlert } from '../services/livePrice';
 import {
   isHoneypotTriggered,
   checkOrderRateLimit,
@@ -38,6 +40,21 @@ export default function CartPage() {
   const [success, setSuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  const [isVerifying, setIsVerifying] = useState(false);
+  const [priceBlocked, setPriceBlocked] = useState(null);
+
+  // Tự xoá khỏi giỏ các SKU đã ngừng bán / mất nguồn giá / không còn trong catalog
+  useEffect(() => {
+    if (!Array.isArray(products) || products.length === 0 || cart.length === 0) return;
+    const bad = cart.filter((it) => {
+      const id = it?.goodsNo || it?.id;
+      const p = products.find((x) => (x.goodsNo || x.id) === id);
+      return !p || p.status === 'archived' || p.isSellable === false || p.isActive === false;
+    });
+    if (!bad.length) return;
+    bad.forEach((it) => removeFromCart(it.goodsNo || it.id));
+    if (showToast) showToast(`Đã xoá ${bad.length} sản phẩm ngừng bán khỏi giỏ.`, 'info');
+  }, [products, cart]);
 
   useEffect(() => {
     if (currentUser) {
@@ -56,6 +73,8 @@ export default function CartPage() {
 
   // Đối chiếu giá sản phẩm/biến thể trực tiếp từ danh mục gốc (products) để chống sửa giá trong localStorage
   const resolveCatalogItem = (item) => {
+    // Giá đã lấy trực tiếp từ nguồn ở trang chi tiết → không ghi đè bằng giá DB.
+    if (item?.priceSource === 'live' && Number(item.foreignPrice) > 0) return item;
     const itemId = item?.goodsNo || item?.id;
     const catalogProd = Array.isArray(products)
       ? products.find(p => (p.goodsNo || p.id) === itemId)
@@ -78,6 +97,9 @@ export default function CartPage() {
 
     return {
       ...item,
+      options: item.options,
+      productOptions: opts.length ? opts : (Array.isArray(item.productOptions) ? item.productOptions : []),
+      optionText: optLabel,
       foreignPrice: authWon,
       price: authWon,
       priceVnd: authVnd
@@ -98,8 +120,9 @@ export default function CartPage() {
   };
 
   const getItemOptionText = (item) => {
-    if (typeof item?.options === 'string' && item.options) return item.options;
+    if (typeof item?.optionText === 'string' && item.optionText) return item.optionText;
     if (typeof item?.selectedOptionName === 'string' && item.selectedOptionName) return item.selectedOptionName;
+    if (typeof item?.options === 'string' && item.options) return item.options;
     if (typeof item?.selectedOption === 'string' && item.selectedOption) return item.selectedOption;
     if (item?.selectedOption && typeof item.selectedOption === 'object') {
       return item.selectedOption.name_vi || item.selectedOption.name_kr || item.selectedOption.name || '';
@@ -170,6 +193,25 @@ export default function CartPage() {
 
     setIsSubmitting(true);
     try {
+      // Gate 2: xác nhận lại giá trực tiếp cho toàn bộ giỏ trước khi tạo đơn.
+      setIsVerifying(true);
+      setPriceBlocked(null);
+      let gate;
+      try {
+        gate = await verifyCart(cart);
+      } catch (e) {
+        gate = { ok: false, issues: [{ reason: 'verify_failed', message: 'Không kết nối được dịch vụ kiểm tra giá.' }] };
+      }
+      setIsVerifying(false);
+      if (!gate.ok) {
+        const detail = (gate.issues || []).map((i) => i.message || i.reason).filter(Boolean).join(' · ');
+        setPriceBlocked(gate.issues || []);
+        setErrorMsg(`Chưa xác nhận được giá nên chưa thể tạo đơn. ${detail}`);
+        if (gate.issues?.length) postAlert(gate.issues);
+        setIsSubmitting(false);
+        return;
+      }
+
       const country = 'KRW';
       const bankInfo = country === 'KRW'
         ? { bankName: '우라은행', accountNumber: '1002959863658' }
@@ -187,10 +229,15 @@ export default function CartPage() {
         country,
         items: cart.map(item => {
           const verified = resolveCatalogItem(item);
+          const optList = Array.isArray(verified.productOptions) ? verified.productOptions : (Array.isArray(verified.options) ? verified.options : []);
           return {
             ...verified,
             options: getItemOptionText(item),
-            priceVnd: getItemUnitVnd(item)
+            priceVnd: getItemUnitVnd(item),
+            productWon: Number(verified.foreignPrice ?? verified.price) || 0,
+            optionPrices: optList
+              .map((o) => Number(o?.price_krw ?? o?.price ?? o?.sale_price) || 0)
+              .filter((n) => n > 0)
           };
         }),
         totalVnd: totalAmountVnd,
@@ -542,7 +589,7 @@ export default function CartPage() {
                   {isSubmitting ? (
                     <>
                       <Loader2 className="lucide-spin" size={20} />
-                      Đang xử lý...
+                      {isVerifying ? 'ĐANG XÁC NHẬN GIÁ...' : 'Đang xử lý...'}
                     </>
                   ) : !isMinOrderMet ? (
                     `Cần thêm ${formatVnd(shortfallVnd)} để Đặt Hàng`

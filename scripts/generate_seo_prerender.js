@@ -91,6 +91,19 @@ for (const pPath of [playwrightPath, fullAuditedPath, allCatalogPath]) {
   }
 }
 
+// Chỉ xuất bản SKU đang bán thật (allowlist sinh từ Firestore), tránh index SKU đã archive.
+const sellablePath = join(PROJECT_ROOT, 'server', 'catalog-sellable.json');
+if (existsSync(sellablePath)) {
+  try {
+    const allow = new Set(JSON.parse(readFileSync(sellablePath, 'utf8')).ids || []);
+    if (allow.size > 0) {
+      products = products.filter((p) => allow.has(String(p.goodsNo || p.id)));
+    }
+  } catch (e) {
+    console.warn('[SEO Prerender] Không đọc được allowlist:', e.message);
+  }
+}
+
 console.log(`[SEO Prerender] Đã nạp thành công ${products.length} sản phẩm để tối ưu SEO & GEO!`);
 
 const baseHtml = readFileSync(DIST_INDEX, 'utf8');

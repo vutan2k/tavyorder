@@ -5,7 +5,7 @@ const { onDocumentCreated } = require('firebase-functions/v2/firestore');
 const { onRequest } = require('firebase-functions/v2/https');
 const admin = require('firebase-admin');
 
-const TOLERANCE = 0.01;
+const TOLERANCE = 0.10; // 10%: đủ rộng cho giá phân loại, đủ chặt để bắt đổi giá thật
 const TIMEOUT_MS = 150000;
 
 function db() {
@@ -18,6 +18,8 @@ function normItems(order) {
     name: it.name || '',
     qty: Number(it.qty) || 1,
     cartWon: Number(it.foreignPrice || it.price || 0),
+    productWon: Number(it.productWon || it.foreignPrice || it.price || 0),
+    optionPrices: Array.isArray(it.optionPrices) ? it.optionPrices.map(Number).filter((n) => n > 0) : [],
   }));
 }
 
@@ -121,12 +123,21 @@ async function verifyOrder(orderId) {
       return;
     }
     const live = Number(r.salePrice ?? r.priceKrw ?? 0);
-    if (live > 0 && it.cartWon > 0 && Math.abs(live - it.cartWon) / it.cartWon > TOLERANCE) {
+    // Giá live là giá cấp sản phẩm; đơn có thể chọn phân loại khác → so với mọi mốc giá hợp lệ.
+    const refs = [it.cartWon, it.productWon, ...(it.optionPrices || [])].filter((n) => n > 0);
+    const matched = refs.some((v) => Math.abs(live - v) / v <= TOLERANCE);
+    if (live > 0 && it.cartWon > 0 && !matched) {
       issues.push({ name: it.name, reason: 'price_changed', cartWon: it.cartWon, liveWon: live });
     }
   });
 
+  const holdable = ['pending', 'quoted', 'pending_price_check'].includes(String(order.status || 'pending'));
   if (issues.length) {
+    if (!holdable) {
+      await ref.set({ priceCheck: 'failed_after_processing', priceIssues: issues }, { merge: true });
+      await tgNotify(`⚠️ <b>Đơn ${orderId} lệch giá nhưng đã xử lý</b> (status=${order.status})`);
+      return { verified: false, check: 'failed_after_processing', issues };
+    }
     await ref.set({
       priceVerified: false,
       priceCheck: 'failed',
@@ -169,7 +180,8 @@ exports.priceSweep = onRequest(
       .get();
     const todo = q.docs.filter((d) => {
       const o = d.data() || {};
-      return o.priceVerified !== true && o.priceCheck !== 'failed' && o.priceCheck !== 'unmapped_items';
+      const holdable = ['pending', 'quoted', 'pending_price_check'].includes(String(o.status || 'pending'));
+      return holdable && o.priceVerified !== true && !String(o.priceCheck || '').startsWith('failed_after');
     }).slice(0, 10);
     const out = [];
     for (const d of todo) {

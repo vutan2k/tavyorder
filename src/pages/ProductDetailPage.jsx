@@ -248,10 +248,12 @@ export default function ProductDetailPage() {
       selectedOption: activeOption,
       selectedOptionId: selectedOptId,
       selectedOptionName: optDisplayName,
-      options: optDisplayName,
+      optionText: optDisplayName,
       priceVnd: calculatedVnd,
-      foreignPrice: activeWonPrice,
-      price: activeWonPrice,
+      // Nếu đang hiển thị giá live thì chốt luôn giá live vào giỏ, không quay lại giá DB.
+      foreignPrice: liveAppliesToActive ? Number(live.won) : activeWonPrice,
+      price: liveAppliesToActive ? Number(live.won) : activeWonPrice,
+      priceSource: liveAppliesToActive ? 'live' : 'catalog',
       productImage: (activeOption?.image_url ? getHighResUrl(activeOption.image_url) : '') || defaultProductImage,
       qty: 1
     };

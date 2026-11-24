@@ -1425,7 +1425,11 @@ export const AppProvider = ({ children }) => {
     else if (product.selectedOption && typeof product.selectedOption === 'object') {
       optStr = product.selectedOption.name_vi || product.selectedOption.name_kr || product.selectedOption.name || '';
     }
-    const sanitizedProduct = { ...product, options: optStr };
+    const optArr = Array.isArray(product.options)
+      ? product.options
+      : (Array.isArray(product.productOptions) ? product.productOptions : []);
+    // options giữ chuỗi để hiển thị; productOptions giữ mảng giá gốc cho bước verify.
+    const sanitizedProduct = { ...product, options: optStr, productOptions: optArr };
     const targetId = getCartItemId(sanitizedProduct);
     setCart((prev) => {
       const existingIndex = prev.findIndex((item) => getCartItemId(item) === targetId);

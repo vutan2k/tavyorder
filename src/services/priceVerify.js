@@ -2,7 +2,7 @@
 // Không cache, không fallback: fail hoặc lệch giá → chặn đặt hàng.
 import { getManifestEntry, postVerify } from './livePrice';
 
-const TOLERANCE = 0.01; // 1%
+const TOLERANCE = 0.10; // 10% — đủ rộng cho chênh lệch phân loại, đủ chặt để bắt đổi giá thật
 
 export default async function verifyCart(cart) {
   const items = Array.isArray(cart) ? cart : [];
@@ -45,7 +45,17 @@ export default async function verifyCart(cart) {
       return;
     }
     const liveWon = Number(r.salePrice ?? r.priceKrw ?? 0);
-    if (liveWon > 0 && cartWon > 0 && Math.abs(liveWon - cartWon) / cartWon > TOLERANCE) {
+    // Giá live là giá cấp sản phẩm; giỏ có thể đang chọn phân loại khác.
+    // Chấp nhận nếu khớp bất kỳ mốc giá hợp lệ nào của sản phẩm (giá giỏ, giá gốc, các phân loại).
+    const refs = [cartWon];
+    const pushRef = (v) => { const n = Number(v); if (Number.isFinite(n) && n > 0) refs.push(n); };
+    pushRef(item?.productWon);
+    if (Array.isArray(item?.optionPrices)) item.optionPrices.forEach(pushRef);
+    if (Array.isArray(item?.productOptions)) item.productOptions.forEach((o) => pushRef(o?.price_krw ?? o?.price ?? o?.sale_price));
+    if (Array.isArray(item?.options)) item.options.forEach((o) => pushRef(o?.price_krw ?? o?.price ?? o?.sale_price));
+    if (item?.selectedOption) pushRef(item.selectedOption.price_krw ?? item.selectedOption.price ?? item.selectedOption.sale_price);
+    const matchedRef = refs.find((v) => v > 0 && Math.abs(liveWon - v) / v <= TOLERANCE);
+    if (liveWon > 0 && cartWon > 0 && !matchedRef) {
       issues.push({
         name: item?.name,
         reason: 'price_changed',

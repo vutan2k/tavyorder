@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { execFile } from 'child_process'
+import fs from 'node:fs'
+import os from 'node:os'
+import path from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -75,6 +78,23 @@ export default defineConfig({
   server: {
     host: '127.0.0.1',
     port: 3000,
-    strictPort: true
+    strictPort: true,
+    allowedHosts: ['.trycloudflare.com'],
+    proxy: {
+      // Điện thoại qua tunnel gọi /api/price → price-api trên Mac (gắn key server-side).
+      '/api/price': {
+        target: 'http://127.0.0.1:8787',
+        changeOrigin: true,
+        rewrite: (p) => p.replace(/^\/api\/price/, ''),
+        configure: (proxy) => {
+          proxy.on('proxyReq', (proxyReq) => {
+            try {
+              const key = fs.readFileSync(path.join(os.homedir(), '.config/tavy/price-api.key'), 'utf8').trim();
+              proxyReq.setHeader('x-api-key', key);
+            } catch {}
+          });
+        }
+      }
+    }
   }
 })
