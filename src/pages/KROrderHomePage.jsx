@@ -116,6 +116,7 @@ export default function KROrderHomePage() {
     return oliveYoungCatalog.filter((product) => {
       if (product.isPublished === false || product.status === 'pending' || product.isHidden === true) return false;
       if (product.status === 'archived' || product.isActive === false || product.archivedAt) return false;
+      if (product.isSellable === false) return false;
 
       if (activeCategory === 'all') return true;
       const cat = (product.category || '').toLowerCase();

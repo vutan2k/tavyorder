@@ -189,8 +189,9 @@ export default function ProductDetailPage() {
   const priceMismatch = live.status === 'mismatch';
   const priceSoldOut = liveOk && Boolean(live.soldOut);
   const isArchivedProduct = product?.status === 'archived' || product?.isActive === false || Boolean(product?.archivedAt);
+  const isUnsellableProduct = product?.isSellable === false;
   const priceBlocked = priceUnavailable || priceMismatch;
-  const canBuy = !isArchivedProduct && live.status === 'ok' && !isCurrentOptionSoldOut && !priceBlocked && !priceSoldOut;
+  const canBuy = !isArchivedProduct && !isUnsellableProduct && live.status === 'ok' && !isCurrentOptionSoldOut && !priceBlocked && !priceSoldOut;
 
   const calculatedVnd = Math.round(effectiveWonPrice * effectiveKrwRate);
   const calculatedOriginalVnd = effectiveOriginalWon > 0 ? Math.round(effectiveOriginalWon * effectiveKrwRate) : 0;
@@ -772,7 +773,7 @@ export default function ProductDetailPage() {
                   transition: 'all 0.2s ease'
                 }}
               >
-                <ShoppingBag size={18} /> {!canBuy ? (isArchivedProduct ? 'Ngừng Bán' : priceBlocked ? 'Tạm Khóa Giá' : 'Tạm Hết Hàng') : 'Thêm Vào Giỏ'}
+                <ShoppingBag size={18} /> {!canBuy ? (isArchivedProduct ? 'Ngừng Bán' : isUnsellableProduct ? 'Chưa Có Nguồn Giá' : priceBlocked ? 'Tạm Khóa Giá' : 'Tạm Hết Hàng') : 'Thêm Vào Giỏ'}
               </button>
 
               <button
@@ -796,7 +797,7 @@ export default function ProductDetailPage() {
                   gap: '8px'
                 }}
               >
-                {!canBuy ? (isArchivedProduct ? 'Ngừng Bán' : priceBlocked ? 'Tạm Khóa Giá' : 'Hết Hàng') : 'Mua Ngay'}
+                {!canBuy ? (isArchivedProduct ? 'Ngừng Bán' : isUnsellableProduct ? 'Chưa Có Nguồn Giá' : priceBlocked ? 'Tạm Khóa Giá' : 'Hết Hàng') : 'Mua Ngay'}
               </button>
             </div>
 
