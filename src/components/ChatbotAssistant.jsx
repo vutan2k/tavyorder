@@ -93,7 +93,7 @@ export default function ChatbotAssistant() {
 
     // 2. Shipping or general order queries
     if (q.includes('ship') || q.includes('vận chuyển') || q.includes('phí') || q.includes('cước') || q.includes('bao lâu')) {
-      return `✈️ **Thông tin vận chuyển tại TAVY KOREA:**\n- Hàng bay Air trực tiếp từ Seoul về Việt Nam chỉ mất từ **3 - 5 ngày làm việc**.\n- Cước vận chuyển Air thông thường khoảng 180,000đ/kg.\n- Bạn có thể theo dõi tiến độ bay thực tế của đơn hàng tại tab **Đơn của tôi** sau khi đặt hàng.`;
+      return `✈️ **Thông tin vận chuyển tại TAVY KOREA:**\n- Hàng bay Air trực tiếp từ Seoul về Việt Nam chỉ mất từ **3 - 5 ngày làm việc**.\n- Giá về tay đã bao gồm trọn gói tiền hàng, phí dịch vụ và cước vận chuyển Air, không phát sinh thêm.\n- Bạn có thể theo dõi tiến độ bay thực tế của đơn hàng tại tab **Đơn của tôi** sau khi đặt hàng.`;
     }
 
     if (q.includes('thanh toán') || q.includes('cọc') || q.includes('chuyển khoản') || q.includes('bank')) {
@@ -128,7 +128,7 @@ Nhiệm vụ của bạn:
 2. Tư vấn sản phẩm phù hợp cho khách hàng dựa trên danh mục sản phẩm của cửa hàng dưới đây:
 ${JSON.stringify(OLIVE_YOUNG_CATALOG.map(p => ({ name: p.name, brand: p.brand, category: p.category, price: p.foreignPrice, desc: p.description })))}
 3. Khi giới thiệu sản phẩm, hãy nói rõ thương hiệu, công dụng chính và giá tiền (cả Won và VND quy đổi x19.5).
-4. Phí vận chuyển Air từ Hàn Quốc về Việt Nam là 180,000đ/kg, thời gian bay khoảng 3-5 ngày. Hỗ trợ cọc 50% chuyển khoản ngân hàng Việt Nam hoặc Woori Bank Hàn Quốc.
+4. Giá về tay đã bao gồm trọn gói tiền hàng, phí dịch vụ và cước vận chuyển Air Hàn - Việt (không tính thêm phí ship theo kg), thời gian bay khoảng 3-5 ngày. Hỗ trợ cọc 50% chuyển khoản ngân hàng Việt Nam hoặc Woori Bank Hàn Quốc.
 Hãy trả lời ngắn gọn, tập trung và thu hút khách hàng đặt hàng.`;
 
         const response = await fetch(

@@ -354,7 +354,7 @@ export default function CheckoutPage() {
                   <span style={{ fontWeight: 600 }}>{cartTotalVnd.toLocaleString()}đ</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', color: '#4B5563', fontSize: '0.78rem', fontStyle: 'italic', backgroundColor: '#FEF3C7', padding: '6px 10px', borderRadius: '6px' }}>
-                  <span>* Lưu ý: Giá trên chưa bao gồm cước vận chuyển Air (180k/kg) tính khi hàng về tới kho Hà Nội/Sài Gòn.</span>
+                  <span>* Giá trên đã bao gồm toàn bộ tiền hàng, phí dịch vụ và cước vận chuyển Air Hàn - Việt. Quý khách chỉ thanh toán 1 lần.</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px dashed #E5E7EB', paddingTop: '10px', fontSize: '0.98rem', fontWeight: 800, color: '#111827' }}>
                   <span>Cần đặt cọc trước (50%):</span>
