@@ -30,3 +30,5 @@
 [2026-11-23T12:50:35.116Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x66861b78 error. Code: 14 Message: 14 UNAVAILABLE: read ECONNRESET
 [2026-11-23T20:15:32.353Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x66861b81 error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
 [2026-11-24T16:40:17.194Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x66861b98 error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)
+[2026-11-25T01:31:12.072Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x66861ba3 error. Code: 14 Message: 14 UNAVAILABLE: read ETIMEDOUT
+[2026-11-25T08:25:46.701Z]  @firebase/firestore: Firestore (12.18.0): GrpcConnection RPC 'Listen' stream 0x66861bab error. Code: 13 Message: 13 INTERNAL: Received RST_STREAM with code 2 (Internal server error)

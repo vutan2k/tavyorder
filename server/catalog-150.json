@@ -1,1117 +1,1593 @@
 [
- {
-  "firestoreId": "A000000263009",
-  "source": "oy",
-  "goodsNo": "A000000263009",
-  "brand": "La Roche-Posay",
-  "name": "Kem Dưỡng Phục Hồi Hàng Rào Bảo Vệ Da La Roche-Posay Cicaplast Baume B5+ (Set 100ml + Tặng Cica Essence 7.5ml + Hyalu Serum 3ml)"
- },
- {
-  "firestoreId": "A000000231836",
-  "source": "oy",
-  "goodsNo": "A000000231836",
-  "brand": "Anua",
-  "name": "Mặt Nạ Giấy Dưỡng Ẩm Làm Dịu Da Anua Daily Care Mask Set 5 Miếng"
- },
- {
-  "firestoreId": "A000000262620",
-  "source": "oy",
-  "goodsNo": "A000000262620",
-  "brand": "Anua",
-  "name": "Dầu tẩy trang làm sạch sâu se khít lỗ chân lông Anua Heartleaf Pore Control Cleansing Oil 350ml (Bản giới hạn Pochacco kèm bông tẩy trang)"
- },
- {
-  "firestoreId": "A000000261842",
-  "source": "oy",
-  "goodsNo": "A000000261842",
-  "brand": "Biodance",
-  "name": "Mặt Nạ Thạch Căng Bóng Cấp Ẩm Chuyên Sâu Biodance Real Deep Mask (Set 7+1 Miếng - Tặng Phụ Kiện Sanrio)"
- },
- {
-  "firestoreId": "A000000233470",
-  "source": "oy",
-  "goodsNo": "A000000233470",
-  "brand": "Mediheal",
-  "name": "Mặt Nạ Miếng Dán Collagen Phục Hồi Da Mediheal Collagen Capsule Patch (Set Đôi 60 + 60 Miếng)"
- },
- {
-  "firestoreId": "A000000252917",
-  "source": "oy",
-  "goodsNo": "A000000252917",
-  "brand": "La Roche-Posay",
-  "name": "Kem Dưỡng Phục Hồi Tái Tạo Da La Roche-Posay Cicaplast Baume B5+ & Multi-Repair Cream (Set 100ml + Tặng Tinh Chất Cica 50%)"
- },
- {
-  "firestoreId": "A000000240462",
-  "source": "oy",
-  "goodsNo": "A000000240462",
-  "brand": "Celimax",
-  "name": "Mặt Nạ Kem Dưỡng Sáng Mờ Thâm Nám Celimax Tranexamic Acid Brightening Cream Wrapping Mask (Set 5 Miếng Tặng 1 Miếng)"
- },
- {
-  "firestoreId": "A000000257072",
-  "source": "oy",
-  "goodsNo": "A000000257072",
-  "brand": "numbuzin",
-  "name": "Mặt Nạ Sủi Bọt Làm Sạch Cấp Ẩm Numbuzin Prep Bubble Pack (4 Phân Loại Tùy Chọn)"
- },
- {
-  "firestoreId": "A000000206826",
-  "source": "oy",
-  "goodsNo": "A000000206826",
-  "brand": "Aestura",
-  "name": "Kem Chống Nắng Vật Lý Cấp Ẩm Phục Hồi Hàng Rào Bảo Vệ Da Aestura Derma UV365 Barrier Hydro Mineral Sunscreen (Set 40ml + 20ml)"
- },
- {
-  "firestoreId": "A000000245091",
-  "source": "oy",
-  "goodsNo": "A000000245091",
-  "brand": "Aestura",
-  "name": "Tinh Chất Ampoule Cấp Ẩm Chuyên Sâu Aestura Atobarrier 365 Cera-Hyal Hydro Ampoule (Set 30ml + Refill 30ml)"
- },
- {
-  "firestoreId": "A000000217620",
-  "source": "oy",
-  "goodsNo": "A000000217620",
-  "brand": "Mediheal",
-  "name": "Mặt Nạ Giấy Dưỡng Da Tinh Chất Chuyên Sâu Mediheal Essential Mask (Tùy Chọn 7 Loại / 1 Miếng)"
- },
- {
-  "firestoreId": "A000000255682",
-  "source": "oy",
-  "goodsNo": "A000000255682",
-  "brand": "Medicube",
-  "name": "Bông Dưỡng Da Toner Pad Se Khít Lỗ Chân Lông Medicube Toner Pad (Set 160 Miếng + Refill 140 Miếng Tùy Chọn Zero Pore/PDRN/Deep Vita C)"
- },
- {
-  "firestoreId": "A000000231885",
-  "source": "oy",
-  "goodsNo": "A000000231885",
-  "brand": "Wellage",
-  "name": "Tinh Chất Cấp Ẩm Chuyên Sâu Wellage Real Hyaluronic Blue 100 Ampoule Set Đôi 75ml x 2"
- },
- {
-  "firestoreId": "A000000264301",
-  "source": "oy",
-  "goodsNo": "A000000264301",
-  "brand": "Medicube",
-  "name": "Tinh Chất Ampoule Phục Hồi Căng Bóng Medicube PDRN Pink Peptide Ampoule (Set Giới Hạn 30ml + Túi Nạp 50ml + 10ml)"
- },
- {
-  "firestoreId": "A000000261065",
-  "source": "oy",
-  "goodsNo": "A000000261065",
-  "brand": "Celimax",
-  "name": "Kem Dưỡng Tái Tạo Săn Chắc Da Và Thu Nhỏ Lỗ Chân Lông Celimax The Vita A Retinal Shot Tightening Dual Cream (50ml)"
- },
- {
-  "firestoreId": "A000000263681",
-  "source": "oy",
-  "goodsNo": "A000000263681",
-  "brand": "Torriden",
-  "name": "Kem Dưỡng Gel Cấp Nước Làm Dịu Da Torriden Dive-In Low Molecule Hyaluronic Acid Soothing Cream (Set Đôi 100ml Tặng Túi Lưới Cinnamoroll)"
- },
- {
-  "firestoreId": "A000000231822",
-  "source": "oy",
-  "goodsNo": "A000000231822",
-  "brand": "Numbuzin",
-  "name": "Phấn Phủ Dạng Bột Kiềm Dầu Mịn Da Numbuzin No.1 Pantothenic Acid Skincare 100 Blur Powder (Tặng Kèm 1 Bông Phủ)"
- },
- {
-  "firestoreId": "A000000263073",
-  "source": "oy",
-  "goodsNo": "A000000263073",
-  "brand": "Bioderma",
-  "name": "Nước Dưỡng Cấp Ẩm Chuyên Sâu Bioderma Hydrabio Essence Lotion 200ml"
- },
- {
-  "firestoreId": "A000000241210",
-  "source": "oy",
-  "goodsNo": "A000000241210",
-  "brand": "Rom&nd",
-  "name": "Son Tint Bóng Căng Mộng Lâu Trôi Rom&nd The Juicy Lasting Tint (Bản Hợp Tác Sanrio Kuromi / Hangyodon)"
- },
- {
-  "firestoreId": "A000000262934",
-  "source": "oy",
-  "goodsNo": "A000000262934",
-  "brand": "Hanyul",
-  "name": "Tinh chất cấp ẩm làm dịu da ngải cứu Hanyul Pure Artemisia Hyaluron Serum Set 40ml (Kèm túi refill 40ml và gương Hello Kitty)"
- },
- {
-  "firestoreId": "A000000188988",
-  "source": "oy",
-  "goodsNo": "A000000188988",
-  "brand": "Clio",
-  "name": "Bảng Phấn Mắt Trang Điểm Đa Năng Chuẩn Màu Clio Pro Eye Palette Air (Tặng Kèm Phấn Mắt Đơn)"
- },
- {
-  "firestoreId": "A000001001705",
-  "source": "oy",
-  "goodsNo": "A000001001705",
-  "brand": "Laneige",
-  "name": "Bộ Trang Điểm Đa Năng Laneige x Matin Kim Limited Edition Phấn Nước Phấn Phủ Son Tint Tùy Chọn"
- },
- {
-  "firestoreId": "A000000013194",
-  "source": "oy",
-  "goodsNo": "A000000013194",
-  "brand": "Bioderma",
-  "name": "Nước Tẩy Trang Dịu Nhẹ Cho Da Nhạy Cảm Bioderma Sensibio H2O (Set Đôi 500ml + 500ml)"
- },
- {
-  "firestoreId": "A000000265060",
-  "source": "oy",
-  "goodsNo": "A000000265060",
-  "brand": "Menokin",
-  "name": "Xịt khoáng bọt căng bóng cấp ẩm Menokin 30s Quick Glow Hydra Lift 98ml Tặng Kèm 30ml"
- },
- {
-  "firestoreId": "A000000263555",
-  "source": "oy",
-  "goodsNo": "A000000263555",
-  "brand": "Goodal",
-  "name": "Kem Chống Nắng Dịu Da Cấp Ẩm Goodal Heartleaf Calming Moisture Suncream Sanrio Edition (Set Đôi 50ml + 50ml + Tặng Sticker Cinnamoroll)"
- },
- {
-  "firestoreId": "A000000268585",
-  "source": "oy",
-  "goodsNo": "A000000268585",
-  "brand": "Laneige",
-  "name": "Phấn Phủ Dạng Bột Kiềm Dầu Mịn Da Laneige x Matin Kim Essential Blurring Finish Powder 7g Kèm Túi Đựng"
- },
- {
-  "firestoreId": "A000000171848",
-  "source": "oy",
-  "goodsNo": "A000000171848",
-  "brand": "Illiyoon",
-  "name": "Sữa Dưỡng Thể Dưỡng Ẩm Dịu Nhẹ Illiyoon Ceramide Ato Lotion (Set Đôi Siêu Tiết Kiệm 600ml + 600ml)"
- },
- {
-  "firestoreId": "A000000185265",
-  "source": "oy",
-  "goodsNo": "A000000185265",
-  "brand": "Clio",
-  "name": "Son Tint Bóng Căng Mọng Môi Clio Crystal Glam Tint Pungnyeon Dabang Edition (Tặng Kèm Mặt Nạ Môi)"
- },
- {
-  "firestoreId": "A000000263542",
-  "source": "oy",
-  "goodsNo": "A000000263542",
-  "brand": "Physiogel",
-  "name": "Tinh Chất Ampoule Chống Oxy Hóa Phục Hồi Physiogel Dailymune Ampoule (Set 20ml + 20ml + Tặng 1 Mặt Nạ)"
- },
- {
-  "firestoreId": "A000000156230",
-  "source": "oy",
-  "goodsNo": "A000000156230",
-  "brand": "S.Nature",
-  "name": "Kem dưỡng cấp ẩm se khít lỗ chân lông S.Nature Aqua Squalane 60ml Tặng Kèm 30ml"
- },
- {
-  "firestoreId": "A000000247776",
-  "source": "oy",
-  "goodsNo": "A000000247776",
-  "brand": "Isntree",
-  "name": "Kem Dưỡng Dạng Gel Mờ Thâm Phục Hồi Isntree Onion Newpair Gel Cream Plus (50ml + Tặng Kèm Gel 20ml & Pad 2 Miếng)"
- },
- {
-  "firestoreId": "A000000167416",
-  "source": "oy",
-  "goodsNo": "A000000167416",
-  "brand": "Illiyoon",
-  "name": "Sữa Tắm Tẩy Tế Bào Chết Cấp Ẩm Tươi Mát Illiyoon Fresh Moisture Scrub Wash Set 2 Chai 400ml"
- },
- {
-  "firestoreId": "A000000261423",
-  "source": "oy",
-  "goodsNo": "A000000261423",
-  "brand": "Wellage",
-  "name": "Tinh Chất Ampoule Cấp Ẩm Chuyên Sâu Wellage Real Hyaluronic Blue 100 Ampoule (Set 100ml + Lõi Thay 60ml + Kem Dưỡng 30ml)"
- },
- {
-  "firestoreId": "A000000263562",
-  "source": "oy",
-  "goodsNo": "A000000263562",
-  "brand": "Goodal",
-  "name": "Tinh Chất Serum Mờ Thâm Sáng Da Goodal Green Tangerine Vita C Dark Spot Care Serum Alpha Phiên Bản Sanrio (Set 50ml + Lõi Thay 50ml + Quà Tặng Nam Châm Pompompurin)"
- },
- {
-  "firestoreId": "A000000260483",
-  "source": "oy",
-  "goodsNo": "A000000260483",
-  "brand": "fwee",
-  "name": "Xịt khoáng hai tầng khóa ẩm tạo nền căng bóng fwee Shaking Synergy Mist 50ml (4 loại)"
- },
- {
-  "firestoreId": "A000000234422",
-  "source": "oy",
-  "goodsNo": "A000000234422",
-  "brand": "Menokin",
-  "name": "Mặt Nạ Sủi Bọt Làm Sạch Và Dưỡng Ẩm Nhanh Menokin 30-Second Quick Bubble Mask (Tùy Chọn 6 Loại + Tặng Kèm 30ml)"
- },
- {
-  "firestoreId": "A000000263664",
-  "source": "oy",
-  "goodsNo": "A000000263664",
-  "brand": "Torriden",
-  "name": "Tinh Chất Cấp Nước Sâu Phục Hồi Da Torriden Dive-In Low Molecular Hyaluronic Acid Serum (Set 50ml + Refill 50ml Tặng Kèm Búp Bê Cinnamoroll)"
- },
- {
-  "firestoreId": "A000000262945",
-  "source": "oy",
-  "goodsNo": "A000000262945",
-  "brand": "Hanyul",
-  "name": "Kem Dưỡng Cấp Ẩm Làm Dịu Ngải Cứu Hanyul Pure Artemisia Hyaluron Cream Set 60ml x 2"
- },
- {
-  "firestoreId": "A000000253122",
-  "source": "oy",
-  "goodsNo": "A000000253122",
-  "brand": "Fwee",
-  "name": "Phấn nước che phủ cao bền màu Fwee All Day Cover Black Cushion Hộp Kèm Lõi Thay Thế"
- },
- {
-  "firestoreId": "A000000255752",
-  "source": "oy",
-  "goodsNo": "A000000255752",
-  "brand": "Dr.G",
-  "name": "Kem Dưỡng Dạng Gel Cấp Ẩm Làm Dịu Da Dr.G Red Blemish Clear Soothing Cream EX (Set 70ml + Tặng Kem 30ml + Serum 10ml x 2)"
- },
- {
-  "firestoreId": "A000000263782",
-  "source": "oy",
-  "goodsNo": "A000000263782",
-  "brand": "S.Nature",
-  "name": "Kem Dưỡng Ẩm Cấp Nước Phục Hồi Làn Da S.Nature Aqua Squalane Moisture Cream (Set Đôi 60ml + 60ml Tặng Kèm Keycap Hello Kitty)"
- },
- {
-  "firestoreId": "A000000263510",
-  "source": "oy",
-  "goodsNo": "A000000263510",
-  "brand": "Round Lab",
-  "name": "Kem Chống Nắng Dưỡng Ẩm Cấp Nước Round Lab Birch Juice Moisturizing Sunscreen (Set Mua 1 Tặng 1 50ml + Tặng Kèm Tinh Chất 8ml)"
- },
- {
-  "firestoreId": "A000000157452",
-  "source": "oy",
-  "goodsNo": "A000000157452",
-  "brand": "Cetaphil",
-  "name": "Sữa dưỡng thể dưỡng ẩm dịu da Cetaphil Moisturizing Lotion 1L Tặng Kèm Găng Tay Tắm"
- },
- {
-  "firestoreId": "A000000246286",
-  "source": "oy",
-  "goodsNo": "A000000246286",
-  "brand": "Peripera",
-  "name": "Chì kẻ mày và mascara chuốt mày định hình thanh mảnh lâu trôi Peripera Speedy Skinny Brow & Brow Mascara"
- },
- {
-  "firestoreId": "A000000247099",
-  "source": "oy",
-  "goodsNo": "A000000247099",
-  "brand": "Wakemake",
-  "name": "Sáp trang điểm đa năng bắt sáng làm mịn da Wakemake Off Cherry Collection Dạng Thỏi"
- },
- {
-  "firestoreId": "A000000180532",
-  "source": "oy",
-  "goodsNo": "A000000180532",
-  "brand": "WakeMake",
-  "name": "Bảng Phấn Mắt Trang Điểm Mịn Mượt WakeMake Soft Blurring Eye Palette (Phiên Bản Hello Kitty Leopard)"
- },
- {
-  "firestoreId": "A000000203943",
-  "source": "oy",
-  "goodsNo": "A000000203943",
-  "brand": "Etude",
-  "name": "Chuốt Mi Siêu Cong Và Định Hình Giữ Nếp Etude Curl Fix Mascara (Set Mua 1 Tặng 1 Hoặc Tặng Kèm Kẹp Mi)"
- },
- {
-  "firestoreId": "A000000235485",
-  "source": "oy",
-  "goodsNo": "A000000235485",
-  "brand": "Uriage",
-  "name": "Son Dưỡng Môi Cấp Ẩm Có Màu Uriage Stick Levres Colored (9 Tông Màu)"
- },
- {
-  "firestoreId": "A000000262817",
-  "source": "oy",
-  "goodsNo": "A000000262817",
-  "brand": "Innisfree",
-  "name": "Tinh Chất Giảm Mụn Mờ Thâm Lỗ Chân Lông Innisfree Retinol Cica Repair Ampoule (Set Đôi 30ml + 30ml)"
- },
- {
-  "firestoreId": "A000000263099",
-  "source": "oy",
-  "goodsNo": "A000000263099",
-  "brand": "Peripera",
-  "name": "Son kem lì làm mờ rãnh môi Peripera Mood Blur Tint 9 Màu Tặng Kèm Son Mini"
- },
- {
-  "firestoreId": "A000000259386",
-  "source": "oy",
-  "goodsNo": "A000000259386",
-  "brand": "Podle",
-  "name": "Kem Dưỡng Thu Nhỏ Lỗ Chân Lông Podle Balm Retinal Pore Reset Solution Capsule Cream 55g"
- },
- {
-  "firestoreId": "A000000185903",
-  "source": "oy",
-  "goodsNo": "A000000185903",
-  "brand": "VDL",
-  "name": "Phấn Nước Che Phủ Bền Màu VDL Cover Stain Perfecting Cushion Set (Hộp Chính + Lõi Thay Thế)"
- },
- {
-  "firestoreId": "A000000255852",
-  "source": "oy",
-  "goodsNo": "A000000255852",
-  "brand": "Layer Lab",
-  "name": "Tinh Chất Phục Hồi Hàng Rào Dưỡng Ẩm Layer Lab Niosome Panthenol 5% Serum (Set Đôi 1+1 30ml + 30ml)"
- },
- {
-  "firestoreId": "A000000267287",
-  "source": "oy",
-  "goodsNo": "A000000267287",
-  "brand": "Risky",
-  "name": "Son Thỏi Hiệu Ứng Căng Bóng Dưỡng Môi Risky Hyper Shine Lipstick 6 Màu"
- },
- {
-  "firestoreId": "A000000218508",
-  "source": "oy",
-  "goodsNo": "A000000218508",
-  "brand": "Beyond",
-  "name": "Sữa dưỡng thể sáng da dưỡng ẩm Beyond Bodytamin Body Lotion 500ml (Tùy chọn 3 loại)"
- },
- {
-  "firestoreId": "A000000251720",
-  "source": "oy",
-  "goodsNo": "A000000251720",
-  "brand": "Nooni",
-  "name": "Dầu Dưỡng Môi Chiết Xuất Táo Căng Mọng Nooni Apple Lip Oil 12 Màu Tùy Chọn"
- },
- {
-  "firestoreId": "A000000253919",
-  "source": "oy",
-  "goodsNo": "A000000253919",
-  "brand": "Juvelook",
-  "name": "Mặt Nạ Tăng Sinh Collagen Căng Bóng Da Juvelook PDLLA Collagen Boosting Mask Set 5 Miếng"
- },
- {
-  "firestoreId": "A000000186409",
-  "source": "oy",
-  "goodsNo": "A000000186409",
-  "brand": "Blanc Nature",
-  "name": "Sữa Rửa Mặt Cho Da Mụn Blanc Nature Acne Cleansing Foam (Tùy Chọn Lẻ Hoặc Set)"
- },
- {
-  "firestoreId": "A000000219609",
-  "source": "oy",
-  "goodsNo": "A000000219609",
-  "brand": "Fation",
-  "name": "Tinh Chất Serum Dịu Da Giảm Mụn Fation Nosca9 Trouble Serum (Set 50ml + Lõi Thay 40ml + Kem Dưỡng 10ml)"
- },
- {
-  "firestoreId": "A000000212579",
-  "source": "oy",
-  "goodsNo": "A000000212579",
-  "brand": "House of B",
-  "name": "Mặt nạ ôm sát trẻ hóa dưỡng sáng da House of B Face Film Mask 4 miếng (Tùy chọn Glutathione / PDRN)"
- },
- {
-  "firestoreId": "A000000265712",
-  "source": "oy",
-  "goodsNo": "A000000265712",
-  "brand": "Ataga",
-  "name": "Tinh Chất Chống Nắng Nâng Tông Tự Nhiên Ataga Snow Sun Serum 30ml"
- },
- {
-  "firestoreId": "A000000263862",
-  "source": "oy",
-  "goodsNo": "A000000263862",
-  "brand": "OFRA",
-  "name": "Phấn Bắt Sáng Tạo Khối Căng Bóng OFRA Slim Mini Highlighter 4g"
- },
- {
-  "firestoreId": "A000000234394",
-  "source": "oy",
-  "goodsNo": "A000000234394",
-  "brand": "Alternative Stereo",
-  "name": "Son Bóng Dưỡng Căng Mộng Alternative Stereo Lip Potion Caramel Glaze (8ml)"
- },
- {
-  "firestoreId": "A000000225217",
-  "source": "oy",
-  "goodsNo": "A000000225217",
-  "brand": "Derma Factory",
-  "name": "Tinh Chất Dưỡng Sáng Thu Nhỏ Lỗ Chân Lông Derma Factory Niacinamide 20% Serum 30ml"
- },
- {
-  "firestoreId": "A000000264464",
-  "source": "oy",
-  "goodsNo": "A000000264464",
-  "brand": "Tekira",
-  "name": "Mascara Đầu Kim Loại Định Hình Mi Chống Trôi Tekira Anti Gravity Metal Cara 3g (2 Màu Tùy Chọn)"
- },
- {
-  "firestoreId": "A000000238153",
-  "source": "oy",
-  "goodsNo": "A000000238153",
-  "brand": "TO&ND",
-  "name": "Son thỏi bóng căng mọng môi TO&ND Juicy Tangtang Glaze 3.5g (9 màu)"
- },
- {
-  "firestoreId": "A000000200614",
-  "source": "oy",
-  "goodsNo": "A000000200614",
-  "brand": "d'Alba",
-  "name": "Kem Chống Nắng Hiệu Chỉnh Tông Da d'Alba Waterfull Purple Tone-Up Sunscreen (Set Đôi 50ml + 50ml)"
- },
- {
-  "firestoreId": "A000000202777",
-  "source": "oy",
-  "goodsNo": "A000000202777",
-  "brand": "Hera",
-  "name": "Phấn Nước Che Phủ Kiềm Dầu Hera Black Cushion Foundation (Set 15g + Lõi Thay Thế 15g - 9 Tone Màu)"
- },
- {
-  "firestoreId": "A000000263824",
-  "source": "oy",
-  "goodsNo": "A000000263824",
-  "brand": "Quadthera",
-  "name": "Máy Chăm Sóc Da Nâng Cơ Sóng Siêu Âm Quadthera Teens Waterdrop Ultrasound Home Care Device"
- },
- {
-  "firestoreId": "A000000217101",
-  "source": "oy",
-  "goodsNo": "A000000217101",
-  "brand": "iHill",
-  "name": "Men vi sinh âm đạo iHill Venus 30 viên nang (+6 viên nang) gói tăng dung tích"
- },
- {
-  "firestoreId": "A000000235050",
-  "source": "oy",
-  "goodsNo": "A000000235050",
-  "brand": "COSRX",
-  "name": "Tinh Chất Dưỡng Trắng Giảm Thâm COSRX Advanced The Vitamin C 23 Serum 20g x 2 Lọ"
- },
- {
-  "firestoreId": "A000000225250",
-  "source": "oy",
-  "goodsNo": "A000000225250",
-  "brand": "Fillimilli",
-  "name": "Bộ Cọ Trang Điểm Chuyên Nghiệp Fillimilli Brush Set (Phiên Bản Hợp Tác Sanrio Pochacco / My Melody)"
- },
- {
-  "firestoreId": "A000000190168",
-  "source": "oy",
-  "goodsNo": "A000000190168",
-  "brand": "Flymill",
-  "name": "Bột ngũ cốc dinh dưỡng bổ sung đạm Flymill Protein Shake 45g"
- },
- {
-  "firestoreId": "A000000208162",
-  "source": "oy",
-  "goodsNo": "A000000208162",
-  "brand": "Delight Project",
-  "name": "Bột Bổ Sung Protein Dinh Dưỡng Tiện Lợi Delight Project Protein Shake (Gói 45g Tùy Chọn Vị)"
- },
- {
-  "firestoreId": "A000000244929",
-  "source": "oy",
-  "goodsNo": "A000000244929",
-  "brand": "Gynomaster",
-  "name": "Viên Uống Men Vi Sinh Phụ Nữ Cân Bằng Hệ Vi Sinh Gynomaster Vaginal Probiotics (30 Viên + Tặng Dầu Hoa Bìm Bìm 5 Ngày)"
- },
- {
-  "firestoreId": "A000000265728",
-  "source": "oy",
-  "goodsNo": "A000000265728",
-  "brand": "CJ Maxplan",
-  "name": "Bột ngũ cốc dinh dưỡng bổ sung đạm CJ Maxplan Daily Protein Shake 45g (Dâu sữa chua / Bơ đậu phộng / Sô-cô-la)"
- },
- {
-  "firestoreId": "A000000263630",
-  "source": "oy",
-  "goodsNo": "A000000263630",
-  "brand": "Vodana",
-  "name": "Máy Tạo Kiểu Tóc Uốn Duỗi Tiện Lợi Vodana Easy Up Hair Styler Flip (Phiên Bản Hello Kitty)"
- },
- {
-  "firestoreId": "A000000202771",
-  "source": "oy",
-  "goodsNo": "A000000202771",
-  "brand": "Prote-One",
-  "name": "Bột Bổ Sung Protein Hỗ Trợ Dinh Dưỡng Vóc Dáng Prote-One Protein Shake Pouch (Set Mua 1 Tặng 1 40g - 6 Hương Vị)"
- },
- {
-  "firestoreId": "A000000254661",
-  "source": "oy",
-  "goodsNo": "A000000254661",
-  "brand": "Arencia",
-  "name": "Tinh Chất Dưỡng Sáng Làm Đều Màu Da Arencia Vitamin C Booster Shot (Set Đôi 30ml + 30ml)"
- },
- {
-  "firestoreId": "A000000168243",
-  "source": "oy",
-  "goodsNo": "A000000168243",
-  "brand": "Longtake",
-  "name": "Dầu Xả Ủ Tóc Phục Hồi Hương Nước Hoa Longtake Treatment Set 200ml + 100ml (Gỗ Đàn Hương / Trà Đen & Vả Tây)"
- },
- {
-  "firestoreId": "A000000267969",
-  "source": "oy",
-  "goodsNo": "A000000267969",
-  "brand": "Lador",
-  "name": "Nước Hoa Dưỡng Tóc Lưu Hương Mềm Mượt Lador Hair Perfume (30ml Tặng Dầu Dưỡng Tóc 10ml)"
- },
- {
-  "firestoreId": "A000000218845",
-  "source": "oy",
-  "goodsNo": "A000000218845",
-  "brand": "Lilyeve",
-  "name": "Tinh Chất Dưỡng Da Đầu Kích Thích Mọc Tóc Lilyeve Growturn Exosome Brush Ampoule (Dung Tích Lớn 130ml)"
- },
- {
-  "firestoreId": "A000000217703",
-  "source": "oy",
-  "goodsNo": "A000000217703",
-  "brand": "Tangle Angel",
-  "name": "Lược chải tóc gỡ rối giảm gãy rụng Tangle Angel Cupid Brush Tặng Kèm Móc Khóa Lược Mini"
- },
- {
-  "firestoreId": "A000000213569",
-  "source": "oy",
-  "goodsNo": "A000000213569",
-  "brand": "Coringco",
-  "name": "Mi Giả Tự Dính Tiện Lợi Không Cần Keo Coringco TokTok-Hara No Glue Eyelash (15 Loại Tùy Chọn - Phiên Bản Sanrio)"
- },
- {
-  "firestoreId": "A000000149501",
-  "source": "oy",
-  "goodsNo": "A000000149501",
-  "brand": "LABO-H",
-  "name": "Dầu Gội Giảm Rụng Củng Cố Da Đầu LABO-H Scalp Strengthening Shampoo 750ml Kèm Chai 100ml"
- },
- {
-  "firestoreId": "A000000171423",
-  "source": "oy",
-  "goodsNo": "A000000171423",
-  "brand": "Unove",
-  "name": "Kem Ủ Tóc Phục Hồi Hư Tổn Chuyên Sâu Unove Deep Damage Repair Hair Mask (Set Đôi 320ml + 320ml)"
- },
- {
-  "firestoreId": "A000000265724",
-  "source": "oy",
-  "goodsNo": "A000000265724",
-  "brand": "Kerastase",
-  "name": "Sữa Dưỡng Tóc Bóng Mượt Hương Hoa Kerastase Gloss Absolu (240ml)"
- },
- {
-  "firestoreId": "A000000202414",
-  "source": "oy",
-  "goodsNo": "A000000202414",
-  "brand": "LABO-H",
-  "name": "Tinh chất chăm sóc chân tóc ngăn gãy rụng LABO-H Hair Line Ampoule Monchhichi Edition Set Đôi Tặng Kèm Dầu Gội 50ml"
- },
- {
-  "firestoreId": "A000000171422",
-  "source": "oy",
-  "goodsNo": "A000000171422",
-  "brand": "Unove",
-  "name": "Tinh Dầu Dưỡng Tóc Bóng Mượt Unove Silk Hair Oil Essence (Set Đôi 70ml + 70ml Bản Powerpuff Girls)"
- },
- {
-  "firestoreId": "A000000268499",
-  "source": "oy",
-  "goodsNo": "A000000268499",
-  "brand": "MacPlan",
-  "name": "Sữa lắc protein hàng ngày CJ MacPlan 45g (hộp 5 gói) vị sữa chua dâu / bơ đậu phộng / sô-cô-la"
- },
- {
-  "firestoreId": "A000000164470",
-  "source": "oy",
-  "goodsNo": "A000000164470",
-  "brand": "Longtake",
-  "name": "Dầu Gội Phục Hồi Hương Nước Hoa Longtake Shampoo Set 300ml + 100ml"
- },
- {
-  "firestoreId": "A000000219331",
-  "source": "oy",
-  "goodsNo": "A000000219331",
-  "brand": "Fillimilli",
-  "name": "[MỚI] Fillimilli Lông Mi Giả Tự Chọn 1 Món (Sợi Điểm Nhấn / Không Keo / Cắt Sẵn / Điểm Nhấn Giữa / Keo Dán)"
- },
- {
-  "firestoreId": "A000000187090",
-  "source": "oy",
-  "goodsNo": "A000000187090",
-  "brand": "Fino",
-  "name": "Kem Ủ Tóc Phục Hồi Chuyên Sâu Fino Premium Touch Hair Mask 230g (Set Đôi Kèm Kẹp Tóc Ditto)"
- },
- {
-  "firestoreId": "A000001004351",
-  "source": "oy",
-  "goodsNo": "A000001004351",
-  "brand": "VT Cosmetics",
-  "name": "Serum Dưỡng Tóc Kèm Đầu Cọ Massage Phục Hồi Chuyên Sâu VT PDRN Reedle Shot 100ml"
- },
- {
-  "firestoreId": "A000000140183",
-  "source": "oy",
-  "goodsNo": "A000000140183",
-  "brand": "L'Oréal",
-  "name": "Tinh dầu dưỡng tóc bảo vệ nhiệt L'Oréal Paris 100ml (bản giới hạn Hello Kitty, tặng kèm cọ chải tóc)"
- },
- {
-  "firestoreId": "A000000219700",
-  "source": "oy",
-  "goodsNo": "A000000219700",
-  "brand": "Moroccanoil",
-  "name": "Dầu dưỡng tóc Moroccanoil Treatment 50ml (kèm vòi bơm) - Set đặc biệt"
- },
- {
-  "firestoreId": "A000000248462",
-  "source": "oy",
-  "goodsNo": "A000000248462",
-  "brand": "Vital Beauty",
-  "name": "Vital Beauty Meta Green Slim Up hỗ trợ giảm mỡ, 1 viên/ngày, hộp 30 viên (30 ngày)"
- },
- {
-  "firestoreId": "A000001003004",
-  "source": "oy",
-  "goodsNo": "A000001003004",
-  "brand": "Tequila",
-  "name": "테키라 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors"
- },
- {
-  "firestoreId": "HE0000000010",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2599576855?sitmNo=LO2599576855_2599576856&mall_no=1",
-  "brand": "Sulwhasoo",
-  "name": "Kem Sâm Ngăn Lão Hóa Chuyên Sâu Sulwhasoo Concentrated Ginseng Cream 50ml",
-  "mallPriceKrwAtResolve": 171610
- },
- {
-  "firestoreId": "HE0000000052",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1217488853?sitmNo=LE1217488853_1302741623&mall_no=1",
-  "brand": "Sulwhasoo",
-  "name": "Kem Mắt Nhân Sâm Tái Tạo Mờ Nhăn Sulwhasoo Concentrated Ginseng Eye Cream",
-  "mallPriceKrwAtResolve": 123500
- },
- {
-  "firestoreId": "HE0000000015",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1205034989?sitmNo=LE1205034989_1227450322&mall_no=1",
-  "brand": "La Mer",
-  "name": "Kem Dưỡng Tái Sinh Phục Hồi Da Thần Kỳ La Mer Crème de la Mer 30ml",
-  "mallPriceKrwAtResolve": 285600,
-  "mallProductName": "롯데백화점 라메르 좋아요 하기 크렘 드 라 메르 (30ml) 정상가 336,000 할인율 15% 최종가 285,600 롯데카드 7% 할인 고객평점 4.7 점 리뷰154 건 무료배송선물포장",
-  "reresolvedAt": "2026-11-24T18:12:02Z"
- },
- {
-  "firestoreId": "HE0000000031",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1200978175?sitmNo=LE1200978175_1203671061&mall_no=1",
-  "brand": "CHANEL",
-  "name": "Nước Hoa Nam Chanel Bleu de Chanel Eau de Parfum Đẳng Cấp Phái Mạnh",
-  "mallPriceKrwAtResolve": 168000
- },
- {
-  "firestoreId": "HE0000000009",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1222800434?sitmNo=LE1222800434_1338659914&mall_no=1",
-  "brand": "Sulwhasoo",
-  "name": "Tinh Chất Khởi Nguồn Tái Sinh Da Sulwhasoo First Care Serum VI",
-  "mallPriceKrwAtResolve": 133000
- },
- {
-  "firestoreId": "HE0000000021",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1200978405?sitmNo=LE1200978405_1203671725&mall_no=1",
-  "brand": "CHANEL",
-  "name": "Nước Hoa Nữ Chanel Chance Eau Tendre Eau de Parfum Cao Cấp",
-  "mallPriceKrwAtResolve": 286000
- },
- {
-  "firestoreId": "HE0000000032",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1222657814?sitmNo=LE1222657814_1337800063&mall_no=1",
-  "brand": "CHANEL",
-  "name": "Nước Hoa Nữ Chanel Coco Mademoiselle Eau de Parfum Quyến Rũ Kiêu Kỳ",
-  "mallPriceKrwAtResolve": 286000
- },
- {
-  "firestoreId": "HE0000000038",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1216256982?sitmNo=LE1216256982_1294749309&mall_no=1",
-  "brand": "TOM FORD",
-  "name": "Nước Hoa Niche Xa Xỉ Tom Ford Oud Wood Eau de Parfum Quý Tộc",
-  "mallPriceKrwAtResolve": 589000
- },
- {
-  "firestoreId": "HE0000000013",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2227121487?sitmNo=LO2227121487_2227121488&mall_no=1",
-  "brand": "SK-II",
-  "name": "Nước Thần Phục Hồi Tái Tạo Da Trắng Sáng SK-II Facial Treatment Essence",
-  "mallPriceKrwAtResolve": 276050
- },
- {
-  "firestoreId": "HE0000000023",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1220970892?sitmNo=LE1220970892_1326564238&mall_no=1",
-  "brand": "DIOR",
-  "name": "Nước Hoa Nam Dior Sauvage Eau de Toilette Đẳng Cấp Mạnh Mẽ",
-  "mallPriceKrwAtResolve": 178600
- },
- {
-  "firestoreId": "HE0000000034",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1222640481?sitmNo=LE1222640481_1337695823&mall_no=1",
-  "brand": "Diptyque",
-  "name": "Nước Hoa Niche Diptyque Do Son Eau de Parfum (Hoa Huệ Đồ Sơn Việt Nam)",
-  "mallPriceKrwAtResolve": 328000
- },
- {
-  "firestoreId": "HE0000000033",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1207082718?sitmNo=LE1207082718_1238704374&mall_no=1",
-  "brand": "Diptyque",
-  "name": "Nước Hoa Niche Diptyque Fleur de Peau Eau de Parfum (Hương Da Thịt Độc Bản)",
-  "mallPriceKrwAtResolve": 311600
- },
- {
-  "firestoreId": "HE0000000044",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1204544369?sitmNo=LE1204544369_1224580890&mall_no=1",
-  "brand": "Diptyque",
-  "name": "Nước Hoa Niche Diptyque Tam Dao Eau de Parfum (Rừng Gỗ Đàn Hương Tam Đảo)",
-  "mallPriceKrwAtResolve": 311600
- },
- {
-  "firestoreId": "HE0000000042",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/PD52253824?mall_no=1",
-  "brand": "CREED",
-  "name": "Nước Hoa Creed Silver Mountain Water Eau de Parfum Suối Nguồn Núi Tuyết",
-  "mallPriceKrwAtResolve": 421850
- },
- {
-  "firestoreId": "HE0000000041",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1208062235?sitmNo=LE1208062235_1243939654&mall_no=1",
-  "brand": "CREED",
-  "name": "Nước Hoa Hoàng Gia Creed Aventus Eau de Parfum Vị Vua Quyền Lực",
-  "mallPriceKrwAtResolve": 405000
- },
- {
-  "firestoreId": "HE0000000004",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1214422288?sitmNo=LE1214422288_1283075024&mall_no=1",
-  "brand": "DIOR",
-  "name": "Phấn Nước Căng Bóng Dior Forever Skin Glow Cushion (Hộp + Lõi)",
-  "mallPriceKrwAtResolve": 64600
- },
- {
-  "firestoreId": "HE0000000024",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1220970716?sitmNo=LE1220970716_1326563189&mall_no=1",
-  "brand": "DIOR",
-  "name": "Nước Hoa Nữ Miss Dior Blooming Bouquet Eau de Toilette Dịu Dàng",
-  "mallPriceKrwAtResolve": 94050
- },
- {
-  "firestoreId": "HE0000000057",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2201304704?sitmNo=LO2201304704_2201304705&mall_no=1",
-  "brand": "LA MER",
-  "name": "Kem Dưỡng Tái Sinh Thần Thánh La Mer Crème de la Mer Xa Xỉ Bậc Nhất",
-  "mallPriceKrwAtResolve": 395240,
-  "mallProductName": "[라메르]크렘 드 라 메르 모이스처라이징 크림 30ml",
-  "reresolvedAt": "2026-11-24T18:14:47Z"
- },
- {
-  "firestoreId": "HE0000000051",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1218440458?sitmNo=LE1218440458_1309064237&mall_no=1",
-  "brand": "Clé de Peau Beauté",
-  "name": "Tinh Chất Đánh Thức Tế Bào Thượng Hạng Clé de Peau Beauté The Serum",
-  "mallPriceKrwAtResolve": 315000
- },
- {
-  "firestoreId": "HE0000000022",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1222699260?sitmNo=LE1222699260_1338046971&mall_no=1",
-  "brand": "YSL",
-  "name": "Nước Hoa Nữ YSL Libre Eau de Parfum Biểu Tượng Quyến Rũ",
-  "mallPriceKrwAtResolve": 218500
- },
- {
-  "firestoreId": "HE0000000070",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1221273270?sitmNo=LE1221273270_1328542485&mall_no=1",
-  "brand": "TOM FORD",
-  "name": "Bảng Phấn Mắt 4 Ô Thượng Hạng Tom Ford Eye Color Quad Sang Trọng",
-  "mallPriceKrwAtResolve": 128250
- },
- {
-  "firestoreId": "HE0000000050",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1204425138?sitmNo=LE1204425138_1223836246&mall_no=1",
-  "brand": "LA MER",
-  "name": "Nước Thần Tái Sinh Năng Lượng Da La Mer The Treatment Lotion Cao Cấp",
-  "mallPriceKrwAtResolve": 227800
- },
- {
-  "firestoreId": "HE0000000045",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1222683815?sitmNo=LE1222683815_1337954693&mall_no=1",
-  "brand": "BYREDO",
-  "name": "Nước Hoa Niche Byredo Gypsy Water Eau de Parfum Lãng Du Tự Do",
-  "mallPriceKrwAtResolve": 265500
- },
- {
-  "firestoreId": "HE0000000037",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1217589424?sitmNo=LE1217589424_1303425892&mall_no=1",
-  "brand": "BYREDO",
-  "name": "Nước Hoa Niche Cao Cấp Byredo Blanche Eau de Parfum Tối Giản Bắc Âu",
-  "mallPriceKrwAtResolve": 289750
- },
- {
-  "firestoreId": "HE0000000007",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1214801525?sitmNo=LE1214801525_1285383025&mall_no=1",
-  "brand": "YSL",
-  "name": "Phấn Nước Vỏ Da Đen YSL Encre de Peau Le Cushion (Hộp + Lõi)",
-  "mallPriceKrwAtResolve": 108300,
-  "mallProductName": "롯데백화점 입생로랑 좋아요 하기 엉크르 드 뽀 쿠션 10ml당 77,357원 할인율 5% 최종가 108,300 카카오페이 머니 11% 할인 고객평점 4.8 점 리뷰749 건 무료배송선물포장",
-  "reresolvedAt": "2026-11-24T18:12:02Z"
- },
- {
-  "firestoreId": "HE0000000056",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2227121487?sitmNo=LO2227121487_2227121488&mall_no=1",
-  "brand": "SK-II",
-  "name": "Nước Thần Tái Sinh Làn Da SK-II Facial Treatment Essence (Chứa 90% Pitera)",
-  "mallPriceKrwAtResolve": 276050
- },
- {
-  "firestoreId": "HE0000000026",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1222211137?sitmNo=LE1222211137_1334764629&mall_no=1",
-  "brand": "TOM FORD",
-  "name": "Son Thỏi Lì Cao Cấp Tom Ford Lip Color Matte Vỏ Đen Viền Vàng",
-  "mallPriceKrwAtResolve": 65550
- },
- {
-  "firestoreId": "HE0000000062",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2723425385?sitmNo=LO2723425385_2723425386&mall_no=1",
-  "brand": "YSL",
-  "name": "Phấn Nước Vỏ Da Hồng YSL Touche Éclat Glow-Pact Cushion Cao Cấp",
-  "mallPriceKrwAtResolve": 47710
- },
- {
-  "firestoreId": "HE0000000075",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2793357634?sitmNo=LO2793357634_2793357635&mall_no=1",
-  "brand": "Clé de Peau Beauté",
-  "name": "Thỏi Che Khuyết Điểm Thượng Hạng Clé de Peau Beauté Concealer SPF 27",
-  "mallPriceKrwAtResolve": 127160
- },
- {
-  "firestoreId": "HE0000000049",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1208789999?sitmNo=LE1208789999_1247657952&mall_no=1",
-  "brand": "GUERLAIN",
-  "name": "Dầu Dưỡng Tái Sinh Mật Ong Đảo Ouessant Guerlain Abeille Royale Watery Oil",
-  "mallPriceKrwAtResolve": 187000
- },
- {
-  "firestoreId": "HE0000000017",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/PD49035975?mall_no=1",
-  "brand": "Jo Malone London",
-  "name": "Nước Hoa Jo Malone London English Pear & Freesia Cologne Quả Lê & Lan Nam Phi",
-  "mallPriceKrwAtResolve": 144030,
-  "mallProductName": "조 말론 런던 좋아요 하기 향수닷컴 조말론 잉글리쉬 페어 앤 프리지아 코롱 30ml (병행) 정상가 151,200 할인율 4% 최종가 144,030 고객평점 5.0 점 리뷰1 건 배송비 3,000온누리상품권",
-  "reresolvedAt": "2026-11-24T18:12:02Z"
- },
- {
-  "firestoreId": "HE0000000040",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1204595083?sitmNo=LE1204595083_1224808203&mall_no=1",
-  "brand": "Jo Malone London",
-  "name": "Nước Hoa Jo Malone Peony & Blush Suede Cologne Hoa Mẫu Đơn Quý Phái",
-  "mallPriceKrwAtResolve": 104500
- },
- {
-  "firestoreId": "HE0000000039",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2820014249?sitmNo=LO2820014249_2820014250&mall_no=1",
-  "brand": "Jo Malone London",
-  "name": "Nước Hoa Jo Malone Wood Sage & Sea Salt Cologne Hương Muối Biển Anh Quốc",
-  "mallPriceKrwAtResolve": 129800
- },
- {
-  "firestoreId": "HE0000000073",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2645760404?sitmNo=LO2645760404_2645760405&mall_no=1",
-  "brand": "GUERLAIN",
-  "name": "Phấn Phủ Ngọc Trai Đổi Màu Huyền Thoại Guerlain Météorites Pearls",
-  "mallPriceKrwAtResolve": 84280
- },
- {
-  "firestoreId": "HE0000000014",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2809783226?sitmNo=LO2809783226_2809783227&mall_no=1",
-  "brand": "Lancôme",
-  "name": "Serum Trẻ Hóa Da Tăng Cường Vi Sinh Lancôme Advanced Génifique 50ml",
-  "mallPriceKrwAtResolve": 165290,
-  "mallProductName": "랑콤 좋아요 하기 랑콤 어드밴스드 제니피끄 세럼 2026 New Year Edition 50ml 정상가 175,600 할인율 5% 최종가 165,290 삼성카드 5% 할인 배송비 9,900해외직구",
-  "reresolvedAt": "2026-11-24T18:12:02Z"
- },
- {
-  "firestoreId": "HE0000000035",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2819346402?sitmNo=LO2819346402_2819346403&mall_no=1",
-  "brand": "Maison Margiela",
-  "name": "Nước Hoa Unisex Maison Margiela Replica Jazz Club EDT Ấm Áp Hoài Niệm",
-  "mallPriceKrwAtResolve": 97020,
-  "mallProductName": "[메종 마르지엘라]메종 마르지엘라 레플리카 재즈 클럽 오드뚜왈렛 30ML",
-  "reresolvedAt": "2026-11-24T18:14:56Z"
- },
- {
-  "firestoreId": "HE0000000048",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1214054151?sitmNo=LE1214054151_1280599116&mall_no=1",
-  "brand": "CHANEL",
-  "name": "Phấn Nền Hạt Nước Chanel Les Beiges Water-Fresh Tint Mỏng Nhẹ Tự Nhiên",
-  "mallPriceKrwAtResolve": 78000
- },
- {
-  "firestoreId": "HE0000000063",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1208884747?sitmNo=LE1208884747_1248090453&mall_no=1",
-  "brand": "DIOR",
-  "name": "Kem Nền Căng Bóng 24H Dior Forever Skin Glow 24H Foundation",
-  "mallPriceKrwAtResolve": 93100
- },
- {
-  "firestoreId": "HE0000000072",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1207391930?sitmNo=LE1207391930_1320425084&mall_no=1",
-  "brand": "DIOR",
-  "name": "Bảng Phấn Bắt Sáng Tạo Khối Dior Backstage Glow Face Palette #001",
-  "mallPriceKrwAtResolve": 75050
- },
- {
-  "firestoreId": "HE0000000028",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1207391930?sitmNo=LE1207391930_1320425084&mall_no=1",
-  "brand": "DIOR",
-  "name": "Phấn Má Hồng Tự Nhiên Đổi Màu Theo Độ pH Dior Rosy Glow Blush",
-  "mallPriceKrwAtResolve": 75050
- },
- {
-  "firestoreId": "HE0000000003",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1208884747?sitmNo=LE1208884747_1248090453&mall_no=1",
-  "brand": "DIOR",
-  "name": "Son Kem Lì Kháng Nước Không Lem Dior Rouge Forever Liquid 6ml",
-  "mallPriceKrwAtResolve": 93100
- },
- {
-  "firestoreId": "HE0000000060",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1212804178?sitmNo=LE1212804178_1318601733&mall_no=1",
-  "brand": "CHANEL",
-  "name": "Son Thỏi Bấm Lì Nhung Chanel Rouge Allure Velvet Sang Trọng",
-  "mallPriceKrwAtResolve": 60000
- },
- {
-  "firestoreId": "HE0000000002",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1211906753?sitmNo=LE1211906753_1315961745&mall_no=1",
-  "brand": "DIOR",
-  "name": "Son Bóng Dưỡng Căng Mọng Môi Dior Addict Lip Maximizer 6ml",
-  "mallPriceKrwAtResolve": 49400
- },
- {
-  "firestoreId": "HE0000000008",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1216342459?sitmNo=LE1216342459_1295301491&mall_no=1",
-  "brand": "CHANEL",
-  "name": "Son Dưỡng Thỏi Trắng Cao Cấp Chanel Rouge Coco Baume 3g",
-  "mallPriceKrwAtResolve": 52000
- },
- {
-  "firestoreId": "HE0000000001",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LE1219450579?sitmNo=LE1219450579_1332093741&mall_no=1",
-  "brand": "DIOR",
-  "name": "Son Dưỡng Dior Addict Lip Glow Có Màu Cao Cấp (Nhiều Tone Màu)",
-  "mallPriceKrwAtResolve": 47500
- },
- {
-  "firestoreId": "HE0000000005",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2714906044?sitmNo=LO2714906044_2714906045&mall_no=1",
-  "brand": "YSL",
-  "name": "Son Dưỡng Bóng Căng Mọng YSL Candy Glaze Lip Gloss Stick",
-  "mallPriceKrwAtResolve": 57560
- },
- {
-  "firestoreId": "HE0000000069",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2770651579?sitmNo=LO2770651579_2770651580&mall_no=1",
-  "brand": "YSL",
-  "name": "Son Dưỡng Bóng Căng Mọng YSL Loveshine Wet Shine Lipstick 3.2g",
-  "mallPriceKrwAtResolve": 60150,
-  "mallProductName": "입생로랑 좋아요 하기 입생로랑 러브샤인 워터샤인 립스틱 3.2g 214호 웻구아바 정상가 62,800 할인율 4% 최종가 60,150 무료배송",
-  "reresolvedAt": "2026-11-24T18:12:02Z"
- },
- {
-  "firestoreId": "HE0000000006",
-  "source": "none",
-  "url": null,
-  "brand": "YSL",
-  "name": "Son Thỏi Vuông Lì Mịn YSL Rouge Pur Couture The Slim 2.2g"
- },
- {
-  "firestoreId": "HE0000000036",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2623907518?sitmNo=LO2623907518_2623907519&mall_no=1",
-  "brand": "Maison Margiela",
-  "name": "Nước Hoa Unisex Maison Margiela Replica Lazy Sunday Morning EDT Tinh Khôi",
-  "mallPriceKrwAtResolve": 186120,
-  "mallProductName": "메종 마르지엘라 좋아요 하기 메종 마르지엘라 레플리카 레이지 선데이 모닝(Replica Lazy Sunday Morning) 오 드 뚜왈렛 30ml 정상가 206,800 할인율 10% 최종가 186,120 삼성카드 ",
-  "reresolvedAt": "2026-11-24T18:12:02Z"
- },
- {
-  "firestoreId": "HE0000000054",
-  "source": "mall",
-  "url": "https://www.lotteon.com/p/product/LO2558818683?sitmNo=LO2558818683_2558818684&mall_no=1",
-  "brand": "LANCÔME",
-  "name": "Nước Thần Căng Bóng Tái Tạo Da Lancôme Clarifique Dual Essence",
-  "mallPriceKrwAtResolve": 179280
- },
- {
-  "firestoreId": "A000001002386",
-  "source": "oy",
-  "goodsNo": "A000001002386",
-  "brand": "AESTURA",
-  "name": "Kem dưỡng AESTURA Atobarrier 365 80ml Set Đôi (tặng Ampoule Ceramide-Hyaluronic 15ml)"
- },
- {
-  "firestoreId": "A000000223414",
-  "source": "oy",
-  "goodsNo": "A000000223414",
-  "brand": "Mediheal",
-  "name": "Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại)"
- }
+  {
+    "firestoreId": "A000000263009",
+    "source": "oy",
+    "goodsNo": "A000000263009",
+    "brand": "La Roche-Posay",
+    "name": "Kem Dưỡng Phục Hồi Hàng Rào Bảo Vệ Da La Roche-Posay Cicaplast Baume B5+ (Set 100ml + Tặng Cica Essence 7.5ml + Hyalu Serum 3ml)"
+  },
+  {
+    "firestoreId": "A000000231836",
+    "source": "oy",
+    "goodsNo": "A000000231836",
+    "brand": "Anua",
+    "name": "Mặt Nạ Giấy Dưỡng Ẩm Làm Dịu Da Anua Daily Care Mask Set 5 Miếng"
+  },
+  {
+    "firestoreId": "A000000262620",
+    "source": "oy",
+    "goodsNo": "A000000262620",
+    "brand": "Anua",
+    "name": "Dầu tẩy trang làm sạch sâu se khít lỗ chân lông Anua Heartleaf Pore Control Cleansing Oil 350ml (Bản giới hạn Pochacco kèm bông tẩy trang)"
+  },
+  {
+    "firestoreId": "A000000261842",
+    "source": "oy",
+    "goodsNo": "A000000261842",
+    "brand": "Biodance",
+    "name": "Mặt Nạ Thạch Căng Bóng Cấp Ẩm Chuyên Sâu Biodance Real Deep Mask (Set 7+1 Miếng - Tặng Phụ Kiện Sanrio)"
+  },
+  {
+    "firestoreId": "A000000233470",
+    "source": "oy",
+    "goodsNo": "A000000233470",
+    "brand": "Mediheal",
+    "name": "Mặt Nạ Miếng Dán Collagen Phục Hồi Da Mediheal Collagen Capsule Patch (Set Đôi 60 + 60 Miếng)"
+  },
+  {
+    "firestoreId": "A000000252917",
+    "source": "oy",
+    "goodsNo": "A000000252917",
+    "brand": "La Roche-Posay",
+    "name": "Kem Dưỡng Phục Hồi Tái Tạo Da La Roche-Posay Cicaplast Baume B5+ & Multi-Repair Cream (Set 100ml + Tặng Tinh Chất Cica 50%)"
+  },
+  {
+    "firestoreId": "A000000240462",
+    "source": "oy",
+    "goodsNo": "A000000240462",
+    "brand": "Celimax",
+    "name": "Mặt Nạ Kem Dưỡng Sáng Mờ Thâm Nám Celimax Tranexamic Acid Brightening Cream Wrapping Mask (Set 5 Miếng Tặng 1 Miếng)"
+  },
+  {
+    "firestoreId": "A000000257072",
+    "source": "oy",
+    "goodsNo": "A000000257072",
+    "brand": "numbuzin",
+    "name": "Mặt Nạ Sủi Bọt Làm Sạch Cấp Ẩm Numbuzin Prep Bubble Pack (4 Phân Loại Tùy Chọn)"
+  },
+  {
+    "firestoreId": "A000000206826",
+    "source": "oy",
+    "goodsNo": "A000000206826",
+    "brand": "Aestura",
+    "name": "Kem Chống Nắng Vật Lý Cấp Ẩm Phục Hồi Hàng Rào Bảo Vệ Da Aestura Derma UV365 Barrier Hydro Mineral Sunscreen (Set 40ml + 20ml)"
+  },
+  {
+    "firestoreId": "A000000245091",
+    "source": "oy",
+    "goodsNo": "A000000245091",
+    "brand": "Aestura",
+    "name": "Tinh Chất Ampoule Cấp Ẩm Chuyên Sâu Aestura Atobarrier 365 Cera-Hyal Hydro Ampoule (Set 30ml + Refill 30ml)"
+  },
+  {
+    "firestoreId": "A000000217620",
+    "source": "oy",
+    "goodsNo": "A000000217620",
+    "brand": "Mediheal",
+    "name": "Mặt Nạ Giấy Dưỡng Da Tinh Chất Chuyên Sâu Mediheal Essential Mask (Tùy Chọn 7 Loại / 1 Miếng)"
+  },
+  {
+    "firestoreId": "A000000255682",
+    "source": "oy",
+    "goodsNo": "A000000255682",
+    "brand": "Medicube",
+    "name": "Bông Dưỡng Da Toner Pad Se Khít Lỗ Chân Lông Medicube Toner Pad (Set 160 Miếng + Refill 140 Miếng Tùy Chọn Zero Pore/PDRN/Deep Vita C)"
+  },
+  {
+    "firestoreId": "A000000231885",
+    "source": "oy",
+    "goodsNo": "A000000231885",
+    "brand": "Wellage",
+    "name": "Tinh Chất Cấp Ẩm Chuyên Sâu Wellage Real Hyaluronic Blue 100 Ampoule Set Đôi 75ml x 2"
+  },
+  {
+    "firestoreId": "A000000264301",
+    "source": "oy",
+    "goodsNo": "A000000264301",
+    "brand": "Medicube",
+    "name": "Tinh Chất Ampoule Phục Hồi Căng Bóng Medicube PDRN Pink Peptide Ampoule (Set Giới Hạn 30ml + Túi Nạp 50ml + 10ml)"
+  },
+  {
+    "firestoreId": "A000000261065",
+    "source": "oy",
+    "goodsNo": "A000000261065",
+    "brand": "Celimax",
+    "name": "Kem Dưỡng Tái Tạo Săn Chắc Da Và Thu Nhỏ Lỗ Chân Lông Celimax The Vita A Retinal Shot Tightening Dual Cream (50ml)"
+  },
+  {
+    "firestoreId": "A000000263681",
+    "source": "oy",
+    "goodsNo": "A000000263681",
+    "brand": "Torriden",
+    "name": "Kem Dưỡng Gel Cấp Nước Làm Dịu Da Torriden Dive-In Low Molecule Hyaluronic Acid Soothing Cream (Set Đôi 100ml Tặng Túi Lưới Cinnamoroll)"
+  },
+  {
+    "firestoreId": "A000000231822",
+    "source": "oy",
+    "goodsNo": "A000000231822",
+    "brand": "Numbuzin",
+    "name": "Phấn Phủ Dạng Bột Kiềm Dầu Mịn Da Numbuzin No.1 Pantothenic Acid Skincare 100 Blur Powder (Tặng Kèm 1 Bông Phủ)"
+  },
+  {
+    "firestoreId": "A000000263073",
+    "source": "oy",
+    "goodsNo": "A000000263073",
+    "brand": "Bioderma",
+    "name": "Nước Dưỡng Cấp Ẩm Chuyên Sâu Bioderma Hydrabio Essence Lotion 200ml"
+  },
+  {
+    "firestoreId": "A000000241210",
+    "source": "oy",
+    "goodsNo": "A000000241210",
+    "brand": "Rom&nd",
+    "name": "Son Tint Bóng Căng Mộng Lâu Trôi Rom&nd The Juicy Lasting Tint (Bản Hợp Tác Sanrio Kuromi / Hangyodon)"
+  },
+  {
+    "firestoreId": "A000000262934",
+    "source": "oy",
+    "goodsNo": "A000000262934",
+    "brand": "Hanyul",
+    "name": "Tinh chất cấp ẩm làm dịu da ngải cứu Hanyul Pure Artemisia Hyaluron Serum Set 40ml (Kèm túi refill 40ml và gương Hello Kitty)"
+  },
+  {
+    "firestoreId": "A000000188988",
+    "source": "oy",
+    "goodsNo": "A000000188988",
+    "brand": "Clio",
+    "name": "Bảng Phấn Mắt Trang Điểm Đa Năng Chuẩn Màu Clio Pro Eye Palette Air (Tặng Kèm Phấn Mắt Đơn)"
+  },
+  {
+    "firestoreId": "A000001001705",
+    "source": "oy",
+    "goodsNo": "A000001001705",
+    "brand": "Laneige",
+    "name": "Bộ Trang Điểm Đa Năng Laneige x Matin Kim Limited Edition Phấn Nước Phấn Phủ Son Tint Tùy Chọn"
+  },
+  {
+    "firestoreId": "A000000013194",
+    "source": "oy",
+    "goodsNo": "A000000013194",
+    "brand": "Bioderma",
+    "name": "Nước Tẩy Trang Dịu Nhẹ Cho Da Nhạy Cảm Bioderma Sensibio H2O (Set Đôi 500ml + 500ml)"
+  },
+  {
+    "firestoreId": "A000000265060",
+    "source": "oy",
+    "goodsNo": "A000000265060",
+    "brand": "Menokin",
+    "name": "Xịt khoáng bọt căng bóng cấp ẩm Menokin 30s Quick Glow Hydra Lift 98ml Tặng Kèm 30ml"
+  },
+  {
+    "firestoreId": "A000000263555",
+    "source": "oy",
+    "goodsNo": "A000000263555",
+    "brand": "Goodal",
+    "name": "Kem Chống Nắng Dịu Da Cấp Ẩm Goodal Heartleaf Calming Moisture Suncream Sanrio Edition (Set Đôi 50ml + 50ml + Tặng Sticker Cinnamoroll)"
+  },
+  {
+    "firestoreId": "A000000268585",
+    "source": "oy",
+    "goodsNo": "A000000268585",
+    "brand": "Laneige",
+    "name": "Phấn Phủ Dạng Bột Kiềm Dầu Mịn Da Laneige x Matin Kim Essential Blurring Finish Powder 7g Kèm Túi Đựng"
+  },
+  {
+    "firestoreId": "A000000171848",
+    "source": "oy",
+    "goodsNo": "A000000171848",
+    "brand": "Illiyoon",
+    "name": "Sữa Dưỡng Thể Dưỡng Ẩm Dịu Nhẹ Illiyoon Ceramide Ato Lotion (Set Đôi Siêu Tiết Kiệm 600ml + 600ml)"
+  },
+  {
+    "firestoreId": "A000000185265",
+    "source": "oy",
+    "goodsNo": "A000000185265",
+    "brand": "Clio",
+    "name": "Son Tint Bóng Căng Mọng Môi Clio Crystal Glam Tint Pungnyeon Dabang Edition (Tặng Kèm Mặt Nạ Môi)"
+  },
+  {
+    "firestoreId": "A000000263542",
+    "source": "oy",
+    "goodsNo": "A000000263542",
+    "brand": "Physiogel",
+    "name": "Tinh Chất Ampoule Chống Oxy Hóa Phục Hồi Physiogel Dailymune Ampoule (Set 20ml + 20ml + Tặng 1 Mặt Nạ)"
+  },
+  {
+    "firestoreId": "A000000156230",
+    "source": "oy",
+    "goodsNo": "A000000156230",
+    "brand": "S.Nature",
+    "name": "Kem dưỡng cấp ẩm se khít lỗ chân lông S.Nature Aqua Squalane 60ml Tặng Kèm 30ml"
+  },
+  {
+    "firestoreId": "A000000247776",
+    "source": "oy",
+    "goodsNo": "A000000247776",
+    "brand": "Isntree",
+    "name": "Kem Dưỡng Dạng Gel Mờ Thâm Phục Hồi Isntree Onion Newpair Gel Cream Plus (50ml + Tặng Kèm Gel 20ml & Pad 2 Miếng)"
+  },
+  {
+    "firestoreId": "A000000167416",
+    "source": "oy",
+    "goodsNo": "A000000167416",
+    "brand": "Illiyoon",
+    "name": "Sữa Tắm Tẩy Tế Bào Chết Cấp Ẩm Tươi Mát Illiyoon Fresh Moisture Scrub Wash Set 2 Chai 400ml"
+  },
+  {
+    "firestoreId": "A000000261423",
+    "source": "oy",
+    "goodsNo": "A000000261423",
+    "brand": "Wellage",
+    "name": "Tinh Chất Ampoule Cấp Ẩm Chuyên Sâu Wellage Real Hyaluronic Blue 100 Ampoule (Set 100ml + Lõi Thay 60ml + Kem Dưỡng 30ml)"
+  },
+  {
+    "firestoreId": "A000000263562",
+    "source": "oy",
+    "goodsNo": "A000000263562",
+    "brand": "Goodal",
+    "name": "Tinh Chất Serum Mờ Thâm Sáng Da Goodal Green Tangerine Vita C Dark Spot Care Serum Alpha Phiên Bản Sanrio (Set 50ml + Lõi Thay 50ml + Quà Tặng Nam Châm Pompompurin)"
+  },
+  {
+    "firestoreId": "A000000260483",
+    "source": "oy",
+    "goodsNo": "A000000260483",
+    "brand": "fwee",
+    "name": "Xịt khoáng hai tầng khóa ẩm tạo nền căng bóng fwee Shaking Synergy Mist 50ml (4 loại)"
+  },
+  {
+    "firestoreId": "A000000234422",
+    "source": "oy",
+    "goodsNo": "A000000234422",
+    "brand": "Menokin",
+    "name": "Mặt Nạ Sủi Bọt Làm Sạch Và Dưỡng Ẩm Nhanh Menokin 30-Second Quick Bubble Mask (Tùy Chọn 6 Loại + Tặng Kèm 30ml)"
+  },
+  {
+    "firestoreId": "A000000263664",
+    "source": "oy",
+    "goodsNo": "A000000263664",
+    "brand": "Torriden",
+    "name": "Tinh Chất Cấp Nước Sâu Phục Hồi Da Torriden Dive-In Low Molecular Hyaluronic Acid Serum (Set 50ml + Refill 50ml Tặng Kèm Búp Bê Cinnamoroll)"
+  },
+  {
+    "firestoreId": "A000000262945",
+    "source": "oy",
+    "goodsNo": "A000000262945",
+    "brand": "Hanyul",
+    "name": "Kem Dưỡng Cấp Ẩm Làm Dịu Ngải Cứu Hanyul Pure Artemisia Hyaluron Cream Set 60ml x 2"
+  },
+  {
+    "firestoreId": "A000000253122",
+    "source": "oy",
+    "goodsNo": "A000000253122",
+    "brand": "Fwee",
+    "name": "Phấn nước che phủ cao bền màu Fwee All Day Cover Black Cushion Hộp Kèm Lõi Thay Thế"
+  },
+  {
+    "firestoreId": "A000000255752",
+    "source": "oy",
+    "goodsNo": "A000000255752",
+    "brand": "Dr.G",
+    "name": "Kem Dưỡng Dạng Gel Cấp Ẩm Làm Dịu Da Dr.G Red Blemish Clear Soothing Cream EX (Set 70ml + Tặng Kem 30ml + Serum 10ml x 2)"
+  },
+  {
+    "firestoreId": "A000000263782",
+    "source": "oy",
+    "goodsNo": "A000000263782",
+    "brand": "S.Nature",
+    "name": "Kem Dưỡng Ẩm Cấp Nước Phục Hồi Làn Da S.Nature Aqua Squalane Moisture Cream (Set Đôi 60ml + 60ml Tặng Kèm Keycap Hello Kitty)"
+  },
+  {
+    "firestoreId": "A000000263510",
+    "source": "oy",
+    "goodsNo": "A000000263510",
+    "brand": "Round Lab",
+    "name": "Kem Chống Nắng Dưỡng Ẩm Cấp Nước Round Lab Birch Juice Moisturizing Sunscreen (Set Mua 1 Tặng 1 50ml + Tặng Kèm Tinh Chất 8ml)"
+  },
+  {
+    "firestoreId": "A000000157452",
+    "source": "oy",
+    "goodsNo": "A000000157452",
+    "brand": "Cetaphil",
+    "name": "Sữa dưỡng thể dưỡng ẩm dịu da Cetaphil Moisturizing Lotion 1L Tặng Kèm Găng Tay Tắm"
+  },
+  {
+    "firestoreId": "A000000246286",
+    "source": "oy",
+    "goodsNo": "A000000246286",
+    "brand": "Peripera",
+    "name": "Chì kẻ mày và mascara chuốt mày định hình thanh mảnh lâu trôi Peripera Speedy Skinny Brow & Brow Mascara"
+  },
+  {
+    "firestoreId": "A000000247099",
+    "source": "oy",
+    "goodsNo": "A000000247099",
+    "brand": "Wakemake",
+    "name": "Sáp trang điểm đa năng bắt sáng làm mịn da Wakemake Off Cherry Collection Dạng Thỏi"
+  },
+  {
+    "firestoreId": "A000000180532",
+    "source": "oy",
+    "goodsNo": "A000000180532",
+    "brand": "WakeMake",
+    "name": "Bảng Phấn Mắt Trang Điểm Mịn Mượt WakeMake Soft Blurring Eye Palette (Phiên Bản Hello Kitty Leopard)"
+  },
+  {
+    "firestoreId": "A000000203943",
+    "source": "oy",
+    "goodsNo": "A000000203943",
+    "brand": "Etude",
+    "name": "Chuốt Mi Siêu Cong Và Định Hình Giữ Nếp Etude Curl Fix Mascara (Set Mua 1 Tặng 1 Hoặc Tặng Kèm Kẹp Mi)"
+  },
+  {
+    "firestoreId": "A000000235485",
+    "source": "oy",
+    "goodsNo": "A000000235485",
+    "brand": "Uriage",
+    "name": "Son Dưỡng Môi Cấp Ẩm Có Màu Uriage Stick Levres Colored (9 Tông Màu)"
+  },
+  {
+    "firestoreId": "A000000262817",
+    "source": "oy",
+    "goodsNo": "A000000262817",
+    "brand": "Innisfree",
+    "name": "Tinh Chất Giảm Mụn Mờ Thâm Lỗ Chân Lông Innisfree Retinol Cica Repair Ampoule (Set Đôi 30ml + 30ml)"
+  },
+  {
+    "firestoreId": "A000000263099",
+    "source": "oy",
+    "goodsNo": "A000000263099",
+    "brand": "Peripera",
+    "name": "Son kem lì làm mờ rãnh môi Peripera Mood Blur Tint 9 Màu Tặng Kèm Son Mini"
+  },
+  {
+    "firestoreId": "A000000259386",
+    "source": "oy",
+    "goodsNo": "A000000259386",
+    "brand": "Podle",
+    "name": "Kem Dưỡng Thu Nhỏ Lỗ Chân Lông Podle Balm Retinal Pore Reset Solution Capsule Cream 55g"
+  },
+  {
+    "firestoreId": "A000000185903",
+    "source": "oy",
+    "goodsNo": "A000000185903",
+    "brand": "VDL",
+    "name": "Phấn Nước Che Phủ Bền Màu VDL Cover Stain Perfecting Cushion Set (Hộp Chính + Lõi Thay Thế)"
+  },
+  {
+    "firestoreId": "A000000255852",
+    "source": "oy",
+    "goodsNo": "A000000255852",
+    "brand": "Layer Lab",
+    "name": "Tinh Chất Phục Hồi Hàng Rào Dưỡng Ẩm Layer Lab Niosome Panthenol 5% Serum (Set Đôi 1+1 30ml + 30ml)"
+  },
+  {
+    "firestoreId": "A000000267287",
+    "source": "oy",
+    "goodsNo": "A000000267287",
+    "brand": "Risky",
+    "name": "Son Thỏi Hiệu Ứng Căng Bóng Dưỡng Môi Risky Hyper Shine Lipstick 6 Màu"
+  },
+  {
+    "firestoreId": "A000000218508",
+    "source": "oy",
+    "goodsNo": "A000000218508",
+    "brand": "Beyond",
+    "name": "Sữa dưỡng thể sáng da dưỡng ẩm Beyond Bodytamin Body Lotion 500ml (Tùy chọn 3 loại)"
+  },
+  {
+    "firestoreId": "A000000251720",
+    "source": "oy",
+    "goodsNo": "A000000251720",
+    "brand": "Nooni",
+    "name": "Dầu Dưỡng Môi Chiết Xuất Táo Căng Mọng Nooni Apple Lip Oil 12 Màu Tùy Chọn"
+  },
+  {
+    "firestoreId": "A000000253919",
+    "source": "oy",
+    "goodsNo": "A000000253919",
+    "brand": "Juvelook",
+    "name": "Mặt Nạ Tăng Sinh Collagen Căng Bóng Da Juvelook PDLLA Collagen Boosting Mask Set 5 Miếng"
+  },
+  {
+    "firestoreId": "A000000186409",
+    "source": "oy",
+    "goodsNo": "A000000186409",
+    "brand": "Blanc Nature",
+    "name": "Sữa Rửa Mặt Cho Da Mụn Blanc Nature Acne Cleansing Foam (Tùy Chọn Lẻ Hoặc Set)"
+  },
+  {
+    "firestoreId": "A000000219609",
+    "source": "oy",
+    "goodsNo": "A000000219609",
+    "brand": "Fation",
+    "name": "Tinh Chất Serum Dịu Da Giảm Mụn Fation Nosca9 Trouble Serum (Set 50ml + Lõi Thay 40ml + Kem Dưỡng 10ml)"
+  },
+  {
+    "firestoreId": "A000000212579",
+    "source": "oy",
+    "goodsNo": "A000000212579",
+    "brand": "House of B",
+    "name": "Mặt nạ ôm sát trẻ hóa dưỡng sáng da House of B Face Film Mask 4 miếng (Tùy chọn Glutathione / PDRN)"
+  },
+  {
+    "firestoreId": "A000000265712",
+    "source": "oy",
+    "goodsNo": "A000000265712",
+    "brand": "Ataga",
+    "name": "Tinh Chất Chống Nắng Nâng Tông Tự Nhiên Ataga Snow Sun Serum 30ml"
+  },
+  {
+    "firestoreId": "A000000263862",
+    "source": "oy",
+    "goodsNo": "A000000263862",
+    "brand": "OFRA",
+    "name": "Phấn Bắt Sáng Tạo Khối Căng Bóng OFRA Slim Mini Highlighter 4g"
+  },
+  {
+    "firestoreId": "A000000234394",
+    "source": "oy",
+    "goodsNo": "A000000234394",
+    "brand": "Alternative Stereo",
+    "name": "Son Bóng Dưỡng Căng Mộng Alternative Stereo Lip Potion Caramel Glaze (8ml)"
+  },
+  {
+    "firestoreId": "A000000225217",
+    "source": "oy",
+    "goodsNo": "A000000225217",
+    "brand": "Derma Factory",
+    "name": "Tinh Chất Dưỡng Sáng Thu Nhỏ Lỗ Chân Lông Derma Factory Niacinamide 20% Serum 30ml"
+  },
+  {
+    "firestoreId": "A000000264464",
+    "source": "oy",
+    "goodsNo": "A000000264464",
+    "brand": "Tekira",
+    "name": "Mascara Đầu Kim Loại Định Hình Mi Chống Trôi Tekira Anti Gravity Metal Cara 3g (2 Màu Tùy Chọn)"
+  },
+  {
+    "firestoreId": "A000000238153",
+    "source": "oy",
+    "goodsNo": "A000000238153",
+    "brand": "TO&ND",
+    "name": "Son thỏi bóng căng mọng môi TO&ND Juicy Tangtang Glaze 3.5g (9 màu)"
+  },
+  {
+    "firestoreId": "A000000200614",
+    "source": "oy",
+    "goodsNo": "A000000200614",
+    "brand": "d'Alba",
+    "name": "Kem Chống Nắng Hiệu Chỉnh Tông Da d'Alba Waterfull Purple Tone-Up Sunscreen (Set Đôi 50ml + 50ml)"
+  },
+  {
+    "firestoreId": "A000000202777",
+    "source": "oy",
+    "goodsNo": "A000000202777",
+    "brand": "Hera",
+    "name": "Phấn Nước Che Phủ Kiềm Dầu Hera Black Cushion Foundation (Set 15g + Lõi Thay Thế 15g - 9 Tone Màu)"
+  },
+  {
+    "firestoreId": "A000000263824",
+    "source": "oy",
+    "goodsNo": "A000000263824",
+    "brand": "Quadthera",
+    "name": "Máy Chăm Sóc Da Nâng Cơ Sóng Siêu Âm Quadthera Teens Waterdrop Ultrasound Home Care Device"
+  },
+  {
+    "firestoreId": "A000000217101",
+    "source": "oy",
+    "goodsNo": "A000000217101",
+    "brand": "iHill",
+    "name": "Men vi sinh âm đạo iHill Venus 30 viên nang (+6 viên nang) gói tăng dung tích"
+  },
+  {
+    "firestoreId": "A000000235050",
+    "source": "oy",
+    "goodsNo": "A000000235050",
+    "brand": "COSRX",
+    "name": "Tinh Chất Dưỡng Trắng Giảm Thâm COSRX Advanced The Vitamin C 23 Serum 20g x 2 Lọ"
+  },
+  {
+    "firestoreId": "A000000225250",
+    "source": "oy",
+    "goodsNo": "A000000225250",
+    "brand": "Fillimilli",
+    "name": "Bộ Cọ Trang Điểm Chuyên Nghiệp Fillimilli Brush Set (Phiên Bản Hợp Tác Sanrio Pochacco / My Melody)"
+  },
+  {
+    "firestoreId": "A000000190168",
+    "source": "oy",
+    "goodsNo": "A000000190168",
+    "brand": "Flymill",
+    "name": "Bột ngũ cốc dinh dưỡng bổ sung đạm Flymill Protein Shake 45g"
+  },
+  {
+    "firestoreId": "A000000208162",
+    "source": "oy",
+    "goodsNo": "A000000208162",
+    "brand": "Delight Project",
+    "name": "Bột Bổ Sung Protein Dinh Dưỡng Tiện Lợi Delight Project Protein Shake (Gói 45g Tùy Chọn Vị)"
+  },
+  {
+    "firestoreId": "A000000244929",
+    "source": "oy",
+    "goodsNo": "A000000244929",
+    "brand": "Gynomaster",
+    "name": "Viên Uống Men Vi Sinh Phụ Nữ Cân Bằng Hệ Vi Sinh Gynomaster Vaginal Probiotics (30 Viên + Tặng Dầu Hoa Bìm Bìm 5 Ngày)"
+  },
+  {
+    "firestoreId": "A000000265728",
+    "source": "oy",
+    "goodsNo": "A000000265728",
+    "brand": "CJ Maxplan",
+    "name": "Bột ngũ cốc dinh dưỡng bổ sung đạm CJ Maxplan Daily Protein Shake 45g (Dâu sữa chua / Bơ đậu phộng / Sô-cô-la)"
+  },
+  {
+    "firestoreId": "A000000263630",
+    "source": "oy",
+    "goodsNo": "A000000263630",
+    "brand": "Vodana",
+    "name": "Máy Tạo Kiểu Tóc Uốn Duỗi Tiện Lợi Vodana Easy Up Hair Styler Flip (Phiên Bản Hello Kitty)"
+  },
+  {
+    "firestoreId": "A000000202771",
+    "source": "oy",
+    "goodsNo": "A000000202771",
+    "brand": "Prote-One",
+    "name": "Bột Bổ Sung Protein Hỗ Trợ Dinh Dưỡng Vóc Dáng Prote-One Protein Shake Pouch (Set Mua 1 Tặng 1 40g - 6 Hương Vị)"
+  },
+  {
+    "firestoreId": "A000000254661",
+    "source": "oy",
+    "goodsNo": "A000000254661",
+    "brand": "Arencia",
+    "name": "Tinh Chất Dưỡng Sáng Làm Đều Màu Da Arencia Vitamin C Booster Shot (Set Đôi 30ml + 30ml)"
+  },
+  {
+    "firestoreId": "A000000168243",
+    "source": "oy",
+    "goodsNo": "A000000168243",
+    "brand": "Longtake",
+    "name": "Dầu Xả Ủ Tóc Phục Hồi Hương Nước Hoa Longtake Treatment Set 200ml + 100ml (Gỗ Đàn Hương / Trà Đen & Vả Tây)"
+  },
+  {
+    "firestoreId": "A000000267969",
+    "source": "oy",
+    "goodsNo": "A000000267969",
+    "brand": "Lador",
+    "name": "Nước Hoa Dưỡng Tóc Lưu Hương Mềm Mượt Lador Hair Perfume (30ml Tặng Dầu Dưỡng Tóc 10ml)"
+  },
+  {
+    "firestoreId": "A000000218845",
+    "source": "oy",
+    "goodsNo": "A000000218845",
+    "brand": "Lilyeve",
+    "name": "Tinh Chất Dưỡng Da Đầu Kích Thích Mọc Tóc Lilyeve Growturn Exosome Brush Ampoule (Dung Tích Lớn 130ml)"
+  },
+  {
+    "firestoreId": "A000000217703",
+    "source": "oy",
+    "goodsNo": "A000000217703",
+    "brand": "Tangle Angel",
+    "name": "Lược chải tóc gỡ rối giảm gãy rụng Tangle Angel Cupid Brush Tặng Kèm Móc Khóa Lược Mini"
+  },
+  {
+    "firestoreId": "A000000213569",
+    "source": "oy",
+    "goodsNo": "A000000213569",
+    "brand": "Coringco",
+    "name": "Mi Giả Tự Dính Tiện Lợi Không Cần Keo Coringco TokTok-Hara No Glue Eyelash (15 Loại Tùy Chọn - Phiên Bản Sanrio)"
+  },
+  {
+    "firestoreId": "A000000149501",
+    "source": "oy",
+    "goodsNo": "A000000149501",
+    "brand": "LABO-H",
+    "name": "Dầu Gội Giảm Rụng Củng Cố Da Đầu LABO-H Scalp Strengthening Shampoo 750ml Kèm Chai 100ml"
+  },
+  {
+    "firestoreId": "A000000171423",
+    "source": "oy",
+    "goodsNo": "A000000171423",
+    "brand": "Unove",
+    "name": "Kem Ủ Tóc Phục Hồi Hư Tổn Chuyên Sâu Unove Deep Damage Repair Hair Mask (Set Đôi 320ml + 320ml)"
+  },
+  {
+    "firestoreId": "A000000265724",
+    "source": "oy",
+    "goodsNo": "A000000265724",
+    "brand": "Kerastase",
+    "name": "Sữa Dưỡng Tóc Bóng Mượt Hương Hoa Kerastase Gloss Absolu (240ml)"
+  },
+  {
+    "firestoreId": "A000000202414",
+    "source": "oy",
+    "goodsNo": "A000000202414",
+    "brand": "LABO-H",
+    "name": "Tinh chất chăm sóc chân tóc ngăn gãy rụng LABO-H Hair Line Ampoule Monchhichi Edition Set Đôi Tặng Kèm Dầu Gội 50ml"
+  },
+  {
+    "firestoreId": "A000000171422",
+    "source": "oy",
+    "goodsNo": "A000000171422",
+    "brand": "Unove",
+    "name": "Tinh Dầu Dưỡng Tóc Bóng Mượt Unove Silk Hair Oil Essence (Set Đôi 70ml + 70ml Bản Powerpuff Girls)"
+  },
+  {
+    "firestoreId": "A000000268499",
+    "source": "oy",
+    "goodsNo": "A000000268499",
+    "brand": "MacPlan",
+    "name": "Sữa lắc protein hàng ngày CJ MacPlan 45g (hộp 5 gói) vị sữa chua dâu / bơ đậu phộng / sô-cô-la"
+  },
+  {
+    "firestoreId": "A000000164470",
+    "source": "oy",
+    "goodsNo": "A000000164470",
+    "brand": "Longtake",
+    "name": "Dầu Gội Phục Hồi Hương Nước Hoa Longtake Shampoo Set 300ml + 100ml"
+  },
+  {
+    "firestoreId": "A000000219331",
+    "source": "oy",
+    "goodsNo": "A000000219331",
+    "brand": "Fillimilli",
+    "name": "[MỚI] Fillimilli Lông Mi Giả Tự Chọn 1 Món (Sợi Điểm Nhấn / Không Keo / Cắt Sẵn / Điểm Nhấn Giữa / Keo Dán)"
+  },
+  {
+    "firestoreId": "A000000187090",
+    "source": "oy",
+    "goodsNo": "A000000187090",
+    "brand": "Fino",
+    "name": "Kem Ủ Tóc Phục Hồi Chuyên Sâu Fino Premium Touch Hair Mask 230g (Set Đôi Kèm Kẹp Tóc Ditto)"
+  },
+  {
+    "firestoreId": "A000001004351",
+    "source": "oy",
+    "goodsNo": "A000001004351",
+    "brand": "VT Cosmetics",
+    "name": "Serum Dưỡng Tóc Kèm Đầu Cọ Massage Phục Hồi Chuyên Sâu VT PDRN Reedle Shot 100ml"
+  },
+  {
+    "firestoreId": "A000000140183",
+    "source": "oy",
+    "goodsNo": "A000000140183",
+    "brand": "L'Oréal",
+    "name": "Tinh dầu dưỡng tóc bảo vệ nhiệt L'Oréal Paris 100ml (bản giới hạn Hello Kitty, tặng kèm cọ chải tóc)"
+  },
+  {
+    "firestoreId": "A000000219700",
+    "source": "oy",
+    "goodsNo": "A000000219700",
+    "brand": "Moroccanoil",
+    "name": "Dầu dưỡng tóc Moroccanoil Treatment 50ml (kèm vòi bơm) - Set đặc biệt"
+  },
+  {
+    "firestoreId": "A000000248462",
+    "source": "oy",
+    "goodsNo": "A000000248462",
+    "brand": "Vital Beauty",
+    "name": "Vital Beauty Meta Green Slim Up hỗ trợ giảm mỡ, 1 viên/ngày, hộp 30 viên (30 ngày)"
+  },
+  {
+    "firestoreId": "A000001003004",
+    "source": "oy",
+    "goodsNo": "A000001003004",
+    "brand": "Tequila",
+    "name": "테키라 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors"
+  },
+  {
+    "firestoreId": "HE0000000010",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2599576855?sitmNo=LO2599576855_2599576856&mall_no=1",
+    "brand": "Sulwhasoo",
+    "name": "Kem Sâm Ngăn Lão Hóa Chuyên Sâu Sulwhasoo Concentrated Ginseng Cream 50ml",
+    "mallPriceKrwAtResolve": 171610
+  },
+  {
+    "firestoreId": "HE0000000052",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1217488853?sitmNo=LE1217488853_1302741623&mall_no=1",
+    "brand": "Sulwhasoo",
+    "name": "Kem Mắt Nhân Sâm Tái Tạo Mờ Nhăn Sulwhasoo Concentrated Ginseng Eye Cream",
+    "mallPriceKrwAtResolve": 123500
+  },
+  {
+    "firestoreId": "HE0000000015",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1205034989?sitmNo=LE1205034989_1227450322&mall_no=1",
+    "brand": "La Mer",
+    "name": "Kem Dưỡng Tái Sinh Phục Hồi Da Thần Kỳ La Mer Crème de la Mer 30ml",
+    "mallPriceKrwAtResolve": 285600,
+    "mallProductName": "롯데백화점 라메르 좋아요 하기 크렘 드 라 메르 (30ml) 정상가 336,000 할인율 15% 최종가 285,600 롯데카드 7% 할인 고객평점 4.7 점 리뷰154 건 무료배송선물포장",
+    "reresolvedAt": "2026-11-24T18:12:02Z"
+  },
+  {
+    "firestoreId": "HE0000000031",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1200978175?sitmNo=LE1200978175_1203671061&mall_no=1",
+    "brand": "CHANEL",
+    "name": "Nước Hoa Nam Chanel Bleu de Chanel Eau de Parfum Đẳng Cấp Phái Mạnh",
+    "mallPriceKrwAtResolve": 168000
+  },
+  {
+    "firestoreId": "HE0000000009",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1222800434?sitmNo=LE1222800434_1338659914&mall_no=1",
+    "brand": "Sulwhasoo",
+    "name": "Tinh Chất Khởi Nguồn Tái Sinh Da Sulwhasoo First Care Serum VI",
+    "mallPriceKrwAtResolve": 133000
+  },
+  {
+    "firestoreId": "HE0000000021",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1200978405?sitmNo=LE1200978405_1203671725&mall_no=1",
+    "brand": "CHANEL",
+    "name": "Nước Hoa Nữ Chanel Chance Eau Tendre Eau de Parfum Cao Cấp",
+    "mallPriceKrwAtResolve": 286000
+  },
+  {
+    "firestoreId": "HE0000000032",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1222657814?sitmNo=LE1222657814_1337800063&mall_no=1",
+    "brand": "CHANEL",
+    "name": "Nước Hoa Nữ Chanel Coco Mademoiselle Eau de Parfum Quyến Rũ Kiêu Kỳ",
+    "mallPriceKrwAtResolve": 286000
+  },
+  {
+    "firestoreId": "HE0000000038",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1216256982?sitmNo=LE1216256982_1294749309&mall_no=1",
+    "brand": "TOM FORD",
+    "name": "Nước Hoa Niche Xa Xỉ Tom Ford Oud Wood Eau de Parfum Quý Tộc",
+    "mallPriceKrwAtResolve": 589000
+  },
+  {
+    "firestoreId": "HE0000000013",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2227121487?sitmNo=LO2227121487_2227121488&mall_no=1",
+    "brand": "SK-II",
+    "name": "Nước Thần Phục Hồi Tái Tạo Da Trắng Sáng SK-II Facial Treatment Essence",
+    "mallPriceKrwAtResolve": 276050
+  },
+  {
+    "firestoreId": "HE0000000023",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1220970892?sitmNo=LE1220970892_1326564238&mall_no=1",
+    "brand": "DIOR",
+    "name": "Nước Hoa Nam Dior Sauvage Eau de Toilette Đẳng Cấp Mạnh Mẽ",
+    "mallPriceKrwAtResolve": 178600
+  },
+  {
+    "firestoreId": "HE0000000034",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1222640481?sitmNo=LE1222640481_1337695823&mall_no=1",
+    "brand": "Diptyque",
+    "name": "Nước Hoa Niche Diptyque Do Son Eau de Parfum (Hoa Huệ Đồ Sơn Việt Nam)",
+    "mallPriceKrwAtResolve": 328000
+  },
+  {
+    "firestoreId": "HE0000000033",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1207082718?sitmNo=LE1207082718_1238704374&mall_no=1",
+    "brand": "Diptyque",
+    "name": "Nước Hoa Niche Diptyque Fleur de Peau Eau de Parfum (Hương Da Thịt Độc Bản)",
+    "mallPriceKrwAtResolve": 311600
+  },
+  {
+    "firestoreId": "HE0000000044",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1204544369?sitmNo=LE1204544369_1224580890&mall_no=1",
+    "brand": "Diptyque",
+    "name": "Nước Hoa Niche Diptyque Tam Dao Eau de Parfum (Rừng Gỗ Đàn Hương Tam Đảo)",
+    "mallPriceKrwAtResolve": 311600
+  },
+  {
+    "firestoreId": "HE0000000042",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/PD52253824?mall_no=1",
+    "brand": "CREED",
+    "name": "Nước Hoa Creed Silver Mountain Water Eau de Parfum Suối Nguồn Núi Tuyết",
+    "mallPriceKrwAtResolve": 421850
+  },
+  {
+    "firestoreId": "HE0000000041",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1208062235?sitmNo=LE1208062235_1243939654&mall_no=1",
+    "brand": "CREED",
+    "name": "Nước Hoa Hoàng Gia Creed Aventus Eau de Parfum Vị Vua Quyền Lực",
+    "mallPriceKrwAtResolve": 405000
+  },
+  {
+    "firestoreId": "HE0000000004",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1214422288?sitmNo=LE1214422288_1283075024&mall_no=1",
+    "brand": "DIOR",
+    "name": "Phấn Nước Căng Bóng Dior Forever Skin Glow Cushion (Hộp + Lõi)",
+    "mallPriceKrwAtResolve": 64600
+  },
+  {
+    "firestoreId": "HE0000000024",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1220970716?sitmNo=LE1220970716_1326563189&mall_no=1",
+    "brand": "DIOR",
+    "name": "Nước Hoa Nữ Miss Dior Blooming Bouquet Eau de Toilette Dịu Dàng",
+    "mallPriceKrwAtResolve": 94050
+  },
+  {
+    "firestoreId": "HE0000000057",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2201304704?sitmNo=LO2201304704_2201304705&mall_no=1",
+    "brand": "LA MER",
+    "name": "Kem Dưỡng Tái Sinh Thần Thánh La Mer Crème de la Mer Xa Xỉ Bậc Nhất",
+    "mallPriceKrwAtResolve": 395240,
+    "mallProductName": "[라메르]크렘 드 라 메르 모이스처라이징 크림 30ml",
+    "reresolvedAt": "2026-11-24T18:14:47Z"
+  },
+  {
+    "firestoreId": "HE0000000051",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1218440458?sitmNo=LE1218440458_1309064237&mall_no=1",
+    "brand": "Clé de Peau Beauté",
+    "name": "Tinh Chất Đánh Thức Tế Bào Thượng Hạng Clé de Peau Beauté The Serum",
+    "mallPriceKrwAtResolve": 315000
+  },
+  {
+    "firestoreId": "HE0000000022",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1222699260?sitmNo=LE1222699260_1338046971&mall_no=1",
+    "brand": "YSL",
+    "name": "Nước Hoa Nữ YSL Libre Eau de Parfum Biểu Tượng Quyến Rũ",
+    "mallPriceKrwAtResolve": 218500
+  },
+  {
+    "firestoreId": "HE0000000070",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1221273270?sitmNo=LE1221273270_1328542485&mall_no=1",
+    "brand": "TOM FORD",
+    "name": "Bảng Phấn Mắt 4 Ô Thượng Hạng Tom Ford Eye Color Quad Sang Trọng",
+    "mallPriceKrwAtResolve": 128250
+  },
+  {
+    "firestoreId": "HE0000000050",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1204425138?sitmNo=LE1204425138_1223836246&mall_no=1",
+    "brand": "LA MER",
+    "name": "Nước Thần Tái Sinh Năng Lượng Da La Mer The Treatment Lotion Cao Cấp",
+    "mallPriceKrwAtResolve": 227800
+  },
+  {
+    "firestoreId": "HE0000000045",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1222683815?sitmNo=LE1222683815_1337954693&mall_no=1",
+    "brand": "BYREDO",
+    "name": "Nước Hoa Niche Byredo Gypsy Water Eau de Parfum Lãng Du Tự Do",
+    "mallPriceKrwAtResolve": 265500
+  },
+  {
+    "firestoreId": "HE0000000037",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1217589424?sitmNo=LE1217589424_1303425892&mall_no=1",
+    "brand": "BYREDO",
+    "name": "Nước Hoa Niche Cao Cấp Byredo Blanche Eau de Parfum Tối Giản Bắc Âu",
+    "mallPriceKrwAtResolve": 289750
+  },
+  {
+    "firestoreId": "HE0000000007",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1214801525?sitmNo=LE1214801525_1285383025&mall_no=1",
+    "brand": "YSL",
+    "name": "Phấn Nước Vỏ Da Đen YSL Encre de Peau Le Cushion (Hộp + Lõi)",
+    "mallPriceKrwAtResolve": 108300,
+    "mallProductName": "롯데백화점 입생로랑 좋아요 하기 엉크르 드 뽀 쿠션 10ml당 77,357원 할인율 5% 최종가 108,300 카카오페이 머니 11% 할인 고객평점 4.8 점 리뷰749 건 무료배송선물포장",
+    "reresolvedAt": "2026-11-24T18:12:02Z"
+  },
+  {
+    "firestoreId": "HE0000000056",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2227121487?sitmNo=LO2227121487_2227121488&mall_no=1",
+    "brand": "SK-II",
+    "name": "Nước Thần Tái Sinh Làn Da SK-II Facial Treatment Essence (Chứa 90% Pitera)",
+    "mallPriceKrwAtResolve": 276050
+  },
+  {
+    "firestoreId": "HE0000000026",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1222211137?sitmNo=LE1222211137_1334764629&mall_no=1",
+    "brand": "TOM FORD",
+    "name": "Son Thỏi Lì Cao Cấp Tom Ford Lip Color Matte Vỏ Đen Viền Vàng",
+    "mallPriceKrwAtResolve": 65550
+  },
+  {
+    "firestoreId": "HE0000000062",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2723425385?sitmNo=LO2723425385_2723425386&mall_no=1",
+    "brand": "YSL",
+    "name": "Phấn Nước Vỏ Da Hồng YSL Touche Éclat Glow-Pact Cushion Cao Cấp",
+    "mallPriceKrwAtResolve": 47710
+  },
+  {
+    "firestoreId": "HE0000000075",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2793357634?sitmNo=LO2793357634_2793357635&mall_no=1",
+    "brand": "Clé de Peau Beauté",
+    "name": "Thỏi Che Khuyết Điểm Thượng Hạng Clé de Peau Beauté Concealer SPF 27",
+    "mallPriceKrwAtResolve": 127160
+  },
+  {
+    "firestoreId": "HE0000000049",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1208789999?sitmNo=LE1208789999_1247657952&mall_no=1",
+    "brand": "GUERLAIN",
+    "name": "Dầu Dưỡng Tái Sinh Mật Ong Đảo Ouessant Guerlain Abeille Royale Watery Oil",
+    "mallPriceKrwAtResolve": 187000
+  },
+  {
+    "firestoreId": "HE0000000017",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/PD49035975?mall_no=1",
+    "brand": "Jo Malone London",
+    "name": "Nước Hoa Jo Malone London English Pear & Freesia Cologne Quả Lê & Lan Nam Phi",
+    "mallPriceKrwAtResolve": 144030,
+    "mallProductName": "조 말론 런던 좋아요 하기 향수닷컴 조말론 잉글리쉬 페어 앤 프리지아 코롱 30ml (병행) 정상가 151,200 할인율 4% 최종가 144,030 고객평점 5.0 점 리뷰1 건 배송비 3,000온누리상품권",
+    "reresolvedAt": "2026-11-24T18:12:02Z"
+  },
+  {
+    "firestoreId": "HE0000000040",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1204595083?sitmNo=LE1204595083_1224808203&mall_no=1",
+    "brand": "Jo Malone London",
+    "name": "Nước Hoa Jo Malone Peony & Blush Suede Cologne Hoa Mẫu Đơn Quý Phái",
+    "mallPriceKrwAtResolve": 104500
+  },
+  {
+    "firestoreId": "HE0000000039",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2820014249?sitmNo=LO2820014249_2820014250&mall_no=1",
+    "brand": "Jo Malone London",
+    "name": "Nước Hoa Jo Malone Wood Sage & Sea Salt Cologne Hương Muối Biển Anh Quốc",
+    "mallPriceKrwAtResolve": 129800
+  },
+  {
+    "firestoreId": "HE0000000073",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2645760404?sitmNo=LO2645760404_2645760405&mall_no=1",
+    "brand": "GUERLAIN",
+    "name": "Phấn Phủ Ngọc Trai Đổi Màu Huyền Thoại Guerlain Météorites Pearls",
+    "mallPriceKrwAtResolve": 84280
+  },
+  {
+    "firestoreId": "HE0000000014",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2809783226?sitmNo=LO2809783226_2809783227&mall_no=1",
+    "brand": "Lancôme",
+    "name": "Serum Trẻ Hóa Da Tăng Cường Vi Sinh Lancôme Advanced Génifique 50ml",
+    "mallPriceKrwAtResolve": 165290,
+    "mallProductName": "랑콤 좋아요 하기 랑콤 어드밴스드 제니피끄 세럼 2026 New Year Edition 50ml 정상가 175,600 할인율 5% 최종가 165,290 삼성카드 5% 할인 배송비 9,900해외직구",
+    "reresolvedAt": "2026-11-24T18:12:02Z"
+  },
+  {
+    "firestoreId": "HE0000000035",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2819346402?sitmNo=LO2819346402_2819346403&mall_no=1",
+    "brand": "Maison Margiela",
+    "name": "Nước Hoa Unisex Maison Margiela Replica Jazz Club EDT Ấm Áp Hoài Niệm",
+    "mallPriceKrwAtResolve": 97020,
+    "mallProductName": "[메종 마르지엘라]메종 마르지엘라 레플리카 재즈 클럽 오드뚜왈렛 30ML",
+    "reresolvedAt": "2026-11-24T18:14:56Z"
+  },
+  {
+    "firestoreId": "HE0000000048",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1214054151?sitmNo=LE1214054151_1280599116&mall_no=1",
+    "brand": "CHANEL",
+    "name": "Phấn Nền Hạt Nước Chanel Les Beiges Water-Fresh Tint Mỏng Nhẹ Tự Nhiên",
+    "mallPriceKrwAtResolve": 78000
+  },
+  {
+    "firestoreId": "HE0000000063",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1208884747?sitmNo=LE1208884747_1248090453&mall_no=1",
+    "brand": "DIOR",
+    "name": "Kem Nền Căng Bóng 24H Dior Forever Skin Glow 24H Foundation",
+    "mallPriceKrwAtResolve": 93100
+  },
+  {
+    "firestoreId": "HE0000000072",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1207391930?sitmNo=LE1207391930_1320425084&mall_no=1",
+    "brand": "DIOR",
+    "name": "Bảng Phấn Bắt Sáng Tạo Khối Dior Backstage Glow Face Palette #001",
+    "mallPriceKrwAtResolve": 75050
+  },
+  {
+    "firestoreId": "HE0000000028",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1207391930?sitmNo=LE1207391930_1320425084&mall_no=1",
+    "brand": "DIOR",
+    "name": "Phấn Má Hồng Tự Nhiên Đổi Màu Theo Độ pH Dior Rosy Glow Blush",
+    "mallPriceKrwAtResolve": 75050
+  },
+  {
+    "firestoreId": "HE0000000003",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1208884747?sitmNo=LE1208884747_1248090453&mall_no=1",
+    "brand": "DIOR",
+    "name": "Son Kem Lì Kháng Nước Không Lem Dior Rouge Forever Liquid 6ml",
+    "mallPriceKrwAtResolve": 93100
+  },
+  {
+    "firestoreId": "HE0000000060",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1212804178?sitmNo=LE1212804178_1318601733&mall_no=1",
+    "brand": "CHANEL",
+    "name": "Son Thỏi Bấm Lì Nhung Chanel Rouge Allure Velvet Sang Trọng",
+    "mallPriceKrwAtResolve": 60000
+  },
+  {
+    "firestoreId": "HE0000000002",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1211906753?sitmNo=LE1211906753_1315961745&mall_no=1",
+    "brand": "DIOR",
+    "name": "Son Bóng Dưỡng Căng Mọng Môi Dior Addict Lip Maximizer 6ml",
+    "mallPriceKrwAtResolve": 49400
+  },
+  {
+    "firestoreId": "HE0000000008",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1216342459?sitmNo=LE1216342459_1295301491&mall_no=1",
+    "brand": "CHANEL",
+    "name": "Son Dưỡng Thỏi Trắng Cao Cấp Chanel Rouge Coco Baume 3g",
+    "mallPriceKrwAtResolve": 52000
+  },
+  {
+    "firestoreId": "HE0000000001",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LE1219450579?sitmNo=LE1219450579_1332093741&mall_no=1",
+    "brand": "DIOR",
+    "name": "Son Dưỡng Dior Addict Lip Glow Có Màu Cao Cấp (Nhiều Tone Màu)",
+    "mallPriceKrwAtResolve": 47500
+  },
+  {
+    "firestoreId": "HE0000000005",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2714906044?sitmNo=LO2714906044_2714906045&mall_no=1",
+    "brand": "YSL",
+    "name": "Son Dưỡng Bóng Căng Mọng YSL Candy Glaze Lip Gloss Stick",
+    "mallPriceKrwAtResolve": 57560
+  },
+  {
+    "firestoreId": "HE0000000069",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2770651579?sitmNo=LO2770651579_2770651580&mall_no=1",
+    "brand": "YSL",
+    "name": "Son Dưỡng Bóng Căng Mọng YSL Loveshine Wet Shine Lipstick 3.2g",
+    "mallPriceKrwAtResolve": 60150,
+    "mallProductName": "입생로랑 좋아요 하기 입생로랑 러브샤인 워터샤인 립스틱 3.2g 214호 웻구아바 정상가 62,800 할인율 4% 최종가 60,150 무료배송",
+    "reresolvedAt": "2026-11-24T18:12:02Z"
+  },
+  {
+    "firestoreId": "HE0000000006",
+    "source": "none",
+    "url": null,
+    "brand": "YSL",
+    "name": "Son Thỏi Vuông Lì Mịn YSL Rouge Pur Couture The Slim 2.2g"
+  },
+  {
+    "firestoreId": "HE0000000036",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2623907518?sitmNo=LO2623907518_2623907519&mall_no=1",
+    "brand": "Maison Margiela",
+    "name": "Nước Hoa Unisex Maison Margiela Replica Lazy Sunday Morning EDT Tinh Khôi",
+    "mallPriceKrwAtResolve": 186120,
+    "mallProductName": "메종 마르지엘라 좋아요 하기 메종 마르지엘라 레플리카 레이지 선데이 모닝(Replica Lazy Sunday Morning) 오 드 뚜왈렛 30ml 정상가 206,800 할인율 10% 최종가 186,120 삼성카드 ",
+    "reresolvedAt": "2026-11-24T18:12:02Z"
+  },
+  {
+    "firestoreId": "HE0000000054",
+    "source": "mall",
+    "url": "https://www.lotteon.com/p/product/LO2558818683?sitmNo=LO2558818683_2558818684&mall_no=1",
+    "brand": "LANCÔME",
+    "name": "Nước Thần Căng Bóng Tái Tạo Da Lancôme Clarifique Dual Essence",
+    "mallPriceKrwAtResolve": 179280
+  },
+  {
+    "firestoreId": "A000001002386",
+    "source": "oy",
+    "goodsNo": "A000001002386",
+    "brand": "AESTURA",
+    "name": "Kem dưỡng AESTURA Atobarrier 365 80ml Set Đôi (tặng Ampoule Ceramide-Hyaluronic 15ml)"
+  },
+  {
+    "firestoreId": "A000000223414",
+    "source": "oy",
+    "goodsNo": "A000000223414",
+    "brand": "Mediheal",
+    "name": "Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại)"
+  },
+  {
+    "firestoreId": "A000001002234",
+    "source": "oy",
+    "goodsNo": "A000001002234",
+    "brand": "바이오더마",
+    "name": "Nước Cân Bằng Bioderma Hydrabio Toner 500ml"
+  },
+  {
+    "firestoreId": "A000000242226",
+    "source": "oy",
+    "goodsNo": "A000000242226",
+    "brand": "파티온",
+    "name": "Tinh Chất Phation Nosca9 Trị Mụn 100ml"
+  },
+  {
+    "firestoreId": "A000000187479",
+    "source": "oy",
+    "goodsNo": "A000000187479",
+    "brand": "비플레인",
+    "name": "Sữa Rửa Mặt Beplain Đậu Xanh Dịu Nhẹ 160ml+40ml"
+  },
+  {
+    "firestoreId": "A000000232672",
+    "source": "oy",
+    "goodsNo": "A000000232672",
+    "brand": "메디힐",
+    "name": "Tinh Chất Dưỡng Ẩm Mediheal Madecassoside Phục Hồi 50+50g"
+  },
+  {
+    "firestoreId": "A000001006283",
+    "source": "oy",
+    "goodsNo": "A000001006283",
+    "brand": "아누아",
+    "name": "Son Dưỡng Anua Glow Balm 8 Loại"
+  },
+  {
+    "firestoreId": "A000000231891",
+    "source": "oy",
+    "goodsNo": "A000000231891",
+    "brand": "아누아",
+    "name": "Nước Cân Bằng Anua PDRN 100 Hyaluronic Acid Booster Toner 250ml"
+  },
+  {
+    "firestoreId": "A000000221882",
+    "source": "oy",
+    "goodsNo": "A000000221882",
+    "brand": "식물나라",
+    "name": "Kem Chống Nắng Dịu Nhẹ Cho Mặt Và Cơ Thể Shingmulnara 150ml"
+  },
+  {
+    "firestoreId": "A000000257125",
+    "source": "oy",
+    "goodsNo": "A000000257125",
+    "brand": "리쥬란",
+    "name": "Mặt Nạ Rejuran Dual Effect Ampoule In Mask Firming & Radiance (1 miếng/5 miếng)"
+  },
+  {
+    "firestoreId": "A000001002383",
+    "source": "oy",
+    "goodsNo": "A000001002383",
+    "brand": "에스트라",
+    "name": "Nước Cân Bằng Aestura Atobarrier365 Capsule Toner 300ml (tặng kèm kem 10ml + sữa rửa mặt 3g x 3)"
+  },
+  {
+    "firestoreId": "A000000230821",
+    "source": "oy",
+    "goodsNo": "A000000230821",
+    "brand": "라곰",
+    "name": "Sữa Rửa Mặt Tạo Bọt Lagom Celebrity Micro Foam Cleanser 120ml x 2"
+  },
+  {
+    "firestoreId": "A000000232725",
+    "source": "oy",
+    "goodsNo": "A000000232725",
+    "brand": "달바",
+    "name": "Kem Chống Nắng Nâng Tông Hồng Dalba Pink Tone Up Sun Cream Duo (50ml + 50ml)"
+  },
+  {
+    "firestoreId": "A000001002019",
+    "source": "oy",
+    "goodsNo": "A000001002019",
+    "brand": "라로슈포제",
+    "name": "Kem Dưỡng Phục Hồi Đa Năng La Roche-Posay Cicaplast Multi Repair Cream 100ml (tặng kèm kem Cica 15ml + tinh chất Cica 7.5ml)"
+  },
+  {
+    "firestoreId": "A000000246445",
+    "source": "oy",
+    "goodsNo": "A000000246445",
+    "brand": "퓌",
+    "name": "Son Bóng Fwee 3D Voluming Gloss"
+  },
+  {
+    "firestoreId": "A000000243440",
+    "source": "oy",
+    "goodsNo": "A000000243440",
+    "brand": "리쥬란",
+    "name": "Mặt Nạ Dưỡng Da Rejuran Healer Skin Protection Mask"
+  },
+  {
+    "firestoreId": "A000001002385",
+    "source": "oy",
+    "goodsNo": "A000001002385",
+    "brand": "에스트라",
+    "name": "Sữa Dưỡng Aestura Atobarrier365 Lotion 300ml"
+  },
+  {
+    "firestoreId": "A000000243859",
+    "source": "oy",
+    "goodsNo": "A000000243859",
+    "brand": "얼터너티브스테레오",
+    "name": "Bút Chì Kem Mắt Alternative Stereo Mood Layer Stick Crayon 1.4g"
+  },
+  {
+    "firestoreId": "A000000239102",
+    "source": "oy",
+    "goodsNo": "A000000239102",
+    "brand": "메디힐",
+    "name": "Mặt Nạ Mediheal Hyper Gel Mask 4 Loại (Collagen/PDRN/Madecassoside/Hyaluronic Acid)"
+  },
+  {
+    "firestoreId": "A000000202912",
+    "source": "oy",
+    "goodsNo": "A000000202912",
+    "brand": "힌스",
+    "name": "Son Kem Bóng Hinse Low Glow Gel Tint 32 Colors"
+  },
+  {
+    "firestoreId": "A000001001861",
+    "source": "oy",
+    "goodsNo": "A000001001861",
+    "brand": "시튜에아",
+    "name": "Son Bóng Situea Glint Lip Glaze"
+  },
+  {
+    "firestoreId": "A000001002209",
+    "source": "oy",
+    "goodsNo": "A000001002209",
+    "brand": "제로이드",
+    "name": "Kem Dưỡng Zeroïd Intensive Cream 80ml + 50ml"
+  },
+  {
+    "firestoreId": "A000000258834",
+    "source": "oy",
+    "goodsNo": "A000000258834",
+    "brand": "에스트라",
+    "name": "Kem Dưỡng Ẩm Làm Dịu Da Estra Atobarrier365 Hydro Soothing Cream 80ml"
+  },
+  {
+    "firestoreId": "A000001005240",
+    "source": "oy",
+    "goodsNo": "A000001005240",
+    "brand": "일리윤",
+    "name": "Kem Phục Hồi Đa Tầng Bảo Vệ Illiyoon Multi Barrier Facial Repair Cream 80ml"
+  },
+  {
+    "firestoreId": "A000000231589",
+    "source": "oy",
+    "goodsNo": "A000000231589",
+    "brand": "제로이드",
+    "name": "Kem Làm Dịu Da Zeroid Soothing Cream 80ml + 50ml"
+  },
+  {
+    "firestoreId": "A000000239660",
+    "source": "oy",
+    "goodsNo": "A000000239660",
+    "brand": "피지오겔",
+    "name": "Kem Dưỡng Da Mặt Physiogel DMT Facial Cream 150ml"
+  },
+  {
+    "firestoreId": "A000000016697",
+    "source": "oy",
+    "goodsNo": "A000000016697",
+    "brand": "아벤느",
+    "name": "Xịt Khoáng Cấp Ẩm Avene Eau Thermale 300ml"
+  },
+  {
+    "firestoreId": "A000000183059",
+    "source": "oy",
+    "goodsNo": "A000000183059",
+    "brand": "어노브",
+    "name": "Dầu Gội Phục Hồi Hư Tổn Sâu Anove Deep Damage Repair Shampoo 500ml"
+  },
+  {
+    "firestoreId": "A000000238658",
+    "source": "oy",
+    "goodsNo": "A000000238658",
+    "brand": "어뮤즈",
+    "name": "Son Bóng Gel Amuse Jel-Fit Gloss"
+  },
+  {
+    "firestoreId": "A000000186792",
+    "source": "oy",
+    "goodsNo": "A000000186792",
+    "brand": "도브",
+    "name": "Tẩy Da Chết Body Dove 298g (6 loại chọn 1)"
+  },
+  {
+    "firestoreId": "A000000192645",
+    "source": "oy",
+    "goodsNo": "A000000192645",
+    "brand": "나르시소 로드리게즈",
+    "name": "Nước Hoa Narciso Rodriguez For Her Pure Musc EDP (30ml/50ml/100ml)"
+  },
+  {
+    "firestoreId": "A000000268077",
+    "source": "oy",
+    "goodsNo": "A000000268077",
+    "brand": "더마비",
+    "name": "Sữa Tắm Derma B Daily Ceramide 1000ml (2 loại)"
+  },
+  {
+    "firestoreId": "A000000238525",
+    "source": "oy",
+    "goodsNo": "A000000238525",
+    "brand": "바이오가",
+    "name": "Sữa Tắm Trị Mụn Lưng BioGa Betaine Salicylate 1000ml"
+  },
+  {
+    "firestoreId": "A000000116991",
+    "source": "oy",
+    "goodsNo": "A000000116991",
+    "brand": "닥터포헤어",
+    "name": "Dầu Gội Dr.FORHAIR Foligen Thickening 400ml (+100ml)"
+  },
+  {
+    "firestoreId": "A000000231328",
+    "source": "oy",
+    "goodsNo": "A000000231328",
+    "brand": "애프터블로우",
+    "name": "Nước Hoa After Blow Eau de Parfum (15 loại chọn 1)"
+  },
+  {
+    "firestoreId": "A000000258293",
+    "source": "oy",
+    "goodsNo": "A000000258293",
+    "brand": "토리든",
+    "name": "Nước Cân Bằng Torriden Dive-In Hyaluronic Acid Phân Tử Nhỏ 300ml (+100ml)"
+  },
+  {
+    "firestoreId": "A000000268577",
+    "source": "oy",
+    "goodsNo": "A000000268577",
+    "brand": "마녀공장",
+    "name": "Sữa Rửa Mặt Manyo Factory Pure Soybean 160ml (2 tuýp) (+Dầu tẩy trang 25ml)"
+  },
+  {
+    "firestoreId": "A000000163850",
+    "source": "oy",
+    "goodsNo": "A000000163850",
+    "brand": "일리윤",
+    "name": "Sữa Tắm Dịu Nhẹ Illiyun Ceramide Ato 6.0 Top-to-Toe 1000ml"
+  },
+  {
+    "firestoreId": "A000000236700",
+    "source": "oy",
+    "goodsNo": "A000000236700",
+    "brand": "라우쉬",
+    "name": "Dầu Gội Trị Gàu Lush Koolzfoot Anti-Dandruff 200ml (Combo 2 chai)"
+  },
+  {
+    "firestoreId": "A000000245794",
+    "source": "oy",
+    "goodsNo": "A000000245794",
+    "brand": "폴라초이스",
+    "name": "Dung Dịch Tẩy Da Chết Paula's Choice BHA Liquid Exfoliant 118ml (Tặng BHA Liquid 30ml)"
+  },
+  {
+    "firestoreId": "A000000211096",
+    "source": "oy",
+    "goodsNo": "A000000211096",
+    "brand": "오프온",
+    "name": "Sữa Tắm Trị Mụn Lưng Off-On (Chăm Sóc Cấp Ẩm & Làm Dịu)"
+  },
+  {
+    "firestoreId": "A000000201277",
+    "source": "oy",
+    "goodsNo": "A000000201277",
+    "brand": "바이오가",
+    "name": "Dầu Gội Giảm Rụng Tóc & Phục Hồi Tóc Hư Tổn Bioga Biotin Mầm Đậu Đen 1000ml"
+  },
+  {
+    "firestoreId": "A000000237852",
+    "source": "oy",
+    "goodsNo": "A000000237852",
+    "brand": "애프터블로우",
+    "name": "Nước Hoa Afterblow Solid / Eau de Parfum (Chọn 1 trong 20 mùi)"
+  },
+  {
+    "firestoreId": "A000000137180",
+    "source": "oy",
+    "goodsNo": "A000000137180",
+    "brand": "라운드랩",
+    "name": "Nước Cân Bằng Round Lab 1025 Dokdo 500ml (Tặng 100ml)"
+  },
+  {
+    "firestoreId": "A000000236979",
+    "source": "oy",
+    "goodsNo": "A000000236979",
+    "brand": "달바",
+    "name": "Kem Chống Nắng Dưỡng Da Chống Lão Hóa Dalba Vita Capsule Duo (50ml+50ml)"
+  },
+  {
+    "firestoreId": "A000000221675",
+    "source": "oy",
+    "goodsNo": "A000000221675",
+    "brand": "포맨트",
+    "name": "Nước Hoa Toàn Thân Forment Signature Perfume Cotton Hug 50ml"
+  },
+  {
+    "firestoreId": "A000000223625",
+    "source": "oy",
+    "goodsNo": "A000000223625",
+    "brand": "디오디너리",
+    "name": "Nước Tẩy Da Chết The Ordinary Glycolic Acid 7% Exfoliating Toner 240ml"
+  },
+  {
+    "firestoreId": "A000000189177",
+    "source": "oy",
+    "goodsNo": "A000000189177",
+    "brand": "끌로에",
+    "name": "Nước Hoa Chloé EDP"
+  },
+  {
+    "firestoreId": "A000000217511",
+    "source": "oy",
+    "goodsNo": "A000000217511",
+    "brand": "휩드",
+    "name": "Sữa Rửa Mặt Dạng Kem Whipped Vegan Pack Cleanser 130g (4 loại: Bơ Hạt Mỡ / Mugwort / Đào Lê / Yuzu Mông)"
+  },
+  {
+    "firestoreId": "A000000240573",
+    "source": "oy",
+    "goodsNo": "A000000240573",
+    "brand": "포맨트",
+    "name": "Nước Hoa Dạng Thỏi Forment Solid Perfume Hello Kitty Edition (3 loại)"
+  },
+  {
+    "firestoreId": "A000000207054",
+    "source": "oy",
+    "goodsNo": "A000000207054",
+    "brand": "더랩바이블랑두",
+    "name": "Nước Hoa Hồng The Lab by Blanc Doux Oligo Hyaluronic Acid Deep Toner 500ml"
+  },
+  {
+    "firestoreId": "A000000159921",
+    "source": "oy",
+    "goodsNo": "A000000159921",
+    "brand": "라로슈포제",
+    "name": "Nước Cân Bằng La Roche-Posay Cicaplast Lotion B5 Panthenol 200ml"
+  },
+  {
+    "firestoreId": "A000000177984",
+    "source": "oy",
+    "goodsNo": "A000000177984",
+    "brand": "헤라",
+    "name": "Son Bóng Hera Sensual Nude Gloss 17 Colors"
+  },
+  {
+    "firestoreId": "A000000189181",
+    "source": "oy",
+    "goodsNo": "A000000189181",
+    "brand": "브링그린",
+    "name": "Nước Cân Bằng Bring Green Tràm Trà Cica Dịu Da (500ml/250ml)"
+  },
+  {
+    "firestoreId": "A000000209910",
+    "source": "oy",
+    "goodsNo": "A000000209910",
+    "brand": "제로이드",
+    "name": "Sữa Rửa Mặt Tạo Bọt Zeroid Foaming Cleanser 240ml"
+  },
+  {
+    "firestoreId": "A000000252919",
+    "source": "oy",
+    "goodsNo": "A000000252919",
+    "brand": "라로슈포제",
+    "name": "Kem Chống Nắng Nâng Tông La Roche-Posay Uvidea Anthelios Rosy Glow 30ml"
+  },
+  {
+    "firestoreId": "A000001003808",
+    "source": "oy",
+    "goodsNo": "A000001003808",
+    "brand": "얼터너티브스테레오",
+    "name": "Son Dưỡng Alternative Stereo Lip Potion Caramel Glaze Balm 3.1g"
+  },
+  {
+    "firestoreId": "A000000255290",
+    "source": "oy",
+    "goodsNo": "A000000255290",
+    "brand": "블랑네이처",
+    "name": "Nước Cân Bằng Blanc Nature Chiết Xuất Rau Diếp Cá 9 Lần Cô Đặc 300ml"
+  },
+  {
+    "firestoreId": "A000000154644",
+    "source": "oy",
+    "goodsNo": "A000000154644",
+    "brand": "라운드랩",
+    "name": "Sữa Rửa Mặt Round Lab 1025 Dokdo 250ml"
+  },
+  {
+    "firestoreId": "A000000255256",
+    "source": "oy",
+    "goodsNo": "A000000255256",
+    "brand": "라카",
+    "name": "Son Kem Lì Laka Perfect Twin Lip 12 colors"
+  },
+  {
+    "firestoreId": "A000000209372",
+    "source": "oy",
+    "goodsNo": "A000000209372",
+    "brand": "프롬리에",
+    "name": "Tinh Chất Dưỡng Ẩm Fromley EGF Water 56ml+30ml"
+  },
+  {
+    "firestoreId": "A000000258792",
+    "source": "oy",
+    "goodsNo": "A000000258792",
+    "brand": "토니모리",
+    "name": "Nước Cân Bằng TonyMoly Ceramide Mochi 500ml"
+  },
+  {
+    "firestoreId": "A000000152767",
+    "source": "oy",
+    "goodsNo": "A000000152767",
+    "brand": "에스트라",
+    "name": "Sữa Rửa Mặt Estra Theracne365 Clear Deep Cleansing Foam 200g"
+  },
+  {
+    "firestoreId": "A000000204471",
+    "source": "oy",
+    "goodsNo": "A000000204471",
+    "brand": "아누아",
+    "name": "Kem Nền Anua Matte But Glow Cover Beige 50ml 2 chiếc"
+  },
+  {
+    "firestoreId": "A000000223922",
+    "source": "oy",
+    "goodsNo": "A000000223922",
+    "brand": "토니모리",
+    "name": "Son Kem Lì Tony Moly Get It Tint Waterful Syrup"
+  },
+  {
+    "firestoreId": "A000000233115",
+    "source": "oy",
+    "goodsNo": "A000000233115",
+    "brand": "리스키",
+    "name": "Son Bóng Risky Be Bold Lip Gloss 16 Màu"
+  },
+  {
+    "firestoreId": "A000000244834",
+    "source": "oy",
+    "goodsNo": "A000000244834",
+    "brand": "페리페라",
+    "name": "Son Kem Lì Peripera Mood Glowy Tint 32 Màu"
+  },
+  {
+    "firestoreId": "A000000174066",
+    "source": "oy",
+    "goodsNo": "A000000174066",
+    "brand": "하트퍼센트",
+    "name": "Bút Chì Kẻ Môi Heart Percent Dot On Mood Lip Pencil 0.8g 28 Loại"
+  },
+  {
+    "firestoreId": "A000000180569",
+    "source": "oy",
+    "goodsNo": "A000000180569",
+    "brand": "바닐라코",
+    "name": "Bút Chì Kẻ Môi Vanilla Co Smudging Lip Pencil 0.8g 12 Loại"
+  },
+  {
+    "firestoreId": "A000000156111",
+    "source": "oy",
+    "goodsNo": "A000000156111",
+    "brand": "라네즈",
+    "name": "Mặt Nạ Ngủ Môi Laneige Lip Sleeping Mask 20g"
+  }
 ]
