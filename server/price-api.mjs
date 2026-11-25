@@ -59,6 +59,16 @@ async function sendTelegram(text) {
   } catch { return false; }
 }
 
+
+// Chỉ cho phép URL mall thuộc allowlist — chặn SSRF qua /price?url=
+const MALL_HOSTS = ['lotteon.com'];
+function isAllowedMallUrl(raw) {
+  try {
+    const h = new URL(raw).hostname.toLowerCase();
+    return MALL_HOSTS.some((d) => h === d || h.endsWith('.' + d));
+  } catch { return false; }
+}
+
 function authorized(req) {
   if (!API_KEY) return true;
   const given = req.headers['x-api-key'] || '';
@@ -135,6 +145,7 @@ const server = http.createServer(async (req, res) => {
     if (u.pathname === '/price') {
       const goodsNo = u.searchParams.get('goodsNo');
       const url = u.searchParams.get('url');
+      if (url && !isAllowedMallUrl(url)) return send(res, 400, { ok: false, error: 'url_not_allowed' });
       const item = goodsNo ? { source: 'oy', goodsNo } : url ? { source: 'mall', url } : null;
       if (!item) return send(res, 400, { ok: false, error: 'goodsNo or url required' });
       const key = keyFor(item);
@@ -155,6 +166,9 @@ const server = http.createServer(async (req, res) => {
       if (!items.length) return send(res, 400, { ok: false, error: 'items required' });
       const results = await Promise.all(items.map(async (it) => {
         const item = it.source ? it : it.goodsNo ? { source: 'oy', goodsNo: it.goodsNo } : { source: 'mall', url: it.url };
+        if (item.source === 'mall' && !isAllowedMallUrl(item.url || '')) {
+          return { ok: false, error: 'url_not_allowed', key: keyFor(item) };
+        }
         const data = await liveFetch(item);
         return { ...data, key: keyFor(item) };
       }));
