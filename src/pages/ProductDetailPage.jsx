@@ -869,6 +869,35 @@ export default function ProductDetailPage() {
               )}
             </div>
 
+            {Array.isArray(product.photoReviews) && product.photoReviews.length > 0 && (
+              <div style={{ borderTop: '1px solid var(--border-color, #E5E7EB)', paddingTop: '20px' }}>
+                <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-dark, #111827)', marginBottom: '4px' }}>
+                  Ảnh thật từ khách hàng
+                </h3>
+                <p style={{ fontSize: '0.76rem', color: 'var(--text-muted, #71717A)', marginBottom: '12px' }}>
+                  Ảnh chụp thực tế khi nhận hàng.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '8px' }}>
+                  {product.photoReviews.slice(0, 5).map((src, i) => (
+                    <a
+                      key={`${src}-${i}`}
+                      href={src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'block', aspectRatio: '1 / 1', borderRadius: '10px', overflow: 'hidden', background: '#F4F4F5', border: '1px solid var(--border-color, #E5E7EB)' }}
+                    >
+                      <img
+                        src={src}
+                        alt={`Ảnh khách hàng ${i + 1}`}
+                        loading="lazy"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                      />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+
           </div>
         </div>
       </main>
