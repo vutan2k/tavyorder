@@ -36,17 +36,14 @@ export const config = { maxDuration: 60 };
 export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return send(res, 204, {});
 
-  const seg = req.query?.path;
-  const parts = Array.isArray(seg) ? seg : seg ? [seg] : [];
-  const ep = parts[0];
+  // Vercel không điền req.query.path cho catch-all ngoài Next → tách từ URL.
+  const url = new URL(req.url || '/', 'http://localhost');
+  const segs = url.pathname.split('/').filter(Boolean); // api / price / <ep>
+  const ep = segs[2] || '';
   if (!ALLOWED.has(ep)) return send(res, 404, { ok: false, error: 'not_found' });
 
   const qs = new URLSearchParams();
-  for (const [k, v] of Object.entries(req.query || {})) {
-    if (k === 'path') continue;
-    if (Array.isArray(v)) v.forEach((x) => qs.append(k, x));
-    else qs.append(k, v);
-  }
+  for (const [k, v] of url.searchParams.entries()) qs.append(k, v);
 
   let cfg;
   try {
