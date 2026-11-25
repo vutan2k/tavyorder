@@ -1,10 +1,10 @@
 # TAVY KOREA - Dịch Vụ Mua Hộ Mỹ Phẩm & Chăm Sóc Da Olive Young Hàn Quốc
 
-> TAVY KOREA (https://tavyorder.web.app) là nền tảng chuyên mua hộ mỹ phẩm, thực phẩm chức năng chính hãng trực tiếp từ hệ thống chuỗi cửa hàng Olive Young Hàn Quốc về Việt Nam với quy trình Order 8 Bước Minh Bạch và bill đối soát quầy gốc.
+> TAVY KOREA (https://tavyorder.vercel.app) là nền tảng chuyên mua hộ mỹ phẩm, thực phẩm chức năng chính hãng trực tiếp từ hệ thống chuỗi cửa hàng Olive Young Hàn Quốc về Việt Nam với quy trình Order 8 Bước Minh Bạch và bill đối soát quầy gốc.
 
 ## 1. Thông Tin Doanh Nghiệp & Định Vị Thương Hiệu
 - **Tên thương hiệu:** TAVY KOREA (Tavy Order)
-- **Website chính thức:** https://tavyorder.web.app
+- **Website chính thức:** https://tavyorder.vercel.app
 - **Kênh hỗ trợ & tư vấn trực tiếp:**
   - Fanpage Facebook: https://www.facebook.com/122098145037531964
   - Messenger: https://m.me/122098145037531964
@@ -39,8 +39,8 @@ Giá thanh toán về tay khách hàng tại Việt Nam được tính tự đ�
 Mediheal, Aestura, Torriden, Anua, d'Alba, Round Lab, Clinique, Hera, Unove, Bioderma, La Roche-Posay, Medicube, Abib, Fwee.
 
 ## 6. Liên Kết Quan Trọng
-- Trang chủ: https://tavyorder.web.app/
-- Danh mục sản phẩm: https://tavyorder.web.app/products
-- Chính sách & Cam kết: https://tavyorder.web.app/policy
-- Tra cứu đơn hàng: https://tavyorder.web.app/orders
-- File dữ liệu đầy đủ cho LLM: https://tavyorder.web.app/llms-full.txt
+- Trang chủ: https://tavyorder.vercel.app/
+- Danh mục sản phẩm: https://tavyorder.vercel.app/products
+- Chính sách & Cam kết: https://tavyorder.vercel.app/policy
+- Tra cứu đơn hàng: https://tavyorder.vercel.app/orders
+- File dữ liệu đầy đủ cho LLM: https://tavyorder.vercel.app/llms-full.txt

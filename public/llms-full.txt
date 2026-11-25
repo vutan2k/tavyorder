@@ -2,7 +2,7 @@
 
 > Dữ liệu trích xuất tự động cho các mô hình AI (ChatGPT, Perplexity, Claude, Gemini) để tra cứu, trích dẫn và gợi ý sản phẩm.
 
-- Website: https://tavyorder.web.app
+- Website: https://tavyorder.vercel.app
 - Hotline/Zalo: 0865868247
 - Fanpage: https://www.facebook.com/122098145037531964
 - Tổng số sản phẩm trong cơ sở dữ liệu: 145

@@ -108,7 +108,7 @@ console.log(`[SEO Prerender] Đã nạp thành công ${products.length} sản ph
 
 const BASE_DOMAIN = (process.env.SITE_URL || 'https://tavyorder.vercel.app').replace(/\/$/, '');
 // Template gốc còn domain Firebase cũ → thay sạch trước khi prerender từng trang.
-const baseHtml = readFileSync(DIST_INDEX, 'utf8').split('https://tavyorder.web.app').join(BASE_DOMAIN);
+const baseHtml = readFileSync(DIST_INDEX, 'utf8').split('${BASE_DOMAIN}').join(BASE_DOMAIN);
 
 let prerenderCount = 0;
 const sitemapUrls = [
@@ -334,7 +334,7 @@ let llmsFullContent = `# TAVY KOREA - Danh Mục Toàn Bộ Sản Phẩm Mua H�
 
 > Dữ liệu trích xuất tự động cho các mô hình AI (ChatGPT, Perplexity, Claude, Gemini) để tra cứu, trích dẫn và gợi ý sản phẩm.
 
-- Website: https://tavyorder.web.app
+- Website: ${BASE_DOMAIN}
 - Hotline/Zalo: 0865868247
 - Fanpage: https://www.facebook.com/122098145037531964
 - Tổng số sản phẩm trong cơ sở dữ liệu: ${llmsFullProducts.length}
@@ -380,7 +380,7 @@ writeFileSync(join(PUBLIC_DIR, 'sitemap.xml'), sitemapContent, 'utf8');
 console.log(`[SEO Prerender] Đã tạo sitemap.xml với ${sitemapUrls.length} liên kết tại dist/sitemap.xml và public/sitemap.xml`);
 
 // 5. Generate robots.txt
-const robotsContent = `# Robots.txt for TAVY KOREA (https://tavyorder.web.app)
+const robotsContent = `# Robots.txt for TAVY KOREA (${BASE_DOMAIN})
 # Designed for Google, Bing and Generative AI Search Engines (GEO)
 
 User-agent: *
