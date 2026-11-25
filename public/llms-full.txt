@@ -188,6 +188,12 @@
   - Giá Olive Young: 33.900 KRW (~793.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-serum-diu-da-giam-mun-fation-nosca9-trouble-serum-set-50ml-loi-thay-40ml-kem-duong-10ml-a000000219609
 
+- **[Top 2] Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại)**
+  - Thương hiệu: Mediheal | Phân loại: Chăm sóc da
+  - Mã hàng (goodsNo): A000000223414
+  - Giá Olive Young: 9.900 KRW (~232.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/mat-na-giay-diu-da-mun-phuc-hoi-mediheal-essential-sheet-mask-10-1-mieng-7-loai-a000000223414
+
 - **Tinh Chất Dưỡng Sáng Thu Nhỏ Lỗ Chân Lông Derma Factory Niacinamide 20% Serum 30ml**
   - Thương hiệu: Derma Factory | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000225217
@@ -410,12 +416,6 @@
   - Giá Olive Young: 30.750 KRW (~720.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-phuc-hoi-hang-rao-bao-ve-da-la-roche-posay-cicaplast-baume-b5-set-100ml-tang-cica-essence-7-5ml-hyalu-serum-3ml-a000000263009
 
-- **Tinh Chất Serum Làm Dịu Phục Hồi Da Abib Heartleaf TECA Capsule Serum Calming Drop (Set Đôi 50ml Tặng Miếng Dán Mụn & Hộp Sanrio)**
-  - Thương hiệu: Abib | Phân loại: Chăm sóc da
-  - Mã hàng (goodsNo): A000000263036
-  - Giá Olive Young: 29.800 KRW (~697.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-serum-lam-diu-phuc-hoi-da-abib-heartleaf-teca-capsule-serum-calming-drop-set-doi-50ml-tang-mieng-dan-mun-hop-sanrio-a000000263036
-
 - **Nước Dưỡng Cấp Ẩm Chuyên Sâu Bioderma Hydrabio Essence Lotion 200ml**
   - Thương hiệu: Bioderma | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000263073
@@ -530,12 +530,6 @@
   - Giá Olive Young: 21.000 KRW (~491.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/son-thoi-hieu-ung-cang-bong-duong-moi-risky-hyper-shine-lipstick-6-mau-a000000267287
 
-- **Kem dưỡng làm dịu giảm đỏ cân bằng pH Zeroid Pimprove Red Control Cream pH4 80ml Tặng Kèm Kem 10ml Và Tinh Chất 7ml**
-  - Thương hiệu: Zeroid | Phân loại: Chăm sóc da
-  - Mã hàng (goodsNo): A000000267477
-  - Giá Olive Young: 26.730 KRW (~625.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-lam-diu-giam-do-can-bang-ph-zeroid-pimprove-red-control-cream-ph4-80ml-tang-kem-kem-10ml-va-tinh-chat-7ml-a000000267477
-
 - **[Top 99] Nước Hoa Dưỡng Tóc Lưu Hương Mềm Mượt Lador Hair Perfume (30ml Tặng Dầu Dưỡng Tóc 10ml)**
   - Thương hiệu: Lador | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000267969
@@ -553,6 +547,12 @@
   - Mã hàng (goodsNo): A000001001705
   - Giá Olive Young: 28.500 KRW (~667.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/bo-trang-diem-da-nang-laneige-x-matin-kim-limited-edition-phan-nuoc-phan-phu-son-tint-tuy-chon-a000001001705
+
+- **[Top 1] Kem dưỡng AESTURA Atobarrier 365 80ml Set Đôi (tặng Ampoule Ceramide-Hyaluronic 15ml)**
+  - Thương hiệu: AESTURA | Phân loại: Chăm sóc da
+  - Mã hàng (goodsNo): A000001002386
+  - Giá Olive Young: 43.400 KRW (~1.016.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-aestura-atobarrier-365-80ml-set-doi-tang-ampoule-ceramide-hyaluronic-15ml-a000001002386
 
 - **Son Dưỡng Dior Addict Lip Glow Có Màu Cao Cấp (Nhiều Tone Màu)**
   - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
