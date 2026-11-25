@@ -107,7 +107,7 @@ if (existsSync(sellablePath)) {
 console.log(`[SEO Prerender] Đã nạp thành công ${products.length} sản phẩm để tối ưu SEO & GEO!`);
 
 const baseHtml = readFileSync(DIST_INDEX, 'utf8');
-const BASE_DOMAIN = 'https://tavyorder.web.app';
+const BASE_DOMAIN = (process.env.SITE_URL || 'https://tavyorder.vercel.app').replace(/\/$/, '');
 
 let prerenderCount = 0;
 const sitemapUrls = [

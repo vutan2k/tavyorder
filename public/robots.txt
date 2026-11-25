@@ -31,5 +31,5 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-Sitemap: https://tavyorder.web.app/sitemap.xml
-LLM-Reference: https://tavyorder.web.app/llms.txt
+Sitemap: https://tavyorder.vercel.app/sitemap.xml
+LLM-Reference: https://tavyorder.vercel.app/llms.txt
