@@ -120,5 +120,5 @@ OY_NOW=$(date +%s)
 OY_PREV=$(cat "$OY_LAST" 2>/dev/null || echo 0)
 if [ $((OY_NOW - OY_PREV)) -ge 900 ]; then
   echo "$OY_NOW" > "$OY_LAST"
-  ( cd "$REPO" && env -u PYTHONPATH /usr/bin/python3 server/oy_stock_sweep.py >> /tmp/tavy-oystock.log 2>&1 & )
+  cd "$REPO" && env -u PYTHONPATH /usr/bin/python3 server/oy_stock_sweep.py >> /tmp/tavy-oystock.log 2>&1
 fi
