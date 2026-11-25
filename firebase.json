@@ -65,6 +65,13 @@
           }
         ]
       }
+    ],
+    "redirects": [
+      {
+        "regex": "^(.*)$",
+        "destination": "https://tavyorder.vercel.app:1",
+        "type": 301
+      }
     ]
   },
   "emulators": {
