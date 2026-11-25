@@ -108,126 +108,6 @@
     "isHighEnd": false
   },
   {
-    "goodsNo": "A000000149501",
-    "id": "A000000149501",
-    "name": "Dầu Gội Giảm Rụng Củng Cố Da Đầu LABO-H Scalp Strengthening Shampoo 750ml Kèm Chai 100ml",
-    "nameKr": "[몬치치] NEW라보에이치 두피강화샴푸 750ML+100ML [탈모증상완화] | 올리브영",
-    "brand": "LABO-H",
-    "category": "Dầu gội",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 37000,
-    "originalPrice": 37000,
-    "productImage": "/products/A000000149501.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000149501.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000149501_1"
-            },
-            "name": {
-              "stringValue": "[Monchichi] 750ML + Túi Rút Dây"
-            },
-            "name_vi": {
-              "stringValue": "[Monchichi] 750ML + Túi Rút Dây"
-            },
-            "name_kr": {
-              "stringValue": "[몬치치] 750ML+스트링파우치"
-            },
-            "price_krw": {
-              "integerValue": "26900"
-            },
-            "price_vnd": {
-              "integerValue": "629000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000149501.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000149501_2"
-            },
-            "name": {
-              "stringValue": "[NEW] 750ML+100ML"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] 750ML+100ML"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 750ML+100ML"
-            },
-            "price_krw": {
-              "integerValue": "36000"
-            },
-            "price_vnd": {
-              "integerValue": "629000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000149501.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000149501_3"
-            },
-            "name": {
-              "stringValue": "[NEW] 750ML"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] 750ML"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 750ML"
-            },
-            "price_krw": {
-              "integerValue": "36000"
-            },
-            "price_vnd": {
-              "integerValue": "629000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000149501.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      }
-    ],
-    "description": "",
-    "isHighEnd": false
-  },
-  {
     "goodsNo": "A000000156230",
     "id": "A000000156230",
     "name": "Kem dưỡng cấp ẩm se khít lỗ chân lông S.Nature Aqua Squalane 60ml Tặng Kèm 30ml",
@@ -3954,456 +3834,6 @@
     "isHighEnd": false
   },
   {
-    "goodsNo": "A000000190168",
-    "id": "A000000190168",
-    "name": "Bột ngũ cốc dinh dưỡng bổ sung đạm Flymill Protein Shake 45g",
-    "nameKr": "플라이밀 단백질쉐이크 45g | 올리브영",
-    "brand": "Flymill",
-    "category": "Sinh tố protein",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 2900,
-    "originalPrice": 3900,
-    "productImage": "/products/A000000190168.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000190168.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_1"
-            },
-            "name": {
-              "stringValue": "[NEW] Sữa Chua Việt Quất 45g"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] Sữa Chua Việt Quất 45g"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 블루베리요거트 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_2"
-            },
-            "name": {
-              "stringValue": "Nâu Vị Ngũ Cốc 45g"
-            },
-            "name_vi": {
-              "stringValue": "Nâu Vị Ngũ Cốc 45g"
-            },
-            "name_kr": {
-              "stringValue": "브라운 곡물맛 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_3"
-            },
-            "name": {
-              "stringValue": "Vị Bánh Quy Kem 45g"
-            },
-            "name_vi": {
-              "stringValue": "Vị Bánh Quy Kem 45g"
-            },
-            "name_kr": {
-              "stringValue": "쿠키앤크림 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_4"
-            },
-            "name": {
-              "stringValue": "Bơ Đậu Phộng 45g"
-            },
-            "name_vi": {
-              "stringValue": "Bơ Đậu Phộng 45g"
-            },
-            "name_kr": {
-              "stringValue": "피넛버터 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_5"
-            },
-            "name": {
-              "stringValue": "[NEW] Socola Thật 45g"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] Socola Thật 45g"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 리얼초코 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_6"
-            },
-            "name": {
-              "stringValue": "Đen Vị Mè Đen 45g"
-            },
-            "name_vi": {
-              "stringValue": "Đen Vị Mè Đen 45g"
-            },
-            "name_kr": {
-              "stringValue": "블랙 흑임자맛 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_7"
-            },
-            "name": {
-              "stringValue": "Vị Trà Xanh 45g"
-            },
-            "name_vi": {
-              "stringValue": "Vị Trà Xanh 45g"
-            },
-            "name_kr": {
-              "stringValue": "그린 녹차맛 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_8"
-            },
-            "name": {
-              "stringValue": "Vị Khoai Lang 45g"
-            },
-            "name_vi": {
-              "stringValue": "Vị Khoai Lang 45g"
-            },
-            "name_kr": {
-              "stringValue": "고구마맛 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_9"
-            },
-            "name": {
-              "stringValue": "Vị Ngũ Cốc 45g"
-            },
-            "name_vi": {
-              "stringValue": "Vị Ngũ Cốc 45g"
-            },
-            "name_kr": {
-              "stringValue": "콘시리얼맛 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_10"
-            },
-            "name": {
-              "stringValue": "Vị Dâu 45g"
-            },
-            "name_vi": {
-              "stringValue": "Vị Dâu 45g"
-            },
-            "name_kr": {
-              "stringValue": "딸기맛 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_11"
-            },
-            "name": {
-              "stringValue": "Pistachio 45g"
-            },
-            "name_vi": {
-              "stringValue": "Pistachio 45g"
-            },
-            "name_kr": {
-              "stringValue": "피스타치오 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_12"
-            },
-            "name": {
-              "stringValue": "Chuối 45g"
-            },
-            "name_vi": {
-              "stringValue": "Chuối 45g"
-            },
-            "name_kr": {
-              "stringValue": "바나나 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000190168_13"
-            },
-            "name": {
-              "stringValue": "Vị Socola 45g"
-            },
-            "name_vi": {
-              "stringValue": "Vị Socola 45g"
-            },
-            "name_kr": {
-              "stringValue": "초코맛 45g"
-            },
-            "price_krw": {
-              "integerValue": "3300"
-            },
-            "price_vnd": {
-              "integerValue": "68000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000190168.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      }
-    ],
-    "description": "Bột protein lắc dinh dưỡng kết hợp cùng các hạt ngũ cốc giòn tan mang lại bữa phụ thơm ngon, giàu đạm và ít calo. Hỗ trợ cung cấp năng lượng nhanh chóng, giảm cảm giác đói và duy trì vóc dáng thon gọn cho người ăn kiêng hoặc tập luyện. Thiết kế túi vòi tiện lợi, dễ dàng pha chế và sử dụng ở mọi lúc mọi nơi.",
-    "isHighEnd": false
-  },
-  {
     "goodsNo": "A000000200614",
     "id": "A000000200614",
     "name": "Kem Chống Nắng Hiệu Chỉnh Tông Da d'Alba Waterfull Purple Tone-Up Sunscreen (Set Đôi 50ml + 50ml)",
@@ -4608,225 +4038,6 @@
       }
     ],
     "description": "",
-    "isHighEnd": false
-  },
-  {
-    "goodsNo": "A000000202771",
-    "id": "A000000202771",
-    "name": "Bột Bổ Sung Protein Hỗ Trợ Dinh Dưỡng Vóc Dáng Prote-One Protein Shake Pouch (Set Mua 1 Tặng 1 40g - 6 Hương Vị)",
-    "nameKr": "프로티원 단백질쉐이크 파우치형 40g 6종 | 올리브영",
-    "brand": "Prote-One",
-    "category": "Sinh tố protein",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 3900,
-    "originalPrice": 3900,
-    "productImage": "/products/A000000202771.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000202771.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000202771_1"
-            },
-            "name": {
-              "stringValue": "Vị Socola 40g 1 Gói"
-            },
-            "name_vi": {
-              "stringValue": "Vị Socola 40g 1 Gói"
-            },
-            "name_kr": {
-              "stringValue": "초코맛 40g 1팩"
-            },
-            "price_krw": {
-              "integerValue": "1950"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000202771.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000202771_2"
-            },
-            "name": {
-              "stringValue": "Vị Trà Xanh 40g 1 Gói"
-            },
-            "name_vi": {
-              "stringValue": "Vị Trà Xanh 40g 1 Gói"
-            },
-            "name_kr": {
-              "stringValue": "녹차맛 40g 1팩"
-            },
-            "price_krw": {
-              "integerValue": "1950"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000202771.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000202771_3"
-            },
-            "name": {
-              "stringValue": "Vị Dâu 40g 1 Gói"
-            },
-            "name_vi": {
-              "stringValue": "Vị Dâu 40g 1 Gói"
-            },
-            "name_kr": {
-              "stringValue": "딸기맛 40g 1팩"
-            },
-            "price_krw": {
-              "integerValue": "1950"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000202771.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000202771_4"
-            },
-            "name": {
-              "stringValue": "[Ra Mắt Độc Quyền] Vị Earl Grey Milk Tea 40g 1 Gói"
-            },
-            "name_vi": {
-              "stringValue": "[Ra Mắt Độc Quyền] Vị Earl Grey Milk Tea 40g 1 Gói"
-            },
-            "name_kr": {
-              "stringValue": "[단독런칭] 얼그레이밀크티맛 40g 1팩"
-            },
-            "price_krw": {
-              "integerValue": "1950"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000202771.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000202771_5"
-            },
-            "name": {
-              "stringValue": "Vị Ngũ Cốc 40g 1 Gói"
-            },
-            "name_vi": {
-              "stringValue": "Vị Ngũ Cốc 40g 1 Gói"
-            },
-            "name_kr": {
-              "stringValue": "곡물맛 40g 1팩"
-            },
-            "price_krw": {
-              "integerValue": "1950"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000202771.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000202771_6"
-            },
-            "name": {
-              "stringValue": "Vị Hắc Mè Đen 40g 1 Gói"
-            },
-            "name_vi": {
-              "stringValue": "Vị Hắc Mè Đen 40g 1 Gói"
-            },
-            "name_kr": {
-              "stringValue": "흑임자맛 40g 1팩"
-            },
-            "price_krw": {
-              "integerValue": "1950"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000202771.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      }
-    ],
-    "description": "Mỹ phẩm 1+1 40g 6 (40g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "isHighEnd": false
   },
   {
@@ -5916,291 +5127,6 @@
     "isHighEnd": false
   },
   {
-    "goodsNo": "A000000208162",
-    "id": "A000000208162",
-    "name": "Bột Bổ Sung Protein Dinh Dưỡng Tiện Lợi Delight Project Protein Shake (Gói 45g Tùy Chọn Vị)",
-    "nameKr": "딜라이트 프로젝트 단백질쉐이크 45g 택1 | 올리브영",
-    "brand": "Delight Project",
-    "category": "Sinh tố protein",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 3900,
-    "originalPrice": 3900,
-    "productImage": "/products/A000000208162.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000208162.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000208162_1"
-            },
-            "name": {
-              "stringValue": "[Bản Đơn Lẻ] Socola Hạt Dẻ 45g"
-            },
-            "name_vi": {
-              "stringValue": "[Bản Đơn Lẻ] Socola Hạt Dẻ 45g"
-            },
-            "name_kr": {
-              "stringValue": "[단품]너티초코 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000208162.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000208162_2"
-            },
-            "name": {
-              "stringValue": "[Bản Đơn Lẻ] Bánh Bông Lan Ngô 45g"
-            },
-            "name_vi": {
-              "stringValue": "[Bản Đơn Lẻ] Bánh Bông Lan Ngô 45g"
-            },
-            "name_kr": {
-              "stringValue": "[단품]옥수수카스테라 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000208162.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000208162_3"
-            },
-            "name": {
-              "stringValue": "[Bản Đơn Lẻ] Bột Khoai Lang 45g"
-            },
-            "name_vi": {
-              "stringValue": "[Bản Đơn Lẻ] Bột Khoai Lang 45g"
-            },
-            "name_kr": {
-              "stringValue": "[단품]고구마미숫가루 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000208162.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000208162_4"
-            },
-            "name": {
-              "stringValue": "[Bản Đơn Lẻ] Injeolmi Hạt Mè Đen 45g"
-            },
-            "name_vi": {
-              "stringValue": "[Bản Đơn Lẻ] Injeolmi Hạt Mè Đen 45g"
-            },
-            "name_kr": {
-              "stringValue": "[단품]흑임자인절미 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000208162.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000208162_5"
-            },
-            "name": {
-              "stringValue": "[Bản Đơn Lẻ] Socola Hạt Dẻ Cười 45g"
-            },
-            "name_vi": {
-              "stringValue": "[Bản Đơn Lẻ] Socola Hạt Dẻ Cười 45g"
-            },
-            "name_kr": {
-              "stringValue": "[단품]피스타치오초코 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000208162.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000208162_6"
-            },
-            "name": {
-              "stringValue": "[Bản Đơn Lẻ] Sữa Chua Dâu 45g"
-            },
-            "name_vi": {
-              "stringValue": "[Bản Đơn Lẻ] Sữa Chua Dâu 45g"
-            },
-            "name_kr": {
-              "stringValue": "[단품]딸기요거트 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000208162.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000208162_7"
-            },
-            "name": {
-              "stringValue": "[Bản Đơn Lẻ] Sữa Dưa Lưới 45g"
-            },
-            "name_vi": {
-              "stringValue": "[Bản Đơn Lẻ] Sữa Dưa Lưới 45g"
-            },
-            "name_kr": {
-              "stringValue": "[단품]멜론밀크 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000208162.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000208162_8"
-            },
-            "name": {
-              "stringValue": "[Bản Đơn Lẻ] Sữa Chua Việt Quất 45g"
-            },
-            "name_vi": {
-              "stringValue": "[Bản Đơn Lẻ] Sữa Chua Việt Quất 45g"
-            },
-            "name_kr": {
-              "stringValue": "[단품]블루베리요거트 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "91000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000208162.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      }
-    ],
-    "description": "Mỹ phẩm 45g (45g) từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "isHighEnd": false
-  },
-  {
     "goodsNo": "A000000212579",
     "id": "A000000212579",
     "name": "Mặt nạ ôm sát trẻ hóa dưỡng sáng da House of B Face Film Mask 4 miếng (Tùy chọn Glutathione / PDRN)",
@@ -6285,993 +5211,6 @@
       }
     ],
     "description": "Mặt nạ ứng dụng công nghệ màng film siêu ôm sát, giúp truyền tải trọn vẹn dưỡng chất đậm đặc vào sâu trong da. Tùy chọn hoạt chất Glutathione hỗ trợ dưỡng trắng mờ thâm hoặc PDRN hỗ trợ phục hồi và tăng sinh collagen giúp da căng bóng. Thích hợp cho làn da mệt mỏi, xỉn màu và cần được hồi sinh cấp tốc.",
-    "isHighEnd": false
-  },
-  {
-    "goodsNo": "A000000213569",
-    "id": "A000000213569",
-    "name": "Mi Giả Tự Dính Tiện Lợi Không Cần Keo Coringco TokTok-Hara No Glue Eyelash (15 Loại Tùy Chọn - Phiên Bản Sanrio)",
-    "nameKr": "[NEW/1등 속눈썹] 코링코 톡톡하라 노글루 속눈썹 19종 택1 | 올리브영",
-    "brand": "Coringco",
-    "category": "Mi giả/miếng dán mí",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 9200,
-    "originalPrice": 20000,
-    "productImage": "/products/A000000213569.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000213569.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_1"
-            },
-            "name": {
-              "stringValue": "[Sanrio] Lược Gương Móc Khóa Pure + My Melody"
-            },
-            "name_vi": {
-              "stringValue": "[Sanrio] Lược Gương Móc Khóa Pure + My Melody"
-            },
-            "name_kr": {
-              "stringValue": "[산리오] 퓨어+마이멜로디 빗거울키링"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_2"
-            },
-            "name": {
-              "stringValue": "[Sanrio] Lược Gương Móc Khóa Muse + Kuromi"
-            },
-            "name_vi": {
-              "stringValue": "[Sanrio] Lược Gương Móc Khóa Muse + Kuromi"
-            },
-            "name_kr": {
-              "stringValue": "[산리오] 뮤즈+쿠로미 빗거울키링"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_3"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Easy Cut Rosa"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Easy Cut Rosa"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 이지컷 로사"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_4"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Easy Cut Deer"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Easy Cut Deer"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 이지컷 디어"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_5"
-            },
-            "name": {
-              "stringValue": "No Glue Pure Light"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Pure Light"
-            },
-            "name_kr": {
-              "stringValue": "노글루 퓨어 라이트"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_6"
-            },
-            "name": {
-              "stringValue": "No Glue Cherry Coke Light"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Cherry Coke Light"
-            },
-            "name_kr": {
-              "stringValue": "노글루 체리콕 라이트"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_7"
-            },
-            "name": {
-              "stringValue": "No Glue Muse Light"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Muse Light"
-            },
-            "name_kr": {
-              "stringValue": "노글루 뮤즈 라이트"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_8"
-            },
-            "name": {
-              "stringValue": "No Glue Blossom Light"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Blossom Light"
-            },
-            "name_kr": {
-              "stringValue": "노글루 블라썸 라이트"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_9"
-            },
-            "name": {
-              "stringValue": "No Glue Filter Light"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Filter Light"
-            },
-            "name_kr": {
-              "stringValue": "노글루 필터 라이트"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_10"
-            },
-            "name": {
-              "stringValue": "No Glue Cats Light"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Cats Light"
-            },
-            "name_kr": {
-              "stringValue": "노글루 캣츠 라이트"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_11"
-            },
-            "name": {
-              "stringValue": "No Glue Sparkle Basic"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Sparkle Basic"
-            },
-            "name_kr": {
-              "stringValue": "노글루 스파클 베이직"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_12"
-            },
-            "name": {
-              "stringValue": "Nhíp Gắp Chuyên Nghiệp"
-            },
-            "name_vi": {
-              "stringValue": "Nhíp Gắp Chuyên Nghiệp"
-            },
-            "name_kr": {
-              "stringValue": "프로핏 트위저"
-            },
-            "price_krw": {
-              "integerValue": "9500"
-            },
-            "price_vnd": {
-              "integerValue": "222000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_13"
-            },
-            "name": {
-              "stringValue": "Dụng Cụ Uốn Mi Chuyên Nghiệp"
-            },
-            "name_vi": {
-              "stringValue": "Dụng Cụ Uốn Mi Chuyên Nghiệp"
-            },
-            "name_kr": {
-              "stringValue": "프로 컬링 부분 뷰러"
-            },
-            "price_krw": {
-              "integerValue": "10000"
-            },
-            "price_vnd": {
-              "integerValue": "234000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_14"
-            },
-            "name": {
-              "stringValue": "[Sanrio] Lược Gương Móc Khóa Cherry Coc + Hello Kitty"
-            },
-            "name_vi": {
-              "stringValue": "[Sanrio] Lược Gương Móc Khóa Cherry Coc + Hello Kitty"
-            },
-            "name_kr": {
-              "stringValue": "[산리오] 체리콕+헬로키티 빗거울키링"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_15"
-            },
-            "name": {
-              "stringValue": "[Sanrio] Nhíp Hello Kitty"
-            },
-            "name_vi": {
-              "stringValue": "[Sanrio] Nhíp Hello Kitty"
-            },
-            "name_kr": {
-              "stringValue": "[산리오] 헬로키티 트위저"
-            },
-            "price_krw": {
-              "integerValue": "9200"
-            },
-            "price_vnd": {
-              "integerValue": "215000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_16"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Easy Cut Veil"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Easy Cut Veil"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 이지컷 베일"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_17"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Easy Cut Slick"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Easy Cut Slick"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 이지컷 슬릭"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_18"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Easy Cut Haze"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Easy Cut Haze"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 이지컷 헤이즈"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_19"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Easy Cut Pixie"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Easy Cut Pixie"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 이지컷 픽시"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_20"
-            },
-            "name": {
-              "stringValue": "No Glue Bold Light"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Bold Light"
-            },
-            "name_kr": {
-              "stringValue": "노글루 볼드 라이트"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_21"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Easy Cut Tail"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Easy Cut Tail"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 이지컷 테일"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_22"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Easy Cut Charming"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Easy Cut Charming"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 이지컷 챠밍"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_23"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Easy Cut City"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Easy Cut City"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 이지컷 시티"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_24"
-            },
-            "name": {
-              "stringValue": "[NEW] No Glue Undershoe Basic"
-            },
-            "name_vi": {
-              "stringValue": "[NEW] No Glue Undershoe Basic"
-            },
-            "name_kr": {
-              "stringValue": "[NEW] 노글루 언더슈 베이직"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_25"
-            },
-            "name": {
-              "stringValue": "No Glue Maple Light"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Maple Light"
-            },
-            "name_kr": {
-              "stringValue": "노글루 메이플 라이트"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000213569_26"
-            },
-            "name": {
-              "stringValue": "No Glue Underpop Basic"
-            },
-            "name_vi": {
-              "stringValue": "No Glue Underpop Basic"
-            },
-            "name_kr": {
-              "stringValue": "노글루 언더팝 베이직"
-            },
-            "price_krw": {
-              "integerValue": "14900"
-            },
-            "price_vnd": {
-              "integerValue": "349000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000213569.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      }
-    ],
-    "description": "Mỹ phẩm từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "isHighEnd": false
-  },
-  {
-    "goodsNo": "A000000217101",
-    "id": "A000000217101",
-    "name": "Men vi sinh âm đạo iHill Venus 30 viên nang (+6 viên nang) gói tăng dung tích",
-    "nameKr": "아이힐 비너스 질유산균 30캡슐 (+6캡슐) 증량 기획",
-    "brand": "iHill",
-    "category": "inner_beauty",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 29900,
-    "originalPrice": 29900,
-    "productImage": "/products/A000000217101.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000217101.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "1"
-            },
-            "name": {
-              "stringValue": "Men vi sinh âm đạo iHill Venus 30 viên nang (+6 viên nang) gói tăng dung tích"
-            },
-            "name_vi": {
-              "stringValue": "Men vi sinh âm đạo iHill Venus 30 viên nang (+6 viên nang) gói tăng dung tích"
-            },
-            "name_kr": {
-              "stringValue": "아이힐 비너스 질유산균 30캡슐 (+6캡슐) 증량 기획"
-            },
-            "price_krw": {
-              "integerValue": "23900"
-            },
-            "price_vnd": {
-              "integerValue": "559000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000217101.jpg"
-            }
-          }
-        }
-      }
-    ],
-    "description": "Sản phẩm Men vi sinh âm đạo iHill Venus 30 viên nang (+6 viên nang) gói tăng dung tích từ thương hiệu 아이힐 tại Olive Young Hàn Quốc.",
-    "isHighEnd": false
-  },
-  {
-    "goodsNo": "A000000217620",
-    "id": "A000000217620",
-    "name": "Mặt Nạ Giấy Dưỡng Da Tinh Chất Chuyên Sâu Mediheal Essential Mask (Tùy Chọn 7 Loại / 1 Miếng)",
-    "nameKr": "[15년연속 1위] 메디힐 에센셜 마스크팩 1매 고기능 7종 골라담기 | 올리브영",
-    "brand": "Mediheal",
-    "category": "Mặt nạ giấy",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 1000,
-    "originalPrice": 2000,
-    "productImage": "/products/A000000217620.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000217620.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "integerValue": "1"
-            },
-            "name": {
-              "stringValue": "Mặt Nạ Giấy Dưỡng Da Tinh Chất Chuyên Sâu Mediheal Essential Mask (Tùy Chọn 7 Loại / 1 Miếng)"
-            },
-            "name_vi": {
-              "stringValue": "Mặt Nạ Giấy Dưỡng Da Tinh Chất Chuyên Sâu Mediheal Essential Mask (Tùy Chọn 7 Loại / 1 Miếng)"
-            },
-            "name_kr": {
-              "stringValue": "[15년연속 1위] 메디힐 에센셜 마스크팩 1매 고기능 7종 골라담기 | 올리브영"
-            },
-            "price_krw": {
-              "integerValue": "1000"
-            },
-            "price_vnd": {
-              "integerValue": "23000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000217620.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      }
-    ],
-    "description": "Mặt Nạ Giấy Mediheal (1 Miếng) từ thương hiệu Mediheal là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "isHighEnd": false
   },
   {
@@ -7866,60 +5805,6 @@
     "isHighEnd": false
   },
   {
-    "goodsNo": "A000000219331",
-    "id": "A000000219331",
-    "name": "[MỚI] Fillimilli Lông Mi Giả Tự Chọn 1 Món (Sợi Điểm Nhấn / Không Keo / Cắt Sẵn / Điểm Nhấn Giữa / Keo Dán)",
-    "nameKr": "[NEW출시] 필리밀리 속눈썹 골라담기 택1 (포인트가닥/노글루/컷팅/미들포인트/접착제)",
-    "brand": "Fillimilli",
-    "category": "skincare",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 7000,
-    "originalPrice": 14000,
-    "productImage": "/products/A000000219331.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000219331.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "1"
-            },
-            "name": {
-              "stringValue": "[MỚI] Fillimilli Lông Mi Giả Tự Chọn 1 Món (Sợi Điểm Nhấn / Không Keo / Cắt Sẵn / Điểm Nhấn Giữa / Keo Dán)"
-            },
-            "name_vi": {
-              "stringValue": "[MỚI] Fillimilli Lông Mi Giả Tự Chọn 1 Món (Sợi Điểm Nhấn / Không Keo / Cắt Sẵn / Điểm Nhấn Giữa / Keo Dán)"
-            },
-            "name_kr": {
-              "stringValue": "[NEW출시] 필리밀리 속눈썹 골라담기 택1 (포인트가닥/노글루/컷팅/미들포인트/접착제)"
-            },
-            "price_krw": {
-              "integerValue": "6700"
-            },
-            "price_vnd": {
-              "integerValue": "157000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000219331.jpg"
-            }
-          }
-        }
-      }
-    ],
-    "description": "Sản phẩm [MỚI] Fillimilli Lông Mi Giả Tự Chọn 1 Món (Sợi Điểm Nhấn / Không Keo / Cắt Sẵn / Điểm Nhấn Giữa / Keo Dán) từ thương hiệu 필리밀리 tại Olive Young Hàn Quốc.",
-    "isHighEnd": false
-  },
-  {
     "goodsNo": "A000000219609",
     "id": "A000000219609",
     "name": "Tinh Chất Serum Dịu Da Giảm Mụn Fation Nosca9 Trouble Serum (Set 50ml + Lõi Thay 40ml + Kem Dưỡng 10ml)",
@@ -8364,324 +6249,6 @@
       }
     ],
     "description": "Tinh chất đặc trị nồng độ cao chứa 20% Niacinamide tinh khiết giúp ức chế sản sinh sắc tố melanin, làm mờ thâm mụn và dưỡng sáng đều màu da rõ rệt. Sản phẩm tăng cường điều tiết bã nhờn, củng cố hàng rào lipid bảo vệ da và hỗ trợ se khít kích thước lỗ chân lông hiệu quả. Thích hợp cho da dầu mụn, da thâm sạm sau mụn, da không đều màu và da có lỗ chân lông to.",
-    "isHighEnd": false
-  },
-  {
-    "goodsNo": "A000000225250",
-    "id": "A000000225250",
-    "name": "Bộ Cọ Trang Điểm Chuyên Nghiệp Fillimilli Brush Set (Phiên Bản Hợp Tác Sanrio Pochacco / My Melody)",
-    "nameKr": "[베스트구성] 필리밀리 브러시세트 골라담기 [산리오캐릭터즈 포차코] | 올리브영",
-    "brand": "Fillimilli",
-    "category": "Cọ trang điểm",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 12900,
-    "originalPrice": 14000,
-    "productImage": "/products/A000000225250.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000225250.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000225250_1"
-            },
-            "name": {
-              "stringValue": "Bộ Cọ Trang Điểm Mắt (6 Món)"
-            },
-            "name_vi": {
-              "stringValue": "Bộ Cọ Trang Điểm Mắt (6 Món)"
-            },
-            "name_kr": {
-              "stringValue": "아이메이크업브러시키트(6종)"
-            },
-            "price_krw": {
-              "integerValue": "12900"
-            },
-            "price_vnd": {
-              "integerValue": "302000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000225250.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000225250_2"
-            },
-            "name": {
-              "stringValue": "Bộ Cọ Trang Điểm Mini (5 Món)"
-            },
-            "name_vi": {
-              "stringValue": "Bộ Cọ Trang Điểm Mini (5 Món)"
-            },
-            "name_kr": {
-              "stringValue": "미니메이크업브러시키트(5종)"
-            },
-            "price_krw": {
-              "integerValue": "17900"
-            },
-            "price_vnd": {
-              "integerValue": "302000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000225250.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000225250_3"
-            },
-            "name": {
-              "stringValue": "Bộ Cọ Mắt Pro Collection (5 Món)"
-            },
-            "name_vi": {
-              "stringValue": "Bộ Cọ Mắt Pro Collection (5 Món)"
-            },
-            "name_kr": {
-              "stringValue": "아이브러시프로컬렉션(5종)"
-            },
-            "price_krw": {
-              "integerValue": "28000"
-            },
-            "price_vnd": {
-              "integerValue": "302000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000225250.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000225250_4"
-            },
-            "name": {
-              "stringValue": "Bộ Cọ Trang Điểm Mắt (6 Món) [Pochacco]"
-            },
-            "name_vi": {
-              "stringValue": "Bộ Cọ Trang Điểm Mắt (6 Món) [Pochacco]"
-            },
-            "name_kr": {
-              "stringValue": "아이메이크업브러시키트(6종) [포차코]"
-            },
-            "price_krw": {
-              "integerValue": "12900"
-            },
-            "price_vnd": {
-              "integerValue": "302000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000225250.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000225250_5"
-            },
-            "name": {
-              "stringValue": "Bộ Cọ Trang Điểm Mắt (6 Món) [Set Đặc Biệt Bạc]"
-            },
-            "name_vi": {
-              "stringValue": "Bộ Cọ Trang Điểm Mắt (6 Món) [Set Đặc Biệt Bạc]"
-            },
-            "name_kr": {
-              "stringValue": "아이메이크업브러시키트(6종) [실버기획]"
-            },
-            "price_krw": {
-              "integerValue": "12900"
-            },
-            "price_vnd": {
-              "integerValue": "302000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000225250.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000225250_6"
-            },
-            "name": {
-              "stringValue": "Bộ Cọ Trang Điểm Mini (5 Món) [Pokémon]"
-            },
-            "name_vi": {
-              "stringValue": "Bộ Cọ Trang Điểm Mini (5 Món) [Pokémon]"
-            },
-            "name_kr": {
-              "stringValue": "미니메이크업브러시키트(5종) [포켓몬]"
-            },
-            "price_krw": {
-              "integerValue": "17900"
-            },
-            "price_vnd": {
-              "integerValue": "302000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000225250.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000225250_7"
-            },
-            "name": {
-              "stringValue": "Bộ Cọ Mắt Pro Collection (5 Món) [Shining Chami]"
-            },
-            "name_vi": {
-              "stringValue": "Bộ Cọ Mắt Pro Collection (5 Món) [Shining Chami]"
-            },
-            "name_kr": {
-              "stringValue": "아이브러시프로컬렉션(5종) [샤이닝챠미]"
-            },
-            "price_krw": {
-              "integerValue": "14000"
-            },
-            "price_vnd": {
-              "integerValue": "302000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000225250.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000225250_8"
-            },
-            "name": {
-              "stringValue": "Bộ Cọ Mắt Pro Collection (5 Món) [Twinkle Chami]"
-            },
-            "name_vi": {
-              "stringValue": "Bộ Cọ Mắt Pro Collection (5 Món) [Twinkle Chami]"
-            },
-            "name_kr": {
-              "stringValue": "아이브러시프로컬렉션(5종) [트윙클챠미]"
-            },
-            "price_krw": {
-              "integerValue": "14000"
-            },
-            "price_vnd": {
-              "integerValue": "302000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000225250.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000225250_9"
-            },
-            "name": {
-              "stringValue": "Bộ Cọ Mắt Pro Collection (5 Món) [Set Đặc Biệt Yup Dduk]"
-            },
-            "name_vi": {
-              "stringValue": "Bộ Cọ Mắt Pro Collection (5 Món) [Set Đặc Biệt Yup Dduk]"
-            },
-            "name_kr": {
-              "stringValue": "아이브러시프로컬렉션(5종) [엽떡기획]"
-            },
-            "price_krw": {
-              "integerValue": "20900"
-            },
-            "price_vnd": {
-              "integerValue": "302000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000225250.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      }
-    ],
-    "description": "Mỹ phẩm từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "isHighEnd": false
   },
   {
@@ -12807,93 +10374,6 @@
       }
     ],
     "description": "Son Kem Lì Romand NEW từ thương hiệu Romand là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
-    "isHighEnd": false
-  },
-  {
-    "goodsNo": "A000000244929",
-    "id": "A000000244929",
-    "name": "Viên Uống Men Vi Sinh Phụ Nữ Cân Bằng Hệ Vi Sinh Gynomaster Vaginal Probiotics (30 Viên + Tặng Dầu Hoa Bìm Bìm 5 Ngày)",
-    "nameKr": "지노마스터 질유산균 30캡슐 기획 (+보라지유 5일분) (1개월분) | 올리브영",
-    "brand": "Gynomaster",
-    "category": "Lợi khuẩn nữ giới",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 27400,
-    "originalPrice": 41000,
-    "productImage": "/products/A000000244929.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000244929.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000244929_1"
-            },
-            "name": {
-              "stringValue": "[Set Đặc Biệt] 30 Viên Nang + Tặng Kèm Dầu Borage 5 Ngày"
-            },
-            "name_vi": {
-              "stringValue": "[Set Đặc Biệt] 30 Viên Nang + Tặng Kèm Dầu Borage 5 Ngày"
-            },
-            "name_kr": {
-              "stringValue": "[기획] 30캡슐+보라지유5일분 증정기획"
-            },
-            "price_krw": {
-              "integerValue": "26900"
-            },
-            "price_vnd": {
-              "integerValue": "629000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000244929.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000244929_2"
-            },
-            "name": {
-              "stringValue": "[Bản Đơn Lẻ] 30 Viên Nang"
-            },
-            "name_vi": {
-              "stringValue": "[Bản Đơn Lẻ] 30 Viên Nang"
-            },
-            "name_kr": {
-              "stringValue": "[단품] 30캡슐"
-            },
-            "price_krw": {
-              "integerValue": "26900"
-            },
-            "price_vnd": {
-              "integerValue": "629000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000244929.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      }
-    ],
-    "description": "Mỹ phẩm từ thương hiệu là giải pháp chăm sóc chuyên sâu nổi bật với bảng thành phần giàu phức hợp dưỡng chất tự nhiên cô đặc cùng các vitamin thiết yếu. Sản phẩm thẩm thấu nhanh vào từng tầng tế bào giúp nuôi dưỡng làn da khỏe mạnh, cân bằng độ ẩm tối ưu và phục hồi vẻ rạng rỡ tươi trẻ, đồng thời ngăn ngừa tình trạng kích ứng và cải thiện kết cấu rõ rệt sau mỗi lần sử dụng. Công thức lành tính, phù hợp cho người dùng sử dụng đều đặn mỗi ngày.",
     "isHighEnd": false
   },
   {
@@ -19797,126 +17277,6 @@
     "isHighEnd": false
   },
   {
-    "goodsNo": "A000000265728",
-    "id": "A000000265728",
-    "name": "Bột ngũ cốc dinh dưỡng bổ sung đạm CJ Maxplan Daily Protein Shake 45g (Dâu sữa chua / Bơ đậu phộng / Sô-cô-la)",
-    "nameKr": "[1+1] CJ맥플랜 데일리 프로틴 쉐이크 45g 딸기요거트/피넛버터/초코 | 올리브영",
-    "brand": "CJ Maxplan",
-    "category": "Sinh tố protein",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 3750,
-    "originalPrice": 3900,
-    "productImage": "/products/A000000265728.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000265728.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000265728_1"
-            },
-            "name": {
-              "stringValue": "Socola 45g"
-            },
-            "name_vi": {
-              "stringValue": "Socola 45g"
-            },
-            "name_kr": {
-              "stringValue": "초코 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "88000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000265728.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000265728_2"
-            },
-            "name": {
-              "stringValue": "Bơ Đậu Phộng 45g"
-            },
-            "name_vi": {
-              "stringValue": "Bơ Đậu Phộng 45g"
-            },
-            "name_kr": {
-              "stringValue": "피넛버터 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "88000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000265728.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      },
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "opt_A000000265728_3"
-            },
-            "name": {
-              "stringValue": "Sữa Chua Dâu 45g"
-            },
-            "name_vi": {
-              "stringValue": "Sữa Chua Dâu 45g"
-            },
-            "name_kr": {
-              "stringValue": "딸기요거트 45g"
-            },
-            "price_krw": {
-              "integerValue": "3900"
-            },
-            "price_vnd": {
-              "integerValue": "88000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000265728.jpg"
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            }
-          }
-        }
-      }
-    ],
-    "description": "Bột protein lắc tiện lợi cung cấp hàm lượng đạm dồi dào cùng chất xơ thiết yếu cho cơ thể mỗi ngày. Hương vị thơm ngon tự nhiên, dễ uống và mang lại cảm giác no lâu giúp hỗ trợ kiểm soát cân nặng lành mạnh. Thiết kế dạng túi nhỏ gọn, tiện lợi mang theo cho người bận rộn, người tập thể thao hoặc đang ăn kiêng.",
-    "isHighEnd": false
-  },
-  {
     "goodsNo": "A000000267287",
     "id": "A000000267287",
     "name": "Son Thỏi Hiệu Ứng Căng Bóng Dưỡng Môi Risky Hyper Shine Lipstick 6 Màu",
@@ -20220,60 +17580,6 @@
       }
     ],
     "description": "",
-    "isHighEnd": false
-  },
-  {
-    "goodsNo": "A000000268499",
-    "id": "A000000268499",
-    "name": "Sữa lắc protein hàng ngày CJ MacPlan 45g (hộp 5 gói) vị sữa chua dâu / bơ đậu phộng / sô-cô-la",
-    "nameKr": "CJ맥플랜 데일리 프로틴 쉐이크 45g 5개입 딸기요거트/피넛버터/초코",
-    "brand": "MacPlan",
-    "category": "supplements",
-    "category_vi": "Chăm sóc da",
-    "foreignPrice": 9120,
-    "originalPrice": 19500,
-    "productImage": "/products/A000000268499.jpg",
-    "images": [
-      {
-        "stringValue": "/products/A000000268499.jpg"
-      }
-    ],
-    "options": [
-      {
-        "mapValue": {
-          "fields": {
-            "id": {
-              "stringValue": "1"
-            },
-            "name": {
-              "stringValue": "Sữa lắc protein hàng ngày CJ MacPlan 45g (hộp 5 gói) vị sữa chua dâu / bơ đậu phộng / sô-cô-la"
-            },
-            "name_vi": {
-              "stringValue": "Sữa lắc protein hàng ngày CJ MacPlan 45g (hộp 5 gói) vị sữa chua dâu / bơ đậu phộng / sô-cô-la"
-            },
-            "name_kr": {
-              "stringValue": "CJ맥플랜 데일리 프로틴 쉐이크 45g 5개입 딸기요거트/피넛버터/초코"
-            },
-            "price_krw": {
-              "integerValue": "8950"
-            },
-            "price_vnd": {
-              "integerValue": "209000"
-            },
-            "isSoldOut": {
-              "booleanValue": false
-            },
-            "is_sold_out": {
-              "booleanValue": false
-            },
-            "imageUrl": {
-              "stringValue": "/products/A000000268499.jpg"
-            }
-          }
-        }
-      }
-    ],
-    "description": "Sản phẩm Sữa lắc protein hàng ngày CJ MacPlan 45g (hộp 5 gói) vị sữa chua dâu / bơ đậu phộng / sô-cô-la từ thương hiệu 맥플랜 tại Olive Young Hàn Quốc.",
     "isHighEnd": false
   },
   {
@@ -29482,84 +26788,6 @@
     "lastAuditedAt": "2026-11-26T05:11:52.000Z"
   },
   {
-    "id": "A000000116991",
-    "goodsNo": "A000000116991",
-    "firestoreId": "A000000116991",
-    "name": "Dầu Gội Dr.FORHAIR Foligen Thickening 400ml (+100ml)",
-    "name_vi": "Dầu Gội Dr.FORHAIR Foligen Thickening 400ml (+100ml)",
-    "name_kr": "[NO.1탈모볼륨샴푸] 닥터포헤어 폴리젠 씨크닝 샴푸 400ml 기획 (+100ml)",
-    "nameKr": "[NO.1탈모볼륨샴푸] 닥터포헤어 폴리젠 씨크닝 샴푸 400ml 기획 (+100ml)",
-    "title": "Dầu Gội Dr.FORHAIR Foligen Thickening 400ml (+100ml)",
-    "brand": "닥터포헤어",
-    "brand_vi": "닥터포헤어",
-    "brand_kr": "닥터포헤어",
-    "brandKr": "닥터포헤어",
-    "category": "hair_body",
-    "category_vi": "Body & Hair",
-    "subCategory": "Dầu gội",
-    "categoryPath": "hair_body",
-    "rank": 0,
-    "foreignPrice": 18900,
-    "price": 18900,
-    "originPrice": 40000,
-    "originalPrice": 40000,
-    "originalPriceWon": 40000,
-    "salePrice": 18900,
-    "priceVnd": 442000,
-    "originalPriceVnd": 936000,
-    "appliedKrwRate": 19.5,
-    "appliedServiceFeePercent": 20.0,
-    "discountRate": "53%",
-    "productImage": "/products/A000000116991.jpg",
-    "thumbnailUrl": "/products/A000000116991.jpg",
-    "images": [
-      "/products/A000000116991.jpg"
-    ],
-    "photoReviews": [],
-    "options": [
-      {
-        "id": "1",
-        "name": "400ml+100ml",
-        "name_vi": "400ml+100ml",
-        "name_kr": "400ml+100ml",
-        "price_krw": 18900,
-        "price_vnd": 442000,
-        "isSoldOut": false,
-        "is_sold_out": false,
-        "imageUrl": "/products/A000000116991.jpg"
-      },
-      {
-        "id": "2",
-        "name": "750ml+100ml*2ea",
-        "name_vi": "750ml+100ml*2ea",
-        "name_kr": "750ml+100ml*2ea",
-        "price_krw": 40000,
-        "price_vnd": 936000,
-        "isSoldOut": false,
-        "is_sold_out": false,
-        "imageUrl": "/products/A000000116991.jpg"
-      }
-    ],
-    "optionsCount": 2,
-    "hasOptions": true,
-    "description": "Dầu Gội Dr.FORHAIR Foligen Thickening 400ml (+100ml) - 닥터포헤어 chính hãng, order tại Olive Young Hàn Quốc.",
-    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
-    "status": "available",
-    "isAvailable": true,
-    "isSoldOut": false,
-    "is_sold_out": false,
-    "isDiscontinued": false,
-    "isPublished": true,
-    "isHighEnd": false,
-    "isChallenge": false,
-    "origin": "KR",
-    "storageProvider": "local",
-    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000116991",
-    "createdAt": "2026-11-26T05:11:52.000Z",
-    "updatedAt": "2026-11-26T05:11:52.000Z",
-    "lastAuditedAt": "2026-11-26T05:11:52.000Z"
-  },
-  {
     "id": "A000000231328",
     "goodsNo": "A000000231328",
     "firestoreId": "A000000231328",
@@ -30266,73 +27494,6 @@
     "origin": "KR",
     "storageProvider": "local",
     "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000211096",
-    "createdAt": "2026-11-26T05:11:52.000Z",
-    "updatedAt": "2026-11-26T05:11:52.000Z",
-    "lastAuditedAt": "2026-11-26T05:11:52.000Z"
-  },
-  {
-    "id": "A000000201277",
-    "goodsNo": "A000000201277",
-    "firestoreId": "A000000201277",
-    "name": "Dầu Gội Giảm Rụng Tóc & Phục Hồi Tóc Hư Tổn Bioga Biotin Mầm Đậu Đen 1000ml",
-    "name_vi": "Dầu Gội Giảm Rụng Tóc & Phục Hồi Tóc Hư Tổn Bioga Biotin Mầm Đậu Đen 1000ml",
-    "name_kr": "[대용량] 바이오가 바이오틴 손상모발개선 탈모완화 샴푸 돌콩배아 1000ml",
-    "nameKr": "[대용량] 바이오가 바이오틴 손상모발개선 탈모완화 샴푸 돌콩배아 1000ml",
-    "title": "Dầu Gội Giảm Rụng Tóc & Phục Hồi Tóc Hư Tổn Bioga Biotin Mầm Đậu Đen 1000ml",
-    "brand": "바이오가",
-    "brand_vi": "바이오가",
-    "brand_kr": "바이오가",
-    "brandKr": "바이오가",
-    "category": "hair_body",
-    "category_vi": "Body & Hair",
-    "subCategory": "Dầu gội",
-    "categoryPath": "hair_body",
-    "rank": 0,
-    "foreignPrice": 27500,
-    "price": 27500,
-    "originPrice": 27500,
-    "originalPrice": 27500,
-    "originalPriceWon": 27500,
-    "salePrice": 27500,
-    "priceVnd": 644000,
-    "originalPriceVnd": 644000,
-    "appliedKrwRate": 19.5,
-    "appliedServiceFeePercent": 20.0,
-    "discountRate": "0%",
-    "productImage": "/products/A000000201277.jpg",
-    "thumbnailUrl": "/products/A000000201277.jpg",
-    "images": [
-      "/products/A000000201277.jpg"
-    ],
-    "photoReviews": [],
-    "options": [
-      {
-        "id": "1",
-        "name": "본품1000ml",
-        "name_vi": "본품1000ml",
-        "name_kr": "본품1000ml",
-        "price_krw": 27500,
-        "price_vnd": 644000,
-        "isSoldOut": false,
-        "is_sold_out": false,
-        "imageUrl": "/products/A000000201277.jpg"
-      }
-    ],
-    "optionsCount": 1,
-    "hasOptions": true,
-    "description": "Dầu Gội Giảm Rụng Tóc & Phục Hồi Tóc Hư Tổn Bioga Biotin Mầm Đậu Đen 1000ml - 바이오가 chính hãng, order tại Olive Young Hàn Quốc.",
-    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
-    "status": "available",
-    "isAvailable": true,
-    "isSoldOut": false,
-    "is_sold_out": false,
-    "isDiscontinued": false,
-    "isPublished": true,
-    "isHighEnd": false,
-    "isChallenge": false,
-    "origin": "KR",
-    "storageProvider": "local",
-    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000201277",
     "createdAt": "2026-11-26T05:11:52.000Z",
     "updatedAt": "2026-11-26T05:11:52.000Z",
     "lastAuditedAt": "2026-11-26T05:11:52.000Z"
@@ -34533,5 +31694,1603 @@
     "createdAt": "2026-11-26T05:11:52.000Z",
     "updatedAt": "2026-11-26T05:11:52.000Z",
     "lastAuditedAt": "2026-11-26T05:11:52.000Z"
+  },
+  {
+    "id": "A000000255859",
+    "goodsNo": "A000000255859",
+    "firestoreId": "A000000255859",
+    "name": "Torriden Mặt nạ giấy 10 miếng 4 loại (Dưỡng ẩm/Làm dịu/Sáng da/Se khít lỗ chân lông)",
+    "name_vi": "Torriden Mặt nạ giấy 10 miếng 4 loại (Dưỡng ẩm/Làm dịu/Sáng da/Se khít lỗ chân lông)",
+    "name_kr": "[1등마스크] 토리든 시트 마스크 10매 4종(수분/진정/브라이트닝/모공)",
+    "nameKr": "[1등마스크] 토리든 시트 마스크 10매 4종(수분/진정/브라이트닝/모공)",
+    "title": "Torriden Mặt nạ giấy 10 miếng 4 loại (Dưỡng ẩm/Làm dịu/Sáng da/Se khít lỗ chân lông)",
+    "brand": "토리든",
+    "brand_vi": "토리든",
+    "brand_kr": "토리든",
+    "brandKr": "토리든",
+    "category": "mask",
+    "category_vi": "Mặt nạ",
+    "subCategory": "sheet_mask",
+    "categoryPath": "mask",
+    "rank": 0,
+    "foreignPrice": 15000,
+    "price": 15000,
+    "originPrice": 30000,
+    "originalPrice": 30000,
+    "originalPriceWon": 30000,
+    "salePrice": 15000,
+    "priceVnd": 351000,
+    "originalPriceVnd": 702000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "50%",
+    "productImage": "/products/A000000255859.jpg",
+    "thumbnailUrl": "/products/A000000255859.jpg",
+    "images": [
+      "/products/A000000255859.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "다이브인 히알루론산 10매(수분)",
+        "name_vi": "다이브인 히알루론산 10매(수분)",
+        "name_kr": "다이브인 히알루론산 10매(수분)",
+        "price_krw": 15000,
+        "price_vnd": 351000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000255859.jpg"
+      },
+      {
+        "id": "2",
+        "name": "밸런스풀 시카 마스크 10매(진정)",
+        "name_vi": "밸런스풀 시카 마스크 10매(진정)",
+        "name_kr": "밸런스풀 시카 마스크 10매(진정)",
+        "price_krw": 15000,
+        "price_vnd": 351000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000255859.jpg"
+      },
+      {
+        "id": "3",
+        "name": "셀메이징 콜라겐 10매(모공)",
+        "name_vi": "셀메이징 콜라겐 10매(모공)",
+        "name_kr": "셀메이징 콜라겐 10매(모공)",
+        "price_krw": 15000,
+        "price_vnd": 351000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000255859.jpg"
+      },
+      {
+        "id": "4",
+        "name": "셀메이징 비타 10매(브라이트닝)",
+        "name_vi": "셀메이징 비타 10매(브라이트닝)",
+        "name_kr": "셀메이징 비타 10매(브라이트닝)",
+        "price_krw": 15000,
+        "price_vnd": 351000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000255859.jpg"
+      },
+      {
+        "id": "5",
+        "name": "다이브인 히알루론산 11매(+1매)",
+        "name_vi": "다이브인 히알루론산 11매(+1매)",
+        "name_kr": "다이브인 히알루론산 11매(+1매)",
+        "price_krw": 15000,
+        "price_vnd": 351000,
+        "isSoldOut": true,
+        "is_sold_out": true,
+        "imageUrl": "/products/A000000255859.jpg"
+      }
+    ],
+    "optionsCount": 5,
+    "hasOptions": true,
+    "description": "Torriden Mặt nạ giấy 10 miếng 4 loại (Dưỡng ẩm/Làm dịu/Sáng da/Se khít lỗ chân lông) - 토리든 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000255859",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000205979",
+    "goodsNo": "A000000205979",
+    "firestoreId": "A000000205979",
+    "name": "Numbuzin Mặt nạ giấy 10 miếng 5 loại chọn 1 (số 1-5)",
+    "name_vi": "Numbuzin Mặt nạ giấy 10 miếng 5 loại chọn 1 (số 1-5)",
+    "name_kr": "[10매] 넘버즈인 1번-5번 마스크팩 5종 중 택 1",
+    "nameKr": "[10매] 넘버즈인 1번-5번 마스크팩 5종 중 택 1",
+    "title": "Numbuzin Mặt nạ giấy 10 miếng 5 loại chọn 1 (số 1-5)",
+    "brand": "넘버즈인",
+    "brand_vi": "넘버즈인",
+    "brand_kr": "넘버즈인",
+    "brandKr": "넘버즈인",
+    "category": "mask",
+    "category_vi": "Mặt nạ",
+    "subCategory": "sheet_mask",
+    "categoryPath": "mask",
+    "rank": 0,
+    "foreignPrice": 17900,
+    "price": 17900,
+    "originPrice": 40000,
+    "originalPrice": 40000,
+    "originalPriceWon": 40000,
+    "salePrice": 17900,
+    "priceVnd": 419000,
+    "originalPriceVnd": 936000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "55%",
+    "productImage": "/products/A000000205979.jpg",
+    "thumbnailUrl": "/products/A000000205979.jpg",
+    "images": [
+      "/products/A000000205979.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "[수분진정] 1번 수분팩 10매",
+        "name_vi": "[수분진정] 1번 수분팩 10매",
+        "name_kr": "[수분진정] 1번 수분팩 10매",
+        "price_krw": 17900,
+        "price_vnd": 419000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000205979.jpg"
+      },
+      {
+        "id": "2",
+        "name": "[탄력생기] 2번 콜라겐팩 10매",
+        "name_vi": "[탄력생기] 2번 콜라겐팩 10매",
+        "name_kr": "[탄력생기] 2번 콜라겐팩 10매",
+        "price_krw": 17900,
+        "price_vnd": 419000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000205979.jpg"
+      },
+      {
+        "id": "3",
+        "name": "[모공결광] 3번 결세럼팩 10매",
+        "name_vi": "[모공결광] 3번 결세럼팩 10매",
+        "name_kr": "[모공결광] 3번 결세럼팩 10매",
+        "price_krw": 17900,
+        "price_vnd": 419000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000205979.jpg"
+      },
+      {
+        "id": "4",
+        "name": "[급속진정] 4번 얼음장팩 10매",
+        "name_vi": "[급속진정] 4번 얼음장팩 10매",
+        "name_kr": "[급속진정] 4번 얼음장팩 10매",
+        "price_krw": 17900,
+        "price_vnd": 419000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000205979.jpg"
+      },
+      {
+        "id": "5",
+        "name": "[흔적미백] 5번 필름팩 10매",
+        "name_vi": "[흔적미백] 5번 필름팩 10매",
+        "name_kr": "[흔적미백] 5번 필름팩 10매",
+        "price_krw": 17900,
+        "price_vnd": 419000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000205979.jpg"
+      }
+    ],
+    "optionsCount": 5,
+    "hasOptions": true,
+    "description": "Numbuzin Mặt nạ giấy 10 miếng 5 loại chọn 1 (số 1-5) - 넘버즈인 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000205979",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000221807",
+    "goodsNo": "A000000221807",
+    "firestoreId": "A000000221807",
+    "name": "Biodance Mặt nạ Real Deep 5 loại 7+1 miếng (Collagen/Ceranol/PDRN/Sea Kelp/Vita)",
+    "name_vi": "Biodance Mặt nạ Real Deep 5 loại 7+1 miếng (Collagen/Ceranol/PDRN/Sea Kelp/Vita)",
+    "name_kr": "[11월 올영픽/무드등 증정] 바이오던스 리얼 딥 마스크 5종 7+1/7매 기획(콜라겐/세라놀/PDRN/씨켈프/비타)",
+    "nameKr": "[11월 올영픽/무드등 증정] 바이오던스 리얼 딥 마스크 5종 7+1/7매 기획(콜라겐/세라놀/PDRN/씨켈프/비타)",
+    "title": "Biodance Mặt nạ Real Deep 5 loại 7+1 miếng (Collagen/Ceranol/PDRN/Sea Kelp/Vita)",
+    "brand": "바이오던스",
+    "brand_vi": "바이오던스",
+    "brand_kr": "바이오던스",
+    "brandKr": "바이오던스",
+    "category": "mask",
+    "category_vi": "Mặt nạ",
+    "subCategory": "sheet_mask",
+    "categoryPath": "mask",
+    "rank": 0,
+    "foreignPrice": 29400,
+    "price": 29400,
+    "originPrice": 35000,
+    "originalPrice": 35000,
+    "originalPriceWon": 35000,
+    "salePrice": 29400,
+    "priceVnd": 688000,
+    "originalPriceVnd": 819000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "16%",
+    "productImage": "/products/A000000221807.jpg",
+    "thumbnailUrl": "/products/A000000221807.jpg",
+    "images": [
+      "/products/A000000221807.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "콜라겐 7매+캐비어 1매 +무드등",
+        "name_vi": "콜라겐 7매+캐비어 1매 +무드등",
+        "name_kr": "콜라겐 7매+캐비어 1매 +무드등",
+        "price_krw": 29400,
+        "price_vnd": 688000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000221807.jpg"
+      },
+      {
+        "id": "2",
+        "name": "캐비어P DRN 7매+콜라겐 1매+무드등",
+        "name_vi": "캐비어P DRN 7매+콜라겐 1매+무드등",
+        "name_kr": "캐비어P DRN 7매+콜라겐 1매+무드등",
+        "price_krw": 29400,
+        "price_vnd": 688000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000221807.jpg"
+      },
+      {
+        "id": "3",
+        "name": "비타 7매+PDRN 1매",
+        "name_vi": "비타 7매+PDRN 1매",
+        "name_kr": "비타 7매+PDRN 1매",
+        "price_krw": 29900,
+        "price_vnd": 700000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000221807.jpg"
+      },
+      {
+        "id": "4",
+        "name": "하이드로 세라놀 리얼 딥 마스크 7매",
+        "name_vi": "하이드로 세라놀 리얼 딥 마스크 7매",
+        "name_kr": "하이드로 세라놀 리얼 딥 마스크 7매",
+        "price_krw": 29900,
+        "price_vnd": 700000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000221807.jpg"
+      },
+      {
+        "id": "5",
+        "name": "리프레싱 씨켈프 리얼 딥 마스크 7매",
+        "name_vi": "리프레싱 씨켈프 리얼 딥 마스크 7매",
+        "name_kr": "리프레싱 씨켈프 리얼 딥 마스크 7매",
+        "price_krw": 29900,
+        "price_vnd": 700000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000221807.jpg"
+      }
+    ],
+    "optionsCount": 5,
+    "hasOptions": true,
+    "description": "Biodance Mặt nạ Real Deep 5 loại 7+1 miếng (Collagen/Ceranol/PDRN/Sea Kelp/Vita) - 바이오던스 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000221807",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000189875",
+    "goodsNo": "A000000189875",
+    "firestoreId": "A000000189875",
+    "name": "Torriden Sữa rửa mặt Dive-In Hyaluronic Acid phân tử nhỏ 150ml + 150ml",
+    "name_vi": "Torriden Sữa rửa mặt Dive-In Hyaluronic Acid phân tử nhỏ 150ml + 150ml",
+    "name_kr": "[1+1] 토리든 다이브인 저분자 히알루론산 클렌징폼 더블기획 (150ml+150ml)",
+    "nameKr": "[1+1] 토리든 다이브인 저분자 히알루론산 클렌징폼 더블기획 (150ml+150ml)",
+    "title": "Torriden Sữa rửa mặt Dive-In Hyaluronic Acid phân tử nhỏ 150ml + 150ml",
+    "brand": "토리든",
+    "brand_vi": "토리든",
+    "brand_kr": "토리든",
+    "brandKr": "토리든",
+    "category": "skincare",
+    "category_vi": "Chăm sóc da",
+    "subCategory": "cleanser",
+    "categoryPath": "skincare",
+    "rank": 0,
+    "foreignPrice": 17900,
+    "price": 17900,
+    "originPrice": 26000,
+    "originalPrice": 26000,
+    "originalPriceWon": 26000,
+    "salePrice": 17900,
+    "priceVnd": 419000,
+    "originalPriceVnd": 608000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "31%",
+    "productImage": "/products/A000000189875.jpg",
+    "thumbnailUrl": "/products/A000000189875.jpg",
+    "images": [
+      "/products/A000000189875.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "클렌징폼 더블기획",
+        "name_vi": "클렌징폼 더블기획",
+        "name_kr": "클렌징폼 더블기획",
+        "price_krw": 17900,
+        "price_vnd": 419000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000189875.jpg"
+      },
+      {
+        "id": "2",
+        "name": "클렌징폼 더블기획(+시나모롤스티커)",
+        "name_vi": "클렌징폼 더블기획(+시나모롤스티커)",
+        "name_kr": "클렌징폼 더블기획(+시나모롤스티커)",
+        "price_krw": 17900,
+        "price_vnd": 419000,
+        "isSoldOut": true,
+        "is_sold_out": true,
+        "imageUrl": "/products/A000000189875.jpg"
+      }
+    ],
+    "optionsCount": 2,
+    "hasOptions": true,
+    "description": "Torriden Sữa rửa mặt Dive-In Hyaluronic Acid phân tử nhỏ 150ml + 150ml - 토리든 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000189875",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000171650",
+    "goodsNo": "A000000171650",
+    "firestoreId": "A000000171650",
+    "name": "Round Lab Kem chống nắng dưỡng ẩm Birch Juice 50ml x2",
+    "name_vi": "Round Lab Kem chống nắng dưỡng ẩm Birch Juice 50ml x2",
+    "name_kr": "[방지민 PICK/4년연속1등] 라운드랩 자작나무 수분 선크림 50ml 더블 기획",
+    "nameKr": "[방지민 PICK/4년연속1등] 라운드랩 자작나무 수분 선크림 50ml 더블 기획",
+    "title": "Round Lab Kem chống nắng dưỡng ẩm Birch Juice 50ml x2",
+    "brand": "라운드랩",
+    "brand_vi": "라운드랩",
+    "brand_kr": "라운드랩",
+    "brandKr": "라운드랩",
+    "category": "skincare",
+    "category_vi": "Chăm sóc da",
+    "subCategory": "sunscreen",
+    "categoryPath": "skincare",
+    "rank": 0,
+    "foreignPrice": 30900,
+    "price": 30900,
+    "originPrice": 37500,
+    "originalPrice": 37500,
+    "originalPriceWon": 37500,
+    "salePrice": 30900,
+    "priceVnd": 723000,
+    "originalPriceVnd": 878000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "18%",
+    "productImage": "/products/A000000171650.jpg",
+    "thumbnailUrl": "/products/A000000171650.jpg",
+    "images": [
+      "/products/A000000171650.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "[방지민 PICK/4년연속1등] 라운드랩 자작나무 수분 선크림 50ml 더블 기획",
+        "name_vi": "[방지민 PICK/4년연속1등] 라운드랩 자작나무 수분 선크림 50ml 더블 기획",
+        "name_kr": "",
+        "price_krw": 30900,
+        "price_vnd": 723000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000171650.jpg"
+      }
+    ],
+    "optionsCount": 1,
+    "hasOptions": true,
+    "description": "Round Lab Kem chống nắng dưỡng ẩm Birch Juice 50ml x2 - 라운드랩 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171650",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000206826",
+    "goodsNo": "A000000206826",
+    "firestoreId": "A000000206826",
+    "name": "Aestura Kem chống nắng Derma UV365 Barrier Moisture vật lý 40ml + 20ml",
+    "name_vi": "Aestura Kem chống nắng Derma UV365 Barrier Moisture vật lý 40ml + 20ml",
+    "name_kr": "[50%용량증정] 에스트라 더마UV365 장벽수분 무기자차 선크림 40ml+20ml",
+    "nameKr": "[50%용량증정] 에스트라 더마UV365 장벽수분 무기자차 선크림 40ml+20ml",
+    "title": "Aestura Kem chống nắng Derma UV365 Barrier Moisture vật lý 40ml + 20ml",
+    "brand": "에스트라",
+    "brand_vi": "에스트라",
+    "brand_kr": "에스트라",
+    "brandKr": "에스트라",
+    "category": "skincare",
+    "category_vi": "Chăm sóc da",
+    "subCategory": "sunscreen",
+    "categoryPath": "skincare",
+    "rank": 0,
+    "foreignPrice": 22900,
+    "price": 22900,
+    "originPrice": 31000,
+    "originalPrice": 31000,
+    "originalPriceWon": 31000,
+    "salePrice": 22900,
+    "priceVnd": 536000,
+    "originalPriceVnd": 725000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "26%",
+    "productImage": "/products/A000000206826.jpg",
+    "thumbnailUrl": "/products/A000000206826.jpg",
+    "images": [
+      "/products/A000000206826.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "기획(+20ml)",
+        "name_vi": "기획(+20ml)",
+        "name_kr": "기획(+20ml)",
+        "price_krw": 22900,
+        "price_vnd": 536000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000206826.jpg"
+      },
+      {
+        "id": "2",
+        "name": "단품",
+        "name_vi": "단품",
+        "name_kr": "단품",
+        "price_krw": 22900,
+        "price_vnd": 536000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000206826.jpg"
+      }
+    ],
+    "optionsCount": 2,
+    "hasOptions": true,
+    "description": "Aestura Kem chống nắng Derma UV365 Barrier Moisture vật lý 40ml + 20ml - 에스트라 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000206826",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000245091",
+    "goodsNo": "A000000245091",
+    "firestoreId": "A000000245091",
+    "name": "Aestura Tinh chất Atobarrier365 Ceramide-Hyal Moisture Ampoule 30ml + 30ml (kèm refill)",
+    "name_vi": "Aestura Tinh chất Atobarrier365 Ceramide-Hyal Moisture Ampoule 30ml + 30ml (kèm refill)",
+    "name_kr": "[11월 올영픽] 에스트라 아토베리어365 세라-히알 속수분 앰플 30ml+30ml 리필 기획",
+    "nameKr": "[11월 올영픽] 에스트라 아토베리어365 세라-히알 속수분 앰플 30ml+30ml 리필 기획",
+    "title": "Aestura Tinh chất Atobarrier365 Ceramide-Hyal Moisture Ampoule 30ml + 30ml (kèm refill)",
+    "brand": "에스트라",
+    "brand_vi": "에스트라",
+    "brand_kr": "에스트라",
+    "brandKr": "에스트라",
+    "category": "skincare",
+    "category_vi": "Chăm sóc da",
+    "subCategory": "serum_ampoule",
+    "categoryPath": "skincare",
+    "rank": 0,
+    "foreignPrice": 33250,
+    "price": 33250,
+    "originPrice": 47500,
+    "originalPrice": 47500,
+    "originalPriceWon": 47500,
+    "salePrice": 33250,
+    "priceVnd": 778000,
+    "originalPriceVnd": 1112000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "30%",
+    "productImage": "/products/A000000245091.jpg",
+    "thumbnailUrl": "/products/A000000245091.jpg",
+    "images": [
+      "/products/A000000245091.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "[11월 올영픽] 에스트라 아토베리어365 세라-히알 속수분 앰플 30ml+30ml 리필 기획",
+        "name_vi": "[11월 올영픽] 에스트라 아토베리어365 세라-히알 속수분 앰플 30ml+30ml 리필 기획",
+        "name_kr": "",
+        "price_krw": 33250,
+        "price_vnd": 778000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000245091.jpg"
+      }
+    ],
+    "optionsCount": 1,
+    "hasOptions": true,
+    "description": "Aestura Tinh chất Atobarrier365 Ceramide-Hyal Moisture Ampoule 30ml + 30ml (kèm refill) - 에스트라 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000245091",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000232081",
+    "goodsNo": "A000000232081",
+    "firestoreId": "A000000232081",
+    "name": "Zeroid Sữa rửa mặt dạng bọt Foaming Cleanser 240ml + 240ml (kèm refill)",
+    "name_vi": "Zeroid Sữa rửa mặt dạng bọt Foaming Cleanser 240ml + 240ml (kèm refill)",
+    "name_kr": "[11월 올영픽] 제로이드 포밍 클렌저 240ml 본품 + 240ml 리필 기획",
+    "nameKr": "[11월 올영픽] 제로이드 포밍 클렌저 240ml 본품 + 240ml 리필 기획",
+    "title": "Zeroid Sữa rửa mặt dạng bọt Foaming Cleanser 240ml + 240ml (kèm refill)",
+    "brand": "제로이드",
+    "brand_vi": "제로이드",
+    "brand_kr": "제로이드",
+    "brandKr": "제로이드",
+    "category": "skincare",
+    "category_vi": "Chăm sóc da",
+    "subCategory": "cleanser",
+    "categoryPath": "skincare",
+    "rank": 0,
+    "foreignPrice": 32900,
+    "price": 32900,
+    "originPrice": 43000,
+    "originalPrice": 43000,
+    "originalPriceWon": 43000,
+    "salePrice": 32900,
+    "priceVnd": 770000,
+    "originalPriceVnd": 1006000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "23%",
+    "productImage": "/products/A000000232081.jpg",
+    "thumbnailUrl": "/products/A000000232081.jpg",
+    "images": [
+      "/products/A000000232081.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "포밍 클렌저 본품+리필",
+        "name_vi": "포밍 클렌저 본품+리필",
+        "name_kr": "포밍 클렌저 본품+리필",
+        "price_krw": 32900,
+        "price_vnd": 770000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000232081.jpg"
+      },
+      {
+        "id": "2",
+        "name": "포밍 클렌저 본품+리필 (+누렁이띠부씰)",
+        "name_vi": "포밍 클렌저 본품+리필 (+누렁이띠부씰)",
+        "name_kr": "포밍 클렌저 본품+리필 (+누렁이띠부씰)",
+        "price_krw": 32900,
+        "price_vnd": 770000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000232081.jpg"
+      }
+    ],
+    "optionsCount": 2,
+    "hasOptions": true,
+    "description": "Zeroid Sữa rửa mặt dạng bọt Foaming Cleanser 240ml + 240ml (kèm refill) - 제로이드 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000232081",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000248498",
+    "goodsNo": "A000000248498",
+    "firestoreId": "A000000248498",
+    "name": "Anua Nước hoa hồng rau má 77 + Hyaluronic Acid cấp ẩm làm dịu da 350ml (kèm túi refill 350ml)",
+    "name_vi": "Anua Nước hoa hồng rau má 77 + Hyaluronic Acid cấp ẩm làm dịu da 350ml (kèm túi refill 350ml)",
+    "name_kr": "[단독기획] 아누아 어성초 77 히알루론산 수분 진정 토너 350ml 리필 기획세트 (+350ml 리필팩)",
+    "nameKr": "[단독기획] 아누아 어성초 77 히알루론산 수분 진정 토너 350ml 리필 기획세트 (+350ml 리필팩)",
+    "title": "Anua Nước hoa hồng rau má 77 + Hyaluronic Acid cấp ẩm làm dịu da 350ml (kèm túi refill 350ml)",
+    "brand": "아누아",
+    "brand_vi": "아누아",
+    "brand_kr": "아누아",
+    "brandKr": "아누아",
+    "category": "skincare",
+    "category_vi": "Chăm sóc da",
+    "subCategory": "toner",
+    "categoryPath": "skincare",
+    "rank": 0,
+    "foreignPrice": 27500,
+    "price": 27500,
+    "originPrice": 49000,
+    "originalPrice": 49000,
+    "originalPriceWon": 49000,
+    "salePrice": 27500,
+    "priceVnd": 644000,
+    "originalPriceVnd": 1147000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "44%",
+    "productImage": "/products/A000000248498.jpg",
+    "thumbnailUrl": "/products/A000000248498.jpg",
+    "images": [
+      "/products/A000000248498.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "어성초 토너 350ml 리필 기획",
+        "name_vi": "어성초 토너 350ml 리필 기획",
+        "name_kr": "어성초 토너 350ml 리필 기획",
+        "price_krw": 27500,
+        "price_vnd": 644000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000248498.jpg"
+      },
+      {
+        "id": "2",
+        "name": "어성초 토너 350ml 더블(+크림20)",
+        "name_vi": "어성초 토너 350ml 더블(+크림20)",
+        "name_kr": "어성초 토너 350ml 더블(+크림20)",
+        "price_krw": 27500,
+        "price_vnd": 644000,
+        "isSoldOut": true,
+        "is_sold_out": true,
+        "imageUrl": "/products/A000000248498.jpg"
+      }
+    ],
+    "optionsCount": 2,
+    "hasOptions": true,
+    "description": "Anua Nước hoa hồng rau má 77 + Hyaluronic Acid cấp ẩm làm dịu da 350ml (kèm túi refill 350ml) - 아누아 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000248498",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000148549",
+    "goodsNo": "A000000148549",
+    "firestoreId": "A000000148549",
+    "name": "Tree Hut Tẩy tế bào chết Shea Sugar Scrub 510g",
+    "name_vi": "Tree Hut Tẩy tế bào chết Shea Sugar Scrub 510g",
+    "name_kr": "[9년연속 1위/원터치캡 증정] 트리헛 시어 슈가 스크럽 510g 단품/기획",
+    "nameKr": "[9년연속 1위/원터치캡 증정] 트리헛 시어 슈가 스크럽 510g 단품/기획",
+    "title": "Tree Hut Tẩy tế bào chết Shea Sugar Scrub 510g",
+    "brand": "트리헛",
+    "brand_vi": "트리헛",
+    "brand_kr": "트리헛",
+    "brandKr": "트리헛",
+    "category": "hair_body",
+    "category_vi": "Body & Hair",
+    "subCategory": "body_scrub",
+    "categoryPath": "hair_body",
+    "rank": 0,
+    "foreignPrice": 19600,
+    "price": 19600,
+    "originPrice": 39500,
+    "originalPrice": 39500,
+    "originalPriceWon": 39500,
+    "salePrice": 19600,
+    "priceVnd": 459000,
+    "originalPriceVnd": 924000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "50%",
+    "productImage": "/products/A000000148549.jpg",
+    "thumbnailUrl": "/products/A000000148549.jpg",
+    "images": [
+      "/products/A000000148549.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "[기획]모로칸로즈 510g(+원터치캡)",
+        "name_vi": "[기획]모로칸로즈 510g(+원터치캡)",
+        "name_kr": "[기획]모로칸로즈 510g(+원터치캡)",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "2",
+        "name": "[기획]엑소틱블룸 510g(+원터치캡)",
+        "name_vi": "[기획]엑소틱블룸 510g(+원터치캡)",
+        "name_kr": "[기획]엑소틱블룸 510g(+원터치캡)",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "3",
+        "name": "[기획]데저트헤이즈 510g(+원터치캡)",
+        "name_vi": "[기획]데저트헤이즈 510g(+원터치캡)",
+        "name_kr": "[기획]데저트헤이즈 510g(+원터치캡)",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "4",
+        "name": "[머스크/NEW] 상탈헤이즈 510g",
+        "name_vi": "[머스크/NEW] 상탈헤이즈 510g",
+        "name_kr": "[머스크/NEW] 상탈헤이즈 510g",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "5",
+        "name": "[기획] 데저트헤이즈(+여행용 3EA)",
+        "name_vi": "[기획] 데저트헤이즈(+여행용 3EA)",
+        "name_kr": "[기획] 데저트헤이즈(+여행용 3EA)",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "6",
+        "name": "[플로럴] 모로칸로즈 510g",
+        "name_vi": "[플로럴] 모로칸로즈 510g",
+        "name_kr": "[플로럴] 모로칸로즈 510g",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "7",
+        "name": "[머스크/재출시] 데저트헤이즈 510g",
+        "name_vi": "[머스크/재출시] 데저트헤이즈 510g",
+        "name_kr": "[머스크/재출시] 데저트헤이즈 510g",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "8",
+        "name": "[프루티] 코코넛라임 510g",
+        "name_vi": "[프루티] 코코넛라임 510g",
+        "name_kr": "[프루티] 코코넛라임 510g",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "9",
+        "name": "[프루티] 코코콜라다 510g",
+        "name_vi": "[프루티] 코코콜라다 510g",
+        "name_kr": "[프루티] 코코콜라다 510g",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "10",
+        "name": "[플로럴] 썬키스트퍼피 510g",
+        "name_vi": "[플로럴] 썬키스트퍼피 510g",
+        "name_kr": "[플로럴] 썬키스트퍼피 510g",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "11",
+        "name": "[머스크] 바닐라 510g",
+        "name_vi": "[머스크] 바닐라 510g",
+        "name_kr": "[머스크] 바닐라 510g",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "12",
+        "name": "[머스크] 엑소틱블룸 510g",
+        "name_vi": "[머스크] 엑소틱블룸 510g",
+        "name_kr": "[머스크] 엑소틱블룸 510g",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "13",
+        "name": "[프루티] 트로피칼망고 510g",
+        "name_vi": "[프루티] 트로피칼망고 510g",
+        "name_kr": "[프루티] 트로피칼망고 510g",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "14",
+        "name": "[프루티/재출시] 비타민C 510g",
+        "name_vi": "[프루티/재출시] 비타민C 510g",
+        "name_kr": "[프루티/재출시] 비타민C 510g",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "15",
+        "name": "[머스크] 비키니리프 510g",
+        "name_vi": "[머스크] 비키니리프 510g",
+        "name_kr": "[머스크] 비키니리프 510g",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "16",
+        "name": "[프루티] 젤리베어 510g",
+        "name_vi": "[프루티] 젤리베어 510g",
+        "name_kr": "[프루티] 젤리베어 510g",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "17",
+        "name": "[플로럴] 핑크히비스커스 510g",
+        "name_vi": "[플로럴] 핑크히비스커스 510g",
+        "name_kr": "[플로럴] 핑크히비스커스 510g",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "18",
+        "name": "[프루티] 라즈베리피즈 510g",
+        "name_vi": "[프루티] 라즈베리피즈 510g",
+        "name_kr": "[프루티] 라즈베리피즈 510g",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "19",
+        "name": "[프루티] 패션후르츠 솔 510g",
+        "name_vi": "[프루티] 패션후르츠 솔 510g",
+        "name_kr": "[프루티] 패션후르츠 솔 510g",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "20",
+        "name": "[프루티] 탠저린 510g",
+        "name_vi": "[프루티] 탠저린 510g",
+        "name_kr": "[프루티] 탠저린 510g",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "21",
+        "name": "[프루티] 워터멜론 510g",
+        "name_vi": "[프루티] 워터멜론 510g",
+        "name_kr": "[프루티] 워터멜론 510g",
+        "price_krw": 19600,
+        "price_vnd": 459000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "22",
+        "name": "[2입/머스크] 엑소틱블룸+엑소틱블룸",
+        "name_vi": "[2입/머스크] 엑소틱블룸+엑소틱블룸",
+        "name_kr": "[2입/머스크] 엑소틱블룸+엑소틱블룸",
+        "price_krw": 39500,
+        "price_vnd": 924000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "23",
+        "name": "[2입/플로럴] 모로칸로즈+모로칸로즈",
+        "name_vi": "[2입/플로럴] 모로칸로즈+모로칸로즈",
+        "name_kr": "[2입/플로럴] 모로칸로즈+모로칸로즈",
+        "price_krw": 33300,
+        "price_vnd": 779000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000148549.jpg"
+      },
+      {
+        "id": "24",
+        "name": "[포켓몬 에디션] 바닐라(+스파츌라)",
+        "name_vi": "[포켓몬 에디션] 바닐라(+스파츌라)",
+        "name_kr": "[포켓몬 에디션] 바닐라(+스파츌라)",
+        "price_krw": 22500,
+        "price_vnd": 526000,
+        "isSoldOut": true,
+        "is_sold_out": true,
+        "imageUrl": "/products/A000000148549.jpg"
+      }
+    ],
+    "optionsCount": 24,
+    "hasOptions": true,
+    "description": "Tree Hut Tẩy tế bào chết Shea Sugar Scrub 510g - 트리헛 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000148549",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000138140",
+    "goodsNo": "A000000138140",
+    "firestoreId": "A000000138140",
+    "name": "Lavy Sữa tắm hương nước hoa 500ml (5 mùi, chọn 1)",
+    "name_vi": "Lavy Sữa tắm hương nước hoa 500ml (5 mùi, chọn 1)",
+    "name_kr": "[폭닥 살냄새 잔향] 레이비 퍼퓸 바디워시 500ml 5종 택1",
+    "nameKr": "[폭닥 살냄새 잔향] 레이비 퍼퓸 바디워시 500ml 5종 택1",
+    "title": "Lavy Sữa tắm hương nước hoa 500ml (5 mùi, chọn 1)",
+    "brand": "레이비",
+    "brand_vi": "레이비",
+    "brand_kr": "레이비",
+    "brandKr": "레이비",
+    "category": "hair_body",
+    "category_vi": "Body & Hair",
+    "subCategory": "body_wash",
+    "categoryPath": "hair_body",
+    "rank": 0,
+    "foreignPrice": 9900,
+    "price": 9900,
+    "originPrice": 11900,
+    "originalPrice": 11900,
+    "originalPriceWon": 11900,
+    "salePrice": 9900,
+    "priceVnd": 232000,
+    "originalPriceVnd": 278000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "17%",
+    "productImage": "/products/A000000138140.jpg",
+    "thumbnailUrl": "/products/A000000138140.jpg",
+    "images": [
+      "/products/A000000138140.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "산양유 워시500ml",
+        "name_vi": "산양유 워시500ml",
+        "name_kr": "산양유 워시500ml",
+        "price_krw": 9900,
+        "price_vnd": 232000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000138140.jpg"
+      },
+      {
+        "id": "2",
+        "name": "라벤더 워시500ml",
+        "name_vi": "라벤더 워시500ml",
+        "name_kr": "라벤더 워시500ml",
+        "price_krw": 9900,
+        "price_vnd": 232000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000138140.jpg"
+      },
+      {
+        "id": "3",
+        "name": "런던로즈 워시500ml",
+        "name_vi": "런던로즈 워시500ml",
+        "name_kr": "런던로즈 워시500ml",
+        "price_krw": 9900,
+        "price_vnd": 232000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000138140.jpg"
+      },
+      {
+        "id": "4",
+        "name": "로얄젤리 워시500ml",
+        "name_vi": "로얄젤리 워시500ml",
+        "name_kr": "로얄젤리 워시500ml",
+        "price_krw": 11900,
+        "price_vnd": 278000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000138140.jpg"
+      },
+      {
+        "id": "5",
+        "name": "(NEW)아이스 그린티 워시 500ml",
+        "name_vi": "(NEW)아이스 그린티 워시 500ml",
+        "name_kr": "(NEW)아이스 그린티 워시 500ml",
+        "price_krw": 11900,
+        "price_vnd": 278000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000138140.jpg"
+      },
+      {
+        "id": "6",
+        "name": "산리오 기획 산양유 워시(+샤워글로브)",
+        "name_vi": "산리오 기획 산양유 워시(+샤워글로브)",
+        "name_kr": "산리오 기획 산양유 워시(+샤워글로브)",
+        "price_krw": 9900,
+        "price_vnd": 232000,
+        "isSoldOut": true,
+        "is_sold_out": true,
+        "imageUrl": "/products/A000000138140.jpg"
+      }
+    ],
+    "optionsCount": 6,
+    "hasOptions": true,
+    "description": "Lavy Sữa tắm hương nước hoa 500ml (5 mùi, chọn 1) - 레이비 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000138140",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000230510",
+    "goodsNo": "A000000230510",
+    "firestoreId": "A000000230510",
+    "name": "L'Oréal Paris Dầu gội ampoule Hyaluronic Acid cho da đầu 440ml (dịu nhẹ, pH cân bằng)",
+    "name_vi": "L'Oréal Paris Dầu gội ampoule Hyaluronic Acid cho da đầu 440ml (dịu nhẹ, pH cân bằng)",
+    "name_kr": "[수부지 두피샴푸&정수리냄새케어] 로레알파리 히알루론산 두피앰플샴푸 440ml 단품/기획 (약산성)",
+    "nameKr": "[수부지 두피샴푸&정수리냄새케어] 로레알파리 히알루론산 두피앰플샴푸 440ml 단품/기획 (약산성)",
+    "title": "L'Oréal Paris Dầu gội ampoule Hyaluronic Acid cho da đầu 440ml (dịu nhẹ, pH cân bằng)",
+    "brand": "로레알",
+    "brand_vi": "로레알",
+    "brand_kr": "로레알",
+    "brandKr": "로레알",
+    "category": "hair_body",
+    "category_vi": "Body & Hair",
+    "subCategory": "shampoo",
+    "categoryPath": "hair_body",
+    "rank": 0,
+    "foreignPrice": 17900,
+    "price": 17900,
+    "originPrice": 50000,
+    "originalPrice": 50000,
+    "originalPriceWon": 50000,
+    "salePrice": 17900,
+    "priceVnd": 419000,
+    "originalPriceVnd": 1170000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "64%",
+    "productImage": "/products/A000000230510.jpg",
+    "thumbnailUrl": "/products/A000000230510.jpg",
+    "images": [
+      "/products/A000000230510.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "샴푸440ml(+미니증정)",
+        "name_vi": "샴푸440ml(+미니증정)",
+        "name_kr": "샴푸440ml(+미니증정)",
+        "price_krw": 17900,
+        "price_vnd": 419000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000230510.jpg"
+      },
+      {
+        "id": "2",
+        "name": "볼륨업 샴푸 440ml",
+        "name_vi": "볼륨업 샴푸 440ml",
+        "name_kr": "볼륨업 샴푸 440ml",
+        "price_krw": 17900,
+        "price_vnd": 419000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000230510.jpg"
+      },
+      {
+        "id": "3",
+        "name": "[온라인단독]440ml + 440ml",
+        "name_vi": "[온라인단독]440ml + 440ml",
+        "name_kr": "[온라인단독]440ml + 440ml",
+        "price_krw": 32600,
+        "price_vnd": 763000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000230510.jpg"
+      }
+    ],
+    "optionsCount": 3,
+    "hasOptions": true,
+    "description": "L'Oréal Paris Dầu gội ampoule Hyaluronic Acid cho da đầu 440ml (dịu nhẹ, pH cân bằng) - 로레알 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000230510",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000171113",
+    "goodsNo": "A000000171113",
+    "firestoreId": "A000000171113",
+    "name": "Bioderma Atoderm Son dưỡng môi 1+1 (dịu nhẹ)",
+    "name_vi": "Bioderma Atoderm Son dưỡng môi 1+1 (dịu nhẹ)",
+    "name_kr": "[11월 올영픽] 바이오더마 아토덤 립스틱 1+1 기획 (저자극 립밤)",
+    "nameKr": "[11월 올영픽] 바이오더마 아토덤 립스틱 1+1 기획 (저자극 립밤)",
+    "title": "Bioderma Atoderm Son dưỡng môi 1+1 (dịu nhẹ)",
+    "brand": "바이오더마",
+    "brand_vi": "바이오더마",
+    "brand_kr": "바이오더마",
+    "brandKr": "바이오더마",
+    "category": "skincare",
+    "category_vi": "Chăm sóc da",
+    "subCategory": "lip_care",
+    "categoryPath": "makeup",
+    "rank": 0,
+    "foreignPrice": 12100,
+    "price": 12100,
+    "originPrice": 20000,
+    "originalPrice": 20000,
+    "originalPriceWon": 20000,
+    "salePrice": 12100,
+    "priceVnd": 283000,
+    "originalPriceVnd": 468000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "40%",
+    "productImage": "/products/A000000171113.jpg",
+    "thumbnailUrl": "/products/A000000171113.jpg",
+    "images": [
+      "/products/A000000171113.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "[11월 올영픽] 바이오더마 아토덤 립스틱 1+1 기획 (저자극 립밤)",
+        "name_vi": "[11월 올영픽] 바이오더마 아토덤 립스틱 1+1 기획 (저자극 립밤)",
+        "name_kr": "",
+        "price_krw": 12100,
+        "price_vnd": 283000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000171113.jpg"
+      }
+    ],
+    "optionsCount": 1,
+    "hasOptions": true,
+    "description": "Bioderma Atoderm Son dưỡng môi 1+1 (dịu nhẹ) - 바이오더마 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171113",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
+  },
+  {
+    "id": "A000000243535",
+    "goodsNo": "A000000243535",
+    "firestoreId": "A000000243535",
+    "name": "Rosy Kim Ampoule son tint PDRN 10ml (14 màu)",
+    "name_vi": "Rosy Kim Ampoule son tint PDRN 10ml (14 màu)",
+    "name_kr": "[11월 올영픽/립베이스밤 증정] 로지킴 PDRN 틴티드 립 앰플 10ml 단품/기획 10ml 14 colors",
+    "nameKr": "[11월 올영픽/립베이스밤 증정] 로지킴 PDRN 틴티드 립 앰플 10ml 단품/기획 10ml 14 colors",
+    "title": "Rosy Kim Ampoule son tint PDRN 10ml (14 màu)",
+    "brand": "로지킴",
+    "brand_vi": "로지킴",
+    "brand_kr": "로지킴",
+    "brandKr": "로지킴",
+    "category": "makeup",
+    "category_vi": "Trang điểm",
+    "subCategory": "lip_tint",
+    "categoryPath": "makeup",
+    "rank": 0,
+    "foreignPrice": 20760,
+    "price": 20760,
+    "originPrice": 24000,
+    "originalPrice": 24000,
+    "originalPriceWon": 24000,
+    "salePrice": 20760,
+    "priceVnd": 486000,
+    "originalPriceVnd": 562000,
+    "appliedKrwRate": 19.5,
+    "appliedServiceFeePercent": 20.0,
+    "discountRate": "14%",
+    "productImage": "/products/A000000243535.jpg",
+    "thumbnailUrl": "/products/A000000243535.jpg",
+    "images": [
+      "/products/A000000243535.jpg"
+    ],
+    "photoReviews": [],
+    "options": [
+      {
+        "id": "1",
+        "name": "[립베이스밤 증정] 01 새틴",
+        "name_vi": "[립베이스밤 증정] 01 새틴",
+        "name_kr": "[립베이스밤 증정] 01 새틴",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "2",
+        "name": "[립베이스밤 증정] 09 타이즈",
+        "name_vi": "[립베이스밤 증정] 09 타이즈",
+        "name_kr": "[립베이스밤 증정] 09 타이즈",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "3",
+        "name": "[립베이스밤 증정] 14 로지",
+        "name_vi": "[립베이스밤 증정] 14 로지",
+        "name_kr": "[립베이스밤 증정] 14 로지",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "4",
+        "name": "02 자나",
+        "name_vi": "02 자나",
+        "name_kr": "02 자나",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "5",
+        "name": "03 테디",
+        "name_vi": "03 테디",
+        "name_kr": "03 테디",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "6",
+        "name": "04 포트",
+        "name_vi": "04 포트",
+        "name_kr": "04 포트",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "7",
+        "name": "05 아일랜드",
+        "name_vi": "05 아일랜드",
+        "name_kr": "05 아일랜드",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "8",
+        "name": "06 비키니",
+        "name_vi": "06 비키니",
+        "name_kr": "06 비키니",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "9",
+        "name": "07 코코넛",
+        "name_vi": "07 코코넛",
+        "name_kr": "07 코코넛",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "10",
+        "name": "[시스루 누드] 08 트루누드",
+        "name_vi": "[시스루 누드] 08 트루누드",
+        "name_kr": "[시스루 누드] 08 트루누드",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "11",
+        "name": "[시스루 누드] 09 타이즈",
+        "name_vi": "[시스루 누드] 09 타이즈",
+        "name_kr": "[시스루 누드] 09 타이즈",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "12",
+        "name": "[시스루 누드] 10 레이스",
+        "name_vi": "[시스루 누드] 10 레이스",
+        "name_kr": "[시스루 누드] 10 레이스",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "13",
+        "name": "[시스루 누드] 11 심리스",
+        "name_vi": "[시스루 누드] 11 심리스",
+        "name_kr": "[시스루 누드] 11 심리스",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "14",
+        "name": "12 쉬폰",
+        "name_vi": "12 쉬폰",
+        "name_kr": "12 쉬폰",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      },
+      {
+        "id": "15",
+        "name": "13 리본",
+        "name_vi": "13 리본",
+        "name_kr": "13 리본",
+        "price_krw": 20760,
+        "price_vnd": 486000,
+        "isSoldOut": false,
+        "is_sold_out": false,
+        "imageUrl": "/products/A000000243535.jpg"
+      }
+    ],
+    "optionsCount": 15,
+    "hasOptions": true,
+    "description": "Rosy Kim Ampoule son tint PDRN 10ml (14 màu) - 로지킴 chính hãng, order tại Olive Young Hàn Quốc.",
+    "usage": "Sử dụng hàng ngày theo nhu cầu chăm sóc da.",
+    "status": "available",
+    "isAvailable": true,
+    "isSoldOut": false,
+    "is_sold_out": false,
+    "isDiscontinued": false,
+    "isPublished": true,
+    "isHighEnd": false,
+    "isChallenge": false,
+    "origin": "KR",
+    "storageProvider": "local",
+    "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000243535",
+    "createdAt": "2026-11-26T05:27:13.000Z",
+    "updatedAt": "2026-11-26T05:27:13.000Z",
+    "lastAuditedAt": "2026-11-26T05:27:13.000Z"
   }
 ]

@@ -70,13 +70,6 @@
     "name": "Tinh Chất Ampoule Cấp Ẩm Chuyên Sâu Aestura Atobarrier 365 Cera-Hyal Hydro Ampoule (Set 30ml + Refill 30ml)"
   },
   {
-    "firestoreId": "A000000217620",
-    "source": "oy",
-    "goodsNo": "A000000217620",
-    "brand": "Mediheal",
-    "name": "Mặt Nạ Giấy Dưỡng Da Tinh Chất Chuyên Sâu Mediheal Essential Mask (Tùy Chọn 7 Loại / 1 Miếng)"
-  },
-  {
     "firestoreId": "A000000255682",
     "source": "oy",
     "goodsNo": "A000000255682",
@@ -483,13 +476,6 @@
     "name": "Máy Chăm Sóc Da Nâng Cơ Sóng Siêu Âm Quadthera Teens Waterdrop Ultrasound Home Care Device"
   },
   {
-    "firestoreId": "A000000217101",
-    "source": "oy",
-    "goodsNo": "A000000217101",
-    "brand": "iHill",
-    "name": "Men vi sinh âm đạo iHill Venus 30 viên nang (+6 viên nang) gói tăng dung tích"
-  },
-  {
     "firestoreId": "A000000235050",
     "source": "oy",
     "goodsNo": "A000000235050",
@@ -497,53 +483,11 @@
     "name": "Tinh Chất Dưỡng Trắng Giảm Thâm COSRX Advanced The Vitamin C 23 Serum 20g x 2 Lọ"
   },
   {
-    "firestoreId": "A000000225250",
-    "source": "oy",
-    "goodsNo": "A000000225250",
-    "brand": "Fillimilli",
-    "name": "Bộ Cọ Trang Điểm Chuyên Nghiệp Fillimilli Brush Set (Phiên Bản Hợp Tác Sanrio Pochacco / My Melody)"
-  },
-  {
-    "firestoreId": "A000000190168",
-    "source": "oy",
-    "goodsNo": "A000000190168",
-    "brand": "Flymill",
-    "name": "Bột ngũ cốc dinh dưỡng bổ sung đạm Flymill Protein Shake 45g"
-  },
-  {
-    "firestoreId": "A000000208162",
-    "source": "oy",
-    "goodsNo": "A000000208162",
-    "brand": "Delight Project",
-    "name": "Bột Bổ Sung Protein Dinh Dưỡng Tiện Lợi Delight Project Protein Shake (Gói 45g Tùy Chọn Vị)"
-  },
-  {
-    "firestoreId": "A000000244929",
-    "source": "oy",
-    "goodsNo": "A000000244929",
-    "brand": "Gynomaster",
-    "name": "Viên Uống Men Vi Sinh Phụ Nữ Cân Bằng Hệ Vi Sinh Gynomaster Vaginal Probiotics (30 Viên + Tặng Dầu Hoa Bìm Bìm 5 Ngày)"
-  },
-  {
-    "firestoreId": "A000000265728",
-    "source": "oy",
-    "goodsNo": "A000000265728",
-    "brand": "CJ Maxplan",
-    "name": "Bột ngũ cốc dinh dưỡng bổ sung đạm CJ Maxplan Daily Protein Shake 45g (Dâu sữa chua / Bơ đậu phộng / Sô-cô-la)"
-  },
-  {
     "firestoreId": "A000000263630",
     "source": "oy",
     "goodsNo": "A000000263630",
     "brand": "Vodana",
     "name": "Máy Tạo Kiểu Tóc Uốn Duỗi Tiện Lợi Vodana Easy Up Hair Styler Flip (Phiên Bản Hello Kitty)"
-  },
-  {
-    "firestoreId": "A000000202771",
-    "source": "oy",
-    "goodsNo": "A000000202771",
-    "brand": "Prote-One",
-    "name": "Bột Bổ Sung Protein Hỗ Trợ Dinh Dưỡng Vóc Dáng Prote-One Protein Shake Pouch (Set Mua 1 Tặng 1 40g - 6 Hương Vị)"
   },
   {
     "firestoreId": "A000000254661",
@@ -581,20 +525,6 @@
     "name": "Lược chải tóc gỡ rối giảm gãy rụng Tangle Angel Cupid Brush Tặng Kèm Móc Khóa Lược Mini"
   },
   {
-    "firestoreId": "A000000213569",
-    "source": "oy",
-    "goodsNo": "A000000213569",
-    "brand": "Coringco",
-    "name": "Mi Giả Tự Dính Tiện Lợi Không Cần Keo Coringco TokTok-Hara No Glue Eyelash (15 Loại Tùy Chọn - Phiên Bản Sanrio)"
-  },
-  {
-    "firestoreId": "A000000149501",
-    "source": "oy",
-    "goodsNo": "A000000149501",
-    "brand": "LABO-H",
-    "name": "Dầu Gội Giảm Rụng Củng Cố Da Đầu LABO-H Scalp Strengthening Shampoo 750ml Kèm Chai 100ml"
-  },
-  {
     "firestoreId": "A000000171423",
     "source": "oy",
     "goodsNo": "A000000171423",
@@ -623,25 +553,11 @@
     "name": "Tinh Dầu Dưỡng Tóc Bóng Mượt Unove Silk Hair Oil Essence (Set Đôi 70ml + 70ml Bản Powerpuff Girls)"
   },
   {
-    "firestoreId": "A000000268499",
-    "source": "oy",
-    "goodsNo": "A000000268499",
-    "brand": "MacPlan",
-    "name": "Sữa lắc protein hàng ngày CJ MacPlan 45g (hộp 5 gói) vị sữa chua dâu / bơ đậu phộng / sô-cô-la"
-  },
-  {
     "firestoreId": "A000000164470",
     "source": "oy",
     "goodsNo": "A000000164470",
     "brand": "Longtake",
     "name": "Dầu Gội Phục Hồi Hương Nước Hoa Longtake Shampoo Set 300ml + 100ml"
-  },
-  {
-    "firestoreId": "A000000219331",
-    "source": "oy",
-    "goodsNo": "A000000219331",
-    "brand": "Fillimilli",
-    "name": "[MỚI] Fillimilli Lông Mi Giả Tự Chọn 1 Món (Sợi Điểm Nhấn / Không Keo / Cắt Sẵn / Điểm Nhấn Giữa / Keo Dán)"
   },
   {
     "firestoreId": "A000000187090",
@@ -1332,13 +1248,6 @@
     "name": "Sữa Tắm Trị Mụn Lưng BioGa Betaine Salicylate 1000ml"
   },
   {
-    "firestoreId": "A000000116991",
-    "source": "oy",
-    "goodsNo": "A000000116991",
-    "brand": "닥터포헤어",
-    "name": "Dầu Gội Dr.FORHAIR Foligen Thickening 400ml (+100ml)"
-  },
-  {
     "firestoreId": "A000000231328",
     "source": "oy",
     "goodsNo": "A000000231328",
@@ -1386,13 +1295,6 @@
     "goodsNo": "A000000211096",
     "brand": "오프온",
     "name": "Sữa Tắm Trị Mụn Lưng Off-On (Chăm Sóc Cấp Ẩm & Làm Dịu)"
-  },
-  {
-    "firestoreId": "A000000201277",
-    "source": "oy",
-    "goodsNo": "A000000201277",
-    "brand": "바이오가",
-    "name": "Dầu Gội Giảm Rụng Tóc & Phục Hồi Tóc Hư Tổn Bioga Biotin Mầm Đậu Đen 1000ml"
   },
   {
     "firestoreId": "A000000237852",
@@ -1589,5 +1491,103 @@
     "goodsNo": "A000000156111",
     "brand": "라네즈",
     "name": "Mặt Nạ Ngủ Môi Laneige Lip Sleeping Mask 20g"
+  },
+  {
+    "firestoreId": "A000000255859",
+    "source": "oy",
+    "goodsNo": "A000000255859",
+    "brand": "토리든",
+    "name": "Torriden Mặt nạ giấy 10 miếng 4 loại (Dưỡng ẩm/Làm dịu/Sáng da/Se khít lỗ chân lông)"
+  },
+  {
+    "firestoreId": "A000000205979",
+    "source": "oy",
+    "goodsNo": "A000000205979",
+    "brand": "넘버즈인",
+    "name": "Numbuzin Mặt nạ giấy 10 miếng 5 loại chọn 1 (số 1-5)"
+  },
+  {
+    "firestoreId": "A000000221807",
+    "source": "oy",
+    "goodsNo": "A000000221807",
+    "brand": "바이오던스",
+    "name": "Biodance Mặt nạ Real Deep 5 loại 7+1 miếng (Collagen/Ceranol/PDRN/Sea Kelp/Vita)"
+  },
+  {
+    "firestoreId": "A000000189875",
+    "source": "oy",
+    "goodsNo": "A000000189875",
+    "brand": "토리든",
+    "name": "Torriden Sữa rửa mặt Dive-In Hyaluronic Acid phân tử nhỏ 150ml + 150ml"
+  },
+  {
+    "firestoreId": "A000000171650",
+    "source": "oy",
+    "goodsNo": "A000000171650",
+    "brand": "라운드랩",
+    "name": "Round Lab Kem chống nắng dưỡng ẩm Birch Juice 50ml x2"
+  },
+  {
+    "firestoreId": "A000000206826",
+    "source": "oy",
+    "goodsNo": "A000000206826",
+    "brand": "에스트라",
+    "name": "Aestura Kem chống nắng Derma UV365 Barrier Moisture vật lý 40ml + 20ml"
+  },
+  {
+    "firestoreId": "A000000245091",
+    "source": "oy",
+    "goodsNo": "A000000245091",
+    "brand": "에스트라",
+    "name": "Aestura Tinh chất Atobarrier365 Ceramide-Hyal Moisture Ampoule 30ml + 30ml (kèm refill)"
+  },
+  {
+    "firestoreId": "A000000232081",
+    "source": "oy",
+    "goodsNo": "A000000232081",
+    "brand": "제로이드",
+    "name": "Zeroid Sữa rửa mặt dạng bọt Foaming Cleanser 240ml + 240ml (kèm refill)"
+  },
+  {
+    "firestoreId": "A000000248498",
+    "source": "oy",
+    "goodsNo": "A000000248498",
+    "brand": "아누아",
+    "name": "Anua Nước hoa hồng rau má 77 + Hyaluronic Acid cấp ẩm làm dịu da 350ml (kèm túi refill 350ml)"
+  },
+  {
+    "firestoreId": "A000000148549",
+    "source": "oy",
+    "goodsNo": "A000000148549",
+    "brand": "트리헛",
+    "name": "Tree Hut Tẩy tế bào chết Shea Sugar Scrub 510g"
+  },
+  {
+    "firestoreId": "A000000138140",
+    "source": "oy",
+    "goodsNo": "A000000138140",
+    "brand": "레이비",
+    "name": "Lavy Sữa tắm hương nước hoa 500ml (5 mùi, chọn 1)"
+  },
+  {
+    "firestoreId": "A000000230510",
+    "source": "oy",
+    "goodsNo": "A000000230510",
+    "brand": "로레알",
+    "name": "L'Oréal Paris Dầu gội ampoule Hyaluronic Acid cho da đầu 440ml (dịu nhẹ, pH cân bằng)"
+  },
+  {
+    "firestoreId": "A000000171113",
+    "source": "oy",
+    "goodsNo": "A000000171113",
+    "brand": "바이오더마",
+    "name": "Bioderma Atoderm Son dưỡng môi 1+1 (dịu nhẹ)"
+  },
+  {
+    "firestoreId": "A000000243535",
+    "source": "oy",
+    "goodsNo": "A000000243535",
+    "brand": "로지킴",
+    "name": "Rosy Kim Ampoule son tint PDRN 10ml (14 màu)"
   }
 ]
