@@ -245,13 +245,6 @@
   "name": "Xịt khoáng hai tầng khóa ẩm tạo nền căng bóng fwee Shaking Synergy Mist 50ml (4 loại)"
  },
  {
-  "firestoreId": "A000000263036",
-  "source": "oy",
-  "goodsNo": "A000000263036",
-  "brand": "Abib",
-  "name": "Tinh Chất Serum Làm Dịu Phục Hồi Da Abib Heartleaf TECA Capsule Serum Calming Drop (Set Đôi 50ml Tặng Miếng Dán Mụn & Hộp Sanrio)"
- },
- {
   "firestoreId": "A000000234422",
   "source": "oy",
   "goodsNo": "A000000234422",
@@ -271,13 +264,6 @@
   "goodsNo": "A000000262945",
   "brand": "Hanyul",
   "name": "Kem Dưỡng Cấp Ẩm Làm Dịu Ngải Cứu Hanyul Pure Artemisia Hyaluron Cream Set 60ml x 2"
- },
- {
-  "firestoreId": "A000000267477",
-  "source": "oy",
-  "goodsNo": "A000000267477",
-  "brand": "Zeroid",
-  "name": "Kem dưỡng làm dịu giảm đỏ cân bằng pH Zeroid Pimprove Red Control Cream pH4 80ml Tặng Kèm Kem 10ml Và Tinh Chất 7ml"
  },
  {
   "firestoreId": "A000000253122",
@@ -1113,5 +1099,19 @@
   "brand": "LANCÔME",
   "name": "Nước Thần Căng Bóng Tái Tạo Da Lancôme Clarifique Dual Essence",
   "mallPriceKrwAtResolve": 179280
+ },
+ {
+  "firestoreId": "A000001002386",
+  "source": "oy",
+  "goodsNo": "A000001002386",
+  "brand": "AESTURA",
+  "name": "Kem dưỡng AESTURA Atobarrier 365 80ml Set Đôi (tặng Ampoule Ceramide-Hyaluronic 15ml)"
+ },
+ {
+  "firestoreId": "A000000223414",
+  "source": "oy",
+  "goodsNo": "A000000223414",
+  "brand": "Mediheal",
+  "name": "Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại)"
  }
 ]

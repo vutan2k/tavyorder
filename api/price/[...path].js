@@ -68,7 +68,7 @@ export default async function handler(req, res) {
     const text = await r.text();
     let data;
     try { data = JSON.parse(text); } catch { data = { ok: false, error: 'bad_upstream', raw: text.slice(0, 200) }; }
-    return send(res, r.status, data, ep === 'prices' || ep === 'manifest' ? 30 : 0);
+    return send(res, r.status, data);
   } catch (e) {
     return send(res, 502, { ok: false, error: 'proxy_failed', detail: String(e.message || e).slice(0, 160) });
   }
