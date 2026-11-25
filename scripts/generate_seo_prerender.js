@@ -78,18 +78,23 @@ const fullAuditedPath = '/Users/tan/Desktop/theasd_auto_bot/tavy_catalog_audited
 const playwrightPath = join(PUBLIC_DIR, 'data', 'playwright_scraped_products.json');
 const allCatalogPath = join(PUBLIC_DIR, 'data', 'all_products_catalog.json');
 
+const mergedById = new Map();
 for (const pPath of [playwrightPath, fullAuditedPath, allCatalogPath]) {
   if (existsSync(pPath)) {
     try {
       const loaded = JSON.parse(readFileSync(pPath, 'utf8'));
-      if (Array.isArray(loaded) && loaded.length > products.length) {
-        products = loaded;
+      if (Array.isArray(loaded)) {
+        for (const p of loaded) {
+          const key = String(p.goodsNo || p.id);
+          if (key && key !== 'undefined') mergedById.set(key, { ...(mergedById.get(key) || {}), ...p });
+        }
       }
     } catch (e) {
       // ignore
     }
   }
 }
+products = [...mergedById.values()];
 
 // Chỉ xuất bản SKU đang bán thật (allowlist sinh từ Firestore), tránh index SKU đã archive.
 const sellablePath = join(PROJECT_ROOT, 'server', 'catalog-sellable.json');
