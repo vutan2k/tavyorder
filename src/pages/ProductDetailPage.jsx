@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, useContext } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import SITE_URL from '../utils/siteUrl';
 import { Helmet } from 'react-helmet-async';
 import { 
   ShoppingBag, 
@@ -328,7 +329,7 @@ export default function ProductDetailPage() {
     },
     offers: {
       '@type': 'Offer',
-      url: `https://tavyorder.web.app/san-pham/${slug}`,
+      url: `${SITE_URL}/san-pham/${slug}`,
       priceCurrency: 'VND',
       price: calculatedVnd,
       priceValidUntil: '2027-12-31',
@@ -347,13 +348,13 @@ export default function ProductDetailPage() {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        <link rel="canonical" href={`https://tavyorder.web.app/san-pham/${slug}`} />
+        <link rel="canonical" href={`${SITE_URL}/san-pham/${slug}`} />
         
         {/* OpenGraph */}
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:image" content={allImages[0]} />
-        <meta property="og:url" content={`https://tavyorder.web.app/san-pham/${slug}`} />
+        <meta property="og:url" content={`${SITE_URL}/san-pham/${slug}`} />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="TAVY KOREA" />
 

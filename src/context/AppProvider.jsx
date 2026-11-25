@@ -1,3 +1,4 @@
+import SITE_URL from '../utils/siteUrl';
 import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { AppContext } from './AppContext';
 import {
@@ -1108,7 +1109,7 @@ export const AppProvider = ({ children }) => {
   useEffect(() => {
     const ALLOWED_EXT_ORIGINS = new Set([
       typeof window !== 'undefined' ? window.location.origin : '',
-      'https://tavyorder.web.app',
+      SITE_URL,
       'https://tavyorder.firebaseapp.com',
       'https://www.oliveyoung.co.kr',
       'https://oliveyoung.co.kr'

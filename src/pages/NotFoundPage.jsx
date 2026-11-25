@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function NotFoundPage() {
   return (
@@ -12,6 +13,10 @@ export default function NotFoundPage() {
       padding: '40px 20px',
       textAlign: 'center'
     }}>
+      <Helmet>
+        <title>Không tìm thấy trang - TAVY KOREA</title>
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div style={{ maxWidth: '500px' }}>
         <h1 style={{
           fontSize: '6rem',

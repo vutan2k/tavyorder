@@ -1,3 +1,4 @@
+import SITE_URL from '../utils/siteUrl';
 /**
  * TAVY KOREA — Telegram Bot Notification & Daily 8:00 PM Report Service
  *
@@ -422,7 +423,7 @@ export function formatDaily8PmTelegramReport({
   priceReport,
   rates,
   now = new Date(),
-  adminUrl = 'https://tavyorder.web.app/admin/products'
+  adminUrl = `${SITE_URL}/admin/products`
 } = {}) {
   const timeStr = now.toLocaleString('vi-VN', {
     timeZone: 'Asia/Ho_Chi_Minh',
