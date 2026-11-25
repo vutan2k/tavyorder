@@ -11,13 +11,19 @@
 - **Nước Tẩy Trang Dịu Nhẹ Cho Da Nhạy Cảm Bioderma Sensibio H2O (Set Đôi 500ml + 500ml)**
   - Thương hiệu: Bioderma | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000013194
-  - Giá Olive Young: 31.900 KRW (~746.000 đ)
+  - Giá Olive Young: 42.000 KRW (~746.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/nuoc-tay-trang-diu-nhe-cho-da-nhay-cam-bioderma-sensibio-h2o-set-doi-500ml-500ml-a000000013194
+
+- **Tinh dầu dưỡng tóc bảo vệ nhiệt L'Oréal Paris 100ml (bản giới hạn Hello Kitty, tặng kèm cọ chải tóc)**
+  - Thương hiệu: L'Oréal | Phân loại: Chăm sóc tóc
+  - Mã hàng (goodsNo): A000000140183
+  - Giá Olive Young: 16.900 KRW (~372.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-dau-duong-toc-bao-ve-nhiet-l-oreal-paris-100ml-ban-gioi-han-hello-kitty-tang-kem-co-chai-toc-a000000140183
 
 - **Dầu Gội Giảm Rụng Củng Cố Da Đầu LABO-H Scalp Strengthening Shampoo 750ml Kèm Chai 100ml**
   - Thương hiệu: LABO-H | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000149501
-  - Giá Olive Young: 26.900 KRW (~629.000 đ)
+  - Giá Olive Young: 37.000 KRW (~629.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/dau-goi-giam-rung-cung-co-da-dau-labo-h-scalp-strengthening-shampoo-750ml-kem-chai-100ml-a000000149501
 
 - **Kem dưỡng cấp ẩm se khít lỗ chân lông S.Nature Aqua Squalane 60ml Tặng Kèm 30ml**
@@ -35,7 +41,7 @@
 - **Dầu Gội Phục Hồi Hương Nước Hoa Longtake Shampoo Set 300ml + 100ml**
   - Thương hiệu: Longtake | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000164470
-  - Giá Olive Young: 19.500 KRW (~456.000 đ)
+  - Giá Olive Young: 20.000 KRW (~456.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/dau-goi-phuc-hoi-huong-nuoc-hoa-longtake-shampoo-set-300ml-100ml-a000000164470
 
 - **Sữa Tắm Tẩy Tế Bào Chết Cấp Ẩm Tươi Mát Illiyoon Fresh Moisture Scrub Wash Set 2 Chai 400ml**
@@ -65,7 +71,7 @@
 - **[Top 40] Sữa Dưỡng Thể Dưỡng Ẩm Dịu Nhẹ Illiyoon Ceramide Ato Lotion (Set Đôi Siêu Tiết Kiệm 600ml + 600ml)**
   - Thương hiệu: Illiyoon | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000171848
-  - Giá Olive Young: 34.900 KRW (~817.000 đ)
+  - Giá Olive Young: 35.900 KRW (~817.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/sua-duong-the-duong-am-diu-nhe-illiyoon-ceramide-ato-lotion-set-doi-sieu-tiet-kiem-600ml-600ml-a000000171848
 
 - **Bảng Phấn Mắt Trang Điểm Mịn Mượt WakeMake Soft Blurring Eye Palette (Phiên Bản Hello Kitty Leopard)**
@@ -83,7 +89,7 @@
 - **[Top 42] Phấn Nước Che Phủ Bền Màu VDL Cover Stain Perfecting Cushion Set (Hộp Chính + Lõi Thay Thế)**
   - Thương hiệu: VDL | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000185903
-  - Giá Olive Young: 26.900 KRW (~629.000 đ)
+  - Giá Olive Young: 28.800 KRW (~629.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/phan-nuoc-che-phu-ben-mau-vdl-cover-stain-perfecting-cushion-set-hop-chinh-loi-thay-the-a000000185903
 
 - **[Top 59] Sữa Rửa Mặt Cho Da Mụn Blanc Nature Acne Cleansing Foam (Tùy Chọn Lẻ Hoặc Set)**
@@ -91,6 +97,12 @@
   - Mã hàng (goodsNo): A000000186409
   - Giá Olive Young: 21.400 KRW (~501.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/sua-rua-mat-cho-da-mun-blanc-nature-acne-cleansing-foam-tuy-chon-le-hoac-set-a000000186409
+
+- **[Top 100] Kem Ủ Tóc Phục Hồi Chuyên Sâu Fino Premium Touch Hair Mask 230g (Set Đôi Kèm Kẹp Tóc Ditto)**
+  - Thương hiệu: Fino | Phân loại: Chăm sóc tóc
+  - Mã hàng (goodsNo): A000000187090
+  - Giá Olive Young: 21.500 KRW (~459.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-u-toc-phuc-hoi-chuyen-sau-fino-premium-touch-hair-mask-230g-set-doi-kem-kep-toc-ditto-a000000187090
 
 - **Bảng Phấn Mắt Trang Điểm Đa Năng Chuẩn Màu Clio Pro Eye Palette Air (Tặng Kèm Phấn Mắt Đơn)**
   - Thương hiệu: Clio | Phân loại: Chăm sóc da
@@ -101,7 +113,7 @@
 - **Bột ngũ cốc dinh dưỡng bổ sung đạm Flymill Protein Shake 45g**
   - Thương hiệu: Flymill | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000190168
-  - Giá Olive Young: 3.300 KRW (~77.000 đ)
+  - Giá Olive Young: 2.900 KRW (~77.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/bot-ngu-coc-dinh-duong-bo-sung-dam-flymill-protein-shake-45g-a000000190168
 
 - **[Top 14] Kem Chống Nắng Hiệu Chỉnh Tông Da d'Alba Waterfull Purple Tone-Up Sunscreen (Set Đôi 50ml + 50ml)**
@@ -119,19 +131,19 @@
 - **Bột Bổ Sung Protein Hỗ Trợ Dinh Dưỡng Vóc Dáng Prote-One Protein Shake Pouch (Set Mua 1 Tặng 1 40g - 6 Hương Vị)**
   - Thương hiệu: Prote-One | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000202771
-  - Giá Olive Young: 1.950 KRW (~46.000 đ)
+  - Giá Olive Young: 3.900 KRW (~46.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/bot-bo-sung-protein-ho-tro-dinh-duong-voc-dang-prote-one-protein-shake-pouch-set-mua-1-tang-1-40g-6-huong-vi-a000000202771
 
 - **[Top 29] Phấn Nước Che Phủ Kiềm Dầu Hera Black Cushion Foundation (Set 15g + Lõi Thay Thế 15g - 9 Tone Màu)**
   - Thương hiệu: Hera | Phân loại: Phấn nước (Cushion)
   - Mã hàng (goodsNo): A000000202777
-  - Giá Olive Young: 62.900 KRW (~1.472.000 đ)
+  - Giá Olive Young: 66.600 KRW (~1.472.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/phan-nuoc-che-phu-kiem-dau-hera-black-cushion-foundation-set-15g-loi-thay-the-15g-9-tone-mau-a000000202777
 
 - **[Top 83] Chuốt Mi Siêu Cong Và Định Hình Giữ Nếp Etude Curl Fix Mascara (Set Mua 1 Tặng 1 Hoặc Tặng Kèm Kẹp Mi)**
   - Thương hiệu: Etude | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000203943
-  - Giá Olive Young: 12.200 KRW (~285.000 đ)
+  - Giá Olive Young: 16.000 KRW (~285.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/chuot-mi-sieu-cong-va-dinh-hinh-giu-nep-etude-curl-fix-mascara-set-mua-1-tang-1-hoac-tang-kem-kep-mi-a000000203943
 
 - **Kem Chống Nắng Vật Lý Cấp Ẩm Phục Hồi Hàng Rào Bảo Vệ Da Aestura Derma UV365 Barrier Hydro Mineral Sunscreen (Set 40ml + 20ml)**
@@ -149,7 +161,7 @@
 - **Mặt nạ ôm sát trẻ hóa dưỡng sáng da House of B Face Film Mask 4 miếng (Tùy chọn Glutathione / PDRN)**
   - Thương hiệu: House of B | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000212579
-  - Giá Olive Young: 28.710 KRW (~672.000 đ)
+  - Giá Olive Young: 29.900 KRW (~672.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/mat-na-om-sat-tre-hoa-duong-sang-da-house-of-b-face-film-mask-4-mieng-tuy-chon-glutathione-pdrn-a000000212579
 
 - **[Top 54] Mi Giả Tự Dính Tiện Lợi Không Cần Keo Coringco TokTok-Hara No Glue Eyelash (15 Loại Tùy Chọn - Phiên Bản Sanrio)**
@@ -157,6 +169,12 @@
   - Mã hàng (goodsNo): A000000213569
   - Giá Olive Young: 9.200 KRW (~215.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/mi-gia-tu-dinh-tien-loi-khong-can-keo-coringco-toktok-hara-no-glue-eyelash-15-loai-tuy-chon-phien-ban-sanrio-a000000213569
+
+- **Men vi sinh âm đạo iHill Venus 30 viên nang (+6 viên nang) gói tăng dung tích**
+  - Thương hiệu: iHill | Phân loại: Chăm sóc da
+  - Mã hàng (goodsNo): A000000217101
+  - Giá Olive Young: 29.900 KRW (~559.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/men-vi-sinh-am-dao-ihill-venus-30-vien-nang-6-vien-nang-goi-tang-dung-tich-a000000217101
 
 - **[Top 33] Mặt Nạ Giấy Dưỡng Da Tinh Chất Chuyên Sâu Mediheal Essential Mask (Tùy Chọn 7 Loại / 1 Miếng)**
   - Thương hiệu: Mediheal | Phân loại: Chăm sóc da
@@ -167,7 +185,7 @@
 - **Lược chải tóc gỡ rối giảm gãy rụng Tangle Angel Cupid Brush Tặng Kèm Móc Khóa Lược Mini**
   - Thương hiệu: Tangle Angel | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000217703
-  - Giá Olive Young: 22.900 KRW (~536.000 đ)
+  - Giá Olive Young: 27.000 KRW (~536.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/luoc-chai-toc-go-roi-giam-gay-rung-tangle-angel-cupid-brush-tang-kem-moc-khoa-luoc-mini-a000000217703
 
 - **Sữa dưỡng thể sáng da dưỡng ẩm Beyond Bodytamin Body Lotion 500ml (Tùy chọn 3 loại)**
@@ -182,16 +200,28 @@
   - Giá Olive Young: 33.800 KRW (~791.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-duong-da-dau-kich-thich-moc-toc-lilyeve-growturn-exosome-brush-ampoule-dung-tich-lon-130ml-a000000218845
 
+- **[MỚI] Fillimilli Lông Mi Giả Tự Chọn 1 Món (Sợi Điểm Nhấn / Không Keo / Cắt Sẵn / Điểm Nhấn Giữa / Keo Dán)**
+  - Thương hiệu: Fillimilli | Phân loại: Chăm sóc da
+  - Mã hàng (goodsNo): A000000219331
+  - Giá Olive Young: 7.000 KRW (~157.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/moi-fillimilli-long-mi-gia-tu-chon-1-mon-soi-diem-nhan-khong-keo-cat-san-diem-nhan-giua-keo-dan-a000000219331
+
 - **Tinh Chất Serum Dịu Da Giảm Mụn Fation Nosca9 Trouble Serum (Set 50ml + Lõi Thay 40ml + Kem Dưỡng 10ml)**
   - Thương hiệu: Fation | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000219609
   - Giá Olive Young: 33.900 KRW (~793.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-serum-diu-da-giam-mun-fation-nosca9-trouble-serum-set-50ml-loi-thay-40ml-kem-duong-10ml-a000000219609
 
+- **Dầu dưỡng tóc Moroccanoil Treatment 50ml (kèm vòi bơm) - Set đặc biệt**
+  - Thương hiệu: Moroccanoil | Phân loại: Chăm sóc tóc
+  - Mã hàng (goodsNo): A000000219700
+  - Giá Olive Young: 35.700 KRW (~806.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/dau-duong-toc-moroccanoil-treatment-50ml-kem-voi-bom-set-dac-biet-a000000219700
+
 - **[Top 2] Mặt Nạ Giấy Dịu Da Mụn & Phục Hồi Mediheal Essential Sheet Mask 10+1 Miếng (7 Loại)**
   - Thương hiệu: Mediheal | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000223414
-  - Giá Olive Young: 9.900 KRW (~232.000 đ)
+  - Giá Olive Young: 10.000 KRW (~232.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/mat-na-giay-diu-da-mun-phuc-hoi-mediheal-essential-sheet-mask-10-1-mieng-7-loai-a000000223414
 
 - **Tinh Chất Dưỡng Sáng Thu Nhỏ Lỗ Chân Lông Derma Factory Niacinamide 20% Serum 30ml**
@@ -215,7 +245,7 @@
 - **Mặt Nạ Giấy Dưỡng Ẩm Làm Dịu Da Anua Daily Care Mask Set 5 Miếng**
   - Thương hiệu: Anua | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000231836
-  - Giá Olive Young: 8.600 KRW (~201.000 đ)
+  - Giá Olive Young: 9.500 KRW (~201.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/mat-na-giay-duong-am-lam-diu-da-anua-daily-care-mask-set-5-mieng-a000000231836
 
 - **[Top 39] Tinh Chất Cấp Ẩm Chuyên Sâu Wellage Real Hyaluronic Blue 100 Ampoule Set Đôi 75ml x 2**
@@ -233,25 +263,25 @@
 - **[Top 76] Son Bóng Dưỡng Căng Mộng Alternative Stereo Lip Potion Caramel Glaze (8ml)**
   - Thương hiệu: Alternative Stereo | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000234394
-  - Giá Olive Young: 15.770 KRW (~369.000 đ)
+  - Giá Olive Young: 15.900 KRW (~369.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/son-bong-duong-cang-mong-alternative-stereo-lip-potion-caramel-glaze-8ml-a000000234394
 
 - **[Top 60] Mặt Nạ Sủi Bọt Làm Sạch Và Dưỡng Ẩm Nhanh Menokin 30-Second Quick Bubble Mask (Tùy Chọn 6 Loại + Tặng Kèm 30ml)**
   - Thương hiệu: Menokin | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000234422
-  - Giá Olive Young: 24.200 KRW (~566.000 đ)
+  - Giá Olive Young: 25.300 KRW (~566.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/mat-na-sui-bot-lam-sach-va-duong-am-nhanh-menokin-30-second-quick-bubble-mask-tuy-chon-6-loai-tang-kem-30ml-a000000234422
 
 - **Tinh Chất Dưỡng Trắng Giảm Thâm COSRX Advanced The Vitamin C 23 Serum 20g x 2 Lọ**
   - Thương hiệu: 코스알엑스 | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000235050
-  - Giá Olive Young: 21.200 KRW (~496.000 đ)
+  - Giá Olive Young: 39.900 KRW (~496.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-duong-trang-giam-tham-cosrx-advanced-the-vitamin-c-23-serum-20g-x-2-lo-a000000235050
 
 - **[Top 97] Son Dưỡng Môi Cấp Ẩm Có Màu Uriage Stick Levres Colored (9 Tông Màu)**
   - Thương hiệu: Uriage | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000235485
-  - Giá Olive Young: 9.900 KRW (~232.000 đ)
+  - Giá Olive Young: 10.500 KRW (~232.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/son-duong-moi-cap-am-co-mau-uriage-stick-levres-colored-9-tong-mau-a000000235485
 
 - **Son thỏi bóng căng mọng môi TO&ND Juicy Tangtang Glaze 3.5g (9 màu)**
@@ -263,7 +293,7 @@
 - **Mặt Nạ Kem Dưỡng Sáng Mờ Thâm Nám Celimax Tranexamic Acid Brightening Cream Wrapping Mask (Set 5 Miếng Tặng 1 Miếng)**
   - Thương hiệu: Celimax | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000240462
-  - Giá Olive Young: 20.730 KRW (~485.000 đ)
+  - Giá Olive Young: 23.400 KRW (~485.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/mat-na-kem-duong-sang-mo-tham-nam-celimax-tranexamic-acid-brightening-cream-wrapping-mask-set-5-mieng-tang-1-mieng-a000000240462
 
 - **[Top 88] Son Tint Bóng Căng Mộng Lâu Trôi Rom&nd The Juicy Lasting Tint (Bản Hợp Tác Sanrio Kuromi / Hangyodon)**
@@ -275,25 +305,25 @@
 - **Viên Uống Men Vi Sinh Phụ Nữ Cân Bằng Hệ Vi Sinh Gynomaster Vaginal Probiotics (30 Viên + Tặng Dầu Hoa Bìm Bìm 5 Ngày)**
   - Thương hiệu: Gynomaster | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000244929
-  - Giá Olive Young: 26.900 KRW (~629.000 đ)
+  - Giá Olive Young: 27.400 KRW (~629.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/vien-uong-men-vi-sinh-phu-nu-can-bang-he-vi-sinh-gynomaster-vaginal-probiotics-30-vien-tang-dau-hoa-bim-bim-5-ngay-a000000244929
 
 - **[Top 85] Tinh Chất Ampoule Cấp Ẩm Chuyên Sâu Aestura Atobarrier 365 Cera-Hyal Hydro Ampoule (Set 30ml + Refill 30ml)**
   - Thương hiệu: Aestura | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000245091
-  - Giá Olive Young: 33.250 KRW (~778.000 đ)
+  - Giá Olive Young: 32.300 KRW (~778.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-ampoule-cap-am-chuyen-sau-aestura-atobarrier-365-cera-hyal-hydro-ampoule-set-30ml-refill-30ml-a000000245091
 
 - **[Top 50] Chì kẻ mày và mascara chuốt mày định hình thanh mảnh lâu trôi Peripera Speedy Skinny Brow & Brow Mascara**
   - Thương hiệu: Peripera | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000246286
-  - Giá Olive Young: 5.500 KRW (~129.000 đ)
+  - Giá Olive Young: 5.700 KRW (~129.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/chi-ke-may-va-mascara-chuot-may-dinh-hinh-thanh-manh-lau-troi-peripera-speedy-skinny-brow-brow-mascara-a000000246286
 
 - **Sáp trang điểm đa năng bắt sáng làm mịn da Wakemake Off Cherry Collection Dạng Thỏi**
   - Thương hiệu: Wakemake | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000247099
-  - Giá Olive Young: 8.000 KRW (~187.000 đ)
+  - Giá Olive Young: 11.900 KRW (~187.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/sap-trang-diem-da-nang-bat-sang-lam-min-da-wakemake-off-cherry-collection-dang-thoi-a000000247099
 
 - **Kem Dưỡng Dạng Gel Mờ Thâm Phục Hồi Isntree Onion Newpair Gel Cream Plus (50ml + Tặng Kèm Gel 20ml & Pad 2 Miếng)**
@@ -301,6 +331,12 @@
   - Mã hàng (goodsNo): A000000247776
   - Giá Olive Young: 21.900 KRW (~512.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-dang-gel-mo-tham-phuc-hoi-isntree-onion-newpair-gel-cream-plus-50ml-tang-kem-gel-20ml-pad-2-mieng-a000000247776
+
+- **Vital Beauty Meta Green Slim Up hỗ trợ giảm mỡ, 1 viên/ngày, hộp 30 viên (30 ngày)**
+  - Thương hiệu: Vital Beauty | Phân loại: Thực phẩm chức năng
+  - Mã hàng (goodsNo): A000000248462
+  - Giá Olive Young: 29.900 KRW (~590.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/vital-beauty-meta-green-slim-up-ho-tro-giam-mo-1-vien-ngay-hop-30-vien-30-ngay-a000000248462
 
 - **Dầu Dưỡng Môi Chiết Xuất Táo Căng Mọng Nooni Apple Lip Oil 12 Màu Tùy Chọn**
   - Thương hiệu: Nooni | Phân loại: Chăm sóc da
@@ -323,7 +359,7 @@
 - **Mặt Nạ Tăng Sinh Collagen Căng Bóng Da Juvelook PDLLA Collagen Boosting Mask Set 5 Miếng**
   - Thương hiệu: Juvelook | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000253919
-  - Giá Olive Young: 32.000 KRW (~749.000 đ)
+  - Giá Olive Young: 31.000 KRW (~749.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/mat-na-tang-sinh-collagen-cang-bong-da-juvelook-pdlla-collagen-boosting-mask-set-5-mieng-a000000253919
 
 - **Tinh Chất Dưỡng Sáng Làm Đều Màu Da Arencia Vitamin C Booster Shot (Set Đôi 30ml + 30ml)**
@@ -335,13 +371,13 @@
 - **[Top 78] Bông Dưỡng Da Toner Pad Se Khít Lỗ Chân Lông Medicube Toner Pad (Set 160 Miếng + Refill 140 Miếng Tùy Chọn Zero Pore/PDRN/Deep Vita C)**
   - Thương hiệu: Medicube | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000255682
-  - Giá Olive Young: 25.900 KRW (~606.000 đ)
+  - Giá Olive Young: 28.900 KRW (~606.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/bong-duong-da-toner-pad-se-khit-lo-chan-long-medicube-toner-pad-set-160-mieng-refill-140-mieng-tuy-chon-zero-pore-pdrn-deep-vita-c-a000000255682
 
 - **[Top 46] Kem Dưỡng Dạng Gel Cấp Ẩm Làm Dịu Da Dr.G Red Blemish Clear Soothing Cream EX (Set 70ml + Tặng Kem 30ml + Serum 10ml x 2)**
   - Thương hiệu: Dr.G | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000255752
-  - Giá Olive Young: 26.600 KRW (~622.000 đ)
+  - Giá Olive Young: 25.900 KRW (~622.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-dang-gel-cap-am-lam-diu-da-dr-g-red-blemish-clear-soothing-cream-ex-set-70ml-tang-kem-30ml-serum-10ml-x-2-a000000255752
 
 - **Tinh Chất Phục Hồi Hàng Rào Dưỡng Ẩm Layer Lab Niosome Panthenol 5% Serum (Set Đôi 1+1 30ml + 30ml)**
@@ -353,13 +389,13 @@
 - **Mặt Nạ Sủi Bọt Làm Sạch Cấp Ẩm Numbuzin Prep Bubble Pack (4 Phân Loại Tùy Chọn)**
   - Thương hiệu: numbuzin | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000257072
-  - Giá Olive Young: 17.500 KRW (~410.000 đ)
+  - Giá Olive Young: 18.900 KRW (~410.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/mat-na-sui-bot-lam-sach-cap-am-numbuzin-prep-bubble-pack-4-phan-loai-tuy-chon-a000000257072
 
 - **Kem Dưỡng Thu Nhỏ Lỗ Chân Lông Podle Balm Retinal Pore Reset Solution Capsule Cream 55g**
   - Thương hiệu: Podle | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000259386
-  - Giá Olive Young: 35.000 KRW (~819.000 đ)
+  - Giá Olive Young: 28.800 KRW (~819.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-thu-nho-lo-chan-long-podle-balm-retinal-pore-reset-solution-capsule-cream-55g-a000000259386
 
 - **Xịt khoáng hai tầng khóa ẩm tạo nền căng bóng fwee Shaking Synergy Mist 50ml (4 loại)**
@@ -377,25 +413,25 @@
 - **Tinh Chất Ampoule Cấp Ẩm Chuyên Sâu Wellage Real Hyaluronic Blue 100 Ampoule (Set 100ml + Lõi Thay 60ml + Kem Dưỡng 30ml)**
   - Thương hiệu: Wellage | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000261423
-  - Giá Olive Young: 29.900 KRW (~700.000 đ)
+  - Giá Olive Young: 30.900 KRW (~700.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-ampoule-cap-am-chuyen-sau-wellage-real-hyaluronic-blue-100-ampoule-set-100ml-loi-thay-60ml-kem-duong-30ml-a000000261423
 
 - **Mặt Nạ Thạch Căng Bóng Cấp Ẩm Chuyên Sâu Biodance Real Deep Mask (Set 7+1 Miếng - Tặng Phụ Kiện Sanrio)**
   - Thương hiệu: Biodance | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000261842
-  - Giá Olive Young: 29.200 KRW (~683.000 đ)
+  - Giá Olive Young: 29.400 KRW (~683.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/mat-na-thach-cang-bong-cap-am-chuyen-sau-biodance-real-deep-mask-set-7-1-mieng-tang-phu-kien-sanrio-a000000261842
 
 - **Dầu tẩy trang làm sạch sâu se khít lỗ chân lông Anua Heartleaf Pore Control Cleansing Oil 350ml (Bản giới hạn Pochacco kèm bông tẩy trang)**
   - Thương hiệu: Anua | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000262620
-  - Giá Olive Young: 19.900 KRW (~466.000 đ)
+  - Giá Olive Young: 21.900 KRW (~466.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/dau-tay-trang-lam-sach-sau-se-khit-lo-chan-long-anua-heartleaf-pore-control-cleansing-oil-350ml-ban-gioi-han-pochacco-kem-bong-tay-trang-a000000262620
 
 - **Tinh Chất Giảm Mụn Mờ Thâm Lỗ Chân Lông Innisfree Retinol Cica Repair Ampoule (Set Đôi 30ml + 30ml)**
   - Thương hiệu: Innisfree | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000262817
-  - Giá Olive Young: 26.500 KRW (~620.000 đ)
+  - Giá Olive Young: 27.900 KRW (~620.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-giam-mun-mo-tham-lo-chan-long-innisfree-retinol-cica-repair-ampoule-set-doi-30ml-30ml-a000000262817
 
 - **Tinh chất cấp ẩm làm dịu da ngải cứu Hanyul Pure Artemisia Hyaluron Serum Set 40ml (Kèm túi refill 40ml và gương Hello Kitty)**
@@ -407,7 +443,7 @@
 - **Kem Dưỡng Cấp Ẩm Làm Dịu Ngải Cứu Hanyul Pure Artemisia Hyaluron Cream Set 60ml x 2**
   - Thương hiệu: Hanyul | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000262945
-  - Giá Olive Young: 21.870 KRW (~512.000 đ)
+  - Giá Olive Young: 22.000 KRW (~512.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-cap-am-lam-diu-ngai-cuu-hanyul-pure-artemisia-hyaluron-cream-set-60ml-x-2-a000000262945
 
 - **[Top 7] Kem Dưỡng Phục Hồi Hàng Rào Bảo Vệ Da La Roche-Posay Cicaplast Baume B5+ (Set 100ml + Tặng Cica Essence 7.5ml + Hyalu Serum 3ml)**
@@ -419,7 +455,7 @@
 - **Nước Dưỡng Cấp Ẩm Chuyên Sâu Bioderma Hydrabio Essence Lotion 200ml**
   - Thương hiệu: Bioderma | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000263073
-  - Giá Olive Young: 25.290 KRW (~592.000 đ)
+  - Giá Olive Young: 28.100 KRW (~592.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/nuoc-duong-cap-am-chuyen-sau-bioderma-hydrabio-essence-lotion-200ml-a000000263073
 
 - **Son kem lì làm mờ rãnh môi Peripera Mood Blur Tint 9 Màu Tặng Kèm Son Mini**
@@ -443,7 +479,7 @@
 - **Kem Chống Nắng Dịu Da Cấp Ẩm Goodal Heartleaf Calming Moisture Suncream Sanrio Edition (Set Đôi 50ml + 50ml + Tặng Sticker Cinnamoroll)**
   - Thương hiệu: Goodal | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000263555
-  - Giá Olive Young: 16.900 KRW (~395.000 đ)
+  - Giá Olive Young: 18.900 KRW (~395.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-chong-nang-diu-da-cap-am-goodal-heartleaf-calming-moisture-suncream-sanrio-edition-set-doi-50ml-50ml-tang-sticker-cinnamoroll-a000000263555
 
 - **Tinh Chất Serum Mờ Thâm Sáng Da Goodal Green Tangerine Vita C Dark Spot Care Serum Alpha Phiên Bản Sanrio (Set 50ml + Lõi Thay 50ml + Quà Tặng Nam Châm Pompompurin)**
@@ -455,7 +491,7 @@
 - **Máy Tạo Kiểu Tóc Uốn Duỗi Tiện Lợi Vodana Easy Up Hair Styler Flip (Phiên Bản Hello Kitty)**
   - Thương hiệu: Vodana | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000263630
-  - Giá Olive Young: 68.500 KRW (~1.603.000 đ)
+  - Giá Olive Young: 75.900 KRW (~1.603.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/may-tao-kieu-toc-uon-duoi-tien-loi-vodana-easy-up-hair-styler-flip-phien-ban-hello-kitty-a000000263630
 
 - **Tinh Chất Cấp Nước Sâu Phục Hồi Da Torriden Dive-In Low Molecular Hyaluronic Acid Serum (Set 50ml + Refill 50ml Tặng Kèm Búp Bê Cinnamoroll)**
@@ -467,7 +503,7 @@
 - **Kem Dưỡng Gel Cấp Nước Làm Dịu Da Torriden Dive-In Low Molecule Hyaluronic Acid Soothing Cream (Set Đôi 100ml Tặng Túi Lưới Cinnamoroll)**
   - Thương hiệu: Torriden | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000263681
-  - Giá Olive Young: 27.900 KRW (~653.000 đ)
+  - Giá Olive Young: 29.400 KRW (~653.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-gel-cap-nuoc-lam-diu-da-torriden-dive-in-low-molecule-hyaluronic-acid-soothing-cream-set-doi-100ml-tang-tui-luoi-cinnamoroll-a000000263681
 
 - **Kem Dưỡng Ẩm Cấp Nước Phục Hồi Làn Da S.Nature Aqua Squalane Moisture Cream (Set Đôi 60ml + 60ml Tặng Kèm Keycap Hello Kitty)**
@@ -479,7 +515,7 @@
 - **Máy Chăm Sóc Da Nâng Cơ Sóng Siêu Âm Quadthera Teens Waterdrop Ultrasound Home Care Device**
   - Thương hiệu: Quadthera | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000263824
-  - Giá Olive Young: 169.000 KRW (~3.955.000 đ)
+  - Giá Olive Young: 179.000 KRW (~3.955.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/may-cham-soc-da-nang-co-song-sieu-am-quadthera-teens-waterdrop-ultrasound-home-care-device-a000000263824
 
 - **Phấn Bắt Sáng Tạo Khối Căng Bóng OFRA Slim Mini Highlighter 4g**
@@ -503,7 +539,7 @@
 - **Xịt khoáng bọt căng bóng cấp ẩm Menokin 30s Quick Glow Hydra Lift 98ml Tặng Kèm 30ml**
   - Thương hiệu: Menokin | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000265060
-  - Giá Olive Young: 23.500 KRW (~550.000 đ)
+  - Giá Olive Young: 31.000 KRW (~550.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/xit-khoang-bot-cang-bong-cap-am-menokin-30s-quick-glow-hydra-lift-98ml-tang-kem-30ml-a000000265060
 
 - **Tinh Chất Chống Nắng Nâng Tông Tự Nhiên Ataga Snow Sun Serum 30ml**
@@ -515,19 +551,19 @@
 - **Sữa Dưỡng Tóc Bóng Mượt Hương Hoa Kerastase Gloss Absolu (240ml)**
   - Thương hiệu: Kerastase | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000265724
-  - Giá Olive Young: 71.610 KRW (~1.676.000 đ)
+  - Giá Olive Young: 71.620 KRW (~1.676.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/sua-duong-toc-bong-muot-huong-hoa-kerastase-gloss-absolu-240ml-a000000265724
 
 - **Bột ngũ cốc dinh dưỡng bổ sung đạm CJ Maxplan Daily Protein Shake 45g (Dâu sữa chua / Bơ đậu phộng / Sô-cô-la)**
   - Thương hiệu: CJ Maxplan | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000265728
-  - Giá Olive Young: 3.900 KRW (~91.000 đ)
+  - Giá Olive Young: 3.750 KRW (~91.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/bot-ngu-coc-dinh-duong-bo-sung-dam-cj-maxplan-daily-protein-shake-45g-dau-sua-chua-bo-dau-phong-so-co-la-a000000265728
 
 - **Son Thỏi Hiệu Ứng Căng Bóng Dưỡng Môi Risky Hyper Shine Lipstick 6 Màu**
   - Thương hiệu: Risky | Phân loại: Chăm sóc da
   - Mã hàng (goodsNo): A000000267287
-  - Giá Olive Young: 21.000 KRW (~491.000 đ)
+  - Giá Olive Young: 19.950 KRW (~491.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/son-thoi-hieu-ung-cang-bong-duong-moi-risky-hyper-shine-lipstick-6-mau-a000000267287
 
 - **[Top 99] Nước Hoa Dưỡng Tóc Lưu Hương Mềm Mượt Lador Hair Perfume (30ml Tặng Dầu Dưỡng Tóc 10ml)**
@@ -535,6 +571,12 @@
   - Mã hàng (goodsNo): A000000267969
   - Giá Olive Young: 33.600 KRW (~786.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/nuoc-hoa-duong-toc-luu-huong-mem-muot-lador-hair-perfume-30ml-tang-dau-duong-toc-10ml-a000000267969
+
+- **Sữa lắc protein hàng ngày CJ MacPlan 45g (hộp 5 gói) vị sữa chua dâu / bơ đậu phộng / sô-cô-la**
+  - Thương hiệu: MacPlan | Phân loại: Chăm sóc da
+  - Mã hàng (goodsNo): A000000268499
+  - Giá Olive Young: 9.120 KRW (~209.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/sua-lac-protein-hang-ngay-cj-macplan-45g-hop-5-goi-vi-sua-chua-dau-bo-dau-phong-so-co-la-a000000268499
 
 - **Phấn Phủ Dạng Bột Kiềm Dầu Mịn Da Laneige x Matin Kim Essential Blurring Finish Powder 7g Kèm Túi Đựng**
   - Thương hiệu: Laneige | Phân loại: Chăm sóc da
@@ -553,6 +595,18 @@
   - Mã hàng (goodsNo): A000001002386
   - Giá Olive Young: 43.400 KRW (~1.016.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-aestura-atobarrier-365-80ml-set-doi-tang-ampoule-ceramide-hyaluronic-15ml-a000001002386
+
+- **테키라 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors**
+  - Thương hiệu: 테키라 | Phân loại: Chăm sóc tóc
+  - Mã hàng (goodsNo): A000001003004
+  - Giá Olive Young: 20.900 KRW (~489.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/2-in-1-2-colors-a000001003004
+
+- **Serum Dưỡng Tóc Kèm Đầu Cọ Massage Phục Hồi Chuyên Sâu VT PDRN Reedle Shot 100ml**
+  - Thương hiệu: VT Cosmetics | Phân loại: Chăm sóc tóc
+  - Mã hàng (goodsNo): A000001004351
+  - Giá Olive Young: 22.100 KRW (~433.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/serum-duong-toc-kem-dau-co-massage-phuc-hoi-chuyen-sau-vt-pdrn-reedle-shot-100ml-a000001004351
 
 - **Son Dưỡng Dior Addict Lip Glow Có Màu Cao Cấp (Nhiều Tone Màu)**
   - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
@@ -722,6 +776,12 @@
   - Giá Olive Young: 390.000 KRW (~9.126.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/nuoc-hoa-creed-silver-mountain-water-eau-de-parfum-suoi-nguon-nui-tuyet-he0000000042
 
+- **Nước Hoa Niche Diptyque Tam Dao Eau de Parfum (Rừng Gỗ Đàn Hương Tam Đảo)**
+  - Thương hiệu: Diptyque | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000044
+  - Giá Olive Young: 328.000 KRW (~7.675.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/nuoc-hoa-niche-diptyque-tam-dao-eau-de-parfum-rung-go-dan-huong-tam-dao-he0000000044
+
 - **Nước Hoa Niche Byredo Gypsy Water Eau de Parfum Lãng Du Tự Do**
   - Thương hiệu: Byredo | Phân loại: Hàng Hiệu Bách Hóa
   - Mã hàng (goodsNo): HE0000000045
@@ -746,11 +806,11 @@
   - Giá Olive Young: 175.000 KRW (~4.095.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/nuoc-than-tai-sinh-nang-luong-da-la-mer-the-treatment-lotion-cao-cap-he0000000050
 
-- **Nước Hoa Niche Diptyque Tam Dao Eau de Parfum (Rừng Gỗ Đàn Hương Tam Đảo)**
-  - Thương hiệu: Diptyque | Phân loại: Hàng Hiệu Bách Hóa
-  - Mã hàng (goodsNo): HE0000000044
-  - Giá Olive Young: 328.000 KRW (~7.675.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/nuoc-hoa-niche-diptyque-tam-dao-eau-de-parfum-rung-go-dan-huong-tam-dao-he0000000044
+- **Tinh Chất Đánh Thức Tế Bào Thượng Hạng Clé de Peau Beauté The Serum**
+  - Thương hiệu: Clé de Peau | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000051
+  - Giá Olive Young: 215.000 KRW (~5.031.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-danh-thuc-te-bao-thuong-hang-cle-de-peau-beaute-the-serum-he0000000051
 
 - **Nước Thần Căng Bóng Tái Tạo Da Lancôme Clarifique Dual Essence**
   - Thương hiệu: Lancôme | Phân loại: Hàng Hiệu Bách Hóa
@@ -770,71 +830,29 @@
   - Giá Olive Young: 245.000 KRW (~5.733.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-duong-tai-sinh-than-thanh-la-mer-creme-de-la-mer-xa-xi-bac-nhat-he0000000057
 
-- **Kem Nền Căng Bóng 24H Dior Forever Skin Glow 24H Foundation**
-  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
-  - Mã hàng (goodsNo): HE0000000063
-  - Giá Olive Young: 93.000 KRW (~2.176.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-nen-cang-bong-24h-dior-forever-skin-glow-24h-foundation-he0000000063
-
-- **Sữa lắc protein hàng ngày CJ MacPlan 45g (hộp 5 gói) vị sữa chua dâu / bơ đậu phộng / sô-cô-la**
-  - Thương hiệu: MacPlan | Phân loại: Chăm sóc da
-  - Mã hàng (goodsNo): A000000268499
-  - Giá Olive Young: 8.950 KRW (~209.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/sua-lac-protein-hang-ngay-cj-macplan-45g-hop-5-goi-vi-sua-chua-dau-bo-dau-phong-so-co-la-a000000268499
-
-- **Men vi sinh âm đạo iHill Venus 30 viên nang (+6 viên nang) gói tăng dung tích**
-  - Thương hiệu: iHill | Phân loại: Chăm sóc da
-  - Mã hàng (goodsNo): A000000217101
-  - Giá Olive Young: 23.900 KRW (~559.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/men-vi-sinh-am-dao-ihill-venus-30-vien-nang-6-vien-nang-goi-tang-dung-tich-a000000217101
-
-- **Vital Beauty Meta Green Slim Up hỗ trợ giảm mỡ, 1 viên/ngày, hộp 30 viên (30 ngày)**
-  - Thương hiệu: Vital Beauty | Phân loại: Thực phẩm chức năng
-  - Mã hàng (goodsNo): A000000248462
-  - Giá Olive Young: 25.200 KRW (~590.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/vital-beauty-meta-green-slim-up-ho-tro-giam-mo-1-vien-ngay-hop-30-vien-30-ngay-a000000248462
-
-- **[MỚI] Fillimilli Lông Mi Giả Tự Chọn 1 Món (Sợi Điểm Nhấn / Không Keo / Cắt Sẵn / Điểm Nhấn Giữa / Keo Dán)**
-  - Thương hiệu: Fillimilli | Phân loại: Chăm sóc da
-  - Mã hàng (goodsNo): A000000219331
-  - Giá Olive Young: 6.700 KRW (~157.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/moi-fillimilli-long-mi-gia-tu-chon-1-mon-soi-diem-nhan-khong-keo-cat-san-diem-nhan-giua-keo-dan-a000000219331
-
-- **Tinh dầu dưỡng tóc bảo vệ nhiệt L'Oréal Paris 100ml (bản giới hạn Hello Kitty, tặng kèm cọ chải tóc)**
-  - Thương hiệu: L'Oréal | Phân loại: Chăm sóc tóc
-  - Mã hàng (goodsNo): A000000140183
-  - Giá Olive Young: 15.900 KRW (~372.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-dau-duong-toc-bao-ve-nhiet-l-oreal-paris-100ml-ban-gioi-han-hello-kitty-tang-kem-co-chai-toc-a000000140183
-
 - **Son Thỏi Bấm Lì Nhung Chanel Rouge Allure Velvet Sang Trọng**
   - Thương hiệu: Chanel | Phân loại: Hàng Hiệu Bách Hóa
   - Mã hàng (goodsNo): HE0000000060
   - Giá Olive Young: 60.000 KRW (~1.404.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/son-thoi-bam-li-nhung-chanel-rouge-allure-velvet-sang-trong-he0000000060
 
-- **Son Dưỡng Bóng Căng Mọng YSL Loveshine Wet Shine Lipstick 3.2g**
-  - Thương hiệu: Yves Saint Laurent | Phân loại: Hàng Hiệu Bách Hóa
-  - Mã hàng (goodsNo): HE0000000069
-  - Giá Olive Young: 55.000 KRW (~1.287.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/son-duong-bong-cang-mong-ysl-loveshine-wet-shine-lipstick-3-2g-he0000000069
-
-- **Dầu dưỡng tóc Moroccanoil Treatment 50ml (kèm vòi bơm) - Set đặc biệt**
-  - Thương hiệu: Moroccanoil | Phân loại: Chăm sóc tóc
-  - Mã hàng (goodsNo): A000000219700
-  - Giá Olive Young: 34.440 KRW (~806.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/dau-duong-toc-moroccanoil-treatment-50ml-kem-voi-bom-set-dac-biet-a000000219700
-
-- **Tinh Chất Đánh Thức Tế Bào Thượng Hạng Clé de Peau Beauté The Serum**
-  - Thương hiệu: Clé de Peau | Phân loại: Hàng Hiệu Bách Hóa
-  - Mã hàng (goodsNo): HE0000000051
-  - Giá Olive Young: 215.000 KRW (~5.031.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/tinh-chat-danh-thuc-te-bao-thuong-hang-cle-de-peau-beaute-the-serum-he0000000051
-
 - **Phấn Nước Vỏ Da Hồng YSL Touche Éclat Glow-Pact Cushion Cao Cấp**
   - Thương hiệu: Yves Saint Laurent | Phân loại: Hàng Hiệu Bách Hóa
   - Mã hàng (goodsNo): HE0000000062
   - Giá Olive Young: 65.000 KRW (~1.521.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/phan-nuoc-vo-da-hong-ysl-touche-eclat-glow-pact-cushion-cao-cap-he0000000062
+
+- **Kem Nền Căng Bóng 24H Dior Forever Skin Glow 24H Foundation**
+  - Thương hiệu: Dior | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000063
+  - Giá Olive Young: 93.000 KRW (~2.176.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-nen-cang-bong-24h-dior-forever-skin-glow-24h-foundation-he0000000063
+
+- **Son Dưỡng Bóng Căng Mọng YSL Loveshine Wet Shine Lipstick 3.2g**
+  - Thương hiệu: Yves Saint Laurent | Phân loại: Hàng Hiệu Bách Hóa
+  - Mã hàng (goodsNo): HE0000000069
+  - Giá Olive Young: 55.000 KRW (~1.287.000 đ)
+  - Link chi tiết: https://tavyorder.vercel.app/san-pham/son-duong-bong-cang-mong-ysl-loveshine-wet-shine-lipstick-3-2g-he0000000069
 
 - **Bảng Phấn Mắt 4 Ô Thượng Hạng Tom Ford Eye Color Quad Sang Trọng**
   - Thương hiệu: Tom Ford | Phân loại: Hàng Hiệu Bách Hóa
@@ -859,22 +877,4 @@
   - Mã hàng (goodsNo): HE0000000075
   - Giá Olive Young: 95.000 KRW (~2.223.000 đ)
   - Link chi tiết: https://tavyorder.vercel.app/san-pham/thoi-che-khuyet-diem-thuong-hang-cle-de-peau-beaute-concealer-spf-27-he0000000075
-
-- **Serum Dưỡng Tóc Kèm Đầu Cọ Massage Phục Hồi Chuyên Sâu VT PDRN Reedle Shot 100ml**
-  - Thương hiệu: VT Cosmetics | Phân loại: Chăm sóc tóc
-  - Mã hàng (goodsNo): A000001004351
-  - Giá Olive Young: 18.500 KRW (~433.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/serum-duong-toc-kem-dau-co-massage-phuc-hoi-chuyen-sau-vt-pdrn-reedle-shot-100ml-a000001004351
-
-- **테키라 2 in 1 멀티 아트펜 아이브로우 & 헤어라인 2 Colors**
-  - Thương hiệu: 테키라 | Phân loại: Chăm sóc tóc
-  - Mã hàng (goodsNo): A000001003004
-  - Giá Olive Young: 20.900 KRW (~489.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/2-in-1-2-colors-a000001003004
-
-- **[Top 100] Kem Ủ Tóc Phục Hồi Chuyên Sâu Fino Premium Touch Hair Mask 230g (Set Đôi Kèm Kẹp Tóc Ditto)**
-  - Thương hiệu: Fino | Phân loại: Chăm sóc tóc
-  - Mã hàng (goodsNo): A000000187090
-  - Giá Olive Young: 19.600 KRW (~459.000 đ)
-  - Link chi tiết: https://tavyorder.vercel.app/san-pham/kem-u-toc-phuc-hoi-chuyen-sau-fino-premium-touch-hair-mask-230g-set-doi-kem-kep-toc-ditto-a000000187090
 

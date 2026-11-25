@@ -81,19 +81,18 @@ def main():
     batch = [manifest[(start + k) % len(manifest)] for k in range(min(BATCH, len(manifest)))]
     json.dump({'i': (start + BATCH) % len(manifest)}, open(CURSOR, 'w'))
 
-    payload = {'items': [{'goodsNo': x['goodsNo']} for x in batch]}
-    req = urllib.request.Request(API + '/verify', data=json.dumps(payload).encode(),
-                                 headers={'Content-Type': 'application/json'}, method='POST')
-    try:
-        res = json.load(urllib.request.urlopen(req, timeout=300))
-    except Exception as e:
-        print('verify failed', e)
-        return
+    results = []
+    for x in batch:
+        try:
+            r = json.load(urllib.request.urlopen(
+                f"{API}/price?goodsNo={urllib.parse.quote(x['goodsNo'])}", timeout=120))
+        except Exception as e:
+            r = {'ok': False, 'error': str(e)[:60]}
+        results.append(r)
 
     tok = token()
     writes = []
     sold_now, recovered, archived = [], [], []
-    results = res.get('results', [])
     for item, r in zip(batch, results):
         pid = item['firestoreId']
         if not r.get('ok'):

@@ -74,6 +74,27 @@ export default function ProductDetailPage() {
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(0);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [copiedLink, setCopiedLink] = useState(false);
+  const [sourceUrl, setSourceUrl] = useState('');
+
+  // Link nguồn để khách tự đối chiếu giá (OY hoặc mall).
+  useEffect(() => {
+    let alive = true;
+    setSourceUrl('');
+    const id = product?.goodsNo || product?.id;
+    if (!id) return undefined;
+    if (product?.productUrl) {
+      setSourceUrl(product.productUrl);
+      return undefined;
+    }
+    if (String(id).startsWith('A')) {
+      setSourceUrl(`https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=${encodeURIComponent(id)}`);
+      return undefined;
+    }
+    import('../services/livePrice').then(({ getManifestEntry }) => {
+      getManifestEntry(product).then((e) => { if (alive && e?.url) setSourceUrl(e.url); }).catch(() => {});
+    }).catch(() => {});
+    return () => { alive = false; };
+  }, [product]);
 
   // Tìm sản phẩm dựa trên slug hoặc goodsNo
   useEffect(() => {
@@ -568,6 +589,19 @@ export default function ProductDetailPage() {
               </div>
               <div style={{ fontSize: '0.76rem', color: 'var(--text-muted, #71717A)', marginTop: '4px' }}>
                 Giá gốc tại Hàn: <strong>{formatKrw(effectiveWonPrice)}</strong>
+                {sourceUrl && (
+                  <>
+                    {' · '}
+                    <a
+                      href={sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: 'var(--text-dark, #111827)', textDecoration: 'underline', textUnderlineOffset: '2px' }}
+                    >
+                      Xem trên {String(product?.goodsNo || product?.id || '').startsWith('A') ? 'Olive Young' : 'Lotte'} ↗
+                    </a>
+                  </>
+                )}
               </div>
 
               {live.status === 'loading' && (
@@ -599,7 +633,17 @@ export default function ProductDetailPage() {
                   fontSize: '0.78rem', color: '#B91C1C', lineHeight: 1.45
                 }}>
                   <AlertCircle size={15} style={{ flexShrink: 0, marginTop: '1px' }} />
-                  <span>Chưa lấy được giá hiện tại nên tạm khóa đặt hàng. Vui lòng thử lại sau ít phút.</span>
+                  <span>
+                    Chưa lấy được giá hiện tại nên tạm khóa đặt hàng. Giá phía trên là lần kiểm tra gần nhất.
+                    {sourceUrl ? (
+                      <>
+                        {' '}
+                        <a href={sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#B91C1C', fontWeight: 700, textDecoration: 'underline' }}>
+                          Xem giá hiện tại ↗
+                        </a>
+                      </>
+                    ) : ' Vui lòng thử lại sau ít phút.'}
+                  </span>
                 </div>
               )}
 

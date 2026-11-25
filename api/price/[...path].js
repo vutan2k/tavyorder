@@ -44,6 +44,8 @@ export default async function handler(req, res) {
 
   const qs = new URLSearchParams();
   for (const [k, v] of url.searchParams.entries()) qs.append(k, v);
+  // Client công khai không được ép bỏ cache (force) — tránh spam đốt quota Olive Young.
+  qs.delete('force');
 
   let cfg;
   try {
