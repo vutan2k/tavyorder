@@ -24,15 +24,20 @@ export default async function verifyCart(cart) {
     meta.push({ item: it, cartWon });
   }
 
-  let res;
-  try {
-    res = await postVerify(payload);
-  } catch (e) {
-    return { ok: false, issues: [{ reason: 'verify_failed', message: `Không xác nhận được giá (${e.message || 'network'}).` }] };
+  // Vercel function giới hạn 60s; OY cào tuần tự 9s/SKU → chia lô 4 SKU/lần gọi.
+  const CHUNK = 4;
+  const results = [];
+  for (let i = 0; i < payload.length; i += CHUNK) {
+    const slice = payload.slice(i, i + CHUNK);
+    try {
+      const res = await postVerify(slice);
+      (res?.results || []).forEach((r) => results.push(r));
+    } catch (e) {
+      slice.forEach(() => results.push({ ok: false, error: 'verify_failed' }));
+    }
   }
 
   const issues = [];
-  const results = res?.results || [];
   results.forEach((r, i) => {
     const { item, cartWon } = meta[i] || {};
     if (!r?.ok) {
